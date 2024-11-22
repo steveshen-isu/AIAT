@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import * as d3 from 'd3';
 import Plot from 'react-plotly.js';
-
+import Typewriter from './Typewriter';
 const currentUrl = window.location.href;
 
 const ipAddress = currentUrl.split(':')[1].split('/')[2];
@@ -99,15 +99,8 @@ function PlotGenerator() {
      */
     return (
         <div>
-            <h1 style={{
-                color: 'white',            // Use camelCase for CSS properties
-                fontSize: '32px',         // font-size becomes fontSize
-                textAlign: 'center',      // text-align becomes textAlign
-                fontFamily: 'Segoe UI, sans-serif',  // font-family becomes fontFamily
-                fontWeight: 'lighter',        // Bold text
-                fontStyle: 'normal',       // Italic text
-            }}>
-                Plot a function or anything that you are intereseted in
+            <h1>
+                <Typewriter text="Type in the function your are interested in to plot it" speed={20} />
             </h1>
             <div className="input-wrapper">
                 <form onSubmit={handleSubmit}>
@@ -172,13 +165,15 @@ function PlotGenerator() {
 
             {plotCode && plotUrl && (
                 <div>
-                    <h3>Generated Plot:</h3>
+            <h1>
+                <Typewriter text="Generated Plot" speed={40} />
+            </h1>
                     <img src={`${plotUrl}?rand=${Math.random()}`} alt="Generated plot" />
                 </div>
             )}
             <div>
                 <p style={{
-                    color: 'white',            // Use camelCase for CSS properties
+                    color: 'gray',            // Use camelCase for CSS properties
                     fontSize: '15px',         // font-size becomes fontSize
                     textAlign: 'center',      // text-align becomes textAlign
                     fontFamily: 'Segoe UI, sans-serif',  // font-family becomes fontFamily

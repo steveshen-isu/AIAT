@@ -1,29 +1,18 @@
 import numpy as np
-import plotly.graph_objects as go
-import plotly.io as pio
+import matplotlib.pyplot as plt
+from scipy.stats import t
 
-# Define the sphere
-phi, theta = np.mgrid[0.0:2.0 * np.pi:100j, 0.0:np.pi:50j]
-x = np.sin(theta) * np.cos(phi)
-y = np.sin(theta) * np.sin(phi)
-z = np.cos(theta)
+x = np.linspace(-5, 5, 500)
+dof_values = [1, 2, 5, 10, 50]
 
-# Create the 3D surface plot
-fig = go.Figure(data=[go.Surface(x=x, y=y, z=z)])
+plt.figure(figsize=(8, 6))
+for dof in dof_values:
+    plt.plot(x, t.pdf(x, dof), label=f'dof={dof}')
 
-# Set a big layout
-fig.update_layout(
-    title="3D Sphere",
-    autosize=False,
-    width=1000,
-    height=1000,
-    scene=dict(
-        xaxis_title='X',
-        yaxis_title='Y',
-        zaxis_title='Z'
-    )
-)
-
-# Convert figure to JSON
-plot_data_json = pio.to_json(fig)
-print(plot_data_json)
+plt.title("Student's t-Distribution\n$f(x) = \\frac{\\Gamma(\\frac{\\nu+1}{2})}{\\sqrt{\\nu\\pi} \\Gamma(\\frac{\\nu}{2})} \\left(1 + \\frac{x^2}{\\nu}\\right)^{-\\frac{\\nu+1}{2}}$")
+plt.xlabel('x')
+plt.ylabel('Probability Density')
+plt.grid(True)
+plt.legend()
+plt.savefig('plot.png')
+plt.close()

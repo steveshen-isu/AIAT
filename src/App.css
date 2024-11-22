@@ -5,18 +5,26 @@
 
 
 .App-logo {
-  height: 40vmin;
+  height: 60vmin;
   pointer-events: none;
+} 
+
+
+
+
+.typewriter {
+  color: gray;        
+  font-size: 22px;       
+  text-align: center;     
+  font-family: Segoe UI, sans-serif;  
+  font-weight: lighter;       
+  font-style: normal;      
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
-  background-color: #181a1e;
+  background-color: #ededed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -168,7 +176,8 @@ button:hover {
   padding: 40px;
   width: 35vw; 
   font-size: 24px;
-  border: none;               /* Remove default border */
+  border: 2px solid #55565a; 
+  border-radius: 20px;               
   font-family: 'Trebuchet MS', sans-serif;
   outline: none;              /* Remove focus outline */
   background-color: transparent; /* Inherit background from wrapper */
@@ -317,4 +326,62 @@ margin-left: auto;           /* Pushes the button to the right */
 
 .dropdown-item:last-child {
   border-bottom: none;
+}
+
+.advanced-calculator {
+  width: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  background: #222;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.clear-button {
+  grid-column: span 2;
+  background-color: #dc3545;
+}
+
+.clear-button:hover {
+  background-color: #a71d2a;
+}
+
+.backspace-button {
+  grid-column: span 2;
+  background-color: #ffc107;
+}
+
+.backspace-button:hover {
+  background-color: #e0a800;
 }
