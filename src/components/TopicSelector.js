@@ -927,6 +927,7 @@ const styles = {
         border: '30px solid rgb(28, 38, 48)',
         boxShadow: '0px 0px 10px 10px rgb(28, 38, 48, 0.9)',  /* Optional: Add shadow for better separation */
         width: '93vw',
+        
     },
     left: {
         width: '50%',                 // Left section width
