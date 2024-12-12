@@ -2,6 +2,7 @@ import express from 'express';
 import mysql from 'mysql2';
 import dotenv from 'dotenv';
 import multer from 'multer';
+import { franc } from 'franc-min'; 
 import productRoutes from './routes/product.js';  // Import the routes for product
 
 const envResult = dotenv.config();
@@ -430,12 +431,52 @@ app.post('/api/generate-d3plot', async (req, res) => {
 }
 );
 
+
+
+
 const recognizeImage = async (base64Image) => {
-    const { data: { text } } = await Tesseract.recognize(base64Image, 'eng', {
-        logger: (m) => console.log(m), // Optional: logs progress
-    });
-    return text;
+    try {
+        // Run OCR with English (eng)
+        const { data: { text: englishText } } = await Tesseract.recognize(base64Image, 'eng', {
+            logger: (m) => console.log(m),
+        });
+        console.log("OCR Result (English):", englishText);
+
+        // Run OCR with Chinese (chi_sim)
+        const { data: { text: chineseText } } = await Tesseract.recognize(base64Image, 'chi_sim', {
+            logger: (m) => console.log(m),
+        });
+        console.log("OCR Result (Chinese):", chineseText);
+
+        // Use franc to detect language
+        const englishLanguage = franc(englishText);
+        const chineseLanguage = franc(chineseText);
+
+        console.log("Language detected for English:", englishLanguage);
+        console.log("Language detected for Chinese:", chineseLanguage);
+
+        // Compare and select the best OCR result based on language detection
+        let selectedText = englishText;
+        let selectedLanguage = 'eng';  // Default to English
+
+        if (chineseLanguage === 'cmn') {
+            selectedText = chineseText;
+            selectedLanguage = 'chi_sim'; // Use Chinese text
+        }
+
+        console.log("Selected Language:", selectedLanguage);
+        console.log("Selected Text:", selectedText);
+
+        return selectedText;
+
+    } catch (error) {
+        console.error("Error during OCR recognition:", error);
+        return null;
+    }
 };
+
+
+
 
 app.post('/api/chat', async (req, res) => {
     console.log("received request", req.body)
@@ -444,7 +485,7 @@ app.post('/api/chat', async (req, res) => {
     const OPENAI_API_KEY = process.env.API_KEY;
     try {
         /*       const messages = [{ role: 'user', content: message }]; */
-        let imageContext = 'No image provided.';
+        let imageContext = 'hello';
 
         if (image) {
             // Decode and analyze image using Tesseract OCR
@@ -465,6 +506,8 @@ app.post('/api/chat', async (req, res) => {
             { role: 'user', content: currentQuestion }, // Current question explicitly added (can be redundant based on placement)
             { role: 'user', content: imageContext }, // Image context as a user message
         ];
+
+        console.log("prompt", prompt)
         const response = await axios.post(
             'https://api.openai.com/v1/chat/completions',
             {

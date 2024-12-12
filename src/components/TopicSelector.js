@@ -924,31 +924,28 @@ const styles = {
         padding: '0px',              // Padding for the container
         borderRadius: '20px',         // Rounded corners
         overflow: 'auto',
-        border: '30px solid rgb(28, 38, 48)',
-        boxShadow: '0px 0px 10px 10px rgb(28, 38, 48, 0.9)',  /* Optional: Add shadow for better separation */
-        width: '93vw',
+        border: '20px solid rgb(139, 0, 0)',
+        width: '99vw',
         
     },
     left: {
         width: '50%',                 // Left section width
-        backgroundColor: '#36454F',   // Light gray background for the left section
+        backgroundColor: '#FFFFFF',   // Light gray background for the left section
         padding: '0vw',
         borderRadius: '0px',         // Rounded corners
         overflow: 'auto',
-        border: '3px solid rgb(38, 48, 58)',
-        boxShadow: '0px 0px 0px 8px #36454F',  /* Optional: Add shadow for better separation */
-        margin: '3px',
+        border: '3px solid rgb(211, 211, 211)',
+        margin: '0px',
     },
     right: {
         width: '50%',                 // Right section width
-        backgroundColor: '#3f4043',   // Light gray background for the right section
+        backgroundColor: '#FFFFFF',   // Light gray background for the right section
         padding: '0vw',
         borderRadius: '0px',         // Rounded corners
         textAlign: 'left',            // Left align text in the typewriter
         overflow: 'auto',
-        border: '3px solid #2e2f31',
-        boxShadow: '0px 0px 0px 3px #3f4043',  /* Optional: Add shadow for better separation */
-        margin: '3px',
+        border: '3px solid rgb(211, 211, 211)',
+        margin: '0px',
     },
 };
 

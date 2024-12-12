@@ -19,15 +19,17 @@ function ChatBox() {
         try {
             const fullConversation = [
                 ...responses.map((item) => [
-                  { role: 'user', content: item.query },
-                  { role: 'assistant', content: item.response },
+                    { role: 'user', content: item.query },
+                    { role: 'assistant', content: item.response },
                 ]).flat(),
-                { role: 'user', content: message }, // Add the current message as the latest user input
-              ];
-              const requestBody = {
+                { role: 'user', content: message },
+
+            ];
+
+            const requestBody = {
                 conversation: fullConversation,
                 image: pastedImage,
-              };
+            };
 
             const response = await fetch('http://' + ipAddress + ':200/api/chat', {
                 method: 'POST',
@@ -49,6 +51,7 @@ function ChatBox() {
         } finally {
             setLoading(false);
         }
+
     };
 
 
@@ -73,51 +76,93 @@ function ChatBox() {
     const removeImage = () => {
         setPastedImage(null);
     };
-
     return (
-        <div>
-            <h1>
-                <Typewriter text="Talk to me about your question or copy your image including your question" speed={20} />
-            </h1>
-
-            <textarea
-                className="custom-textarea"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                onPaste={handlePaste}
-                rows="4"
-                cols="50"
-                placeholder="Type your message or paste an image..."
-            />
-
-            {pastedImage && (
-                <div>
-                    <h1>
-                        <Typewriter text="pasted image:" speed={20} />
-                    </h1>
-                    <img src={pastedImage} alt="Pasted content" style={{ maxWidth: '100%', height: 'auto' }} />
-                    <button onClick={removeImage} style={{ marginTop: '10px' }}>Remove Pasted Image</button>
-                </div>
-            )}
-
-            <button onClick={sendMessage} disabled={loading} style={{ marginTop: '10px' }}>
-                {loading ? 'Sending...' : 'Send'}
-            </button>
-
-            <div>
+        <div className="flex flex-col h-144 bg-gray-100">
+            {/* Chat container */}
+            <div className="flex-1 overflow-y-auto p-4 mb-4">
+                {/* Displaying conversation */}
                 {responses.map((item, index) => (
-                    <div key={index} style={{ marginBottom: '20px' }}>
-                        <p><b>You:</b>
-                            <TypewriterResponse content={item.query} />
-                        </p>
-                        <p><b>GPT:</b>                         <div>
-                            <TypewriterResponse content={item.response} />
-                        </div></p>
+                    <div key={index} className="mb-4 w-full max-w-6x1 flex-row-reverse justify-start">
+                        <div className="flex items-start space-x-4">
+                            {/* User message */}
+                            <div className="flex flex-col items-end justify-end" >
+                                <div className="bg-blue-500 text-white p-2 rounded-lg max-w-xs">
+                                <p><b>You:</b></p>
+                <div 
+                    className="prose" 
+                    dangerouslySetInnerHTML={{ __html: item.query }} 
+                />                                </div>
+
+                            </div>
+
+                            {/* GPT response */}
+
+                            <div className="max-w-4x1 bg-gray-600 p-4 rounded-lg shadow-lg text-right ml-auto">
+
+                                <p><b>GPT:</b>
+                                    <TypewriterResponse content={item.response} />
+                                </p>
+                            </div>
+                            {item.responseImage && (
+                                <img
+                                    src={item.responseImage}
+                                    alt="GPT response image"
+                                    className="max-w-xs mt-2 rounded-lg"
+                                />
+                            )}
+
+                        </div>
                     </div>
                 ))}
+
+                {/* Display pasted image (if any) */}
+
             </div>
+
+            {/* Message input (always at the bottom) */}
+            <div className="flex items-center space-x-4 p-4 border-t border-gray-300 bg-white">
+            <textarea
+    className="!custom-textarea p-4 bg-white border border-gray-300 rounded-lg w-1/2 max-w-3x1 resize-none !text-sm placeholder-gray-500"
+    value={message}
+    onChange={(e) => setMessage(e.target.value)}
+    onPaste={handlePaste}
+    rows="3"  // Increasing the rows for a larger box
+    placeholder="Type your message or paste an image..."
+ />
+
+                <button
+                    onClick={sendMessage}
+                    disabled={loading}
+                    className="bg-blue-500 text-white p-3 rounded-full disabled:opacity-50"
+                >
+                    {loading ? 'Sending...' : 'Send'}
+                </button>
+
+                {pastedImage && (
+                    <div className="flex items-center space-x-4 mt-4 ml-4">
+                        <div className="flex flex-col items-end">
+
+                            <img
+                                src={pastedImage}
+                                alt="Pasted content"
+                                className="max-w-xs h-auto mt-2 rounded-lg"
+                            />
+                            <button
+                                onClick={() => setPastedImage(null)}
+                                className="bg-red-500 text-white p-2 mt-2 rounded-lg"
+                            >
+                                Remove Image
+                            </button>
+                        </div>
+                    </div>
+                )}
+            </div>
+
+
         </div>
     );
+
+
 }
 
 export default ChatBox;

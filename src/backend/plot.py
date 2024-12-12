@@ -1,19 +1,19 @@
 import matplotlib.pyplot as plt
-import sympy
 
-# Generate the first 1000 prime numbers
-primes = list(sympy.primerange(1, 7920))[:1000]
+def fibonacci(n):
+    sequence = [0, 1]
+    for i in range(2, n):
+        sequence.append(sequence[-1] + sequence[-2])
+    return sequence
 
-# Plot the primes
+n = 15
+fib_sequence = fibonacci(n)
+
 plt.figure(figsize=(10, 6))
-plt.plot(primes, marker='o', linestyle='', markersize=3, label='Prime Numbers')
+plt.plot(range(n), fib_sequence, marker='o', label='Fibonacci Sequence')
+plt.title("Fibonacci Sequence: F(n) = F(n-1) + F(n-2), F(0)=0, F(1)=1")
+plt.xlabel("n")
+plt.ylabel("F(n)")
 plt.grid(True)
-
-# Add title and labels
-plt.title("Prime Number Distribution\n$f(n) = p_n$, where $p_n$ is the nth prime")
-plt.xlabel("Index (n)")
-plt.ylabel("Prime Number ($p_n$)")
-
-# Save the plot as an image
+plt.legend()
 plt.savefig("plot.png")
-plt.close()
