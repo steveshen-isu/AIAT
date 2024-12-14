@@ -39,15 +39,35 @@ function App() {
     }
   };
 
+  const handleNavigation = (component) => {
+    setSelectedComponent(component);
+  };
+
+
   return (
     <div className="App bg-gray-50 min-h-screen flex flex-col">
-      <header className="bg-red-900 py-12 shadow-md w-full">
-        {selectedComponent === null && (
+      {selectedComponent && (<nav className="bg-red-900 text-white p-4 fixed top-0 left-0 right-0 z-10 shadow-md">
+        <div className="flex justify-between items-center">
+          <div className="text-xl font-bold">AIAT</div>
+          <div className="flex space-x-4">
+            <button onClick={() => handleNavigation('TopicSelector')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Topic Selector</button>
+            <button onClick={() => handleNavigation('PlotGenerator')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Plot Generator</button>
+            <button onClick={() => handleNavigation('Chatbox')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Chatbox</button>
+            <button onClick={() => handleNavigation('Calculator')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Calculator</button>
+            <button onClick={() => handleNavigation('ExamGrader')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Exam Grader</button>
+            <button onClick={() => setSelectedComponent(null)} className="bg-red-800 hover:bg-gray-200 p-2 rounded">Home Page</button>
+
+          </div>
+        </div>
+      </nav>)}
+      {selectedComponent === null && (
+        <header className="bg-red-900 py-12 shadow-md w-full">
+
           <div className="bg-red-900 w-full text-center p-8 flex flex-col items-center lg:flex-row lg:justify-center lg:text-left">
             <div className="lg:w-1/2">
-              <h1 className="text-4xl font-bold text-white">AI Math Solve: Your Ultimate Math Companion</h1>
-              <p className="text-white text-lg mt-2">
-                Explore, Visualize, and Master Mathematics with Advanced AI Tools. Dive into step-by-step solutions, explore course materials, chat with an intelligent assistant, and even grade your exams—all in one intuitive platform.
+              <h1 className="text-6xl font-bold text-white">AI Math Solve: Your Ultimate Math Companion</h1>
+              <p className="text-white text-6xl mt-2" style={{ fontSize: '1.5rem' }}>
+              Explore, Visualize, and Master Mathematics with Advanced AI Tools. Dive into step-by-step solutions, explore course materials, chat with an intelligent assistant, and even grade your exams—all in one intuitive platform.
               </p>
             </div>
             <div className="lg:w-1/2 flex justify-center lg:justify-end mt-6 lg:mt-0">
@@ -59,8 +79,8 @@ function App() {
               />
             </div>
           </div>
-        )}
-      </header>
+
+        </header>)}
       <div className="flex  justify-center">
         {selectedComponent === null && (
 
@@ -79,7 +99,7 @@ function App() {
           </div>)}
       </div>
       {/* Button Section */}
-      <div className="flex flex-wrap justify-center gap-4 w-full text-center h-64">
+      {!selectedComponent && (<div className="flex flex-wrap justify-center gap-4 w-full text-center h-64">
 
 
         <Button
@@ -101,7 +121,7 @@ function App() {
             className="absolute inset-0 flex flex-col items-center justify-center space-y-2 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
           >
             <span className="text-lg font-bold text-center text-white">
-            Explore resources and assistance for your courses, including guides, notes, and more.
+              Explore resources and assistance for your courses, including guides, notes, and more.
             </span>
 
           </div>
@@ -126,7 +146,7 @@ function App() {
             className="absolute inset-0 flex flex-col items-center justify-center space-y-2 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
           >
             <span className="text-lg font-bold text-center text-white">
-            Generate and visualize mathematical plots and graphs interactively.
+              Generate and visualize mathematical plots and graphs interactively.
             </span>
 
           </div>
@@ -151,7 +171,7 @@ function App() {
             className="absolute inset-0 flex flex-col items-center justify-center space-y-2 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
           >
             <span className="text-lg font-bold text-center text-white">
-            Interact with an intelligent chat assistant for help with your queries.
+              Interact with an intelligent chat assistant for help with your queries.
             </span>
 
           </div>
@@ -206,8 +226,8 @@ function App() {
           </div>
         </Button>
 
-      </div>
-      <div className="mt-12 w-full">{renderComponent()}</div>
+      </div>)}
+      <div className="mt-[10vh] w-full">{renderComponent()}</div>
     </div>
 
   );

@@ -925,7 +925,7 @@ const styles = {
         borderRadius: '20px',         // Rounded corners
         overflow: 'auto',
         border: '20px solid rgb(139, 0, 0)',
-        width: '99vw',
+        width: '100vw',
         
     },
     left: {

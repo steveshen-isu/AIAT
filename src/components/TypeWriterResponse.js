@@ -13,6 +13,8 @@ import katex from 'katex';
         let isMounted = true;
         content = content.replace(/\\\[\s*/g, '\\[');  // Replace \[ with \( and remove leading spaces
         content = content.replace(/\s*\\\]/g, '\\]');  // Replace \] with \) and remove trailing spaces
+        content = content.replace(/\*\*(.*?)\*\*/g, '\\(\\bullet\\,\\)$1');
+
         console.log(content);
         const regex = /(\\\(.*?\\\))|(\\\[[\s\S]*?\\\])|(\\begin\{array\}[\s\S]*?\\end\{array\})|(\\textit\{.*?\})|(\\textbf\{.*?\})/g;
         const parts = content.split(regex).filter(part => part !== null && part !== undefined && part !== '');

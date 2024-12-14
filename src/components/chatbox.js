@@ -11,9 +11,11 @@ function ChatBox() {
     const [responses, setResponses] = useState([]);
     const [pastedImage, setPastedImage] = useState(null);
     const [loading, setLoading] = useState(false);
+    const [errorMessage, setErrorMessage] = useState(null);
 
     const sendMessage = async () => {
         if (!message && !pastedImage) return;
+        setErrorMessage(null)
 
         setLoading(true);
         try {
@@ -47,7 +49,36 @@ function ChatBox() {
             setMessage('');
             setPastedImage(null);
         } catch (error) {
-            console.error('Error:', error);
+            console.error('API Error:', error);
+            setErrorMessage('An unexpected error occurred. Please try again.');
+
+            // Check if the error has a response (from the backend)
+            if (error.response) {
+                console.error('Error Response:', error.response.data);
+
+                // Handle server errors (e.g., 500)
+                if (error.response.status === 500) {
+                    setErrorMessage(
+                        error.response.data.message || 'An unexpected error occurred on the server.'
+                    );
+                } else {
+                    setErrorMessage(error.response.data.message || 'An error occurred.');
+                }
+            }
+            // Handle network or other client-side errors (e.g., timeout, connection issues)
+            else if (error.message) {
+                if (error.message === 'Network Error') {
+                    setErrorMessage('Network error: Unable to reach the server. Please try again later.');
+                } else if (error.code === 'ECONNABORTED') {
+                    setErrorMessage('Request Timeout: The request took too long to complete. Please try again later.');
+                } else {
+                    setErrorMessage(`Unexpected error: I'm not smart enough for this task. Try something easier`);
+                }
+            }
+            // Handle cases where error object is not properly structured (fallback)
+            else {
+                setErrorMessage('An unexpected error occurred. Please try again.');
+            }
         } finally {
             setLoading(false);
         }
@@ -77,9 +108,9 @@ function ChatBox() {
         setPastedImage(null);
     };
     return (
-        <div className="flex flex-col h-144 bg-gray-100">
+        <div className="flex flex-col h-[80vh] bg-gray-100">
             {/* Chat container */}
-            <div className="flex-1 overflow-y-auto p-4 mb-4">
+            <div className="h-[75vh] overflow-y-auto">
                 {/* Displaying conversation */}
                 {responses.map((item, index) => (
                     <div key={index} className="mb-4 w-full max-w-6x1 flex-row-reverse justify-start">
@@ -87,11 +118,11 @@ function ChatBox() {
                             {/* User message */}
                             <div className="flex flex-col items-end justify-end" >
                                 <div className="bg-blue-500 text-white p-2 rounded-lg max-w-xs">
-                                <p><b>You:</b></p>
-                <div 
-                    className="prose" 
-                    dangerouslySetInnerHTML={{ __html: item.query }} 
-                />                                </div>
+                                    <p><b>You:</b></p>
+                                    <div
+                                        className="prose"
+                                        dangerouslySetInnerHTML={{ __html: item.query }}
+                                    />                                </div>
 
                             </div>
 
@@ -99,7 +130,7 @@ function ChatBox() {
 
                             <div className="max-w-4x1 bg-gray-600 p-4 rounded-lg shadow-lg text-right ml-auto">
 
-                                <p><b>GPT:</b>
+                                <p><b>AI Response:</b>
                                     <TypewriterResponse content={item.response} />
                                 </p>
                             </div>
@@ -120,15 +151,15 @@ function ChatBox() {
             </div>
 
             {/* Message input (always at the bottom) */}
-            <div className="flex items-center space-x-4 p-4 border-t border-gray-300 bg-white">
-            <textarea
-    className="!custom-textarea p-4 bg-white border border-gray-300 rounded-lg w-1/2 max-w-3x1 resize-none !text-sm placeholder-gray-500"
-    value={message}
-    onChange={(e) => setMessage(e.target.value)}
-    onPaste={handlePaste}
-    rows="3"  // Increasing the rows for a larger box
-    placeholder="Type your message or paste an image..."
- />
+            <div className="flex h-[16vh] items-center space-x-4 p-4 border-t border-gray-300 bg-white fixed bottom-0 w-full mt-10">
+                <textarea
+                    className="!custom-textarea p-4 bg-white border border-gray-300 rounded-lg w-1/2 max-w-3x1 resize-none !text-hase placeholder-gray-500"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    onPaste={handlePaste}
+                    rows="3"  // Increasing the rows for a larger box
+                    placeholder="Type your message or paste an image..."
+                />
 
                 <button
                     onClick={sendMessage}
@@ -147,13 +178,20 @@ function ChatBox() {
                                 alt="Pasted content"
                                 className="max-w-xs h-auto mt-2 rounded-lg"
                             />
-                            <button
-                                onClick={() => setPastedImage(null)}
-                                className="bg-red-500 text-white p-2 mt-2 rounded-lg"
-                            >
-                                Remove Image
-                            </button>
+
                         </div>
+                    </div>
+                )}
+                {pastedImage && (<button
+                    onClick={() => setPastedImage(null)}
+                    className="bg-red-500 text-white p-2 mt-2 rounded-lg"
+                >
+                    Remove Image
+                </button>)}
+
+                {errorMessage && (
+                    <div className="mt-4 p-2 bg-red-100 text-red-700 border border-red-400 rounded">
+                        <strong>Error:</strong> {errorMessage}
                     </div>
                 )}
             </div>

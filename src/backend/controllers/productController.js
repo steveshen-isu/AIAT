@@ -4,28 +4,20 @@ dotenv.config();
 
 console.log('db_host', process.env.DB_HOST);
 // Setting up the MySQL connection
-const db = mysql.createConnection({
+const db = mysql.createPool({
     host: process.env.DB_HOST,  // localhost
     user: process.env.DB_USER,  // root
     password: process.env.DB_PASS,  // 465653650szr!!!
     database: process.env.DB_NAME,  // ai_math_solver
-});
-
-db.connect(err => {
-    if (err) {
-        console.error('Error connecting to MySQL:', err.message);
-    } else {
-        console.log('Connected to MySQL server.');
-    }
+    waitForConnections: true,
+    connectionLimit: 10,  // Limit the number of simultaneous connections
+    queueLimit: 0
 });
 
 
 
-// Check if the connection is still open
-if (db.state !== 'authenticated') {
-    console.log('Reconnecting to database...');
-    db.connect();
-}
+
+
 
 // Controller for handling POST requests to add a subject
 export const addSubject = (req, res) => {

@@ -213,8 +213,8 @@ function PlotGenerator() {
             </div>
 
             {/* Right side (Plot Image) */}
-            <div className="flex justify-center items-center w-full mt-6 md:mt-0">
-                <div className="w-full max-w-10xl h-144 bg-gray-100 rounded-lg shadow-md flex justify-center items-center">
+            <div className="flex justify-center items-center h-[80vh] w-full mt-6 md:mt-0">
+                <div className="w-full max-w-10xl h-[80vh] bg-gray-100 rounded-lg shadow-md flex justify-center items-center">
                     {/* Show Loading or Placeholder Text */}
                     {!plotUrl && !dataD3Plot && !errorMessage && !ButtonDisabled && !d3ButtonDisabled && (
                         <span className="text-gray-600 text-xl">Waiting for your request...</span>
@@ -230,13 +230,13 @@ function PlotGenerator() {
                     )}
 
                     {dataD3Plot && (
-                        <div className="plot-container rounded-lg p-4" style={{ width: '100%', maxWidth: '900px', height: '500px', overflow: 'hidden' }}>
+                        <div className="plot-container rounded-lg p-4" style={{ width: '100%', maxWidth: '1200px', height: '900px', overflow: 'hidden' }}>
                             <Plot
                                 data={dataD3Plot.data}
                                 layout={{
                                     ...dataD3Plot.layout,
-                                    width: 900,  // Set fixed width for the plot
-                                    height: 500, // Set fixed height for the plot
+                                    width: 1000,  // Set fixed width for the plot
+                                    height: 800, // Set fixed height for the plot
                                 }}
                                 config={{
                                     responsive: true,
