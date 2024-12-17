@@ -55,4 +55,12 @@
   .backspace-button:hover {
     background-color: #e0a800;
   }
+  .eval-button {
+    grid-column: span 2;
+    background-color: #28a745;
+  }
+  
+  .eval-button:hover {
+    background-color: #4caf50;
+  }
   

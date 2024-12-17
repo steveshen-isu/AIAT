@@ -65,7 +65,7 @@ import katex from 'katex';
 
 
 
-    const TypewriterRendererResponse = memo(({ content }) => {
+    const TypewriterRendererResponsePlain = memo(({ content }) => {
         const [displayContent, setDisplayContent] = useState('');
 
         useEffect(() => {
@@ -83,25 +83,20 @@ import katex from 'katex';
             <div>
                 <div
                     style={{
-                        textAlign: 'left',         // Align text to the left
-                        width: '60vw',
-                        margin: '0 auto',          // Center the div horizontally
-                        padding: '10px',           // Add padding
-                        maxWidth: '1300px',         // Set a max width for the container
-                        marginLeft: '1vw',        // Add some space from the left
-                        border: '0px solid gray',  // Gray border
-                        backgroundColor: 'black',  // Black background
-                        color: 'white',            // White text color for contrast
+                        color: 'black',            // White text color for contrast
                         fontFamily: 'Segoe UI, sans-serif',  // Font family
                         fontSize: '18px',          // Font size
                         fontWeight: 'lighter',        // Bold text
-                        fontStyle: 'normal',       // Italic text
-                        lineHeight: '1.6',         // Line height for readability
-                        letterSpacing: '1px'       // Space between letters
-                    }}
+                        fontStyle: 'normal', // Font style
+                        maxWidth: '100%', // Ensure width does not exceed parent
+                        maxHeight: '100%', // Ensure height does not exceed parent
+                        overflow: 'auto', // Enable scrolling if content overflows
+                        boxSizing: 'border-box', // Include padding and border in width/height
+                        wordWrap: 'break-word', // Prevent long words from breaking layout                    
+                        }}
                     dangerouslySetInnerHTML={{ __html: displayContent }}
                 />
             </div>
         );
     });
-    export default TypewriterRendererResponse;
+    export default TypewriterRendererResponsePlain;

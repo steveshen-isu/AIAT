@@ -1,4 +1,5 @@
 {
+  "homepage": "/",
   "name": "ai-solver",
   "version": "0.1.0",
   "private": true,
@@ -15,9 +16,12 @@
     "git": "^0.1.5",
     "katex": "^0.16.10",
     "langid": "^0.0.1",
+    "mathjs": "^14.0.1",
+    "nerdamer": "^1.1.13",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.4.0",
+    "react-router-dom": "^7.0.2",
     "react-scripts": "5.0.1",
     "tailwind-merge": "^2.5.5",
     "web-vitals": "^2.1.4"
