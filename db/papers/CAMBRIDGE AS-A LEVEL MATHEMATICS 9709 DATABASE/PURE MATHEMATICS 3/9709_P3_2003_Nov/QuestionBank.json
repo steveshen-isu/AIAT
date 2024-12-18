@@ -1,0 +1,549 @@
+{
+    "Metadata": {
+        "QuestionTitle": "Solving Inequality Involving Exponential and Absolute Values",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2003,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 1,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Inequalities",
+        "TopicsCovered": [
+            "Absolute Value Inequalities",
+            "Exponential Equations"
+        ],
+        "MarksAllocation": {
+            "Total": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2003_Nov/q1.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Solve the inequality \\( |2^x - 8| < 5 \\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "To solve \\(|2^x - 8| < 5\\), we break it into two inequalities:\n\\[-5 < 2^x - 8 < 5.\\]\n\nSimplifying further:\n\\[3 < 2^x < 13.\\]\n\nWe solve for \\(x\\) using logarithms or exponentials:\n1. For \\(2^x = 3\\), we get \\(x = \\log_2(3)\\), approximately \\(x \\approx 1.58\\).\n2. For \\(2^x = 13\\), we get \\(x = \\log_2(13)\\), approximately \\(x \\approx 3.70\\).\n\nThus, the solution is:\n\\[1.58 < x < 3.70.\\]",
+                "MarkingScheme": "B1 for non-modular inequality setup, M1 for solving exponential equations, A1 for obtaining critical values \\(1.58\\) and \\(3.70\\), A1 for correct final answer \\(1.58 < x < 3.70\\)."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Binomial Expansion with Negative Powers",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2003,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 2,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Binomial Expansion",
+        "TopicsCovered": [
+            "Expansion of Powers",
+            "Simplification of Coefficients"
+        ],
+        "MarksAllocation": {
+            "Total": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2003_Nov/q2.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Expand \\((2 + x^2)^{-2}\\) in ascending powers of \\(x\\), up to and including the term in \\(x^4\\), simplifying the coefficients."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Using the binomial expansion formula:\n\\[ (1 + u)^n = 1 + nu + \\frac{n(n-1)}{2!}u^2 + \\frac{n(n-1)(n-2)}{3!}u^3 + \\dots \\]\nFor \\( (2 + x^2)^{-2} \\), factor out \\(2^{-2}\\):\n\\[ (2 + x^2)^{-2} = 2^{-2}(1 + \\frac{x^2}{2})^{-2}. \\]\n\nNow expand \\( (1 + \\frac{x^2}{2})^{-2} \\):\n\\[ (1 + \\frac{x^2}{2})^{-2} = 1 - 2 \\cdot \\frac{x^2}{2} + \\frac{(-2)(-3)}{2!} \\left(\\frac{x^2}{2}\\right)^2. \\]\n\nSimplify each term:\n\\[ (1 + \\frac{x^2}{2})^{-2} = 1 - x^2 + \\frac{3}{4}x^4. \\]\n\nMultiply through by \\(2^{-2} = \\frac{1}{4}\\):\n\\[ (2 + x^2)^{-2} = \\frac{1}{4} - \\frac{1}{4}x^2 + \\frac{3}{16}x^4. \\]\n\nThus, the expansion up to \\(x^4\\) is:\n\\[ \\frac{1}{4} - \\frac{1}{4}x^2 + \\frac{3}{16}x^4. \\]",
+                "MarkingScheme": "M1 for correct unsimplified expansion. B1 for first term \\( \\frac{1}{4} \\). A1 + A1 for correct next two terms: \\( -\\frac{1}{4}x^2 \\) and \\( \\frac{3}{16}x^4 \\)."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Solve Trigonometric Equation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2003,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 3,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Trigonometry",
+        "TopicsCovered": [
+            "Trigonometric Identities",
+            "Quadratic Equations in Trigonometric Functions"
+        ],
+        "MarksAllocation": {
+            "PartA": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2003_Nov/q3.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Solve the equation \\( \\cos \\theta + 3 \\cos 2\\theta = 2 \\), giving all solutions in the interval \\( 0^\\circ \\leq \\theta \\leq 180^\\circ \\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Use the trigonometric double-angle formula for \\( \\cos 2\\theta \\), which is \\( \\cos 2\\theta = 2\\cos^2\\theta - 1 \\).\n\n1. Substituting into the equation:\n   \\[ \\cos \\theta + 3(2\\cos^2\\theta - 1) = 2. \\]\n   Simplify:\n   \\[ \\cos \\theta + 6\\cos^2\\theta - 3 = 2. \\]\n   Rearrange into a quadratic form:\n   \\[ 6\\cos^2\\theta + \\cos \\theta - 5 = 0. \\]\n\n2. Solve for \\( \\cos \\theta \\) using the quadratic formula:\n   \\[ \\cos \\theta = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}, \\]\n   where \\( a = 6, b = 1, c = -5 \\):\n   \\[ \\cos \\theta = \\frac{-1 \\pm \\sqrt{1^2 - 4(6)(-5)}}{2(6)}. \\]\n   Simplify:\n   \\[ \\cos \\theta = \\frac{-1 \\pm \\sqrt{1 + 120}}{12}. \\]\n   \\[ \\cos \\theta = \\frac{-1 \\pm 11}{12}. \\]\n\n   Solutions:\n   \\[ \\cos \\theta = \\frac{10}{12} = \\frac{5}{6} \\quad \\text{or} \\quad \\cos \\theta = \\frac{-12}{12} = -1. \\]\n\n3. Find the corresponding angles in the interval \\( 0^\\circ \\leq \\theta \\leq 180^\\circ \\):\n   - For \\( \\cos \\theta = \\frac{5}{6} \\), \\( \\theta = 33.6^\\circ \\) (or similar depending on precision).\n   - For \\( \\cos \\theta = -1 \\), \\( \\theta = 180^\\circ. \\)\n\nFinal Solutions:\n\\[ \\theta = 33.6^\\circ \\text{ and } 180^\\circ. \\]",
+                "MarkingScheme": "M1 for correct use of \\( \\cos 2\\theta \\), A1 for obtaining quadratic form, M1 for solving quadratic, A1 for correct solutions \\( \\theta = 33.6^\\circ, 180^\\circ \\)."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Derivative and Tangent to a Curve",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2003,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Differentiation and Tangents",
+        "TopicsCovered": [
+            "Implicit Differentiation",
+            "Equation of Tangents"
+        ],
+        "MarksAllocation": {
+            "PartI": 3,
+            "PartII": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2003_Nov/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Express \\( \\frac{dy}{dx} \\) in terms of \\(x\\) and \\(y\\) given that \\( \\sqrt{x} + \\sqrt{y} = \\sqrt{a} \\), where \\(a\\) is a positive constant."
+            },
+            {
+                "Part": "ii",
+                "Text": "The straight line with equation \\( y = x \\) intersects the curve at the point \\( P \\). Find the equation of the tangent to the curve at \\( P \\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Differentiating \\( \\sqrt{x} + \\sqrt{y} = \\sqrt{a} \\) with respect to \\(x\\), we get:\n\\[\n\\frac{1}{2\\sqrt{x}} + \\frac{1}{2\\sqrt{y}} \\frac{dy}{dx} = 0.\n\\]\nRearranging for \\( \\frac{dy}{dx} \\):\n\\[\n\\frac{dy}{dx} = -\\frac{\\sqrt{y}}{\\sqrt{x}}.\n\\]",
+                "MarkingScheme": "B1 for \\( \\frac{1}{2\\sqrt{x}} \\) and \\( \\frac{1}{2\\sqrt{y}} \\), B1 for correct rearrangement and result."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Given \\( y = x \\), substituting into \\( \\sqrt{x} + \\sqrt{y} = \\sqrt{a} \\):\n\\[\n2\\sqrt{x} = \\sqrt{a} \\implies \\sqrt{x} = \\frac{\\sqrt{a}}{2} \\implies x = \\frac{a}{4}.\n\\]\nThus, \\( P = \\left( \\frac{a}{4}, \\frac{a}{4} \\right) \\).\nUsing \\( \\frac{dy}{dx} = -\\frac{\\sqrt{y}}{\\sqrt{x}} \\):\n\\[\n\\frac{dy}{dx} = -1 \\text{ at } P.\n\\]\nThe tangent line equation is:\n\\[\ny - \\frac{a}{4} = -1(x - \\frac{a}{4}).\n\\]\nSimplifying:\n\\[\nx + y = \\frac{a}{2}.\n\\]",
+                "MarkingScheme": "B1 for finding coordinates of \\( P \\), M1 for substituting \\( \\frac{dy}{dx} \\) correctly, A1 for correct tangent equation."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Root of Trigonometric Equation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2003,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Numerical Methods and Trigonometry",
+        "TopicsCovered": [
+            "Graphical Roots",
+            "Iteration Formula",
+            "Root Convergence"
+        ],
+        "MarksAllocation": {
+            "PartI": 2,
+            "PartII": 2,
+            "PartIII": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+           "/9709_P3_2003_Nov/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "By sketching suitable graphs, show that the equation \\( \\sec x = 3 - x^2 \\) has exactly one root in the interval \\( 0 < x < \\frac{1}{2} \\pi \\)."
+            },
+            {
+                "Part": "ii",
+                "Text": "Show that, if a sequence of values given by the iterative formula:\n\\[\n    x_{n+1} = \\cos^{-1} \\left( \\frac{1}{3 - x_n^2} \\right)\n\\]\nconverges, then it converges to a root of the equation given in part (i)."
+            },
+            {
+                "Part": "iii",
+                "Text": "Use this iterative formula, with initial value \\( x_1 = 1 \\), to determine the root in the interval \\( 0 < x < \\frac{1}{2} \\pi \\) correct to 2 decimal places, showing the result of each iteration."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Sketch the graphs \\( y = \\sec x \\) and \\( y = 3 - x^2 \\) for \\( 0 < x < \\frac{1}{2} \\pi \\).\nShow that they intersect exactly once. This is because \\( \\sec x \\) is increasing, while \\( 3 - x^2 \\) is decreasing. The root exists where \\( \\sec x = 3 - x^2 \\).",
+                "MarkingScheme": "B1 for correct sketch, B1 for identifying exactly one intersection."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Substitute the iterative formula \\( x_{n+1} = \\cos^{-1} \\left( \\frac{1}{3 - x_n^2} \\right) \\) into the original equation.\nIf the sequence converges, then \\( x_{n+1} = x_n \\), leading to \\( x = \\cos^{-1} \\left( \\frac{1}{3 - x^2} \\right) \\). Rearrange to show \\( \\sec x = 3 - x^2 \\).",
+                "MarkingScheme": "B1 for stating formula, B1 for correct logical explanation."
+            },
+            {
+                "Part": "iii",
+                "Solution": "Using the initial value \\( x_1 = 1 \\):\n1. Compute \\( x_2 = \\cos^{-1} \\left( \\frac{1}{3 - 1^2} \\right) \\).\n2. Continue iterating until successive values converge to 2 decimal places.\nResult: \\( x \\approx 1.03 \\).",
+                "MarkingScheme": "M1 for iterative use of formula, A1 for obtaining correct final answer, A1 for showing sufficient iterations."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Minimum Point and Area Under Curve",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2003,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Calculus",
+        "TopicsCovered": [
+            "Differentiation",
+            "Integration",
+            "Area Under Curve"
+        ],
+        "MarksAllocation": {
+            "PartI": 4,
+            "PartII": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2003_Nov/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Calculate the \\(x\\)-coordinate of \\(M\\)."
+            },
+            {
+                "Part": "ii",
+                "Text": "Find the area of the region bounded by \\(OA\\), \\(OB\\), and the curve, giving your answer in terms of \\(e\\)."
+            }
+        ],
+        "Text": "The diagram shows the curve \\(y = (3 - x)e^{-2x}\\) and its minimum point \\(M\\). The curve intersects the \\(x\\)-axis at \\(A\\) and the \\(y\\)-axis at \\(B\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "To find the \\(x\\)-coordinate of \\(M\\), differentiate \\(y = (3 - x)e^{-2x}\\) using the product rule:\n\\[\n\\frac{dy}{dx} = -e^{-2x} + (3 - x)(-2e^{-2x}).\n\\]\nSimplify:\n\\[\n\\frac{dy}{dx} = -e^{-2x} - 2(3 - x)e^{-2x}.\n\\]\nFactorize:\n\\[\n\\frac{dy}{dx} = e^{-2x}(-1 - 2(3 - x)) = e^{-2x}(2x - 7).\n\\]\nSet \\(\\frac{dy}{dx} = 0\\) to find the stationary point:\n\\[2x - 7 = 0, \\quad x = \\frac{7}{2} = 3.5.\\]\nThus, the \\(x\\)-coordinate of \\(M\\) is \\(3.5\\).",
+                "MarkingScheme": "M1 for applying product rule, A1 for correct simplification, A1 for solving \\(x = 3.5\\)."
+            },
+            {
+                "Part": "ii",
+                "Solution": "To find the area under the curve and the axes, integrate \\(y = (3 - x)e^{-2x}\\) with respect to \\(x\\) over \\([0, 3]\\):\n\\[\n\\text{Area} = \\int_0^3 (3 - x)e^{-2x} \\, dx.\n\\]\nUsing integration by parts:\nLet \\(u = (3 - x), \\, dv = e^{-2x}dx\\), then \\(du = -dx, \\; v = -\\frac{1}{2}e^{-2x}.\\)\n\\[\n\\int u \\, dv = uv - \\int v \\, du.\n\\]\nSubstitute:\n\\[\n\\int_0^3 (3 - x)e^{-2x}dx = \\left[-\\frac{1}{2}(3 - x)e^{-2x}\\right]_0^3 + \\frac{1}{2} \\int_0^3 e^{-2x}dx.\n\\]\nEvaluate the terms:\n- First term: \\(\\left[-\\frac{1}{2}(3 - x)e^{-2x}\\right]_0^3 = \\left(0 - \\frac{1}{2}(3)e^{-6}\\right) = -\\frac{3}{2}e^{-6}.\\)\n- Second term: \\(\\frac{1}{2} \\int_0^3 e^{-2x}dx = \\frac{1}{2} \\left[-\\frac{1}{2}e^{-2x}\\right]_0^3 = \\frac{1}{4}(1 - e^{-6}).\\)\nCombine the results:\n\\[\n\\text{Area} = \\frac{1}{4}(1 + e^{-6}) + \\frac{3}{2}e^{-6}.\n\\]\nSimplify:\n\\[\n\\text{Area} = \\frac{1}{4}(5 + e^{-6}).\n\\]\nThus, the area is \\(\\frac{1}{4}(5 + e^{-6})\\).",
+                "MarkingScheme": "M1 for correct setup, A1 for integrating correctly, M1 for limits, A1 for final area."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Complex Number in Argand Diagram",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2003,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 7,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Complex Numbers",
+        "TopicsCovered": [
+            "Complex Number Arithmetic",
+            "Argand Diagram",
+            "Locus of Complex Numbers"
+        ],
+        "MarksAllocation": {
+            "PartI": 3,
+            "PartII": 3,
+            "PartIII": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2003_Nov/q7.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Express \\(u\\) in the form \\(x + iy\\), where \\(x\\) and \\(y\\) are real."
+            },
+            {
+                "Part": "ii",
+                "Text": "Sketch an Argand diagram showing the point representing the complex number \\(u\\). Show on the same diagram the locus of the complex number \\(z\\) such that \\(|z - u| = 2\\)."
+            },
+            {
+                "Part": "iii",
+                "Text": "Find the greatest value of \\(\\arg z\\) for points on this locus."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Multiply numerator and denominator of \\(\\frac{7 + 4i}{3 - 2i}\\) by \\(3 + 2i\\):\n\\[\n\\frac{(7 + 4i)(3 + 2i)}{(3 - 2i)(3 + 2i)} = \\frac{13 + 26i}{13}.\\]\nSimplify:\n\\[u = 1 + 2i.\\]",
+                "MarkingScheme": "M1 for correct multiplication process, A1 for simplified real and imaginary parts."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Draw the Argand diagram with the point \\(u = 1 + 2i\\) located correctly.\nThe locus \\(|z - u| = 2\\) is a circle centered at \\(u = 1 + 2i\\) with radius 2.",
+                "MarkingScheme": "B1 for point \\(U\\), B1 for circle center \\(U\\), B1 for correct radius."
+            },
+            {
+                "Part": "iii",
+                "Solution": "The maximum \\(\\arg z\\) corresponds to the tangent from the origin \\(O\\) to the circle centered at \\(u\\):\n\\[\\arg z = \\tan^{-1}\\left(\\frac{2}{1}\\right) = 63.4^\\circ.\\]\nFinal answer:\n\\[\\arg z = 126.9^\\circ.\\]",
+                "MarkingScheme": "B1 for relevance of tangent, M1 for method to find \\(\\arg z\\), A1 for correct value."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Partial Fractions and Definite Integration",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2003,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 8,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Partial Fractions and Integration",
+        "TopicsCovered": [
+            "Partial Fractions",
+            "Definite Integration"
+        ],
+        "MarksAllocation": {
+            "PartI": 5,
+            "PartII": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2003_Nov/q8.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Express \\( f(x) \\) in the form \\( A + \\frac{B}{x-1} + \\frac{Cx + D}{x^2 + 1} \\), where \\( A, B, C, D \\) are constants."
+            },
+            {
+                "Part": "ii",
+                "Text": "Hence show that \\( \\int_2^3 f(x) \\, dx = 1 \\)."
+            }
+        ],
+        "Text": "Let \\( f(x) = \\frac{x^3 - x - 2}{(x-1)(x^2 + 1)} \\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Divide the numerator \\( x^3 - x - 2 \\) by the denominator \\( (x-1)(x^2 + 1) \\) to obtain a quadratic remainder.\n\nStep 1: Division gives \\( A = 1 \\).\nStep 2: Decompose the remainder into \\( \\frac{B}{x-1} + \\frac{Cx + D}{x^2 + 1} \\):\n- Matching coefficients yields \\( B = -1, C = 2, D = 0 \\).\n\nFinal form: \\[ f(x) = 1 + \\frac{-1}{x-1} + \\frac{2x}{x^2 + 1}. \\]",
+                "MarkingScheme": "M1 for division, A1 for finding A, M1 for obtaining B, C, D, A1 for correct final answer."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Integrate each term of \\( f(x) = 1 + \\frac{-1}{x-1} + \\frac{2x}{x^2 + 1} \\):\n\\[ \\int f(x) \\, dx = x - \\ln(x-1) + \\ln(x^2 + 1) \\].\n\nStep 1: Evaluate at the limits \\( x = 2 \\) and \\( x = 3 \\):\n\\[ \\int_2^3 f(x) \\, dx = [3 - \\ln(2) + \\ln(10)] - [2 - \\ln(1) + \\ln(5)]. \\]\n\nSimplify:\n\\[ \\int_2^3 f(x) \\, dx = 1. \\]",
+                "MarkingScheme": "B1√ for correct integration terms, M1 for substituting limits, A1 for obtaining exact result."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Differential Equation of Pressure Decay",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2003,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 9,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Differential Equations",
+        "TopicsCovered": [
+            "Solving Differential Equations",
+            "General Solution",
+            "Initial Conditions",
+            "Variable Separation"
+        ],
+        "MarksAllocation": {
+            "PartI": 3,
+            "PartII": 4,
+            "PartIII": 2,
+            "PartIV": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2003_Nov/q9.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "(i)",
+                "Text": "Find, in any form, the general solution of this differential equation."
+            },
+            {
+                "Part": "(ii)",
+                "Text": "Given that \\(P = 5A\\) when \\(t = 0\\), and \\(P = 2A\\) when \\(t = 2\\), show that \\(k = \\sqrt{A}\\)."
+            },
+            {
+                "Part": "(iii)",
+                "Text": "Find the value of \\(t\\) when \\(P = A\\)."
+            },
+            {
+                "Part": "(iv)",
+                "Text": "Obtain an expression for \\(P\\) in terms of \\(A\\) and \\(t\\)."
+            }
+        ],
+        "Text": "Compressed air is escaping from a container. The pressure of the air in the container at time \\(t\\) is \\(P\\), and the constant atmospheric pressure of the air outside the container is \\(A\\). The rate of decrease of \\(P\\) is proportional to the square root of the pressure difference \\((P - A)\\). Thus the differential equation connecting \\(P\\) and \\(t\\) is: \n\\[\n\\frac{dP}{dt} = -k\\sqrt{(P - A)},\n\\] \nwhere \\(k\\) is a positive constant."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "(i)",
+                "Solution": "Separate variables and integrate:\n\\[\n\\int \\frac{1}{\\sqrt{P - A}} dP = -k \\int dt.\n\\]\nThe integral of \\(\\frac{1}{\\sqrt{P - A}}\\) is \\(2\\sqrt{P - A}\\), and \\(\\int dt = t\\):\n\\[\n2\\sqrt{P - A} = -kt + c.\n\\]\n",
+                "MarkingScheme": "M1 for separating variables and integrating, A1 for correct terms."
+            },
+            {
+                "Part": "(ii)",
+                "Solution": "Using the conditions \\(P = 5A\\) at \\(t = 0\\), substitute to find \\(c = 4\\sqrt{A}\\). Then use \\(P = 2A\\) at \\(t = 2\\) to find \\(k = \\sqrt{A}\\).",
+                "MarkingScheme": "M1 for substitution of limits, A1 for showing \\(k = \\sqrt{A}\\)."
+            },
+            {
+                "Part": "(iii)",
+                "Solution": "Set \\(P = A\\), solve for \\(t\\):\n\\[\n2\\sqrt{A - A} = -kt + 4\\sqrt{A}.\n\\]\nSimplify to find \\(t = 4\\).",
+                "MarkingScheme": "M1 for correct substitution, A1 for \\(t = 4\\)."
+            },
+            {
+                "Part": "(iv)",
+                "Solution": "Rearranging and squaring the solution from part (i):\n\\[\nP = \\frac{1}{4}A \\left(4 + (4 - t)^2\\right).\n\\]",
+                "MarkingScheme": "M1 for rearranging solution, A1 for obtaining final expression."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Intersection of Lines and Plane Equation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2003,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 10,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Vectors and Planes",
+        "TopicsCovered": [
+            "Intersection of Lines",
+            "Equation of Plane"
+        ],
+        "MarksAllocation": {
+            "PartI": 5,
+            "PartII": 6
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2003_Nov/q10.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "(i)",
+                "Text": "Show that \\( l \\) and \\( m \\) intersect, and find the position vector of their point of intersection.",
+                "Marks": 5
+            },
+            {
+                "Part": "(ii)",
+                "Text": "Find the equation of the plane containing \\( l \\) and \\( m \\), giving your answer in the form \\( ax + by + cz = d \\).",
+                "Marks": 6
+            }
+        ],
+        "Text": "The lines \\( l \\) and \\( m \\) have vector equations:\n\\[\n\\mathbf{r} = \\mathbf{i} - 2\\mathbf{k} + s(2\\mathbf{i} + \\mathbf{j} + 3\\mathbf{k}) \\quad \\text{and} \\quad \\mathbf{r} = 6\\mathbf{i} - 5\\mathbf{j} + 4\\mathbf{k} + t(\\mathbf{i} - 2\\mathbf{j} + \\mathbf{k})\n\\]\nrespectively."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "(i)",
+                "Solution": "Equating the general points on lines \\( l \\) and \\( m \\):\n\\[\n(1 + 2s, s, -2 + 3s) = (6 + t, -5 - 2t, 4 + t)\n\\]\nSolve for \\( s \\) and \\( t \\):\n\\[\ns = 1, \\; t = -3.\n\\]\nSubstitute \\( s = 1 \\) into line \\( l \\) to get the intersection point:\n\\[\n\\mathbf{r} = 3\\mathbf{i} + \\mathbf{j} + \\mathbf{k}.\n\\]\n\n**Marking Scheme:**\n- B1: Express general points of \\( l \\) and \\( m \\).\n- M1: Equate components and solve for \\( s \\) and \\( t \\).\n- A1: Verify solution and obtain intersection point \\( 3\\mathbf{i} + \\mathbf{j} + \\mathbf{k} \\).",
+                "Marks": 5
+            },
+            {
+                "Part": "(ii)",
+                "Solution": "The direction vectors of \\( l \\) and \\( m \\) are \\( \\mathbf{d}_1 = (2, 1, 3) \\) and \\( \\mathbf{d}_2 = (1, -2, 1) \\).\n\nTake the cross product \\( \\mathbf{n} = \\mathbf{d}_1 \\times \\mathbf{d}_2 \\):\n\\[\n\\mathbf{n} = (7, 1, -5).\n\\]\nSubstitute \\( \\mathbf{r} = 3\\mathbf{i} + \\mathbf{j} + \\mathbf{k} \\) into the plane equation \\( 7x + y - 5z = d \\):\n\\[\nd = 17.\n\\]\nFinal answer: \\( 7x + y - 5z = 17 \\).\n\n**Marking Scheme:**\n- B1: Use scalar product or cross product correctly.\n- M1: Solve for \\( d \\) using intersection point.\n- A1: State the equation of the plane in the correct form.",
+                "Marks": 6
+            }
+        ]
+    }
+}

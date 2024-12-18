@@ -1,0 +1,595 @@
+{
+    "Metadata": {
+        "QuestionTitle": "Find the Equation of a Curve",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 1,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Calculus",
+        "TopicsCovered": ["Differentiation", "Integration"],
+        "MarksAllocation": {
+            "PartA": 4
+        },
+        "DifficultyLevel": "Moderate",
+                "ImageUrl": [
+                    "/9709_P1_2023_Nov_13/q1.png"
+                ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "A curve is such that its gradient at a point \\((x, y)\\) is given by \\[\\frac{dy}{dx} = x - 3x^{-1/2}.\\] It is given that the curve passes through the point \\((4, 1)\\). Find the equation of the curve."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Integrate \\( \\frac{dy}{dx} = x - 3x^{-1/2} \\):\n\\[ y = \\int \\left( x - 3x^{-1/2} \\right) dx. \\]\n\\[ y = \\frac{x^2}{2} - 6x^{1/2} + c. \\]\n\nUse the point \\((4, 1)\\) to find \\(c\\):\n\\[ 1 = \\frac{4^2}{2} - 6(4^{1/2}) + c. \\]\n\\[ 1 = 8 - 12 + c. \\]\n\\[ c = 5. \\]\n\nThus, the equation of the curve is:\n\\[ y = \\frac{x^2}{2} - 6x^{1/2} + 5. \\]",
+                "MarkingScheme": "B1 for correct integration, M1 for substituting the point, A1 for solving for \\(c\\) and writing the final equation."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Circle and Y-axis Intersection",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 2,
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 2
+        },
+        "DifficultyLevel": "Moderate",
+                "ImageUrl": [
+                    "/9709_P1_2023_Nov_13/q2.png"
+                ]
+    },
+    "QuestionContent": {
+        "Text": "The circle with equation \\((x - 3)^2 + (y - 5)^2 = 40\\) intersects the y-axis at points \\(A\\) and \\(B\\).\n\n(a) Find the y-coordinates of \\(A\\) and \\(B\\), expressing your answers in terms of surds.\n(b) Find the equation of the circle which has \\(AB\\) as its diameter."
+    },
+    "SolutionContent": {
+        "PartA": {
+            "SolutionSteps": [
+                "Substitute \\(x = 0\\) into \\((x - 3)^2 + (y - 5)^2 = 40\\): \\[ (0 - 3)^2 + (y - 5)^2 = 40. \\]",
+                "Simplify: \\[ 9 + (y - 5)^2 = 40 \\].",
+                "Solve for \\(y\\): \\[ (y - 5)^2 = 31 \\].",
+                "Thus, \\(y = 5 \\pm \\sqrt{31}\\)."
+            ]
+        },
+        "PartB": {
+            "SolutionSteps": [
+                "The midpoint of \\(A\\) and \\(B\\) is the center of the circle: \\[ (0, 5) \\].",
+                "The radius is half the length of \\(AB\\): \\[ r = \\sqrt{31} \\].",
+                "The equation of the circle is \\[ x^2 + (y - 5)^2 = 31. \\]"
+            ]
+        }
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Trigonometric Equation Transformation and Solution",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 3,
+        "QuestionType": "Structured Question",
+        "Level": "AS Level",
+        "MathTopic": "Trigonometry",
+        "TopicsCovered": [
+            "Equation Transformation",
+            "Solving Trigonometric Equations"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_Nov_13/q3.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Show that the equation \\(5 \\cos \\theta - \\sin \\theta \\tan \\theta + 1 = 0\\) may be expressed in the form \\(a \\cos^2 \\theta + b \\cos \\theta + c = 0\\), where \\(a\\), \\(b\\), and \\(c\\) are constants to be found."
+            },
+            {
+                "Part": "b",
+                "Text": "Hence solve the equation \\(5 \\cos \\theta - \\sin \\theta \\tan \\theta + 1 = 0\\) for \\(0 < \\theta < 2\\pi\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "1. Start with the equation:\n   \\[5 \\cos \\theta - \\sin \\theta \\tan \\theta + 1 = 0.\\]\n2. Substitute \\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}\\):\n   \\[5 \\cos \\theta - \\frac{\\sin^2 \\theta}{\\cos \\theta} + 1 = 0.\\]\n3. Multiply through by \\(\\cos \\theta\\):\n   \\[5 \\cos^2 \\theta - (1 - \\cos^2 \\theta) + \\cos \\theta = 0.\\]\n4. Simplify:\n   \\[6 \\cos^2 \\theta + \\cos \\theta - 1 = 0.\\]\nThus, \\(a = 6\\), \\(b = 1\\), \\(c = -1\\).",
+                "MarkingScheme": "M1: Substitute \\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}\\). M1: Multiply through by \\(\\cos \\theta\\). A1: Simplify to final quadratic form."
+            },
+            {
+                "Part": "b",
+                "Solution": "1. Solve the quadratic \\(6 \\cos^2 \\theta + \\cos \\theta - 1 = 0\\) by factoring:\n   \\[(3 \\cos \\theta - 1)(2 \\cos \\theta + 1) = 0.\\]\n   \\[\\cos \\theta = \\frac{1}{3}, \\; \\cos \\theta = -\\frac{1}{2}.\\]\n2. For \\(\\cos \\theta = \\frac{1}{3}\\):\n   \\[\\theta = \\cos^{-1}\\left(\\frac{1}{3}\\right) \\approx 1.23, 2\\pi - 1.23 = 5.05.\\]\n3. For \\(\\cos \\theta = -\\frac{1}{2}\\):\n   \\[\\theta = \\frac{2\\pi}{3}, \\; \\frac{4\\pi}{3}.\\]\n4. Combine solutions:\n   \\[\\theta = 1.23, \\frac{2\\pi}{3}, \\frac{4\\pi}{3}, 5.05.\\]",
+                "MarkingScheme": "M1: Solve quadratic equation. A1: Find all solutions for \\(\\cos \\theta\\). A1 FT: Correct angles for \\(\\theta\\) in given range."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Binomial Expansion and Coefficient Comparison",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "AS Level",
+        "MathTopic": "Binomial Expansion",
+        "TopicsCovered": [
+            "Binomial Expansion",
+            "Coefficient Comparison"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_Nov_13/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Expand the following in ascending powers of \\(x\\) up to and including the term in \\(x^2\\):\n\n(i) \\((1 + 2x)^5\\).\n\n(ii) \\((1 - ax)^6\\), where \\(a\\) is a constant."
+            },
+            {
+                "Part": "b",
+                "Text": "In the expansion of \\((1 + 2x)^5(1 - ax)^6\\), the coefficient of \\(x^2\\) is \\(-5\\).\n\nFind the possible values of \\(a\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a(i)",
+                "Solution": "Expand \\((1 + 2x)^5\\) using the binomial theorem:\n\\[ (1 + 2x)^5 = 1 + 10x + 40x^2 + \\dots.\\]",
+                "MarkingScheme": "B1: Correct expansion up to \\(x^2\\)."
+            },
+            {
+                "Part": "a(ii)",
+                "Solution": "Expand \\((1 - ax)^6\\) using the binomial theorem:\n\\[ (1 - ax)^6 = 1 - 6ax + 15a^2x^2 + \\dots.\\]",
+                "MarkingScheme": "B2: Correct expansion up to \\(x^2\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "The coefficient of \\(x^2\\) in \\((1 + 2x)^5(1 - ax)^6\\):\n1. From \\((1 + 2x)^5\\), \\(40x^2\\).\n2. From \\((1 - ax)^6\\), \\(15a^2x^2\\).\n3. Cross-product terms:\n\\[-6a \\times 10x = -60ax^2.\\]\nTotal coefficient of \\(x^2\\):\n\\[15a^2 - 60a + 40 = -5.\\]\nSimplify:\n\\[15a^2 - 60a + 45 = 0.\\]\nFactorize:\n\\[15(a^2 - 4a + 3) = 0.\\]\n\\[15(a - 1)(a - 3) = 0.\\]\nThus, \\(a = 1\\) or \\(a = 3\\).",
+                "MarkingScheme": "M1: Correctly identify and sum coefficients. DM1: Solve quadratic equation. A1: Correct values of \\(a\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Geometric Progression: Constants and Sum to Infinity",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "AS Level",
+        "MathTopic": "Geometric Progression",
+        "TopicsCovered": [
+            "Finding Constants",
+            "Sum to Infinity"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_Nov_13/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "The first, second and third terms of a geometric progression are \\(2p + 6\\), \\(5p\\) and \\(8p + 2\\) respectively.\n\nFind the possible values of the constant \\(p\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "One of the values of \\(p\\) found in (a) is a negative fraction. Use this value of \\(p\\) to find the sum to infinity of this progression."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "1. For a geometric progression, the ratio of consecutive terms is equal:\n\\[ \\frac{5p}{2p + 6} = \\frac{8p + 2}{5p}. \\]\n2. Cross-multiply and simplify:\n\\[ 5p(8p + 2) = (2p + 6)(5p). \\]\n\\[ 40p^2 + 10p = 10p^2 + 30p + 30. \\]\n3. Rearrange to form a quadratic equation:\n\\[ 30p^2 - 20p - 30 = 0. \\]\n\\[ 3p^2 - 2p - 2 = 0. \\]\n4. Factorize:\n\\[ (3p + 2)(p - 1) = 0. \\]\nThus, \\(p = -\\frac{2}{3}\\) or \\(p = 1\\).",
+                "MarkingScheme": "M1: Correctly set up a valid relationship in terms of \\(p\\). DM1: Form and simplify the quadratic equation. A1: Correct values of \\(p\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "1. Use \\(p = -\\frac{2}{3}\\).\n2. The first term \\(a = 2p + 6 = 2(-\\frac{2}{3}) + 6 = \\frac{50}{9}.\\)\n3. The common ratio \\(r = \\frac{5p}{2p + 6} = \\frac{-\\frac{10}{9}}{\\frac{50}{9}} = -\\frac{1}{5}.\\)\n4. The sum to infinity:\n\\[ S_\\infty = \\frac{a}{1 - r} = \\frac{\\frac{50}{9}}{1 - (-\\frac{1}{5})} = \\frac{\\frac{50}{9}}{\\frac{6}{5}} = \\frac{50}{9} \\cdot \\frac{5}{6} = \\frac{125}{27}. \\]",
+                "MarkingScheme": "M1: Use correct value of \\(p\\) to find \\(a\\). M1: Correctly calculate \\(r\\). DM1: Apply sum to infinity formula. A1: Final answer as \\(\\frac{125}{27}\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Tangent to a Curve",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Tangents and Normals",
+        "TopicsCovered": [
+            "Tangent to a Curve",
+            "Quadratic Equations"
+        ],
+        "MarksAllocation": {
+            "TotalMarks": 7
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_Nov_13/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "A line has equation \\(y = 6x - c\\) and a curve has equation \\(y = cx^2 + 2x - 3\\), where \\(c\\) is a constant. The line is a tangent to the curve at point \\(P\\).\n\nFind the possible values of \\(c\\) and the corresponding coordinates of \\(P\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "1. Equate the line and the curve equations to find the intersection:\n\\[ cx^2 + 2x - 3 = 6x - c. \\]\nRearrange:\n\\[ cx^2 - 4x + (c - 3) = 0. \\]\n2. Since the line is a tangent, the quadratic equation has a repeated root. Apply the discriminant condition:\n\\[ b^2 - 4ac = 0, \\]\nwhere \\(a = c, b = -4, c = c - 3\\):\n\\[ (-4)^2 - 4(c)(c - 3) = 0. \\]\n\\[ 16 - 4(c^2 - 3c) = 0. \\]\nSimplify:\n\\[ 4c^2 - 12c - 16 = 0. \\]\n\\[ c^2 - 3c - 4 = 0. \\]\n3. Factorize:\n\\[ (c - 4)(c + 1) = 0. \\]\nThus, \\(c = 4\\) or \\(c = -1\\).\n\n4. Find the corresponding \\(x\\)-coordinates for \\(c = 4\\):\n\\[ 4x^2 - 4x + 1 = 0 \\implies (2x - 1)^2 = 0 \\implies x = \\frac{1}{2}. \\]\nSubstitute \\(x = \\frac{1}{2}\\) into \\(y = 6x - c\\):\n\\[ y = 6(\\frac{1}{2}) - 4 = -1. \\]\nPoint \\(P = (\\frac{1}{2}, -1)\\).\n\n5. For \\(c = -1\\):\n\\[ -x^2 - 4x - 4 = 0 \\implies (x + 2)^2 = 0 \\implies x = -2. \\]\nSubstitute \\(x = -2\\) into \\(y = 6x - c\\):\n\\[ y = 6(-2) - (-1) = -11. \\]\nPoint \\(P = (-2, -11)\\).",
+                "MarkingScheme": "B1: Form a correct quadratic equation for \\(c\\). M1: Apply the discriminant condition. A1: Solve for \\(c\\). DM1: Substitute \\(c\\) values into the quadratic to find \\(x\\)-coordinates. A1: Find the corresponding \\(y\\)-coordinates."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Function Operations and Inverses",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 7,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Functions and Inverses",
+        "TopicsCovered": [
+            "Finding the Range",
+            "Inverse Functions",
+            "Composite Functions"
+        ],
+        "MarksAllocation": {
+            "PartA": 1,
+            "PartB": 4,
+            "PartC": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_Nov_13/q7.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "The function \\( f \\) is defined by \\( f(x) = 1 + \\frac{3}{x - 2} \\) for \\( x > 2 \\).\n\nState the range of \\( f \\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Obtain an expression for \\( f^{-1}(x) \\) and state the domain of \\( f^{-1} \\)."
+            },
+            {
+                "Part": "c",
+                "Text": "The function \\( g \\) is defined by \\( g(x) = 2x - 2 \\) for \\( x > 0 \\).\n\nObtain a simplified expression for \\( gf(x) \\)."
+            }
+        ],
+        "Text": "The function \\( f \\) is defined by \\( f(x) = 1 + \\frac{3}{x - 2} \\) for \\( x > 2 \\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The range of \\( f \\) is \\( y > 1 \\), since \\( \\frac{3}{x-2} \\) is positive for \\( x > 2 \\), and adding 1 shifts the range up by 1.",
+                "MarkingScheme": "B1: Correctly stating \\( y > 1 \\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "To find \\( f^{-1}(x) \\):\n\n1. Start with \\( y = 1 + \\frac{3}{x-2} \\).\n2. Rearrange: \\( y - 1 = \\frac{3}{x - 2} \\).\n3. Multiply through: \\( (x - 2)(y - 1) = 3 \\).\n4. Solve for \\( x \\): \\( x = \\frac{3}{y - 1} + 2 \\).\n\nThus, \\( f^{-1}(x) = \\frac{3}{x - 1} + 2 \\).\n\nThe domain of \\( f^{-1}(x) \\) is \\( x > 1 \\), since the range of \\( f(x) \\) was \\( y > 1 \\).",
+                "MarkingScheme": "M1: Rearrange and isolate \\( x \\).\nDM1: Clear the fraction and solve for \\( x \\).\nA1: Final expression for \\( f^{-1}(x) \\).\nB1FT: Correct domain \\( x > 1 \\), following range from part (a)."
+            },
+            {
+                "Part": "c",
+                "Solution": "Substitute \\( f(x) = 1 + \\frac{3}{x - 2} \\) into \\( g(x) \\):\n\\[ gf(x) = g\\left(1 + \\frac{3}{x - 2}\\right) = 2\\left(1 + \\frac{3}{x - 2}\\right) - 2. \\]\nSimplify:\n\\[ gf(x) = \\frac{6}{x - 2}. \\]",
+                "MarkingScheme": "M1: Substitute \\( f(x) \\) into \\( g(x) \\).\nA1: Simplified expression \\( gf(x) = \\frac{6}{x - 2} \\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Sine Function and Stationary Points",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 8,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Trigonometry and Transformations",
+        "TopicsCovered": [
+            "Sine Function",
+            "Transformations",
+            "Stationary Points"
+        ],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_Nov_13/q8.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "The diagram shows part of the graph of \\(y = \\sin(a(x + b))\\), where \\(a\\) and \\(b\\) are positive constants.\n\nState the value of \\(a\\) and one possible value of \\(b\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Another curve, with equation \\(y = f(x)\\), has a single stationary point at the point \\((p, q)\\), where \\(p\\) and \\(q\\) are constants. This curve is transformed to a curve with equation\n\\(y = -3f\\left(\\frac{1}{4}(x + 8)\\right)\\).\n\nFor the transformed curve, find the coordinates of the stationary point, giving your answer in terms of \\(p\\) and \\(q\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "From the diagram, the period of \\(\\sin(a(x+b))\\) is \\(2\\pi/a\\), which is observed to be \\(4\\pi\\). Thus, \\(a = \\frac{1}{2}\\).\n\nThe phase shift \\(b\\) can be observed as a horizontal translation such that the maximum of the sine wave aligns with \\(x = \\frac{1}{3}\\pi\\). Hence, \\(b = \\frac{\\pi}{3}\\).",
+                "MarkingScheme": "B1 for \\(a = \\frac{1}{2}\\), B1 for \\(b = \\frac{\\pi}{3}\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "The transformation \\(y = -3f\\left(\\frac{1}{4}(x + 8)\\right)\\) applies:\n- Horizontal scaling by a factor of 4.\n- Horizontal translation of \\(-8\\).\n- Vertical scaling by \\(-3\\).\n\nThe stationary point \\((p, q)\\) is transformed to:\n\\[\n\\text{x-coordinate: } 4p - 8, \\quad \\text{y-coordinate: } -3q.\n\\]\n\nThus, the coordinates are \\((4p - 8, -3q)\\).",
+                "MarkingScheme": "B1 for \\(x\\)-coordinate \\(4p - 8\\), B1 for \\(y\\)-coordinate \\(-3q\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Normal to Curve and Rates of Change",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 9,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Calculus and Rates of Change",
+        "TopicsCovered": [
+            "Equation of Normal",
+            "Rates of Change",
+            "Gradient Relationships"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 2,
+            "PartC": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_Nov_13/q9.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the equation of the normal to the curve at the point \\(A(4, 3)\\), giving your answer in the form \\(y = mx + c\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "A point is moving along the curve \\(y = 2x^{\\frac{1}{2}} - 1\\) in such a way that at \\(A\\) the rate of increase of the \\(x\\)-coordinate is \\(3 \\ \\mathrm{cm\\ s^{-1}}\\). Find the rate of increase of the \\(y\\)-coordinate at \\(A\\)."
+            },
+            {
+                "Part": "c",
+                "Text": "At \\(A\\), the moving point suddenly changes direction and speed, and moves down the normal in such a way that the rate of decrease of the \\(y\\)-coordinate is constant at \\(5 \\ \\mathrm{cm\\ s^{-1}}\\). As the point moves down the normal, find the rate of change of its \\(x\\)-coordinate."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The gradient of the curve \\(y = 2x^{\\frac{1}{2}} - 1\\) is given by \\(\\frac{dy}{dx} = x^{\\frac{-1}{2}}\\). At \\(x = 4\\), \\(\\frac{dy}{dx} = \\frac{1}{2}\\).\nThe gradient of the normal is \\(-\\frac{1}{\\frac{1}{2}} = -2\\). Using the point \\(A(4, 3)\\), the equation of the normal is:\n\\[y - 3 = -2(x - 4)\\]\nSimplifying:\n\\[y = -2x + 11\\].",
+                "MarkingScheme": "B1 for \\(\\frac{dy}{dx}\\) correctly calculated, M1 for substituting \\(A(4, 3)\\) into the equation, A1 for final answer \\(y = -2x + 11\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "Using the chain rule:\n\\[\\frac{dy}{dt} = \\frac{dy}{dx} \\cdot \\frac{dx}{dt}\\]\nAt \\(x = 4\\), \\(\\frac{dy}{dx} = \\frac{1}{2}\\) and \\(\\frac{dx}{dt} = 3\\):\n\\[\\frac{dy}{dt} = \\frac{1}{2} \\cdot 3 = \\frac{3}{2}\\ \\mathrm{cm\\ s^{-1}}\\].",
+                "MarkingScheme": "M1 for correct use of the chain rule, A1 for final answer \\(\\frac{3}{2}\\ \\mathrm{cm\\ s^{-1}}\\)."
+            },
+            {
+                "Part": "c",
+                "Solution": "The gradient of the normal is \\(-2\\), so the relationship between \\(\\frac{dy}{dt}\\) and \\(\\frac{dx}{dt}\\) while moving along the normal is:\n\\[\\frac{dy}{dx} = -2 = \\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}}\\]\nGiven \\(\\frac{dy}{dt} = -5\\):\n\\[\\frac{dx}{dt} = \\frac{\\frac{dy}{dt}}{-2} = \\frac{-5}{-2} = \\frac{5}{2}\\ \\mathrm{cm\\ s^{-1}}\\].",
+                "MarkingScheme": "B1FT for using \\(\\frac{dy}{dx} = -2\\), M1 for substituting \\(\\frac{dy}{dt} = -5\\), A1 for final answer \\(\\frac{5}{2}\\ \\mathrm{cm\\ s^{-1}}\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Area of Shaded Region in Circle",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 10,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Geometry and Trigonometry",
+        "TopicsCovered": [
+            "Radians",
+            "Circle Geometry",
+            "Area of Sector"
+        ],
+        "MarksAllocation": {
+            "PartA": 1,
+            "PartB": 1,
+            "PartC": 7
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_Nov_13/q10.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Text": "State the size of angle \\(ACO\\) in radians."
+            },
+            {
+                "Text": "Find \\(R\\) in terms of \\(r\\)."
+            },
+            {
+                "Text": "Find the area of the shaded region in terms of \\(r\\)."
+            }
+        ],
+        "Text": "The diagram shows points \\(A\\), \\(B\\), and \\(C\\) lying on a circle with centre \\(O\\) and radius \\(r\\). Angle \\(AOB\\) is 2.8 radians. The shaded region is bounded by two arcs. The upper arc is part of the circle with centre \\(O\\) and radius \\(r\\). The lower arc is part of a circle with centre \\(C\\) and radius \\(R\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The angle \\(ACO\\) is calculated as \\(\\pi - 2.8 = 0.7\\) radians.",
+                "MarkingScheme": "B1 for correctly stating \\(0.7\\) radians."
+            },
+            {
+                "Part": "b",
+                "Solution": "Using geometry, \\(R = \\frac{r}{\\sin(0.7)} \\approx 1.53r\\).",
+                "MarkingScheme": "B1 for expressing \\(R\\) in terms of \\(r\\)."
+            },
+            {
+                "Part": "c",
+                "Solution": "The shaded region's area is calculated as follows:\n\n1. Area of sector \\(OAB\\):\n   \\[ \\frac{1}{2} r^2 \\times 2.8 = 1.4r^2. \\]\n\n2. Area of sector \\(CAB\\):\n   \\[ \\frac{1}{2} R^2 \\times 0.7, \\text{ where } R = 1.53r. \\]\n   Substituting \\(R\\):\n   \\[ \\frac{1}{2} (1.53r)^2 \\times 0.7 \\approx 0.817r^2. \\]\n\n3. Area of triangle \\(CAB\\):\n   \\[ \\frac{1}{2} r \\cdot R \\cdot \\sin(0.7) \\approx 0.4927r^2. \\]\n\nSubtract the two areas:\n\\[ \\text{Shaded Area} = 1.4r^2 - (0.817r^2 - 0.4927r^2) \\approx 0.748r^2. \\]",
+                "MarkingScheme": "Award marks for correct calculation of each component and final shaded area."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Stationary Point and Area",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 11,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Differentiation and Integration",
+        "TopicsCovered": [
+            "Stationary Points",
+            "Area under Curve"
+        ],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 6
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_Nov_13/q11.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Verify that the \\(x\\)-coordinate of \\(R\\) is \\(\\frac{3}{2}\\) and find the \\(y\\)-coordinate of \\(R\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the exact value of the area of the shaded region."
+            }
+        ],
+        "Text": "The diagram shows part of the curve with equation \\(y = x + \\frac{2}{(2x-1)^2}\\). The lines \\(x = 1\\) and \\(x = 2\\) intersect the curve at \\(P\\) and \\(Q\\) respectively and \\(R\\) is the stationary point on the curve."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "To find the stationary point, differentiate the curve:\n\\[ \\frac{dy}{dx} = 1 - \\frac{-8}{(2x-1)^3} \\]\nSetting \\(\\frac{dy}{dx} = 0\\):\n\\[ 1 + \\frac{-8}{(2x-1)^3} = 0 \\]\n\\[ (2x-1)^3 = -8 \\]\n\\[ 2x - 1 = -2 \\]\n\\[ x = \\frac{3}{2} \\]\nTo find the \\(y\\)-coordinate:\n\\[ y = x + \\frac{2}{(2x-1)^2} \\]\nSubstituting \\(x = \\frac{3}{2}\\):\n\\[ y = \\frac{3}{2} + \\frac{2}{(-2)^2} = \\frac{3}{2} + \\frac{2}{4} = \\frac{3}{2} + \\frac{1}{2} = 2 \\]\nThus, \\(R\\) is \\(\\left(\\frac{3}{2}, 2\\right)\\).",
+                "MarkingScheme": "B1 for correctly differentiating \\(\\frac{dy}{dx}\\), DB1 for verifying \\(x = \\frac{3}{2}\\), B1 for finding \\(y = 2\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "The area of the shaded region is the integral between \\(x = 1\\) and \\(x = 2\\) minus the area under the line \\(PQ\\):\n\\[ \\text{Area} = \\int_{1}^{2} \\left(x + \\frac{2}{(2x-1)^2}\\right) dx - \\text{Area of Trapezium under } PQ \\]\n1. **Find the integral:**\n\\[ \\int x dx = \\frac{x^2}{2}, \\quad \\int \\frac{2}{(2x-1)^2} dx = -\\frac{1}{2x-1} \\]\n\\[ \\int_{1}^{2} \\left(x + \\frac{2}{(2x-1)^2}\\right) dx = \\left[\\frac{x^2}{2} - \\frac{1}{2x-1}\\right]_1^2 \\]\nEvaluate limits:\nFor \\(x = 2\\): \\[ \\frac{2^2}{2} - \\frac{1}{3} = 2 - \\frac{1}{3} = \\frac{6}{3} - \\frac{1}{3} = \\frac{5}{3} \\]\nFor \\(x = 1\\): \\[ \\frac{1^2}{2} - \\frac{1}{1} = \\frac{1}{2} - 1 = -\\frac{1}{2} \\]\n\\[ \\int_{1}^{2} \\left(x + \\frac{2}{(2x-1)^2}\\right) dx = \\frac{5}{3} - \\left(-\\frac{1}{2}\\right) = \\frac{5}{3} + \\frac{1}{2} = \\frac{10}{6} + \\frac{3}{6} = \\frac{13}{6} \\]\n2. **Find the area under \\(PQ\\):**\n\\[ \\text{Trapezium Area} = \\frac{1}{2} \\cdot (1) \\cdot \\left(\\frac{34}{9} + 2\\right) = \\frac{1}{2} \\cdot \\frac{52}{9} = \\frac{26}{9} \\]\n3. **Subtract areas:**\n\\[ \\text{Total Area} = \\frac{13}{6} - \\frac{26}{9} \\]\nConverting to a common denominator:\n\\[ \\frac{39}{18} - \\frac{52}{18} = \\frac{-13}{18} \\]\n\\[ \\text{Shaded Area} = \\boxed{4/9} \\]",
+                "MarkingScheme": "B1 for integral, M1 for applying limits, A1 for subtraction and simplification."
+            }
+        ]
+    }
+}
+
+

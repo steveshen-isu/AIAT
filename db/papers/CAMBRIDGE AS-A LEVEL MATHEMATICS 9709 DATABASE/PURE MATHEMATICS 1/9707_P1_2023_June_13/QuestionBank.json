@@ -1,0 +1,575 @@
+{
+    "Metadata": {
+        "QuestionTitle": "Graph Transformation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 1,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Graph Transformations",
+        "TopicsCovered": [
+            "Translation",
+            "Stretching"
+        ],
+        "MarksAllocation": {
+            "PartA": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_13/q1.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "The diagram shows the graph of \\(y = f(x)\\), which consists of the two straight lines \\(AB\\) and \\(BC\\). The lines \\(A'B'\\) and \\(B'C'\\) form the graph of \\(y = g(x)\\), which is the result of applying a sequence of two transformations, in either order, to \\(y = f(x)\\).\n\nState fully the two transformations."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": [
+                    {
+                        "Transformation1": "Translation",
+                        "Vector": "{0 \\choose -2}",
+                        "Explanation": "This translation moves the graph vertically downward by 2 units."
+                    },
+                    {
+                        "Transformation2": "Stretch/Scale",
+                        "Factor": "2",
+                        "Direction": "Parallel to x-axis",
+                        "Explanation": "This stretches the graph horizontally by a scale factor of 2."
+                    }
+                ],
+                "MarkingScheme": "B2 for correct description of translation with vector. B2 for correct description of stretching with factor. Order of transformations does not matter."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Set of Possible Values for a Function Parameter",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 2,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Quadratic Inequalities",
+        "TopicsCovered": [
+            "Completing the Square",
+            "Quadratic Inequalities"
+        ],
+        "MarksAllocation": {
+            "PartA": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_13/q2.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The function \\(f\\) is defined for \\(x \\in \\mathbb{R}\\) by \\(f(x) = x^2 - 6x + c\\), where \\(c\\) is a constant. It is given that \\(f(x) > 2\\) for all values of \\(x\\).\n\nFind the set of possible values of \\(c\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Completing the square for \\(f(x)\\):\n\\[f(x) = (x - 3)^2 - 9 + c.\\]\n\nGiven \\(f(x) > 2\\):\n\\[(x - 3)^2 - 9 + c > 2.\\]\n\\[c > 11.\\]\n\nHence, the set of possible values for \\(c\\) is \\(c > 11\\).",
+                "MarkingScheme": "M1 for completing the square, A1 for correct inequality, M1 for solving the inequality, A1 for correct final answer \\(c > 11\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Binomial Expansion Problem",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 3,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Binomial Expansion",
+        "TopicsCovered": [
+            "Binomial Expansion",
+            "Coefficient Comparison"
+        ],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_13/q3.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Text": "(a) Give the complete expansion of \\((x + \\frac{2}{x})^5\\).",
+                "Marks": 2
+            },
+            {
+                "Text": "(b) In the expansion of \\((a + bx^2)(x + \\frac{2}{x})^5\\), the coefficient of \\(x\\) is zero and the coefficient of \\(\\frac{1}{x}\\) is 80.\n\nFind the values of the constants \\(a\\) and \\(b\\).",
+                "Marks": 4
+            }
+        ],
+        "Text": "Expand the given expressions and find the values of constants based on given conditions."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The expansion of \\((x + \\frac{2}{x})^5\\) is given by:\n\\[x^5 + 10x^3 + 40x + 80\\frac{1}{x} + 80\\frac{1}{x^3} + 32\\frac{1}{x^5}.\\]",
+                "MarkingScheme": "B2 for all terms correct; B1 if at least 5 terms are correct. Terms must be simplified."
+            },
+            {
+                "Part": "b",
+                "Solution": "Using the expansion \\((a + bx^2)(x + \\frac{2}{x})^5\\), the coefficient of \\(x\\) is given by:\n\\[40a + (\\text{coefficient of } \\frac{1}{x}) \\cdot b = 0.\\]\nThe coefficient of \\(\\frac{1}{x}\\) is given by:\n\\[(\\text{coefficient of } \\frac{1}{x}) \\cdot a + (\\text{coefficient of } \\frac{1}{x^3}) \\cdot b = 80.\\]\nSubstituting the coefficients, solve the equations:\n\\[40a + 80b = 0\\]\n\\[80a + 32b = 80.\\]\nSolving gives \\(a = 2, b = -1\\).",
+                "MarkingScheme": "M1 for correctly setting up equations; M1 for substituting coefficients correctly; A1 for finding \\(a\\); A1 for finding \\(b\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Trigonometric Equation Simplification and Solution",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Trigonometric Equations",
+        "TopicsCovered": [
+            "Trigonometric Identities",
+            "Equation Solving"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_13/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Text": "Show that the equation \\(3 \\tan^2 x - 3 \\sin^2 x - 4 = 0\\) may be expressed in the form \\(a \\cos^4 x + b \\cos^2 x + c = 0\\), where \\(a, b, c\\) are constants to be found.",
+                "Marks": 3
+            },
+            {
+                "Text": "Hence solve the equation \\(3 \\tan^2 x - 3 \\sin^2 x - 4 = 0\\) for \\(0^\\circ \\leq x \\leq 180^\\circ\\).",
+                "Marks": 4
+            }
+        ],
+        "Text": "A trigonometric equation involving \\(\\tan x\\) and \\(\\sin x\\) is given. Simplify it into a standard quadratic form in terms of \\(\\cos x\\) and solve for the specified domain."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Rewriting the equation \\(3 \\tan^2 x - 3 \\sin^2 x - 4 = 0\\):\n1. Substitute \\(\\tan^2 x = \\frac{\\sin^2 x}{\\cos^2 x}\\) and multiply through by \\(\\cos^2 x\\):\n\\[3 \\frac{\\sin^2 x}{\\cos^2 x} \\cdot \\cos^2 x - 3 \\sin^2 x - 4 \\cos^2 x = 0.\\]\n2. Substitute \\(\\sin^2 x = 1 - \\cos^2 x\\):\n\\[3 (1 - \\cos^2 x) - 3 (1 - \\cos^2 x) \\cos^2 x - 4 \\cos^2 x = 0.\\]\n3. Expand and simplify:\n\\[3 \\cos^4 x - 10 \\cos^2 x + 3 = 0.\\]\nHere, \\(a = 3, b = -10, c = 3.\\]",
+                "MarkingScheme": "M1 for correct substitution, M1 for simplification, A1 for final correct form \\(3 \\cos^4 x - 10 \\cos^2 x + 3 = 0.\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "Solve \\(3 \\cos^4 x - 10 \\cos^2 x + 3 = 0\\):\n1. Let \\(y = \\cos^2 x\\), then the equation becomes:\n\\[3y^2 - 10y + 3 = 0.\\]\n2. Solve using the quadratic formula:\n\\[y = \\frac{-(-10) \\pm \\sqrt{(-10)^2 - 4 \\cdot 3 \\cdot 3}}{2 \\cdot 3} = \\frac{10 \\pm \\sqrt{64}}{6} = \\frac{10 \\pm 8}{6}.\\]\n3. Roots are \\(y = 3\\) (invalid, since \\(\\cos^2 x \\leq 1\\)) and \\(y = \\frac{1}{3}.\\)\n4. Solve for \\(\\cos x\\):\n\\[\\cos x = \\pm \\sqrt{\\frac{1}{3}}.\\]\n5. Find \\(x\\) in the interval \\(0^\\circ \\leq x \\leq 180^\\circ\\):\n\\[x = 54.7^\\circ, 125.3^\\circ.\\]",
+                "MarkingScheme": "M1 for forming the quadratic equation, A1 for solving for \\(y\\), A1 for finding \\(\\cos x\\), A1 for correct solutions \\(x = 54.7^\\circ\\) and \\(x = 125.3^\\circ\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Points of Intersection and Circle Equation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Coordinate Geometry",
+        "TopicsCovered": [
+            "Circle Equations",
+            "Intersection Points"
+        ],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_13/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Text": "A circle has equation \\((x - 1)^2 + (y + 4)^2 = 40\\). A line with equation \\(y = x - 9\\) intersects the circle at points \\(A\\) and \\(B\\).",
+                "SubParts": [
+                    {
+                        "Part": "a",
+                        "Text": "Find the coordinates of the two points of intersection.",
+                        "Marks": 4
+                    },
+                    {
+                        "Part": "b",
+                        "Text": "Find an equation of the circle with diameter \\(AB\\).",
+                        "Marks": 3
+                    }
+                ]
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Substitute \\(y = x - 9\\) into \\((x - 1)^2 + (y + 4)^2 = 40\\):\n\\[(x - 1)^2 + (x - 9 + 4)^2 = 40.\\]\nSimplify:\n\\[x^2 - 2x + 1 + x^2 - 10x + 25 = 40,\\]\n\\[2x^2 - 12x - 14 = 0,\\]\n\\[x^2 - 6x - 7 = 0.\\]\nFactorize:\n\\[(x + 1)(x - 7) = 0.\\]\n\\[x = -1, \\; x = 7.\\]\nFind corresponding \\(y\\)-values:\n\\[y = x - 9,\\]\n\\[y = -10 \\; \\text{when } x = -1, \\; y = -2 \\; \\text{when } x = 7.\\]\nPoints of intersection are \\((-1, -10)\\) and \\((7, -2)\\).",
+                "MarkingScheme": "M1: Substitute line equation into circle equation. M1: Simplify to a quadratic equation. A1: Correct factorization or solution. A1: Correct points of intersection."
+            },
+            {
+                "Part": "b",
+                "Solution": "The midpoint of \\(AB\\) is:\n\\[C = \\left(\\frac{-1 + 7}{2}, \\frac{-10 + (-2)}{2}\\right) = (3, -6).\\]\nThe radius is:\n\\[R = \\sqrt{(7 - (-1))^2 + (-2 - (-10))^2}/2 = \\sqrt{64}/2 = \\sqrt{32}.\\]\nThe equation of the circle with diameter \\(AB\\) is:\n\\[(x - 3)^2 + (y + 6)^2 = 32.\\]",
+                "MarkingScheme": "M1: Find midpoint of \\(AB\\). M1: Calculate radius using distance formula. A1: Correct equation of the circle."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Sector and Shaded Region",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Circles and Sectors",
+        "TopicsCovered": [
+            "Sector Area",
+            "Arc Length",
+            "Geometry"
+        ],
+        "MarksAllocation": {
+            "PartA": 5,
+            "PartB": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_13/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the area of the shaded region."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the perimeter of the shaded region."
+            }
+        ],
+        "Text": "The diagram shows a sector OAB of a circle with centre O and radius r cm. Angle AOB = \\(\\theta\\) radians. It is given that the length of the arc AB is 9.6 cm and that the area of the sector OAB is 76.8 cm²."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Using the formula for arc length and sector area:\n\\[\\frac{1}{2}r^2\\theta = 76.8, \\quad r\\theta = 9.6.\\]\nFrom \\(r\\theta = 9.6\\):\n\\[\\theta = \\frac{9.6}{r}.\\]\nSubstitute \\(\\theta\\) into the sector area equation:\n\\[\\frac{1}{2}r^2 \\cdot \\frac{9.6}{r} = 76.8.\\]\nSimplify:\n\\[r = 16, \\quad \\theta = 0.6.\\]\nCalculate area of the shaded region:\n\\[\\text{Area of } \\Delta OAB = \\frac{1}{2} \\cdot 16^2 \\cdot \\sin(0.6) \\approx 72.27 \\text{ cm}^2.\\]\n\\[\\text{Shaded Area} = 76.8 - 72.27 \\approx 4.53 \\text{ cm}^2.\\]",
+                "MarkingScheme": "M1 for substituting into equations and eliminating \\(\\theta\\) or \\(r\\), A1 for \\(r = 16\\), A1 for \\(\\theta = 0.6\\), M1 for subtracting triangle area from sector area, A1 for final area."
+            },
+            {
+                "Part": "b",
+                "Solution": "Using the formula for the perimeter:\n\\[AB = 2 \\cdot 16 \\cdot \\sin(0.3) \\approx 9.46 \\text{ cm}.\\]\nPerimeter of shaded region:\n\\[P = AB + 9.6 \\approx 19.1 \\text{ cm}.\\]",
+                "MarkingScheme": "M1 for calculating \\(AB\\) using sine rule or cosine rule, A1 for final perimeter."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Function Composition and Inverse",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 7,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Functions",
+        "TopicsCovered": [
+            "Inverse Functions",
+            "Composition of Functions"
+        ],
+        "MarksAllocation": {
+            "PartA": 1,
+            "PartB": 4,
+            "PartC": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_13/q7.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "State the range of \\(f\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Obtain an expression for \\(f^{-1}(x)\\) and state the domain of \\(f^{-1}\\)."
+            },
+            {
+                "Part": "c",
+                "Text": "Obtain an expression for \\(fg(x)\\) giving your answer in the form \\(\\frac{ax + b}{cx + d}\\), where \\(a, b, c, d\\) are integers."
+            }
+        ],
+        "Text": "The function \\(f\\) is defined by \\(f(x) = 2 - \\frac{5}{x + 2}\\) for \\(x > -2\\).\n\nThe function \\(g\\) is defined by \\(g(x) = x + 3\\) for \\(x > 0\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The range of \\(f\\) is \\(y < 2\\) or \\(f(x) < 2\\).",
+                "MarkingScheme": "B1: Correct range, e.g., \\((-\\infty, 2)\\) or equivalent notation."
+            },
+            {
+                "Part": "b",
+                "Solution": "To find \\(f^{-1}(x)\\): Start with \\(y = 2 - \\frac{5}{x+2}\\), rearrange to obtain \\(y(x + 2) = 2(x + 2) - 5\\).\n\nSimplify to find \\(x = \\frac{2y + 1}{2 - y}\\). Therefore, \\(f^{-1}(x) = \\frac{2x + 1}{2 - x}\\).\n\nDomain of \\(f^{-1}\\): \\(x < 2\\).",
+                "MarkingScheme": "M1: Setting \\(y = f(x)\\) and rearranging.\nDM1: Correct algebraic manipulation to isolate \\(x\\).\nA1: Final expression for \\(f^{-1}(x)\\).\nB1: Domain \\(x < 2\\) from \\(f^{-1}\\)."
+            },
+            {
+                "Part": "c",
+                "Solution": "To find \\(fg(x)\\): \\(fg(x) = f(g(x)) = 2 - \\frac{5}{(x + 3) + 2}\\).\n\nSimplify: \\(fg(x) = 2 - \\frac{5}{x + 5}\\).\n\nExpress in the form \\(\\frac{ax + b}{cx + d}\\): Combine terms to obtain \\(fg(x) = \\frac{2x + 5}{x + 5}\\).",
+                "MarkingScheme": "B1: Substitution of \\(g(x)\\) into \\(f(x)\\).\nM1: Simplification using a common denominator.\nA1: Final answer \\(\\frac{2x + 5}{x + 5}\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Progressions",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 8,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Progressions",
+        "TopicsCovered": [
+            "Geometric Progressions",
+            "Arithmetic Progressions"
+        ],
+        "MarksAllocation": {
+            "PartA": 5,
+            "PartB": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_13/q8.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "For the case where the progression is geometric and the sum to infinity is 264, find the value of \\(a\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "For the case where the progression is arithmetic and \\(a = 6\\), determine the least value of \\(n\\) required for the sum of the first \\(n\\) terms to be less than \\(-480\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "\\(r = \\frac{a}{a + 2}\\)\n\\[\\frac{a}{1 - r} = 264\\]\n\\[\\frac{a}{1 - \\frac{a}{a + 2}} = 264\\]\n\\[\\frac{a(a + 2)}{a + 2 - a} = 264\\]\n\\[a(a + 2) = 264 \\cdot 2\\]\n\\[a^2 + 2a - 528 = 0\\]\n\\[(a - 22)(a + 24) = 0\\]\n\\[a = 22\\] (as \\(a > 0\\))",
+                "MarkingScheme": "B1 for correct expression for \\(r\\), M1 for correctly forming \\(\\frac{a}{1 - r}\\), M1 for processing to quadratic equation, A1 for \\(a = 22\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "The difference \\(d = 6 - \\frac{6}{2} = -3/2\\).\n\\[S_n = \\frac{n}{2}[2a + (n - 1)d] < -480\\]\n\\[\\frac{n}{2}[12 + (n - 1)(-3/2)] < -480\\]\n\\[\\frac{n}{2}(12 - \\frac{3n}{2} + \\frac{3}{2}) < -480\\]\n\\[3n^2 - 9n - 640 > 0\\]\n\\[n = \\frac{9 \\pm \\sqrt{81 + 2560}}{2}\\]\n\\[n = 31\\] (as \\(n\\) must be an integer).",
+                "MarkingScheme": "B1 for correct \\(d\\), M1 for forming correct inequality, A1 for processing terms correctly, DM1 for solving quadratic, A1 for final \\(n = 31\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Equation of Curve and Tangent Intersection",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 9,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Differentiation",
+        "TopicsCovered": [
+            "Equation of a Curve",
+            "Tangent to a Curve",
+            "Solving Equations"
+        ],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 4,
+            "PartC": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_13/q9.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Text": "(a) Find the equation of the curve.",
+                "Marks": 4
+            },
+            {
+                "Text": "(b) Show that the x-coordinate of P satisfies the equation \\((2x + 1)(x - 1)^2 - 1 = 0\\).",
+                "Marks": 4
+            },
+            {
+                "Text": "(c) Verify that \\(x = \\frac{3}{2}\\) satisfies this equation and hence find the y-coordinate of \\(P\\).",
+                "Marks": 2
+            }
+        ],
+        "Text": "A curve which passes through \\((0, 3)\\) has equation \\(y = f(x)\\). It is given that \\(f'(x) = 1 - \\frac{2}{(x-1)^3}\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Integrating \\(f'(x) = 1 - \\frac{2}{(x-1)^3}\\), we have:\n\\[ f(x) = \\int \\left( 1 - \\frac{2}{(x-1)^3} \\right) dx = x + \\frac{1}{(x-1)^2} + c. \\]\nUsing the point \\((0, 3)\\), substitute \\(x = 0\\) and \\(f(x) = 3\\):\n\\[ 3 = 0 + \\frac{1}{(0-1)^2} + c \\implies c = 2. \\]\nThus, \\(f(x) = x + \\frac{1}{(x-1)^2} + 2.\\)",
+                "MarkingScheme": "B1 for setting up integration. M1 for substitution of \\((0, 3)\\). A1 for the final expression."
+            },
+            {
+                "Part": "b",
+                "Solution": "The gradient of the tangent at \\((0, 3)\\) is \\(f'(0) = 3\\). The equation of the tangent is:\n\\[ y - 3 = 3x \\implies y = 3x + 3. \\]\nEquating \\(3x + 3\\) with the curve \\(f(x) = x + \\frac{1}{(x-1)^2} + 2\\):\n\\[ 3x + 3 = x + \\frac{1}{(x-1)^2} + 2. \\]\nSimplifying:\n\\[ 2x + 1 = \\frac{1}{(x-1)^2} \\implies (2x + 1)(x-1)^2 - 1 = 0. \\]",
+                "MarkingScheme": "B1 for gradient of tangent. M1 for forming the equation. DM1 for simplifying to the given form. A1 for correct answer."
+            },
+            {
+                "Part": "c",
+                "Solution": "Substitute \\(x = \\frac{3}{2}\\) into \\((2x + 1)(x-1)^2 - 1 = 0\\):\n\\[ 2 \\times \\frac{3}{2} + 1 = 4, \\quad (\\frac{3}{2} - 1)^2 = \\frac{1}{4}. \\]\n\\[ 4 \\times \\frac{1}{4} - 1 = 0. \\]\nHence, \\(x = \\frac{3}{2}\\) satisfies the equation.\nTo find \\(y\\), substitute \\(x = \\frac{3}{2}\\) into \\(f(x) = x + \\frac{1}{(x-1)^2} + 2\\):\n\\[ y = \\frac{3}{2} + 4 + 2 = \\frac{15}{2}. \\]",
+                "MarkingScheme": "B1 for verifying \\(x = \\frac{3}{2}\\). B1 for finding \\(y = \\frac{15}{2}\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Finding the Maximum Point and Area of Shaded Region",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 10,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Curve Sketching and Integration",
+        "TopicsCovered": [
+            "Maxima",
+            "Normals",
+            "Area under the Curve"
+        ],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 3,
+            "PartC": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_13/q10.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the coordinates of the maximum point of the curve."
+            },
+            {
+                "Part": "b",
+                "Text": "Verify that the line AB is the normal to the curve at A."
+            },
+            {
+                "Part": "c",
+                "Text": "Find the area of the shaded region."
+            }
+        ],
+        "Text": "The diagram shows the points A \\((\\frac{3}{2}, \\frac{11}{4})\\) and B \\((\\frac{15}{2}, \\frac{5}{2})\\) lying on the curve with equation \\(y = 9x - (2x + 1)^{\\frac{3}{2}}\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Differentiate \\(y = 9x - (2x + 1)^{\\frac{3}{2}}\\) to get \\(\\frac{dy}{dx} = 9 - \\frac{3}{2}(2x+1)^{\\frac{1}{2}} \\cdot 2\\). Solve \\(9 - 3(2x+1)^{\\frac{1}{2}} = 0\\) leading to \\(x = 4\\). Substitute \\(x = 4\\) into the original equation to find \\(y = 9(4) - (2(4)+1)^{\\frac{3}{2}} = 36 - 27 = 9\\). Hence, the maximum point is \\((4, 9)\\).",
+                "MarkingScheme": "B1 for correct differentiation, M1 for solving \\(\\frac{dy}{dx} = 0\\), A1 for correct maximum point."
+            },
+            {
+                "Part": "b",
+                "Solution": "The gradient of AB is \\(\\frac{\\frac{5}{2} - \\frac{11}{4}}{\\frac{15}{2} - \\frac{3}{2}} = -\\frac{1}{3}\\). At A, \\(x = \\frac{3}{2}\\), substitute into \\(\\frac{dy}{dx} = 9 - 3(2x+1)^{\\frac{1}{2}}\\) to get \\(\\frac{dy}{dx} = 3\\). Since the product of gradients \\((3 \\times -\\frac{1}{3}) = -1\\), AB is normal to the curve at A.",
+                "MarkingScheme": "M1 for calculating gradient of AB, M1 for calculating \\(\\frac{dy}{dx}\\), A1 for showing perpendicularity."
+            },
+            {
+                "Part": "c",
+                "Solution": "Integrate \\(\\int_{\\frac{3}{2}}^{\\frac{15}{2}} \\left[9x - (2x+1)^{\\frac{3}{2}}\\right] dx - \\text{Area of trapezium AB}.\\) Evaluate the definite integral and subtract the trapezium's area \\(\\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 6 \\times \\frac{11}{4}\\). Final shaded area \\(= 17.6\\).",
+                "MarkingScheme": "B1 for setting up integral, M1 for evaluating integral, A1 for final area."
+            }
+        ]
+    }
+}
+
