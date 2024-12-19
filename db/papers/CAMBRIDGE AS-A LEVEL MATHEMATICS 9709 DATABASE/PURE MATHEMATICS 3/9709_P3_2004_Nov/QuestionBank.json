@@ -1,0 +1,609 @@
+{
+    "Metadata": {
+        "QuestionTitle": "Expansion of 1 / (2 + x)^3",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2004,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 1,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Binomial Expansion",
+        "TopicsCovered": [
+            "Series Expansion",
+            "Binomial Theorem"
+        ],
+        "MarksAllocation": {
+            "PartA": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2004_Nov/q1.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Expand \\( \\frac{1}{(2 + x)^3} \\) in ascending powers of \\(x\\), up to and including the term in \\(x^2\\), simplifying the coefficients."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Using the binomial expansion formula:\\n\\[\\n(1 + u)^n = 1 + nu + \\frac{n(n-1)}{2!}u^2 + \\cdots\\n\\]\\nHere, \\(u = \\frac{x}{2}\\) and \\(n = -3\\):\\n\\n1. First term:\\n\\[\\n\\frac{1}{(2 + x)^3} = \\frac{1}{2^3} \\left( 1 + \\frac{x}{2} \\right)^{-3} = \\frac{1}{8}.\\n\\]\\n\\n2. Second term (linear):\\n\\[\\n-3 \\cdot \\frac{x}{2} = -\\frac{3}{16}x.\\n\\]\\n\\n3. Third term (quadratic):\\n\\[\\n\\frac{-3(-4)}{2} \\cdot \\left( \\frac{x}{2} \\right)^2 = \\frac{3}{16}x^2.\\n\\]\\n\\nCombining terms:\\n\\[\\n\\frac{1}{(2 + x)^3} = \\frac{1}{8} - \\frac{3}{16}x + \\frac{3}{16}x^2.\\n\\]",
+                "MarkingScheme": "M1 for obtaining the general form using binomial expansion, B1 for correct first term, A1 for second term, A1 for third term correctly simplified."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Logarithmic Equation Solution",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2004,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 2,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Logarithms and Exponentials",
+        "TopicsCovered": [
+            "Logarithmic Laws",
+            "Equation Solving",
+            "Exponential Conversion"
+        ],
+        "MarksAllocation": {
+            "Total": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2004_Nov/q2.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Solve the equation \\( \\ln(1 + x) = 1 + \\ln x \\), giving your answer correct to 2 significant figures."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Using the logarithmic laws, subtract \\( \\ln x \\) from both sides:\\n\\[ \\ln(1 + x) - \\ln x = 1. \\]\\n\\nUsing the logarithmic property \\( \\ln a - \\ln b = \\ln \\left( \\frac{a}{b} \\right) \\):\\n\\[ \\ln \\left( \\frac{1 + x}{x} \\right) = 1. \\]\\n\\nConvert to exponential form using \\( \\ln a = 1 \\implies a = e^1 \\):\\n\\[ \\frac{1 + x}{x} = e. \\]\\n\\nSimplify the equation:\\n\\[ 1 + x = e x. \\]\\n\\nRearranging terms:\\n\\[ x (e - 1) = 1. \\]\\n\\nSolve for \\( x \\):\\n\\[ x = \\frac{1}{e - 1}. \\]\\n\\nUsing \\( e \\approx 2.718 \\):\\n\\[ x = \\frac{1}{2.718 - 1} \\approx \\frac{1}{1.718} \\approx 0.58. \\]\\n\\nThus, \\( x = 0.58 \\) (correct to 2 significant figures).",
+                "MarkingScheme": "M1 for using logarithmic laws correctly, M1 for converting to exponential form, A1 for rearranging and simplifying equation, A1 for correct answer \\( x = 0.58 \\)."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Factorization and Inequality of a Polynomial",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2004,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 3,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Polynomials and Inequalities",
+        "TopicsCovered": [
+            "Polynomial Factorization",
+            "Remainder Theorem",
+            "Solving Inequalities"
+        ],
+        "MarksAllocation": {
+            "PartI": 2,
+            "PartII": 2,
+            "PartIII": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2004_Nov/q3.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Find the value of \\(a\\), given that \\((x - 2)\\) is a factor of \\(p(x) = 2x^3 + ax^2 - 4\\)."
+            },
+            {
+                "Part": "ii",
+                "Text": "Factorise \\(p(x)\\)."
+            },
+            {
+                "Part": "iii",
+                "Text": "Solve the inequality \\(p(x) > 0\\), justifying your answer."
+            }
+        ],
+        "Text": "The polynomial \\(2x^3 + ax^2 - 4\\) is denoted by \\(p(x)\\). It is given that \\((x - 2)\\) is a factor of \\(p(x)\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Substitute \\(x = 2\\) into \\(p(x) = 2x^3 + ax^2 - 4\\):\\n\\[2(2)^3 + a(2)^2 - 4 = 0.\\]\\nSimplify:\\n\\[16 + 4a - 4 = 0 \\implies 4a = -12.\\]\\n\\[a = -3.\\]",
+                "MarkingScheme": "M1 for substitution and equating to zero, A1 for correct value of \\(a = -3\\)."
+            },
+            {
+                "Part": "ii",
+                "Solution": "With \\(a = -3\\), the polynomial becomes:\\n\\[p(x) = 2x^3 - 3x^2 - 4.\\]\\nDivide \\(p(x)\\) by \\((x - 2)\\) to find the quadratic factor:\\n\\[2x^3 - 3x^2 - 4 = (x - 2)(2x^2 + x + 2).\\]",
+                "MarkingScheme": "M1 for attempting division or inspection, A1 for correct factorization."
+            },
+            {
+                "Part": "iii",
+                "Solution": "Solve the inequality \\(p(x) > 0\\):\\nFactorized form: \\(p(x) = (x - 2)(2x^2 + x + 2).\\)\\nThe quadratic factor \\(2x^2 + x + 2\\) has no real roots (discriminant < 0).\\nThus, \\(2x^2 + x + 2 > 0\\) for all \\(x\\), and the inequality reduces to:\\n\\(x - 2 > 0 \\implies x > 2.\\)",
+                "MarkingScheme": "B1 for stating \\(x > 2\\), B1(dep) for correct justification that \\(2x^2 + x + 2\\) is always positive."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Trigonometric Equation and Quadratic Form",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2004,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Trigonometric Equations",
+        "TopicsCovered": [
+            "Trigonometric Identities",
+            "Quadratic Equations"
+        ],
+        "MarksAllocation": {
+            "PartI": 4,
+            "PartII": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2004_Nov/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Show that the equation \\( \\tan(45^\\circ + x) = 2\\tan(45^\\circ - x) \\) can be written in the form \\( \\tan^2x - 6\\tan x + 1 = 0. \\)"
+            },
+            {
+                "Part": "ii",
+                "Text": "Hence solve the equation \\( \\tan(45^\\circ + x) = 2\\tan(45^\\circ - x) \\), for \\( 0^\\circ < x < 90^\\circ. \\)"
+            }
+        ],
+        "Text": "Solve the trigonometric equation and simplify into a quadratic form."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Using the formula \\( \\tan(A \\pm B) = \\frac{\\tan A \\pm \\tan B}{1 \\mp \\tan A \\tan B} \\), substitute:\\n\\[\\n\\tan(45^\\circ + x) = \\frac{1 + \\tan x}{1 - \\tan x}, \\quad \\tan(45^\\circ - x) = \\frac{1 - \\tan x}{1 + \\tan x}.\\n\\]\\nMultiply and simplify to obtain the quadratic equation:\\n\\[ \\tan^2 x - 6\\tan x + 1 = 0. \\]",
+                "MarkingScheme": "M1 for correct application of tan addition/subtraction formula, A1 for simplifying to quadratic."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Solve the quadratic equation:\\n\\[ \\tan^2 x - 6\\tan x + 1 = 0. \\]\\nUsing the quadratic formula, find:\\n\\[ \\tan x = 3 \\pm 2\\sqrt{2}. \\]\\nWithin the range \\( 0^\\circ < x < 90^\\circ \\), calculate angles:\\n\\[ x = 9.7^\\circ, \\; x = 80.3^\\circ. \\]",
+                "MarkingScheme": "M1 for solving the quadratic, A1 for correct roots, A1 for correct range of solutions."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Trigonometric Identity and Iterative Method",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": "2004",
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Trigonometry and Iterative Methods",
+        "TopicsCovered": [
+            "Trigonometric Identities",
+            "Roots of Equations",
+            "Iterative Methods"
+        ],
+        "MarksAllocation": {
+            "PartI": 3,
+            "PartII": 2,
+            "PartIII": 3
+        },
+        "DifficultyLevel": "Challenging",
+        "ImageUrl": [
+            "/9709_P3_2004_Nov/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Show that α satisfies the equation \\( \\sin 2x = x \\)."
+            },
+            {
+                "Part": "ii",
+                "Text": "By sketching a suitable pair of graphs, show that this equation has exactly one root in the interval \\( 0 < x < \\frac{1}{2}\\pi \\)."
+            },
+            {
+                "Part": "iii",
+                "Text": "Use the iterative formula \\( x_{n+1} = \\sin(2x_n) \\), with initial value \\( x_1 = 1 \\), to find \\( \\alpha \\) correct to 2 decimal places, showing the result of each iteration."
+            }
+        ],
+        "DiagramDescription": "The diagram shows a sector OAB of a circle with center O and radius r. The angle AOB is \\( \\alpha \\) radians, and point N on OA satisfies \\( BN \\perp OA \\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Obtain the area of ONB in terms of \\( r \\) and \\( \\alpha \\), and show: \\[ \\sin(2\\alpha) = \\alpha \\].",
+                "MarkingScheme": "B1 for area in correct terms, M1 for equating triangle and sector area, A1 for obtaining \\( \\sin 2\\alpha = \\alpha \\)."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Sketch graphs of \\( y = \\sin 2x \\) and \\( y = x \\) in the given range, showing one intersection.",
+                "MarkingScheme": "B1 for correct sketches, B1 for justification of one root."
+            },
+            {
+                "Part": "iii",
+                "Solution": "Apply iterative formula with \\( x_1 = 1 \\):\\n\\[ x_2 = \\sin(2x_1), \\quad x_3 = \\sin(2x_2), \\dots \\]\\nConverge to \\( x = 0.95 \\) to 2 decimal places.",
+                "MarkingScheme": "M1 for iterative steps, A1 for correct value, A1 for justification of accuracy."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Complex Numbers and Geometrical Relationship",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2004,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Complex Numbers and Geometry",
+        "TopicsCovered": [
+            "Complex Numbers",
+            "Arguments of Complex Numbers",
+            "Geometrical Relationships",
+            "Angles in Argand Diagram"
+        ],
+        "MarksAllocation": {
+            "Part I": 3,
+            "Part II": 1,
+            "Part III": 2,
+            "Part IV": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2004_Nov/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Find, in the form \\(x + iy\\), where \\(x\\) and \\(y\\) are real, the complex numbers \\(u - v\\) and \\(\\frac{u}{v}\\)."
+            },
+            {
+                "Part": "ii",
+                "Text": "State the argument of \\(\\frac{u}{v}\\)."
+            },
+            {
+                "Part": "iii",
+                "Text": "State fully the geometrical relationship between \\(OC\\) and \\(BA\\)."
+            },
+            {
+                "Part": "iv",
+                "Text": "Prove that angle \\(AOB = \\frac{1}{4} \\pi\\) radians."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "The complex number \\(u - v\\) is given by:\\n\\[u - v = (1 + 3i) - (4 + 2i) = -3 + i.\\]\\n\\nThe division \\(\\frac{u}{v}\\) is obtained by:\\n\\[\\frac{u}{v} = \\frac{1 + 3i}{4 + 2i}.\\]\\nMultiplying numerator and denominator by the conjugate:\\n\\[\\frac{1 + 3i}{4 + 2i} \\cdot \\frac{4 - 2i}{4 - 2i} = \\frac{(1 + 3i)(4 - 2i)}{4^2 + 2^2}.\\]\\nSimplify:\\n\\[(1 + 3i)(4 - 2i) = 4 - 2i + 12i - 6i^2 = 4 + 10i + 6.\\]\\nDenominator:\\n\\[4^2 + 2^2 = 16 + 4 = 20.\\]\\nThus:\\n\\[\\frac{u}{v} = \\frac{10 + 10i}{20} = \\frac{1}{2} + \\frac{1}{2}i.\\]",
+                "MarkingScheme": "B1 for correct \\(u - v\\), M1 for multiplication by conjugate, A1 for simplified result."
+            },
+            {
+                "Part": "ii",
+                "Solution": "The argument of \\(\\frac{u}{v}\\) is:\\n\\[\\arg\\left(\\frac{1}{2} + \\frac{1}{2}i\\right) = \\tan^{-1}\\left(\\frac{1/2}{1/2}\\right) = \\frac{\\pi}{4} \\text{ radians}.\\]",
+                "MarkingScheme": "A1 for correct argument \\(\\frac{\\pi}{4}\\) or equivalent."
+            },
+            {
+                "Part": "iii",
+                "Solution": "The points \\(OC\\) and \\(BA\\) are equal in length and parallel (or have the same direction).",
+                "MarkingScheme": "B1 for stating lengths are equal, B1 for direction/parallelism."
+            },
+            {
+                "Part": "iv",
+                "Solution": "Using the argument relationship:\\n\\[\\arg(AOB) = \\arg(u) - \\arg(v) = \\frac{\\pi}{4}.\\]\\nAlternatively, calculate the angle using gradients or trigonometric relationships:\\n\\[\\tan AOB = \\frac{3}{1} - \\frac{2}{4} = \\arctan(3) - \\arctan\\left(\\frac{1}{2}\\right).\\]\\nThus, angle \\(AOB = \\frac{\\pi}{4}\\).",
+                "MarkingScheme": "M1 for method (argument or trigonometry), A1 for proving \\(\\frac{\\pi}{4}\\)."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Maximum Point and Area under a Curve",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2004,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 7,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Differentiation and Integration",
+        "TopicsCovered": [
+            "Stationary Points",
+            "Area under a Curve",
+            "Exponential Function"
+        ],
+        "MarksAllocation": {
+            "PartI": 4,
+            "PartII": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2004_Nov/q7.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Find the \\(x\\)-coordinate of \\(M\\), the maximum point of the curve \\(y = x^2 e^{-\\frac{1}{2}x}\\)."
+            },
+            {
+                "Part": "ii",
+                "Text": "Find the area of the shaded region enclosed by the curve, the \\(x\\)-axis and the line \\(x = 1\\), giving your answer in terms of \\(e\\)."
+            }
+        ],
+        "Diagram": "Curve of \\(y = x^2 e^{-\\frac{1}{2}x}\\), with a maximum point at \\(M\\), a shaded region enclosed by the curve and \\(x = 1\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Differentiate \\(y = x^2 e^{-\\frac{1}{2}x}\\) using the product rule:\\n\\[ \\frac{dy}{dx} = 2xe^{-\\frac{1}{2}x} - \\frac{1}{2}x^2 e^{-\\frac{1}{2}x}. \\]\\nEquate \\(\\frac{dy}{dx} = 0\\):\\n\\[ 2xe^{-\\frac{1}{2}x} - \\frac{1}{2}x^2 e^{-\\frac{1}{2}x} = 0. \\]\\nFactorize:\\n\\[ e^{-\\frac{1}{2}x} (2x - \\frac{1}{2}x^2) = 0. \\]\\nSolve for \\(x > 0\\):\\n\\[ 2x = \\frac{1}{2}x^2 \\Rightarrow x = 4. \\]\\nThe \\(x\\)-coordinate of \\(M\\) is \\(x = 4\\).",
+                "MarkingScheme": "M1 for product rule, A1 for derivative, M1 for solving, A1 for correct answer \\(x = 4\\)."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Integrate \\(y = x^2 e^{-\\frac{1}{2}x}\\) by parts twice:\\nFirst integration:\\n\\[ \\int x^2 e^{-\\frac{1}{2}x} dx = -2x^2 e^{-\\frac{1}{2}x} + 4 \\int x e^{-\\frac{1}{2}x} dx. \\]\\nSecond integration:\\n\\[ \\int x e^{-\\frac{1}{2}x} dx = -2x e^{-\\frac{1}{2}x} + 4 \\int e^{-\\frac{1}{2}x} dx. \\]\\nCombine results and apply limits \\(x = 0\\) to \\(x = 1\\):\\n\\[ \\text{Area} = \\left[-2(x^2 + 4x + 8)e^{-\\frac{1}{2}x}\\right]_0^1. \\]\\nSimplify:\\n\\[ \\text{Area} = 16 - 26e^{-\\frac{1}{2}}. \\]",
+                "MarkingScheme": "M1 for integration by parts, A1 for first integral, A1 for second integral, M1 for limits, A1 for correct final answer."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Partial Fractions and Integration",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2004,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 82,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Partial Fractions and Integration",
+        "TopicsCovered": [
+            "Partial Fractions",
+            "Integration"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 6
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2004_Nov/q8.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Subparts": [
+                    {
+                        "i": "State appropriate forms for expressing \\( \\frac{4x}{(x+4)(x^2+3)} \\) in partial fractions.",
+                        "Marks": 1
+                    },
+                    {
+                        "ii": "State appropriate forms for expressing \\( \\frac{2x+1}{(x-2)(x+2)^2} \\) in partial fractions.",
+                        "Marks": 2
+                    }
+                ]
+            },
+            {
+                "Part": "b",
+                "Text": "Show that \\( \\int_{3}^{4} \\frac{3x}{(x+1)(x-2)} \\, dx = \\ln 5 \\).",
+                "Marks": 6
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Subparts": [
+                    {
+                        "i": "State \\( \\frac{A}{x+4} + \\frac{Bx + C}{x^2 + 3} \\) as the appropriate form.",
+                        "MarkingScheme": "B1 for stating correct form."
+                    },
+                    {
+                        "ii": "State \\( \\frac{A}{x-2} + \\frac{Bx + C}{(x+2)^2} \\) or \\( \\frac{A}{x-2} + \\frac{B}{x+2} + \\frac{C}{(x+2)^2} \\).",
+                        "MarkingScheme": "B2 for correct full forms; award B1 for partial forms."
+                    }
+                ]
+            },
+            {
+                "Part": "b",
+                "Solution": "Decompose \\( \\frac{3x}{(x+1)(x-2)} \\) into partial fractions: \\[ f(x) = \\frac{A}{x+1} + \\frac{B}{x-2}. \\] \\nSolve for constants \\( A \\) and \\( B \\) to obtain \\( A = 1 \\) and \\( B = 2 \\).\\n\\nIntegrate each term:\\n\\[ \\int \\frac{1}{x+1} \\, dx = \\ln(x+1), \\quad \\int \\frac{2}{x-2} \\, dx = 2 \\ln(x-2). \\]\\n\\nUsing limits \\( x = 3 \\) to \\( x = 4 \\):\\n\\[ \\int_{3}^{4} \\frac{3x}{(x+1)(x-2)} \\, dx = \\ln(5) - \\ln(4) + 2 \\ln(2) - 2 \\ln(1). \\]\\n\\nSimplify to obtain the final answer \\( \\ln 5 \\).\\n\\nMarkingScheme: M1 for decomposition, A1 for constants, M1 for correct integration, A1 for correct limits, A1√ for simplifying to \\( \\ln 5 \\)."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Vector Equations and Perpendicularity",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2004,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 9,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Vectors",
+        "TopicsCovered": [
+            "Vector Intersection",
+            "Perpendicularity",
+            "Position Vectors"
+        ],
+        "MarksAllocation": {
+            "PartI": 4,
+            "PartII": 4,
+            "PartIII": 2
+        },
+        "DifficultyLevel": "Challenging",
+        "ImageUrl": [
+            "/9709_P3_2004_Nov/q9.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Show that \\( l \\) and \\( m \\) do not intersect.",
+                "Marks": 4
+            },
+            {
+                "Part": "ii",
+                "Text": "Given that the line \\( PQ \\) is perpendicular to \\( l \\), find the position vector of \\( P \\).",
+                "Marks": 4
+            },
+            {
+                "Part": "iii",
+                "Text": "Verify that \\( Q \\) lies on \\( m \\) and that \\( PQ \\) is perpendicular to \\( m \\).",
+                "Marks": 2
+            }
+        ],
+        "Text": "The lines \\( l \\) and \\( m \\) have vector equations:\\n\\n\\( \\mathbf{r} = 2\\mathbf{i} - \\mathbf{j} + 4\\mathbf{k} + s(\\mathbf{i} + \\mathbf{j} - \\mathbf{k}) \\)\\n\\( \\mathbf{r} = -2\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k} + t(-2\\mathbf{i} + \\mathbf{j} + \\mathbf{k}) \\)\\n\\nrespectively."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Express the general points on \\( l \\) and \\( m \\) in component form:\\n\\( l: (2 + s, -1 + s, 4 - s) \\)\\n\\( m: (-2 - 2t, 2 + t, 1 + t) \\).\\nSolve for \\( s \\) and \\( t \\) by equating corresponding components. If solutions are inconsistent, the lines do not intersect.",
+                "MarkingScheme": "B1 for general points in component form, M1 for equating components, A1 for solving inconsistencies, A1 for conclusion."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Assume \\( PQ \\) is perpendicular to direction vector \\( (1, 1, -1) \\) of \\( l \\). Use scalar product to equate \\( PQ \\cdot (1, 1, -1) = 0 \\), solve for \\( s \\), and determine \\( P \\)'s position vector.",
+                "MarkingScheme": "B1 for scalar product, M1 for solving \\( s \\), A1 for position vector."
+            },
+            {
+                "Part": "iii",
+                "Solution": "Verify that \\( Q \\) satisfies the vector equation of \\( m \\) with \\( t = -2 \\). Calculate \\( PQ \\cdot \\mathbf{d}_m \\) (direction vector of \\( m \\)), and confirm perpendicularity by showing it equals zero.",
+                "MarkingScheme": "B1 for verifying \\( Q \\) lies on \\( m \\), B1 for showing perpendicularity."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Differential Equation for Water Flow",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2004,
+        "Session": "October/November",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 10,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Differential Equations",
+        "TopicsCovered": [
+            "Solving Differential Equations",
+            "Variable Separation",
+            "Integration Techniques"
+        ],
+        "MarksAllocation": {
+            "PartI": 3,
+            "PartII": 5,
+            "PartIII": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+             "/9709_P3_2004_Nov/q10.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Show that \\( h \\) satisfies the differential equation \\[ \\frac{dh}{dt} = 0.01(3 - \\sqrt{h}). \\]",
+                "Marks": 3
+            },
+            {
+                "Part": "ii",
+                "Text": "Using the fact that \\( x = 3 \\) when \\( t = 0 \\), solve this differential equation, obtaining an expression for \\( t \\) in terms of \\( x \\).",
+                "Marks": 5
+            },
+            {
+                "Part": "iii",
+                "Text": "Find the time at which the depth of water reaches \\( 4 \\) m.",
+                "Marks": 2
+            }
+        ],
+        "MainText": "A rectangular reservoir has a horizontal base of area 1000 \\( m^2 \\). At time \\( t = 0 \\), it is empty and water begins to flow into it at a constant rate of \\( 30 \\ m^3 s^{-1} \\). At the same time, water begins to flow out at a rate proportional to \\( \\sqrt{h} \\), where \\( h \\ m \\) is the depth of the water at time \\( t \\ s \\). When \\( h = 1 \\), \\( \\frac{dh}{dt} = 0.02 \\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "State or imply \\( \\frac{dV}{dt} = 1000 \\frac{dh}{dt} \\). Use given conditions \\( \\frac{dV}{dt} = 30 - k\\sqrt{h} \\). Show that \\( k = 10 \\) and the final equation \\( \\frac{dh}{dt} = 0.01(3 - \\sqrt{h}) \\).",
+                "MarkingScheme": "B1 for correct form, B1 for values of constants, B1 for final result."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Separate variables and integrate: \\( \\frac{x - 3}{x} dx = 0.005 dt \\). Solve to get: \\( t = 200(x - 3 - 3 \\ln{x} + 3 \\ln{3}) \\).",
+                "MarkingScheme": "M1 for separation, A1 for correct integration, A1 for limits and constants."
+            },
+            {
+                "Part": "iii",
+                "Solution": "Substitute \\( x = 1 \\) into \\( t \\): \\( t = 259 \\ s \\).",
+                "MarkingScheme": "M1 for substitution, A1 for correct value."
+            }
+        ]
+    }
+}
