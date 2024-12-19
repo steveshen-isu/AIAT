@@ -1,7 +1,6 @@
 import React, { useState, useEffect, memo } from 'react';
-import 'C:/Users/ROG/node_modules/katex/dist/katex.min.css';
-import katex from 'katex';
-import Typewriter from './Typewriter';
+import 'katex/dist/katex.min.css';
+
 import TypewriterResponse from './TypeWriterResponse';
 const currentUrl = window.location.href;
 
