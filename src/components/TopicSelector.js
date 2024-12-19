@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import 'C:/Users/ROG/node_modules/katex/dist/katex.min.css';
+import 'katex/dist/katex.min.css';
 import katex from 'katex';
 
 const currentUrl = window.location.href;
