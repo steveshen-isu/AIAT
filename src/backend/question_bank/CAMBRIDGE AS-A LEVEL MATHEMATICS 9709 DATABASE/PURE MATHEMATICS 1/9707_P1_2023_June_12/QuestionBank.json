@@ -1,0 +1,643 @@
+{
+    "Metadata": {
+        "QuestionTitle": "Find the Equation of the Curve",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 1,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Differentiation and Integration",
+        "TopicsCovered": [
+            "Integration",
+            "Finding Constants"
+        ],
+        "MarksAllocation": {
+            "PartA": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_12/q1.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The equation of a curve is such that \\( \\frac{dy}{dx} = \\frac{4}{(x-3)^3} \\) for \\(x > 3\\). The curve passes through the point \\((4, 5)\\).\n\nFind the equation of the curve."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Integrate \\( \\frac{dy}{dx} = \\frac{4}{(x-3)^3} \\):\n\\[ y = \\int \\frac{4}{(x-3)^3} dx = \\frac{-4}{2} \\cdot (x-3)^{-2} + c = \\frac{-2}{(x-3)^2} + c. \\]\n\nUse the point \\((4, 5)\\):\n\\[ 5 = \\frac{-2}{(4-3)^2} + c. \\]\n\\[ 5 = -2 + c. \\]\n\\[ c = 7. \\]\n\nThus, the equation of the curve is:\n\\[ y = \\frac{-2}{(x-3)^2} + 7. \\]",
+                "MarkingScheme": "B1 for correct integration, M1 for using the point \\((4, 5)\\) to find \\(c\\), A1 for the final equation \\( y = \\frac{-2}{(x-3)^2} + 7 \\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Coefficient Comparison in Binomial Expansion",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 2,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Binomial Expansion",
+        "TopicsCovered": [
+            "Binomial Coefficients",
+            "Coefficient Comparison"
+        ],
+        "MarksAllocation": {
+            "Total": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_12/q2.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The coefficient of \\(x^4\\) in the expansion of \\((x + a)^6\\) is \\(p\\) and the coefficient of \\(x^2\\) in the expansion of \\((ax + 3)^4\\) is \\(q\\). It is given that \\(p + q = 276\\).\n\nFind the possible values of the constant \\(a\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The coefficient of \\(x^4\\) in \\((x + a)^6\\) is:\n\\[p = \\binom{6}{4} \\cdot a^2 = 15a^2.\\]\n\nThe coefficient of \\(x^2\\) in \\((ax + 3)^4\\) is:\n\\[q = \\binom{4}{2} \\cdot a^2 \\cdot 3^2 = 54a^2.\\]\n\nGiven \\(p + q = 276\\), substitute values:\n\\[15a^2 + 54a^2 = 276.\\]\n\\[69a^2 = 276.\\]\n\\[a^2 = 4.\\]\n\\[a = \\pm 2.\\]",
+                "MarkingScheme": "B1 for correctly finding \\(p = 15a^2\\), B1 for correctly finding \\(q = 54a^2\\), M1 for setting up and solving \\(15a^2 + 54a^2 = 276\\), A1 for the correct values of \\(a = \\pm 2\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Quadratic Expression and Real Roots",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 3,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Quadratic Expressions",
+        "TopicsCovered": [
+            "Completing the Square",
+            "Discriminant Analysis"
+        ],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 1
+        },
+        "DifficultyLevel": "Easy",
+        "ImageUrl": [
+            "/9709_P1_2023_June_12/q3.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Express \\(4x^2 - 24x + p\\) in the form \\(a(x + b)^2 + c\\), where \\(a\\) and \\(b\\) are integers and \\(c\\) is to be given in terms of the constant \\(p\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Hence or otherwise find the set of values of \\(p\\) for which the equation \\(4x^2 - 24x + p = 0\\) has no real roots."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Complete the square:\n\\[4x^2 - 24x + p = 4(x^2 - 6x) + p.\\]\nFactorize within the brackets:\n\\[= 4((x - 3)^2 - 9) + p.\\]\nSimplify:\n\\[= 4(x - 3)^2 - 36 + p.\\]\nThus, \\(a = 4\\), \\(b = -3\\), and \\(c = p - 36\\).",
+                "MarkingScheme": "B1 for \\(a = 4\\), \\(b = -3\\). B1 for \\(c = p - 36\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "The equation \\(4x^2 - 24x + p = 0\\) has no real roots if its discriminant is less than zero:\n\\[b^2 - 4ac < 0.\\]\nHere, \\(b = -24\\), \\(a = 4\\), \\(c = p\\). Substitute:\n\\[(-24)^2 - 4(4)(p) < 0.\\]\n\\[576 - 16p < 0.\\]\n\\[p > 36.\\]\nThus, \\(p > 36\\).",
+                "MarkingScheme": "B1 for correctly determining \\(p > 36\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Solving a Polynomial Equation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Polynomials",
+        "TopicsCovered": [
+            "Polynomial Equations",
+            "Factorization"
+        ],
+        "MarksAllocation": {
+            "Total": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_12/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Solve the equation \\(8x^6 + 215x^3 - 27 = 0\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Factorizing the equation:\n\\[8x^6 + 215x^3 - 27 = (8x^3 - 1)(x^3 + 27) = 0.\\]\n\nSolving the first factor:\n\\[8x^3 - 1 = 0 \\implies x^3 = \\frac{1}{8} \\implies x = \\frac{1}{2}.\\]\n\nSolving the second factor:\n\\[x^3 + 27 = 0 \\implies x^3 = -27 \\implies x = -3.\\]\n\nFinal solutions:\n\\[x = \\frac{1}{2}, x = -3.\\]",
+                "MarkingScheme": "M1 for correct factorization, A1 for solving \\(x^3 = \\frac{1}{8}\\), A1 for solving \\(x^3 = -27\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Area of Shaded Region",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Integration and Area",
+        "TopicsCovered": [
+            "Integration",
+            "Area under a Curve"
+        ],
+        "MarksAllocation": {
+            "PartA": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_12/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The diagram shows the curve with equation \\( y = 10x^{1/2} - \\frac{5}{2}x^{3/2} \\) for \\(x > 0\\). The curve meets the \\(x\\)-axis at the points \\((0, 0)\\) and \\((4, 0)\\).\n\nFind the area of the shaded region."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "To find the area of the shaded region, integrate \\( y = 10x^{1/2} - \\frac{5}{2}x^{3/2} \\) with respect to \\(x\\):\n\\[\n\\int \\left(10x^{1/2} - \\frac{5}{2}x^{3/2} \\right) dx = \\int 10x^{1/2} dx - \\int \\frac{5}{2}x^{3/2} dx.\n\\]\nIntegrating each term separately:\n\\[\n\\int 10x^{1/2} dx = \\frac{20}{3}x^{3/2}, \\quad \\int \\frac{5}{2}x^{3/2} dx = \\frac{5}{4}x^{5/2}.\n\\]\nCombining results:\n\\[\n\\frac{20}{3}x^{3/2} - \\frac{5}{4}x^{5/2}.\n\\]\nEvaluate from \\(x = 0\\) to \\(x = 4\\):\n\\[\n\\text{At } x = 4, \\quad \\frac{20}{3}(4^{3/2}) - \\frac{5}{4}(4^{5/2}) = \\frac{20}{3}(8) - \\frac{5}{4}(32) = \\frac{160}{3} - 40 = \\frac{160}{3} - \\frac{120}{3} = \\frac{64}{3}.\n\\]\n\\[\n\\text{At } x = 0, \\quad \\text{Area} = 0.\n\\]\nThus, the total shaded area is:\n\\[\n\\frac{64}{3} \\approx 21.3 \\text{ square units.}\n\\]",
+                "MarkingScheme": "B1 for writing each integral term. M1 for correct integration steps. A1 for correct substitution and final area calculation."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Sector and Area of Shaded Region",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Trigonometry and Geometry",
+        "TopicsCovered": [
+            "Arc Length",
+            "Sector Area",
+            "Triangle Area"
+        ],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_12/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Show that the arc length AB is \\(2x\\theta \\cos \\theta\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the area of the shaded region \\(APB\\) in terms of \\(x\\) and \\(\\theta\\)."
+            }
+        ],
+        "Text": "The diagram shows a sector \\(OAB\\) of a circle with centre \\(O\\). Angle \\(AOB = \\theta\\) radians and \\(OP = AP = x\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "\\(OA = 2x\\cos\\theta\\) leading to arc length \\(= 2x\\theta \\cos\\theta\\).",
+                "MarkingScheme": "DB1: Complete correct method showing all necessary working. Condone \\(2x\\cos\\theta\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "Sector area \\(= \\frac{1}{2}(2x\\cos\\theta)^2\\theta\\).\n\nTriangle area \\(= \\frac{1}{2}x^2\\sin(2\\theta)\\).\n\nArea \\(APB = \\text{Sector Area} - \\text{Triangle Area}\\).\n\n\\[ \\text{Area APB} = \\frac{1}{2}(2x\\cos\\theta)^2\\theta - \\frac{1}{2}x^2\\sin(2\\theta) \\].",
+                "MarkingScheme": "M1: Using the sector formula with a correct \\(OA\\). M1: Using a correct triangle formula. A1: Correct simplified expression."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Trigonometric Equation and Identity Proof",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 7,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Trigonometry",
+        "TopicsCovered": [
+            "Trigonometric Identities",
+            "Equation Solving",
+            "Verification"
+        ],
+        "MarksAllocation": {
+            "PartA": 5,
+            "PartB": 3,
+            "PartC": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_12/q7.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "SubParts": [
+                    {
+                        "SubPart": "i",
+                        "Text": "By first expanding \\((\\cos\\theta + \\sin\\theta)^2\\), find the three solutions of the equation \\((\\cos\\theta + \\sin\\theta)^2 = 1\\) for \\(0 \\leq \\theta \\leq \\pi\\)."
+                    },
+                    {
+                        "SubPart": "ii",
+                        "Text": "Hence verify that the only solutions of the equation \\(\\cos\\theta + \\sin\\theta = 1\\) for \\(0 \\leq \\theta \\leq \\pi\\) are \\(0\\) and \\(\\frac{\\pi}{2}\\)."
+                    }
+                ]
+            },
+            {
+                "Part": "b",
+                "Text": "Prove the identity \\(\\frac{\\sin\\theta}{\\cos\\theta + \\sin\\theta} + \\frac{1 - \\cos\\theta}{\\cos\\theta - \\sin\\theta} \\equiv \\frac{\\cos\\theta + \\sin\\theta - 1}{1 - 2\\sin^2\\theta}\\)."
+            },
+            {
+                "Part": "c",
+                "Text": "Using the results of (a)(ii) and (b), solve the equation \\(\\frac{\\sin\\theta}{\\cos\\theta + \\sin\\theta} + \\frac{1 - \\cos\\theta}{\\cos\\theta - \\sin\\theta} = 2(\\cos\\theta + \\sin\\theta - 1)\\) for \\(0 \\leq \\theta \\leq \\pi\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "SubParts": [
+                    {
+                        "SubPart": "i",
+                        "Solution": "Expanding \\((\\cos\\theta + \\sin\\theta)^2 = 1\\) gives \\(\\cos^2\\theta + 2\\sin\\theta\\cos\\theta + \\sin^2\\theta = 1\\). Using \\(\\cos^2\\theta + \\sin^2\\theta = 1\\), this reduces to \\(2\\sin\\theta\\cos\\theta = 0\\) or \\(\\sin(2\\theta) = 0\\), leading to \\(\\theta = 0, \\frac{\\pi}{2}, \\pi\\).",
+                        "MarkingScheme": {
+                            "B1": "Correct expansion of \\((\\cos\\theta + \\sin\\theta)^2\\).",
+                            "B2": "Correct solutions \\(\\theta = 0, \\frac{\\pi}{2}, \\pi\\)."
+                        }
+                    },
+                    {
+                        "SubPart": "ii",
+                        "Solution": "Substituting \\(\\theta = 0\\) and \\(\\theta = \\frac{\\pi}{2}\\) into \\(\\cos\\theta + \\sin\\theta\\) shows both satisfy the equation. \\(\\theta = \\pi\\) gives \\(-1 \\neq 1\\), hence it is not a solution.",
+                        "MarkingScheme": {
+                            "B1": "Verification for \\(\\theta = 0, \\frac{\\pi}{2}, \\pi\\)."
+                        }
+                    }
+                ]
+            },
+            {
+                "Part": "b",
+                "Solution": "Rewriting the LHS with a common denominator \\((\\cos\\theta - \\sin\\theta)(\\cos\\theta + \\sin\\theta)\\), simplifying the numerator to \\(\\cos\\theta + \\sin\\theta - 1\\), and using \\(1 - \\cos^2\\theta - \\sin^2\\theta = -2\\sin^2\\theta\\), the identity is verified.",
+                "MarkingScheme": {
+                    "M1": "Correct common denominator.",
+                    "A1": "Correct numerator and simplified expression."
+                }
+            },
+            {
+                "Part": "c",
+                "Solution": "Replacing the LHS using (b) and simplifying leads to \\(\\cos\\theta + \\sin\\theta - 1 = 0\\) or \\(\\sin^2\\theta = \\frac{1}{4}\\), giving \\(\\theta = 0, \\frac{1}{6}\\pi, \\frac{5}{6}\\pi\\).",
+                "MarkingScheme": {
+                    "M1": "Substitution of (b) into the equation.",
+                    "A1": "Correct solutions \\(\\theta = 0, \\frac{1}{6}\\pi, \\frac{5}{6}\\pi\\)."
+                }
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Transformations and Inverse Functions",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 8,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Transformations and Functions",
+        "TopicsCovered": [
+            "Inverse Functions",
+            "Graph Sketching",
+            "Transformations"
+        ],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 2,
+            "PartC": 2,
+            "PartD": 6
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_12/q8.png"
+         ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "On the diagram above, sketch the graph of \\(y = f^{-1}(x)\\).",
+                "Marks": 2
+            },
+            {
+                "Part": "b",
+                "Text": "Find an expression for \\(f^{-1}(x)\\).",
+                "Marks": 2
+            },
+            {
+                "Part": "c",
+                "Text": "Complete the sketch of the graph of \\(g(x) = 3 + 2\\sin\\left(\\frac{1}{4}x\\right)\\) on the diagram above and hence explain whether the function \\(g\\) has an inverse.",
+                "Marks": 2
+            },
+            {
+                "Part": "d",
+                "Text": "Describe fully a sequence of three transformations which can be combined to transform the graph of \\(y = \\sin x\\) for \\(0 < x \\leq \\frac{1}{2}\\pi\\) to the graph of \\(y = f(x)\\), making clear the order in which the transformations are applied.",
+                "Marks": 6
+            }
+        ],
+        "TotalMarks": 12
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The line \\(y = x\\) correctly drawn. Can be implied by a reasonably correct graph of \\(f^{-1}(x)\\). Fully correct if it reaches \\(y = 2\\pi\\) and \\(x\\)-axis and crosses \\(y = x\\) at the correct points.",
+                "Marks": 2
+            },
+            {
+                "Part": "b",
+                "Solution": [
+                    "Start with \\(y = 3 + 2\\sin\\left(\\frac{1}{4}x\\right)\\) and rearrange to find \\(\\sin\\left(\\frac{1}{4}x\\right) = \\frac{y - 3}{2}\\).",
+                    "Solve to get \\(x = 4\\sin^{-1}\\left(\\frac{y - 3}{2}\\right)\\).",
+                    "Thus, \\(f^{-1}(x) = 4\\sin^{-1}\\left(\\frac{x - 3}{2}\\right)\\)."
+                ],
+                "Marks": 2
+            },
+            {
+                "Part": "c",
+                "Solution": [
+                    "Graph is completed by extending from \\(y\\)-intercept to \\(-2\\pi\\), ensuring correct shape and gradient as \\(-2\\pi\\) is approached.",
+                    "The function \\(g\\) has an inverse because the graph is always increasing (one-to-one) and passes the horizontal line test."
+                ],
+                "Marks": 2
+            },
+            {
+                "Part": "d",
+                "Solution": [
+                    "{Stretch} {factor 4} {in x-direction}",
+                    "{Stretch} {factor 2} {in y-direction}",
+                    "{Translation} {\\(\\begin{bmatrix} 0 \\\\ 3 \\end{bmatrix}\\)}",
+                    "The correct order is: apply the stretch in the x-direction, followed by the stretch in the y-direction, and finally the translation."
+                ],
+                "Marks": 6
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Geometric Progression",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 9,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Sequences and Series",
+        "TopicsCovered": [
+            "Geometric Progressions",
+            "Sum to Infinity",
+            "Nth Term Relationships"
+        ],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_12/q9.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "The second term of a geometric progression is 16 and the sum to infinity is 100.\n\nFind the two possible values of the first term."
+            },
+            {
+                "Part": "b",
+                "Text": "Show that the nth term of one of the two possible geometric progressions is equal to \\(4^{n-2}\\) multiplied by the nth term of the other geometric progression."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Using the formula for the second term \\(ar = 16\\) and the sum to infinity \\(S_\\infty = \\frac{a}{1 - r} = 100\\), solve for \\(a\\) and \\(r\\):\n\n\\[\nar = 16, \\quad a = \\frac{16}{r}, \\quad \\frac{a}{1 - r} = 100.\\]\n\nSubstituting \\(a = \\frac{16}{r}\\) into \\(\\frac{a}{1 - r} = 100\\):\n\\[\n\\frac{16}{r(1 - r)} = 100.\n\\]\n\nRearranging:\n\\[\n100r^2 - 100r + 16 = 0.\n\\]\n\nSolving this quadratic equation:\n\\[\nr = \\frac{4}{5}, \\quad r = \\frac{1}{5}.\n\\]\n\nFor \\(r = \\frac{4}{5}\\), \\(a = 20\\). For \\(r = \\frac{1}{5}\\), \\(a = 80\\).\n\nThus, the two possible values of \\(a\\) are \\(20\\) and \\(80\\).",
+                "MarkingScheme": "B1 for correct expressions for \\(ar = 16\\) and \\(a = \\frac{16}{r}\\). M1 for using \\(S_\\infty = 100\\) and solving the quadratic equation. A1 for correct values \\(a = 20\\) and \\(a = 80\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "For the two progressions, the nth terms are:\n\\[\nU_n^{(1)} = 20 \\left(\\frac{4}{5}\\right)^{n-1}, \\quad U_n^{(2)} = 80 \\left(\\frac{1}{5}\\right)^{n-1}.\n\\]\n\nThe ratio of the nth terms is:\n\\[\n\\frac{U_n^{(1)}}{U_n^{(2)}} = \\frac{20 \\left(\\frac{4}{5}\\right)^{n-1}}{80 \\left(\\frac{1}{5}\\right)^{n-1}} = \\frac{20}{80} \\cdot \\frac{4^{n-1}}{5^{n-1}} \\cdot 5^{n-1} = \\frac{1}{4} \\cdot 4^{n-1} = 4^{n-2}.\n\\]\n\nTherefore:\n\\[\nU_n^{(1)} = 4^{n-2} \\cdot U_n^{(2)}.\n\\]",
+                "MarkingScheme": "B1 for nth term expressions \\(U_n^{(1)}\\) and \\(U_n^{(2)}\\). M1 for correctly forming the ratio \\(\\frac{U_n^{(1)}}{U_n^{(2)}}\\). A1 for simplifying to \\(4^{n-2}\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Circle Equation and Tangents",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 10,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Geometry",
+        "TopicsCovered": [
+            "Equation of Circle",
+            "Tangents and Normals"
+        ],
+        "MarksAllocation": {
+            "PartA": 5,
+            "PartB": 4,
+            "PartC": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_12/q10.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Show that one possible value of \\(a\\) is 4 and find the other possible value."
+            },
+            {
+                "Part": "b",
+                "Text": "For \\(a = 4\\), find the equation of the normal to the circle at \\(P\\)."
+            },
+            {
+                "Part": "c",
+                "Text": "For \\(a = 4\\), find the equations of the two tangents to the circle which are parallel to the normal found in (b)."
+            }
+        ],
+        "FullText": "The equation of a circle is \\((x - a)^2 + (y - 3)^2 = 20\\). The line \\(y = \\frac{1}{2}x + 6\\) is a tangent to the circle at the point \\(P\\). \n\n(a) Show that one possible value of \\(a\\) is 4 and find the other possible value. [5]\n\n(b) For \\(a = 4\\), find the equation of the normal to the circle at \\(P\\). [4]\n\n(c) For \\(a = 4\\), find the equations of the two tangents to the circle which are parallel to the normal found in (b). [4]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Using the tangent equation \\(y = \\frac{1}{2}x + 6\\), substitute \\(y\\) into the circle equation:\n\\[(x - a)^2 + \\left(\\frac{1}{2}x + 6 - 3\\right)^2 = 20.\\]\nSimplify and form a quadratic in \\(x\\):\n\\[\\frac{5}{4}x^2 + (3 - 2a)x + a^2 - 11 = 0.\\]\nUsing the condition for tangency, \\(b^2 - 4ac = 0\\):\n\\[(3 - 2a)^2 - 4 \\cdot \\frac{5}{4} \\cdot (a^2 - 11) = 0.\\]\nSimplify to obtain:\n\\[-a^2 - 12a + 44 = 0.\\]\nFactorize to find \\(a = 4\\) or \\(a = -16\\).",
+                "MarkingScheme": "M1: Setting up the equation for the circle and tangent. \nA1: Simplifying to a correct quadratic equation. \nDM1: Using \\(b^2 - 4ac = 0\\) and solving. \nA1: Correctly finding \\(a = 4\\) and \\(a = -16\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "For \\(a = 4\\), the center of the circle is \\((4, 3)\\), and the point \\(P\\) is \\((2, 7)\\). \nThe gradient of the radius is \\(-\\frac{1}{2}\\), so the gradient of the normal is \\(-2\\). \nThe equation of the normal is:\n\\[y - 3 = -2(x - 4).\\]\nSimplify to:\n\\[y = -2x + 11.\\]",
+                "MarkingScheme": "B1: Correctly identifying the center or point \\(P\\). \nB1: Gradient of the normal. \nM1: Forming the equation of the normal. \nA1: Simplifying to a correct equation."
+            },
+            {
+                "Part": "c",
+                "Solution": "For \\(a = 4\\), the equations of tangents parallel to the normal \\(y = -2x + 11\\) will have gradients \\(-2\\). \nUsing the perpendicular distance formula from the center \\((4, 3)\\) to the tangent \\(y = -2x + c\\):\n\\[\\frac{|3 - (-2)(4) + c|}{\\sqrt{1 + (-2)^2}} = \\sqrt{20}.\\]\nSimplify to find \\(c = 21\\) or \\(c = 1\\). \nThe equations of the tangents are:\n\\[y = -2x + 21\\] and \\[y = -2x + 1.\\]",
+                "MarkingScheme": "M1: Using perpendicular distance formula. \nA1: Simplifying to find \\(c\\). \nA1: Writing the correct equations of the tangents."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Differentiation and Stationary Points",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 11,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Differentiation",
+        "TopicsCovered": [
+            "Differentiation",
+            "Stationary Points",
+            "Equation of Normal"
+        ],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 2,
+            "PartC": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_12/q11.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find \\(\\frac{dy}{dx}\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the \\(x\\)-coordinate of the stationary point in terms of \\(k\\)."
+            },
+            {
+                "Part": "c",
+                "Text": "Given that \\(k = 10.5\\), find the equation of the normal to the curve at the point where the tangent to the curve makes an angle of \\(\\tan^{-1}(2)\\) with the positive \\(x\\)-axis."
+            }
+        ],
+        "Text": "The equation of a curve is \\(y = k \\sqrt{4x + 1} - x + 5\\), where \\(k\\) is a positive constant."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "\\[\\frac{dy}{dx} = k \\cdot \\frac{1}{2}(4x+1)^{-\\frac{1}{2}} \\cdot (4) - 1 = \\frac{2k}{(4x+1)^{\\frac{1}{2}}} - 1.\\]",
+                "MarkingScheme": "B2 for correctly applying the chain rule and simplifying. B1 for partial differentiation steps."
+            },
+            {
+                "Part": "b",
+                "Solution": "\\[\\frac{dy}{dx} = 0 \\Rightarrow \\frac{2k}{\\sqrt{4x+1}} - 1 = 0 \\Rightarrow (4x+1)^{\\frac{1}{2}} = 2k.\\]\n\\[x = \\frac{4k^2 - 1}{4}.\\]",
+                "MarkingScheme": "M1 for equating \\(\\frac{dy}{dx} = 0\\), A1 for solving for \\(x\\)."
+            },
+            {
+                "Part": "c",
+                "Solution": "\\[2 \\cdot 10.5 \\cdot (4x+1)^{-\\frac{1}{2}} - 1 = 2 \\Rightarrow \\frac{21}{\\sqrt{4x+1}} = 3 \\Rightarrow \\sqrt{4x+1} = 7 \\Rightarrow 4x+1 = 49 \\Rightarrow x = 12.\\]\nSubstitute \\(x = 12\\) into \\(y = 10.5\\sqrt{4(12)+1} - 12 + 5\\):\n\\[y = 66.5.\\]\nThe gradient of the tangent is \\(2\\), so the gradient of the normal is \\(-\\frac{1}{2}\\).\nUsing the point \\((12, 66.5)\\):\n\\[y - 66.5 = -\\frac{1}{2}(x - 12) \\Rightarrow y = -\\frac{1}{2}x + 72.5.\\]",
+                "MarkingScheme": "M1 for substituting \\(k = 10.5\\) into \\(\\frac{dy}{dx}\\), A1 for solving for \\(x\\) and \\(y\\), A1 for finding the gradient of the normal, A1 for the equation of the normal."
+            }
+        ]
+    }
+}
