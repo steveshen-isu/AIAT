@@ -1,0 +1,612 @@
+{
+    "Metadata": {
+        "QuestionTitle": "Binomial Expansion of (1 + 4x)^(-1/2)",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2005,
+        "Session": "May/June",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 1,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Binomial Expansion",
+        "TopicsCovered": [
+            "Binomial Expansion",
+            "Simplifying Coefficients"
+        ],
+        "MarksAllocation": {
+            "PartA": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2005_June/q1.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Expand \\((1 + 4x)^{-\\frac{1}{2}}\\) in ascending powers of \\(x\\), up to and including the term in \\(x^3\\), simplifying the coefficients.",
+                "Marks": 4
+            }
+        ],
+        "Text": "Expand \\((1 + 4x)^{-\\frac{1}{2}}\\) in ascending powers of \\(x\\), up to and including the term in \\(x^3\\), simplifying the coefficients."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Using the binomial expansion for \\((1 + kx)^n\\):\\n\\[ (1 + kx)^n = 1 + nkx + \\frac{n(n-1)}{2!}k^2x^2 + \\frac{n(n-1)(n-2)}{3!}k^3x^3 + \\dots \\]\\nHere, \\(n = -\\frac{1}{2}\\) and \\(k = 4\\):\\n\\[\\n(1 + 4x)^{-\\frac{1}{2}} = 1 + \\left(-\\frac{1}{2}\\right)(4x) + \\frac{-\\frac{1}{2}(-\\frac{3}{2})}{2!}(4x)^2 + \\frac{-\\frac{1}{2}(-\\frac{3}{2})(-\\frac{5}{2})}{3!}(4x)^3 + \\dots\\n\\]\\nSimplify each term:\\n- First term: \\(1\\)\\n- Second term: \\(-2x\\)\\n- Third term: \\(6x^2\\)\\n- Fourth term: \\(-20x^3\\)\\n\\nFinal expansion:\\n\\[ (1 + 4x)^{-\\frac{1}{2}} = 1 - 2x + 6x^2 - 20x^3. \\]",
+                "MarkingScheme": "M1 for obtaining the first unsimplified term, A1 for correct first two terms \\(1 - 2x\\), A1 for next two terms \\(6x^2 - 20x^3\\)."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Trapezium Rule Approximation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2005,
+        "Session": "May/June",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 2,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Numerical Methods",
+        "TopicsCovered": [
+            "Trapezium Rule",
+            "Approximation and Integration"
+        ],
+        "MarksAllocation": {
+            "PartI": 3,
+            "PartII": 1
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2005_June/q2.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Use the trapezium rule, with two intervals, to estimate the value of \\( \\int_{-0.6}^{0.6} \\frac{1}{1 + x^3} \\, dx \\), giving your answer correct to 2 decimal places.",
+                "Marks": 3
+            },
+            {
+                "Part": "ii",
+                "Text": "Explain, with reference to the diagram, why the trapezium rule may be expected to give a good approximation to the true value of the integral in this case.",
+                "Marks": 1
+            }
+        ],
+        "Diagram": "The diagram shows a curve \\( y = \\frac{1}{1 + x^3} \\) for values of \\(x\\) from \\(-0.6\\) to \\(0.6\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "The ordinates are calculated at \\(x = -0.6, 0, 0.6\\), giving values approximately \\(1.2755, 1, 0.8223\\). Using the trapezium rule:\\n\\[\\n\\text{Area} = \\frac{h}{2} \\left( y_0 + 2y_1 + y_2 \\right), \\text{ where } h = 0.6.\\n\\]\\n\\[\\text{Area} = \\frac{0.6}{2} \\left( 1.2755 + 2(1) + 0.8223 \\right) = 1.23.\\]\\nThe answer is \\(1.23\\), correct to two decimal places.",
+                "MarkingScheme": "B1 for correct ordinates, M1 for correct formula use, A1 for correct answer."
+            },
+            {
+                "Part": "ii",
+                "Solution": "The curve is relatively smooth and slightly concave, so the trapezium rule alternates between overestimating and underestimating the area, resulting in an accurate approximation.",
+                "MarkingScheme": "B1 for adequate justification."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Complex Numbers Roots and Argand Diagram",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2005,
+        "Session": "May/June",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 3,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Complex Numbers",
+        "TopicsCovered": [
+            "Roots of Quadratic Equations",
+            "Modulus and Argument",
+            "Argand Diagram Sketching"
+        ],
+        "MarksAllocation": {
+            "PartI": 3,
+            "PartII": 3,
+            "PartIII": 1
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2005_June/q3.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Solve the equation \\( z^2 - 2iz - 5 = 0 \\), giving your answers in the form \\( x + iy \\) where \\( x \\) and \\( y \\) are real."
+            },
+            {
+                "Part": "ii",
+                "Text": "Find the modulus and argument of each root."
+            },
+            {
+                "Part": "iii",
+                "Text": "Sketch an Argand diagram showing the points representing the roots."
+            }
+        ],
+        "Marks": 7
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Use the quadratic formula \\( z = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\) where \\( a = 1, b = -2i, c = -5 \\).\\n\\[ z = \\frac{-(-2i) \\pm \\sqrt{(-2i)^2 - 4(1)(-5)}}{2(1)} \\]\\nSimplify:\\n\\[ z = \\frac{2i \\pm \\sqrt{-4 - (-20)}}{2} \\]\\n\\[ z = \\frac{2i \\pm \\sqrt{16}}{2} \\]\\n\\[ z = \\frac{2i \\pm 4}{2} \\]\\n\\[ z = 2 + i \\text{ and } z = -2 + i. \\]",
+                "MarkingScheme": "M1 for using the quadratic formula, A1 for one root, A1 for the other root."
+            },
+            {
+                "Part": "ii",
+                "Solution": "The modulus of \\( z = 2 + i \\) is given by:\\n\\[ |z| = \\sqrt{2^2 + 1^2} = \\sqrt{5}. \\]\\nThe argument of \\( 2 + i \\) is:\\n\\[ \\theta = \\arctan\\left(\\frac{1}{2}\\right) = 26.6^\\circ \\text{ or } 0.464 \\text{ radians.} \\]\\nFor \\( z = -2 + i \\):\\n\\[ |z| = \\sqrt{(-2)^2 + 1^2} = \\sqrt{5}. \\]\\nThe argument is:\\n\\[ \\theta = \\pi - \\arctan\\left(\\frac{1}{2}\\right) = 153.4^\\circ \\text{ or } 2.68 \\text{ radians.} \\]",
+                "MarkingScheme": "B1 for correct modulus, B1 for argument of \\( 2 + i \\), B1 for argument of \\( -2 + i \\)."
+            },
+            {
+                "Part": "iii",
+                "Solution": "Sketch both roots \\( 2 + i \\) and \\( -2 + i \\) on an Argand diagram. The root \\( 2 + i \\) is in the first quadrant, and \\( -2 + i \\) is in the second quadrant at correct positions.",
+                "MarkingScheme": "B1 for both roots plotted correctly."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Integration using substitution",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2005,
+        "Session": "May/June",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Integration",
+        "TopicsCovered": [
+            "Substitution in Integration",
+            "Definite Integration"
+        ],
+        "MarksAllocation": {
+            "PartI": 4,
+            "PartII": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2005_June/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Use the substitution \\(x = \\tan \\theta\\) to show that \\[\\n\\int \\frac{1 - x^2}{(1 + x^2)^2} \\, dx = \\int \\cos 2\\theta \\, d\\theta.\\n\\]",
+                "Marks": 4
+            },
+            {
+                "Part": "ii",
+                "Text": "Hence find the value of \\[\\int_0^1 \\frac{1 - x^2}{(1 + x^2)^2} \\, dx.\\]",
+                "Marks": 3
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Using \\(x = \\tan \\theta\\), we get \\(dx = \\sec^2 \\theta d\\theta\\). Substituting into the integral:\\n\\[\\n\\int \\frac{1 - x^2}{(1 + x^2)^2} \\, dx = \\int \\frac{1 - \\tan^2 \\theta}{(1 + \\tan^2 \\theta)^2} \\sec^2 \\theta d\\theta.\\n\\]\\nUsing \\(1 + \\tan^2 \\theta = \\sec^2 \\theta\\) and \\(1 - \\tan^2 \\theta = \\cos 2\\theta\\), we simplify to:\\n\\[\\n\\int \\frac{1 - x^2}{(1 + x^2)^2} \\, dx = \\int \\cos 2\\theta \\, d\\theta.\\n\\]",
+                "MarkingScheme": "B1 for correct \\(dx = \\sec^2 \\theta d\\theta\\), M1 for correct substitution and simplification, A1 for reducing to \\(\\cos 2\\theta\\), A1 for showing the final result."
+            },
+            {
+                "Part": "ii",
+                "Solution": "From Part (i), integrate \\(\\cos 2\\theta\\):\\n\\[\\n\\int \\cos 2\\theta \\, d\\theta = \\frac{1}{2} \\sin 2\\theta.\\n\\]\\nUsing limits \\(x = 0\\) (\\(\\theta = 0\\)) and \\(x = 1\\) (\\(\\theta = \\frac{\\pi}{4}\\)), we calculate:\\n\\[\\n\\frac{1}{2} \\sin 2\\theta \\bigg|_0^{\\pi/4} = \\frac{1}{2} \\sin \\frac{\\pi}{2} - \\frac{1}{2} \\sin 0 = \\frac{1}{2} (1 - 0) = \\frac{1}{2}.\\n\\]",
+                "MarkingScheme": "B1 for stating integral \\(\\frac{1}{2} \\sin 2\\theta\\), M1 for applying limits, A1 for correct answer \\(\\frac{1}{2}\\) or 0.5."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Factorising a Polynomial and Determining Real Roots",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2005,
+        "Session": "May/June",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Polynomials",
+        "TopicsCovered": [
+            "Polynomial Factorisation",
+            "Real Roots of a Polynomial"
+        ],
+        "MarksAllocation": {
+            "PartI": 6,
+            "PartII": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2005_June/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Find the value of \\(a\\) and factorise \\(p(x)\\) completely.",
+                "Marks": 6
+            },
+            {
+                "Part": "ii",
+                "Text": "Hence state the number of real roots of the equation \\(p(x) = 0\\), justifying your answer.",
+                "Marks": 2
+            }
+        ],
+        "Text": "The polynomial \\(x^4 + 5x + a\\) is denoted by \\(p(x)\\). It is given that \\(x^2 - x + 3\\) is a factor of \\(p(x)\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Divide \\(p(x)\\) by \\(x^2 - x + 3\\) to get the partial quotient \\(x^2 + x\\).\\nEquate the remainder to zero and solve for \\(a\\):\\n\\[a = -6.\\]\\nFactorise \\(p(x)\\) completely:\\n\\[p(x) = (x^2 - x + 3)(x^2 + x - 2).\\]\\nFurther factorise \\(x^2 + x - 2\\) to get:\\n\\[p(x) = (x^2 - x + 3)(x + 2)(x - 1).\\]",
+                "MarkingScheme": "B1 for partial quotient, M1 for equating and solving \\(a\\), A1 for correct \\(a = -6\\), B1 for factorisation \\(x^2 + x - 2\\), B1 for final complete factorisation."
+            },
+            {
+                "Part": "ii",
+                "Solution": "State that \\(x^2 + x - 2 = 0\\) has two real roots, namely \\(x = -2\\) and \\(x = 1\\).\\nShow that \\(x^2 - x + 3 = 0\\) has no real roots since its discriminant is negative:\\n\\[b^2 - 4ac = (-1)^2 - 4(1)(3) = -11.\\]\\nConclude that \\(p(x) = 0\\) has two real roots.",
+                "MarkingScheme": "B1 for stating real roots of \\(x^2 + x - 2\\), B1 for showing \\(x^2 - x + 3\\) has no real roots."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Prove Trigonometric Identity and Solve Equation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATHEMATICS",
+        "YearOfExam": 2005,
+        "Session": "May/June",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Trigonometric Identities",
+        "TopicsCovered": [
+            "Trigonometric Identities",
+            "Double-Angle Formula",
+            "Equation Solving in Trigonometry"
+        ],
+        "MarksAllocation": {
+            "PartI": 4,
+            "PartII": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2005_June/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Prove the identity \\( \\cos 4\\theta + 4 \\cos 2\\theta \\equiv 8 \\cos^4 \\theta - 3 \\).",
+                "Marks": 4
+            },
+            {
+                "Part": "ii",
+                "Text": "Hence solve the equation \\( \\cos 4\\theta + 4 \\cos 2\\theta = 2 \\), for \\( 0^\\circ \\leq \\theta \\leq 360^\\circ \\).",
+                "Marks": 4
+            }
+        ],
+        "TotalMarks": 8
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "1. Express \\( \\cos 4\\theta \\) and \\( \\cos 2\\theta \\) using double-angle formulas.\\n2. Simplify \\( \\cos 4\\theta = 2\\cos^2 2\\theta - 1 \\) and \\( \\cos 2\\theta = 2\\cos^2 \\theta - 1 \\).\\n3. Substitute into the equation:\\n   \\[ \\cos 4\\theta + 4\\cos 2\\theta = (8\\cos^4 \\theta - 8\\cos^2 \\theta + 1) + 4(2\\cos^2 \\theta - 1). \\]\\n4. Simplify to obtain the result:\\n   \\[ \\cos 4\\theta + 4\\cos 2\\theta \\equiv 8 \\cos^4 \\theta - 3. \\]",
+                "MarkingScheme": "B1 for using double-angle formulas, M1 for correct substitution, A1 for simplification, A1 for obtaining the final identity."
+            },
+            {
+                "Part": "ii",
+                "Solution": "1. Solve \\( 8 \\cos^4 \\theta - 3 = 2 \\), which simplifies to \\( 8 \\cos^4 \\theta = 5 \\) and \\( \\cos^4 \\theta = \\frac{5}{8}. \\)\\n2. Take square roots: \\( \\cos^2 \\theta = \\pm \\frac{\\sqrt{5}}{2}. \\)\\n3. Solve \\( \\cos \\theta \\) for \\( \\theta \\) in the range \\( 0^\\circ \\leq \\theta \\leq 360^\\circ \\):\\n   - Positive root: \\( \\theta = 27.2^\\circ, 332.8^\\circ \\).\\n   - Negative root: \\( \\theta = 152.8^\\circ, 207.2^\\circ. \\)\\n4. Final solutions: \\( \\theta = 27.2^\\circ, 152.8^\\circ, 207.2^\\circ, 332.8^\\circ. \\)",
+                "MarkingScheme": "M1 for solving for \\( \\cos^2 \\theta \\), A1 for obtaining roots, A1 for finding all solutions in the given range."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Graph and Iterative Method",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2005,
+        "Session": "May/June",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": "7",
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Numerical Methods and Graphs",
+        "TopicsCovered": [
+            "Sketching Graphs",
+            "Root Verification",
+            "Iteration"
+        ],
+        "MarksAllocation": {
+            "PartI": 2,
+            "PartII": 2,
+            "PartIII": 1,
+            "PartIV": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2005_June/q7.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "By sketching a suitable pair of graphs, show that the equation \\( \\cosec x = \\frac{1}{2}x + 1 \\), where \\( x \\) is in radians, has a root in the interval \\( 0 < x < \\frac{1}{2}\\pi \\).",
+                "Marks": 2
+            },
+            {
+                "Part": "ii",
+                "Text": "Verify, by calculation, that this root lies between 0.5 and 1.",
+                "Marks": 2
+            },
+            {
+                "Part": "iii",
+                "Text": "Show that this root also satisfies the equation \\( x = \\sin^{-1}\\left( \\frac{2}{x + 2} \\right).\\)",
+                "Marks": 1
+            },
+            {
+                "Part": "iv",
+                "Text": "Use the iterative formula \\( x_{n+1} = \\sin^{-1}\\left( \\frac{2}{x_n + 2} \\right) \\), with initial value \\( x_1 = 0.75 \\), to determine this root correct to 2 decimal places. Give the result of each iteration to 4 decimal places.",
+                "Marks": 3
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Sketch the graph of \\( y = \\cosec x \\) and \\( y = \\frac{1}{2}x + 1 \\) in the given range. The intersection point shows the root in the interval \\( 0 < x < \\frac{1}{2}\\pi \\).",
+                "MarkingScheme": "B1 for correct graph sketches; B1 for identifying the intersection in the correct interval."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Calculate \\( \\cosec x - \\left( \\frac{1}{2}x + 1 \\) at \\( x = 0.5 \\) and \\( x = 1 \\). Show a change in sign, indicating a root between these values.",
+                "MarkingScheme": "M1 for substitution; A1 for correct conclusion."
+            },
+            {
+                "Part": "iii",
+                "Solution": "Rearrange the given equation to show \\( x = \\sin^{-1}\\left( \\frac{2}{x + 2} \\right) \\).",
+                "MarkingScheme": "B1 for correct rearrangement."
+            },
+            {
+                "Part": "iv",
+                "Solution": "Use the iteration \\( x_{n+1} = \\sin^{-1}\\left( \\frac{2}{x_n + 2} \\right) \\) starting with \\( x_1 = 0.75 \\):\\n\\( x_2 = 0.8001, x_3 = 0.8000 \\).\\nRoot correct to 2 decimal places is \\( x = 0.80 \\).",
+                "MarkingScheme": "M1 for correct iterative process; A1 for correct values; A1 for final result \\( x = 0.80 \\)."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Differential Equation and Partial Fractions",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": "2005",
+        "Session": "May/June",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 8,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Integration and Differential Equations",
+        "TopicsCovered": [
+            "Partial Fractions",
+            "Separable Differential Equations",
+            "Asymptotic Behavior of Solutions"
+        ],
+        "MarksAllocation": {
+            "PartI": 4,
+            "PartII": 4,
+            "PartIII": 1
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P3_2005_June/q8.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "(i)",
+                "Text": "Using partial fractions, find \\( \\int \\frac{1}{y(4-y)} \\, dy. \\)",
+                "Marks": 4
+            },
+            {
+                "Part": "(ii)",
+                "Text": "Given that \\( y = 1 \\) when \\( x = 0 \\), solve the differential equation:\\n\\[\\n\\frac{dy}{dx} = y(4 - y),\\n\\]\\nobtaining an expression for \\( y \\) in terms of \\( x \\).",
+                "Marks": 4
+            },
+            {
+                "Part": "(iii)",
+                "Text": "State what happens to the value of \\( y \\) if \\( x \\) becomes very large and positive.",
+                "Marks": 1
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "(i)",
+                "Solution": "Express the integrand in partial fractions:\\n\\[\\n\\frac{1}{y(4-y)} = \\frac{A}{y} + \\frac{B}{4-y},\\n\\]\\nsolving for \\( A \\) and \\( B \\) gives:\\n\\[\\nA = \\frac{1}{4}, \\; B = \\frac{1}{4}.\\n\\]\\nThus:\\n\\[\\n\\int \\frac{1}{y(4-y)} \\, dy = \\frac{1}{4} \\ln y - \\frac{1}{4} \\ln(4-y) + C.\\n\\]",
+                "MarkingScheme": "M1 for partial fractions, A1 for coefficients, A1√ + A1√ for correct integral."
+            },
+            {
+                "Part": "(ii)",
+                "Solution": "Separate variables and integrate:\\n\\[\\n\\frac{dy}{y(4-y)} = dx.\\n\\]\\nUsing the result from part (i), integrate and apply initial condition \\( y = 1 \\) when \\( x = 0 \\):\\n\\[\\n\\frac{1}{4} \\ln y - \\frac{1}{4} \\ln(4-y) = x + C.\\n\\]\\nSimplifying, the final solution is:\\n\\[\\n y = \\frac{4}{3e^{-4x} + 1}.\\n\\]",
+                "MarkingScheme": "M1* for separation, M1(dep*) for integration, A1 for constants, A1 for correct solution."
+            },
+            {
+                "Part": "(iii)",
+                "Solution": "As \\( x \\to \\infty \\), the exponential term \\( e^{-4x} \\to 0 \\). Thus:\\n\\[\\n y \\to 4.\\n\\]",
+                "MarkingScheme": "B1 for correct asymptotic behavior."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Curve and Area Under Integration",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": "2005",
+        "Session": "May/June",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 9,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Differentiation and Integration",
+        "TopicsCovered": [
+            "Differentiation of Quotients",
+            "Definite Integration",
+            "Area Calculation"
+        ],
+        "MarksAllocation": {
+            "PartI": 4,
+            "PartII": 3,
+            "PartIII": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+             "/9709_P3_2005_June/q9.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "(i)",
+                "Text": "Calculate the x-coordinate of M.",
+                "Marks": 4
+            },
+            {
+                "Part": "(ii)",
+                "Text": "Find the area of R in terms of p.",
+                "Marks": 3
+            },
+            {
+                "Part": "(iii)",
+                "Text": "Hence calculate the value of p for which the area of R is 1, giving your answer correct to 3 significant figures.",
+                "Marks": 2
+            }
+        ],
+        "Diagram": "The diagram shows part of the curve y = x / (x^2 + 1) and its maximum point M. The shaded region R is bounded by the curve and the lines y = 0 and x = p."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "(i)",
+                "Solution": "Differentiate y = x / (x^2 + 1) using the quotient rule:\\n   \\[ \\frac{dy}{dx} = \\frac{(x^2 + 1) - 2x^2}{(x^2 + 1)^2}. \\]\\nSimplify and set \\( \\frac{dy}{dx} = 0 \\) to find x = 1, which is the x-coordinate of M.",
+                "MarkingScheme": "M1 for using quotient rule, A1 for correct derivative, M1 for solving dy/dx = 0, A1 for obtaining x = 1."
+            },
+            {
+                "Part": "(ii)",
+                "Solution": "Integrate y = x / (x^2 + 1) from 0 to p:\\n   \\[ \\int_0^p \\frac{x}{x^2 + 1} \\, dx = \\frac{1}{2} \\ln(x^2 + 1) \\bigg|_0^p. \\]\\nThe area of R is:\\n   \\[ \\frac{1}{2} \\ln(p^2 + 1). \\]",
+                "MarkingScheme": "M1 for correct indefinite integral, M1(dep) for applying limits, A1 for correct area expression."
+            },
+            {
+                "Part": "(iii)",
+                "Solution": "Equate the area to 1:\\n   \\[ \\frac{1}{2} \\ln(p^2 + 1) = 1. \\]\\nSolve for p:\\n   \\[ p^2 + 1 = e^2, \\]\\n   \\[ p = \\sqrt{e^2 - 1} = 2.53 \\ (3 \\ \\text{significant figures}). \\]",
+                "MarkingScheme": "M1 for equating area to 1 and solving, A1 for obtaining p = 2.53."
+            }
+        ]
+    }
+}
+{
+    "Metadata": {
+        "QuestionTitle": "Vector Geometry: Lines and Planes",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2005,
+        "Session": "May/June",
+        "PaperNumber": "Paper 3",
+        "QuestionNumber": 10,
+        "QuestionType": "Structured Question",
+        "Level": "P3",
+        "MathTopic": "Vectors",
+        "TopicsCovered": [
+            "Vector Equation of Lines",
+            "Intersection of Lines",
+            "Plane Equation"
+        ],
+        "MarksAllocation": {
+            "PartI": 5,
+            "PartII": 6
+        },
+        "DifficultyLevel": "High",
+        "ImageUrl": [
+            "/9709_P3_2005_June/q10.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Text": "Prove that the line \\( l \\) does not intersect the line through \\( A \\) and \\( B \\)."
+            },
+            {
+                "Part": "ii",
+                "Text": "Find the equation of the plane containing \\( l \\) and the point \\( A \\), giving your answer in the form \\( ax + by + cz = d \\)."
+            }
+        ],
+        "Text": "With respect to the origin \\( O \\), the points \\( A \\) and \\( B \\) have position vectors given by:\\n\\( \\vec{OA} = 2\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k} \\quad \\text{and} \\quad \\vec{OB} = \\mathbf{i} + 4\\mathbf{j} + 3\\mathbf{k}. \\)\\n\\nThe line \\( l \\) has vector equation \\( \\mathbf{r} = 4\\mathbf{i} - 2\\mathbf{j} + 2\\mathbf{k} + s(\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k}). \\)"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "1. The direction vector of \\( AB \\) is \\( \\vec{AB} = (\\mathbf{i} + 4\\mathbf{j} + 3\\mathbf{k}) - (2\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k}) = -\\mathbf{i} + 2\\mathbf{j} + 2\\mathbf{k}. \\)\\n\\n2. Write the equation of the line through \\( A \\) and \\( B \\):\\n\\[ \\mathbf{r} = 2\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k} + t(-\\mathbf{i} + 2\\mathbf{j} + 2\\mathbf{k}). \\]\\n\\n3. Equate the parametric forms of both lines (\\( l \\) and \\( AB \\)) and solve for \\( s \\) and \\( t \\). Show that the equations are inconsistent (no solution).\\n\\nConclusion: The two lines do not intersect.",
+                "MarkingScheme": "B1 for direction vector of \\( AB \\), B1 for correct line equation, M1 for equating parametric forms, A1 for inconsistency proof, A1 for conclusion."
+            },
+            {
+                "Part": "ii",
+                "Solution": "1. The normal vector of the plane is the cross product of the direction vectors of line \\( l \\) (\\( \\mathbf{i} + 2\\mathbf{j} + \\mathbf{k} \\)) and \\( \\vec{AB} = -\\mathbf{i} + 2\\mathbf{j} + 2\\mathbf{k}. \\)\\n\\n2. Compute:\\n\\[ \\mathbf{n} = \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ 1 & 2 & 1 \\\\ -1 & 2 & 2 \\end{vmatrix} = (2 - 2)\\mathbf{i} - (1 + 1)\\mathbf{j} + (2 + 2)\\mathbf{k} = -2\\mathbf{j} + 4\\mathbf{k}. \\]\\n\\n3. Substitute point \\( A(2, 2, 1) \\) into \\( ax + by + cz = d \\):\\n\\[ 0(2) - 2(2) + 4(1) = d, \\quad d = 0. \\]\\n\\nFinal plane equation:\\n\\[ 0x - 2y + 4z = 0 \\quad \\text{or} \\quad 6x + 7y - 8z = 6 \\].",
+                "MarkingScheme": "B1 for correct cross product, B1 for substitution, M1 for solving normal vector, A1 for final plane equation."
+            }
+        ]
+    }
+}

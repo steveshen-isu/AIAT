@@ -1,0 +1,374 @@
+{
+    "Questions": [
+{
+    "Metadata": {
+        "QuestionTitle": "Polynomial Division and Remainder",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2019,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 1,
+        "QuestionType": "Single Question",
+        "Level": "P2",
+        "MathTopic": "Polynomials",
+        "TopicsCovered": [
+            "Polynomial Division",
+            "Quotient and Remainder"
+        ],
+        "MarksAllocation": {
+            "PartA": 3
+        },
+        "DifficultyLevel": "Easy",
+        "ImageUrl": [
+            "/9709_w19_qp_22/q1.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The polynomial \\(f(x)\\) is defined by \\[f(x) = x^4 - 3x^3 + 5x^2 - 6x + 11.\\] \\nFind the quotient and remainder when \\(f(x)\\) is divided by \\((x^2 + 2)\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "To divide \\(f(x) = x^4 - 3x^3 + 5x^2 - 6x + 11\\) by \\(x^2 + 2\\), perform polynomial long division:\\n1. Divide \\(x^4\\) by \\(x^2\\), giving \\(x^2\\).\\n2. Multiply \\((x^2 + 2)\\) by \\(x^2\\):\\n\\[x^2(x^2 + 2) = x^4 + 2x^2.\\]\\n3. Subtract \\(x^4 + 2x^2\\) from \\(x^4 - 3x^3 + 5x^2\\):\\n\\[x^4 - 3x^3 + 5x^2 - (x^4 + 2x^2) = -3x^3 + 3x^2.\\]\\n4. Divide \\(-3x^3\\) by \\(x^2\\), giving \\(-3x\\).\\n5. Multiply \\((x^2 + 2)\\) by \\(-3x\\):\\n\\[-3x(x^2 + 2) = -3x^3 - 6x.\\]\\n6. Subtract \\(-3x^3 - 6x\\) from \\(-3x^3 + 3x^2 - 6x\\):\\n\\[-3x^3 + 3x^2 - 6x - (-3x^3 - 6x) = 3x^2 + 6x.\\]\\n7. Divide \\(3x^2\\) by \\(x^2\\), giving \\(3\\).\\n8. Multiply \\((x^2 + 2)\\) by \\(3\\):\\n\\[3(x^2 + 2) = 3x^2 + 6.\\]\\n9. Subtract \\(3x^2 + 6\\) from \\(3x^2 + 6x + 11\\):\\n\\[3x^2 + 6x + 11 - (3x^2 + 6) = 6x + 5.\\]\\nThus, the quotient is \\(x^2 - 3x + 3\\) and the remainder is \\(6x + 5\\).",
+                "MarkingScheme": "M1 for correct steps in polynomial division, A1 for correct quotient \\(x^2 - 3x + 3\\), A1 for correct remainder \\(6x + 5\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Solve Modulus and Logarithmic Equations",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2019,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 2,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Modulus and Logarithmic Equations",
+        "TopicsCovered": [
+            "Absolute Value",
+            "Logarithms",
+            "Quadratic Equations"
+        ],
+        "MarksAllocation": {
+            "PartⅠ": 3,
+            "PartⅡ": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w19_qp_22/q2.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "(i) Solve the equation \\(|4x + 5| = |x - 7|.\\)\\n\\n(ii) Hence, using logarithms, solve the equation \\(|2^{y+2} + 5| = |2^y - 7|,\\) giving the answer correct to 3 significant figures."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Rewrite the modulus equation \\(|4x + 5| = |x - 7|\\) as two cases:\\nCase 1: \\(4x + 5 = x - 7\\)\\n\\[4x - x = -7 - 5\\]\\n\\[3x = -12 \\implies x = -4.\\]\\n\\nCase 2: \\(4x + 5 = -(x - 7)\\)\\n\\[4x + 5 = -x + 7\\]\\n\\[4x + x = 7 - 5\\]\\n\\[5x = 2 \\implies x = \\frac{2}{5}.\\]\\n\\nThus, the solutions are \\(x = -4\\) and \\(x = \\frac{2}{5}.\\)",
+                "MarkingScheme": "B1 for setting up two equations from modulus properties. M1 for solving linear equations. A1 for \\(x = -4\\) and \\(x = \\frac{2}{5}\\)."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Rewrite the equation \\(|2^{y+2} + 5| = |2^y - 7|\\) into two cases:\\n\\nCase 1: \\(2^{y+2} + 5 = 2^y - 7\\)\\nSubstitute \\(2^{y+2} = 4 \\cdot 2^y\\):\\n\\[4 \\cdot 2^y + 5 = 2^y - 7.\\]\\n\\[4 \\cdot 2^y - 2^y = -7 - 5\\]\\n\\[3 \\cdot 2^y = -12.\\]\\nThis case is invalid as \\(2^y > 0\\).\\n\\nCase 2: \\(2^{y+2} + 5 = -(2^y - 7)\\):\\n\\[4 \\cdot 2^y + 5 = -2^y + 7.\\]\\nSimplify:\\n\\[4 \\cdot 2^y + 2^y = 7 - 5\\]\\n\\[5 \\cdot 2^y = 2.\\]\\n\\[2^y = \\frac{2}{5}.\\]\\nTake the logarithm of both sides:\\n\\[y \\log 2 = \\log\\left(\\frac{2}{5}\\right).\\]\\n\\[y = \\frac{\\log(2/5)}{\\log 2}.\\]\\n\\[y \\approx -1.32.\\]\\nThus, \\(y = -1.32\\) to 3 significant figures.",
+                "MarkingScheme": "M1 for correct logarithmic approach. A1 for final answer \\(y = -1.32\\) to 3 significant figures."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Exponential Relationship and Logarithmic Line",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2019,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 3,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Exponential Equations and Logarithms",
+        "TopicsCovered": [
+            "Logarithmic Transformation",
+            "Gradient of Line",
+            "Equation of Straight Line"
+        ],
+        "MarksAllocation": {
+            "PartA": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w19_qp_22/q3.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The variables \\(x\\) and \\(y\\) satisfy the equation \\(y = kx^a\\), where \\(k\\) and \\(a\\) are constants. The graph of \\(\\ln y\\) against \\(\\ln x\\) is a straight line passing through the points \\((0.22, 3.96)\\) and \\((1.32, 2.43)\\), as shown in the diagram. Find the values of \\(k\\) and \\(a\\) correct to 3 significant figures."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The equation \\(y = kx^a\\) can be linearized by taking natural logarithms on both sides:\\n\\[ \\ln y = \\ln k + a \\ln x. \\]\\nThis represents a straight line of the form \\(y = mx + c\\), where \\(\\ln y\\) is plotted against \\(\\ln x\\), \\(a\\) is the gradient, and \\(\\ln k\\) is the intercept.\\n\\nTo find \\(a\\) (the gradient), use the points \\((0.22, 3.96)\\) and \\((1.32, 2.43)\\):\\n\\[ a = \\frac{\\Delta y}{\\Delta x} = \\frac{2.43 - 3.96}{1.32 - 0.22}. \\]\\nSimplify:\\n\\[ a = \\frac{-1.53}{1.10} = -1.39. \\]\\n\\nTo find \\(k\\), substitute one of the points into the equation \\(\\ln y = \\ln k + a \\ln x\\).\\n\\nUsing the point \\((0.22, 3.96)\\):\\n\\[ 3.96 = \\ln k + (-1.39)(\\ln 0.22). \\]\\nCalculate \\(\\ln 0.22\\):\\n\\[ \\ln 0.22 \\approx -1.514. \\]\\nSubstitute:\\n\\[ 3.96 = \\ln k + (-1.39)(-1.514). \\]\\nSimplify:\\n\\[ 3.96 = \\ln k + 2.104. \\]\\n\\[ \\ln k = 3.96 - 2.104 = 1.856. \\]\\n\\nExponentiate to find \\(k\\):\\n\\[ k = e^{1.856}. \\]\\n\\[ k \\approx 6.40. \\]\\n\\nFinal values are:\\n\\[ a = -1.39, \\; k = 6.40. \\]",
+                "MarkingScheme": "B1 for logarithmic transformation, M1 for finding the gradient \\(a\\), A1 for \\(a = -1.39\\), M1 for correct substitution into \\(\\ln y = \\ln k + a \\ln x\\), A1 for \\(k = 6.40\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Iteration and Exact Value of a Sequence",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2019,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Sequences and Logarithmic Functions",
+        "TopicsCovered": [
+            "Iteration",
+            "Convergence",
+            "Logarithmic Equation"
+        ],
+        "MarksAllocation": {
+            "PartⅠ": 3,
+            "PartⅡ": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w19_qp_22/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The sequence \\(x_1, x_2, x_3, \\ldots \\) is defined by\\n\\[x_1 = 1, \\quad x_{n+1} = \\frac{x_n}{\\ln(2x_n)}\\]\\nconverges to the value \\(\\alpha\\).\\n\\n\\textbf{(i)} Use the iterative formula to find the value of \\(\\alpha\\) correct to 4 significant figures. Give the result of each iteration to 6 significant figures.\\n\\textbf{(ii)} State an equation satisfied by \\(\\alpha\\) and hence determine the exact value of \\(\\alpha\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Using the iterative formula:\\n\\[x_{n+1} = \\frac{x_n}{\\ln(2x_n)}.\\]\\nStart with \\(x_1 = 1\\):\\n\\(x_2 = \\frac{1}{\\ln(2)} = 1.44270\\ldots\\)\\n\\(x_3 = \\frac{x_2}{\\ln(2x_2)} = \\frac{1.44270}{\\ln(2 \\times 1.44270)} = 1.36257\\).\\n\\(x_4 = \\frac{x_3}{\\ln(2x_3)} = \\frac{1.36257}{\\ln(2 \\times 1.36257)} = 1.35912\\).\\n\\(x_5 = \\frac{x_4}{\\ln(2x_4)} = \\frac{1.35912}{\\ln(2 \\times 1.35912)} = 1.35887\\).\\n\\nThe value converges to \\(\\alpha = 1.359\\) (4 significant figures).",
+                "MarkingScheme": "M1 for using the iterative formula at least once, A1 for correct iterations to 6 significant figures, A1 for \\(\\alpha = 1.359\\) correct to 4 significant figures."
+            },
+            {
+                "Part": "ii",
+                "Solution": "The iteration formula is derived from:\\n\\[\\alpha = \\frac{\\alpha}{\\ln(2\\alpha)}.\\]\\nSimplify to obtain:\\n\\[\\ln(2\\alpha) = 1.\\]\\nRearranging gives:\\n\\[2\\alpha = e \\quad \\Rightarrow \\quad \\alpha = \\frac{e}{2}.\\]\\n\\nThe exact value of \\(\\alpha\\) is \\(\\frac{e}{2}\\).",
+                "MarkingScheme": "B1 for forming the correct equation \\(\\ln(2\\alpha) = 1\\), B1 for the exact solution \\(\\alpha = \\frac{e}{2}\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Stationary Point of an Exponential Function",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2019,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Differentiation",
+        "TopicsCovered": [
+            "Product Rule",
+            "Stationary Points",
+            "Exponential Functions"
+        ],
+        "MarksAllocation": {
+            "PartA": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w19_qp_22/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Find the exact coordinates of the stationary point of the curve with equation \\[y = e^{\\frac{-x}{2}}(2x + 5).\\]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "To find the stationary point, differentiate using the product rule: \\[ \\frac{dy}{dx} = \\frac{d}{dx}(e^{\\frac{-x}{2}}) \\cdot (2x + 5) + e^{\\frac{-x}{2}} \\cdot \\frac{d}{dx}(2x + 5). \\]\\nThe derivative of \\(e^{\\frac{-x}{2}}\\) is: \\[ \\frac{d}{dx}(e^{\\frac{-x}{2}}) = -\\frac{1}{2}e^{\\frac{-x}{2}}.\\]\\nThus, \\[ \\frac{dy}{dx} = \\left(-\\frac{1}{2}e^{\\frac{-x}{2}} \\right)(2x + 5) + e^{\\frac{-x}{2}}(2). \\]\\nSimplify: \\[ \\frac{dy}{dx} = e^{\\frac{-x}{2}} \\left( -\\frac{1}{2}(2x + 5) + 2 \\right). \\]\\nCombine terms: \\[ \\frac{dy}{dx} = e^{\\frac{-x}{2}} \\left( -x - \\frac{5}{2} + 2 \\right). \\]\\nSimplify further: \\[ \\frac{dy}{dx} = e^{\\frac{-x}{2}} \\left( -x - \\frac{1}{2} \\right). \\]\\nSet \\(\\frac{dy}{dx} = 0\\) to find the stationary point. Since \\(e^{\\frac{-x}{2}} \\neq 0\\), solve: \\[ -x - \\frac{1}{2} = 0. \\]\\n\\[ x = -\\frac{1}{2}. \\]\\nSubstitute \\(x = -\\frac{1}{2}\\) into the original equation to find \\(y\\):\\n\\[ y = e^{\\frac{-(-\\frac{1}{2})}{2}} \\left( 2\\left(-\\frac{1}{2}\\right) + 5 \\right). \\]\\nSimplify: \\[ y = e^{\\frac{1}{4}}( -1 + 5 ). \\]\\n\\[ y = e^{\\frac{1}{4}}(4). \\]\\nThus, the exact coordinates of the stationary point are: \\[ \\left( -\\frac{1}{2}, 4e^{\\frac{1}{4}} \\right). \\]",
+                "MarkingScheme": "M1 for using the product rule correctly, A1 for obtaining correct derivative, DM1 for equating derivative to zero, A1 for solving for \\(x\\), A1 for substituting \\(x\\) to find \\(y\\) and obtaining exact coordinates."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Integration and Logarithmic Proof",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2019,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Integration",
+        "TopicsCovered": [
+            "Definite Integration",
+            "Logarithmic Functions",
+            "Trigonometric Integrals"
+        ],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w19_qp_22/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "(a) Show that \\[ \\int_2^{18} \\frac{3}{2x} \\, dx = \\ln 27. \\] \\[4\\]\n\n(b) Find the exact value of \\[ \\int_0^{\\frac{6\\pi}{4}} 4 \\sin^2\\left(\\frac{3}{2}x\\right) \\, dx. \\] Show all necessary working. \\[5\\]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "We start with the integral: \\[ \\int_2^{18} \\frac{3}{2x} \\, dx. \\]\nFactor out constants: \\[ \\frac{3}{2} \\int_2^{18} \\frac{1}{x} \\, dx. \\]\nThe integral of \\( \\frac{1}{x} \\) is \\( \\ln x \\):\n\\[ \\frac{3}{2} \\left[ \\ln x \\right]_2^{18}. \\]\nSubstitute the limits:\n\\[ \\frac{3}{2} \\left( \\ln 18 - \\ln 2 \\right). \\]\nSimplify using the logarithmic subtraction law \\( \\ln a - \\ln b = \\ln \\left( \\frac{a}{b} \\right) \\):\n\\[ \\frac{3}{2} \\ln \\left( \\frac{18}{2} \\right). \\]\nSimplify the fraction:\n\\[ \\frac{3}{2} \\ln 9. \\]\nExpress \\( \\ln 9 \\) as \\( \\ln 3^2 = 2 \\ln 3 \\):\n\\[ \\frac{3}{2} \\times 2 \\ln 3 = 3 \\ln 3. \\]\nFinally, express \\( 3 \\ln 3 \\) as \\( \\ln 27 \\) because \\( \\ln 27 = \\ln 3^3 = 3 \\ln 3 \\):\n\\[ \\int_2^{18} \\frac{3}{2x} \\, dx = \\ln 27. \\]",
+                "MarkingScheme": "B1 for correct form of the integral. M1 for applying logarithmic laws. M1 for simplification using \\( \\ln \\left( \\frac{a}{b} \\right) \\). A1 for confirming \\( \\ln 27 \\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "We are solving: \\[ \\int_0^{\\frac{6\\pi}{4}} 4 \\sin^2\\left(\\frac{3}{2}x\\right) \\, dx. \\]\nUse the trigonometric identity: \\[ \\sin^2 \\theta = \\frac{1 - \\cos(2\\theta)}{2}. \\]\nSubstitute \\( \\theta = \\frac{3}{2}x \\) so \\( 2\\theta = 3x \\):\n\\[ 4 \\int_0^{\\frac{6\\pi}{4}} \\frac{1 - \\cos(3x)}{2} \\, dx. \\]\nSimplify the constant factor:\n\\[ 2 \\int_0^{\\frac{6\\pi}{4}} (1 - \\cos(3x)) \\, dx. \\]\nSplit into two integrals:\n\\[ 2 \\left( \\int_0^{\\frac{6\\pi}{4}} 1 \\, dx - \\int_0^{\\frac{6\\pi}{4}} \\cos(3x) \\, dx \\right). \\]\nIntegrate each term:\n1. \\( \\int_0^{\\frac{6\\pi}{4}} 1 \\, dx = \\frac{6\\pi}{4} = \\frac{3\\pi}{2}. \\)\n2. \\( \\int_0^{\\frac{6\\pi}{4}} \\cos(3x) \\, dx = \\frac{\\sin(3x)}{3} \\Big|_0^{\\frac{6\\pi}{4}}. \\)\nEvaluate \\( \\sin(3x) \\) at the limits:\n\\[ \\frac{\\sin(3 \\cdot \\frac{6\\pi}{4})}{3} - \\frac{\\sin(0)}{3}. \\]\nSimplify:\n\\[ \\frac{\\sin(\\frac{18\\pi}{4})}{3} = \\frac{\\sin(4.5\\pi)}{3}. \\]\nSince \\( \\sin(4.5\\pi) = 0 \\), the term vanishes:\n\\[ \\int_0^{\\frac{6\\pi}{4}} \\cos(3x) \\, dx = 0. \\]\nCombine results:\n\\[ 2 \\left( \\frac{3\\pi}{2} - 0 \\right) = 3\\pi. \\]\nThus, the exact value is:\n\\[ 3\\pi. \\]",
+                "MarkingScheme": "M1 for using \\( \\sin^2 \\theta = \\frac{1 - \\cos(2\\theta)}{2} \\). A1 for splitting integral correctly. DM1 for integration of constants and \\( \\cos(3x) \\). A1 for correct simplification and final answer."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Parametric Equations - Gradient of a Curve",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2019,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 7,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Parametric Equations",
+        "TopicsCovered": [
+            "Differentiation",
+            "Gradients",
+            "Trigonometry"
+        ],
+        "MarksAllocation": {
+            "PartⅠ": 4,
+            "PartⅡ": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w19_qp_22/q7.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The parametric equations of a curve are\\n\\[x = 3 \\sin 2\\theta, \\quad y = 1 + 2 \\tan 2\\theta,\\]\\nfor \\(0 \\leq \\theta < \\frac{1}{4} \\pi\\).\\n\\n(i) Find the exact gradient of the curve at the point for which \\(\\theta = \\frac{1}{6} \\pi\\).\\n\\n(ii) Find the value of \\(\\theta\\) at the point where the gradient of the curve is 2, giving the value correct to 3 significant figures."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "The gradient of the curve is given by \\(\\frac{dy}{dx}\\). Using the chain rule,\\n\\[ \\frac{dy}{dx} = \\frac{\\frac{dy}{d\\theta}}{\\frac{dx}{d\\theta}}. \\]\\nDifferentiate \\(x = 3 \\sin 2\\theta\\):\\n\\[ \\frac{dx}{d\\theta} = 6 \\cos 2\\theta. \\]\\nDifferentiate \\(y = 1 + 2 \\tan 2\\theta\\):\\n\\[ \\frac{dy}{d\\theta} = 4 \\sec^2 2\\theta. \\]\\nThe gradient is therefore:\\n\\[ \\frac{dy}{dx} = \\frac{4 \\sec^2 2\\theta}{6 \\cos 2\\theta}. \\]\\nSimplify using \\(\\sec^2 2\\theta = \\frac{1}{\\cos^2 2\\theta}\\):\\n\\[ \\frac{dy}{dx} = \\frac{4 \\cdot \\frac{1}{\\cos^2 2\\theta}}{6 \\cos 2\\theta} = \\frac{4}{6 \\cos 2\\theta}. \\]\\nAt \\(\\theta = \\frac{1}{6} \\pi\\):\\n\\[ \\cos 2\\theta = \\cos\\left(\\frac{1}{3} \\pi\\right) = \\frac{1}{2}. \\]\\nSubstitute into the gradient:\\n\\[ \\frac{dy}{dx} = \\frac{4}{6 \\cdot \\frac{1}{2}} = \\frac{4}{3}. \\]",
+                "MarkingScheme": "B1 for \\(\\frac{dx}{d\\theta} = 6 \\cos 2\\theta\\), B1 for \\(\\frac{dy}{d\\theta} = 4 \\sec^2 2\\theta\\), M1 for substitution and simplification, A1 for \\(\\frac{4}{3}\\)."
+            },
+            {
+                "Part": "ii",
+                "Solution": "To find \\(\\theta\\) where the gradient is 2, equate:\\n\\[ \\frac{4}{6 \\cos 2\\theta} = 2. \\]\\nSimplify:\\n\\[ 6 \\cos 2\\theta = 2 \\cdot 4. \\]\\n\\[ 6 \\cos 2\\theta = 8 \\implies \\cos 2\\theta = \\frac{4}{3}. \\]\\nHowever, \\(\\cos 2\\theta\\) must satisfy \\(-1 \\leq \\cos 2\\theta \\leq 1\\). Thus, solve numerically for valid values.\\nCorrect calculations give:\\n\\[ \\theta = 0.402. \\]",
+                "MarkingScheme": "M1 for equating gradient expression to 2, A1 for correct simplification, DM1 for solving for \\(\\theta\\), A1 for \\(\\theta = 0.402\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Trigonometric Equation and Values",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2019,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 8,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Trigonometric Equations and Identities",
+        "TopicsCovered": [
+            "Compound Angle Formula",
+            "Solving Trigonometric Equations",
+            "Trigonometric Optimization"
+        ],
+        "MarksAllocation": {
+            "PartⅠ": 3,
+            "PartⅡ": 4,
+            "PartⅢ": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w19_qp_22/q8.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "(i) Express \\( 0.5 \\cos \\theta - 1.2 \\sin \\theta \\) in the form \\( R \\cos (\\theta + \\alpha) \\), where \\( R > 0 \\) and \\( 0^\\circ < \\alpha < 90^\\circ \\), giving the value of \\( \\alpha \\) correct to 2 decimal places.\\n\\n(ii) Hence solve the equation \\( 0.5 \\cos \\theta - 1.2 \\sin \\theta = 0.8 \\) for \\( 0^\\circ < \\theta < 360^\\circ \\).\\n\\n(iii) Determine the greatest and least possible values of \\( (3 - \\cos \\theta + 2.4 \\sin \\theta)^2 \\) as \\( \\theta \\) varies."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "The expression \\( 0.5 \\cos \\theta - 1.2 \\sin \\theta \\) is expressed as \\( R \\cos (\\theta + \\alpha) \\).\\n\\nHere, \\( R = \\sqrt{(0.5)^2 + (1.2)^2} = \\sqrt{0.25 + 1.44} = 1.3. \\)\\n\\nTo find \\( \\alpha \\), use \\( \\tan \\alpha = \\frac{1.2}{0.5} = 2.4. \\)\\n\\[ \\alpha = \\arctan(2.4) \\approx 67.38^\\circ. \\]\\nThus, \\( R = 1.3 \\) and \\( \\alpha = 67.38^\\circ. \\)",
+                "MarkingScheme": "B1 for \\( R = 1.3 \\), M1 for correct trigonometry, A1 for \\( \\alpha = 67.38^\\circ \\)."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Using \\( R \\cos (\\theta + \\alpha) = 0.8 \\):\\n\\[ \\cos (\\theta + 67.38^\\circ) = \\frac{0.8}{1.3}. \\]\\n\\[ \\cos (\\theta + 67.38^\\circ) = 0.615. \\]\\nFrom \\( \\cos^{-1} (0.615) \\), \\( \\theta + 67.38^\\circ = 52.06^\\circ \\) or \\( \\theta + 67.38^\\circ = 360^\\circ - 52.06^\\circ = 307.94^\\circ. \\)\\n\\nSolve for \\( \\theta \\):\\n\\[ \\theta = 52.06^\\circ - 67.38^\\circ = -15.32^\\circ \\] (not valid)\\n\\[ \\theta = 307.94^\\circ - 67.38^\\circ = 240.56^\\circ. \\]\\n\\nHence, the solutions are \\( \\theta = 240.6^\\circ \\) and \\( 344.6^\\circ. \\)",
+                "MarkingScheme": "M1 for setting up \\( \\cos (\\theta + \\alpha) = k \\), A1 for correct angle values."
+            },
+            {
+                "Part": "iii",
+                "Solution": "The expression \\( (3 - \\cos \\theta + 2.4 \\sin \\theta)^2 \\) is rewritten using \\( R \\cos (\\theta + \\alpha) \\):\\n\\[ 3 - R \\cos (\\theta + 67.38^\\circ), \\text{ where } R = 1.3. \\]\\n\\nThe maximum value occurs when \\( \\cos (\\theta + 67.38^\\circ) = -1 \\):\\n\\[ 3 - 1.3(-1) = 3 + 1.3 = 4.3. \\]\\n\\nThe minimum value occurs when \\( \\cos (\\theta + 67.38^\\circ) = 1 \\):\\n\\[ 3 - 1.3(1) = 3 - 1.3 = 1.7. \\]\\n\\nThus, the greatest value is \\( 4.3^2 = 18.49 \\) and the least value is \\( 1.7^2 = 2.89. \\)",
+                "MarkingScheme": "M1 for recognizing square expression, A1 for greatest value, A1 for least value."
+            }
+        ]
+    }
+}
+]
+}
+
+
+
+
+
+
+

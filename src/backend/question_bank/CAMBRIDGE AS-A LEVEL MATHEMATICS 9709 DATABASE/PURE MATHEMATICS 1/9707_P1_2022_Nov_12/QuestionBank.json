@@ -1,0 +1,730 @@
+{
+    "Metadata": {
+        "QuestionTitle": "Equation of Perpendicular Bisector and Circle",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 1,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Geometry",
+        "TopicsCovered": [
+            "Perpendicular Bisector",
+            "Equation of Circle"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_12/q1.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the equation of the perpendicular bisector of AB."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the equation of the circle with centre A which passes through B."
+            }
+        ],
+        "Text": "Points A and B have coordinates (5, 2) and (10, −1) respectively."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The midpoint of AB is \\( \\left( \\frac{10 + 5}{2}, \\frac{-1 + 2}{2} \\right) = \\left( \\frac{15}{2}, \\frac{1}{2} \\right) \\).\n\nThe gradient of AB is \\( \\frac{-1 - 2}{10 - 5} = \\frac{-3}{5} \\).\nThe gradient of the perpendicular bisector is \\( \\frac{5}{3} \\).\n\nThe equation of the perpendicular bisector is:\n\\[\n\\frac{y - \\frac{1}{2}}{x - \\frac{15}{2}} = \\frac{5}{3},\n\\]\nwhich simplifies to \\( y - 2 = \\frac{5}{3}(x - 5) \\), or \\( 5x - 3y = 36 \\).",
+                "MarkingScheme": {
+                    "B1": "For midpoint calculation",
+                    "M1": "For gradient calculation and perpendicular gradient",
+                    "A1": "For correct equation in simplified form"
+                }
+            },
+            {
+                "Part": "b",
+                "Solution": "The radius of the circle is the distance between A(5, 2) and B(10, -1):\n\\[\n\\text{Radius} = \\sqrt{(10 - 5)^2 + (-1 - 2)^2} = \\sqrt{25 + 9} = \\sqrt{34}.\n\\]\n\nThe equation of the circle is:\n\\[\n(x - 5)^2 + (y - 2)^2 = 34.\n\\]\nAlternatively, expanding gives:\n\\[\nx^2 + y^2 - 10x - 4y + 5 = 0.\n\\]",
+                "MarkingScheme": {
+                    "B1": "For correct radius calculation",
+                    "B1": "For equation in standard form",
+                    "B1": "For equation in expanded form"
+                }
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Sum of an Arithmetic Progression",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 2,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Arithmetic Progression",
+        "TopicsCovered": [
+            "AP Formula",
+            "Sum of AP Terms"
+        ],
+        "MarksAllocation": {
+            "PartA": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_12/q2.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The first, second and third terms of an arithmetic progression are \\(a\\), \\(2a\\) and \\(a^2\\) respectively, where \\(a\\) is a positive constant.\n\nFind the sum of the first 50 terms of the progression."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Given the arithmetic progression, the common difference \\(d\\) can be found as:\n\\[ 2a - a = a^2 - 2a \\]\n\\[ a = 3 \\text{ and } d = 3. \\]\n\nThe sum of the first 50 terms is calculated as:\n\\[ S_{50} = \\frac{50}{2} \\left( 2 \\times 3 + 49 \\times 3 \\right) \\]\n\\[ S_{50} = 25 \\left( 6 + 147 \\right) \\]\n\\[ S_{50} = 25 \\times 153 = 3825. \\]",
+                "MarkingScheme": {
+                    "B1": "For correctly forming the equation \\(2a - a = a^2 - 2a\\).",
+                    "B1": "For obtaining \\(a = 3\\) or \\(d = 3\\).",
+                    "B1": "For correctly identifying both \\(a\\) and \\(d\\).",
+                    "M1": "For substituting into the sum formula for arithmetic progression.",
+                    "A1": "For the correct final sum \\(S_{50} = 3825\\)."
+                }
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Quadratic and Trigonometric Equations",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 3,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Quadratics and Trigonometry",
+        "TopicsCovered": [
+            "Discriminant Analysis",
+            "Cosine Equation Solving"
+        ],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_12/q3.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the set of values of \\(k\\) for which the equation \\(8x^2 + kx + 2 = 0\\) has no real roots."
+            },
+            {
+                "Part": "b",
+                "Text": "Solve the equation \\(8\\cos^2 \\theta - 10\\cos \\theta + 2 = 0\\) for \\(0^\\circ \\leq \\theta \\leq 180^\\circ\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "To ensure no real roots, the discriminant \\(b^2 - 4ac\\) must be negative:\n\\[k^2 - 4 \\cdot 8 \\cdot 2 < 0.\\]\n\\[k^2 < 64.\\]\n\\[-8 < k < 8.\\]",
+                "MarkingScheme": "M1 for use of \\(b^2 - 4ac < 0\\). A1 for correct inequality \\(-8 < k < 8\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "Rewrite \\(8\\cos^2 \\theta - 10\\cos \\theta + 2 = 0\\):\n\\[2(4\\cos \\theta - 1)(\\cos \\theta - 1) = 0.\\]\nSolve for \\(\\cos \\theta\\):\n\\[\\cos \\theta = \\frac{1}{4}, \\cos \\theta = 1.\\]\nFor \\(\\cos \\theta = \\frac{1}{4}\\), \\(\\theta = \\arccos \\left( \\frac{1}{4} \\right) \\approx 75.5^\\circ.\\)\nFor \\(\\cos \\theta = 1\\), \\(\\theta = 0^\\circ.\\)\n\\[\\text{Solutions: } \\theta = 0^\\circ, 75.5^\\circ.\\]",
+                "MarkingScheme": "M1 for correct factorization or completing the square. A1 for correct \\(\\cos \\theta\\) values. A1 for solutions \\(\\theta = 0^\\circ, 75.5^\\circ.\\)"
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Geometric Progression 50th Term",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Geometric Progression",
+        "TopicsCovered": [
+            "Geometric Sequence",
+            "Finding Terms in Sequence"
+        ],
+        "MarksAllocation": {
+            "PartA": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_12/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "A geometric progression is such that the third term is 1764 and the sum of the second and third terms is 3444.\n\nFind the 50th term."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Given that the third term is \\(ar^2 = 1764\\) and \\(ar + ar^2 = 3444\\):\n\\[ar = 1680.\\]\n\\[\\frac{ar^2}{ar} = r = \\frac{1764}{1680} = \\frac{21}{20} = 1.05.\\]\n\nSubstituting \\(r = 1.05\\) and solving for \\(a\\):\n\\[ar = 1680.\\]\n\\[a = \\frac{1680}{r} = \\frac{1680}{1.05} = 1600.\\]\n\nThe 50th term is \\(ar^{49}\\):\n\\[ar^{49} = 1600 \\times (1.05)^{49} = 17500.\\]",
+                "MarkingScheme": "B1 for correctly identifying \\(ar^2 = 1764\\) and \\(ar + ar^2 = 3444\\).\nM1 for solving for \\(r\\) and \\(a\\).\nA1 for finding the correct 50th term: \\(17500\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Transformation of Graphs",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Transformations",
+        "TopicsCovered": [
+            "Stretch and Translation",
+            "Graph Transformation"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_12/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "The graph with equation \\(y = f(x)\\) is transformed to the graph with equation \\(y = g(x)\\) by a stretch in the x-direction with factor 0.5, followed by a translation of \\(\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}\\).\n\nThe diagram below shows the graph of \\(y = f(x)\\).\n\nOn the diagram sketch the graph of \\(y = g(x)\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Find an expression for \\(g(x)\\) in terms of \\(f(x)\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "1. Three points at the bottom of the transformed graph should be plotted at \\(y = 2\\).\n2. Bottom three points of \\(\\wedge\\) at \\(x = 0\\), \\(x = 1\\), and \\(x = 2\\).\n3. All points connected to form the shape correctly.",
+                "MarkingScheme": "B1: All 5 points of the graph must be connected.\nB1: Points at \\(x = 0\\), \\(x = 1\\), and \\(x = 2\\).\nB1: Entire graph in the correct shape and range."
+            },
+            {
+                "Part": "b",
+                "Solution": "\\(g(x) = f(2x) + 1\\)",
+                "MarkingScheme": "B1: Identifies \\(f(2x)\\) for stretch.\nB1: Adds \\(+1\\) for translation."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Quadratic Equation Transformation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Quadratic Equations",
+        "TopicsCovered": [
+            "Completing the Square",
+            "Solving Quadratic Equations",
+            "Sketching Quadratic Graphs"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 3,
+            "PartC": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_12/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Express the equation in the form \\(y = a(x + b)^2 + c\\), where \\(a, b, c\\) are constants."
+            },
+            {
+                "Part": "b",
+                "Text": "Hence solve the equation \\(4x^2 + 20x + 6 = 45\\)."
+            },
+            {
+                "Part": "c",
+                "Text": "Sketch the graph of \\(y = 4x^2 + 20x + 6\\) showing the coordinates of the stationary point. You are not required to indicate where the curve crosses the \\(x\\)- and \\(y\\)-axes."
+            }
+        ],
+        "Text": "The equation of a curve is \\(y = 4x^2 + 20x + 6\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "\\(y = 4(x + \\frac{5}{2})^2 - 19\\)",
+                "MarkingScheme": {
+                    "B1": "Correctly identifies \\(a = 4\\).",
+                    "B1": "Correctly calculates \\(b = \\frac{5}{2}\\).",
+                    "B1": "Correctly calculates \\(c = -19\\)."
+                }
+            },
+            {
+                "Part": "b",
+                "Solution": "\\(4(x + \\frac{5}{2})^2 - 19 = 45 \\implies (x + \\frac{5}{2})^2 = 16 \\implies x = -\\frac{13}{2}, -\\frac{3}{2}\\)",
+                "MarkingScheme": {
+                    "M1": "Equates quadratic completed square form from part (a) to 45.",
+                    "DM1": "Any valid method leading to two answers.",
+                    "A1": "Final correct values of \\(x\\)."
+                }
+            },
+            {
+                "Part": "c",
+                "Solution": "Sketches a quadratic curve with the stationary point \\((-\\frac{5}{2}, -19)\\).",
+                "MarkingScheme": {
+                    "B1": "Correct shape of the quadratic curve.",
+                    "B1": "Correctly identifies and labels the stationary point.",
+                    "B1": "Accurate plotting of the stationary point."
+                }
+            }
+        ]
+    }
+},
+{
+  "Metadata": {
+    "QuestionTitle": "Trigonometric Identities and Equations",
+    "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+    "ExamBoard": "CAIE",
+    "SyllabusCode": "9709",
+    "Subject": "MATH",
+    "YearOfExam": 2022,
+    "Session": "October/November",
+    "PaperNumber": "Paper 1",
+    "QuestionNumber": 7,
+    "QuestionType": "Structured Question",
+    "Level": "P1",
+    "MathTopic": "Trigonometry",
+    "TopicsCovered": [
+      "Trigonometric Identities",
+      "Trigonometric Equations"
+    ],
+    "MarksAllocation": {
+      "PartA": 3,
+      "PartB": 4
+    },
+    "DifficultyLevel": "Moderate",
+    "ImageUrl": [
+      "/9709_P1_2022_Nov_12/q7.png"
+    ]
+  },
+  "QuestionContent": {
+    "Parts": [
+      {
+        "Part": "a",
+        "Text": "Prove the identity \\[\\frac{\\sin \\theta}{\\sin \\theta + \\cos \\theta} + \\frac{\\cos \\theta}{\\sin \\theta - \\cos \\theta} \\equiv \\frac{\\tan^2 \\theta + 1}{\\tan^2 \\theta - 1}.\\]"
+      },
+      {
+        "Part": "b",
+        "Text": "Hence find the exact solutions of the equation \\[\\frac{\\sin \\theta}{\\sin \\theta + \\cos \\theta} + \\frac{\\cos \\theta}{\\sin \\theta - \\cos \\theta} = 2 \\quad \\text{for } 0 \\leq \\theta \\leq \\pi.\\]"
+      }
+    ]
+  },
+  "SolutionContent": {
+    "Parts": [
+      {
+        "Part": "a",
+        "Solution": {
+          "Steps": [
+            "Rewrite the left-hand side with a common denominator: \\[\\frac{\\sin(\\sin - \\cos) + \\cos(\\sin + \\cos)}{(\\sin + \\cos)(\\sin - \\cos)}.\\]",
+            "Simplify the numerator: \\[\\sin^2 \\theta + \\cos^2 \\theta.\\]",
+            "Use \\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\) to rewrite the numerator.",
+            "Divide through by \\(\\cos^2 \\theta\\): \\[\\frac{\\tan^2 \\theta + 1}{\\tan^2 \\theta - 1}.\\]"
+          ],
+          "MarkingScheme": [
+            "M1: Sight of a correct common denominator.",
+            "DM1: Divide through by \\(\\cos^2 \\theta\\).",
+            "A1: Correctly proving the identity."
+          ]
+        }
+      },
+      {
+        "Part": "b",
+        "Solution": {
+          "Steps": [
+            "Equate \\(\\frac{\\tan^2 \\theta + 1}{\\tan^2 \\theta - 1} = 2\\).",
+            "Solve for \\(\\tan \\theta\\): \\[\\tan^2 \\theta = \\pm \\sqrt{3}.\\]",
+            "Find exact solutions \\(\\theta = \\frac{\\pi}{3}, \\frac{2\\pi}{3}.\\]"
+          ],
+          "MarkingScheme": [
+            "M1: Equate the expression to 2 and clear fractions.",
+            "DM1: Solve for \\(\\tan \\theta\\).",
+            "A1: Correct solutions in radians."
+          ]
+        }
+      }
+    ]
+  }
+},
+{
+  "Metadata": {
+    "QuestionTitle": "Equation of a Curve",
+    "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+    "ExamBoard": "CAIE",
+    "SyllabusCode": "9709",
+    "Subject": "MATH",
+    "YearOfExam": 2022,
+    "Session": "October/November",
+    "PaperNumber": "Paper 1",
+    "QuestionNumber": 8,
+    "QuestionType": "Structured Question",
+    "Level": "P1",
+    "MathTopic": "Integration and Stationary Points",
+    "TopicsCovered": [
+      "Integration",
+      "Stationary Points",
+      "Differentiation"
+    ],
+    "MarksAllocation": {
+      "PartA": 4,
+      "PartB": 2,
+      "PartC": 1
+    },
+    "DifficultyLevel": "Moderate",
+    "ImageUrl": [
+      "/9709_P1_2022_Nov_12/q8.png"
+    ]
+  },
+  "QuestionContent": {
+    "Parts": [
+      {
+        "Part": "a",
+        "Text": "Find the equation of the curve.",
+        "Marks": 4
+      },
+      {
+        "Part": "b",
+        "Text": "Find the x-coordinate of the stationary point.",
+        "Marks": 2
+      },
+      {
+        "Part": "c",
+        "Text": "State the set of values of x for which y increases as x increases.",
+        "Marks": 1
+      }
+    ],
+    "Text": "The equation of a curve is such that \\( \\frac{dy}{dx} = 3x^{\\frac{1}{2}} - 3x^{-\\frac{1}{2}} \\). The curve passes through the point (3, 5)."
+  },
+  "SolutionContent": {
+    "Parts": [
+      {
+        "Part": "a",
+        "Solution": "\\[ y = \\int \\left(3x^{\\frac{1}{2}} - 3x^{-\\frac{1}{2}}\\right) dx \\]\n\\[ y = \\frac{3}{2}x^{\\frac{3}{2}} - 6x^{\\frac{1}{2}} + c \\]\nSubstitute (3, 5):\n\\[ 5 = \\frac{3}{2}(3)^{\\frac{3}{2}} - 6(3)^{\\frac{1}{2}} + c \\]\n\\[ c = 5 \\]\nFinal equation:\n\\[ y = \\frac{3}{2}x^{\\frac{3}{2}} - 6x^{\\frac{1}{2}} + 5 \\]",
+        "Marks": 4
+      },
+      {
+        "Part": "b",
+        "Solution": "\\[ \\frac{dy}{dx} = 3x^{\\frac{1}{2}} - 3x^{-\\frac{1}{2}} \\]\nSet \\( \\frac{dy}{dx} = 0 \\):\n\\[ 3x^{\\frac{1}{2}} = 3x^{-\\frac{1}{2}} \\]\n\\[ x = 1 \\]",
+        "Marks": 2
+      },
+      {
+        "Part": "c",
+        "Solution": "\\[ \\frac{dy}{dx} > 0 \\]\n\\[ 3x^{\\frac{1}{2}} > 3x^{-\\frac{1}{2}} \\]\n\\[ x > 1 \\]\nSet of values: \\( x > 1 \\)",
+        "Marks": 1
+      }
+    ]
+  }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Functions and Compositions",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 9,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Functions",
+        "TopicsCovered": [
+            "Composite Functions",
+            "Inverse Functions"
+        ],
+        "MarksAllocation": {
+            "PartA": 1,
+            "PartB": 2,
+            "PartC": 1,
+            "PartD": 3,
+            "PartE": 1
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_12/q9.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find an expression for gf(x).",
+                "Marks": 1
+            },
+            {
+                "Part": "b",
+                "Text": "Given that gf(2) = 11, find the value of a.",
+                "Marks": 2
+            },
+            {
+                "Part": "c",
+                "Text": "Given that the graph of y = f(x) has a minimum point when x = 1, explain whether or not f has an inverse.",
+                "Marks": 1
+            },
+            {
+                "Part": "d",
+                "Text": "It is given instead that a = 5. Find and simplify an expression for g⁻¹(f(x)).",
+                "Marks": 3
+            },
+            {
+                "Part": "e",
+                "Text": "Explain why the composite function fg cannot be formed.",
+                "Marks": 1
+            }
+        ],
+        "Text": "Functions f and g are defined by f(x) = x + 1/x for x > 0, g(x) = ax + 1 for x ∈ ℝ, where a is a constant."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "gf(x) = a(x + 1/x) + 1",
+                "MarkingScheme": "B1 for correct expression."
+            },
+            {
+                "Part": "b",
+                "Solution": "Substitute x = 2: gf(2) = a(2 + 1/2) + 1 = 11.\nSolve: a(2.5) + 1 = 11 → a = 4.",
+                "MarkingScheme": "M1 for substitution, A1 for solving to find a = 4."
+            },
+            {
+                "Part": "c",
+                "Solution": "No, because the function f is not one-to-one as it has a minimum point, implying it fails the horizontal line test.",
+                "MarkingScheme": "B1 for correct reasoning."
+            },
+            {
+                "Part": "d",
+                "Solution": "g⁻¹(x) = (x - 1)/5.\nSubstitute g⁻¹(f(x)): g⁻¹(f(x)) = (x + 1/x - 1)/5.",
+                "MarkingScheme": "B1 for g⁻¹(x), M1 for substitution, A1 for final simplified expression."
+            },
+            {
+                "Part": "e",
+                "Solution": "The domain of f does not include the whole range of g, e.g., g(-1) = -4 but f(x) is only defined for x > 0.",
+                "MarkingScheme": "B1 for correct explanation with example."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Cross-section of Aircraft",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 10,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Geometry of Circles",
+        "TopicsCovered": [
+            "Sector and Arc Lengths",
+            "Area of Triangles",
+            "Perimeter and Area Calculations"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 2,
+            "PartC": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_12/q10.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the perimeter of the cross-section RASB, giving your answer correct to 2 decimal places.",
+                "Marks": 3
+            },
+            {
+                "Part": "b",
+                "Text": "Find the difference in area of the two triangles AOB and APB, giving your answer correct to 2 decimal places.",
+                "Marks": 2
+            },
+            {
+                "Part": "c",
+                "Text": "Find the area of the cross-section RASB, giving your answer correct to 1 decimal place.",
+                "Marks": 3
+            }
+        ],
+        "Text": "The diagram shows a cross-section RASB of the body of an aircraft. The cross-section consists of a sector OARB of a circle of radius 2.5 m, with centre O, a sector PASB of another circle of radius 2.24 m with centre P and a quadrilateral OAPB. Angle AOB = 4π/3 and angle APB = 5π/6."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Perimeter of RASB = Arc length of ARB + Arc length of PASB:\n\\[ \\text{Perimeter} = 2.5 \\cdot \\frac{4\\pi}{3} + 2.24 \\cdot \\frac{5\\pi}{6} \\approx 10.47 + 5.86 = 16.34 \\text{ (to 2 d.p.)} \\]",
+                "MarkingScheme": [
+                    "B1: For either arc length correct.",
+                    "M1: For adding lengths using different radii and angles.",
+                    "A1: Correct final answer."
+                ]
+            },
+            {
+                "Part": "b",
+                "Solution": "Area of triangle AOB = \\( \\frac{1}{2} \\cdot 2.5^2 \\cdot \\sin\\left(\\frac{4\\pi}{3}\\right) \\approx 2.71 \\)\nArea of triangle APB = \\( \\frac{1}{2} \\cdot 2.24^2 \\cdot \\sin\\left(\\frac{5\\pi}{6}\\right) \\approx 1.25 \\)\nDifference = \\( 2.71 - 1.25 = 1.45 \\text{ (to 2 d.p.)} \\)",
+                "MarkingScheme": [
+                    "M1: For calculating area of either triangle.",
+                    "A1: Correct final answer for difference."
+                ]
+            },
+            {
+                "Part": "c",
+                "Solution": "Area of cross-section RASB = Area of sector OARB + Area of sector PASB - Difference in triangle areas:\n\\[ \\text{Area of OARB} = \\frac{1}{2} \\cdot 2.5^2 \\cdot \\frac{4\\pi}{3} \\approx 13.09 \\]\n\\[ \\text{Area of PASB} = \\frac{1}{2} \\cdot 2.24^2 \\cdot \\frac{5\\pi}{6} \\approx 6.57 \\]\n\\[ \\text{Total Area} = 13.09 + 6.57 - 1.45 \\approx 21.1 \\text{ (to 1 d.p.)} \\]",
+                "MarkingScheme": [
+                    "B1: For correct calculation of either sector area.",
+                    "M1: For adding areas and subtracting the difference in triangle areas.",
+                    "A1: Correct final answer."
+                ]
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Minimum Point and Shaded Area",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 11,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Differentiation and Integration",
+        "TopicsCovered": [
+            "Stationary Points",
+            "Definite Integration",
+            "Rate of Change"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 5,
+            "PartC": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_11/q11.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the coordinates of the minimum point of the curve \\(y = \\frac{9}{4}x^2 - 12x + 18\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the area of the shaded region between the curves \\(y = \\frac{9}{4}x^2 - 12x + 18\\) and \\(y = 18 - \\frac{3}{8}x^{5/2}\\), bounded by \\(x = 0\\) and \\(x = 4\\)."
+            },
+            {
+                "Part": "c",
+                "Text": "A point \\(P\\) is moving along the curve \\(y = 18 - \\frac{3}{8}x^{5/2}\\) in such a way that the \\(x\\)-coordinate of \\(P\\) is increasing at a constant rate of 2 units per second. Find the rate at which the \\(y\\)-coordinate of \\(P\\) is changing when \\(x = 4\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": [
+                    "\\(\\frac{dy}{dx} = \\frac{9}{2}x - 12\\)",
+                    "Setting \\(\\frac{dy}{dx} = 0\\): \\(x = \\frac{24}{9} = \\frac{8}{3}\\)",
+                    "Substitute \\(x = \\frac{8}{3}\\) into the equation for \\(y\\): \\(y = \\frac{9}{4}\\left(\\frac{8}{3}\\right)^2 - 12\\left(\\frac{8}{3}\\right) + 18 = 2\\)",
+                    "Minimum point: \\(\\left(\\frac{8}{3}, 2\\right)\\)"
+                ],
+                "Marks": 3
+            },
+            {
+                "Part": "b",
+                "Solution": [
+                    "Area = \\(\\int_0^4 \\left[18 - \\frac{3}{8}x^{5/2} - \\left(\\frac{9}{4}x^2 - 12x + 18\\right)\\right] dx\\)",
+                    "Integrate each term separately: \\([18x - \\frac{3}{28}x^{7/2} - \\frac{3}{4}x^3 + 6x^2 - 18x]_{0}^{4}\\)",
+                    "Substitute \\(x = 4\\) into the integrated expression: \\(\\frac{240}{7} \\approx 34.3\\)",
+                    "Final area: \\(\\approx 34.3\\)"
+                ],
+                "Marks": 5
+            },
+            {
+                "Part": "c",
+                "Solution": [
+                    "Given \\(\\frac{dx}{dt} = 2\\), find \\(\\frac{dy}{dt}\\) using the chain rule: \\(\\frac{dy}{dt} = \\frac{dy}{dx} \\cdot \\frac{dx}{dt}\\)",
+                    "Differentiate \\(y = 18 - \\frac{3}{8}x^{5/2}\\): \\(\\frac{dy}{dx} = -\\frac{15}{16}x^{3/2}\\)",
+                    "Substitute \\(x = 4\\): \\(\\frac{dy}{dx} = -15\\)",
+                    "\\(\\frac{dy}{dt} = -15 \\cdot 2 = -30\\)",
+                    "Rate of change of \\(y\\): \\(-30\\)"
+                ],
+                "Marks": 3
+            }
+        ]
+    }
+}
