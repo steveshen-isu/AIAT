@@ -1,6 +1,9 @@
 import mysql from 'mysql2';
 import dotenv from 'dotenv';
 dotenv.config();
+import path from 'path';
+import { fileURLToPath } from 'url';
+import fs from 'fs';
 
 console.log('db_host', process.env.DB_HOST);
 // Setting up the MySQL connection
@@ -14,16 +17,59 @@ const db = mysql.createPool({
     queueLimit: 0
 });
 
-
-
-
-
+function readJsonFiles(jDir) {
+    const jFiles = fs.readdirSync(jDir);
+    const jObjects = [];
+    jFiles.forEach(jFile => {
+        const jFilePath = path.join(jDir, jFile);
+        const stat = fs.statSync(jFilePath);
+        if (stat.isDirectory()) {
+            jObjects.push(...readJsonFiles(jFilePath))
+        } else if (path.extname(jFile) === '.json') {
+            try {
+                const oContents = fs.readFileSync(jFilePath, 'utf8');
+                let nContents = oContents;
+                nContents = jsonminify(nContents);
+                if (oContents.charAt(0) !== '[') {
+                    nContents = '[' + nContents;
+                }
+                if (oContents.charAt(oContents.length-1) !== ']') {
+                    nContents = nContents + ']';
+                }
+                jObjects.push(JSON.parse(nContents));
+            } catch (error) {
+                console.log(`Parse file: ${jFilePath} failed, error: `, error.message);
+            }
+        } else {
+            return;
+        }
+    });
+    return jObjects;
+}
 
 // Controller for handling POST requests to add a subject
 export const addSubject = (req, res) => {
     console.log('Received POST request for /api/subjects');
     console.log('Body:', req.body);
     res.status(201).send({ message: 'Subject added' });
+};
+
+
+// Controller for syncing question bank from json files to db
+export const syncQuestionBank = (req, res) => {
+    
+    const currentPath = path.dirname(fileURLToPath(import.meta.url));
+    const parentPath = path.dirname(currentPath);
+    const questionBankPath = path.join(parentPath, 'question_bank');
+    
+    try {
+        const jsonObjects = readJsonFiles(questionBankPath);
+        //TODO: sync json data to db
+    } catch (error) {
+        console.error('Json parse failed: ', error);
+        res.status(500).send('Json parse failed.');
+    }
+    res.status(200).send('JSON data sync to db successfully.');
 };
 
 // Controller for fetching subjects

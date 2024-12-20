@@ -8,7 +8,8 @@ import {
     getTopicSummary,
     getQuestions,
     getQuestion,
-    addSubject
+    addSubject,
+    syncQuestionBank
 } from '../controllers/productController.js';
 
 const router = express.Router();
@@ -39,5 +40,8 @@ router.get('/api/question/:questionId', getQuestion);
 
 // Route to add a subject
 router.post('/api/subjects', addSubject);
+
+// Route to sync question bank
+router.post('/api/syncQuestionBank', syncQuestionBank)
 
 export default router;
