@@ -1,0 +1,669 @@
+{
+    "Metadata": {
+        "QuestionTitle": "Solve Quadratic Equation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 1,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Quadratic Equations",
+        "TopicsCovered": [
+            "Solve Quadratic",
+            "Factorization"
+        ],
+        "MarksAllocation": {
+            "PartA": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_11/q1.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Solve the equation \\(3x + 2 = \\frac{2}{x - 1}\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Multiply both sides by \\(x - 1\\):\n\\[ (3x + 2)(x - 1) = 2 \\]\nExpand:\n\\[ 3x^2 - x - 2 = 0 \\]\nFactorize:\n\\[ (3x - 4)(x + 1) = 0 \\]\nSolutions:\n\\[ x = \\frac{4}{3} \\quad \\text{or} \\quad x = -1 \\]",
+                "MarkingScheme": {
+                    "M1": "Multiply by denominator and obtain a quadratic.",
+                    "M1": "Solve by factorization, formula, or completing the square.",
+                    "A1": "Correct solutions \\(x = -1, \\frac{4}{3}\\). Allow decimals (e.g., 1.33)."
+                }
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Equation of Curve and Tangent",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 2,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Differentiation",
+        "TopicsCovered": [
+            "Equation of Tangent",
+            "Integration"
+        ],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_11/q2.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the equation of the tangent to the curve at \\( P \\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the equation of the curve."
+            }
+        ],
+        "Text": "The equation of a curve is such that \\( \\frac{dy}{dx} = 12\\left(\\frac{1}{2}x - 1\\right)^{-4} \\). It is given that the curve passes through the point \\( P(6, 4) \\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "\\[ \\text{Gradient at } P: \\frac{dy}{dx} = 12\\left(\\frac{1}{2} \\cdot 6 - 1\\right)^{-4} = \\frac{3}{4} \\]\nUsing the point \\( (6, 4) \\) and gradient \\( \\frac{3}{4} \\):\n\\[ y - 4 = \\frac{3}{4}(x - 6) \\]\n\\[ \\text{Equation of tangent: } y = \\frac{3}{4}x - \\frac{1}{2} \\]",
+                "MarkingScheme": {
+                    "M1": "Substitute \\( x = 6 \\) into \\( \\frac{dy}{dx} \\) to find the gradient.",
+                    "A1": "Form the equation of the tangent using \\( y = mx + c \\)."
+                }
+            },
+            {
+                "Part": "b",
+                "Solution": "\\[ y = \\int 12\\left(\\frac{1}{2}x - 1\\right)^{-4} dx \\]\n\\[ = -\\frac{12}{3}\\left(\\frac{1}{2}x - 1\\right)^{-3} + c \\]\n\\[ = -8\\left(\\frac{1}{2}x - 1\\right)^{-3} + c \\]\nUsing \\( (6, 4): \\]\n\\[ 4 = -8\\left(2 - 1\\right)^{-3} + c \\]\n\\[ c = 5 \\]\n\\[ \\text{Equation of curve: } y = -8\\left(\\frac{1}{2}x - 1\\right)^{-3} + 5 \\]",
+                "MarkingScheme": {
+                    "M1": "Correct integration with \\( +c \\).",
+                    "M1": "Use \\( (6, 4) \\) to find \\( c \\).",
+                    "A1": "Write the final equation of the curve."
+                }
+            }
+        ]
+    }
+},
+{
+  "Metadata": {
+    "QuestionTitle": "Find y-coordinate of stationary point",
+    "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+    "ExamBoard": "CAIE",
+    "SyllabusCode": "9709",
+    "Subject": "MATH",
+    "YearOfExam": 2022,
+    "Session": "October/November",
+    "PaperNumber": "Paper 1",
+    "QuestionNumber": 3,
+    "QuestionType": "Structured Question",
+    "Level": "P1",
+    "MathTopic": "Calculus",
+    "TopicsCovered": [
+      "Stationary Points",
+      "Differentiation"
+    ],
+    "MarksAllocation": {
+      "PartA": 5
+    },
+    "DifficultyLevel": "Moderate",
+    "ImageUrl": [
+      "/9709_P1_2022_Nov_11/q3.png"
+    ]
+  },
+  "QuestionContent": {
+    "Parts": [
+      {
+        "Part": "a",
+        "Text": "A curve has equation \\(y = ax^{\\frac{1}{2}} - 2x\\), where \\(x > 0\\) and \\(a\\) is a constant. The curve has a stationary point at the point \\(P\\), which has \\(x\\)-coordinate 9.\n\nFind the \\(y\\)-coordinate of \\(P\\)."
+      }
+    ]
+  },
+  "SolutionContent": {
+    "Parts": [
+      {
+        "Part": "a",
+        "Solution": {
+          "Steps": [
+            "\\(\\frac{dy}{dx} = \\frac{1}{2}ax^{-\\frac{1}{2}} - 2\\)",
+            "At stationary point, \\(\\frac{dy}{dx} = 0\\). Substituting \\(x = 9\\):",
+            "\\(\\frac{1}{2}a(9)^{-\\frac{1}{2}} - 2 = 0\\)",
+            "\\(\\frac{a}{6} - 2 = 0 \\implies a = 12\\)",
+            "Now substitute \\(a = 12\\) and \\(x = 9\\) into \\(y = ax^{\\frac{1}{2}} - 2x\\):",
+            "\\(y = 12(9^{\\frac{1}{2}}) - 2(9) = 12(3) - 18 = 18\\)"
+          ],
+          "FinalAnswer": "\\(y = 18\\)"
+        },
+        "MarkingScheme": {
+          "B1": "Correct derivative \\(\\frac{dy}{dx}\\).",
+          "M1": "Substitute \\(x = 9\\) and solve for \\(a\\).",
+          "A1": "Correct value of \\(a\\).",
+          "A1FT": "Follow through using their \\(a\\) to find \\(y\\)."
+        }
+      }
+    ]
+  }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Binomial Expansion Coefficients",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Binomial Expansion",
+        "TopicsCovered": [
+            "Coefficient of Terms",
+            "Solving Equations"
+        ],
+        "MarksAllocation": {
+            "PartA": 6
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_11/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The coefficient of \\(x^2\\) in the expansion of \\((1 + \\frac{2}{p}x)^5\\) + \\((1 + px)^6\\) is 70.\n\nFind the possible values of the constant \\(p\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The coefficient of \\(x^2\\) in \\((1 + \\frac{2}{p}x)^5\\) is given by:\n\\[\\binom{5}{2} \\cdot \\left(\\frac{2}{p}\\right)^2 = 10 \\cdot \\frac{4}{p^2} = \\frac{40}{p^2}.\\]\n\nThe coefficient of \\(x^2\\) in \\((1 + px)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot p^2 = 15p^2.\\]\n\nAdding these coefficients and equating to 70:\n\\[\\frac{40}{p^2} + 15p^2 = 70.\\]\n\nRearranging and simplifying:\n\\[15p^4 - 70p^2 + 40 = 0.\\]\n\nLet \\(q = p^2\\):\n\\[15q^2 - 70q + 40 = 0.\\]\n\nUsing the quadratic formula:\n\\[q = \\frac{-(-70) \\pm \\sqrt{(-70)^2 - 4(15)(40)}}{2(15)}.\\]\n\n\\[q = \\frac{70 \\pm \\sqrt{4900 - 2400}}{30} = \\frac{70 \\pm \\sqrt{2500}}{30}.\\]\n\n\\[q = \\frac{70 \\pm 50}{30}.\\]\n\n\\[q = 4 \\text{ or } \\frac{2}{3}.\\]\n\nSince \\(q = p^2\\):\n\\[p = \\pm 2 \\text{ or } \\pm \\sqrt{\\frac{2}{3}}.\\]",
+                "MarkingScheme": {
+                    "B1": "Correct coefficient of \\(x^2\\) for \\((1 + \\frac{2}{p}x)^5\\).",
+                    "B1": "Correct coefficient of \\(x^2\\) for \\((1 + px)^6\\).",
+                    "M1": "Forming and equating the coefficients.",
+                    "DM1": "Solving the quadratic equation.",
+                    "A1": "Correct values of \\(p = \\pm 2 \\text{ or } \\pm \\sqrt{\\frac{2}{3}}.\\)"
+                }
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Perimeter and Area of Shaded Segment",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Geometry",
+        "TopicsCovered": [
+            "Sector Perimeter",
+            "Area of a Segment"
+        ],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_11/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the perimeter of the shaded segment."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the area of the shaded segment."
+            }
+        ],
+        "Text": "The diagram shows a sector OAB of a circle with centre O. The length of the arc AB is 8 cm. It is given that the perimeter of the sector is 20 cm."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "1. Use the formula for the perimeter of a sector: \\(2r + \\text{arc length}\\).\n2. Solve for \\(r\\): \\(2r + 8 = 20\\), so \\(r = 6\\).\n3. Calculate \\(\\angle AOB = \\frac{8}{6}\\) radians.\n4. Find the chord length using \\(AB = 2r \\sin\\left(\\frac{\\theta}{2}\\right)\\):\n   \\[ AB = 2 \\times 6 \\times \\sin\\left(\\frac{4}{3}\\right). \\]\n5. Add the arc length to the chord length to get the total perimeter of the segment:\n   \\[ \\text{Perimeter} = 8 + [\\text{calculated chord length}]. \\]",
+                "FinalAnswer": "15.4 cm",
+                "MarkingScheme": {
+                    "M1": "Using correct formula and substitution for \\(r\\).",
+                    "A1": "Correct arc length.",
+                    "A1": "Final perimeter rounded to 2 decimal places."
+                }
+            },
+            {
+                "Part": "b",
+                "Solution": "1. Use \\( \\text{Area of sector} = \\frac{1}{2}r^2\\theta.\\)\n   Substitute \\(r = 6\\) and \\(\\theta = \\frac{4}{3}\\):\n   \\[ \\text{Area of sector} = \\frac{1}{2} \\times 6^2 \\times \\frac{4}{3}. \\]\n2. Calculate area of triangle using \\(\\frac{1}{2}r^2\\sin\\theta\\):\n   \\[ \\text{Area of triangle} = \\frac{1}{2} \\times 6^2 \\times \\sin\\left(\\frac{4}{3}\\right). \\]\n3. Subtract the triangle area from the sector area:\n   \\[ \\text{Shaded area} = \\text{Sector area} - \\text{Triangle area}. \\]",
+                "FinalAnswer": "6.51 cm²",
+                "MarkingScheme": {
+                    "M1": "Using correct formula for sector area.",
+                    "A1": "Final area rounded to 2 decimal places."
+                }
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Trigonometric Equations",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Trigonometric Equations",
+        "TopicsCovered": [
+            "Trigonometric Identities",
+            "Quadratic Trigonometric Equations"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_11/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Show that the equation \\( \\frac{1}{\\sin \\theta + \\cos \\theta} + \\frac{1}{\\sin \\theta - \\cos \\theta} = 1 \\) may be expressed in the form \\( a \\sin^2 \\theta + b \\sin \\theta + c = 0 \\), where \\(a, b,\\) and \\(c\\) are constants to be found."
+            },
+            {
+                "Part": "b",
+                "Text": "Hence solve the equation \\( \\frac{1}{\\sin \\theta + \\cos \\theta} + \\frac{1}{\\sin \\theta - \\cos \\theta} = 1 \\) for \\( 0^\\circ \\leq \\theta \\leq 360^\\circ \\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "\\( \\frac{\\sin \\theta - \\cos \\theta + \\sin \\theta + \\cos \\theta}{(\\sin \\theta + \\cos \\theta)(\\sin \\theta - \\cos \\theta)} = 1 \\) \\[ 2 \\sin \\theta = \\sin^2 \\theta - \\cos^2 \\theta \\] \\[ 2 \\sin \\theta = \\sin^2 \\theta - (1 - \\sin^2 \\theta) \\] \\[ 2 \\sin^2 \\theta - 2 \\sin \\theta - 1 = 0 \\].",
+                "MarkingScheme": "M1 for use of common denominator and equating to 1. DM1 for correct simplification to quadratic in \\(\\sin \\theta\\). A1 for achieving \\(2\\sin^2\\theta - 2\\sin\\theta - 1 = 0\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "\\( \\sin \\theta = \\frac{2 \\pm \\sqrt{(2)^2 - 4(2)(-1)}}{2(2)} \\) \\[ \\sin \\theta = \\frac{1 \\pm \\sqrt{3}}{2} \\] \\[ \\theta = 201.5^\\circ, 338.5^\\circ \\].",
+                "MarkingScheme": "M1 for solving quadratic in \\(\\sin \\theta\\). A1 for each correct solution \\(\\theta\\). A1 for final answer \\(201.5^\\circ, 338.5^\\circ\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Geometric Progression",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 7,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Geometric Progression",
+        "TopicsCovered": [
+            "Finding terms in GP",
+            "Sum of terms in GP",
+            "Sum to infinity of GP"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 2,
+            "PartC": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_11/q7.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Verify that the 9th impact is the first in which the post sinks less than 10mm into the ground."
+            },
+            {
+                "Part": "b",
+                "Text": "Find, to the nearest millimetre, the total depth of the post in the ground after 20 impacts."
+            },
+            {
+                "Part": "c",
+                "Text": "Find the greatest total depth in the ground which could theoretically be achieved."
+            }
+        ],
+        "Text": "A tool for putting fence posts into the ground is called a ‘post-rammer’. The distances in millimetres that the post sinks into the ground on each impact of the post-rammer follow a geometric progression. The first three impacts cause the post to sink into the ground by 50mm, 40mm and 32mm respectively."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The common ratio r = 0.8. The 9th term of the GP is given by:\n50 × (0.8)^8 = 10.5 > 10,\n50 × (0.8)^9 = 8.39 < 10.\nHence, the 9th impact is the first impact where the post sinks less than 10mm.",
+                "MarkingScheme": "B1 for finding r, M1 for calculating terms, A1 for concluding the 9th term is less than 10mm."
+            },
+            {
+                "Part": "b",
+                "Solution": "The sum of the first 20 terms of the GP is:\nS20 = 50 × (1 - (0.8)^20) / (1 - 0.8) = 247 mm (to the nearest mm).",
+                "MarkingScheme": "M1 for using the formula for sum of GP terms, A1 for correct total depth."
+            },
+            {
+                "Part": "c",
+                "Solution": "The sum to infinity of the GP is:\nS∞ = 50 / (1 - 0.8) = 250 mm.",
+                "MarkingScheme": "M1 for using the formula for sum to infinity, A1 for correct theoretical depth."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Function Analysis",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 8,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Function and Inverse",
+        "TopicsCovered": [
+            "Differentiation",
+            "Inverse Functions"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 4,
+            "PartC": 1
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_11/q8.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find \\(f'(x)\\) and hence determine whether \\(f\\) is an increasing function, a decreasing function or neither."
+            },
+            {
+                "Part": "b",
+                "Text": "Express \\(f^{-1}(x)\\) in the form \\(\\frac{p}{a} - \\frac{b}{cx-d}\\), where \\(a, b, c, d\\) are integers."
+            },
+            {
+                "Part": "c",
+                "Text": "Hence state the value of \\(p\\) for which \\(f^{-1}(x) \\equiv f(x)\\)."
+            }
+        ],
+        "Text": "The function \\(f\\) is defined by \\(f(x) = 2 - \\frac{3}{4x - p}\\) for \\(x > \\frac{p}{4}\\), where \\(p\\) is a constant."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "\\(f'(x) = -3(-1)(4)(4x - p)^{-2} = \\frac{12}{(4x - p)^2}\\).\\nSince \\(f'(x) > 0\\), \\(f\\) is an increasing function.",
+                "MarkingScheme": "B2 for correct differentiation, B1 for conclusion."
+            },
+            {
+                "Part": "b",
+                "Solution": "\\(f(x) = 2 - \\frac{3}{4x - p} \\implies y = 2 - \\frac{3}{4x - p} \\implies y(4x - p) = 4y - 3 \\implies 4xy - py = 4y - 3 \\implies 4x = \\frac{p}{y} - \\frac{3}{y} + p \\implies x = \\frac{p}{4y} - \\frac{3}{4y}\\).\\nRewriting: \\(f^{-1}(x) = \\frac{p}{4} - \\frac{3}{4x - 8}\\).",
+                "MarkingScheme": "M1 for forming the equation, M1 for rearranging to find \\(x\\), A1 for correct expression."
+            },
+            {
+                "Part": "c",
+                "Solution": "For \\(f^{-1}(x) \\equiv f(x)\\), \\(p = 8\\).",
+                "MarkingScheme": "B1 for correct value."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Transformation of Functions",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 9,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Functions and Transformations",
+        "TopicsCovered": [
+            "Completing the square",
+            "Function transformations"
+        ],
+        "MarksAllocation": {
+            "PartA": 1,
+            "PartB": 2,
+            "PartC": 1,
+            "PartD": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_11/q9.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Express \\(f(x)\\) in the form \\((x - a)^2 + b\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Express \\(g(x)\\) in the form \\(2[(x + c)^2 + d]\\)."
+            },
+            {
+                "Part": "c",
+                "Text": "Express \\(g(x)\\) in the form \\(k f(x + h)\\), where \\(k\\) and \\(h\\) are integers."
+            },
+            {
+                "Part": "d",
+                "Text": "Describe fully the two transformations that have been combined to transform the graph of \\(y = f(x)\\) to the graph of \\(y = g(x)\\)."
+            }
+        ],
+        "Text": "Functions \\(f\\) and \\(g\\) are both defined for \\(x \\in \\mathbb{R}\\) and are given by:\n\\(f(x) = x^2 - 4x + 9, \\quad g(x) = 2x^2 + 4x + 12\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "\\(f(x) = (x - 2)^2 + 5\\)",
+                "MarkingScheme": "B1"
+            },
+            {
+                "Part": "b",
+                "Solution": "\\(g(x) = 2[(x + 1)^2 + 5]\\)",
+                "MarkingScheme": "B2, 1, 0"
+            },
+            {
+                "Part": "c",
+                "Solution": "\\(g(x) = 2f(x + 3)\\) or \\(k = 2, h = 3\\)",
+                "MarkingScheme": "B1"
+            },
+            {
+                "Part": "d",
+                "Solution": "{Translation: \\(\\begin{pmatrix} -3 \\\\ 0 \\end{pmatrix}\\)}\n{Stretch: \\(y\\) direction, factor 2}",
+                "MarkingScheme": "B2, 1, 0 FT"
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Area and Angle Between Curves",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 10,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Integration and Geometry",
+        "TopicsCovered": [
+            "Integration to Find Area",
+            "Tangents and Angles Between Curves"
+        ],
+        "MarksAllocation": {
+            "PartA": 5,
+            "PartB": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_11/q10.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the area of the region between the two curves."
+            },
+            {
+                "Part": "b",
+                "Text": "The acute angle between the two tangents at B is denoted by \\(\\alpha^\\circ\\), and the scales on the axes are the same. Find \\(\\alpha\\)."
+            }
+        ],
+        "Text": "Curves with equations \\(y = 2x^{\\frac{1}{2}} + 1\\) and \\(y = \\frac{1}{2}x^2 - x + 1\\) intersect at \\(A(0, 1)\\) and \\(B(4, 5)\\), as shown in the diagram."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "\\[\\pm \\int [2x^{1/2} + 1 - (1/2 x^2 - x + 1)] \\, dx = \\pm \\int [2x^{1/2} - 1/2x^2 + x] \\, dx \\] \\[= \\pm \\left[ \\frac{4x^{3/2}}{3} - \\frac{x^3}{6} + \\frac{x^2}{2} \\right]_0^4 \\] \\[= \\pm \\left[ \\frac{32}{3} - \\frac{32}{6} + 8 \\right] \\] \\[= 8 \\].",
+                "MarkingScheme": "M1 for integral setup, B2 for correct coefficients, DM1 for correct limits substitution, A1 for final answer of \\(8\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "Find the gradients of the two curves at \\(x = 4\\): \\[ \\text{Upper curve: } \\frac{dy}{dx} = x^{-1/2}, \\text{ at } x = 4, \\text{ gradient = } \\frac{1}{2}. \\] \\[ \\text{Lower curve: } \\frac{dy}{dx} = x - 1, \\text{ at } x = 4, \\text{ gradient = } 3. \\] \\[ \\alpha = \\tan^{-1}(3) - \\tan^{-1}\\left(\\frac{1}{2}\\right) \\] \\[ = 71.57 - 26.57 = 45^\\circ. \\]",
+                "MarkingScheme": "M1 for differentiating each curve, M1 for evaluating gradients at \\(x = 4\\), M1 for using \\(\\tan^{-1}\\), A1 for final angle of \\(45^\\circ\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Tangents and Circles",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "October/November",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 11,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Tangents and Circles",
+        "TopicsCovered": [
+            "Equation of Tangent",
+            "Circle Geometry",
+            "Angle Properties"
+        ],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 3,
+            "PartC": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_Nov_11/q11.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "By letting the equation of a tangent be y = mx + 10, find the two possible values of m."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the coordinates of B and C."
+            },
+            {
+                "Part": "c",
+                "Text": "Find angle BDC in degrees."
+            }
+        ],
+        "Text": "The diagram shows the circle with equation x^2 + y^2 = 20. Tangents touching the circle at points B and C pass through the point A (0, 10)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Substitute the equation of the line y = mx + 10 into the equation of the circle x^2 + y^2 = 20. Simplify and solve for m using the quadratic formula.",
+                "MarkingScheme": {
+                    "M1": "Substitute equation of line into equation of circle.",
+                    "A1": "Collect terms into a 3-term quadratic.",
+                    "DM1": "Use discriminant to solve quadratic.",
+                    "A1": "Two values for m."
+                }
+            },
+            {
+                "Part": "b",
+                "Solution": "Use the quadratic equation to find x-values. Substitute these x-values into the tangent equations to find coordinates of B and C.",
+                "MarkingScheme": {
+                    "M1": "Substitute m into quadratic equation and solve.",
+                    "A1": "Find correct x-values.",
+                    "A1": "Find correct coordinates of B and C."
+                }
+            },
+            {
+                "Part": "c",
+                "Solution": "Use trigonometric or geometric properties to calculate angle BDC.",
+                "MarkingScheme": {
+                    "M1": "Use a trigonometric property such as cosine rule or angle at the circumference.",
+                    "DM1": "Find required lengths or values.",
+                    "A1": "Calculate the correct angle BDC."
+                }
+            }
+        ]
+    }
+}

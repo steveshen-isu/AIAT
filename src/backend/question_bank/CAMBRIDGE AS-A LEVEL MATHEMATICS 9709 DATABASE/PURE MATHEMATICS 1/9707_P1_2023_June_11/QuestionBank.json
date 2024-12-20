@@ -1,0 +1,1007 @@
+{
+    "Metadata": {
+        "QuestionTitle": "Trigonometric Equation Solution",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 1,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Trigonometry",
+        "TopicsCovered": [
+            "Trigonometric Equations",
+            "Exact and Approximate Solutions"
+        ],
+        "MarksAllocation": {
+            "TotalMarks": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_11/q1.png"
+        ]
+    },
+    "QuestionContent": {
+        "Text": "Solve the equation \\(4 \\sin \\theta + \\tan \\theta = 0\\) for \\(0^\\circ < \\theta < 180^\\circ\\)."
+    },
+    "SolutionContent": {
+        "Steps": [
+            {
+                "Step": "Rewrite \\(\\tan \\theta\\) as \\(\\frac{\\sin \\theta}{\\cos \\theta}\\).",
+                "Expression": "\\(4 \\sin \\theta + \\frac{\\sin \\theta}{\\cos \\theta} = 0\\)"
+            },
+            {
+                "Step": "Factorize \\(\\sin \\theta\\):",
+                "Expression": "\\(\\sin \\theta (4 \\cos \\theta + 1) = 0\\)"
+            },
+            {
+                "Step": "Solve \\(\\sin \\theta = 0\\):",
+                "Result": "No solutions within \\(0^\\circ < \\theta < 180^\\circ\\)."
+            },
+            {
+                "Step": "Solve \\(4 \\cos \\theta + 1 = 0\\):",
+                "Expression": "\\(\\cos \\theta = -\\frac{1}{4}\\)"
+            },
+            {
+                "Step": "Find \\(\\theta\\) using inverse cosine:",
+                "Expression": "\\(\\theta = \\cos^{-1}(-\\frac{1}{4})\\)",
+                "Result": "\\(\\theta = 104.5^\\circ\\) (correct to 1 decimal place)."
+            }
+        ],
+        "FinalAnswer": "\\(\\theta = 104.5^\\circ\\)",
+        "MarkingScheme": {
+            "M1": "Correct substitution for \\(\\tan \\theta\\) and factorization.",
+            "M1": "Correct use of trigonometric identities or equations.",
+            "A1": "Correct solution for \\(\\theta\\) to 1 decimal place."
+        }
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Binomial Expansion",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 2,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Binomial Expansion",
+        "TopicsCovered": [
+            "Expansion of Binomials",
+            "Coefficient Determination"
+        ],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 2,
+            "PartC": 2,
+            "TotalMarks": 6
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_11/q2.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the first three terms in the expansion, in ascending powers of \\(x\\), of \\((2 + 3x)^4\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the first three terms in the expansion, in ascending powers of \\(x\\), of \\((1 - 2x)^5\\)."
+            },
+            {
+                "Part": "c",
+                "Text": "Hence find the coefficient of \\(x^2\\) in the expansion of \\((2 + 3x)^4 (1 - 2x)^5\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The first three terms of \\((2 + 3x)^4\\) are:\n\\[16 + 96x + 216x^2.\\]",
+                "MarkingScheme": "B2 for the correct first three terms, presented in any order."
+            },
+            {
+                "Part": "b",
+                "Solution": "The first three terms of \\((1 - 2x)^5\\) are:\n\\[1 - 10x + 40x^2.\\]",
+                "MarkingScheme": "B2 for the correct first three terms, presented in any order."
+            },
+            {
+                "Part": "c",
+                "Solution": "Using the expansions:\n\\((2 + 3x)^4 = 16 + 96x + 216x^2\\) and \\((1 - 2x)^5 = 1 - 10x + 40x^2\\), the coefficient of \\(x^2\\) in \\((2 + 3x)^4 (1 - 2x)^5\\) is calculated as:\n\\[16 \\cdot 40 + (-10 \\cdot 96) + (1 \\cdot 216) = 640 - 960 + 216 = -104.\\]",
+                "MarkingScheme": "M1 for combining terms correctly to find the coefficient of \\(x^2\\), A1 for the correct answer of \\(-104\\)."
+            }
+        ],
+        "FinalAnswer": {
+            "a": "\\(16 + 96x + 216x^2\\)",
+            "b": "\\(1 - 10x + 40x^2\\)",
+            "c": "\\(-104x^2\\)"
+        }
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Graph Transformations",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 3,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Transformations of Functions",
+        "TopicsCovered": [
+            "Graph Stretching",
+            "Graph Translation"
+        ],
+        "MarksAllocation": {
+            "TotalMarks": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_11/q3.png"
+        ]
+    },
+    "QuestionContent": {
+        "Text": "The diagram shows graphs with equations \\(y = f(x)\\) and \\(y = g(x)\\). Describe fully a sequence of two transformations which transforms the graph of \\(y = f(x)\\) to \\(y = g(x)\\)."
+    },
+    "SolutionContent": {
+        "Steps": [
+            {
+                "Transformation": "Stretch",
+                "Details": {
+                    "Factor": 2,
+                    "Direction": "y-direction"
+                },
+                "MarkingScheme": "B2 for fully correct transformation description; B1 for one element correct."
+            },
+            {
+                "Transformation": "Translation",
+                "Details": {
+                    "Vector": {
+                        "x": -6,
+                        "y": 0
+                    }
+                },
+                "MarkingScheme": "B2 for fully correct transformation description; B1 for one element correct."
+            }
+        ],
+        "FinalSequence": [
+            {
+                "Step": "Stretch in y-direction by a factor of 2."
+            },
+            {
+                "Step": "Translate the graph 6 units to the left."
+            }
+        ],
+        "MarkingScheme": {
+            "Overall": "Transformations can be in any order. Award B2 for each fully correct transformation."
+        }
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Perimeter of Segment BCD",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Geometry and Trigonometry",
+        "TopicsCovered": [
+            "Sector Area",
+            "Arc Length",
+            "Triangle Geometry"
+        ],
+        "MarksAllocation": {
+            "TotalMarks": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_11/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Text": "The diagram shows a sector \\(ABC\\) of a circle with centre \\(A\\) and radius 8 cm. The area of the sector is \\(\\frac{16\\pi}{3}\\) cm\\(^2\\). The point \\(D\\) lies on the arc \\(BC\\).\n\nFind the perimeter of the segment \\(BCD\\)."
+    },
+    "SolutionContent": {
+        "Steps": [
+            {
+                "Step": "Find the angle \\(\\theta\\) using the sector area formula \\(\\frac{1}{2} r^2 \\theta = \\frac{16\\pi}{3}\\).",
+                "Calculation": "\\(\\theta = \\frac{\\pi}{6}\\).",
+                "MarkingScheme": "B1 for correct substitution and solving for \\(\\theta\\)."
+            },
+            {
+                "Step": "Calculate the arc length \\(BC\\) using \\(r\\theta\\).",
+                "Calculation": "\\(8 \\cdot \\frac{\\pi}{6} = 4.1887...\\)",
+                "MarkingScheme": "M1 for correct arc length formula substitution."
+            },
+            {
+                "Step": "Find the chord length \\(BC\\) using trigonometric formulas (e.g., sine rule or cosine rule).",
+                "Calculation": "\\(BC = 2 \\cdot 8 \\cdot \\sin(\\frac{\\pi}{12}) = 4.1411...\\)",
+                "MarkingScheme": "M1 for correct use of trigonometry to find \\(BC\\)."
+            },
+            {
+                "Step": "Combine arc length and chord length to find the perimeter.",
+                "Calculation": "\\(Perimeter = 4.1887 + 4.1411 = 8.33\\) (to 3 significant figures).",
+                "MarkingScheme": "A1 for final perimeter value."
+            }
+        ],
+        "FinalAnswer": "\\(8.33\\) cm",
+        "AlternativeMethods": [
+            {
+                "Method": "Use cosine rule to calculate \\(BC\\).",
+                "Calculation": "\\(BC^2 = 8^2 + 8^2 - 2 \\cdot 8 \\cdot 8 \\cdot \\cos(\\frac{\\pi}{6})\\)."
+            },
+            {
+                "Method": "Use Pythagoras' theorem after finding triangle side components.",
+                "Calculation": "\\(BC^2 = (8 - 4\\sqrt{3})^2 + 4^2\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Tangent to a Curve",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Calculus",
+        "TopicsCovered": [
+            "Differentiation",
+            "Equation of Tangent"
+        ],
+        "MarksAllocation": {
+            "TotalMarks": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_11/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Text": "The line with equation \\(y = kx - k\\), where \\(k\\) is a positive constant, is a tangent to the curve with equation \\(y = -\\frac{1}{2x}\\).\n\nFind, in either order, the value of \\(k\\) and the coordinates of the point where the tangent meets the curve."
+    },
+    "SolutionContent": {
+        "Steps": [
+            {
+                "Step": "Differentiate \\(y = -\\frac{1}{2x}\\) to find the gradient of the curve.",
+                "Calculation": "\\(\\frac{dy}{dx} = \\frac{1}{2x^2}\\).",
+                "MarkingScheme": "M1 for correct differentiation."
+            },
+            {
+                "Step": "Set the gradient of the curve equal to \\(k\\) from the equation of the tangent.",
+                "Calculation": "\\(\\frac{1}{2x^2} = k\\).",
+                "MarkingScheme": "DM1 for forming an equation involving \\(k\\) and \\(x\\)."
+            },
+            {
+                "Step": "Solve \\(\\frac{1}{2x^2} = k\\) and \\(y = kx - k\\) simultaneously with \\(y = -\\frac{1}{2x}\\).",
+                "Calculation": "\\(x = \\frac{1}{2}\\), \\(y = -1\\), \\(k = 2\\).",
+                "MarkingScheme": "A1 for finding \\(x = \\frac{1}{2}\\), B1 for \\(y = -1\\), B1 for \\(k = 2\\)."
+            }
+        ],
+        "FinalAnswer": {
+            "k": 2,
+            "Point": {
+                "x": "1/2",
+                "y": "-1"
+            }
+        }
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Arithmetic and Geometric Progressions",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Progressions",
+        "TopicsCovered": [
+            "Arithmetic Progression",
+            "Geometric Progression",
+            "Sum to Infinity"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 2,
+            "TotalMarks": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_11/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Given that the common difference of the progression is not zero, find the value of \\(p\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Using this value, find the sum to infinity of the geometric progression with first two terms \\(\\frac{p^2}{6}\\) and \\(2p - 6\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": [
+                    "Set up the equation for the common difference: \\((2p - 6) - \\frac{p^2}{6} = p - (2p - 6)\\).",
+                    "Simplify to form a quadratic equation: \\(p^2 - 18p + 72 = 0\\).",
+                    "Solve the quadratic equation: \\(p = 6\\) or \\(p = 12\\).",
+                    "Since \\(d \\neq 0\\), the valid solution is \\(p = 12\\)."
+                ],
+                "MarkingScheme": {
+                    "M1": "Correct method leading to a quadratic equation in \\(p\\).",
+                    "DM1": "Solving the quadratic equation correctly.",
+                    "A1": "Final correct value of \\(p = 12\\)."
+                }
+            },
+            {
+                "Part": "b",
+                "Solution": [
+                    "First term of GP: \\(a = \\frac{p^2}{6} = 24\\).",
+                    "Second term of GP: \\(b = 2p - 6 = 18\\).",
+                    "Common ratio: \\(r = \\frac{b}{a} = \\frac{18}{24} = \\frac{3}{4}\\).",
+                    "Sum to infinity formula: \\(S_\\infty = \\frac{a}{1 - r}\\).",
+                    "Calculate \\(S_\\infty = \\frac{24}{1 - \\frac{3}{4}} = 96\\)."
+                ],
+                "MarkingScheme": {
+                    "B1": "Correct calculation of \\(r\\).",
+                    "B1 (FT)": "Correct use of \\(r\\) and \\(p\\) in the sum to infinity formula."
+                }
+            }
+        ],
+        "FinalAnswer": {
+            "PartA": {
+                "p": 12
+            },
+            "PartB": {
+                "SumToInfinity": 96
+            }
+        }
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Trigonometric Curve and Solutions",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 7,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Trigonometric Functions",
+        "TopicsCovered": [
+            "Sinusoidal Functions",
+            "Range and Sketching",
+            "Number of Solutions"
+        ],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 2,
+            "PartC": 1,
+            "TotalMarks": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_11/q7.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "State greatest and least values of \\(y\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Sketch the curve."
+            },
+            {
+                "Part": "c",
+                "Text": "State the number of solutions of the equation \\(2 + 3\\sin\\frac{1}{2}x = 5 - 2x\\) for \\(0 \\leq x \\leq 4\\pi\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": [
+                    "The equation is \\(y = 2 + 3\\sin\\frac{1}{2}x\\).",
+                    "The range of \\(\\sin\\frac{1}{2}x\\) is \\([-1, 1]\\).",
+                    "Substituting these values, \\(y = 2 + 3(-1) = -1\\) (least) and \\(y = 2 + 3(1) = 5\\) (greatest)."
+                ],
+                "MarkingScheme": {
+                    "B1": "Correct least value of \\(-1\\).",
+                    "B1": "Correct greatest value of \\(5\\)."
+                }
+            },
+            {
+                "Part": "b",
+                "Solution": [
+                    "Sketch a sinusoidal curve with the equation \\(y = 2 + 3\\sin\\frac{1}{2}x\\).",
+                    "The curve starts at \\(y = 2\\), oscillates between \\(-1\\) and \\(5\\), and completes one cycle in \\(4\\pi\\)."
+                ],
+                "MarkingScheme": {
+                    "B1": "Shape and curvature approximately correct.",
+                    "B1": "Maximum and minimum values correctly labeled or indicated on the \\(y\\)-axis."
+                }
+            },
+            {
+                "Part": "c",
+                "Solution": [
+                    "Rewriting the equation \\(2 + 3\\sin\\frac{1}{2}x = 5 - 2x\\):",
+                    "Equate and analyze graphical intersections. The number of solutions is \\(1\\) in the interval \\([0, 4\\pi]\\)."
+                ],
+                "MarkingScheme": {
+                    "B1": "Correct number of solutions (\\(1\\))."
+                }
+            }
+        ],
+        "FinalAnswer": {
+            "PartA": {
+                "Greatest": 5,
+                "Least": -1
+            },
+            "PartB": "Graph sketched showing sinusoidal behavior, labeled with max and min values.",
+            "PartC": {
+                "Solutions": 1
+            }
+        }
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Functions and Inverses",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 8,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Functions",
+        "TopicsCovered": [
+            "Composite Functions",
+            "Inverse Functions",
+            "Domains"
+        ],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 1,
+            "PartC": 3,
+            "TotalMarks": 8
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_11/q8.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Given that \\(f(7) = \\frac{5}{2}\\) and \\(gf(5) = 4\\), find the values of \\(a\\) and \\(b\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the domain of \\(f^{-1}\\)."
+            },
+            {
+                "Part": "c",
+                "Text": "Find an expression for \\(f^{-1}(x)\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": [
+                    "From \\(f(x) = 1 + \\frac{2a}{x - a}\\), substitute \\(x = 7\\) and \\(f(7) = \\frac{5}{2}\\):",
+                    "\\(1 + \\frac{2a}{7 - a} = \\frac{5}{2}\\).",
+                    "Solve for \\(a\\): \\(7a - a^2 = 21\\), giving \\(a = 3\\).",
+                    "From \\(gf(x) = b(f(x)) - 2\\), substitute \\(f(5)\\): \\(1 + \\frac{2(3)}{5 - 3} = 4\\).",
+                    "Solve for \\(b\\): \\(b = \\frac{3}{2}\\)."
+                ],
+                "MarkingScheme": {
+                    "M1": "Correct substitution into \\(f(x)\\) to solve for \\(a\\).",
+                    "A1": "Correct value of \\(a = 3\\).",
+                    "M1": "Correct substitution into \\(gf(x)\\) to solve for \\(b\\).",
+                    "A1": "Correct value of \\(b = \\frac{3}{2}\\)."
+                }
+            },
+            {
+                "Part": "b",
+                "Solution": [
+                    "The domain of \\(f^{-1}(x)\\) corresponds to the range of \\(f(x)\\), which is \\(x > 1\\)."
+                ],
+                "MarkingScheme": {
+                    "B1": "Correct domain of \\(f^{-1}\\)."
+                }
+            },
+            {
+                "Part": "c",
+                "Solution": [
+                    "To find \\(f^{-1}(x)\\), start with \\(y = 1 + \\frac{6}{x - 3}\\).",
+                    "Rearrange to solve for \\(x\\): \\(x - 3 = \\frac{6}{y - 1}\\).",
+                    "Invert to obtain \\(f^{-1}(x) = 3 + \\frac{6}{x - 1}\\)."
+                ],
+                "MarkingScheme": {
+                    "M1": "Correct rearrangement of \\(y = f(x)\\) to find \\(x\\) in terms of \\(y\\).",
+                    "DM1": "Correct substitution and simplification for \\(f^{-1}(x)\\).",
+                    "A1": "Final expression \\(f^{-1}(x) = 3 + \\frac{6}{x - 1}\\)."
+                }
+            }
+        ],
+        "FinalAnswer": {
+            "PartA": {
+                "a": 3,
+                "b": "3/2"
+            },
+            "PartB": "Domain: \\(x > 1\\).",
+            "PartC": "\\(f^{-1}(x) = 3 + \\frac{6}{x - 1}\\)."
+        }
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Rate of Change and Volume in a Tank",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 9,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Differentiation",
+        "TopicsCovered": [
+            "Chain Rule",
+            "Rate of Change",
+            "Volume"
+        ],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 3,
+            "TotalMarks": 6
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_11/q9.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the rate at which \\(h\\) is increasing at the instant when \\(h = 10\\) cm."
+            },
+            {
+                "Part": "b",
+                "Text": "At another instant, the rate at which \\(h\\) is increasing is 0.075 cm/s. Find the value of \\(V\\) at this instant."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": [
+                    "The volume is given as \\(V = \\frac{4}{3}(25 + h)^3 - \\frac{62500}{3}\\).",
+                    "Differentiate \\(V\\) with respect to \\(h\\): \\(\\frac{dV}{dh} = 4(25 + h)^2\\).",
+                    "At \\(h = 10\\), \\(\\frac{dV}{dh} = 4(25 + 10)^2 = 4900\\).",
+                    "Using the chain rule: \\(\\frac{dV}{dt} = \\frac{dV}{dh} \\cdot \\frac{dh}{dt}\\).",
+                    "Substitute \\(\\frac{dV}{dt} = 500\\) and \\(\\frac{dV}{dh} = 4900\\): \\(\\frac{dh}{dt} = \\frac{500}{4900} = 0.102\\) cm/s."
+                ],
+                "MarkingScheme": {
+                    "B1": "Correct differentiation to find \\(\\frac{dV}{dh}\\).",
+                    "M1": "Correct application of the chain rule.",
+                    "A1": "Correct value of \\(\\frac{dh}{dt} = 0.102\\) cm/s."
+                }
+            },
+            {
+                "Part": "b",
+                "Solution": [
+                    "Using \\(\\frac{dV}{dh} = 4(25 + h)^2\\), and \\(\\frac{dh}{dt} = 0.075\\):",
+                    "\\(\\frac{dV}{dt} = 500 = 4(25 + h)^2 \\cdot 0.075\\).",
+                    "Rearrange and solve for \\(h\\): \\((25 + h)^2 = \\frac{5000}{3}\\).",
+                    "Solve for \\(h\\): \\(h + 25 = \\sqrt{\\frac{5000}{3}} = 40.82\\), \\(h = 15.82\\).",
+                    "Substitute into \\(V = \\frac{4}{3}(25 + h)^3 - \\frac{62500}{3}\\):",
+                    "\\(V = 69900\\) cm\\(^3\\)."
+                ],
+                "MarkingScheme": {
+                    "M1": "Use chain rule to relate \\(\\frac{dh}{dt}\\) and \\(\\frac{dV}{dh}\\).",
+                    "DM1": "Correctly solve for \\(h\\).",
+                    "A1": "Correct value of \\(V = 69900\\) cm\\(^3\\)."
+                }
+            }
+        ],
+        "FinalAnswer": {
+            "PartA": {
+                "dh/dt": "0.102 cm/s"
+            },
+            "PartB": {
+                "V": "69900 cm^3"
+            }
+        }
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Volume of Revolution and Triangle Area",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 10,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Integration",
+        "TopicsCovered": [
+            "Volume of Revolution",
+            "Equation of Tangents and Normals",
+            "Area of Triangle"
+        ],
+        "MarksAllocation": {
+            "PartA": 5,
+            "PartB": 6,
+            "TotalMarks": 11
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_11/q10.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the exact volume generated when the shaded region is rotated through \\(360^\\circ\\) about the \\(x\\)-axis."
+            },
+            {
+                "Part": "b",
+                "Text": "A triangle is formed from the tangent to the curve at \\(B\\), the normal to the curve at \\(B\\), and the \\(x\\)-axis. Find the area of this triangle."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": [
+                    "The region is rotated about the \\(x\\)-axis. The volume is given by \\(\\int_a^b \\pi y^2 dx\\).",
+                    "Substitute \\(y = \\frac{4}{(2x - 1)^2}\\), giving \\(\\int_1^{3/2} \\pi \\left(\\frac{4}{(2x - 1)^2}\\right)^2 dx\\).",
+                    "Simplify and integrate: \\(\\int \\frac{16\\pi}{(2x - 1)^4} dx\\).",
+                    "Use limits \\(x = 1\\) and \\(x = \\frac{3}{2}\\):",
+                    "Volume of revolution = \\(\\frac{11\\pi}{6}\\)."
+                ],
+                "MarkingScheme": {
+                    "M1": "Set up correct integral for \\(\\int \\pi y^2 dx\\).",
+                    "A1": "Correctly simplify the integrand.",
+                    "DM1": "Substitute limits correctly into the integrated function.",
+                    "A1": "Final answer \\(\\frac{11\\pi}{6}\\)."
+                }
+            },
+            {
+                "Part": "b",
+                "Solution": [
+                    "Differentiate \\(y = \\frac{4}{(2x - 1)^2}\\) to find \\(\\frac{dy}{dx}\\):",
+                    "\\(\\frac{dy}{dx} = -\\frac{8(2x - 1)}{(2x - 1)^4}\\) = \\(-\\frac{8}{(2x - 1)^3}\\).",
+                    "At \\(B\\), \\(x = \\frac{3}{2}\\), \\(\\frac{dy}{dx} = -2\\).",
+                    "Equation of tangent: \\(y - 1 = -2(x - \\frac{3}{2})\\).",
+                    "Equation of normal: \\(y - 1 = \\frac{1}{2}(x - \\frac{3}{2})\\).",
+                    "Find intercepts on the \\(x\\)-axis for tangent and normal.",
+                    "Calculate triangle area using intercepts: \\(\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{5}{4}\\)."
+                ],
+                "MarkingScheme": {
+                    "B1": "Correct differentiation to find \\(\\frac{dy}{dx}\\).",
+                    "M1": "Form correct equations for tangent and normal.",
+                    "A1": "Find correct intercepts.",
+                    "A1": "Final triangle area \\(\\frac{5}{4}\\)."
+                }
+            }
+        ],
+        "FinalAnswer": {
+            "PartA": {
+                "Volume": "\\(\\frac{11\\pi}{6}\\)"
+            },
+            "PartB": {
+                "Area": "\\(\\frac{5}{4}\\)"
+            }
+        }
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Stationary Points and Curve Equation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 11,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Differentiation",
+        "TopicsCovered": [
+            "Stationary Points",
+            "Curve Equation",
+            "Nature of Stationary Points"
+        ],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 2,
+            "PartC": 3,
+            "PartD": 2,
+            "TotalMarks": 9
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_11/q11.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the value of \\(a\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Determine the nature of this stationary point."
+            },
+            {
+                "Part": "c",
+                "Text": "Find the equation of the curve."
+            },
+            {
+                "Part": "d",
+                "Text": "Find the coordinates of any other stationary points on the curve."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": [
+                    "The derivative is \\(\\frac{dy}{dx} = 6x^2 - 30x + 6a\\).",
+                    "At \\(x = a\\), \\(\\frac{dy}{dx} = 0\\), so substitute \\(x = a\\):",
+                    "\\(6a^2 - 30a + 6a = 0\\).",
+                    "Factorize: \\(6a(a - 4) = 0\\).",
+                    "Thus, \\(a = 4\\) (since \\(a > 0\\))."
+                ],
+                "MarkingScheme": {
+                    "B1": "Correct substitution into \\(\\frac{dy}{dx} = 0\\).",
+                    "B1": "Correct value of \\(a = 4\\)."
+                }
+            },
+            {
+                "Part": "b",
+                "Solution": [
+                    "Differentiate again: \\(\\frac{d^2y}{dx^2} = 12x - 30\\).",
+                    "At \\(x = 4\\), \\(\\frac{d^2y}{dx^2} = 12(4) - 30 = 18 > 0\\).",
+                    "Since \\(\\frac{d^2y}{dx^2} > 0\\), the stationary point is a minimum."
+                ],
+                "MarkingScheme": {
+                    "M1": "Correct differentiation to find \\(\\frac{d^2y}{dx^2}\\).",
+                    "A1": "Correct conclusion of minimum nature."
+                }
+            },
+            {
+                "Part": "c",
+                "Solution": [
+                    "Integrate \\(\\frac{dy}{dx} = 6x^2 - 30x + 6a\\):",
+                    "\\(y = 2x^3 - 15x^2 + 6ax + c\\).",
+                    "Substitute \\(x = 4\\), \\(y = -15\\):",
+                    "\\(-15 = 2(4)^3 - 15(4)^2 + 6(4) + c\\).",
+                    "Solve for \\(c\\): \\(c = 1\\).",
+                    "Thus, \\(y = 2x^3 - 15x^2 + 24x + 1\\)."
+                ],
+                "MarkingScheme": {
+                    "B1": "Correct integration to find \\(y\\).",
+                    "M1": "Correct substitution to find \\(c\\).",
+                    "A1": "Final equation \\(y = 2x^3 - 15x^2 + 24x + 1\\)."
+                }
+            },
+            {
+                "Part": "d",
+                "Solution": [
+                    "Solve \\(\\frac{dy}{dx} = 6x^2 - 30x + 24 = 0\\):",
+                    "Factorize: \\(6(x - 4)(x - 1) = 0\\).",
+                    "Thus, \\(x = 1\\) or \\(x = 4\\).",
+                    "For \\(x = 1\\): \\(y = 2(1)^3 - 15(1)^2 + 24(1) + 1 = 12\\).",
+                    "Thus, the coordinates are \\((1, 12)\\)."
+                ],
+                "MarkingScheme": {
+                    "M1": "Correctly solve \\(\\frac{dy}{dx} = 0\\) for \\(x\\).",
+                    "A1": "Final coordinate \\((1, 12)\\)."
+                }
+            }
+        ],
+        "FinalAnswer": {
+            "PartA": {
+                "a": 4
+            },
+            "PartB": "Minimum",
+            "PartC": "Equation: \\(y = 2x^3 - 15x^2 + 24x + 1\\).",
+            "PartD": {
+                "Coordinates": "(1, 12)"
+            }
+        }
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Circle Geometry and Intersection",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2023,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 12,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Circle Geometry",
+        "TopicsCovered": [
+            "Equation of Circle",
+            "Equation of Tangents",
+            "Intersection of Lines and Circles"
+        ],
+        "MarksAllocation": {
+            "PartA": 1,
+            "PartB": 2,
+            "PartC": 3,
+            "PartD": 3,
+            "TotalMarks": 9
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2023_June_11/q12.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Write down the equation of circle \\(P\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the equation of the tangent to the circle \\(P\\) at \\(A\\)."
+            },
+            {
+                "Part": "c",
+                "Text": "Find the equation of circle \\(Q\\) and hence verify that the \\(y\\)-coordinates of both of the points of intersection of the two circles are 11."
+            },
+            {
+                "Part": "d",
+                "Text": "Find the coordinates of the points of intersection of the tangent and circle \\(Q\\), giving the answers in surd form."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": [
+                    "The center of circle \\(P\\) is \\((0, 2)\\) and radius is 10.",
+                    "Equation: \\(x^2 + (y - 2)^2 = 100\\)."
+                ],
+                "MarkingScheme": {
+                    "B1": "Correct equation of circle \\(P\\)."
+                }
+            },
+            {
+                "Part": "b",
+                "Solution": [
+                    "Gradient of radius at \\(A(6, 10)\\): \\(\\frac{10 - 2}{6 - 0} = \\frac{4}{3}\\).",
+                    "Gradient of tangent: \\(-\\frac{3}{4}\\).",
+                    "Equation of tangent: \\(y - 10 = -\\frac{3}{4}(x - 6)\\).",
+                    "Simplify to \\(y = -\\frac{3}{4}x + \\frac{29}{2}\\)."
+                ],
+                "MarkingScheme": {
+                    "M1": "Correct gradient calculation for tangent.",
+                    "A1": "Correct equation of tangent."
+                }
+            },
+            {
+                "Part": "c",
+                "Solution": [
+                    "The center of \\(Q\\) is \\((0, \\frac{29}{2})\\), and radius is \\(\\frac{5\\sqrt{5}}{2}\\).",
+                    "Equation: \\(x^2 + \\left(y - \\frac{29}{2}\\right)^2 = \\frac{125}{4}\\).",
+                    "Substitute \\(x = 0\\) into circle \\(Q\\): \\((y - \\frac{29}{2})^2 = \\frac{125}{4}\\).",
+                    "Solve for \\(y = 11\\) (both intersections verified)."
+                ],
+                "MarkingScheme": {
+                    "M1": "Correct center and radius of circle \\(Q\\).",
+                    "A1": "Verify \\(y = 11\\) for both intersections."
+                }
+            },
+            {
+                "Part": "d",
+                "Solution": [
+                    "Substitute tangent equation into \\(Q\\): \\(x^2 + \\left(-\\frac{3}{4}x + \\frac{29}{2} - \\frac{29}{2}\\right)^2 = \\frac{125}{4}\\).",
+                    "Simplify to find \\(x^2 + \\frac{9}{16}x^2 = 20\\).",
+                    "Solve \\(x^2 = \\frac{20}{1.5625} = 20\\).",
+                    "Find \\(x = \\pm \\sqrt{20}\\), \\(y = \\ldots\\) in surd form."
+                ],
+                "MarkingScheme": {
+                    "M1": "Correct substitution of tangent into circle \\(Q\\).",
+                    "A1": "Correct solutions for \\(x\\) and corresponding \\(y\\)."
+                }
+            }
+        ],
+        "FinalAnswer": {
+            "PartA": {
+                "Equation": "\\(x^2 + (y - 2)^2 = 100\\)"
+            },
+            "PartB": {
+                "Equation": "\\(y = -\\frac{3}{4}x + \\frac{29}{2}\\)"
+            },
+            "PartC": {
+                "Equation": "\\(x^2 + \\left(y - \\frac{29}{2}\\right)^2 = \\frac{125}{4}\\)",
+                "Verification": "Both \\(y\\)-coordinates are 11."
+            },
+            "PartD": {
+                "Coordinates": "\\((\\pm \\sqrt{20}, \\ldots)\\)"
+            }
+        }
+    }
+}
+
+
+
