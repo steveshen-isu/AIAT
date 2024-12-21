@@ -6,10 +6,11 @@ import PlotGenerator from './components/PlotGenerator';
 import Chatbox from './components/chatbox';
 import Calculator from './components/Calculator';
 import ExamGrader from './components/ExamGrader';
+import QuestionSearch from './components/QuestionSearch';
 
 import Button from './components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent } from './components/ui/card';
-import { FaBook, FaChartLine, FaComments, FaCalculator, FaGraduationCap } from 'react-icons/fa'; // Import icons
+import { FaBook, FaChartLine, FaComments, FaCalculator, FaGraduationCap, FaSearch } from 'react-icons/fa'; // Import icons
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
@@ -29,6 +30,8 @@ function Home() {
                 return <Calculator />;
             case 'ExamGrader':
                 return <ExamGrader />;
+            case 'QuestionSearch':
+                return <QuestionSearch />
             default:
                 return (
                     <Card className="text-center p-6 mx-auto border border-gray-200 shadow-lg">
@@ -58,6 +61,7 @@ function Home() {
                         <button onClick={() => handleNavigation('Chatbox')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Chatbox</button>
                         <button onClick={() => handleNavigation('Calculator')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Calculator</button>
                         <button onClick={() => handleNavigation('ExamGrader')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Exam Grader</button>
+                        <button onClick={() => handleNavigation('QuestionSearch')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Question Search</button>
                         <button onClick={() => setSelectedComponent(null)} className="bg-red-800 hover:bg-gray-200 p-2 rounded">Home Page</button>
 
                     </div>
@@ -224,6 +228,30 @@ function Home() {
                     >
                         <span className="text-lg font-bold text-center text-white">
                             Automatically grade exams and receive detailed feedback.
+                        </span>
+
+                    </div>
+                </Button>
+                <Button
+                    variant="default"
+                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
+                    onClick={() => setSelectedComponent('QuestionSearch')}
+                >
+                    <FaSearch
+                        className="absolute text-red-500 text-[6rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
+                        style={{ top: '35%', transform: 'translateY(-50%)' }}
+                    />
+                    <p
+                        className="absolute text-gray-900 text-center font-bold text-2xl opacity-100 group-hover:opacity-50"
+                        style={{ top: '75%' }}
+                    >
+                        Question Search
+                    </p>
+                    <div
+                        className="absolute inset-0 flex flex-col items-center justify-center space-y-2 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
+                    >
+                        <span className="text-lg font-bold text-center text-white">
+                            Quick retrieval of classic questions.
                         </span>
 
                     </div>
