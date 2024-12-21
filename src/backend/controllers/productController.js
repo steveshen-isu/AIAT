@@ -27,16 +27,18 @@ function readJsonFiles(jDir) {
             jObjects.push(...readJsonFiles(jFilePath))
         } else if (path.extname(jFile) === '.json') {
             try {
+                const sourceName = path.basename(path.dirname(jFilePath));
                 const oContents = fs.readFileSync(jFilePath, 'utf8');
                 let nContents = oContents;
-                nContents = jsonminify(nContents);
                 if (oContents.charAt(0) !== '[') {
                     nContents = '[' + nContents;
                 }
                 if (oContents.charAt(oContents.length-1) !== ']') {
                     nContents = nContents + ']';
                 }
-                jObjects.push(JSON.parse(nContents));
+                const parsedObject = JSON.parse(nContents);
+                parsedObject['source_name'] = sourceName;
+                jObjects.push(parsedObject);
             } catch (error) {
                 console.log(`Parse file: ${jFilePath} failed, error: `, error.message);
             }
@@ -45,6 +47,38 @@ function readJsonFiles(jDir) {
         }
     });
     return jObjects;
+}
+
+function handleJsonObjects(jsonObjects) {
+    jsonObjects.forEach(jsonObject => {
+        const sourceName = jsonObject['source_name'];
+        const query = 'SELECT * FROM question_bank WHERE source_name = ?';
+        db.query(query, [sourceName], (error, results) => {
+            if (error) {
+                console.error('Query failed: ', error);
+                return;
+            }
+            if (results.length > 0) {
+                const updateQuery = 'UPDATE question_bank SET qa_json = ?, update_time = CURRENT_TIMESTAMP WHERE source_name = ?';
+                db.query(updateQuery, [JSON.stringify(jsonObject), sourceName], (uError, uResults) => {
+                    if (uError) {
+                        console.error('Update failed', uError);
+                    } else {
+                        console.log(`Update '${sourceName}' successfully.`)
+                    }
+                })
+            } else {
+                const insertQuery = 'INSERT INTO question_bank (qa_json, source_name) VALUES (?,?)';
+                db.query(insertQuery, [JSON.stringify(jsonObject), sourceName], (iError, iResults) => {
+                    if (iError) {
+                        console.error('Insert failed: ', iError);
+                    } else {
+                        console.log(`Insert into '${sourceName}' successfully.`);
+                    }
+                });
+            }
+        })
+    });
 }
 
 // Controller for handling POST requests to add a subject
@@ -64,12 +98,12 @@ export const syncQuestionBank = (req, res) => {
     
     try {
         const jsonObjects = readJsonFiles(questionBankPath);
-        //TODO: sync json data to db
+        handleJsonObjects(jsonObjects);
+        res.status(200).send('JSON data sync to db successfully.');
     } catch (error) {
         console.error('Json parse failed: ', error);
         res.status(500).send('Json parse failed.');
     }
-    res.status(200).send('JSON data sync to db successfully.');
 };
 
 // Controller for fetching subjects
