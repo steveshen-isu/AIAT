@@ -12,109 +12,60 @@ import Button from './components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent } from './components/ui/card';
 
 import { FaBook, FaChartLine, FaComments, FaCalculator, FaGraduationCap, FaSearch } from 'react-icons/fa'; // Import icons
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 
 
 function Home() {
-    const [selectedComponent, setSelectedComponent] = useState(null);
-
-    const renderComponent = () => {
-        switch (selectedComponent) {
-            case 'TopicSelector':
-                return <TopicSelector />;
-            case 'PlotGenerator':
-                return <PlotGenerator />;
-            case 'Chatbox':
-                return <Chatbox />;
-            case 'Calculator':
-                return <Calculator />;
-            case 'ExamGrader':
-                return <ExamGrader />;
-            case 'QuestionSearch':
-                return <QuestionSearch />
-            default:
-                return (
-                    <Card className="text-center p-6 mx-auto border border-gray-200 shadow-lg">
-                        <CardHeader>
-                            <CardTitle className="text-gray-600 text-lg font-light">
-                                Click on a button to load a component
-                            </CardTitle>
-                        </CardHeader>
-                    </Card>
-                );
-        }
-    };
-
-    const handleNavigation = (component) => {
-        setSelectedComponent(component);
-    };
 
 
     return (
         <div className="App bg-gray-50 min-h-screen flex flex-col">
-            {selectedComponent && (<nav className="bg-red-900 text-white p-4 fixed top-0 left-0 right-0 z-10 shadow-md">
 
-                <div className="flex justify-between items-center">
-                    <div className="text-xl font-bold">AIAT</div>
-                    <div className="flex space-x-4">
-                        <button onClick={() => handleNavigation('TopicSelector')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Topic Selector</button>
-                        <button onClick={() => handleNavigation('PlotGenerator')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Plot Generator</button>
-                        <button onClick={() => handleNavigation('Chatbox')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Chatbox</button>
-                        <button onClick={() => handleNavigation('Calculator')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Calculator</button>
-                        <button onClick={() => handleNavigation('ExamGrader')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Exam Grader</button>
-                        <button onClick={() => handleNavigation('QuestionSearch')} className="bg-red-900 hover:bg-red-800 p-2 rounded">Question Search</button>
-                        <button onClick={() => setSelectedComponent(null)} className="bg-red-800 hover:bg-gray-200 p-2 rounded">Home Page</button>
 
+            <header className="bg-red-900 py-12 shadow-md w-full">
+                <div className="bg-red-900 w-full text-center p-8 flex flex-col items-center lg:flex-row lg:justify-center lg:text-left">
+                    <div className="lg:w-1/2">
+                        <h1 className="text-6xl font-bold text-white">AI Math Solve: Your Ultimate Math Companion</h1>
+                        <p className="text-white text-6xl mt-2" style={{ fontSize: '1.5rem' }}>
+                            Explore, Visualize, and Master Mathematics with Advanced AI Tools. Dive into step-by-step solutions, explore course materials, chat with an intelligent assistant, and even grade your exams—all in one intuitive platform.
+                        </p>
+                    </div>
+                    <div className="lg:w-1/2 flex justify-center lg:justify-end mt-6 lg:mt-0">
+                        <img
+                            src={logo}
+                            className="rounded-3xl"
+                            alt="logo"
+                            style={{ width: '450px', height: '440px' }}
+                        />
                     </div>
                 </div>
-            </nav>)}
-            {selectedComponent === null && (
-                <header className="bg-red-900 py-12 shadow-md w-full">
 
-                    <div className="bg-red-900 w-full text-center p-8 flex flex-col items-center lg:flex-row lg:justify-center lg:text-left">
-                        <div className="lg:w-1/2">
-                            <h1 className="text-6xl font-bold text-white">AI Math Solve: Your Ultimate Math Companion</h1>
-                            <p className="text-white text-6xl mt-2" style={{ fontSize: '1.5rem' }}>
-                                Explore, Visualize, and Master Mathematics with Advanced AI Tools. Dive into step-by-step solutions, explore course materials, chat with an intelligent assistant, and even grade your exams—all in one intuitive platform.
-                            </p>
-                        </div>
-                        <div className="lg:w-1/2 flex justify-center lg:justify-end mt-6 lg:mt-0">
-                            <img
-                                src={logo}
-                                className="rounded-3xl"
-                                alt="logo"
-                                style={{ width: '450px', height: '440px' }}
-                            />
-                        </div>
-                    </div>
-
-                </header>)}
+            </header>
             <div className="flex  justify-center">
-                {selectedComponent === null && (
 
-                    <div className="lg:w-4/5 text-center my-8" >
-                        <h1 className="font-mono text-4xl font-bold text-gray">Overview</h1>
-                        <p className="font-mono text-gray text-lg mt-2">
-                            What You Can Do with AI Math Solve:
 
-                            Course Helper: Access organized course materials, guides, and notes to support your studies.
-                            Plot Generator: Create interactive mathematical plots and visualizations in real time.
-                            Chatbox: Engage with an intelligent assistant to clarify concepts and answer queries instantly.
-                            Calculator: Perform advanced calculations with ease using a scientific calculator.
-                            Exam Grader: Automatically grade exams and receive detailed insights into your performance.
-                        </p>
+                <div className="lg:w-4/5 text-center my-8" >
+                    <h1 className="font-mono text-4xl font-bold text-gray">Overview</h1>
+                    <p className="font-mono text-gray text-lg mt-2">
+                        What You Can Do with AI Math Solve:
 
-                    </div>)}
+                        Course Helper: Access organized course materials, guides, and notes to support your studies.
+                        Plot Generator: Create interactive mathematical plots and visualizations in real time.
+                        Chatbox: Engage with an intelligent assistant to clarify concepts and answer queries instantly.
+                        Calculator: Perform advanced calculations with ease using a scientific calculator.
+                        Exam Grader: Automatically grade exams and receive detailed insights into your performance.
+                    </p>
+
+                </div>
             </div>
-            {/* Button Section */}
-            {!selectedComponent && (<div className="flex flex-wrap justify-center gap-4 w-full text-center h-64">
+            <div className="flex flex-wrap justify-center gap-4 w-full text-center h-64">
 
 
-                <Button
+                <Link
+                    to="/topic-selector"
                     variant="default"
                     className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
-                    onClick={() => setSelectedComponent('TopicSelector')}
                 >
                     <FaBook
                         className="absolute text-red-500 text-[6rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -129,17 +80,17 @@ function Home() {
                     <div
                         className="absolute inset-0 flex flex-col items-center justify-center space-y-2 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
                     >
-                        <span className="text-lg font-bold text-center text-white">
+                        <span className="text-lg font-bold text-center text-black">
                             Explore resources and assistance for your courses, including guides, notes, and more.
                         </span>
 
                     </div>
-                </Button>
+                </Link>
 
-                <Button
+                <Link
+                    to="plot-generator"
                     variant="default"
                     className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
-                    onClick={() => setSelectedComponent('PlotGenerator')}
                 >
                     <FaChartLine
                         className="absolute text-red-500 text-[6rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -154,17 +105,17 @@ function Home() {
                     <div
                         className="absolute inset-0 flex flex-col items-center justify-center space-y-2 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
                     >
-                        <span className="text-lg font-bold text-center text-white">
+                        <span className="text-lg font-bold text-center text-black">
                             Generate and visualize mathematical plots and graphs interactively.
                         </span>
 
                     </div>
-                </Button>
+                </Link>
 
-                <Button
+                <Link
+                    to="chatbox"
                     variant="default"
                     className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
-                    onClick={() => setSelectedComponent('Chatbox')}
                 >
                     <FaComments
                         className="absolute text-red-500 text-[6rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -179,17 +130,17 @@ function Home() {
                     <div
                         className="absolute inset-0 flex flex-col items-center justify-center space-y-2 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
                     >
-                        <span className="text-lg font-bold text-center text-white">
+                        <span className="text-lg font-bold text-center text-black">
                             Interact with an intelligent chat assistant for help with your queries.
                         </span>
 
                     </div>
-                </Button>
+                </Link>
 
-                <Button
+                <Link
+                    to="calculator"
                     variant="default"
                     className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
-                    onClick={() => setSelectedComponent('Calculator')}
                 >
                     <FaCalculator
                         className="text-red-500 text-[4rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -204,13 +155,13 @@ function Home() {
                     <div
                         className="absolute inset-0 flex flex-col items-center justify-center space-y-2 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
                     >
-                        <span className="text-lg font-bold text-center text-white">
+                        <span className="text-lg font-bold text-center text-black">
                             Perform complex calculations with an advanced scientific calculator.
                         </span>
 
                     </div>
-                </Button>
-                <Button
+                </Link>
+{/*                 <Button
                     variant="default"
                     className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
                     onClick={() => setSelectedComponent('ExamGrader')}
@@ -233,11 +184,11 @@ function Home() {
                         </span>
 
                     </div>
-                </Button>
-                <Button
+                </Button> */}
+                <Link
+                    to="question-search"
                     variant="default"
                     className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
-                    onClick={() => setSelectedComponent('QuestionSearch')}
                 >
                     <FaSearch
                         className="absolute text-red-500 text-[6rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -257,11 +208,10 @@ function Home() {
                         </span>
 
                     </div>
-                </Button>
+                </Link>
 
-            </div>)}
-            <div className="pt-8 mt-[10vh] w-full">{renderComponent()}</div>
-            {!selectedComponent && (
+            </div>
+            
                 <footer class="bg-gray-800 text-white py-8">
                     <div class="container mx-auto px-4">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -293,7 +243,7 @@ function Home() {
                                             <span>MATH Competition</span>
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
-                                    </li>                                  
+                                    </li>
                                     <li>
                                         <a href="https://www.wolframalpha.com/" target="_blank" class="text-gray-400 hover:text-white items-center space-x-2">
                                             <span>MATH tools</span>
@@ -356,7 +306,7 @@ function Home() {
                         </div>
                     </div>
                 </footer>
-            )}
+           
         </div>
 
 

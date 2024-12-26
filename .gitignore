@@ -25,5 +25,5 @@ yarn-error.log*
 
 src\backend\.env
 test_proxy_axios.js
-# node_modules
+node_modules
 node_modules/.cache
