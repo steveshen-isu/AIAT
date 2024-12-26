@@ -148,9 +148,7 @@ function PlotGenerator() {
 
     return (
         <div className="flex flex-col md:flex-row items-start p-6 space-y-6 md:space-y-0 md:space-x-6">
-            {/* Left side (Form with Textarea and Button) */}
             <div className="flex flex-col w-full max-w-2xl space-y-4">
-                {/* Title with Typewriter */}
                 <h1 className="text-center text-3xl font-semibold">
                     <Typewriter
                         text="Type in the function you are interested in to plot it"

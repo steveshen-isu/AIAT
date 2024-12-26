@@ -1,0 +1,272 @@
+{
+    "formulas": [
+        {
+            "title": "Perimeter, Area",
+            "formulas": [
+                "\\textbf{Rectangle}",
+                "\\( P = 2L + 2W \\)",
+                "\\( A = LW \\)",
+                "\\textbf{Square}",
+                "\\( P = 4s \\)",
+                "\\( A = s^2 \\)",
+                "\\textbf{Triangle}",
+                "\\( P = \\text{add all sides} \\)",
+                "\\( A = \\frac{1}{2}bh \\)",
+                "\\textbf{Parallelogram}",
+                "\\( P = \\text{add all sides} \\)",
+                "\\( A = bh \\)",
+                "\\textbf{Trapezoid}",
+                "\\( P = \\text{add all sides} \\)",
+                "\\( A = \\frac{1}{2}(b_1 + b_2)h \\)",
+                "\\textbf{Circle}",
+                "\\( C = \\pi d = 2\\pi r \\)",
+                "\\( A = \\pi r^2 \\)",
+                "\\textbf{Arc Length}",
+                "\\( S = \\theta r \\text{ in radians} \\)",
+                "\\( S = \\frac{\\pi}{180} \\theta r \\text{ in degrees} \\)",
+                "\\textbf{Circle Sector Area}",
+                "\\( A = \\frac{\\theta}{2} r^2 \\text{ in radians} \\)",
+                "\\( A = \\frac{\\theta}{360} \\pi r^2 \\text{ in degrees} \\)"
+            ]
+        },
+        {
+            "title": "Volumes",
+            "formulas": [
+                "\\textbf{Rectangular Solid}",
+                "\\( S = 2LW + 2LH + 2WH \\)",
+                "\\( V = LWH \\)",
+                "\\textbf{Cube}",
+                "\\( SA = 6s^2 \\)",
+                "\\( V = s^3 \\)",
+                "\\textbf{Cylinder}",
+                "\\( SA = 2\\pi r^2 + 2\\pi rH \\)",
+                "\\( V = \\pi r^2H \\)",
+                "\\textbf{Cone}",
+                "\\( SA = \\pi rS + \\pi r^2 \\)",
+                "\\( V = \\frac{1}{3}\\pi r^2 H \\)",
+                "\\textbf{Sphere}",
+                "\\( SA = 4\\pi r^2 \\)",
+                "\\( V = \\frac{4}{3}\\pi r^3 \\)"
+            ]
+        },
+        {
+            "title": "Rectangle Pyramid",
+            "formulas": [
+                "\\textbf{Surface Area:}",
+                "\\( SA = LW + 2LS + 2WS \\)",
+                "\\textbf{Volume:}",
+                "\\( V = \\frac{1}{3}LWH \\)"
+            ]
+        },
+        {
+            "title": "Exponent Laws",
+            "formulas": [
+                "\\( x^0 = 1 \\text{ if } x \\neq 0 \\)",
+                "\\( x^1 = x \\)",
+                "\\( x^{-n} = \\frac{1}{x^n} \\text{ if } x \\neq 0 \\)",
+                "\\( x^m \\cdot x^n = x^{m+n} \\)",
+                "\\( (x^m)^n = x^{mn} \\)",
+                "\\( x^m \\div x^n = x^{m-n} \\text{ if } x \\neq 0 \\)",
+                "\\( \\left(\\frac{x}{y}\\right)^n = \\frac{x^n}{y^n} \\text{ if } y \\neq 0 \\)",
+                "\\( x^{\\frac{m}{n}} = \\sqrt[n]{x^m} \\text{ if } (a \\geq 0, m \\geq 0, n > 0) \\)"
+            ]
+        },
+        {
+            "title": "Properties of Logarithms",
+            "formulas": [
+                "\\( y = \\log_a x \\iff x = a^y \\text{ where } a > 0, a \\neq 0 \\)",
+                "\\( a^{\\log_a M} = M \\)",
+                "\\( \\log_a(MN) = \\log_a M + \\log_a N \\)",
+                "\\( \\log_a\\left(\\frac{M}{N}\\right) = \\log_a M - \\log_a N \\)",
+                "\\( \\log_a M^x = x \\log_a M \\)",
+                "\\( \\log_a M = \\frac{\\log_b M}{\\log_b a} = \\frac{\\ln M}{\\ln a} \\)"
+            ]
+        },
+        {
+            "title": "Special Products",
+            "formulas": [
+                "\\( x^2 - y^2 = (x + y)(x - y) \\)",
+                "\\( x^3 + y^3 = (x + y)(x^2 - xy + y^2) \\)",
+                "\\( x^3 - y^3 = (x - y)(x^2 + xy + y^2) \\)"
+            ]
+        },
+        {
+            "title": "Binomial Theorem",
+            "formulas": [
+                "\\( (x + y)^2 = x^2 + 2xy + y^2 \\)",
+                "\\( (x + y)^3 = x^3 + 3x^2y + 3xy^2 + y^3 \\)",
+                "\\( (x + y)^n = x^n + \\binom{n}{1}x^{n-1}y + \\binom{n}{2}x^{n-2}y^2 + \\ldots + \\binom{n}{k}x^{n-k}y^k + \\ldots + y^n \\)",
+                "\\( \\binom{n}{k} = \\frac{n(n-1)(n-2)\\ldots(n-k+1)}{1 \\cdot 2 \\cdot 3 \\cdot \\ldots \\cdot k} \\)",
+                "\\[ \\begin{array}{c} 1 \\\\ 1 \\quad 1 \\\\ 1 \\quad 2 \\quad 1 \\\\ 1 \\quad 3 \\quad 3 \\quad 1 \\\\ 1 \\quad 4 \\quad 6 \\quad 4 \\quad 1 \\\\ 1 \\quad 5 \\quad 10 \\quad 10 \\quad 5 \\quad 1 \\end{array} \\]",
+                "\\textit{Pascal's Triangle of Numbers}"
+            ]
+        },
+        {
+            "title": "Pythagorean Theorem",
+            "formulas": [
+                "\\( \\text{leg}^2 + \\text{leg}^2 = \\text{hypotenuse}^2 \\)"
+            ]
+        },
+        {
+            "title": "Trignometry Formula",
+            "formulas": [
+                "\\( d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\)",
+                "\\( \\sin\\theta = \\frac{\\text{opp}}{\\text{hyp}} \\)",
+                "\\( \\cos\\theta = \\frac{\\text{adj}}{\\text{hyp}} \\)",
+                "\\( \\tan\\theta = \\frac{\\text{opp}}{\\text{adj}} \\)",
+                "\\( \\cot\\theta = \\frac{\\text{adj}}{\\text{opp}} \\)",
+                "\\( \\csc\\theta = \\frac{\\text{hyp}}{\\text{opp}} \\)",
+                "\\( \\sec\\theta = \\frac{\\text{hyp}}{\\text{adj}} \\)",
+                "\\( \\sin^2\\theta + \\cos^2\\theta = 1 \\)",
+                "\\( 1 + \\tan^2\\theta = \\sec^2\\theta \\)",
+                "\\( \\cot^2\\theta + 1 = \\csc^2\\theta \\)",
+                "\\( \\cos 2\\theta = \\cos^2\\theta - \\sin^2\\theta = 1 - 2\\sin^2\\theta = 2\\cos^2\\theta - 1 \\)",
+                "\\( \\sin 2\\theta = 2\\sin\\theta\\cos\\theta \\)",
+                "\\( \\tan 2\\theta = \\frac{2\\tan\\theta}{1 - \\tan^2\\theta} \\)"
+            ]
+        },
+
+        {
+            "title": "Law of Cosines",
+            "formulas": [
+                "\\textbf{Law of Sines:}", 
+                "\\[\\frac{\\sin\\alpha}{a} = \\frac{\\sin\\beta}{b} = \\frac{\\sin\\gamma}{c}\\]",
+                "\\textbf{Law of Cosines:}",
+                "\\[a^2 = b^2 + c^2 - 2bc \\cos \\alpha\\]",
+                "\\[b^2 = a^2 + c^2 - 2ac \\cos \\beta\\]",
+                "\\[c^2 = a^2 + b^2 - 2ab \\cos \\gamma\\]"
+            ]
+        },
+        {
+            "title": "Sum and Difference Formulas",
+            "formulas": [
+                "\\textbf{Sum and Difference Formulas:}",
+                "\\[\\sin(\\alpha \\pm \\beta) = \\sin\\alpha \\cos\\beta \\pm \\cos\\alpha \\sin\\beta\\]",
+                "\\[\\cos(\\alpha \\pm \\beta) = \\cos\\alpha \\cos\\beta \\mp \\sin\\alpha \\sin\\beta\\]",
+                "\\[\\tan(\\alpha \\pm \\beta) = \\frac{\\tan\\alpha \\pm \\tan\\beta}{1 \\mp \\tan\\alpha\\tan\\beta}\\]"
+            ]
+        },
+        {
+            "title": "Sum to Product",
+            "formulas": [
+                "\\textbf{Sum to Product:}",
+                "\\[\\sin\\alpha + \\sin\\beta = 2\\sin\\left(\\frac{\\alpha + \\beta}{2}\\right)\\cos\\left(\\frac{\\alpha - \\beta}{2}\\right)\\]",
+                "\\[\\sin\\alpha - \\sin\\beta = 2\\cos\\left(\\frac{\\alpha + \\beta}{2}\\right)\\sin\\left(\\frac{\\alpha - \\beta}{2}\\right)\\]",
+                "\\[\\cos\\alpha + \\cos\\beta = 2\\cos\\left(\\frac{\\alpha + \\beta}{2}\\right)\\cos\\left(\\frac{\\alpha - \\beta}{2}\\right)\\]",
+                "\\[\\cos\\alpha - \\cos\\beta = -2\\sin\\left(\\frac{\\alpha + \\beta}{2}\\right)\\sin\\left(\\frac{\\alpha - \\beta}{2}\\right)\\]"
+            ]
+        },
+        {
+            "title": "Product to Sum",
+            "formulas": [
+                "\\textbf{Product to Sum:}",
+                "\\[\\sin\\alpha\\sin\\beta = \\frac{\\cos(\\alpha - \\beta) - \\cos(\\alpha + \\beta)}{2}\\]",
+                "\\[\\cos\\alpha\\cos\\beta = \\frac{\\cos(\\alpha - \\beta) + \\cos(\\alpha + \\beta)}{2}\\]",
+                "\\[\\sin\\alpha\\cos\\beta = \\frac{\\sin(\\alpha + \\beta) + \\sin(\\alpha - \\beta)}{2}\\]",
+                "\\[\\cos\\alpha\\sin\\beta = \\frac{\\sin(\\alpha + \\beta) - \\sin(\\alpha - \\beta)}{2}\\]"
+            ]
+        },
+        {
+            "title": "Graphs of Trigonometric Functions",
+            "formulas": [
+                "\\textbf{Graphs of the Six Trigonometric Functions:}",
+                "\\(y = \\sin x: \\text{Domain: all reals}, \\text{Range}: [-1, 1], \\text{Period}: \\{2\\pi\\}, odd.\\)",
+                "\\(y = \\cos x: \\text{Domain: all reals}, \\text{Range}: [-1, 1], \\text{Period}: \\{2\\pi\\}, even.\\)",
+                "\\(y = \\tan x: \\text{Domain: all reals}, x \\neq \\frac{\\pi}{2} + k\\pi, \\text{Range: all reals}, \\text{Period}: \\{\\pi\\}, odd.\\)",
+                "\\(y = \\csc x: \\text{Domain: all reals}, x \\neq k\\pi, \\text{Range}: \\((- \\infty, -1] \\cup [1, \\infty), \\text{Period}: \\{2\\pi\\}, odd.\\)",
+                "\\(y = \\sec x: \\text{Domain: all reals}, x \\neq \\frac{\\pi}{2} + k\\pi, \\text{Range}: (- \\infty, -1] \\cup [1, \\infty), \\text{Period}: \\{2\\pi\\}, even.\\)",
+                "\\(y = \\cot x: \\text{Domain: all reals}, x \\neq k\\pi, \\text{Range: all reals}, \\text{Period}: \\{\\pi\\}, odd.\\)"
+            ]
+        },
+        {
+            "title": "Common Derivatives",
+            "formulas": [
+              "\\(c' = 0\\)",
+              "\\([f(x) + g(x)]' = f'(x) + g'(x)\\)",
+              "\\([f(x)g(x)]' = f'(x)g(x) + f(x)g'(x)\\)",
+              "\\[\\left(\\frac{f(x)}{g(x)}\\right)' = \\frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}\\]",
+              "\\([cf(x)]' = cf'(x)\\)",
+              "\\([f(x) - g(x)]' = f'(x) - g'(x)\\)",
+              "\\((x^n)' = nx^{n-1}\\)",
+              "\\((e^x)' = e^x\\)",
+              "\\([a^x]' = a^x \\ln a\\)",
+              "\\([\\ln|x|]' = \\frac{1}{x}\\)",
+              "\\([\\log_a x]' = \\frac{1}{x \\ln a}\\)",
+              "\\((\\sin x)' = \\cos x\\)",
+              "\\((\\cos x)' = -\\sin x\\)",
+              "\\((\\tan x)' = \\sec^2 x\\)",
+              "\\((\\cot x)' = -\\csc^2 x\\)",
+              "\\((\\sec x)' = \\sec x \\\tan x\\)",
+              "\\((\\csc x)' = -\\csc x \\cot x\\)"
+            ]
+        },
+        {
+            "title":"Uncommon Derivatives",
+            "formulas":[
+              "\\((\\sinh x)' = \\cosh x\\)",
+              "\\((\\cosh x)' = \\sinh x\\)",
+              "\\((\\tanh x)' = \\text{sech}^2 x\\)",
+              "\\((\\coth x)' = -\\text{csch}^2 x\\)",
+              "\\((\\text{sech} x)' = -\\text{sech} x \\tanh x\\)",
+              "\\((\\text{csch} x)' = -\\text{csch} x \\cot x\\)",
+              "\\((\\sin^{-1} x)' = \\frac{1}{\\sqrt{1-x^2}}\\)",
+              "\\((\\cos^{-1} x)' = -\\frac{1}{\\sqrt{1-x^2}}\\)",
+              "\\((\\tan^{-1} x)' = \\frac{1}{1+x^2}\\)",
+              "\\((\\cot^{-1} x)' = -\\frac{1}{1+x^2}\\)",
+              "\\((\\sec^{-1} x)' = \\frac{1}{|x|\\sqrt{x^2-1}}\\)",
+              "\\((\\csc^{-1} x)' = -\\frac{1}{|x|\\sqrt{x^2-1}}\\)",
+              "\\((\\sinh^{-1} x)' = \\frac{1}{\\sqrt{x^2+1}}\\)",
+              "\\((\\cosh^{-1} x)' = \\frac{1}{\\sqrt{x^2-1}}\\)",
+              "\\((\\tanh^{-1} x)' = \\frac{1}{1-x^2}\\)",
+              "\\((\\coth^{-1} x)' = \\frac{1}{1-x^2}\\)",
+              "\\((\\text{sech}^{-1} x)' = -\\frac{1}{x\\sqrt{1-x^2}}\\)",
+              "\\((\\text{csch}^{-1} x)' = -\\frac{1}{|x|\\sqrt{1+x^2}}\\)"
+            ]
+          },
+          {
+            "title": "Common Integrals",
+            "formulas": [
+              "\\(\\int u^n \\, du = \\frac{u^{n+1}}{n+1} + c, \\, n \\neq -1\\)",
+              "\\(\\int \\frac{du}{u} = \\ln|u| + c\\)",
+              "\\(\\int e^u \\, du = e^u + c\\)",
+              "\\(\\int a^u \\, du = \\frac{a^u}{\\ln a} + c\\)",
+              "\\(\\int u \\ln u \\, du = u \\ln u - u + c\\)",
+              "\\(\\int \\frac{1}{u \\ln u} \\, du = \\ln|\\ln u| + c\\)",
+              "\\(\\int \\sin u \\, du = -\\cos u + c\\)",
+              "\\(\\int \\cos u \\, du = \\sin u + c\\)",
+              "\\(\\int \\tan u \\, du = \\ln|\\sec u| + c\\)",
+              "\\(\\int \\cot u \\, du = \\ln|\\sin u| + c\\)",
+              "\\(\\int \\sec u \\, du = \\ln|\\sec u + \\tan u| + c\\)",
+              "\\(\\int \\csc u \\, du = \\ln|\\csc u - \\cot u| + c\\)",
+              "\\(\\int \\sec^2 u \\, du = \\tan u + c\\)",
+              "\\(\\int \\csc^2 u \\, du = -\\cot u + c\\)",
+              "\\(\\int \\sec u \\tan u \\, du = \\sec u + c\\)",
+              "\\(\\int \\csc u \\cot u \\, du = -\\csc u + c\\)",
+              "\\(\\int \\frac{du}{\\sqrt{a^2 - u^2}} = \\sin^{-1}\\frac{u}{a} + c, \\, a > 0\\)",
+              "\\(\\int \\frac{du}{a^2 + u^2} = \\frac{1}{a} \\tan^{-1} \\frac{u}{a} + c\\)",
+              "\\(\\int \\frac{du}{u\\sqrt{u^2 - a^2}} = \\frac{1}{a} \\sec^{-1} \\frac{u}{a} + c\\)",
+              "\\(\\int \\frac{du}{a^2 - u^2} = \\frac{1}{2a} \\ln \\frac{u+a}{u-a} + c\\)",
+              "\\(\\int \\frac{du}{u^2 - a^2} = \\frac{1}{2a} \\ln \\frac{u-a}{u+a} + c\\)",
+              "\\(\\int \\sin^{-1} u \\, du = u \\sin^{-1} u + \\sqrt{1-u^2} + c\\)",
+              "\\(\\int \\cos^{-1} u \\, du = u \\cos^{-1} u - \\sqrt{1-u^2} + c\\)",
+              "\\(\\int \\tan^{-1} u \\, du = u \\tan^{-1} u - \\frac{1}{2} \\ln(1+u^2) + c\\)"
+            ]
+        },
+        {
+            "title":"Uncommon Integrals",
+            "formulas":[
+              "\\(\\int \\sinh u \\, du = \\cosh u + c\\)",
+              "\\(\\int \\cosh u \\, du = \\sinh u + c\\)",
+              "\\(\\int \\tanh u \\, du = \\ln(\\cosh u) + c\\)",
+              "\\(\\int \\coth u \\, du = \\ln|\\sinh u| + c\\)",
+              "\\(\\int \\text{sech } u \\, du = \\tan^{-1}(\\sinh u) + c\\)",
+              "\\(\\int \\text{csch } u \\, du = \\ln \\left| \\tanh \\frac{u}{2} \\right| + c\\)",
+              "\\(\\int \\text{sech}^2 u \\, du = \\tanh u + c\\)",
+              "\\(\\int \\text{csch}^2 u \\, du = -\\coth u + c\\)",
+              "\\(\\int \\text{sech} u \\tanh u \\, du = -\\text{sech } u + c\\)",
+              "\\(\\int \\text{csch} u \\coth u \\, du = -\\text{csch } u + c\\)",
+              "\\(\\int u \\, dv = uv - \\int v \\, du\\)"
+            ]
+          }
+    ]
+}
