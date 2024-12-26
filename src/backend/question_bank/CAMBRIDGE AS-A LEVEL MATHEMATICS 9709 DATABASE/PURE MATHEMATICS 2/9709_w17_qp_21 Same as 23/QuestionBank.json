@@ -1,0 +1,323 @@
+{
+    "Questions": [
+{
+    "Metadata": {
+        "QuestionTitle": "Solve Logarithmic Equation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2017,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 1,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Logarithms",
+        "TopicsCovered": [
+            "Logarithmic Identities",
+            "Solving Equations"
+        ],
+        "MarksAllocation": {
+            "PartA": 4
+        },
+        "DifficultyLevel": "Easy",
+        "ImageUrl": [
+            "/9709_w17_qp_21 Same as 23/q1.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Solve the equation \\( \\ln(3x + 1) - \\ln(x + 2) = 1 \\), giving your answer in terms of \\(e\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Using the subtraction property of logarithms:\\n\\[ \\ln(3x + 1) - \\ln(x + 2) = \\ln\\left(\\frac{3x + 1}{x + 2}\\right). \\]\\nThus, the equation becomes:\\n\\[ \\ln\\left(\\frac{3x + 1}{x + 2}\\right) = 1. \\]\\nExponentiate both sides to remove the logarithm:\\n\\[ \\frac{3x + 1}{x + 2} = e. \\]\\nMultiply through by \\(x + 2\\) (assuming \\(x + 2 > 0\\)):\\n\\[ 3x + 1 = e(x + 2). \\]\\nSimplify and solve for \\(x\\):\\n\\[ 3x + 1 = ex + 2e. \\]\\n\\[ 3x - ex = 2e - 1. \\]\\nFactorize \\(x\\):\\n\\[ x(3 - e) = 2e - 1. \\]\\n\\[ x = \\frac{2e - 1}{3 - e}. \\]",
+                "MarkingScheme": "*M1 for using logarithmic properties, A1 for correctly simplifying to \\( \\frac{3x + 1}{x + 2} = e \\), DM1 for solving the equation correctly, A1 for the final solution \\( x = \\frac{2e - 1}{3 - e} \\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Solving Trigonometric Equations",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2017,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 2,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Trigonometric Equations",
+        "TopicsCovered": [
+            "Trigonometric Identities",
+            "Solving Trigonometric Equations"
+        ],
+        "MarksAllocation": {
+            "PartA": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w17_qp_21 Same as 23/q2.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Solve the equation \\(5 \\cos \\theta (1 + \\cos 2\\theta) = 4\\) for \\(0^\\circ \\leq \\theta \\leq 360^\\circ\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Using the identity \\(\\cos 2\\theta = 2\\cos^2 \\theta - 1\\), substitute into the equation:\\n\\[5 \\cos \\theta (1 + 2\\cos^2 \\theta - 1) = 4.\\]\\nSimplify:\\n\\[5 \\cos \\theta (2\\cos^2 \\theta) = 4.\\]\\n\\[10 \\cos^3 \\theta = 4.\\]\\nDivide through by 10:\\n\\[\\cos^3 \\theta = \\frac{4}{10} = 0.4.\\]\\nTake the cube root:\\n\\[\\cos \\theta = \\sqrt[3]{0.4}.\\]\\nFind \\(\\theta\\) within \\(0^\\circ \\leq \\theta \\leq 360^\\circ\\):\\n- First value: \\(\\theta = 42.5^\\circ\\).\\n- Second value: \\(\\theta = 360^\\circ - 42.5^\\circ = 317.5^\\circ.\\)\\nFinal solutions:\\n\\[\\theta = 42.5^\\circ, 317.5^\\circ.\\]",
+                "MarkingScheme": "B1 for using \\(\\cos 2\\theta = 2\\cos^2 \\theta - 1\\), B1 for obtaining \\(10 \\cos^3 \\theta = 4\\), M1 for solving \\(\\cos^3 \\theta = 0.4\\), A1 for \\(\\theta = 42.5^\\circ\\), A1 for \\(\\theta = 317.5^\\circ\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Inequalities and Absolute Values",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2017,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 3,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Inequalities and Modulus",
+        "TopicsCovered": [
+            "Exponential Inequalities",
+            "Absolute Value Inequalities",
+            "Logarithmic Properties"
+        ],
+        "MarksAllocation": {
+            "PartA": 7
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w17_qp_21 Same as 23/q3.png"
+        ]
+    },
+    "QuestionContent": {
+        "Text": "It is given that the variable \\(x\\) is such that \\[1.3^{2x} < 80 \\quad \\text{and} \\quad |3x - 1| > |3x - 10|.\\]\\nFind the set of possible values of \\(x\\), giving your answer in the form \\(a < x < b\\) where the constants \\(a\\) and \\(b\\) are correct to 3 significant figures. \\[7\\]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Take logarithms on both sides for \\(1.3^{2x} < 80\\):\\n\\[2x \\ln(1.3) < \\ln(80).\\]\\nSolve for \\(x\\):\\n\\[x < \\frac{\\ln(80)}{2 \\ln(1.3)}.\\]\\nUsing calculator:\\n\\[x < 8.35.\\]\\n\\n Solve \\(|3x - 1| > |3x - 10|\\):\\n\\(3x - 1\\) and \\(3x - 10\\) can be compared:\\n\\[(3x - 1)^2 > (3x - 10)^2.\\]\\nSimplify the inequality:\\n\\[9x^2 - 6x + 1 > 9x^2 - 60x + 100.\\]\\nSimplify further:\\n\\[54x > 99.\\]\\nSolve for \\(x\\):\\n\\[x > \\frac{11}{6} \\approx 1.83.\\]\\n\\n Combine the results:\\n\\[1.83 < x < 8.35.\\] \\nThis is the set of possible values of \\(x\\).",
+                "MarkingScheme": "M1 for applying logarithms to \\(1.3^{2x} < 80\\), A1 for solving \\(x < 8.35\\), B1 for expressing \\(|3x - 1| > |3x - 10|\\) as a quadratic inequality, M1 for correct steps to solve the inequality, A1 for \\(x > 1.83\\), A1 for final answer \\(1.83 < x < 8.35\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Integration and Logarithmic Properties",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2017,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Integration and Logarithmic Functions",
+        "TopicsCovered": [
+            "Integration",
+            "Logarithmic Functions",
+            "Limits"
+        ],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w17_qp_21 Same as 23/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "(a) Find \\( \\int \\frac{4 + \\sin^2 \\theta}{1 - \\sin^2 \\theta} d \\theta. \\) \\[4\\] \\n(b) Given that \\( \\int_0^a \\frac{2}{3x + 1} dx = \\ln 16 \\), find the value of the positive constant \\(a\\). \\[4\\]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Rewrite the integrand:\\n\\[ \\int \\frac{4 + \\sin^2 \\theta}{1 - \\sin^2 \\theta} d \\theta = \\int \\frac{4 + \\sin^2 \\theta}{\\cos^2 \\theta} d \\theta. \\]\\nSplit into two parts:\\n\\[ \\int \\frac{4}{\\cos^2 \\theta} d \\theta + \\int \\frac{\\sin^2 \\theta}{\\cos^2 \\theta} d \\theta. \\]\\nRecognize standard forms:\\n\\[ \\int 4 \\sec^2 \\theta d \\theta + \\int \\tan^2 \\theta d \\theta. \\]\\nUse the identity \\( \\tan^2 \\theta = \\sec^2 \\theta - 1 \\):\\n\\[ \\int 4 \\sec^2 \\theta d \\theta + \\int (\\sec^2 \\theta - 1) d \\theta. \\]\\nIntegrate:\\n\\[ 4 \\tan \\theta + \\tan \\theta - \\theta + C. \\]\\nSimplify:\\n\\[ 5 \\tan \\theta - \\theta + C. \\]",
+                "MarkingScheme": "M1 for simplifying the integrand, A1 for recognizing \\( \\sec^2 \\theta \\), M1 for integrating correctly, A1 for the final simplified result."
+            },
+            {
+                "Part": "b",
+                "Solution": "Integrate \\( \\int \\frac{2}{3x + 1} dx \\):\\n\\[ \\int \\frac{2}{3x + 1} dx = \\frac{2}{3} \\ln(3x + 1) + C. \\]\\nApply the limits \\(0\\) to \\(a\\):\\n\\[ \\left[ \\frac{2}{3} \\ln(3x + 1) \\right]_0^a = \\ln 16. \\]\\nSubstitute the limits:\\n\\[ \\frac{2}{3} \\ln(3a + 1) - \\frac{2}{3} \\ln(1) = \\ln 16. \\]\\nSimplify:\\n\\[ \\frac{2}{3} \\ln(3a + 1) = \\ln 16. \\]\\nMultiply through by \\( \\frac{3}{2} \\):\\n\\[ \\ln(3a + 1) = \\frac{3}{2} \\ln 16. \\]\\nSimplify using properties of logarithms:\\n\\[ \\ln(3a + 1) = \\ln(16^{3/2}). \\]\\nSimplify further:\\n\\[ \\ln(3a + 1) = \\ln 64. \\]\\nRemove the logarithm:\\n\\[ 3a + 1 = 64. \\]\\nSolve for \\(a\\):\\n\\[ 3a = 63, \\quad a = 21. \\]",
+                "MarkingScheme": "M1 for integrating \\( \\frac{2}{3x + 1} \\), A1 for applying limits correctly, M1 for solving the logarithmic equation, A1 for the correct value \\( a = 21 \\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Factorization and Remainder Theorem",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2017,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Polynomials",
+        "TopicsCovered": [
+            "Factorization",
+            "Remainder Theorem"
+        ],
+        "MarksAllocation": {
+            "PartI": 5,
+            "PartII": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w17_qp_21 Same as 23/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The polynomial \\(p(x)\\) is defined by\\n\\[p(x) = ax^3 + bx^2 + 37x + 10\\]\\nwhere \\(a\\) and \\(b\\) are constants. It is given that \\((x + 2)\\) is a factor of \\(p(x)\\). It is also given that the remainder is 40 when \\(p(x)\\) is divided by \\((2x - 1)\\).\\n\\n(i) Find the values of \\(a\\) and \\(b\\).\\n\\n(ii) When \\(a\\) and \\(b\\) have these values, factorise \\(p(x)\\) completely."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Substitute \\(x = -2\\) into \\(p(x)\\) using the factor theorem:\\n\\[a(-2)^3 + b(-2)^2 + 37(-2) + 10 = 0.\\]\\nSimplify:\\n\\[-8a + 4b - 74 + 10 = 0.\\]\\n\\[-8a + 4b - 64 = 0.\\]\\nDivide through by 4:\\n\\[-2a + b - 16 = 0. \\tag{1}\\]\\n\\nNext, for \\(x = \\frac{1}{2}\\), the remainder theorem gives:\\n\\[a\\left(\\frac{1}{2}\\right)^3 + b\\left(\\frac{1}{2}\\right)^2 + 37\\left(\\frac{1}{2}\\right) + 10 = 40.\\]\\nSimplify:\\n\\[\\frac{a}{8} + \\frac{b}{4} + \\frac{37}{2} + 10 = 40.\\]\\nMultiply through by 8 to clear fractions:\\n\\[a + 2b + 148 + 80 = 320.\\]\\nSimplify:\\n\\[a + 2b = 92. \\tag{2}\\]\\nSolve equations (1) and (2) simultaneously:\\nFrom (1): \\(b = 2a + 16\\).\\nSubstitute into (2):\\n\\[a + 2(2a + 16) = 92.\\]\\nSimplify:\\n\\[a + 4a + 32 = 92.\\]\\n\\[5a = 60.\\]\\n\\[a = 12.\\]\\nSubstitute \\(a = 12\\) into \\(b = 2a + 16\\):\\n\\[b = 2(12) + 16 = 40.\\]\\nThus, \\(a = 12\\) and \\(b = 40\\).",
+                "MarkingScheme": "M1 for correct substitution into the polynomial. A1 for forming two correct equations. DM1 for solving equations. A1 for \\(a = 12\\), \\(b = 40\\)."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Substitute \\(a = 12\\) and \\(b = 40\\) into \\(p(x)\\):\\n\\[p(x) = 12x^3 + 40x^2 + 37x + 10.\\]\\nDivide \\(p(x)\\) by \\((x + 2)\\):\\n\\[\\text{Quotient: } 12x^2 + 16x + 5.\\]\\n\\[\\text{Remainder: } 0.\\]\\nFactorise the quadratic term \\(12x^2 + 16x + 5\\):\\n\\[12x^2 + 16x + 5 = (2x + 1)(6x + 5).\\]\\nThus,\\n\\[p(x) = (x + 2)(2x + 1)(6x + 5).\\]",
+                "MarkingScheme": "M1 for dividing polynomial correctly. A1 for correct quadratic factorisation. A1 for complete factorisation."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Parametric Equations and Gradients",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2017,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Parametric Equations and Calculus",
+        "TopicsCovered": [
+            "Parametric Differentiation",
+            "Gradients of Normals"
+        ],
+        "MarksAllocation": {
+            "PartI": 6,
+            "PartII": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w17_qp_21 Same as 23/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Text": "The parametric equations of a curve are\\n\\[x = 2e^{2t} + 4e^t, \\quad y = 5te^{2t}.\\]\\n\\n**(i)** Find \\( \\frac{dy}{dx} \\) in terms of \\(t\\) and hence find the coordinates of the stationary point, giving each coordinate correct to 2 decimal places. \\[6\\]\\n\\n**(ii)** Find the gradient of the normal to the curve at the point where the curve crosses the \\(x\\)-axis. \\[3\\]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Differentiate \\(x\\) and \\(y\\) with respect to \\(t\\):\\n\\[ \\frac{dx}{dt} = 4e^{2t} + 4e^t, \\quad \\frac{dy}{dt} = 5e^{2t} + 10te^{2t}. \\]\\nUse the chain rule to find \\( \\frac{dy}{dx} \\):\\n\\[ \\frac{dy}{dx} = \\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}} = \\frac{5e^{2t} + 10te^{2t}}{4e^{2t} + 4e^t}. \\]\\nAt a stationary point, \\( \\frac{dy}{dx} = 0 \\), which means \\(\\frac{dy}{dt} = 0\\):\\n\\[ 5e^{2t} + 10te^{2t} = 0. \\]\\nFactorize to get:\\n\\[ e^{2t}(5 + 10t) = 0. \\]\\nSince \\(e^{2t} \\neq 0\\), we get \\(t = -\\frac{1}{2}\\).\\nSubstitute \\(t = -\\frac{1}{2}\\) into \\(x\\) and \\(y\\):\\n\\[ x = 2e^{2(-\\frac{1}{2})} + 4e^{-\\frac{1}{2}}, \\quad y = 5(-\\frac{1}{2})e^{2(-\\frac{1}{2})}. \\]\\nSimplify to obtain:\\n\\[ x \\approx 3.16, \\quad y \\approx -0.92. \\]\\nThus, the stationary point is \\((3.16, -0.92)\\).",
+                "MarkingScheme": "B1 for \\( \\frac{dx}{dt} \\) or \\( \\frac{dy}{dt} \\). M1 for \\( \\frac{dy}{dx} \\) using the chain rule. A1 for solving \\( \\frac{dy}{dt} = 0 \\) and obtaining \\(t = -\\frac{1}{2}\\). A1 for substituting to find coordinates \\((3.16, -0.92)\\)."
+            },
+            {
+                "Part": "ii",
+                "Solution": "The curve crosses the \\(x\\)-axis when \\(y = 0\\):\\n\\[ 5te^{2t} = 0. \\]\\nThis gives \\(t = 0\\).\\nAt \\(t = 0\\), substitute into \\( \\frac{dy}{dx} \\):\\n\\[ \\frac{dy}{dx} = \\frac{5e^{2(0)} + 10(0)e^{2(0)}}{4e^{2(0)} + 4e^{0}} = \\frac{5}{8}. \\]\\nThe gradient of the normal is the negative reciprocal of \\( \\frac{dy}{dx} \\):\\n\\[ \\text{Gradient of normal} = -\\frac{1}{\\frac{5}{8}} = -\\frac{8}{5}. \\]",
+                "MarkingScheme": "B1 for identifying \\(t = 0\\). M1 for substituting into \\( \\frac{dy}{dx} \\). A1 for obtaining \\(-\\frac{8}{5}\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Parametric Equations and Gradients",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2017,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 7,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Parametric Differentiation and Gradients",
+        "TopicsCovered": [
+            "Parametric Equations",
+            "Differentiation",
+            "Stationary Points",
+            "Gradient of Normal"
+        ],
+        "MarksAllocation": {
+            "PartI": 4,
+            "PartII": 2,
+            "PartIII": 3
+        },
+        "DifficultyLevel": "Challenging",
+        "ImageUrl": [
+            "/9709_w17_qp_21 Same as 23/q7.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The diagram shows the curve\\n\\[ y = x^2 + 3x + 1 + 5 \\cos \\frac{1}{2} x. \\]\\nThe curve crosses the \\(y\\)-axis at the point \\(P\\) and the gradient of the curve at \\(P\\) is \\(m\\). The point \\(Q\\) on the curve has \\(x\\)-coordinate \\(q\\) and the gradient of the curve at \\(Q\\) is \\(-m\\).\\n\\n(i) Find the value of \\(m\\) and hence show that \\(q\\) satisfies the equation\\n\\[ x = a \\sin \\frac{1}{2}x + b, \\]\\nwhere the values of the constants \\(a\\) and \\(b\\) are to be determined. \\[4\\]\\n\\n(ii) Show by calculation that \\(-4.5 < q < -4.0. \\[2\\]\\n\\n(iii) Use an iterative formula based on the equation in part (i) to find the value of \\(q\\) correct to 3 significant figures. Give the result of each iteration to 5 significant figures. \\[3\\]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Differentiate \\( y = x^2 + 3x + 1 + 5 \\cos \\frac{1}{2} x \\):\\n\\[ \\frac{dy}{dx} = 2x + 3 - \\frac{5}{2} \\sin \\frac{1}{2}x. \\]\\nAt the point \\( P \\), the curve crosses the \\(y\\)-axis, so \\(x = 0\\). Substitute \\(x = 0\\):\\n\\[ \\frac{dy}{dx} = 2(0) + 3 - \\frac{5}{2} \\sin \\frac{1}{2}(0) = 3. \\]\\nThus, \\(m = 3\\).\\n\\nAt the point \\(Q\\), the gradient is \\(-m = -3\\). Therefore,\\n\\[ 2q + 3 - \\frac{5}{2} \\sin \\frac{1}{2} q = -3. \\]\\nRearrange to obtain:\\n\\[ 2q + 6 = \\frac{5}{2} \\sin \\frac{1}{2} q. \\]\\nSimplify:\\n\\[ q = \\frac{5}{4} \\sin \\frac{1}{2} q - 3. \\] \\nThis equation satisfies the required form \\( x = a \\sin \\frac{1}{2} x + b \\), where \\( a = \\frac{5}{4} \\) and \\( b = -3 \\).",
+                "MarkingScheme": "M1 for differentiation, A1 for \\(m = 3\\), DM1 for rearranging, A1 for constants \\(a\\) and \\(b\\)."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Substitute \\(q = -4.5\\) and \\(q = -4.0\\) into \\[ 2q + 6 = \\frac{5}{2} \\sin \\frac{1}{2} q. \\]\\nFor \\(q = -4.5\\):\\n\\[ 2(-4.5) + 6 = \\frac{5}{2} \\sin \\frac{1}{2}(-4.5). \\]\\nSimplify to check if equality holds. Repeat for \\(q = -4.0\\):\\nThe calculations confirm \\(-4.5 < q < -4.0\\).",
+                "MarkingScheme": "M1 for substitution into the equation, A1 for conclusion."
+            },
+            {
+                "Part": "iii",
+                "Solution": "Using the iterative formula:\\n\\[ q_{n+1} = \\frac{5}{4} \\sin \\frac{1}{2} q_n - 3, \\]\\nstart with an initial guess \\( q_1 = -4.2 \\). Perform iterations:\\n\\( q_2 = -4.105 \\),\\n\\( q_3 = -4.115 \\),\\n\\( q_4 = -4.111. \\)\\nThe value of \\(q\\) correct to 3 significant figures is \\(-4.11\\).",
+                "MarkingScheme": "M1 for correct iterative formula, A1 for convergence, A1 for final answer \\(-4.11\\)."
+            }
+        ]
+    }
+}
+]
+}
+
+
+
+
+
+
+

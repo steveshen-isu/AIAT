@@ -1,6 +1,9 @@
 import mysql from 'mysql2';
 import dotenv from 'dotenv';
 dotenv.config();
+import path from 'path';
+import { fileURLToPath } from 'url';
+import fs from 'fs';
 
 console.log('db_host', process.env.DB_HOST);
 // Setting up the MySQL connection
@@ -14,16 +17,93 @@ const db = mysql.createPool({
     queueLimit: 0
 });
 
+function readJsonFiles(jDir) {
+    const jFiles = fs.readdirSync(jDir);
+    const jObjects = [];
+    jFiles.forEach(jFile => {
+        const jFilePath = path.join(jDir, jFile);
+        const stat = fs.statSync(jFilePath);
+        if (stat.isDirectory()) {
+            jObjects.push(...readJsonFiles(jFilePath))
+        } else if (path.extname(jFile) === '.json') {
+            try {
+                const sourceName = path.basename(path.dirname(jFilePath));
+                const oContents = fs.readFileSync(jFilePath, 'utf8');
+                let nContents = oContents;
+                if (oContents.charAt(0) !== '[') {
+                    nContents = '[' + nContents;
+                }
+                if (oContents.charAt(oContents.length-1) !== ']') {
+                    nContents = nContents + ']';
+                }
+                const parsedObject = JSON.parse(nContents);
+                parsedObject['source_name'] = sourceName;
+                jObjects.push(parsedObject);
+            } catch (error) {
+                console.log(`Parse file: ${jFilePath} failed, error: `, error.message);
+            }
+        } else {
+            return;
+        }
+    });
+    return jObjects;
+}
 
-
-
-
+function handleJsonObjects(jsonObjects) {
+    jsonObjects.forEach(jsonObject => {
+        const sourceName = jsonObject['source_name'];
+        const query = 'SELECT * FROM question_bank WHERE source_name = ?';
+        db.query(query, [sourceName], (error, results) => {
+            if (error) {
+                console.error('Query failed: ', error);
+                return;
+            }
+            if (results.length > 0) {
+                const updateQuery = 'UPDATE question_bank SET qa_json = ?, update_time = CURRENT_TIMESTAMP WHERE source_name = ?';
+                db.query(updateQuery, [JSON.stringify(jsonObject), sourceName], (uError, uResults) => {
+                    if (uError) {
+                        console.error('Update failed', uError);
+                    } else {
+                        console.log(`Update '${sourceName}' successfully.`)
+                    }
+                })
+            } else {
+                const insertQuery = 'INSERT INTO question_bank (qa_json, source_name) VALUES (?,?)';
+                db.query(insertQuery, [JSON.stringify(jsonObject), sourceName], (iError, iResults) => {
+                    if (iError) {
+                        console.error('Insert failed: ', iError);
+                    } else {
+                        console.log(`Insert into '${sourceName}' successfully.`);
+                    }
+                });
+            }
+        })
+    });
+}
 
 // Controller for handling POST requests to add a subject
 export const addSubject = (req, res) => {
     console.log('Received POST request for /api/subjects');
     console.log('Body:', req.body);
     res.status(201).send({ message: 'Subject added' });
+};
+
+
+// Controller for syncing question bank from json files to db
+export const syncQuestionBank = (req, res) => {
+    
+    const currentPath = path.dirname(fileURLToPath(import.meta.url));
+    const parentPath = path.dirname(currentPath);
+    const questionBankPath = path.join(parentPath, 'question_bank');
+    
+    try {
+        const jsonObjects = readJsonFiles(questionBankPath);
+        handleJsonObjects(jsonObjects);
+        res.status(200).send('JSON data sync to db successfully.');
+    } catch (error) {
+        console.error('Json parse failed: ', error);
+        res.status(500).send('Json parse failed.');
+    }
 };
 
 // Controller for fetching subjects
