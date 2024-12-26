@@ -160,7 +160,7 @@ function AdvancedCalculator() {
 
 
   const detectVariables = (expr) => {
-    const regex = /(?<=\d|\W|^)[a-dh-zA-Z_](?!\w)/g;
+    const regex = /(?<=\d|\W|^)[a-dj-zA-Z_](?!\w)/g;
     const matches = expr.match(regex) || [];
     const uniqueVariables = [...new Set(matches)].filter((v) => typeof v === 'string');
     setVariables(uniqueVariables);

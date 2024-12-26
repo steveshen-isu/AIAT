@@ -10,21 +10,23 @@ const ComplexNumberOperations = () => {
   const calculateResult = () => {
     try {
       let calculation;
+      const expr = nerdamer(`expand(${expression})`).toString();
+      console.log('expression simplify:',expr)
       switch (operation) {
         case 'polar':
-          calculation = '\\['+ nerdamer(`polarform(${expression})`).toTeX() + '\\]';
+          calculation = '\\['+ nerdamer(`polarform(${expr})`).toTeX() + '\\]';
           break;
         case 'argument':
-          calculation = nerdamer(`arg(${expression})`).text('decimal').slice(1);
+          calculation = nerdamer(`arg(${expr})`).text('decimal').slice(1);
           break;
         case 'rectangle':
-          calculation = '\\['+ nerdamer(`rectform(${expression})`).toTeX() + '\\]';
+          calculation = '\\['+ nerdamer(`rectform(${expr})`).toTeX() + '\\]';
           break;
         case 'real':
-          calculation = nerdamer(`realpart(${expression})`).text('decimal').slice(1);
+          calculation = nerdamer(`realpart(${expr})`).text('decimal').slice(1);
           break;
         case 'imaginary':
-          calculation = nerdamer(`imagpart(${expression})`).text('decimal').slice(1);
+          calculation = nerdamer(`imagpart(${expr})`).text('decimal').slice(1);
           break;
         default:
           calculation = 'Invalid operation';
