@@ -26,10 +26,4 @@ yarn-error.log*
 src\backend\.env
 test_proxy_axios.js
 # node_modules
-node_modules/.cache/.eslintcache
-node_modules/.cache/default-development/0.pack
-node_modules/.cache/default-development/4.pack
-node_modules/.cache/default-development/5.pack
-node_modules/.cache/default-development/7.pack
-node_modules/.cache/default-development/index.pack
-node_modules/.cache/default-development/index.pack.old
+node_modules/.cache
