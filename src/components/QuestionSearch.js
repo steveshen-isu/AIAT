@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from "react";
 
 function FilterableQuestionTable() {
   const [searchText, setSearchText] = useState("");
-  const [selectedFilter, setSelectedFilter] = useState("");
+  const [selectedFilter, setSelectedFilter] = useState({});
   const [questions] = useState([
     {
       id: 1,
@@ -149,15 +149,18 @@ function QuestionTable({
 
     if (searchText) {
       filtered = filtered.filter((q) =>
-        q.title.toLowerCase().includes(searchText.toLowerCase())
+        q.questionContent.toLowerCase().includes(searchText.toLowerCase())
       );
     }
 
     if (selectedFilter) {
+      let tFiltered = [...filtered];
+      Object.entries(selectedFilter).forEach(([key, value]) => {
+        filtered = tFiltered.filter((q) => q[key] === value);
+      });
     }
-
     return filtered;
-  }, [questions, searchText]);
+  }, [questions, searchText, selectedFilter]);
 
   return (
     <div className="flex-1">
@@ -226,7 +229,6 @@ function QuestionRow({ question }) {
 }
 
 function FilterTable({ selectedFilter, setSelectedFilter, questions }) {
-
   const [categories, setCategories] = useState({});
   const categoryKeys = [
     "examBoard",
@@ -261,7 +263,12 @@ function FilterTable({ selectedFilter, setSelectedFilter, questions }) {
           <FilterCategoryRow category={category} key={category} />
           <div className="border-t mt-6 pt-6">
             {categories[category]?.map((value, index) => (
-              <FilterRow key={index} content={value} />
+              <FilterRow
+                key={index}
+                category={category}
+                content={value}
+                setSelectedFilter={setSelectedFilter}
+              />
             ))}
           </div>
         </div>
@@ -271,15 +278,21 @@ function FilterTable({ selectedFilter, setSelectedFilter, questions }) {
 }
 
 function FilterCategoryRow({ category }) {
-  return <h3 className="text-lg font-medium mb-4" key={category}>{category}</h3>;
+  return (
+    <h3 className="text-lg font-medium mb-4" key={category}>
+      {category}
+    </h3>
+  );
 }
 
-function FilterRow({ content, selectedFilter, setSelectedFilter }) {
+function FilterRow({ category, content, selectedFilter, setSelectedFilter }) {
+  const filter = {};
+  filter[category] = content;
   return (
     <button
       key={content}
       onClick={() =>
-        setSelectedFilter(selectedFilter === content ? "" : content)
+        setSelectedFilter(selectedFilter === filter ? null : filter)
       }
       className={`w-full text-left px-4 py-2 !rounded-button whitespace-nowrap text-black ${
         selectedFilter === content
