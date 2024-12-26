@@ -3,6 +3,25 @@ import React, { useState, useMemo, useEffect } from "react";
 function FilterableQuestionTable() {
   const [searchText, setSearchText] = useState("");
   const [selectedFilter, setSelectedFilter] = useState({});
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(5);
+
+  useEffect(() => {
+    const calculateItemsPerPage = () => {
+      const viewportHeight = window.innerHeight;
+      const headerHeight = 64; // 16 * 4 = 64px
+      const searchSectionHeight = 200; // Approximate height for search section
+      const questionCardHeight = 160; // Approximate height for each question card
+      const availableHeight =
+        viewportHeight - headerHeight - searchSectionHeight;
+      return Math.max(3, Math.floor(availableHeight / questionCardHeight));
+    };
+    setItemsPerPage(calculateItemsPerPage());
+    window.addEventListener("resize", () =>
+      setItemsPerPage(calculateItemsPerPage())
+    );
+  }, []);
+
   const [questions] = useState([
     {
       id: 1,
@@ -96,6 +115,10 @@ function FilterableQuestionTable() {
     selectedFilter,
     setSelectedFilter,
     questions,
+    currentPage,
+    setCurrentPage,
+    itemsPerPage,
+    setItemsPerPage
   };
   return (
     <div className="min-h-screen bg-gray-50">
@@ -143,6 +166,10 @@ function QuestionTable({
   selectedFilter,
   setSelectedFilter,
   questions,
+  currentPage,
+  setCurrentPage,
+  itemsPerPage,
+  setItemsPerPage
 }) {
   const filteredQuestions = useMemo(() => {
     let filtered = [...questions];
@@ -162,6 +189,17 @@ function QuestionTable({
     return filtered;
   }, [questions, searchText, selectedFilter]);
 
+  const currentQuestions = useMemo(() => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    return filteredQuestions.slice(startIndex, startIndex + itemsPerPage);
+  }, [filteredQuestions, currentPage, itemsPerPage]);
+
+  const totalPages = Math.ceil(filteredQuestions.length / itemsPerPage);
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="flex-1">
       <div className="flex items-center justify-between mb-6">
@@ -172,30 +210,39 @@ function QuestionTable({
       </div>
 
       <div className="space-y-4">
-        {filteredQuestions.map((question) => (
+        {currentQuestions.map((question) => (
           <QuestionRow question={question} key={question.id} />
         ))}
       </div>
-
-      <div className="flex justify-center mt-8">
-        <button className="px-4 py-2 mx-1 bg-white border border-gray-300 !rounded-button whitespace-nowrap text-black">
-          Previous
-        </button>
-        <button className="px-4 py-2 mx-1 bg-blue-600 text-white !rounded-button whitespace-nowrap text-black">
-          1
-        </button>
-        <button className="px-4 py-2 mx-1 bg-white border border-gray-300 !rounded-button whitespace-nowrap text-black">
-          2
-        </button>
-        <button className="px-4 py-2 mx-1 bg-white border border-gray-300 !rounded-button whitespace-nowrap text-black">
-          3
-        </button>
-        <button className="px-4 py-2 mx-1 bg-white border border-gray-300 !rounded-button whitespace-nowrap text-black">
-          Next
-        </button>
-      </div>
+      <PaginationButtons currentPage={currentPage} totalPages={totalPages} handlePageChange={handlePageChange} />
     </div>
   );
+}
+
+function PaginationButtons({ currentPage, totalPages, handlePageChange }) {
+  const buttons = [];
+  const maxVisiblePages = 5;
+  let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+  let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+  if (endPage - startPage + 1 < maxVisiblePages) {
+    startPage = Math.max(1, endPage - maxVisiblePages + 1);
+  }
+  for (let i = startPage; i <= endPage; i++) {
+    buttons.push(
+      <button
+        key={i}
+        onClick={() => handlePageChange(i)}
+        className={`px-4 py-2 mx-1 !rounded-button whitespace-nowrap ${
+          currentPage === i
+            ? "bg-blue-600 text-white"
+            : "bg-white border border-gray-300 hover:bg-gray-50"
+        }`}
+      >
+        {i}
+      </button>
+    );
+  }
+  return buttons;
 }
 
 function QuestionRow({ question }) {
@@ -261,7 +308,7 @@ function FilterTable({ selectedFilter, setSelectedFilter, questions }) {
       {categoryKeys.map((category) => (
         <div className="bg-white rounded-lg shadow-sm p-6" key={category}>
           <FilterCategoryRow category={category} key={category} />
-          <div className="border-t mt-6 pt-6">
+          <div>
             {categories[category]?.map((value, index) => (
               <FilterRow
                 key={index}
