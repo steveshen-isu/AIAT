@@ -1,0 +1,329 @@
+{
+    "Questions": [
+{
+    "Metadata": {
+        "QuestionTitle": "Solve Absolute Value Inequality",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2018,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 1,
+        "QuestionType": "Inequality",
+        "Level": "P2",
+        "MathTopic": "Inequalities",
+        "TopicsCovered": [
+            "Absolute Values",
+            "Linear Inequalities"
+        ],
+        "MarksAllocation": {
+                    "PartA": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w18_qp_22/q1.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Solve the inequality \\(|3x - 5| < 2|x|\\)."
+    },
+    "SolutionContent": {
+                "Parts": [
+                    {
+                        "Part": "a",
+        "Solution": "To solve the inequality \\(|3x - 5| < 2|x|\\), split it into two cases:\\n\\n**Case 1: \\(x \\geq 0\\):**\\nHere, \\(|x| = x\\), so the inequality simplifies to:\\n\\[|3x - 5| < 2x.\\]\\nSplit into two sub-cases for \\(3x - 5\\):\\n\\n1. If \\(3x - 5 \\geq 0\\) (\\(x \\geq \\frac{5}{3}\\)), the inequality becomes:\\n\\[3x - 5 < 2x \\implies x < 5.\\]\\nCombining with \\(x \\geq \\frac{5}{3}\\), we get:\\n\\[\\frac{5}{3} \\leq x < 5.\\]\\n\\n2. If \\(3x - 5 < 0\\) (\\(x < \\frac{5}{3}\\)), the inequality becomes:\\n\\[-(3x - 5) < 2x \\implies -3x + 5 < 2x \\implies 5 < 5x \\implies x > 1.\\]\\nCombining with \\(x < \\frac{5}{3}\\), we get:\\n\\[1 < x < \\frac{5}{3}.\\]\\n\\nCombining the two results for \\(x \\geq 0\\):\\n\\[1 < x < 5.\\]\\n\\n**Case 2: \\(x < 0\\):**\\nHere, \\(|x| = -x\\), so the inequality simplifies to:\\n\\[|3x - 5| < -2x.\\]\\nSplit into two sub-cases for \\(3x - 5\\):\\n\\n1. If \\(3x - 5 \\geq 0\\), this contradicts \\(x < 0\\), so no solutions exist.\\n2. If \\(3x - 5 < 0\\), the inequality becomes:\\n\\[-(3x - 5) < -2x \\implies -3x + 5 < -2x \\implies 5 < x.\\]\\nThis also contradicts \\(x < 0\\), so no solutions exist.\\n\\nThus, for \\(x < 0\\), there are no valid solutions.\\n\\n**Final Solution:**\\nCombining both cases, the solution is:\\n\\[1 < x < 5.\\]",
+        "MarkingScheme": "M1 for identifying absolute values and splitting into cases, A1 for solving the correct intervals, A1 for the final solution \\(1 < x < 5\\)."
+                    }
+                ]
+            }
+        },
+{
+    "Metadata": {
+        "QuestionTitle": "Solve exponential equation with logarithms",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2018,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 2,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Exponential and Logarithmic Equations",
+        "TopicsCovered": [
+            "Exponential Equations",
+            "Logarithms"
+        ],
+        "MarksAllocation": {
+            "PartA": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w18_qp_22/q2.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Given that \\(9^x + 3^x = 240\\), find the value of \\(3^x\\) and hence, using logarithms, find the value of \\(x\\) correct to 4 significant figures."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Recognise that \\(9^x = (3^x)^2\\). Let \\(u = 3^x\\), then the equation becomes:\\n\\[u^2 + u - 240 = 0.\\]\\nSolve the quadratic equation \\(u^2 + u - 240 = 0\\) using the quadratic formula:\\n\\[u = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a},\\]\\nwhere \\(a = 1\\), \\(b = 1\\), and \\(c = -240\\):\\n\\[u = \\frac{-1 \\pm \\sqrt{1^2 - 4(1)(-240)}}{2(1)}.\\]\\nSimplify:\\n\\[u = \\frac{-1 \\pm \\sqrt{961}}{2}.\\]\\n\\[u = \\frac{-1 \\pm 31}{2}.\\]\\nOnly positive solution is valid:\\n\\[u = \\frac{-1 + 31}{2} = 15.\\]\\nThus, \\(3^x = 15\\).\\n\\nUsing logarithms to solve for \\(x\\):\\n\\[3^x = 15.\\]\\nTake natural logarithms on both sides:\\n\\[\\ln(3^x) = \\ln(15).\\]\\nUsing the logarithmic power rule \\(\\ln(a^b) = b\\ln(a)\\):\\n\\[x \\ln(3) = \\ln(15).\\]\\nSolve for \\(x\\):\\n\\[x = \\frac{\\ln(15)}{\\ln(3)}.\\]\\nUsing a calculator:\\n\\[x = \\frac{\\ln(15)}{\\ln(3)} = \\frac{2.7081}{1.0986} \\approx 2.465.\\]\\nThus, \\(x = 2.465\\) (correct to 4 significant figures).",
+                "MarkingScheme": "B1 for recognising \\(9^x = (3^x)^2\\), M1 for solving the quadratic equation, A1 for \\(3^x = 15\\), M1 for applying logarithms, A1 for obtaining \\(x = 2.465\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Stationary Point of a Trigonometric Curve",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": "2018",
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 3,
+        "QuestionType": "Single Question",
+        "Level": "P2",
+        "MathTopic": "Differentiation of Trigonometric Functions",
+        "TopicsCovered": [
+            "Stationary Points",
+            "Trigonometric Differentiation"
+        ],
+        "MarksAllocation": {
+            "PartA": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w18_qp_22/q3.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The diagram shows the curve with equation\\n\\[ y = 5 \\sin 2x - 3 \\tan 2x \\]\\nfor values of \\(x\\) such that \\(0 \\leq x < \\frac{1}{4}\\pi\\). Find the \\(x\\)-coordinate of the stationary point \\(M\\), giving your answer correct to 3 significant figures."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "To find the stationary point, differentiate \\( y = 5 \\sin 2x - 3 \\tan 2x \\):\\n\\[ \\frac{dy}{dx} = 10 \\cos 2x - 6 \\sec^2 2x. \\]\\nAt the stationary point, \\( \\frac{dy}{dx} = 0 \\):\\n\\[ 10 \\cos 2x - 6 \\sec^2 2x = 0. \\]\\nRearrange to find \\( \\cos^2 2x \\):\\n\\[ 10 \\cos 2x = 6 \\sec^2 2x \\quad \\text{or} \\quad \\cos^2 2x = k. \\]\\nSolve for \\(x\\) in the given range \\( 0 \\leq x < \\frac{1}{4}\\pi \\):\\n\\[ x = 0.284 \\quad \\text{(correct to 3 significant figures)}. \\]",
+                "MarkingScheme": "B1 for differentiation of \\(5 \\sin 2x\\), B1 for differentiation of \\(-3 \\tan 2x\\).\\nM1 for equating first derivative to zero.\\nM1 for solving \\(\\cos^2 2x = k\\) and finding \\(x\\).\\nA1 for final answer \\(x = 0.284\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Find the gradient of the curve",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2018,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Implicit Differentiation",
+        "TopicsCovered": [
+            "Implicit Differentiation",
+            "Gradient of Curve"
+        ],
+        "MarksAllocation": {
+            "PartA": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w18_qp_23/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Find the gradient of the curve \\[ 4x + 3ye^{2x} + y^2 = 10 \\] at the point \\((0, 2)\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Differentiate the equation implicitly with respect to \\(x\\):\\n\\[ \\frac{d}{dx} (4x) + \\frac{d}{dx} (3ye^{2x}) + \\frac{d}{dx} (y^2) = \\frac{d}{dx} (10). \\]\\n\\(4x\\) differentiates to \\(4\\). For \\(3ye^{2x}\\), use the product rule: \\n\\[ \\frac{d}{dx} (3ye^{2x}) = 3e^{2x} \\cdot 2 + 3 \\cdot e^{2x} \\frac{dy}{dx}. \\]\\n\\(y^2\\) differentiates to \\(2y \\frac{dy}{dx}\\).\\n\\nSubstitute these into the differentiated equation:\\n\\[ 4 + 3e^{2x} \\cdot 2 + 3e^{2x} \\frac{dy}{dx} + 2y \\frac{dy}{dx} = 0. \\]\\nSimplify:\\n\\[ 4 + 6e^{2x} + 3e^{2x} \\frac{dy}{dx} + 2y \\frac{dy}{dx} = 0. \\]\\nCombine terms with \\( \\frac{dy}{dx} \\):\\n\\[ 3e^{2x} \\frac{dy}{dx} + 2y \\frac{dy}{dx} = -4 - 6e^{2x}. \\]\\nFactor out \\( \\frac{dy}{dx} \\):\\n\\[ \\frac{dy}{dx} (3e^{2x} + 2y) = -4 - 6e^{2x}. \\]\\nSolve for \\( \\frac{dy}{dx} \\):\\n\\[ \\frac{dy}{dx} = \\frac{-4 - 6e^{2x}}{3e^{2x} + 2y}. \\]\\n\\nSubstitute \\(x = 0\\) and \\(y = 2\\):\\n\\[ e^{2(0)} = e^0 = 1. \\]\\nSubstitute into the equation:\\n\\[ \\frac{dy}{dx} = \\frac{-4 - 6(1)}{3(1) + 2(2)}. \\]\\nSimplify numerator and denominator:\\n\\[ \\frac{dy}{dx} = \\frac{-4 - 6}{3 + 4} = \\frac{-10}{7}. \\]\\n\\nThus, the gradient at the point \\((0, 2)\\) is \\( \\frac{-10}{7} \\) or approximately \\(-1.43\\).",
+                "MarkingScheme": "B1 for differentiating \\(3ye^{2x}\\) correctly, B1 for \\(2y \\frac{dy}{dx}\\), B1 for \\(4\\), M1 for substituting \\(x = 0, y = 2\\) into the equation, A1 for obtaining \\( \\frac{-10}{7} \\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Stationary Point and Gradient Calculation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2018,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Differentiation",
+        "TopicsCovered": [
+            "Stationary Points",
+            "Iterative Methods",
+            "Gradient Calculation"
+        ],
+        "MarksAllocation": {
+            "PartI": 2,
+            "PartII": 2,
+            "PartIII": 3,
+            "PartIV": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w18_qp_22/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The curve with equation\\n\\[ y = 5e^{2x} - 8x^2 - 20 \\]\\ncrosses the \\(x\\)-axis at only one point. This point has coordinates \\((p, 0)\\).\\n(i) Show that \\(p\\) satisfies the equation \\(x = \\frac{1}{2} \\ln(1.6x^2 + 4)\\).\\n[2]\\n(ii) Show by calculation that \\(0.75 < p < 0.85\\).\\n[2]\\n(iii) Use an iterative formula based on the equation in part (i) to find the value of \\(p\\) correct to 5 significant figures. Give the result of each iteration to 7 significant figures.\\n[3]\\n(iv) Find the gradient of the curve at the point \\((p, 0)\\).\\n[3]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Rearranging the curve equation \\( y = 5e^{2x} - 8x^2 - 20 \\) at \\( y = 0 \\):\\n\\[ 5e^{2x} - 8x^2 - 20 = 0. \\]\\nIsolate \\(e^{2x}\\):\\n\\[ e^{2x} = \\frac{8x^2 + 20}{5}. \\]\\nTaking natural logarithms gives:\\n\\[ 2x = \\ln(1.6x^2 + 4). \\]\\nThus:\\n\\[ x = \\frac{1}{2} \\ln(1.6x^2 + 4). \\]",
+                "MarkingScheme": "M1 for correct rearrangement, A1 for final equation form."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Test values \\( x = 0.75 \\) and \\( x = 0.85 \\) in \\( x = \\frac{1}{2} \\ln(1.6x^2 + 4) \\).\\nAt \\( x = 0.75 \\):\\n\\[ \\frac{1}{2} \\ln(1.6(0.75)^2 + 4) = 0.732. \\]\\nAt \\( x = 0.85 \\):\\n\\[ \\frac{1}{2} \\ln(1.6(0.85)^2 + 4) = 0.827. \\]\\nHence:\\n\\[ 0.75 < p < 0.85. \\]",
+                "MarkingScheme": "M1 for substitutions, A1 for correct inequality."
+            },
+            {
+                "Part": "iii",
+                "Solution": "Use the iterative formula:\\n\\[ x_{n+1} = \\frac{1}{2} \\ln(1.6x_n^2 + 4). \\]\\nStarting with \\( x_0 = 0.8 \\):\\n\\[ x_1 = 0.8089555, \\quad x_2 = 0.8095656, \\quad x_3 = 0.809565. \\]\\nFinal value of \\( p \\):\\n\\[ p = 0.80956. \\]",
+                "MarkingScheme": "M1 for applying iteration, A1 for final answer to 5 significant figures."
+            },
+            {
+                "Part": "iv",
+                "Solution": "Differentiate the curve equation \\( y = 5e^{2x} - 8x^2 - 20 \\):\\n\\[ \\frac{dy}{dx} = 10e^{2x} - 16x. \\]\\nSubstitute \\( x = 0.80956 \\):\\n\\[ \\frac{dy}{dx} = 10e^{2(0.80956)} - 16(0.80956). \\]\\nCalculate:\\n\\[ \\frac{dy}{dx} \\approx 37.5. \\]",
+                "MarkingScheme": "B1 for differentiation, M1 for substitution, A1 for final gradient \\(37.5\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Integration and Logarithmic Calculations",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2018,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Integration",
+        "TopicsCovered": [
+            "Definite Integration",
+            "Trigonometric Identities",
+            "Logarithmic Properties"
+        ],
+        "MarksAllocation": {
+            "PartA": 5,
+            "PartB": 6
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w18_qp_22/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Text": "(a) Show that \\[ \\int_{1}^{6} \\frac{12}{3x + 2} \\, dx = \\ln 256. \\] [5]\\n(b) Find the exact value of \\[ \\int_{0}^{\\frac{\\pi}{6}} (8 \\sin^2 x + \\tan^2 2x) \\, dx, \\] showing all necessary working. [6]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "To solve \\( \\int_{1}^{6} \\frac{12}{3x + 2} \\, dx \\):\\n1. Factor out constants: \\[ \\int \\frac{12}{3x + 2} \\, dx = 4 \\int \\frac{1}{3x + 2} \\, dx. \\]\\n2. Integrate using the formula \\( \\int \\frac{1}{ax + b} \\, dx = \\frac{1}{a} \\ln |ax + b| \\):\\n\\[ \\int \\frac{1}{3x + 2} \\, dx = \\frac{1}{3} \\ln |3x + 2|. \\]\\n3. Multiply by 4: \\[ 4 \\int \\frac{1}{3x + 2} \\, dx = \\frac{4}{3} \\ln |3x + 2|. \\]\\n4. Apply limits \\( x = 1 \\) and \\( x = 6 \\):\\n\\[ \\frac{4}{3} \\left[ \\ln |3(6) + 2| - \\ln |3(1) + 2| \\right]. \\]\\nSimplify:\\n\\[ \\frac{4}{3} \\left[ \\ln 20 - \\ln 5 \\right]. \\]\\n5. Use logarithmic property \\( \\ln a - \\ln b = \\ln \\frac{a}{b} \\):\\n\\[ \\frac{4}{3} \\ln \\frac{20}{5} = \\frac{4}{3} \\ln 4. \\]\\n6. Simplify further using \\( \\ln 4 = 2 \\ln 2 \\):\\n\\[ \\frac{4}{3} (2 \\ln 2) = \\frac{8}{3} \\ln 2. \\]\\n7. Multiply and simplify to show the final result:\\n\\[ \\ln 256. \\]",
+                "MarkingScheme": "M1 for attempting integration in correct form, A1 for correct integral, M1 for applying limits, M1 for logarithmic manipulation, A1 for obtaining \\( \\ln 256 \\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "To evaluate \\( \\int_{0}^{\\frac{\\pi}{6}} (8 \\sin^2 x + \\tan^2 2x) \\, dx \\):\\n1. Use the identity \\( \\sin^2 x = \\frac{1 - \\cos 2x}{2} \\):\\n\\[ 8 \\sin^2 x = 4 (1 - \\cos 2x). \\]\\n2. Write the integral as:\\n\\[ \\int_{0}^{\\frac{\\pi}{6}} \\left( 4(1 - \\cos 2x) + \\tan^2 2x \\right) \\, dx. \\]\\n3. Integrate term by term:\\n- For \\( 4 \\int_{0}^{\\frac{\\pi}{6}} 1 \\, dx = 4x \\),\\n- For \\( -4 \\int_{0}^{\\frac{\\pi}{6}} \\cos 2x \\, dx = -2 \\sin 2x \\),\\n- For \\( \\int_{0}^{\\frac{\\pi}{6}} \\tan^2 2x \\, dx \\), use \\( \\tan^2 u = \\sec^2 u - 1 \\):\\n\\[ \\int \\tan^2 2x \\, dx = \\int (\\sec^2 2x - 1) \\, dx = \\frac{1}{2} \\tan 2x - x. \\]\\n4. Combine all terms and apply limits \\( x = 0 \\) and \\( x = \\frac{\\pi}{6} \\):\\n- Evaluate \\( 4x \\) at limits: \\[ 4 \\left( \\frac{\\pi}{6} \\right) - 0 = \\frac{2\\pi}{3}. \\]\\n- Evaluate \\( -2 \\sin 2x \\): \\( \\sin \\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2} \\), so \\[ -2 \\left( \\frac{\\sqrt{3}}{2} \\right) = -\\sqrt{3}. \\]\\n- Evaluate \\( \\frac{1}{2} \\tan 2x - x \\) at \\( x = \\frac{\\pi}{6} \\) and \\( x = 0 \\):\\n\\[ \\frac{1}{2} \\tan \\frac{\\pi}{3} - \\frac{\\pi}{6} = \\frac{1}{2} \\sqrt{3} - \\frac{\\pi}{6}. \\]\\n5. Combine results:\\n\\[ \\frac{2\\pi}{3} - \\sqrt{3} + \\frac{1}{2} \\sqrt{3} - \\frac{\\pi}{6}. \\]\\nSimplify:\\n\\[ \\frac{\\pi}{3} - \\frac{1}{2} \\sqrt{3}. \\]",
+                "MarkingScheme": "B1 for correct trigonometric identities, M1 for splitting integral into parts, A1 for correct integration, M1 for applying limits, A1 for exact value."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Factorization and Trigonometric Equations",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2018,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 7,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Factorization and Trigonometric Equations",
+        "TopicsCovered": [
+            "Factor Theorem",
+            "Cosine Equations",
+            "Roots of Trigonometric Equations"
+        ],
+        "MarksAllocation": {
+            "PartI": 2,
+            "PartII": 3,
+            "PartIII": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w18_qp_22/q7.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "(i) Use the factor theorem to show that \\((2x + 3)\\) is a factor of \\(8x^3 + 4x^2 - 10x + 3\\). \\[2\\]\\n(ii) Show that the equation \\(2\\cos 2\\theta = \\frac{6\\cos\\theta - 5}{2\\cos\\theta + 1}\\) can be expressed as \\[8\\cos^3\\theta + 4\\cos^2\\theta - 10\\cos\\theta + 3 = 0\\]. \\[3\\]\\n(iii) Solve the equation \\(2\\cos 2\\theta = \\frac{6\\cos\\theta - 5}{2\\cos\\theta + 1}\\) for \\(0^\\circ < \\theta < 360^\\circ\\). \\[5\\]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "i",
+                "Solution": "Substitute \\(x = -\\frac{3}{2}\\) into the equation: \\[8\\left(-\\frac{3}{2}\\right)^3 + 4\\left(-\\frac{3}{2}\\right)^2 - 10\\left(-\\frac{3}{2}\\right) + 3 = 0.\\] Simplify each term: \\[-27 + 9 + 15 + 3 = 0.\\] Hence, \\((2x + 3)\\) is a factor.",
+                "MarkingScheme": "M1 for substitution of \\(x = -\\frac{3}{2}\\), A1 for showing the result equals zero."
+            },
+            {
+                "Part": "ii",
+                "Solution": "Start with \\(2\\cos 2\\theta = \\frac{6\\cos\\theta - 5}{2\\cos\\theta + 1}\\). Use \\(\\cos 2\\theta = 2\\cos^2\\theta - 1\\) and substitute: \\[2(2\\cos^2\\theta - 1) = \\frac{6\\cos\\theta - 5}{2\\cos\\theta + 1}.\\] Multiply through by \\(2\\cos\\theta + 1\\) to clear the denominator: \\[4\\cos^2\\theta (2\\cos\\theta + 1) - 2(2\\cos\\theta + 1) = 6\\cos\\theta - 5.\\] Simplify to obtain \\[8\\cos^3\\theta + 4\\cos^2\\theta - 10\\cos\\theta + 3 = 0.\\]",
+                "MarkingScheme": "B1 for correct use of \\(\\cos 2\\theta\\), M1 for clearing the denominator, A1 for the simplified equation."
+            },
+            {
+                "Part": "iii",
+                "Solution": "Solve \\(8\\cos^3\\theta + 4\\cos^2\\theta - 10\\cos\\theta + 3 = 0\\) by factorization or using numerical methods. Factorize partially to find roots: \\[(2\\cos\\theta + 3)(4\\cos^2\\theta - 1) = 0.\\] Solve \\(4\\cos^2\\theta - 1 = 0\\): \\[\\cos\\theta = \\pm\\frac{1}{2}.\\] Solve \\(2\\cos\\theta + 3 = 0\\): \\[\\cos\\theta = -\\frac{3}{2}.\\] Since \\(\\cos\\theta\\) must be between \\(-1\\) and \\(1\\), discard \\(\\cos\\theta = -\\frac{3}{2}\\). The valid solutions are: \\[\\cos\\theta = \\frac{1}{2}\\] or \\[\\cos\\theta = -\\frac{1}{2}.\\] Solve for \\(\\theta\\) in \\(0^\\circ < \\theta < 360^\\circ\\): \\[\\theta = 60^\\circ, 120^\\circ, 240^\\circ, 300^\\circ.\\]",
+                "MarkingScheme": "M1 for factorizing the equation, A1 for solving valid \\(\\cos\\theta\\), A1 for correct angles \\(\\theta\\)."
+            }
+        ]
+    }
+}
+]
+}
+
+
+
+
+
+
+

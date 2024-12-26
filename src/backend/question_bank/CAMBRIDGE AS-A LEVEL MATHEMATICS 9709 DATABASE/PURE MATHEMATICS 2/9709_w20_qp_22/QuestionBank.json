@@ -1,0 +1,339 @@
+{
+    "Questions": [
+{
+    "Metadata": {
+        "QuestionTitle": "Trigonometric Equation Solutions",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2020,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 1,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Trigonometric Equations",
+        "TopicsCovered": [
+            "Trigonometric Identities",
+            "Equation Solving"
+        ],
+        "MarksAllocation": {
+            "TotalMarks": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w20_qp_22/q1.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "Solve the equation \\(7 \\cot \\theta = 3 \\cosec \\theta\\) for \\(0^\\circ < \\theta < 90^\\circ\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "Full Solution",
+                "Solution": "Using \\(\\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta}\\) and \\(\\cosec \\theta = \\frac{1}{\\sin \\theta}\\):\\n\\[7 \\frac{\\cos \\theta}{\\sin \\theta} = 3 \\frac{1}{\\sin \\theta}.\\]\\nSimplify:\\n\\[7 \\cos \\theta = 3.\\]\\n\\[\\cos \\theta = \\frac{3}{7}.\\]\\nFind \\(\\theta\\):\\n\\[\\theta = \\arccos\\left(\\frac{3}{7}\\right).\\]\\n\\[\\theta \\approx 64.6^\\circ.\\]\\nSince \\(0^\\circ < \\theta < 90^\\circ\\), this is the only solution.",
+                "MarkingScheme": "B1 for expressing \\(\\cot \\theta\\) and \\(\\cosec \\theta\\) in terms of \\(\\sin \\theta\\) and \\(\\cos \\theta\\).\\nM1 for simplifying to \\(\\cos \\theta = \\frac{3}{7}\\).\\nA1 for \\(\\theta \\approx 64.6^\\circ\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Solving Exponential Equations with Logarithms",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2020,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 2,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Exponential and Logarithmic Equations",
+        "TopicsCovered": [
+            "Exponential Equations",
+            "Logarithmic Rules"
+        ],
+        "MarksAllocation": {
+            "TotalMarks": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w20_qp_22/q2.png"
+        ]
+    },
+    "QuestionContent": {
+        "Text": "Given that \\( \\frac{2^{3x+2} + 8}{2^{3x} - 7} = 5 \\), find the value of \\( 2^{3x} \\) and hence, using logarithms, find the value of \\( x \\) correct to 4 significant figures."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Solution": "Start by letting \\( y = 2^{3x} \\).\\nSubstituting \\( y \\) into the equation:\\n\\[ \\frac{y \\cdot 4 + 8}{y - 7} = 5. \\]\\nMultiply through by \\( y - 7 \\):\\n\\[ 4y + 8 = 5(y - 7). \\]\\nSimplify:\\n\\[ 4y + 8 = 5y - 35. \\]\\nRearrange terms to isolate \\( y \\):\\n\\[ y = 43. \\]\\nNow substitute back \\( y = 2^{3x} \\):\\n\\[ 2^{3x} = 43. \\]\\nTake the logarithm of both sides:\\n\\[ \\log(2^{3x}) = \\log(43). \\]\\nUsing the power rule for logarithms:\\n\\[ 3x \\log(2) = \\log(43). \\]\\nSolve for \\( x \\):\\n\\[ x = \\frac{\\log(43)}{3 \\log(2)}. \\]\\nUsing a calculator,\\n\\[ x \\approx 1.809. \\]",
+                "MarkingScheme": "B1 for substituting \\( y = 2^{3x} \\).\\nM1 for solving the linear equation for \\( y \\).\\nA1 for correctly finding \\( y = 43 \\).\\nM1 for applying logarithms to solve for \\( x \\).\\nA1 for obtaining \\( x = 1.809 \\) (to 4 significant figures)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Intersection of Graphs and Inequality Solution",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2020,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 3,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Graphs and Inequalities",
+        "TopicsCovered": [
+            "Graph Sketching",
+            "Intersection Points",
+            "Inequalities"
+        ],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 3,
+            "PartC": 1
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w20_qp_22/q3.png"
+        ]
+    },
+    "QuestionContent": {
+        "Text": "Sketch, on a single diagram, the graphs of \\(y = \\frac{1}{2}x - a\\) and \\(y = \\frac{3}{2}x - \\frac{1}{2}a\\), where \\(a\\) is a positive constant.\\n(a) Sketch the graphs. [2]\\n(b) Find the coordinates of the point of intersection of the two graphs. [3]\\n(c) Deduce the solution of the inequality \\[\\left|\\frac{1}{2}x - a\\right| > \\frac{3}{2}x - \\frac{1}{2}a.\\] [1]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The graph of \\(y = \\frac{1}{2}x - a\\) is a V-shaped graph with a vertex on the positive \\(x\\)-axis.\\nThe graph of \\(y = \\frac{3}{2}x - \\frac{1}{2}a\\) is a straight line with a greater gradient.\\nDraw these graphs on the same axes, ensuring correct relative positioning.",
+                "MarkingScheme": "B1 for the V-shaped graph of \\(y = \\frac{1}{2}x - a\\).\\nB1 for the straight line graph of \\(y = \\frac{3}{2}x - \\frac{1}{2}a\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "Set \\(\\frac{1}{2}x - a = \\frac{3}{2}x - \\frac{1}{2}a\\).\\nSimplify to find \\(x\\):\\n\\[\\frac{1}{2}x - a = \\frac{3}{2}x - \\frac{1}{2}a.\\]\\n\\[-a + \\frac{1}{2}a = \\frac{3}{2}x - \\frac{1}{2}x.\\]\\n\\[\\frac{-1}{2}a = x.\\]\\n\\[x = \\frac{3}{4}a.\\]\\nSubstitute \\(x = \\frac{3}{4}a\\) into either equation to find \\(y\\):\\n\\[y = \\frac{1}{2} \\left(\\frac{3}{4}a\\right) - a.\\]\\n\\[y = \\frac{5}{8}a.\\]\\nThus, the point of intersection is \\(\\left(\\frac{3}{4}a, \\frac{5}{8}a\\right)\\).",
+                "MarkingScheme": "M1 for setting equations equal.\\nA1 for \\(x = \\frac{3}{4}a\\).\\nA1 for \\(y = \\frac{5}{8}a\\)."
+            },
+            {
+                "Part": "c",
+                "Solution": "From part (b), the solution to \\(\\left|\\frac{1}{2}x - a\\right| > \\frac{3}{2}x - \\frac{1}{2}a\\) is \\(x < \\frac{3}{4}a\\).",
+                "MarkingScheme": "B1 for stating \\(x < \\frac{3}{4}a\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Analysis of Stationary Points and Trapezium Rule",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2020,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Differentiation and Numerical Methods",
+        "TopicsCovered": [
+            "Quotient Rule",
+            "Stationary Points",
+            "Trapezium Rule"
+        ],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w20_qp_22/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The diagram shows the curve with equation \\(y = \\frac{x - 2}{x^2 + 8}\\). The shaded region is bounded by the curve and the lines \\(x = 14\\) and \\(y = 0\\).\\n(a) Find \\(\\frac{dy}{dx}\\) and hence determine the exact \\(x\\)-coordinates of the stationary points. \\[4\\]\\n(b) Use the trapezium rule with three intervals to find an approximation to the area of the shaded region. Give the answer correct to 2 significant figures. \\[3\\]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Differentiate \\(y = \\frac{x - 2}{x^2 + 8}\\) using the quotient rule:\\n\\[\\frac{dy}{dx} = \\frac{(x^2 + 8) \\cdot 1 - (x - 2) \\cdot 2x}{(x^2 + 8)^2}.\\]\\nSimplify:\\n\\[\\frac{dy}{dx} = \\frac{x^2 + 8 - 2x(x - 2)}{(x^2 + 8)^2} = \\frac{-x^2 + 4x + 8}{(x^2 + 8)^2}.\\]\\nSet \\(\\frac{dy}{dx} = 0\\) to find the stationary points:\\n\\[-x^2 + 4x + 8 = 0.\\]\\nSolve the quadratic equation:\\n\\[x = 2 \\pm \\sqrt{12}.\\] \\[\\text{Stationary points are at } x = 2 + \\sqrt{12} \\text{ and } x = 2 - \\sqrt{12}.\\]",
+                "MarkingScheme": "M1 for applying the quotient rule, A1 for a correct derivative, DM1 for setting \\(\\frac{dy}{dx} = 0\\), A1 for correct solutions."
+            },
+            {
+                "Part": "b",
+                "Solution": "Using the trapezium rule with \\(h = 4\\) and the given \\(y\\)-values, the formula is:\\n\\[ \\text{Area} \\approx \\frac{h}{2} [y_0 + 2y_1 + 2y_2 + y_3]. \\]\\nSubstitute the \\(y\\)-values at \\(x = 0, 4, 8, 12\\):\\n\\[y_0 = \\frac{0 - 2}{0^2 + 8}, \\quad y_1 = \\frac{4 - 2}{4^2 + 8}, \\quad y_2 = \\frac{8 - 2}{8^2 + 8}, \\quad y_3 = \\frac{12 - 2}{12^2 + 8}.\\]\\nCalculate:\\n\\[\\text{Area} \\approx \\frac{4}{2} \\left[ \\frac{-2}{8} + 2 \\cdot \\frac{2}{24} + 2 \\cdot \\frac{6}{72} + \\frac{10}{152} \\right].\\]\\nSimplify:\\n\\[ \\text{Area} \\approx 0.78 \\text{ (correct to 2 significant figures)}.\\]",
+                "MarkingScheme": "B1 for identifying \\(y\\)-values, M1 for substituting into the trapezium rule formula, A1 for correct area."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Differentiation and Tangents",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2020,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Differentiation",
+        "TopicsCovered": [
+            "Implicit Differentiation",
+            "Tangents",
+            "Stationary Points"
+        ],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 3,
+            "PartC": 2
+        },
+        "DifficultyLevel": "Challenging",
+        "ImageUrl": [
+            "/9709_w20_qp_22/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The equation of a curve is \\(2e^{2x}y - y^3 + 4 = 0\\).\\n(a) Show that \\[\\frac{dy}{dx} = \\frac{4e^{2x}y}{3y^2 - 2e^{2x}}.\\] [4]\\n(b) The curve passes through the point \\((0, 2)\\).\\nFind the equation of the tangent to the curve at this point, giving your answer in the form \\(ax + by + c = 0\\). [3]\\n(c) Show that the curve has no stationary points. [2]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Differentiate \\(2e^{2x}y - y^3 + 4 = 0\\) implicitly:\\n\\[2e^{2x}(y + \\frac{dy}{dx}) - 3y^2\\frac{dy}{dx} = 0.\\]\\nRearrange for \\(\\frac{dy}{dx}\\):\\n\\[\\frac{dy}{dx}(2e^{2x} - 3y^2) = -2e^{2x}y.\\]\\nSolve:\\n\\[\\frac{dy}{dx} = \\frac{4e^{2x}y}{3y^2 - 2e^{2x}}.\\]",
+                "MarkingScheme": "M1 for using the product rule correctly, A1 for differentiating each term correctly, B1 for obtaining the correct form, A1 for final answer."
+            },
+            {
+                "Part": "b",
+                "Solution": "Substitute \\((0, 2)\\) into \\(\\frac{dy}{dx}\\):\\n\\[\\frac{dy}{dx} = \\frac{4e^{0} \\cdot 2}{3 \\cdot 2^2 - 2e^{0}} = \\frac{8}{8 - 2} = 2.\\]\\nEquation of tangent:\\n\\[y - 2 = 2(x - 0).\\]\\nRearrange:\\n\\[2x - y + 2 = 0.\\]",
+                "MarkingScheme": "M1 for finding gradient at \\((0, 2)\\), M1 for substituting into equation of tangent, A1 for final answer."
+            },
+            {
+                "Part": "c",
+                "Solution": "Stationary points occur when \\(\\frac{dy}{dx} = 0\\).\\n\\[\\frac{4e^{2x}y}{3y^2 - 2e^{2x}} = 0.\\]\\nThis implies \\(y = 0\\), but substituting \\(y = 0\\) into the curve equation \\(2e^{2x}y - y^3 + 4 = 0\\) gives \\(4 = 0\\), which is a contradiction.\\nThus, the curve has no stationary points.",
+                "MarkingScheme": "M1 for equating numerator to 0 and analyzing, A1 for valid conclusion."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Integration and Constants",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2020,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Integration and Trigonometry",
+        "TopicsCovered": [
+            "Definite Integration",
+            "Constant Determination"
+        ],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 6
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w20_qp_22/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "(a) Find \\[\\int \\left( \\frac{8}{4x+1} + \\frac{8}{\\cos^2(4x+1)} \\right) dx.\\] \\[4\\]\\n(b) It is given that \\[\\int_0^{\\frac{\\pi}{2}} \\left( 3 + 4\\cos^2 \\frac{1}{2}x + k\\sin 2x \\right) dx = 10.\\] Find the exact value of the constant \\(k\\). \\[6\\]"
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Express \\(\\frac{8}{\\cos^2(4x+1)}\\) as \\(8\\sec^2(4x+1)\\).\\nIntegrate:\\n\\[ \\int \\frac{8}{4x+1} \\, dx = 2\\ln|4x+1| + c. \\]\\n\\[ \\int 8\\sec^2(4x+1) \\, dx = 2\\tan(4x+1) + c. \\]\\nCombine to give:\\n\\[ 2\\ln|4x+1| + 2\\tan(4x+1) + c. \\]",
+                "MarkingScheme": "B1 for correct form of \\(8\\sec^2(4x+1)\\), M1 for correct integration, A1 for combined solution."
+            },
+            {
+                "Part": "b",
+                "Solution": "Express \\(4\\cos^2\\frac{1}{2}x\\) as \\(2 + 2\\cos x\\).\\nIntegrate each term:\\n\\[ \\int \\left(3 + 2 + 2\\cos x + k\\sin2x\\right) \\, dx = \\int 5 \\, dx + \\int 2\\cos x \\, dx + \\int k\\sin2x \\, dx. \\]\\n\\[ = 5x + 2\\sin x - \\frac{k}{2}\\cos 2x + c. \\]\\nApply limits \\(x = 0\\) to \\(x = \\frac{1}{2}\\pi\\):\\n\\[ \\left[5x + 2\\sin x - \\frac{k}{2}\\cos 2x\\right]_0^{\\frac{1}{2}\\pi} = 10. \\]\\nSubstitute limits and solve for \\(k\\):\\n\\[ \\frac{1}{2}\\pi k + \\dots = 10, \\quad \\therefore k = 8 - \\frac{5}{2}\\pi. \\]",
+                "MarkingScheme": "M1 for expressing \\(\\cos^2\\) in terms of \\(\\cos x\\), M1 for integrating each term, A1 for applying limits and solving for \\(k\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Factorization and Iterative Methods",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 2 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2020,
+        "Session": "October/November",
+        "PaperNumber": "Paper 2",
+        "QuestionNumber": 7,
+        "QuestionType": "Structured Question",
+        "Level": "P2",
+        "MathTopic": "Polynomials and Iterative Methods",
+        "TopicsCovered": [
+            "Factorization",
+            "Iterative Methods"
+        ],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 5,
+            "PartC": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_w20_qp_22/q7.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "A curve has equation \\(y = f(x)\\) where \\(f(x) = x^4 - 5x^3 + 6x^2 + 5x - 15\\).\\nAs shown in the diagram, the curve crosses the \\(x\\)-axis at the points \\(A\\) and \\(B\\) with coordinates \\((a, 0)\\) and \\((b, 0)\\) respectively.\\n(a) Use the factor theorem to show that \\((x - 3)\\) is a factor of \\(f(x)\\).\\n(b) By first finding the quotient when \\(f(x)\\) is divided by \\((x - 3)\\), show that \\(a = -\\sqrt{\\frac{5}{2 - a}}\\).\\n(c) Use an iterative formula, based on the equation in part (b), to find the value of \\(a\\) correct to 3 significant figures. Give the result of each iteration to 5 significant figures."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Using the factor theorem, substitute \\(x = 3\\) into \\(f(x)\\):\\n\\[f(3) = (3)^4 - 5(3)^3 + 6(3)^2 + 5(3) - 15 = 0.\\]\\nSimplify:\\n\\[81 - 135 + 54 + 15 - 15 = 0.\\]\\nSince \\(f(3) = 0\\), \\((x - 3)\\) is a factor of \\(f(x)\\).",
+                "MarkingScheme": "M1 for substitution of \\(x = 3\\) into \\(f(x)\\), A1 for concluding \\((x - 3)\\) is a factor."
+            },
+            {
+                "Part": "b",
+                "Solution": "Divide \\(f(x)\\) by \\((x - 3)\\) using synthetic or long division:\\n\\[f(x) = (x - 3)(x^3 - 2x^2 + 5).\\]\\nRearrange \\(x^3 - 2x^2 + 5 = 0\\) to find \\(a\\):\\n\\[a = -\\sqrt{\\frac{5}{2 - a}}.\\]",
+                "MarkingScheme": "M1 for dividing \\(f(x)\\) by \\((x - 3)\\), A1 for correct quotient, M1 for rearranging to obtain \\(a = -\\sqrt{\\frac{5}{2 - a}}\\)."
+            },
+            {
+                "Part": "c",
+                "Solution": "Use the iterative formula \\(a_{n+1} = -\\sqrt{\\frac{5}{2 - a_n}}\\):\\n\\[a_1 = -1.25,\\]\\n\\[a_2 = -1.2435,\\]\\n\\[a_3 = -1.2432.\\]\\nThus, \\(a = -1.24\\) to 3 significant figures.",
+                "MarkingScheme": "M1 for using iteration formula at least once, A1 for final value \\(a = -1.24\\), A1 for correct iterative process."
+            }
+        ]
+    }
+}
+]
+}
+
+
+
+
+
+
+

@@ -1,0 +1,576 @@
+{
+    "Metadata": {
+        "QuestionTitle": "Binomial Expansion Coefficients",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "MATH",
+        "YearOfExam": 2022,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 1,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Binomial Expansion",
+        "TopicsCovered": [
+            "Coefficient Comparison",
+            "Binomial Expansion"
+        ],
+        "MarksAllocation": {
+            "PartA": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_June_13/q1.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [],
+        "Text": "The coefficient of \\(x^3\\) in the expansion of \\((3 + 2ax)^5\\) is six times the coefficient of \\(x^2\\) in the expansion of \\((2 + ax)^6\\).\n\nFind the value of the constant \\(a\\)."
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The coefficient of \\(x^3\\) in \\((3 + 2ax)^5\\) is given by:\n\\[\\binom{5}{3} \\cdot 3^2 \\cdot (2a)^3 = 10 \\cdot 9 \\cdot 8a^3 = 720a^3.\\]\n\nThe coefficient of \\(x^2\\) in \\((2 + ax)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot 2^4 \\cdot (a)^2 = 15 \\cdot 16 \\cdot a^2 = 240a^2.\\]\n\nEquating \\(6 \\cdot \\text{Coefficient of } x^2\\) to \\(\\text{Coefficient of } x^3\\):\n\\[720a^3 = 6 \\cdot 240a^2.\\]\n\nSimplifying:\n\\[720a^3 = 1440a^2,\\]\n\\[a = 2.\\]",
+                "MarkingScheme": "B1 for correct coefficient of \\(x^3\\), B1 for correct coefficient of \\(x^2\\), M1 for equating coefficients, A1 for solving to find \\(a = 2\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Trigonometric Curve Analysis",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2022,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 2,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Trigonometry",
+        "TopicsCovered": ["Graph Analysis", "Amplitude", "Frequency", "Vertical Shift"],
+        "MarksAllocation": {
+            "PartA": 1,
+            "PartB": 1,
+            "PartC": 1
+        },
+        "DifficultyLevel": "Easy",
+        "ImageUrl": [
+            "/_P1_2022_June_13/q2.png"
+        ]
+    },
+    "QuestionContent": {
+        "Equation": "y = p sin(qθ) + r",
+        "GraphDescription": "The diagram shows part of the curve with equation y = p sin(qθ) + r, where p, q and r are constants.",
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "State the value of p."
+            },
+            {
+                "Part": "b",
+                "Text": "State the value of q."
+            },
+            {
+                "Part": "c",
+                "Text": "State the value of r."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Answers": {
+            "PartA": "p = 3",
+            "PartB": "q = 1/2",
+            "PartC": "r = -2"
+        },
+        "MarkingScheme": {
+            "PartA": "B1 for identifying the amplitude of 3.",
+            "PartB": "B1 for identifying the frequency parameter as 1/2.",
+            "PartC": "B1 for identifying the vertical shift as -2."
+        }
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Arithmetic Progression",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2022,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 3,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Arithmetic Progressions",
+        "TopicsCovered": ["Sum of Terms", "nth Term"],
+        "MarksAllocation": {
+            "PartA": 1,
+            "PartB": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_June_13/q3.png"
+        ]
+    },
+    "QuestionContent": {
+        "Text": "An arithmetic progression has first term 4 and common difference \\(d\\). The sum of the first \\(n\\) terms of the progression is 5863.",
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Show that \\((n - 1)d = \\frac{11726}{n} - 8\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Given that the \\(n\\)th term is 139, find the values of \\(n\\) and \\(d\\), giving the value of \\(d\\) as a fraction."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "\\[\\frac{n}{2} \\left[8 + (n-1)d \\right] = 5863 \\] leads to \\[ n \\cdot \\left[8 + (n-1)d \\right] = 11726 \\]. Dividing by \\(n\\) and simplifying gives \\((n-1)d = \\frac{11726}{n} - 8\\).",
+                "MarkingScheme": "B1 for showing a correct intermediate step leading to the required result."
+            },
+            {
+                "Part": "b",
+                "Solution": "The \\(n\\)th term \\(u_n\\) is given by \\(4 + (n-1)d = 139\\), leading to \\[(n-1)d = 135\\]. Using \\((n-1)d = \\frac{11726}{n} - 8\\), substitute \\(n = 82\\):\n\\[d = \\frac{11726}{82} - 8 = \\frac{5}{3}.\\]",
+                "MarkingScheme": "M1 for correct use of the \\(u_n\\) formula and substitution. A1 for finding \\(n = 82\\). A1 for \\(d = \\frac{5}{3}\\) (accept equivalent fractions)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Transformation of Quadratic Functions",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2022,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 4,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Transformations",
+        "TopicsCovered": ["Translation", "Stretch"],
+        "MarksAllocation": {
+            "PartA": 3,
+            "PartB": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_June_13/q4.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "The curve with equation \\(y = x^2 + 2x - 5\\) is translated by \\((-1, 3)\\).\n\nFind the equation of the translated curve, giving your answer in the form \\(y = ax^2 + bx + c\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "The curve with equation \\(y = x^2 + 2x - 5\\) is transformed to a curve with equation \\(y = 4x^2 + 4x - 5\\).\n\nDescribe fully the single transformation that has been applied."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Substituting \\(x+1\\) for \\(x\\) and adding 3 to \\(y\\):\n\\[y = (x+1)^2 + 2(x+1) - 5 + 3\\]\nSimplifies to:\n\\[y = x^2 + 4x + 1.\\]",
+                "MarkingScheme": "M1 for translating \\(x\\) by \\(-1\\). M1 for translating \\(y\\) by 3. A1 for the correct equation \\(y = x^2 + 4x + 1\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "The transformation is a stretch in the \\(y\\)-direction with scale factor 4.",
+                "MarkingScheme": "B2 for describing the correct stretch. Partial marks if the scale factor or direction is incorrect."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Trigonometric Equations",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2022,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 5,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Trigonometry",
+        "TopicsCovered": ["Quadratic Form Equations", "Trigonometric Equations"],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_June_13/q5.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Solve the equation \\(6\\sqrt{y} + \\frac{2}{\\sqrt{y}} - 7 = 0\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Hence solve the equation \\(6\\sqrt{\\tan x} + \\frac{2}{\\sqrt{\\tan x}} - 7 = 0\\) for \\(0^\\circ \\leq x \\leq 360^\\circ\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Rearrange into a quadratic form: \\(6y + 2y^{-1} - 7 = 0\\) becomes:\n\\[6(y) + \\frac{2}{y} - 7 = 0\\] Multiply through by \\(y\\) (\\(y \\neq 0\\)):\n\\[6y^2 - 7y + 2 = 0.\\] Solve using the quadratic formula:\n\\[y = \\frac{1}{2} \\text{ or } y = \\frac{4}{9}.\\]",
+                "MarkingScheme": "M1 for forming and rearranging the quadratic equation. DM1 for solving the quadratic correctly. A1 for each correct root \\(y = \\frac{1}{2}\\) and \\(y = \\frac{4}{9}\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "Substitute \\(y = \\tan x\\):\n\\[\\tan x = \\frac{1}{2} \\text{ or } \\tan x = \\frac{4}{9}.\\] Solve for \\(x\\) using a calculator:\n\\[x = 14.0^\\circ, 194.0^\\circ, 24.0^\\circ, 204.0^\\circ.\\]",
+                "MarkingScheme": "M1 for using \\(\\tan x = \\text{their } y\\). A1 for each correct angle."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Function Analysis and Transformation",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2022,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 6,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Functions and Transformations",
+        "TopicsCovered": ["Completing the Square", "Range of Functions", "Inverse Functions", "Composite Functions"],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 1,
+            "PartC": 3,
+            "PartD": 2
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_June_13/q6.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Express \\(f(x)\\) in the form \\(2(x+a)^2 + b\\), where \\(f(x) = 2x^2 - 16x + 23\\) for \\(x < 3\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the range of \\(f\\)."
+            },
+            {
+                "Part": "c",
+                "Text": "Find an expression for \\(f^{-1}(x)\\)."
+            },
+            {
+                "Part": "d",
+                "Text": "The function \\(g(x) = 2x + 4\\) for \\(x < -1\\). Find and simplify an expression for \\(fg(x)\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Complete the square:\n\\[f(x) = 2(x^2 - 8x) + 23\\] becomes \\[f(x) = 2(x-4)^2 - 9.\\]",
+                "MarkingScheme": "B1 for the correct completion of the square. B1 for the correct values of \\(a = -4\\) and \\(b = -9\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "\\(f(x) > -9\\), so the range of \\(f\\) is \\((-9, \\infty)\\).",
+                "MarkingScheme": "B1 for the correct range."
+            },
+            {
+                "Part": "c",
+                "Solution": "Solve \\(y = 2(x-4)^2 - 9\\) for \\(x\\):\n\\[(x-4)^2 = \\frac{y+9}{2}\\] and \\[x = 4 \\pm \\sqrt{\\frac{y+9}{2}}.\\]\nFor \\(x < 3\\), \\(f^{-1}(x) = 4 - \\sqrt{\\frac{x+9}{2}}.\\]",
+                "MarkingScheme": "M1 for isolating \\(x\\). A1 for the correct inverse expression."
+            },
+            {
+                "Part": "d",
+                "Solution": "Substitute \\(g(x) = 2x+4\\) into \\(f(x)\\):\n\\[f(g(x)) = 2((2x+4)-4)^2 - 9\\] simplifies to \\[f(g(x)) = 8x^2 - 9.\\]",
+                "MarkingScheme": "M1 for correct substitution. A1 for simplifying to \\(f(g(x)) = 8x^2 - 9\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Circle Equation and Intersection",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2022,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 7,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Coordinate Geometry",
+        "TopicsCovered": ["Equation of a Circle", "Intersection of Line and Circle"],
+        "MarksAllocation": {
+            "PartA": 2,
+            "PartB": 5
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_June_13/q7.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the equation of \\(BC\\), given that the circle has the equation \\((x - 2)^2 + (y + 4)^2 = 20\\), and point \\(B\\) is \\((0, 2)\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Hence, find the coordinates of \\(P\\), where line \\(BC\\) intersects the circle, giving your answer in exact form."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The gradient of line \\(BC\\) is \\(-\\frac{3}{2}\\) (calculated from \\((2 - (-4))/(0 - 2) = -3/2\\)).\nUsing point-slope form, the equation is:\n\\[y - 2 = -\\frac{3}{2}(x - 0),\\] simplifying to \\[y = -\\frac{3}{2}x + 2.\\]",
+                "MarkingScheme": "B1 for finding the gradient. B1 for the correct equation in any form."
+            },
+            {
+                "Part": "b",
+                "Solution": "Substitute \\(y = -\\frac{3}{2}x + 2\\) into \\((x - 2)^2 + (y + 4)^2 = 20\\):\n\\[(x - 2)^2 + \\left(-\\frac{3}{2}x + 6\\right)^2 = 20.\\]\nSimplify and solve:\n\\[10x^2 - 40x + 20 = 0.\\]\nFactoring or quadratic formula gives roots \\(x = 2 - \\sqrt{2}\\) and \\(x = 2 + \\sqrt{2}\\).\nFor \\(y\\), substitute \\(x = 2 - \\sqrt{2}\\):\n\\[y = 3\\sqrt{2} - 4.\\]\nCoordinates of \\(P\\): \\((2 - \\sqrt{2}, 3\\sqrt{2} - 4)\\).",
+                "MarkingScheme": "M1 for substituting the line equation into the circle. A1 for the quadratic equation. DM1 for solving the quadratic. A1 for each correct coordinate."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Tangent and Area under Curve",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2022,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 8,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Differentiation and Integration",
+        "TopicsCovered": ["Equation of Tangent", "Area under Curve"],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_June_13/q8.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the equation of the tangent to the curve \\(y = x^{1/2} + 4x^{-1/2}\\) at the point \\(A(1, 5)\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Calculate the area of the shaded region between the curve \\(y = x^{1/2} + 4x^{-1/2}\\) and the line \\(y = 5\\) from \\(x = 1\\) to \\(x = 16\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Differentiate \\(y = x^{1/2} + 4x^{-1/2}\\):\n\\[\\frac{dy}{dx} = \\frac{1}{2}x^{-1/2} - 2x^{-3/2}.\\]\nAt \\(x = 1\\):\n\\[\\frac{dy}{dx} = \\frac{1}{2}(1^{-1/2}) - 2(1^{-3/2}) = -\\frac{3}{2}.\\]\nEquation of tangent:\n\\[y - 5 = -\\frac{3}{2}(x - 1).\\]\nSimplifies to:\n\\[y = -\\frac{3}{2}x + \\frac{13}{2}.\\]",
+                "MarkingScheme": "B1 for differentiation. M1 for substituting \\(x = 1\\). A1 for slope. A1 for final tangent equation."
+            },
+            {
+                "Part": "b",
+                "Solution": "Integrate \\(y = x^{1/2} + 4x^{-1/2}\\):\n\\[\\int (x^{1/2} + 4x^{-1/2}) dx = \\frac{2}{3}x^{3/2} + 8x^{1/2}.\\]\nApply limits \\(x = 1\\) to \\(x = 16\\):\n\\[(\\frac{2}{3}(16)^{3/2} + 8(16)^{1/2}) - (\\frac{2}{3}(1)^{3/2} + 8(1)^{1/2}) = 75.\\]\nSubtract the area under the line \\(y = 5\\):\n\\[75 - (15 \\times 5) = 9.\\]\nArea of shaded region: \\(9\\).",
+                "MarkingScheme": "B1 for integration. M1 for applying limits. B1 for subtracting area under the line. A1 for final area."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Perimeter and Area of a Shaded Region",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2022,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 9,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Trigonometry",
+        "TopicsCovered": ["Arc Length", "Sector Area", "Triangle Area"],
+        "MarksAllocation": {
+            "PartA": 5,
+            "PartB": 3
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_June_13/q9.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find the perimeter of the shaded region, given that triangle \\(ABC\\) has \\(AB = BC = 6\\, \\text{cm}\\), \\(\\angle ABC = 1.8\\, \\text{radians}\\), and arc \\(CD\\) is part of a circle with centre \\(A\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "Find the area of the shaded region."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Using the cosine rule, \\(AC^2 = 6^2 + 6^2 - 2(6)(6)\\cos(1.8)\\):\n\\[AC = 9.40 \\text{ cm.}\\]\nThe angle \\(\\angle CAB = \\frac{1}{2}(\\pi - 1.8) = 0.6708\\).\nLength of arc \\(CD = 9.40 \\times 0.6708 = 6.31 \\text{ cm.}\\]\nPerimeter of the shaded region:\n\\[6 + 9.40 + 6.31 = 15.7 \\text{ cm.}\\]",
+                "MarkingScheme": "M1 for using cosine rule. A1 for correct \\(AC\\). M1 for finding arc length. A1 for the correct perimeter."
+            },
+            {
+                "Part": "b",
+                "Solution": "Area of sector \\(ADC = \\frac{1}{2}(9.40^2)(0.6708) = 29.64 \\, \\text{cm}^2.\\)\nArea of triangle \\(ABC = \\frac{1}{2}(6)(6)\\sin(1.8) = 17.53 \\, \\text{cm}^2.\\)\nShaded area = \\(29.64 - 17.53 = 12.1 \\, \\text{cm}^2.\\)",
+                "MarkingScheme": "M1 for finding the area of the sector. M1 for finding the area of the triangle. A1 for the correct shaded area."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Integration and Motion along a Curve",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2022,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 10,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Integration and Differentiation",
+        "TopicsCovered": ["Definite Integration", "Motion along a Curve"],
+        "MarksAllocation": {
+            "PartA": 4,
+            "PartB": 6
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_June_13/q10.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "Find \\(\\int_{1}^{\\infty} f(x) dx\\), where \\(f(x) = (4x + 2)^{-2}\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "A point is moving along the curve \\(y = f(x)\\) such that its \\(y\\)-coordinate is decreasing at a rate of \\(k\\) units per second and its \\(x\\)-coordinate is increasing at a rate of \\(k\\) units per second. Find the coordinates of point \\(A\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "Integrate \\((4x + 2)^{-2}\\):\n\\[\\int (4x + 2)^{-2} dx = \\frac{-1}{16x + 8}.\\]\nEvaluate from \\(1\\) to \\(\\infty\\):\n\\[\\left[\\frac{-1}{16x + 8}\\right]_1^\\infty = 0 - \\left(-\\frac{1}{24}\\right) = \\frac{1}{24}.\\]",
+                "MarkingScheme": "B1 for integration. M1 for applying limits. A1 for correct evaluation \\(\\frac{1}{24}\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "Differentiate \\(f(x) = (4x + 2)^{-2}\\):\n\\[\\frac{dy}{dx} = -8(4x + 2)^{-3}.\\]\nGiven \\(\\frac{dy}{dx} = -1\\), solve for \\(x\\):\n\\[-8(4x + 2)^{-3} = -1 \\implies 4x + 2 = 2.\\]\nThus, \\(x = 0\\). For \\(y\\):\n\\[y = (4(0) + 2)^{-2} = \\frac{1}{4}.\\]\nCoordinates of \\(A\\): \\((0, \\frac{1}{4})\\).",
+                "MarkingScheme": "B1 for differentiation. B1 for using \\(\\frac{dy}{dx} = -1\\). M1 for solving \\(x\\) and substituting. A1 for \\((0, \\frac{1}{4})\\)."
+            }
+        ]
+    }
+},
+{
+    "Metadata": {
+        "QuestionTitle": "Tangent and Normal to a Curve",
+        "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
+        "ExamBoard": "CAIE",
+        "SyllabusCode": "9709",
+        "Subject": "Mathematics",
+        "YearOfExam": 2022,
+        "Session": "May/June",
+        "PaperNumber": "Paper 1",
+        "QuestionNumber": 11,
+        "QuestionType": "Structured Question",
+        "Level": "P1",
+        "MathTopic": "Coordinate Geometry",
+        "TopicsCovered": ["Tangent to a Curve", "Normal to a Curve"],
+        "MarksAllocation": {
+            "PartA": 6,
+            "PartB": 4
+        },
+        "DifficultyLevel": "Moderate",
+        "ImageUrl": [
+            "/9709_P1_2022_June_13/q11.png"
+        ]
+    },
+    "QuestionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Text": "The point \\(P\\) lies on the line with equation \\(y = mx + c\\), where \\(m\\) and \\(c\\) are positive constants. A curve has equation \\(y = \\frac{-m}{x}\\). There is a single point \\(P\\) on the curve such that the straight line is a tangent to the curve at \\(P\\). Find the coordinates of \\(P\\), giving the \\(y\\)-coordinate in terms of \\(m\\)."
+            },
+            {
+                "Part": "b",
+                "Text": "The normal to the curve at \\(P\\) intersects the curve again at the point \\(Q\\). Find the coordinates of \\(Q\\) in terms of \\(m\\)."
+            }
+        ]
+    },
+    "SolutionContent": {
+        "Parts": [
+            {
+                "Part": "a",
+                "Solution": "The line is tangent to the curve at \\(P\\), so \\(mx + c = \\frac{-m}{x}\\).\nMultiply through by \\(x\\):\n\\[mx^2 + cx + m = 0.\\]\nUsing the condition for a tangent \\(b^2 - 4ac = 0\\):\n\\[c^2 - 4m^2 = 0 \\implies c = 2m.\\]\nSubstitute \\(c = 2m\\):\n\\[mx^2 + 2mx + m = 0 \\implies (x + 1)^2 = 0.\\]\nThus, \\(x = -1\\) and \\(y = m\\). Coordinates of \\(P\\): \\((-1, m)\\).",
+                "MarkingScheme": "M1 for forming the quadratic equation. M1 for applying \\(b^2 - 4ac = 0\\). A1 for solving \\(c = 2m\\). A1 for \\((-1, m)\\)."
+            },
+            {
+                "Part": "b",
+                "Solution": "The gradient of the curve is \\(\\frac{dy}{dx} = \\frac{m}{x^2}\\). At \\(P(-1, m)\\), gradient = \\(m\\). Normal gradient = \\(-\\frac{1}{m}\\).\nEquation of the normal:\n\\[y - m = -\\frac{1}{m}(x + 1).\\]\nSubstitute \\(y = \\frac{-m}{x}\\):\n\\[-x - \\frac{1}{m} + m = \\frac{-m}{x}\\]\nSimplify to:\n\\[x^2 + x(1 - m^2) - m^2 = 0.\\]\nSolve for \\(x\\):\n\\[x = m^2.\\]\nSubstitute into \\(y = \\frac{-m}{x}\\):\n\\[y = \\frac{-m}{m^2} = \\frac{-1}{m}.\\]\nCoordinates of \\(Q\\): \\((m^2, \\frac{-1}{m})\\).",
+                "MarkingScheme": "M1 for forming the equation of the normal. DM1 for substituting the curve equation. A1 for solving \\(x = m^2\\). A1 for \\((m^2, \\frac{-1}{m})\\)."
+            }
+        ]
+    }
+}
