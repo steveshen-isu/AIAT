@@ -257,7 +257,7 @@ function FilterTable({ selectedFilter, setSelectedFilter, questions }) {
   return (
     <div className="w-80">
       {categoryKeys.map((category) => (
-        <div className="bg-white rounded-lg shadow-sm p-6">
+        <div className="bg-white rounded-lg shadow-sm p-6" key={category}>
           <FilterCategoryRow category={category} key={category} />
           <div className="border-t mt-6 pt-6">
             {categories[category]?.map((value, index) => (
@@ -271,13 +271,13 @@ function FilterTable({ selectedFilter, setSelectedFilter, questions }) {
 }
 
 function FilterCategoryRow({ category }) {
-  return <h3 className="text-lg font-medium mb-4">{category}</h3>;
+  return <h3 className="text-lg font-medium mb-4" key={category}>{category}</h3>;
 }
 
 function FilterRow({ content, selectedFilter, setSelectedFilter }) {
   return (
     <button
-      // key={key}
+      key={content}
       onClick={() =>
         setSelectedFilter(selectedFilter === content ? "" : content)
       }
