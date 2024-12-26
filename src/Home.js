@@ -10,8 +10,7 @@ import ExamGrader from './components/ExamGrader';
 import Button from './components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent } from './components/ui/card';
 import { FaBook, FaChartLine, FaComments, FaCalculator, FaGraduationCap } from 'react-icons/fa'; // Import icons
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import PrivacyPolicy from './pages/PrivacyPolicy';
+
 
 
 function Home() {
@@ -50,6 +49,7 @@ function Home() {
     return (
         <div className="App bg-gray-50 min-h-screen flex flex-col">
             {selectedComponent && (<nav className="bg-red-900 text-white p-4 fixed top-0 left-0 right-0 z-10 shadow-md">
+
                 <div className="flex justify-between items-center">
                     <div className="text-xl font-bold">AIAT</div>
                     <div className="flex space-x-4">
@@ -230,7 +230,7 @@ function Home() {
                 </Button>
 
             </div>)}
-            <div className="mt-[10vh] w-full">{renderComponent()}</div>
+            <div className="pt-8 mt-[10vh] w-full">{renderComponent()}</div>
             {!selectedComponent && (
                 <footer class="bg-gray-800 text-white py-8">
                     <div class="container mx-auto px-4">
