@@ -109,7 +109,7 @@ function ChatBox() {
         setPastedImage(null);
     };
     return (
-        <div className="flex flex-col h-[80vh] bg-gray-100">
+        <div className="flex flex-col h-[85vh] bg-gray-100">
             {/* Chat container */}
             <div className="h-[75vh] overflow-y-auto">
                 {/* Displaying conversation */}
@@ -152,7 +152,7 @@ function ChatBox() {
             </div>
 
             {/* Message input (always at the bottom) */}
-            <div className="flex h-[16vh] items-center space-x-4 p-4 border-t border-gray-300 bg-white fixed bottom-0 w-full mt-10">
+            <div className="flex h-[10vh] items-center space-x-4 p-4 border-t border-gray-300 bg-white fixed bottom-0 w-full mt-10">
                 <textarea
                     className="!custom-textarea p-4 bg-white border border-gray-300 rounded-lg w-1/2 max-w-3x1 resize-none !text-hase placeholder-gray-500"
                     value={message}
