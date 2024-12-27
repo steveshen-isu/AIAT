@@ -203,7 +203,7 @@ function Home() {
                     <div
                         className="absolute inset-0 flex flex-col items-center justify-center space-y-2 transition-opacity duration-300 opacity-0 group-hover:opacity-100"
                     >
-                        <span className="text-lg font-bold text-center text-white">
+                        <span className="text-lg font-bold text-center text-black">
                             Quick retrieval of classic questions.
                         </span>
 

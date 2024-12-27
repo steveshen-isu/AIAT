@@ -196,13 +196,6 @@ const typewriterEffectResponse = async (content, setDisplayContent) => {
         }
     }
 };
-// Function to create random delay
-/* const delayRandomTime = () => {
-    return new Promise(resolve => {
-        const randomDelay = Math.floor(Math.random() * 1) + 0; // Delay between 50ms to 250ms
-        setTimeout(resolve, randomDelay);
-    });
-};  */
 
 const textdelayRandomTime = () => {
     return new Promise(resolve => {
@@ -316,74 +309,6 @@ const TypewriterRendererExample = ({ content }) => {
 };
 
 
-function escapeBackslashes(str) {
-    return str.replace(/\\/g, '\\\\');
-}
-
-const renderContentWithLatex = (content) => {
-    // Regular expression to match LaTeX math mode delimiters \( ... \) or \[ ... \]
-    content = content.replace(/\\\[\s*/g, '\\[');  // Replace \[ with \( and remove leading spaces
-    content = content.replace(/\s*\\\]/g, '\\]');  // Replace \] with \) and remove trailing spaces
-
-    const regex = /(\\\(.*?\\\))|(\\\[.*?\\\])|(\\\[\\\n.*?\\\]\\\n)/g;
-
-    // Split content into plain text and LaTeX parts
-    const parts = content.split(regex).filter(Boolean);
-
-    console.log('parts in rendercontent function', parts);
-
-    // Process each part and return a string of HTML
-    const htmlContent = parts.map((part, index) => {
-        if (!part) return '';  // Skip undefined or empty parts
-
-
-        // If part starts with a LaTeX delimiter, render it with KaTeX
-        if (part.startsWith('\\(') || part.startsWith('\\[') || part.include('\\')) {
-
-            try {
-                const isDisplayMode = part.startsWith('[');  // Use display mode for \[ \]
-                const mathContent = part.replace(/\\[\(\[\)\]]/g, '')
-                return katex.renderToString(mathContent, {
-                    delimiters: [
-                        { left: '$$', right: '$$', display: true },
-                        { left: '$', right: '$', display: false },
-                        { left: '\\(', right: '\\)', display: false },
-                        { left: '\\[', right: '\\]', display: true }
-                    ], throwOnError: false, displayMode: isDisplayMode
-                });
-            } catch (e) {
-                console.error('Error rendering LaTeX:', e);
-                return `<span class="error">Failed to render LaTeX: ${part}</span>`;
-            }
-        } else {
-            // Render plain text, replacing newlines with <br> tags for line breaks
-            return part.replace(/\n/g, '<br />');
-        }
-    });
-
-    // Join all parts into a single HTML string and return it
-    return htmlContent.join('');
-};
-
-function Typewriter({ text, speed = 50 }) {
-    const [displayedText, setDisplayedText] = useState('');
-
-    useEffect(() => {
-        let index = 0;
-        const timer = setInterval(() => {
-            if (index < text.length) {
-                setDisplayedText(prev => prev + text[index]);
-                index++;
-            } else {
-                clearInterval(timer);
-            }
-        }, speed);
-
-        return () => clearInterval(timer);
-    }, [text, speed]);
-
-    return <span dangerouslySetInnerHTML={{ __html: displayedText }} />;
-}
 
 
 
@@ -469,47 +394,6 @@ function TopicSelector() {
         }
 
     };
-    // Fetch subjects on component mount
-    /* useEffect(() => {
-        fetch('http://localhost:200/api/subjects')
-            .then(response => response.json())
-            .then(data => setSubjects(data))
-            .catch(error => console.error('Error fetching subjects:', error));
-    }, []);
-
-    // Fetch textbooks when a subject is selected
-    useEffect(() => {
-        if (selectedSubject) {
-            fetch(`http://localhost:200/api/textbooks?subjectId=${selectedSubject}`)
-                .then(response => response.json())
-                .then(setTextbooks)
-                .catch(error => console.error('Error fetching textbooks:', error));
-        } else {
-            setTextbooks([]); // Clear textbooks when no subject is selected
-        }
-    }, [selectedSubject]);
-
-    // Fetch chapters when a textbook is selected
-    useEffect(() => {
-        if (selectedTextbook) {
-            fetch(`http://localhost:200/api/chapters?textbookId=${selectedTextbook}`)
-                .then(response => response.json())
-                .then(setChapters)
-                .catch(error => console.error('Error fetching chapters:', error));
-        } else {
-            setChapters([]); // Clear chapters when no textbook is selected
-        }
-    }, [selectedTextbook]);
-
-    // Fetch LaTeX code when a chapter is selected
-    useEffect(() => {
-        if (selectedChapter) {
-            fetch(`http://localhost:200/api/latex-code?chapterId=${selectedChapter}`)
-                .then(response => response.json())
-                .then(data => setLatexCode(data.latexCode))
-                .catch(error => console.error('Error fetching LaTeX code:', error));
-        }
-    }, [selectedChapter]); */
 
 
     useEffect(() => {
@@ -588,16 +472,6 @@ function TopicSelector() {
             .catch((error) => console.error('Error fetching question solution:', error));
     };
 
-    /* const latexCodetest = `
-\\begin{equation}
-x + y = z
-\\end{equation}
-\\begin{equation}
-x + y = z
-\\end{equation}
-`; */
-    /* const escapedLatexCode = escapeBackslashes(latexCode); */
-
     console.log('Latex Code on render:', questionSolution);
     /*     console.log('html on render:', renderContentWithLatex(latexCode)); */
 
@@ -635,7 +509,6 @@ x + y = z
         }
     };
 
-    const renderedresoponse = renderLatex(escapeBackslashes(response));
     console.log('response from openai', response);
     return (
 
@@ -926,7 +799,7 @@ const styles = {
         overflow: 'auto',
         border: '20px solid rgb(139, 0, 0)',
         width: '100vw',
-        
+
     },
     left: {
         width: '50%',                 // Left section width

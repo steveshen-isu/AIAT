@@ -71,7 +71,10 @@ import katex from 'katex';
         useEffect(() => {
             let isMounted = true;
             // Start the typewriter effect when the component loads
-
+            if (!content) {
+                setDisplayContent('');
+                return;
+            }
             setDisplayContent(''); // Reset before running
             typewriterEffectResponse(content, setDisplayContent);
             return () => {
