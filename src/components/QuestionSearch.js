@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from "react";
+import QuestionDetail from "./QuestionDetail";
 
-function FilterableQuestionTable() {
+function FilterableQuestionTable({ onQuestionSelected }) {
   const [searchText, setSearchText] = useState("");
   const [selectedFilter, setSelectedFilter] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
@@ -118,7 +119,8 @@ function FilterableQuestionTable() {
     currentPage,
     setCurrentPage,
     itemsPerPage,
-    setItemsPerPage
+    setItemsPerPage,
+    onQuestionSelected,
   };
   return (
     <div className="min-h-screen bg-gray-50">
@@ -169,7 +171,8 @@ function QuestionTable({
   currentPage,
   setCurrentPage,
   itemsPerPage,
-  setItemsPerPage
+  setItemsPerPage,
+  onQuestionSelected,
 }) {
   const filteredQuestions = useMemo(() => {
     let filtered = [...questions];
@@ -211,10 +214,18 @@ function QuestionTable({
 
       <div className="space-y-4">
         {currentQuestions.map((question) => (
-          <QuestionRow question={question} key={question.id} />
+          <QuestionRow
+            question={question}
+            key={question.id}
+            onQuestionSelected={onQuestionSelected}
+          />
         ))}
       </div>
-      <PaginationButtons currentPage={currentPage} totalPages={totalPages} handlePageChange={handlePageChange} />
+      <PaginationButtons
+        currentPage={currentPage}
+        totalPages={totalPages}
+        handlePageChange={handlePageChange}
+      />
     </div>
   );
 }
@@ -245,7 +256,7 @@ function PaginationButtons({ currentPage, totalPages, handlePageChange }) {
   return buttons;
 }
 
-function QuestionRow({ question }) {
+function QuestionRow({ question, onQuestionSelected }) {
   return (
     <div
       key={question.id}
@@ -267,7 +278,10 @@ function QuestionRow({ question }) {
             </span>
           </div>
         </div>
-        <button className="ml-4 px-4 py-2 bg-blue-50 text-blue-600 hover:bg-blue-100 !rounded-button whitespace-nowrap">
+        <button
+          className="ml-4 px-4 py-2 bg-blue-50 text-blue-600 hover:bg-blue-100 !rounded-button whitespace-nowrap"
+          onClick={() => onQuestionSelected(question)}
+        >
           View Details
         </button>
       </div>
@@ -353,5 +367,26 @@ function FilterRow({ category, content, selectedFilter, setSelectedFilter }) {
 }
 
 export default function QuestionSearch() {
-  return <FilterableQuestionTable />;
+  const [showDetail, setShowDetail] = useState(false);
+  const [showFilterableQuestionTable, setShowFilterableQuestionTable] =
+    useState(true);
+  const [currentQuestion, setCurrentQuestion] = useState(null);
+  const handleQuestionSelected = (question) => {
+    setCurrentQuestion(question);
+    setShowDetail(true);
+    setShowFilterableQuestionTable(false);
+  };
+  const handleGoBack = () => {
+    setShowDetail(false);
+    setShowFilterableQuestionTable(true);
+  };
+
+  return (
+    <>
+      {showFilterableQuestionTable && (
+        <FilterableQuestionTable onQuestionSelected={handleQuestionSelected} />
+      )}
+      {showDetail && <QuestionDetail onGoBack={handleGoBack} question={currentQuestion}/>}
+    </>
+  );
 }
