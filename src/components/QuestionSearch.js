@@ -1,11 +1,13 @@
 import React, { useState, useMemo, useEffect } from "react";
 import QuestionDetail from "./QuestionDetail";
+import axios from "axios";
 
 function FilterableQuestionTable({ onQuestionSelected }) {
   const [searchText, setSearchText] = useState("");
   const [selectedFilter, setSelectedFilter] = useState({});
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(5);
+  const [results, setResults] = useState([]);
 
   useEffect(() => {
     const calculateItemsPerPage = () => {
@@ -23,104 +25,18 @@ function FilterableQuestionTable({ onQuestionSelected }) {
     );
   }, []);
 
-  const [questions] = useState([
-    {
-      id: 1,
-      questionTitle: "optimize performance issues",
-      questionContent:
-        "How to optimize performance issues in large-scale data processing?",
-      examBoard: "CAIE",
-      syllabusCode: "9709",
-      subject: "MATH",
-      yearOfExam: 2022,
-      session: "May/June",
-      level: "P1",
-      solutionContent:
-        "The coefficient of \\(x^3\\) in \\((3 + 2ax)^5\\) is given by:\n\\[\\binom{5}{3} \\cdot 3^2 \\cdot (2a)^3 = 10 \\cdot 9 \\cdot 8a^3 = 720a^3.\\]\n\nThe coefficient of \\(x^2\\) in \\((2 + ax)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot 2^4 \\cdot (a)^2 = 15 \\cdot 16 \\cdot a^2 = 240a^2.\\]\n\nEquating \\(6 \\cdot \\text{Coefficient of } x^2\\) to \\(\\text{Coefficient of } x^3\\):\n\\[720a^3 = 6 \\cdot 240a^2.\\]\n\nSimplifying:\n\\[720a^3 = 1440a^2,\\]\n\\[a = 2.\\]",
-    },
-    {
-      id: 2,
-      questionTitle: "the best practices for inter-service communication",
-      questionContent:
-        "What are the best practices for inter-service communication in microservices?",
-      examBoard: "CAIE",
-      syllabusCode: "9709",
-      subject: "MATH",
-      yearOfExam: "2023",
-      session: "May/June",
-      level: "P1",
-      solutionContent:
-        "The coefficient of \\(x^3\\) in \\((3 + 2ax)^5\\) is given by:\n\\[\\binom{5}{3} \\cdot 3^2 \\cdot (2a)^3 = 10 \\cdot 9 \\cdot 8a^3 = 720a^3.\\]\n\nThe coefficient of \\(x^2\\) in \\((2 + ax)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot 2^4 \\cdot (a)^2 = 15 \\cdot 16 \\cdot a^2 = 240a^2.\\]\n\nEquating \\(6 \\cdot \\text{Coefficient of } x^2\\) to \\(\\text{Coefficient of } x^3\\):\n\\[720a^3 = 6 \\cdot 240a^2.\\]\n\nSimplifying:\n\\[720a^3 = 1440a^2,\\]\n\\[a = 2.\\]",
-    },
-    {
-      id: 3,
-      questionTitle: "Data consistency issues",
-      questionContent:
-        "Data consistency issues encountered during Redis cluster deployment",
-      examBoard: "CAIE",
-      syllabusCode: "9709",
-      subject: "MATH",
-      yearOfExam: "2024",
-      session: "May/June",
-      level: "P1",
-      solutionContent:
-        "The coefficient of \\(x^3\\) in \\((3 + 2ax)^5\\) is given by:\n\\[\\binom{5}{3} \\cdot 3^2 \\cdot (2a)^3 = 10 \\cdot 9 \\cdot 8a^3 = 720a^3.\\]\n\nThe coefficient of \\(x^2\\) in \\((2 + ax)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot 2^4 \\cdot (a)^2 = 15 \\cdot 16 \\cdot a^2 = 240a^2.\\]\n\nEquating \\(6 \\cdot \\text{Coefficient of } x^2\\) to \\(\\text{Coefficient of } x^3\\):\n\\[720a^3 = 6 \\cdot 240a^2.\\]\n\nSimplifying:\n\\[720a^3 = 1440a^2,\\]\n\\[a = 2.\\]",
-    },
-    {
-      id: 4,
-      questionTitle: "scheduling strategies",
-      questionContent:
-        "Resource scheduling strategies in Kubernetes container orchestration",
-      examBoard: "CAIE",
-      syllabusCode: "9709",
-      subject: "MATH",
-      yearOfExam: "2022",
-      session: "May/June",
-      level: "P1",
-      solutionContent:
-        "The coefficient of \\(x^3\\) in \\((3 + 2ax)^5\\) is given by:\n\\[\\binom{5}{3} \\cdot 3^2 \\cdot (2a)^3 = 10 \\cdot 9 \\cdot 8a^3 = 720a^3.\\]\n\nThe coefficient of \\(x^2\\) in \\((2 + ax)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot 2^4 \\cdot (a)^2 = 15 \\cdot 16 \\cdot a^2 = 240a^2.\\]\n\nEquating \\(6 \\cdot \\text{Coefficient of } x^2\\) to \\(\\text{Coefficient of } x^3\\):\n\\[720a^3 = 6 \\cdot 240a^2.\\]\n\nSimplifying:\n\\[720a^3 = 1440a^2,\\]\n\\[a = 2.\\]",
-    },
-    {
-      id: 5,
-      questionTitle: "ensure transaction consistency",
-      questionContent:
-        "How to ensure transaction consistency in distributed systems?",
-      examBoard: "CAIE",
-      syllabusCode: "9709",
-      subject: "MATH",
-      yearOfExam: "2024",
-      session: "May/June",
-      level: "P1",
-      solutionContent:
-        "The coefficient of \\(x^3\\) in \\((3 + 2ax)^5\\) is given by:\n\\[\\binom{5}{3} \\cdot 3^2 \\cdot (2a)^3 = 10 \\cdot 9 \\cdot 8a^3 = 720a^3.\\]\n\nThe coefficient of \\(x^2\\) in \\((2 + ax)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot 2^4 \\cdot (a)^2 = 15 \\cdot 16 \\cdot a^2 = 240a^2.\\]\n\nEquating \\(6 \\cdot \\text{Coefficient of } x^2\\) to \\(\\text{Coefficient of } x^3\\):\n\\[720a^3 = 6 \\cdot 240a^2.\\]\n\nSimplifying:\n\\[720a^3 = 1440a^2,\\]\n\\[a = 2.\\]",
-    },
-    {
-      id: 6,
-      questionTitle: "image lazy loading",
-      questionContent:
-        "Implementation of image lazy loading in frontend performance optimization",
-      examBoard: "CAIE",
-      syllabusCode: "9709",
-      subject: "MATH",
-      yearOfExam: "2021",
-      session: "May/June",
-      level: "P1",
-      solutionContent:
-        "The coefficient of \\(x^3\\) in \\((3 + 2ax)^5\\) is given by:\n\\[\\binom{5}{3} \\cdot 3^2 \\cdot (2a)^3 = 10 \\cdot 9 \\cdot 8a^3 = 720a^3.\\]\n\nThe coefficient of \\(x^2\\) in \\((2 + ax)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot 2^4 \\cdot (a)^2 = 15 \\cdot 16 \\cdot a^2 = 240a^2.\\]\n\nEquating \\(6 \\cdot \\text{Coefficient of } x^2\\) to \\(\\text{Coefficient of } x^3\\):\n\\[720a^3 = 6 \\cdot 240a^2.\\]\n\nSimplifying:\n\\[720a^3 = 1440a^2,\\]\n\\[a = 2.\\]",
-    },
-  ]);
-
   const statesFunctions = {
     searchText,
     setSearchText,
     selectedFilter,
     setSelectedFilter,
-    questions,
     currentPage,
     setCurrentPage,
     itemsPerPage,
     setItemsPerPage,
     onQuestionSelected,
+    results,
+    setResults,
   };
   return (
     <div className="min-h-screen bg-gray-50">
@@ -167,22 +83,41 @@ function QuestionTable({
   setSearchText,
   selectedFilter,
   setSelectedFilter,
-  questions,
   currentPage,
   setCurrentPage,
   itemsPerPage,
   setItemsPerPage,
   onQuestionSelected,
+  results,
+  setResults,
 }) {
-  const filteredQuestions = useMemo(() => {
-    let filtered = [...questions];
-
-    if (searchText) {
-      filtered = filtered.filter((q) =>
-        q.questionContent.toLowerCase().includes(searchText.toLowerCase())
-      );
+  const fetchQuestionData = async (searchText, setResults) => {
+    try {
+      if (searchText) {
+        const response = await axios.post(
+          "http://localhost:200/api/queryQuestionBank",
+          {
+            searchText,
+          }
+        );
+        setResults(response.data);
+      }
+    } catch (error) {
+      console.error("请求出错：", error);
     }
+  };
 
+  const [currentQuestions, setCurrentQuestions] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      await fetchQuestionData(searchText, setResults);
+    };
+    fetchData();
+  }, [searchText]);
+
+  const currentQuestionsMemo = useMemo(() => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    let filtered = results.slice(startIndex, startIndex + itemsPerPage);
     if (selectedFilter) {
       let tFiltered = [...filtered];
       Object.entries(selectedFilter).forEach(([key, value]) => {
@@ -190,14 +125,13 @@ function QuestionTable({
       });
     }
     return filtered;
-  }, [questions, searchText, selectedFilter]);
+  }, [results, currentPage, itemsPerPage, selectedFilter]);
 
-  const currentQuestions = useMemo(() => {
-    const startIndex = (currentPage - 1) * itemsPerPage;
-    return filteredQuestions.slice(startIndex, startIndex + itemsPerPage);
-  }, [filteredQuestions, currentPage, itemsPerPage]);
+  useEffect(() => {
+    setCurrentQuestions(currentQuestionsMemo);
+  }, [currentQuestionsMemo]);
 
-  const totalPages = Math.ceil(filteredQuestions.length / itemsPerPage);
+  const totalPages = Math.ceil(results.length / itemsPerPage);
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -207,9 +141,7 @@ function QuestionTable({
     <div className="flex-1">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-bold">Search Results</h2>
-        <span className="text-gray-500">
-          {filteredQuestions.length} questions found
-        </span>
+        <span className="text-gray-500">{results.length} questions found</span>
       </div>
 
       <div className="space-y-4">
@@ -289,7 +221,7 @@ function QuestionRow({ question, onQuestionSelected }) {
   );
 }
 
-function FilterTable({ selectedFilter, setSelectedFilter, questions }) {
+function FilterTable({ selectedFilter, setSelectedFilter, results }) {
   const [categories, setCategories] = useState({});
   const categoryKeys = [
     "examBoard",
@@ -300,13 +232,13 @@ function FilterTable({ selectedFilter, setSelectedFilter, questions }) {
     "level",
   ];
   useEffect(() => {
-    if (questions.length > 0) {
+    if (results.length > 0) {
       const tCategories = {};
       categoryKeys.forEach((title) => {
-        const isExists = questions.every((item) => title in item);
+        const isExists = results.every((item) => title in item);
         if (isExists) {
           const valuesSet = new Set();
-          const values = questions.map((item) => item[title]);
+          const values = results.map((item) => item[title]);
           values.forEach((value) => valuesSet.add(value));
           tCategories[title] = Array.from(valuesSet) || [];
         } else {
@@ -315,7 +247,7 @@ function FilterTable({ selectedFilter, setSelectedFilter, questions }) {
       });
       setCategories(tCategories);
     }
-  }, []);
+  }, [results]);
 
   return (
     <div className="w-80">
@@ -386,7 +318,9 @@ export default function QuestionSearch() {
       {showFilterableQuestionTable && (
         <FilterableQuestionTable onQuestionSelected={handleQuestionSelected} />
       )}
-      {showDetail && <QuestionDetail onGoBack={handleGoBack} question={currentQuestion}/>}
+      {showDetail && (
+        <QuestionDetail onGoBack={handleGoBack} question={currentQuestion} />
+      )}
     </>
   );
 }
