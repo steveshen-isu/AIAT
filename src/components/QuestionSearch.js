@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo, useEffect, useRef } from "react";
 import QuestionDetail from "./QuestionDetail";
 import axios from "axios";
 
@@ -65,6 +65,47 @@ function FilterableQuestionTable({
   );
 }
 
+function UploadImage() {
+  const [imageData, setImageData] = useState(null);
+  const fileInputRef = useRef(null);
+
+  const handleImageUpload = () => {
+    const file = fileInputRef.current.files[0];
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = function (event) {
+        const img = new Image();
+        img.onload = function () {
+          setImageData(img);
+          console.log(img);
+        };
+        img.src = event.target.result;
+      };
+
+      reader.readAsDataURL(file);
+    }
+  };
+
+  return (
+    <div className="flex flex-col items-center space-y-4">
+      <input
+        type="file"
+        ref={fileInputRef}
+        className="hidden"
+        onChange={handleImageUpload}
+      />
+      <button
+        className="flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-lg px-4 py-2 ml-4 !rounded-button whitespace-nowrap text-gray-500"
+        onClick={() => fileInputRef.current.click()}
+      >
+        <i className="fas fa-image mr-2"></i>
+        Upload Image
+      </button>
+    </div>
+  );
+}
+
 function SearchBar({ searchText, setSearchText }) {
   return (
     <div className="relative">
@@ -77,10 +118,7 @@ function SearchBar({ searchText, setSearchText }) {
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
-        <button className="flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-lg px-4 py-2 ml-4 !rounded-button whitespace-nowrap text-gray-500">
-          <i className="fas fa-image mr-2"></i>
-          Upload Image
-        </button>
+        <UploadImage />
       </div>
       <button
         onClick={() => setSearchText(searchText)}
