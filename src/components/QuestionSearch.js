@@ -2,12 +2,21 @@ import React, { useState, useMemo, useEffect } from "react";
 import QuestionDetail from "./QuestionDetail";
 import axios from "axios";
 
-function FilterableQuestionTable({ onQuestionSelected }) {
-  const [searchText, setSearchText] = useState("");
-  const [selectedFilter, setSelectedFilter] = useState({});
-  const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(5);
-  const [results, setResults] = useState([]);
+function FilterableQuestionTable({
+  onQuestionSelected,
+  searchText,
+  setSearchText,
+  results,
+  setResults,
+  currentQuestions,
+  setCurrentQuestions,
+  selectedFilter,
+  setSelectedFilter,
+  currentPage,
+  setCurrentPage,
+  itemsPerPage,
+  setItemsPerPage,
+}) {
 
   useEffect(() => {
     const calculateItemsPerPage = () => {
@@ -37,6 +46,8 @@ function FilterableQuestionTable({ onQuestionSelected }) {
     onQuestionSelected,
     results,
     setResults,
+    currentQuestions,
+    setCurrentQuestions,
   };
   return (
     <div className="min-h-screen bg-gray-50">
@@ -80,16 +91,15 @@ function SearchBar({ searchText, setSearchText }) {
 
 function QuestionTable({
   searchText,
-  setSearchText,
   selectedFilter,
-  setSelectedFilter,
   currentPage,
   setCurrentPage,
   itemsPerPage,
-  setItemsPerPage,
   onQuestionSelected,
   results,
   setResults,
+  currentQuestions,
+  setCurrentQuestions,
 }) {
   const fetchQuestionData = async (searchText, setResults) => {
     try {
@@ -107,7 +117,6 @@ function QuestionTable({
     }
   };
 
-  const [currentQuestions, setCurrentQuestions] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       await fetchQuestionData(searchText, setResults);
@@ -302,7 +311,14 @@ export default function QuestionSearch() {
   const [showDetail, setShowDetail] = useState(false);
   const [showFilterableQuestionTable, setShowFilterableQuestionTable] =
     useState(true);
+  const [searchText, setSearchText] = useState("");
+  const [results, setResults] = useState([]);
+  const [currentQuestions, setCurrentQuestions] = useState([]);
+  const [selectedFilter, setSelectedFilter] = useState({});
   const [currentQuestion, setCurrentQuestion] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(5);
+
   const handleQuestionSelected = (question) => {
     setCurrentQuestion(question);
     setShowDetail(true);
@@ -316,7 +332,21 @@ export default function QuestionSearch() {
   return (
     <>
       {showFilterableQuestionTable && (
-        <FilterableQuestionTable onQuestionSelected={handleQuestionSelected} />
+        <FilterableQuestionTable
+          onQuestionSelected={handleQuestionSelected}
+          searchText={searchText}
+          setSearchText={setSearchText}
+          results={results}
+          setResults={setResults}
+          currentQuestions={currentQuestions}
+          setCurrentQuestions={setCurrentQuestions}
+          selectedFilter={selectedFilter}
+          setSelectedFilter={setSelectedFilter}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          itemsPerPage={itemsPerPage}
+          setItemsPerPage={setItemsPerPage}
+        />
       )}
       {showDetail && (
         <QuestionDetail onGoBack={handleGoBack} question={currentQuestion} />
