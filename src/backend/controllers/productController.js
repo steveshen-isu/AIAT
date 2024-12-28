@@ -92,12 +92,57 @@ function handleJsonObjects(jsonObjects) {
 }
 
 const queryQuestions = (question, callback) => {
+  let currentId = 1;
   const sql = `SELECT * FROM question_bank WHERE JSON_SEARCH(qa_json, 'one', '%${question}%', NULL, '$[*].QuestionContent') IS NOT NULL;`;
   db.query(sql, (err, results) => {
     if (err) {
       callback(err, null);
     } else {
-      callback(null, results);
+      const processedResults = results
+        .map((result) => {
+          const qaJson = result.qa_json;
+          if (Array.isArray(qaJson)) {
+            return qaJson.map((item) => {
+              const metadata = item.Metadata;
+              const questionTitle = metadata && metadata.QuestionTitle;
+              const questionContent =
+                item.QuestionContent && item.QuestionContent.Text;
+              const examBoard = metadata && metadata.ExamBoard;
+              const syllabusCode = metadata && metadata.SyllabusCode;
+              const subject = metadata && metadata.Subject;
+              const yearOfExam = metadata && metadata.YearOfExam;
+              const session = metadata && metadata.Session;
+              const level = metadata && metadata.Level;
+              const solutionContent = item.SolutionContent;
+              let joinedSolution = '';
+              if (
+                solutionContent &&
+                solutionContent.Parts &&
+                Array.isArray(solutionContent.Parts)
+              ) {
+                const solutionTexts = solutionContent.Parts.map((part) => {
+                  return part.Solution ? part.Solution : '';
+                }).filter((text) => text);
+                joinedSolution = solutionTexts.join('\n');
+              }
+              return {
+                id: currentId++,
+                questionTitle: questionTitle,
+                questionContent: questionContent,
+                examBoard: examBoard,
+                syllabusCode: syllabusCode,
+                subject: subject,
+                yearOfExam: yearOfExam,
+                session: session,
+                level: level,
+                solutionContent: joinedSolution
+              };
+            });
+          }
+          return [];
+        })
+        .flat();
+      callback(null, processedResults);
     }
   });
 };
@@ -127,8 +172,8 @@ export const syncQuestionBank = (req, res) => {
 
 // Controller for query from question bank
 export const queryQuestionBank = (req, res) => {
-  const { question } = req.body;
-  queryQuestions(question, (err, results) => {
+  const { searchText } = req.body;
+  queryQuestions(searchText, (err, results) => {
     if (err) {
       res.status(500).json({ error: 'Query failed.' });
     } else {
