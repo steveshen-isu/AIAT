@@ -94,20 +94,22 @@ const SeriesCalculator = () => {
       const hasVariable = (str) => /[a-zA-Z]/.test(str);
       if (hasVariable(summationFrom) && !hasVariable(summationTo)) {
         const summationFromExpr = summationExpr
-        .replace(/n\^3/g, `${summationFrom}(${summationFrom}+1)/2`)  
-        .replace(/n\^2/g, `${summationFrom}(${summationFrom}+1)(2${summationFrom}+1)/6`)
-          .replace(/n/g, `${summationFrom}(${summationFrom}+1)/2`);
+          .replace(/n\^3/g, `${summationFrom}(${summationFrom}+1)/2`)
+          .replace(/n\^2/g, `${summationFrom}(${summationFrom}+1)(2${summationFrom}+1)/6`)
+          .replace(/\/n/g, `log(${summationTo})+0.57721`)
+          .replace(/n/g, `${summationTo}(${summationTo}+1)/2`);
         const to = summationTo === 'infinity' ? 10000 : summationTo;
         const summation = nerdamer.sum(summationExpr, 'n', 1, to);
         const calculatedSum = summation.text('decimal', 5).slice(1);
         const summationResult = nerdamer(`simplify(${calculatedSum}-${summationFromExpr})`).toTeX();
         const summationExprToDis = '\\[' + summationExpr + '\\]'
         setResult({ expression: summationExprToDis, summationResult });
-      } else if (!hasVariable(summationFrom) && hasVariable(summationTo)) {
+      } else if (!hasVariable(summationFrom) && hasVariable(summationTo) && summationTo.trim() != 'infinity' && summationTo.includes("inf") === false) {
         const summationToExpr = summationExpr
-        .replace(/n\^3/g, `${summationTo}(${summationTo}+1)/2`)
-        .replace(/n\^2/g, `${summationTo}(${summationTo}+1)(2${summationTo}+1)/6`)
-        .replace(/n/g, `${summationTo}(${summationTo}+1)/2`);
+          .replace(/n\^3/g, `${summationTo}(${summationTo}+1)/2`)
+          .replace(/n\^2/g, `${summationTo}(${summationTo}+1)(2${summationTo}+1)/6`)
+          .replace(/\/n/g, `log(${summationTo})+0.57721`)
+          .replace(/n/g, `${summationTo}(${summationTo}+1)/2`);
         const summation = nerdamer.sum(summationExpr, 'n', 1, summationFrom);
         const calculatedSum = summation.text('decimal', 5).slice(1);
         const summationResult = nerdamer(`simplify(${summationToExpr}-${calculatedSum})`).toTeX();
@@ -115,25 +117,34 @@ const SeriesCalculator = () => {
         setResult({ expression: summationExprToDis, summationResult });
       } else if (hasVariable(summationFrom) && hasVariable(summationTo)) {
         const summationFromExpr = summationExpr
-        .replace(/n\^3/g, `${summationFrom}(${summationFrom}+1)/2`)  
-        .replace(/n\^2/g, `${summationFrom}(${summationFrom}+1)(2${summationFrom}+1)/6`)
-          .replace(/n/g, `${summationFrom}(${summationFrom}+1)/2`);
+          .replace(/n\^3/g, `${summationFrom}(${summationFrom}+1)/2`)
+          .replace(/n\^2/g, `${summationFrom}(${summationFrom}+1)(2${summationFrom}+1)/6`)
+          .replace(/\/n/g, `log(${summationTo})+0.57721`)
+          .replace(/n/g, `${summationTo}(${summationTo}+1)/2`);
         const summationToExpr = summationExpr
-        .replace(/n\^3/g, `${summationTo}(${summationTo}+1)/2`)
-        .replace(/n\^2/g, `${summationTo}(${summationTo}+1)(2${summationTo}+1)/6`)
-        .replace(/n/g, `${summationTo}(${summationTo}+1)/2`);
-          ;
-          console.log('sum to:',  summationToExpr , 'sum from:', summationFromExpr)
-          const summationResult = nerdamer(`simplify(${summationToExpr}-${summationFromExpr})`).toTeX();
-          const summationExprToDis = '\\[' + summationExpr + '\\]'
-          setResult({ expression: summationExprToDis, summationResult });
-      } else {
-        const to = summationTo === 'infinity' ? 10000 : summationTo;
-        const summation = nerdamer.sum(summationExpr, 'n', summationFrom, to);
-        const calculatedSum = summation.text('decimal', 5).slice(1);
-
+          .replace(/n\^3/g, `${summationTo}(${summationTo}+1)/2`)
+          .replace(/n\^2/g, `${summationTo}(${summationTo}+1)(2${summationTo}+1)/6`)
+          .replace(/\/n/g, `log(${summationTo})+0.57721`)
+          .replace(/n/g, `${summationTo}(${summationTo}+1)/2`);
+        const summationResult = nerdamer(`simplify(${summationToExpr}-${summationFromExpr})`).toTeX();
         const summationExprToDis = '\\[' + summationExpr + '\\]'
-        setResult({ expression: summationExprToDis, calculatedSum });
+        setResult({ expression: summationExprToDis, summationResult });
+      } else {
+        if (summationTo.includes('inf') && summationTo.trim() != 'infinity') {
+          setResult({ error: 'do you mean infinity?' })
+          return;
+        } else if (summationTo.trim() === 'infinity' &&
+          Math.abs(nerdamer.sum(summationExpr, 'n', 1, 1000) - nerdamer.sum(summationExpr, 'n', 1, 2000)) > 0.01 &&
+          Math.abs(nerdamer.sum(summationExpr, 'n', 1, 2000) - nerdamer.sum(summationExpr, 'n', 1, 3000)) > 0.01) {
+          setResult({ error: 'Series diverges.' })
+        } else {
+          const to = summationTo === 'infinity' ? 3000 : summationTo;
+          const summation = nerdamer.sum(summationExpr, 'n', summationFrom, to);
+          const calculatedSum = Math.round(summation.text('decimal', 5).slice(1) *100)/100;
+
+          const summationExprToDis = '\\[' + summationExpr + '\\]'
+          setResult({ expression: summationExprToDis, calculatedSum });
+        }
       }
     } catch (e) {
       setResult({ error: 'Error evaluating the summation.' });
