@@ -16,6 +16,8 @@ function FilterableQuestionTable({
   setCurrentPage,
   itemsPerPage,
   setItemsPerPage,
+  selectedButton,
+  setSelectedButton,
 }) {
   useEffect(() => {
     const calculateItemsPerPage = () => {
@@ -47,6 +49,8 @@ function FilterableQuestionTable({
     setResults,
     currentQuestions,
     setCurrentQuestions,
+    selectedButton,
+    setSelectedButton,
   };
   return (
     <div className="min-h-screen bg-gray-50">
@@ -229,7 +233,13 @@ function QuestionRow({ question, onQuestionSelected }) {
   );
 }
 
-function FilterTable({ selectedFilter, setSelectedFilter, results }) {
+function FilterTable({
+  selectedFilter,
+  setSelectedFilter,
+  results,
+  selectedButton,
+  setSelectedButton,
+}) {
   const [categories, setCategories] = useState({});
   const categoryKeys = [
     "examBoard",
@@ -260,6 +270,14 @@ function FilterTable({ selectedFilter, setSelectedFilter, results }) {
     }
   }, [results]);
 
+  let rowCounter = 0;
+
+  const handleClick = (rowId, filter) => {
+    setSelectedButton(null);
+    setSelectedButton(rowId);
+    setSelectedFilter(selectedFilter === filter ? null : filter);
+  };
+
   return (
     <div className="w-80">
       {categoryKeys.map((category) => (
@@ -271,7 +289,9 @@ function FilterTable({ selectedFilter, setSelectedFilter, results }) {
                 key={index}
                 category={category}
                 content={value}
-                setSelectedFilter={setSelectedFilter}
+                rowId={rowCounter++}
+                selectedButton={selectedButton}
+                handleClick={handleClick}
               />
             ))}
           </div>
@@ -289,17 +309,19 @@ function FilterCategoryRow({ category }) {
   );
 }
 
-function FilterRow({ category, content, selectedFilter, setSelectedFilter }) {
+function FilterRow({ category, content, rowId, selectedButton, handleClick }) {
   const filter = {};
   filter[category] = content;
+
+  const isButtonSelected = (rowId) => {
+    return selectedButton === rowId;
+  };
+
   return (
     <button
-      key={content}
-      onClick={() =>
-        setSelectedFilter(selectedFilter === filter ? null : filter)
-      }
+      onClick={() => handleClick(rowId, filter)}
       className={`w-full text-left px-4 py-2 !rounded-button whitespace-nowrap text-black ${
-        selectedFilter === content
+        isButtonSelected(rowId)
           ? "bg-blue-50 text-blue-600"
           : "bg-gray-50 hover:bg-gray-100"
       }`}
@@ -320,6 +342,7 @@ export default function QuestionSearch() {
   const [currentQuestion, setCurrentQuestion] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(5);
+  const [selectedButton, setSelectedButton] = useState(null);
 
   const handleQuestionSelected = (question) => {
     setCurrentQuestion(question);
@@ -348,6 +371,8 @@ export default function QuestionSearch() {
           setCurrentPage={setCurrentPage}
           itemsPerPage={itemsPerPage}
           setItemsPerPage={setItemsPerPage}
+          selectedButton={selectedButton}
+          setSelectedButton={setSelectedButton}
         />
       )}
       {showDetail && (
