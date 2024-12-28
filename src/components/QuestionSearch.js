@@ -17,7 +17,6 @@ function FilterableQuestionTable({
   itemsPerPage,
   setItemsPerPage,
 }) {
-
   useEffect(() => {
     const calculateItemsPerPage = () => {
       const viewportHeight = window.innerHeight;
@@ -187,7 +186,7 @@ function PaginationButtons({ currentPage, totalPages, handlePageChange }) {
         className={`px-4 py-2 mx-1 !rounded-button whitespace-nowrap ${
           currentPage === i
             ? "bg-blue-600 text-white"
-            : "bg-white border border-gray-300 hover:bg-gray-50"
+            : "bg-gray-200 border border-gray-300 hover:bg-gray-50"
         }`}
       >
         {i}
@@ -244,14 +243,17 @@ function FilterTable({ selectedFilter, setSelectedFilter, results }) {
     if (results.length > 0) {
       const tCategories = {};
       categoryKeys.forEach((title) => {
-        const isExists = results.every((item) => title in item);
-        if (isExists) {
-          const valuesSet = new Set();
-          const values = results.map((item) => item[title]);
-          values.forEach((value) => valuesSet.add(value));
-          tCategories[title] = Array.from(valuesSet) || [];
+        const values = [];
+        results.forEach((item) => {
+          if (title in item) {
+            values.push(item[title]);
+          }
+        });
+        if (values.length > 0) {
+          const valuesSet = new Set(values);
+          tCategories[title] = Array.from(valuesSet);
         } else {
-          console.log(`${title} missed in some objects.`);
+          console.log(`${title} missed in all objects or has no valid values.`);
         }
       });
       setCategories(tCategories);
@@ -282,7 +284,7 @@ function FilterTable({ selectedFilter, setSelectedFilter, results }) {
 function FilterCategoryRow({ category }) {
   return (
     <h3 className="text-lg font-medium mb-4" key={category}>
-      {category}
+      {[category[0].toUpperCase(), ...category.slice(1)].join("")}
     </h3>
   );
 }
