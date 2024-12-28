@@ -1,6 +1,6 @@
-import React, { useState, useMemo, useEffect, useRef } from "react";
-import QuestionDetail from "./QuestionDetail";
-import axios from "axios";
+import React, { useState, useMemo, useEffect, useRef } from 'react';
+import QuestionDetail from './QuestionDetail';
+import axios from 'axios';
 import Tesseract from 'tesseract.js';
 import { franc } from 'franc-min';
 
@@ -32,8 +32,8 @@ function FilterableQuestionTable({
       return Math.max(3, Math.floor(availableHeight / questionCardHeight));
     };
     setItemsPerPage(calculateItemsPerPage());
-    window.addEventListener("resize", () =>
-      setItemsPerPage(calculateItemsPerPage())
+    window.addEventListener('resize', () =>
+      setItemsPerPage(calculateItemsPerPage()),
     );
   }, []);
 
@@ -68,48 +68,50 @@ function FilterableQuestionTable({
 }
 
 const recognizeImage = async (base64Image) => {
-    try {
-        // Run OCR with English (eng)
-        const { data: { text: englishText } } = await Tesseract.recognize(base64Image, 'eng', {
-            logger: (m) => console.log(m),
-        });
-        console.log("OCR Result (English):", englishText);
+  try {
+    // Run OCR with English (eng)
+    const {
+      data: { text: englishText },
+    } = await Tesseract.recognize(base64Image, 'eng', {
+      logger: (m) => console.log(m),
+    });
+    console.log('OCR Result (English):', englishText);
 
-        // Run OCR with Chinese (chi_sim)
-        const { data: { text: chineseText } } = await Tesseract.recognize(base64Image, 'chi_sim', {
-            logger: (m) => console.log(m),
-        });
-        console.log("OCR Result (Chinese):", chineseText);
+    // Run OCR with Chinese (chi_sim)
+    const {
+      data: { text: chineseText },
+    } = await Tesseract.recognize(base64Image, 'chi_sim', {
+      logger: (m) => console.log(m),
+    });
+    console.log('OCR Result (Chinese):', chineseText);
 
-        // Use franc to detect language
-        const englishLanguage = franc(englishText);
-        const chineseLanguage = franc(chineseText);
+    // Use franc to detect language
+    const englishLanguage = franc(englishText);
+    const chineseLanguage = franc(chineseText);
 
-        console.log("Language detected for English:", englishLanguage);
-        console.log("Language detected for Chinese:", chineseLanguage);
+    console.log('Language detected for English:', englishLanguage);
+    console.log('Language detected for Chinese:', chineseLanguage);
 
-        // Compare and select the best OCR result based on language detection
-        let selectedText = englishText;
-        let selectedLanguage = 'eng';  // Default to English
+    // Compare and select the best OCR result based on language detection
+    let selectedText = englishText;
+    let selectedLanguage = 'eng'; // Default to English
 
-        if (chineseLanguage === 'cmn') {
-            selectedText = chineseText;
-            selectedLanguage = 'chi_sim'; // Use Chinese text
-        }
-
-        console.log("Selected Language:", selectedLanguage);
-        console.log("Selected Text:", selectedText);
-
-        return selectedText;
-
-    } catch (error) {
-        console.error("Error during OCR recognition:", error);
-        return null;
+    if (chineseLanguage === 'cmn') {
+      selectedText = chineseText;
+      selectedLanguage = 'chi_sim'; // Use Chinese text
     }
+
+    console.log('Selected Language:', selectedLanguage);
+    console.log('Selected Text:', selectedText);
+
+    return selectedText;
+  } catch (error) {
+    console.error('Error during OCR recognition:', error);
+    return null;
+  }
 };
 
-function UploadImage() {
-  const [imageData, setImageData] = useState(null);
+function UploadImage({ setSearchText }) {
   const fileInputRef = useRef(null);
 
   const handleImageUpload = () => {
@@ -120,9 +122,9 @@ function UploadImage() {
       reader.onload = function (event) {
         const img = new Image();
         img.onload = async function () {
-          setImageData(img);
           console.log(img);
           const extractedText = await recognizeImage(img);
+          setSearchText(extractedText.trim());
           console.log(extractedText);
         };
         img.src = event.target.result;
@@ -163,7 +165,7 @@ function SearchBar({ searchText, setSearchText }) {
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
-        <UploadImage />
+        <UploadImage setSearchText={setSearchText} />
       </div>
       <button
         onClick={() => setSearchText(searchText)}
@@ -191,15 +193,15 @@ function QuestionTable({
     try {
       if (searchText) {
         const response = await axios.post(
-          "http://localhost:200/api/queryQuestionBank",
+          'http://localhost:200/api/queryQuestionBank',
           {
             searchText,
-          }
+          },
         );
         setResults(response.data);
       }
     } catch (error) {
-      console.error("请求出错：", error);
+      console.error('Request failed: ', error);
     }
   };
 
@@ -229,7 +231,7 @@ function QuestionTable({
   const totalPages = Math.ceil(results.length / itemsPerPage);
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -272,12 +274,12 @@ function PaginationButtons({ currentPage, totalPages, handlePageChange }) {
         onClick={() => handlePageChange(i)}
         className={`px-4 py-2 mx-1 !rounded-button whitespace-nowrap ${
           currentPage === i
-            ? "bg-blue-600 text-white"
-            : "bg-gray-200 border border-gray-300 hover:bg-gray-50"
+            ? 'bg-blue-600 text-white'
+            : 'bg-gray-200 border border-gray-300 hover:bg-gray-50'
         }`}
       >
         {i}
-      </button>
+      </button>,
     );
   }
   return buttons;
@@ -325,12 +327,12 @@ function FilterTable({
 }) {
   const [categories, setCategories] = useState({});
   const categoryKeys = [
-    "examBoard",
-    "syllabusCode",
-    "subject",
-    "yearOfExam",
-    "session",
-    "level",
+    'examBoard',
+    'syllabusCode',
+    'subject',
+    'yearOfExam',
+    'session',
+    'level',
   ];
   useEffect(() => {
     if (results.length > 0) {
@@ -387,7 +389,7 @@ function FilterTable({
 function FilterCategoryRow({ category }) {
   return (
     <h3 className="text-lg font-medium mb-4" key={category}>
-      {[category[0].toUpperCase(), ...category.slice(1)].join("")}
+      {[category[0].toUpperCase(), ...category.slice(1)].join('')}
     </h3>
   );
 }
@@ -405,8 +407,8 @@ function FilterRow({ category, content, rowId, selectedButton, handleClick }) {
       onClick={() => handleClick(rowId, filter)}
       className={`w-full text-left px-4 py-2 !rounded-button whitespace-nowrap text-black ${
         isButtonSelected(rowId)
-          ? "bg-blue-50 text-blue-600"
-          : "bg-gray-50 hover:bg-gray-100"
+          ? 'bg-blue-50 text-blue-600'
+          : 'bg-gray-50 hover:bg-gray-100'
       }`}
     >
       {content}
@@ -418,7 +420,7 @@ export default function QuestionSearch() {
   const [showDetail, setShowDetail] = useState(false);
   const [showFilterableQuestionTable, setShowFilterableQuestionTable] =
     useState(true);
-  const [searchText, setSearchText] = useState("");
+  const [searchText, setSearchText] = useState('');
   const [results, setResults] = useState([]);
   const [currentQuestions, setCurrentQuestions] = useState([]);
   const [selectedFilter, setSelectedFilter] = useState({});
