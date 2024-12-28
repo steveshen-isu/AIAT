@@ -792,13 +792,13 @@ function TopicSelector() {
 const styles = {
     container: {
         display: 'flex',              // Enable Flexbox
-        height: '150vh',              // Full viewport height
+        height: '100vh',              // Full viewport height
         justifyContent: 'space-between', // Space between the two sections
         padding: '0px',              // Padding for the container
         borderRadius: '20px',         // Rounded corners
-        overflow: 'auto',
+        overflow: 'hidden',
         border: '20px solid rgb(139, 0, 0)',
-        width: '100vw',
+        width: '99vw',
 
     },
     left: {

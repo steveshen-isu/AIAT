@@ -1,12 +1,23 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-x = np.linspace(-2 * np.pi, 2 * np.pi, 1000)
-y = np.sin(x)
+# Define the function
+def f(x):
+    return (x**2 + 2*x + 1) / (x + 2)
 
-plt.plot(x, y)
+# Generate x values avoiding the vertical asymptote at x = -2
+x = np.linspace(-10, 10, 1000)
+x = x[x != -2]
+
+# Plot the function
+plt.figure(figsize=(8, 6))
+plt.plot(x, f(x), label=r"$\frac{x^2+2x+1}{x+2}$", color="blue")
+
+# Add grid
 plt.grid(True)
-plt.title("y = sin(x)\nThe Sine Function")
-plt.xlabel("x")
-plt.ylabel("sin(x)")
+
+# Add title with theorem and equations
+plt.title("Illustration of Asymptote\nFunction: $\\frac{x^2+2x+1}{x+2}$", fontsize=14)
+
+# Save the plot as an image
 plt.savefig("plot.png")
