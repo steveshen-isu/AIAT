@@ -1,6 +1,8 @@
 import React, { useState, useMemo, useEffect, useRef } from "react";
 import QuestionDetail from "./QuestionDetail";
 import axios from "axios";
+import Tesseract from 'tesseract.js';
+import { franc } from 'franc-min';
 
 function FilterableQuestionTable({
   onQuestionSelected,
@@ -65,6 +67,47 @@ function FilterableQuestionTable({
   );
 }
 
+const recognizeImage = async (base64Image) => {
+    try {
+        // Run OCR with English (eng)
+        const { data: { text: englishText } } = await Tesseract.recognize(base64Image, 'eng', {
+            logger: (m) => console.log(m),
+        });
+        console.log("OCR Result (English):", englishText);
+
+        // Run OCR with Chinese (chi_sim)
+        const { data: { text: chineseText } } = await Tesseract.recognize(base64Image, 'chi_sim', {
+            logger: (m) => console.log(m),
+        });
+        console.log("OCR Result (Chinese):", chineseText);
+
+        // Use franc to detect language
+        const englishLanguage = franc(englishText);
+        const chineseLanguage = franc(chineseText);
+
+        console.log("Language detected for English:", englishLanguage);
+        console.log("Language detected for Chinese:", chineseLanguage);
+
+        // Compare and select the best OCR result based on language detection
+        let selectedText = englishText;
+        let selectedLanguage = 'eng';  // Default to English
+
+        if (chineseLanguage === 'cmn') {
+            selectedText = chineseText;
+            selectedLanguage = 'chi_sim'; // Use Chinese text
+        }
+
+        console.log("Selected Language:", selectedLanguage);
+        console.log("Selected Text:", selectedText);
+
+        return selectedText;
+
+    } catch (error) {
+        console.error("Error during OCR recognition:", error);
+        return null;
+    }
+};
+
 function UploadImage() {
   const [imageData, setImageData] = useState(null);
   const fileInputRef = useRef(null);
@@ -76,9 +119,11 @@ function UploadImage() {
 
       reader.onload = function (event) {
         const img = new Image();
-        img.onload = function () {
+        img.onload = async function () {
           setImageData(img);
           console.log(img);
+          const extractedText = await recognizeImage(img);
+          console.log(extractedText);
         };
         img.src = event.target.result;
       };
