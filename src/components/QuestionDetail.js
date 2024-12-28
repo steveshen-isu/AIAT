@@ -1,5 +1,6 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.css";
+import TypewriterResponsePlain from "./TypeWriterResponsePlain";
 
 const QuestionHeader = ({ title, date }) => {
   return (
@@ -19,7 +20,7 @@ const QuestionDescription = ({ description }) => {
         Problem Description
       </h2>
       <div className="prose max-w-none text-gray-700 leading-relaxed">
-        <p className="mb-6">{description}</p>
+        <TypewriterResponsePlain content={description} />
       </div>
     </div>
   );
@@ -32,7 +33,7 @@ const Solution = ({ solution, onGoBack }) => {
       <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-8 mb-6 prose max-w-none">
         <div className="bg-white rounded-lg p-8 shadow-sm">
           <div className="text-gray-700 leading-relaxed">
-            <p>{solution}</p>
+            <TypewriterResponsePlain content={solution} />
           </div>
           <BackButton onGoBack={onGoBack} />
         </div>
