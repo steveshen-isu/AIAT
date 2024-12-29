@@ -4,6 +4,7 @@ dotenv.config();
 import path from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
+import Fuse from 'fuse.js';
 
 console.log('db_host', process.env.DB_HOST);
 // Setting up the MySQL connection
@@ -91,9 +92,9 @@ function handleJsonObjects(jsonObjects) {
   });
 }
 
-const queryQuestions = (question, callback) => {
+const queryQuestions = (searchText, callback) => {
   let currentId = 1;
-  const sql = `SELECT * FROM question_bank WHERE JSON_SEARCH(qa_json, 'one', '%${question}%', NULL, '$[*].QuestionContent') IS NOT NULL;`;
+  const sql = `SELECT qa_json FROM question_bank`;
   db.query(sql, (err, results) => {
     if (err) {
       callback(err, null);
@@ -135,14 +136,26 @@ const queryQuestions = (question, callback) => {
                 yearOfExam: yearOfExam,
                 session: session,
                 level: level,
-                solutionContent: joinedSolution
+                solutionContent: joinedSolution,
               };
             });
           }
           return [];
         })
         .flat();
-      callback(null, processedResults);
+
+      const fuse = new Fuse(processedResults, {
+        keys: ['questionContent'],
+        threshold: 0.1,
+      });
+      const filteredResults = fuse.search(searchText).map((result) => {
+        if (result.item) {
+          return result.item;
+        }
+        return result;
+      });
+
+      callback(null, filteredResults);
     }
   });
 };
