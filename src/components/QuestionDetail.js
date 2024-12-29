@@ -20,7 +20,7 @@ const QuestionDescription = ({ description }) => {
         Problem Description
       </h2>
       <div className="prose max-w-none text-gray-700 leading-relaxed">
-        <TypewriterResponsePlain content={description} />
+        <TypewriterResponsePlain content={description || ''} />
       </div>
     </div>
   );
@@ -33,7 +33,7 @@ const Solution = ({ solution, onGoBack }) => {
       <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-8 mb-6 prose max-w-none">
         <div className="bg-white rounded-lg p-8 shadow-sm">
           <div className="text-gray-700 leading-relaxed">
-            <TypewriterResponsePlain content={solution} />
+            <TypewriterResponsePlain content={solution || ''} />
           </div>
           <BackButton onGoBack={onGoBack} />
         </div>
