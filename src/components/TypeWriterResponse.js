@@ -71,7 +71,10 @@ import katex from 'katex';
         useEffect(() => {
             let isMounted = true;
             // Start the typewriter effect when the component loads
-
+            if (!content) {
+                setDisplayContent('');
+                return;
+            }
             setDisplayContent(''); // Reset before running
             typewriterEffectResponse(content, setDisplayContent);
             return () => {
@@ -90,8 +93,9 @@ import katex from 'katex';
                         maxWidth: '1300px',         // Set a max width for the container
                         marginLeft: '1vw',        // Add some space from the left
                         border: '0px solid gray',  // Gray border
-                        backgroundColor: 'black',  // Black background
-                        color: 'white',            // White text color for contrast
+                        borderRadius: '20px',
+                        backgroundColor: 'white',  // Black background
+                        color: 'black',            // White text color for contrast
                         fontFamily: 'Segoe UI, sans-serif',  // Font family
                         fontSize: '18px',          // Font size
                         fontWeight: 'lighter',        // Bold text

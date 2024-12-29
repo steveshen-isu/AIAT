@@ -17,8 +17,6 @@ const MonteCarloSimulator = () => {
     const [experimentType, setExperimentType] = useState('stock');
     const [iterations, setIterations] = useState(1);
     const [timeSteps, setTimeSteps] = useState(100);
-    const [quarantineOn, setQuarantineOn] = useState(false);
-
     const [parameters, setParameters] = useState({
         mean: 0,
         stddev: 10,
@@ -48,7 +46,7 @@ const MonteCarloSimulator = () => {
         batchSizeImpact: 0.05,
     });
     const [resultData, setResultData] = useState(null);
-
+    const [quarantineOn, setQuarantineOn] = useState(false);
     const generateRandomNormal = (mean, stddev) => {
         let u = 0, v = 0;
         while (u === 0) u = Math.random();
@@ -76,7 +74,6 @@ const MonteCarloSimulator = () => {
             const INFECTIOUS_DURATION = 7;
             let infectionQueue = new Array(INFECTIOUS_DURATION).fill(0);
             let recoveryQueue = new Array(IMMUNITY_DURATION).fill(0);
-            const originalMobilityRate = parameters.mobilityRate;
 
             for (let t = 1; t <= timeSteps; t++) {
                 let previousValue = values[values.length - 1];
@@ -134,31 +131,21 @@ const MonteCarloSimulator = () => {
                     learningRateValues.push(learningRate);
                 } else if (experimentType === 'disease') {
 
-
-
                     const forcedToRecover = infectionQueue.shift();
                     infected -= forcedToRecover;
                     recovered += forcedToRecover;
+
 
                     const forcedToSusceptible = recoveryQueue.shift();
                     recovered -= forcedToSusceptible;
                     susceptible += forcedToSusceptible;
 
-                    let currentMobilityRate = originalMobilityRate;
-                    if (quarantineOn) {
-                        const fractionInfected = infected / parameters.population;
 
-                        if (fractionInfected === 1) {
-                            currentMobilityRate = 0;
-                        } else if (fractionInfected === 0) {
-                            currentMobilityRate = originalMobilityRate;
-                        } else {
-                            currentMobilityRate = originalMobilityRate * (1 - fractionInfected);
-                        }
+                    let mobilityEffect = susceptible * parameters.mobilityRate;
+
+                    if (quarantineOn) { 
+                        mobilityEffect = susceptible * parameters.mobilityRate * recovered / parameters.population 
                     }
-
-
-                    const mobilityEffect = susceptible * currentMobilityRate;
                     const adjustedSpreadRate = parameters.spreadRate + 5 * randomFactor();
                     const adjustedRecoveryRate = parameters.recoveryRate + 5 * randomFactor();
 
@@ -170,14 +157,12 @@ const MonteCarloSimulator = () => {
                     newRecoveries = Math.min(newRecoveries, infected);
 
                     susceptible = Math.max(susceptible - newInfections, 0);
-
                     if (infected === 0) {
                         newInfections = 0;
                         newRecoveries = 0;
                     }
 
                     infected += (newInfections - newRecoveries);
-
                     infected = Math.max(
                         Math.min(infected, parameters.population - recovered),
                         0
@@ -187,8 +172,10 @@ const MonteCarloSimulator = () => {
 
                     infectionQueue.push(newInfections);
 
+
                     const totalNewRecoveries = forcedToRecover + newRecoveries;
                     recoveryQueue.push(totalNewRecoveries);
+
 
                     infectedValues.push(infected);
                     susceptibleValues.push(susceptible);
@@ -669,7 +656,7 @@ const MonteCarloSimulator = () => {
                                 checked={quarantineOn}
                                 onChange={(e) => setQuarantineOn(e.target.checked)}
                             />
-                            set on quarantine
+                            Set up Quarantine
                         </label>
                     </div>
                 </div>

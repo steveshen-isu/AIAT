@@ -37,53 +37,53 @@ const SeriesCalculator = () => {
     try {
       const { t_n, t_n1, t_n2 } = recurrenceCoefficients;
       const { t0, t1 } = initialConditions;
-  
+
       const characteristicEquation = `${t_n}*r^2 - ${t_n1}*r - ${t_n2}`;
-  
+
       const roots = nerdamer.solve(characteristicEquation, 'r').text('decimal', 6);
       let expression;
       let nthTermValue = 0;
-  
+
       if (roots.includes(',')) {
         const [r1, r2] = roots.slice(1, -1).split(',');
-  console.log(r1,r2)
+        console.log(r1, r2)
 
-          const r1Parsed = parseFloat(r1.slice(1));
-          const r2Parsed = parseFloat(r2.slice(1));
-  
-          const determinant = r1Parsed - r2Parsed;
-          const C1 = (t0 * r2Parsed - t1) / determinant;
-          const C2 = (t1 - t0 * r1Parsed) / determinant;
-  
-          expression = `\\[T_n = (${C1}) * (${r1Parsed})^n + (${C2}) * (${r2Parsed})^n\\]`;
-        
+        const r1Parsed = parseFloat(r1.slice(1));
+        const r2Parsed = parseFloat(r2.slice(1));
+
+        const determinant = r1Parsed - r2Parsed;
+        const C1 = (t0 * r2Parsed - t1) / determinant;
+        const C2 = (t1 - t0 * r1Parsed) / determinant;
+
+        expression = `\\[T_n = (${C1}) * (${r1Parsed})^n + (${C2}) * (${r2Parsed})^n\\]`;
+
       } else {
-        const repeatedRoot = parseFloat(roots.slice(2.-1));
-  
+        const repeatedRoot = parseFloat(roots.slice(2. - 1));
 
 
-        const a = t0; 
-        const b = (t1 - a * repeatedRoot) / (repeatedRoot); 
+
+        const a = t0;
+        const b = (t1 - a * repeatedRoot) / (repeatedRoot);
 
         expression = `\\[T_n = (${a}) * (${repeatedRoot})^n + (${b}) * n * (${repeatedRoot})^n\\]`;
       }
-  
+
       let tPrev2 = t0;
       let tPrev1 = t1;
-  
-      for (let i = 2; i <= termToCalculate-1; i++) {
+
+      for (let i = 2; i <= termToCalculate - 1; i++) {
         nthTermValue = t_n1 * tPrev1 + t_n2 * tPrev2;
         tPrev2 = tPrev1;
         tPrev1 = nthTermValue;
       }
-  
+
       setResult({ expression, calculatedTerm: nthTermValue });
     } catch (e) {
       setResult({ error: 'Error solving recurrence relation.' });
     }
   };
-  
-  
+
+
 
   const calculateSummation = () => {
     try {
@@ -91,13 +91,61 @@ const SeriesCalculator = () => {
         setResult({ error: 'Please provide all summation inputs.' });
         return;
       }
+      const hasVariable = (str) => /[a-zA-Z]/.test(str);
+      if (hasVariable(summationFrom) && !hasVariable(summationTo)) {
+        const summationFromExpr = summationExpr
+          .replace(/n\^3/g, `${summationFrom}(${summationFrom}+1)/2`)
+          .replace(/n\^2/g, `${summationFrom}(${summationFrom}+1)(2${summationFrom}+1)/6`)
+          .replace(/\/n/g, `log(${summationTo})+0.57721`)
+          .replace(/n/g, `${summationTo}(${summationTo}+1)/2`);
+        const to = summationTo === 'infinity' ? 10000 : summationTo;
+        const summation = nerdamer.sum(summationExpr, 'n', 1, to);
+        const calculatedSum = summation.text('decimal', 5).slice(1);
+        const summationResult = nerdamer(`simplify(${calculatedSum}-${summationFromExpr})`).toTeX();
+        const summationExprToDis = '\\[' + summationExpr + '\\]'
+        setResult({ expression: summationExprToDis, summationResult });
+      } else if (!hasVariable(summationFrom) && hasVariable(summationTo) && summationTo.trim() != 'infinity' && summationTo.includes("inf") === false) {
+        const summationToExpr = summationExpr
+          .replace(/n\^3/g, `${summationTo}(${summationTo}+1)/2`)
+          .replace(/n\^2/g, `${summationTo}(${summationTo}+1)(2${summationTo}+1)/6`)
+          .replace(/\/n/g, `log(${summationTo})+0.57721`)
+          .replace(/n/g, `${summationTo}(${summationTo}+1)/2`);
+        const summation = nerdamer.sum(summationExpr, 'n', 1, summationFrom);
+        const calculatedSum = summation.text('decimal', 5).slice(1);
+        const summationResult = nerdamer(`simplify(${summationToExpr}-${calculatedSum})`).toTeX();
+        const summationExprToDis = '\\[' + summationExpr + '\\]'
+        setResult({ expression: summationExprToDis, summationResult });
+      } else if (hasVariable(summationFrom) && hasVariable(summationTo)) {
+        const summationFromExpr = summationExpr
+          .replace(/n\^3/g, `${summationFrom}(${summationFrom}+1)/2`)
+          .replace(/n\^2/g, `${summationFrom}(${summationFrom}+1)(2${summationFrom}+1)/6`)
+          .replace(/\/n/g, `log(${summationTo})+0.57721`)
+          .replace(/n/g, `${summationTo}(${summationTo}+1)/2`);
+        const summationToExpr = summationExpr
+          .replace(/n\^3/g, `${summationTo}(${summationTo}+1)/2`)
+          .replace(/n\^2/g, `${summationTo}(${summationTo}+1)(2${summationTo}+1)/6`)
+          .replace(/\/n/g, `log(${summationTo})+0.57721`)
+          .replace(/n/g, `${summationTo}(${summationTo}+1)/2`);
+        const summationResult = nerdamer(`simplify(${summationToExpr}-${summationFromExpr})`).toTeX();
+        const summationExprToDis = '\\[' + summationExpr + '\\]'
+        setResult({ expression: summationExprToDis, summationResult });
+      } else {
+        if (summationTo.includes('inf') && summationTo.trim() != 'infinity') {
+          setResult({ error: 'do you mean infinity?' })
+          return;
+        } else if (summationTo.trim() === 'infinity' &&
+          Math.abs(nerdamer.sum(summationExpr, 'n', 1, 1000) - nerdamer.sum(summationExpr, 'n', 1, 2000)) > 0.01 &&
+          Math.abs(nerdamer.sum(summationExpr, 'n', 1, 2000) - nerdamer.sum(summationExpr, 'n', 1, 3000)) > 0.01) {
+          setResult({ error: 'Series diverges.' })
+        } else {
+          const to = summationTo === 'infinity' ? 3000 : summationTo;
+          const summation = nerdamer.sum(summationExpr, 'n', summationFrom, to);
+          const calculatedSum = Math.round(summation.text('decimal', 5).slice(1) *100)/100;
 
-      const to = summationTo === 'infinity' ? 10000 : summationTo;
-      const summation = nerdamer.sum(summationExpr, 'n', summationFrom, to);
-      const calculatedSum = summation.text('decimal',5).slice(1);
-
-      const summationExprToDis = '\\[' +summationExpr + '\\]'
-      setResult({ expression: summationExprToDis, calculatedSum });
+          const summationExprToDis = '\\[' + summationExpr + '\\]'
+          setResult({ expression: summationExprToDis, calculatedSum });
+        }
+      }
     } catch (e) {
       setResult({ error: 'Error evaluating the summation.' });
     }
@@ -203,9 +251,9 @@ const SeriesCalculator = () => {
         </div>
       )}
 
-{sequenceType === 'recurrence' && (
+      {sequenceType === 'recurrence' && (
         <div className="space-y-4">
-          <TypewriterResponsePlain content={'for the recurrence relation \\[aT_n=bT_{n-1}+cT_{n-2}\\]'}/>
+          <TypewriterResponsePlain content={'for the recurrence relation \\[aT_n=bT_{n-1}+cT_{n-2}\\]'} />
           <input
             type="number"
             placeholder="Coefficient a of T(n)"
@@ -260,10 +308,10 @@ const SeriesCalculator = () => {
             onChange={(e) => setSummationExpr(e.target.value)}
           />
           <input
-            type="number"
+            type="text"
             placeholder="Summation from"
             className="p-2 border rounded w-full"
-            onChange={(e) => setSummationFrom(Number(e.target.value))}
+            onChange={(e) => setSummationFrom((e.target.value))}
           />
           <input
             type="text"
@@ -287,9 +335,12 @@ const SeriesCalculator = () => {
           ) : (
             <>
               <p><strong>Expression:</strong> </p>
-              <TypewriterResponsePlain content={result.expression}/>
+              <TypewriterResponsePlain content={result.expression} />
 
               {result.calculatedTerm && <p><strong>Calculated Term:</strong> {result.calculatedTerm}</p>}
+              {result.summationResult && (<div><p><strong>Summation Result:</strong></p>
+                <TypewriterResponsePlain content={'\\[' + result.summationResult + '\\]'} /></div>)}
+
               {result.calculatedSum && <p><strong>Summation Result:</strong> {result.calculatedSum}</p>}
             </>
           )}

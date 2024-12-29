@@ -1,4 +1,4 @@
-{
+[{
     "Metadata": {
         "QuestionTitle": "Binomial Expansion of (1 + 4x)^(-1/2)",
         "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
@@ -43,7 +43,7 @@
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Trapezium Rule Approximation",
@@ -100,7 +100,7 @@
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Complex Numbers Roots and Argand Diagram",
@@ -166,7 +166,7 @@
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Integration using substitution",
@@ -222,7 +222,7 @@
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Factorising a Polynomial and Determining Real Roots",
@@ -279,7 +279,7 @@
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Prove Trigonometric Identity and Solve Equation",
@@ -337,7 +337,7 @@
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Graph and Iterative Method",
@@ -416,7 +416,7 @@
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Differential Equation and Partial Fractions",
@@ -484,7 +484,7 @@
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Curve and Area Under Integration",
@@ -553,7 +553,7 @@
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Vector Geometry: Lines and Planes",
@@ -610,3 +610,4 @@
         ]
     }
 }
+]

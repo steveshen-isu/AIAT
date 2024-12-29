@@ -1,389 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef} from 'react';
 import 'katex/dist/katex.min.css';
 import katex from 'katex';
-
+import html2pdf from 'html2pdf.js';
+import TypewriterRendererExample from './TypeWriterExample';
+import TypewriterRenderer from './TypeWriterRender';
+import TypewriterRendererResponse from './TypeWriterResponse';
 const currentUrl = window.location.href;
 console.log(currentUrl); // Example: "https://example.com/page"
 const ipAddress = currentUrl.split(':')[1].split('/')[2];
 console.log(ipAddress);
 
 
-function renderLatex(latex) {
-    try {
-        const sanitizedLatex = latex.replace(/\\\(|\\\)|\\\[|\\\]/g, '');
-        const lines = sanitizedLatex.split('\n');
-        return katex.renderToString(latex, {
-            throwOnError: false,
-            displayMode: true
-        });
-    } catch (e) {
-        return `<span class="error">Error rendering LaTeX: ${e.message}</span>`;
-    }
-}
 
 
 
-const typewriterEffect = async (content, setDisplayContent) => {
-    content = content.replace(/\\\[\s*/g, '\\[');  // Replace \[ with \( and remove leading spaces
-    content = content.replace(/\s*\\\]/g, '\\]');  // Replace \] with \) and remove trailing spaces
-    console.log(content);
-    const regex = /(\\\(.*?\\\))|(\\\[[\s\S]*?\\\])|(\\begin\{array\}[\s\S]*?\\end\{array\})|(\\textit\{.*?\})|(\\textbf\{.*?\})/g;
-    const parts = content.split(regex).filter(part => part !== null && part !== undefined && part !== '');
-    let displayContent = '';
-    console.log(parts);
-    for (const part of parts) {
-        if (part.startsWith('\\(') || part.startsWith('\\begin') || part.startsWith('\\textit') || part.startsWith('\\textbf')) {
-            // Process LaTeX content
-
-            try {
-                const isDisplayMode = part.startsWith('\\[');
-                const mathContent = part.replace(/\\[\(\[\)\]]/g, '');  // Strip the delimiters
-                const renderedMath = katex.renderToString(mathContent, { throwOnError: false, displayMode: isDisplayMode });
-
-                // Simulate typing the LaTeX
-                for (let i = 0; i < renderedMath.length; i++) {
-                    displayContent += renderedMath[i];
 
 
-                    setDisplayContent(displayContent);
-/*                     await delayRandomTime(); 
- */                }
-            } catch (e) {
-                console.error('Error rendering LaTeX:', e);
-                displayContent += `<span class="error">Failed to render LaTeX: ${part}</span>`;
-                setDisplayContent(displayContent);
-            }
-        } else if (part.startsWith('\\[')) {
-            // Process LaTeX content
-
-            try {
-                const isDisplayMode = part.startsWith('\\[');
-                const mathContent = part.replace(/\\[\(\[\)\]]/g, '');  // Strip the delimiters
-                const renderedMath = katex.renderToString(mathContent, { throwOnError: false, displayMode: isDisplayMode });
-
-                // Simulate typing the LaTeX
-                for (let i = 0; i < renderedMath.length; i++) {
-                    displayContent += renderedMath[i];
-                    setDisplayContent(displayContent);
-/*                     await delayRandomTime(); 
- */                }
-
-                const buttonsHTML = `
- <button onclick="handleEquationQuestion('${mathContent}', 'what')">What is the equation?</button>
- <button onclick="handleEquationQuestion('${mathContent}', 'how')">How to use the equation?</button>
-`; displayContent += buttonsHTML;
-                /* console.log(displayContent); */
-            } catch (e) {
-                console.error('Error rendering LaTeX:', e);
-                displayContent += `<span class="error">Failed to render LaTeX: ${part}</span>`;
-                setDisplayContent(displayContent);
-            }
-        } else {
-            // Process plain text content
-            for (let i = 0; i < part.length; i++) {
-                displayContent += part[i] === '\n' ? '<br />' : part[i];
-                setDisplayContent(displayContent);
-                await textdelayRandomTime();
-            }
-        }
-    }
-};
 
 
-const typewriterEffectExample = async (content, setDisplayContent) => {
-    content = content.replace(/\\\[\s*/g, '\\[');  // Replace \[ with \( and remove leading spaces
-    content = content.replace(/\s*\\\]/g, '\\]');  // Replace \] with \) and remove trailing spaces
-    console.log(content);
-    const regex = /(\\\(.*?\\\))|(\\\[[\s\S]*?\\\])|(\\begin\{array\}[\s\S]*?\\end\{array\})|(\\textit\{.*?\})|(\\textbf\{.*?\})/g;
-    const parts = content.split(regex).filter(part => part !== null && part !== undefined && part !== '');
-    let displayContent = '';
-    console.log(parts);
-    for (const part of parts) {
-        if (part.startsWith('\\(') || part.startsWith('\\begin') || part.startsWith('\\textit') || part.startsWith('\\textbf')) {
-            // Process LaTeX content
-
-            try {
-                const isDisplayMode = part.startsWith('\\[');
-                const mathContent = part.replace(/\\[\(\[\)\]]/g, '');  // Strip the delimiters
-                const renderedMath = katex.renderToString(mathContent, { throwOnError: false, displayMode: isDisplayMode });
-
-                // Simulate typing the LaTeX
-                for (let i = 0; i < renderedMath.length; i++) {
-                    displayContent += renderedMath[i];
 
 
-                    setDisplayContent(displayContent);
-/*                     await delayRandomTime(); 
- */                }
-            } catch (e) {
-                console.error('Error rendering LaTeX:', e);
-                displayContent += `<span class="error">Failed to render LaTeX: ${part}</span>`;
-                setDisplayContent(displayContent);
-            }
-        } else if (part.startsWith('\\[')) {
-            // Process LaTeX content
-
-            try {
-                const isDisplayMode = part.startsWith('\\[');
-                const mathContent = part.replace(/\\[\(\[\)\]]/g, '');  // Strip the delimiters
-                const renderedMath = katex.renderToString(mathContent, { throwOnError: false, displayMode: isDisplayMode });
-
-                // Simulate typing the LaTeX
-                for (let i = 0; i < renderedMath.length; i++) {
-                    displayContent += renderedMath[i];
-                    setDisplayContent(displayContent);
-/*                     await delayRandomTime(); 
- */                }
-
-                const buttonsHTML = `
- <button onclick="handleExampleQuestion('${mathContent}')">I don't understand this step</button>
-`; displayContent += buttonsHTML;
-                /* console.log(displayContent); */
-            } catch (e) {
-                console.error('Error rendering LaTeX:', e);
-                displayContent += `<span class="error">Failed to render LaTeX: ${part}</span>`;
-                setDisplayContent(displayContent);
-            }
-        } else {
-            // Process plain text content
-            for (let i = 0; i < part.length; i++) {
-                displayContent += part[i] === '\n' ? '<br />' : part[i];
-                setDisplayContent(displayContent);
-                await textdelayRandomTime();
-            }
-        }
-    }
-};
 
 
-const typewriterEffectResponse = async (content, setDisplayContent) => {
-    content = content.replace(/\\\[\s*/g, '\\[');  // Replace \[ with \( and remove leading spaces
-    content = content.replace(/\s*\\\]/g, '\\]');  // Replace \] with \) and remove trailing spaces
-    console.log(content);
-    const regex = /(\\\(.*?\\\))|(\\\[[\s\S]*?\\\])|(\\begin\{array\}[\s\S]*?\\end\{array\})|(\\textit\{.*?\})|(\\textbf\{.*?\})/g;
-    const parts = content.split(regex).filter(part => part !== null && part !== undefined && part !== '');
-    let displayContent = '';
-    console.log(parts);
-    for (const part of parts) {
-        if (part.startsWith('\\(') || part.startsWith('\\[') || part.startsWith('\\begin') || part.startsWith('\\textit') || part.startsWith('\\textbf')) {
-            // Process LaTeX content
-
-            try {
-                const isDisplayMode = part.startsWith('\\[');
-                const mathContent = part.replace(/\\[\(\[\)\]]/g, '');  // Strip the delimiters
-                const renderedMath = katex.renderToString(mathContent, { throwOnError: false, displayMode: isDisplayMode });
-
-                // Simulate typing the LaTeX
-                for (let i = 0; i < renderedMath.length; i++) {
-                    displayContent += renderedMath[i];
-
-
-                    setDisplayContent(displayContent);
-/*                     await delayRandomTime(); 
- */                }
-            } catch (e) {
-                console.error('Error rendering LaTeX:', e);
-                displayContent += `<span class="error">Failed to render LaTeX: ${part}</span>`;
-                setDisplayContent(displayContent);
-            }
-        } else {
-            // Process plain text content
-            for (let i = 0; i < part.length; i++) {
-                displayContent += part[i] === '\n' ? '<br />' : part[i];
-                setDisplayContent(displayContent);
-                await textdelayRandomTime();
-            }
-        }
-    }
-};
-// Function to create random delay
-/* const delayRandomTime = () => {
-    return new Promise(resolve => {
-        const randomDelay = Math.floor(Math.random() * 1) + 0; // Delay between 50ms to 250ms
-        setTimeout(resolve, randomDelay);
-    });
-};  */
-
-const textdelayRandomTime = () => {
-    return new Promise(resolve => {
-        const randomDelay = Math.floor(Math.random() * 20) + 5; // Delay between 50ms to 250ms
-        setTimeout(resolve, randomDelay);
-    });
-};
-
-// Main component to handle the content rendering
-const TypewriterRenderer = ({ content }) => {
-    const [displayContent, setDisplayContent] = useState('');
-
-    useEffect(() => {
-        // Start the typewriter effect when the component loads
-        typewriterEffect(content, setDisplayContent);
-    }, [content]);
-
-    return (
-        <div>
-            <div
-                style={{
-                    textAlign: 'left',         // Align text to the left
-                    width: '42vw',
-                    margin: '0 auto',          // Center the div horizontally
-                    padding: '10px',           // Add padding
-                    maxWidth: '900px',         // Set a max width for the container
-                    marginLeft: '1vw',        // Add some space from the left
-                    border: '0px solid gray',  // Gray border
-                    backgroundColor: 'black',  // Black background
-                    color: 'white',            // White text color for contrast
-                    fontFamily: 'Segoe UI, sans-serif',  // Font family
-                    fontSize: '18px',          // Font size
-                    fontWeight: 'lighter',        // Bold text
-                    fontStyle: 'normal',       // Italic text
-                    lineHeight: '1.6',         // Line height for readability
-                    letterSpacing: '1px'       // Space between letters
-                }}
-                dangerouslySetInnerHTML={{ __html: displayContent }}
-            />
-        </div>
-    );
-};
-
-
-const TypewriterRendererResponse = ({ content }) => {
-    const [displayContent, setDisplayContent] = useState('');
-
-    useEffect(() => {
-        // Start the typewriter effect when the component loads
-        typewriterEffectResponse(content, setDisplayContent);
-    }, [content]);
-
-    return (
-        <div>
-            <div
-                style={{
-                    textAlign: 'left',         // Align text to the left
-                    width: '42vw',
-                    margin: '0 auto',          // Center the div horizontally
-                    padding: '10px',           // Add padding
-                    maxWidth: '900px',         // Set a max width for the container
-                    marginLeft: '1vw',        // Add some space from the left
-                    border: '0px solid gray',  // Gray border
-                    backgroundColor: 'black',  // Black background
-                    color: 'white',            // White text color for contrast
-                    fontFamily: 'Segoe UI, sans-serif',  // Font family
-                    fontSize: '18px',          // Font size
-                    fontWeight: 'lighter',        // Bold text
-                    fontStyle: 'normal',       // Italic text
-                    lineHeight: '1.6',         // Line height for readability
-                    letterSpacing: '1px'       // Space between letters
-                }}
-                dangerouslySetInnerHTML={{ __html: displayContent }}
-            />
-        </div>
-    );
-};
-
-const TypewriterRendererExample = ({ content }) => {
-    const [displayContent, setDisplayContent] = useState('');
-
-    useEffect(() => {
-        // Start the typewriter effect when the component loads
-        typewriterEffectExample(content, setDisplayContent);
-    }, [content]);
-
-    return (
-        <div>
-            <div
-                style={{
-                    textAlign: 'left',         // Align text to the left
-                    width: '42vw',
-                    margin: '0 auto',          // Center the div horizontally
-                    padding: '10px',           // Add padding
-                    maxWidth: '900px',         // Set a max width for the container
-                    marginLeft: '1vw',        // Add some space from the left
-                    border: '0px solid gray',  // Gray border
-                    backgroundColor: 'black',  // Black background
-                    color: 'white',            // White text color for contrast
-                    fontFamily: 'Segoe UI, sans-serif',  // Font family
-                    fontSize: '18px',          // Font size
-                    fontWeight: 'lighter',        // Bold text
-                    fontStyle: 'normal',       // Italic text
-                    lineHeight: '1.6',         // Line height for readability
-                    letterSpacing: '1px'       // Space between letters
-                }}
-                dangerouslySetInnerHTML={{ __html: displayContent }}
-            />
-        </div>
-    );
-};
-
-
-function escapeBackslashes(str) {
-    return str.replace(/\\/g, '\\\\');
-}
-
-const renderContentWithLatex = (content) => {
-    // Regular expression to match LaTeX math mode delimiters \( ... \) or \[ ... \]
-    content = content.replace(/\\\[\s*/g, '\\[');  // Replace \[ with \( and remove leading spaces
-    content = content.replace(/\s*\\\]/g, '\\]');  // Replace \] with \) and remove trailing spaces
-
-    const regex = /(\\\(.*?\\\))|(\\\[.*?\\\])|(\\\[\\\n.*?\\\]\\\n)/g;
-
-    // Split content into plain text and LaTeX parts
-    const parts = content.split(regex).filter(Boolean);
-
-    console.log('parts in rendercontent function', parts);
-
-    // Process each part and return a string of HTML
-    const htmlContent = parts.map((part, index) => {
-        if (!part) return '';  // Skip undefined or empty parts
-
-
-        // If part starts with a LaTeX delimiter, render it with KaTeX
-        if (part.startsWith('\\(') || part.startsWith('\\[') || part.include('\\')) {
-
-            try {
-                const isDisplayMode = part.startsWith('[');  // Use display mode for \[ \]
-                const mathContent = part.replace(/\\[\(\[\)\]]/g, '')
-                return katex.renderToString(mathContent, {
-                    delimiters: [
-                        { left: '$$', right: '$$', display: true },
-                        { left: '$', right: '$', display: false },
-                        { left: '\\(', right: '\\)', display: false },
-                        { left: '\\[', right: '\\]', display: true }
-                    ], throwOnError: false, displayMode: isDisplayMode
-                });
-            } catch (e) {
-                console.error('Error rendering LaTeX:', e);
-                return `<span class="error">Failed to render LaTeX: ${part}</span>`;
-            }
-        } else {
-            // Render plain text, replacing newlines with <br> tags for line breaks
-            return part.replace(/\n/g, '<br />');
-        }
-    });
-
-    // Join all parts into a single HTML string and return it
-    return htmlContent.join('');
-};
-
-function Typewriter({ text, speed = 50 }) {
-    const [displayedText, setDisplayedText] = useState('');
-
-    useEffect(() => {
-        let index = 0;
-        const timer = setInterval(() => {
-            if (index < text.length) {
-                setDisplayedText(prev => prev + text[index]);
-                index++;
-            } else {
-                clearInterval(timer);
-            }
-        }, speed);
-
-        return () => clearInterval(timer);
-    }, [text, speed]);
-
-    return <span dangerouslySetInnerHTML={{ __html: displayedText }} />;
-}
 
 
 
@@ -414,6 +52,9 @@ function TopicSelector() {
     const [showChapterSummary, setShowChapterSummary] = useState(false);
     const [showTopicSummary, setShowTopicSummary] = useState(false);
     const [showQuestionSolution, setShowQuestionSolution] = useState(false);
+
+
+    const [showPDFModal, setShowPDFModal] = useState(false); // State for controlling the modal visibility
 
     console.log('Fetching from URL:', '/api/subjects');
 
@@ -469,47 +110,6 @@ function TopicSelector() {
         }
 
     };
-    // Fetch subjects on component mount
-    /* useEffect(() => {
-        fetch('http://localhost:200/api/subjects')
-            .then(response => response.json())
-            .then(data => setSubjects(data))
-            .catch(error => console.error('Error fetching subjects:', error));
-    }, []);
-
-    // Fetch textbooks when a subject is selected
-    useEffect(() => {
-        if (selectedSubject) {
-            fetch(`http://localhost:200/api/textbooks?subjectId=${selectedSubject}`)
-                .then(response => response.json())
-                .then(setTextbooks)
-                .catch(error => console.error('Error fetching textbooks:', error));
-        } else {
-            setTextbooks([]); // Clear textbooks when no subject is selected
-        }
-    }, [selectedSubject]);
-
-    // Fetch chapters when a textbook is selected
-    useEffect(() => {
-        if (selectedTextbook) {
-            fetch(`http://localhost:200/api/chapters?textbookId=${selectedTextbook}`)
-                .then(response => response.json())
-                .then(setChapters)
-                .catch(error => console.error('Error fetching chapters:', error));
-        } else {
-            setChapters([]); // Clear chapters when no textbook is selected
-        }
-    }, [selectedTextbook]);
-
-    // Fetch LaTeX code when a chapter is selected
-    useEffect(() => {
-        if (selectedChapter) {
-            fetch(`http://localhost:200/api/latex-code?chapterId=${selectedChapter}`)
-                .then(response => response.json())
-                .then(data => setLatexCode(data.latexCode))
-                .catch(error => console.error('Error fetching LaTeX code:', error));
-        }
-    }, [selectedChapter]); */
 
 
     useEffect(() => {
@@ -588,16 +188,6 @@ function TopicSelector() {
             .catch((error) => console.error('Error fetching question solution:', error));
     };
 
-    /* const latexCodetest = `
-\\begin{equation}
-x + y = z
-\\end{equation}
-\\begin{equation}
-x + y = z
-\\end{equation}
-`; */
-    /* const escapedLatexCode = escapeBackslashes(latexCode); */
-
     console.log('Latex Code on render:', questionSolution);
     /*     console.log('html on render:', renderContentWithLatex(latexCode)); */
 
@@ -634,8 +224,42 @@ x + y = z
             console.error('Error:', error);
         }
     };
+    const chapterPdfContentRef = useRef();
+    const generateChapterPDF = () => {
+        const element = chapterPdfContentRef.current; // Get the rendered HTML content
+        const options = {
+            filename: 'chaptersummary.pdf',
+            margin: [20, 20], // Adjust margin
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            html2canvas: {
+                backgroundColor: 'white', // Ensure the background is white
+                ignoreElements: (el) => el.tagName === 'BUTTON', // Ignore buttons and other unwanted elements
+                letterRendering: true, // Improve font rendering
+            },
+            pagebreak: { mode: ['avoid-all', 'css'] }, // Better control over page breaks
+        };
 
-    const renderedresoponse = renderLatex(escapeBackslashes(response));
+        // Generate the PDF from the HTML content
+        html2pdf().from(element).set(options).save();
+        
+        // Show the modal after PDF generation
+        setShowPDFModal(true);
+    };
+/*     const generateTopicPDF = () => {
+        const doc = new jsPDF();
+        doc.text(topicSummary, 10, 10);  // Customize the content location (10, 10)
+        doc.save('topic.pdf');   // Download the PDF with the given name
+        setShowPDFModal(true); // Show the modal after generating the PDF
+    };
+
+    const generateQuestionPDF = () => {
+        const doc = new jsPDF();
+        doc.text(questionSolution, 10, 10);  // Customize the content location (10, 10)
+        doc.save('question_solution.pdf');   // Download the PDF with the given name
+        setShowPDFModal(true); // Show the modal after generating the PDF
+    }; */
+
+
     console.log('response from openai', response);
     return (
 
@@ -653,24 +277,7 @@ x + y = z
                         Select a Chapter you are interested in
                     </h1>
 
-                    {/* <select value={selectedSubject} onChange={e => setSelectedSubject(e.target.value)}>
-                        <option value="">Select a subject</option>
-                        {subjects.map(subject => (
-                            <option key={subject.id} value={subject.id}>{subject.name}</option>
-                        ))}
-                    </select>
-                    <select value={selectedTextbook} onChange={e => setSelectedTextbook(e.target.value)} disabled={!selectedSubject}>
-                        <option value="">Select a textbook</option>
-                        {textbooks.map(textbook => (
-                            <option key={textbook.id} value={textbook.id}>{textbook.name}</option>
-                        ))}
-                    </select>
-                    <select value={selectedChapter} onChange={e => setSelectedChapter(e.target.value)} disabled={!selectedTextbook}>
-                        <option value="">Select a chapter</option>
-                        {chapters.map(chapter => (
-                            <option key={chapter.id} value={chapter.id}>{chapter.title}</option>
-                        ))}
-                    </select> */}
+
 
 
                     {/* Subject Select */}
@@ -764,7 +371,15 @@ x + y = z
 
                     {/* Display Chapter Summary */}
                     {showChapterSummary && chapterSummary && (
+
                         <div>
+                            <button
+                                className="custom-button-modern"
+                                onClick={generateChapterPDF}
+                                disabled={!showChapterSummary}
+                            >
+                                Download as PDF
+                            </button>
                             <h1 style={{
                                 color: 'white',            // Use camelCase for CSS properties
                                 fontSize: '32px',         // font-size becomes fontSize
@@ -774,7 +389,22 @@ x + y = z
                                 fontStyle: 'normal',       // Italic text
                             }}>
                                 Chapter Summary
-                            </h1> <TypewriterRenderer content={chapterSummary} />
+                            </h1> 
+                            <div ref={chapterPdfContentRef}>
+                            <TypewriterRenderer content={chapterSummary} />
+                            </div>
+                            {showPDFModal && (
+                                <div className="pdf-modal-overlay">
+                                    <div className="pdf-modal-content">
+                                        <h2>PDF Generated!</h2>
+                                        <p>Your PDF is ready for download.</p>
+                                        <button onClick={() => setShowPDFModal(false)}>Close</button>
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Optional: Add a blur effect to the background when the modal is shown */}
+                            {showPDFModal && <div className="blur-background"></div>}
                         </div>
                     )}
 
@@ -919,31 +549,39 @@ x + y = z
 const styles = {
     container: {
         display: 'flex',              // Enable Flexbox
-        height: '150vh',              // Full viewport height
+        height: '100vh',              // Full viewport height
         justifyContent: 'space-between', // Space between the two sections
         padding: '0px',              // Padding for the container
         borderRadius: '20px',         // Rounded corners
-        overflow: 'auto',
+        overflow: 'hidden',
         border: '20px solid rgb(139, 0, 0)',
-        width: '100vw',
-        
+        width: '99vw',
+
     },
     left: {
+        flex: 1,  
         width: '50%',                 // Left section width
+        backgroundColor: '#FFFFFF',   // Light gray background for the left section
         backgroundColor: '#FFFFFF',   // Light gray background for the left section
         padding: '0vw',
         borderRadius: '0px',         // Rounded corners
         overflow: 'auto',
         border: '3px solid rgb(211, 211, 211)',
         margin: '0px',
+        border: '3px solid rgb(211, 211, 211)',
+        margin: '0px',
     },
     right: {
+        flex: 1,  
         width: '50%',                 // Right section width
+        backgroundColor: '#FFFFFF',   // Light gray background for the right section
         backgroundColor: '#FFFFFF',   // Light gray background for the right section
         padding: '0vw',
         borderRadius: '0px',         // Rounded corners
         textAlign: 'left',            // Left align text in the typewriter
         overflow: 'auto',
+        border: '3px solid rgb(211, 211, 211)',
+        margin: '0px',
         border: '3px solid rgb(211, 211, 211)',
         margin: '0px',
     },

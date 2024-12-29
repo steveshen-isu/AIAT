@@ -7,14 +7,30 @@ import TypewriterResponse from './TypeWriterResponse';
 const currentUrl = window.location.href;
 
 const ipAddress = currentUrl.split(':')[1].split('/')[2];
+import React, { useState, useEffect, memo } from 'react';
+import 'katex/dist/katex.min.css';
+
+import katex from 'katex';
+import Typewriter from './Typewriter';
+import TypewriterResponse from './TypeWriterResponse';
+const currentUrl = window.location.href;
+
+const ipAddress = currentUrl.split(':')[1].split('/')[2];
 function ChatBox() {
     const [message, setMessage] = useState('');
     const [responses, setResponses] = useState([]);
     const [pastedImage, setPastedImage] = useState(null);
     const [loading, setLoading] = useState(false);
     const [errorMessage, setErrorMessage] = useState(null);
+    const [pastedImage, setPastedImage] = useState(null);
+    const [loading, setLoading] = useState(false);
+    const [errorMessage, setErrorMessage] = useState(null);
 
     const sendMessage = async () => {
+        if (!message && !pastedImage) return;
+        setErrorMessage(null)
+
+        setLoading(true);
         if (!message && !pastedImage) return;
         setErrorMessage(null)
 
@@ -35,19 +51,41 @@ function ChatBox() {
             };
 
             const response = await fetch('http://' + ipAddress + ':200/api/chat', {
+            const fullConversation = [
+                ...responses.map((item) => [
+                    { role: 'user', content: item.query },
+                    { role: 'assistant', content: item.response },
+                ]).flat(),
+                { role: 'user', content: message },
+
+            ];
+
+            const requestBody = {
+                conversation: fullConversation,
+                image: pastedImage,
+            };
+
+            const response = await fetch('http://' + ipAddress + ':200/api/chat', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(requestBody),
+                body: JSON.stringify(requestBody),
             });
+
 
             const data = await response.json();
             setResponses((prev) => [
                 ...prev,
                 { query: message, response: data.response },
             ]);
+            setResponses((prev) => [
+                ...prev,
+                { query: message, response: data.response },
+            ]);
             setMessage('');
+            setPastedImage(null);
             setPastedImage(null);
         } catch (error) {
             console.error('API Error:', error);
@@ -108,10 +146,68 @@ function ChatBox() {
     const removeImage = () => {
         setPastedImage(null);
     };
+            console.error('API Error:', error);
+            setErrorMessage('An unexpected error occurred. Please try again.');
+
+            // Check if the error has a response (from the backend)
+            if (error.response) {
+                console.error('Error Response:', error.response.data);
+
+                // Handle server errors (e.g., 500)
+                if (error.response.status === 500) {
+                    setErrorMessage(
+                        error.response.data.message || 'An unexpected error occurred on the server.'
+                    );
+                } else {
+                    setErrorMessage(error.response.data.message || 'An error occurred.');
+                }
+            }
+            // Handle network or other client-side errors (e.g., timeout, connection issues)
+            else if (error.message) {
+                if (error.message === 'Network Error') {
+                    setErrorMessage('Network error: Unable to reach the server. Please try again later.');
+                } else if (error.code === 'ECONNABORTED') {
+                    setErrorMessage('Request Timeout: The request took too long to complete. Please try again later.');
+                } else {
+                    setErrorMessage(`Unexpected error: I'm not smart enough for this task. Try something easier`);
+                }
+            }
+            // Handle cases where error object is not properly structured (fallback)
+            else {
+                setErrorMessage('An unexpected error occurred. Please try again.');
+            }
+        } finally {
+            setLoading(false);
+        }
+
+    };
+
+
+
+    const handlePaste = (event) => {
+        const items = event.clipboardData.items;
+        for (const item of items) {
+            if (item.type.startsWith('image/')) {
+                const file = item.getAsFile();
+                const reader = new FileReader();
+
+                reader.onload = (e) => {
+                    setPastedImage(e.target.result);
+                };
+
+                reader.readAsDataURL(file);
+                break;
+            }
+        }
+    };
+
+    const removeImage = () => {
+        setPastedImage(null);
+    };
     return (
-        <div className="flex flex-col h-[85vh] bg-gray-100">
+        <div className="flex flex-col min-h-[85vh] bg-gray-100">
             {/* Chat container */}
-            <div className="h-[75vh] overflow-y-auto">
+            <div className="min-h-[75vh] overflow-y-auto mb-[12vh]">
                 {/* Displaying conversation */}
                 {responses.map((item, index) => (
                     <div key={index} className="mb-4 w-full max-w-6x1 flex-row-reverse justify-start">
@@ -152,7 +248,7 @@ function ChatBox() {
             </div>
 
             {/* Message input (always at the bottom) */}
-            <div className="flex h-[10vh] items-center space-x-4 p-4 border-t border-gray-300 bg-white fixed bottom-0 w-full mt-10">
+            <div className="flex h-[12vh] items-center space-x-4 p-4 border-t border-gray-300 bg-white fixed bottom-0 w-full mt-10">
                 <textarea
                     className="!custom-textarea p-4 bg-white border border-gray-300 rounded-lg w-1/2 max-w-3x1 resize-none !text-hase placeholder-gray-500"
                     value={message}
@@ -198,8 +294,12 @@ function ChatBox() {
             </div>
 
 
+
+
         </div>
     );
+
+
 
 
 }

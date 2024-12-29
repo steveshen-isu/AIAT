@@ -82,7 +82,7 @@ const LinearEquationSolver = () => {
                 className="p-2 border rounded w-1/4"
                 onChange={(e) => handleCoefficientChange(row, 1, e.target.value)}
               />
-              <span>x{row} +</span>
+              <span>x +</span>
               <input
                 type="number"
                 placeholder={`a${row}2`}

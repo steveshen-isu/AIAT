@@ -43,7 +43,7 @@ function AdvancedCalculator() {
     { name: 'Formulas', component: <FormulasComponent /> },
     { name: 'Random Number Generator', component: <RandomNumberGenerator /> },
     { name: 'Monte Carlo Simulator', component: <MonteCarloSimulator /> },
-    { name: 'Numerical ODE Solver', component: <NumericalODESolver /> },
+    { name: 'Differential Equation Solver', component: <NumericalODESolver /> },
     { name: 'Probability Experiments', component: <ProbExperiments /> }
   ];
 
@@ -292,6 +292,34 @@ function AdvancedCalculator() {
           setIsTooManySolutions(false)
           analyzeResult = findLocalExtrema(expr);
           break;
+        case 'expand':
+          setIsTooManySolutions(false)
+
+
+          const analyzeResultExpand = '\\(' + nerdamer('expand\(' + expr + '\)').toTeX() + '\\)'
+          analyzeResult = analyzeResultExpand.replace(/log/g, 'ln');
+          break;
+        case 'simplify':
+          setIsTooManySolutions(false)
+
+
+          const analyzeResultSimplify = '\\(' + nerdamer('simplify\(' + expr + '\)').toTeX() + '\\)'
+          analyzeResult = analyzeResultSimplify.replace(/log/g, 'ln');
+          break;
+        case 'partial':
+          setIsTooManySolutions(false)
+
+
+          const analyzeResultPartial = '\\(' + nerdamer('partfrac\(' + expr + '\)').toTeX() + '\\)'
+          analyzeResult = analyzeResultPartial.replace(/log/g, 'ln');
+          break;
+        case 'factor':
+          setIsTooManySolutions(false)
+
+
+          const analyzeResultFactor = '\\(' + nerdamer('factor\(' + expr + '\)').toTeX() + '\\)'
+          analyzeResult = analyzeResultFactor.replace(/log/g, 'ln');
+          break;
         default:
           analyzeResult = 'Please select an operation';
       }
@@ -495,30 +523,73 @@ function AdvancedCalculator() {
         <div className="flex justify-around w-full max-w-xl mb-6">
           <button
             onClick={() => setOperation('differentiate')}
-            className="px-6 py-3 bg-stone-500 text-white font-semibold rounded-lg shadow-md hover:bg-stone-600 focus:outline-none"
-          >
+            className={`px-6 py-3 font-semibold rounded-lg shadow-md focus:outline-none ${operation === 'differentiate'
+              ? 'bg-stone-300 text-gray-500 cursor-not-allowed' 
+              : 'bg-stone-500 text-white hover:bg-stone-600'     
+            }`}          >
             Differentiate
           </button>
           <button
             onClick={() => setOperation('integrate')}
-            className="px-6 py-3 bg-stone-500 text-white font-semibold rounded-lg shadow-md hover:bg-stone-600 focus:outline-none"
-          >
+            className={`px-6 py-3 font-semibold rounded-lg shadow-md focus:outline-none ${operation === 'integrate'
+              ? 'bg-stone-300 text-gray-500 cursor-not-allowed' 
+              : 'bg-stone-500 text-white hover:bg-stone-600'     
+            }`}          >
             Integrate
           </button>
           <button
             onClick={() => setOperation('solve')}
-            className="px-6 py-3 bg-stone-500 text-white font-semibold rounded-lg shadow-md hover:bg-stone-600 focus:outline-none"
-          >
+            className={`px-6 py-3 font-semibold rounded-lg shadow-md focus:outline-none ${operation === 'solve'
+              ? 'bg-stone-300 text-gray-500 cursor-not-allowed' 
+              : 'bg-stone-500 text-white hover:bg-stone-600'     
+            }`}          >
             Solve
           </button>
           <button
             onClick={() => setOperation('localextrema')}
-            className="px-6 py-3 bg-stone-500 text-white font-semibold rounded-lg shadow-md hover:bg-stone-600 focus:outline-none"
-          >
+            className={`px-6 py-3 font-semibold rounded-lg shadow-md focus:outline-none ${operation === 'localextrema'
+              ? 'bg-stone-300 text-gray-500 cursor-not-allowed' 
+              : 'bg-stone-500 text-white hover:bg-stone-600'     
+            }`}          >
             Find Extrema
           </button>
         </div>
-
+        <div className="flex justify-around w-full max-w-xl mb-6">
+          <button
+            onClick={() => setOperation('expand')}
+            className={`px-6 py-3 font-semibold rounded-lg shadow-md focus:outline-none ${operation === 'expand'
+              ? 'bg-stone-300 text-gray-500 cursor-not-allowed' 
+              : 'bg-stone-500 text-white hover:bg-stone-600'     
+            }`}          >
+            Expand
+          </button>
+          <button
+            onClick={() => setOperation('simplify')}
+            className={`px-6 py-3 font-semibold rounded-lg shadow-md focus:outline-none ${operation === 'simplify'
+              ? 'bg-stone-300 text-gray-500 cursor-not-allowed' 
+              : 'bg-stone-500 text-white hover:bg-stone-600'     
+            }`}          >
+            Simplify
+          </button>
+          <button
+            onClick={() => setOperation('partial')}
+            disabled={operation === 'partial'}
+            className={`px-6 py-3 font-semibold rounded-lg shadow-md focus:outline-none ${operation === 'partial'
+                ? 'bg-stone-300 text-gray-500 cursor-not-allowed' 
+                : 'bg-stone-500 text-white hover:bg-stone-600'     
+              }`}
+          >
+            Partial Fraction
+          </button>
+          <button
+            onClick={() => setOperation('factor')}
+            className={`px-6 py-3 font-semibold rounded-lg shadow-md focus:outline-none ${operation === 'factor'
+              ? 'bg-stone-300 text-gray-500 cursor-not-allowed' 
+              : 'bg-stone-500 text-white hover:bg-stone-600'     
+            }`}          >
+            Factorization
+          </button>
+        </div>
         <div className="w-full max-w-xl mb-6">
           <button
             onClick={handleSubmit}
@@ -580,7 +651,7 @@ function AdvancedCalculator() {
         </div>
       </div>
       <div className="bg-white border border-gray-200 shadow-md rounded-lg p-4 flex flex-col items-center">
-      <h1 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-stone-600 to-stone-400 drop-shadow-sm mb-8">
+        <h1 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-stone-600 to-stone-400 drop-shadow-sm mb-8">
           Math & Stats Tools
         </h1>
         {activeComponent ? (
