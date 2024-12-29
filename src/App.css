@@ -1,48 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
-
-
 
 .App-logo {
   height: 60vmin;
   height: 60vmin;
   pointer-events: none;
-} 
-} 
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-.typewriter {
-  color: gray;        
-  font-size: 22px;       
-  text-align: center;     
-  font-family: Segoe UI, sans-serif;  
-  font-weight: lighter;       
-  font-style: normal;      
 }
 
-
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 .typewriter {
-  color: gray;        
-  font-size: 22px;       
-  text-align: center;     
-  font-family: Segoe UI, sans-serif;  
-  font-weight: lighter;       
-  font-style: normal;      
+  color: gray;
+  font-size: 22px;
+  text-align: center;
+  font-family:
+    Segoe UI,
+    sans-serif;
+  font-weight: lighter;
+  font-style: normal;
 }
 
-
+.typewriter {
+  color: gray;
+  font-size: 22px;
+  text-align: center;
+  font-family:
+    Segoe UI,
+    sans-serif;
+  font-weight: lighter;
+  font-style: normal;
+}
 
 .App-header {
   background-color: #ededed;
@@ -74,18 +64,17 @@
 
 button {
   background-color: #323232; /* Green background */
-  border: none;              /* Remove borders */
-  color: white;              /* White text */
-  padding: 6px 14px;        /* Add some padding */
-  text-align: center;        /* Center text */
-  text-decoration: none;     /* Remove underline */
-  display: inline-block;     /* Inline block for buttons */
-  font-size: 12px;           /* Font size */
-  margin: 10px 2px;          /* Margins around buttons */
-  cursor: pointer;           /* Pointer cursor on hover */
-  border-radius: 5px;        /* Rounded corners */
-  transition: background-color 0.5s ease;  /* Smooth transition on hover */
-
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 6px 14px; /* Add some padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Inline block for buttons */
+  font-size: 12px; /* Font size */
+  margin: 10px 2px; /* Margins around buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.5s ease; /* Smooth transition on hover */
 }
 
 /* Add a hover effect for buttons */
@@ -110,7 +99,9 @@ button:hover {
   background-color: #f0f0f0;
   border: 2px solid transparent;
   cursor: pointer;
-  transition: background-color 0.3s, border-color 0.3s;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
 }
 
 .choices .choice.active {
@@ -120,7 +111,7 @@ button:hover {
 
 /* Styling the select box */
 .custom-select-modern {
-  appearance: 'menulist-button';  /* Remove default arrow */
+  appearance: 'menulist-button'; /* Remove default arrow */
   padding: 10px 15px;
   font-size: 16px;
   font-family: 'Trebuchet MS', sans-serif;
@@ -132,7 +123,7 @@ button:hover {
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  width: 250px;  /* Set width */
+  width: 250px; /* Set width */
 }
 
 /* Add a custom arrow (triangle down) */
@@ -161,14 +152,18 @@ button:hover {
   cursor: pointer;
   font-size: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Ensures consistent box model behavior */
 }
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* Ensures consistent box model behavior */
@@ -181,87 +176,86 @@ body, html {
 }
 
 /* Optional focus outline */
-.custom-select-modern:focus, .custom-button:focus {
+.custom-select-modern:focus,
+.custom-button:focus {
   outline: 2px solid #4ca7af;
 }
-
 
 /* Container to align textarea and button */
 .input-wrapper {
   display: grid;
-  grid-template-columns: 90% 1fr;  /* Create 2 columns, 70% for textarea, remaining for button */
-  align-items: center;        /* Vertically align items */
-  border: 2px solid #55565a;     /* Border for the wrapper */
-  border-radius: 30px;        /* Rounded corners for the container */
-  justify-content: flex-start;  /* Align children to the left initially */
+  grid-template-columns: 90% 1fr; /* Create 2 columns, 70% for textarea, remaining for button */
+  align-items: center; /* Vertically align items */
+  border: 2px solid #55565a; /* Border for the wrapper */
+  border-radius: 30px; /* Rounded corners for the container */
+  justify-content: flex-start; /* Align children to the left initially */
   padding: 5px;
   width: 94%;
   max-width: 950px;
-  background-color: #55565a;  /* Light background inside the border */
+  background-color: #55565a; /* Light background inside the border */
   position: relative;
-  margin-left: 2%;  
+  margin-left: 2%;
 }
 
 /* Borderless textarea styling */
 .custom-textarea {
-  grid-column: 1 / 2;          /* Occupy the first column */
+  grid-column: 1 / 2; /* Occupy the first column */
   padding: 40px;
-  width: 35vw; 
+  width: 35vw;
   font-size: 24px;
-  border: 2px solid #55565a; 
-  border-radius: 20px;               
-  border: 2px solid #55565a; 
-  border-radius: 20px;               
+  border: 2px solid #55565a;
+  border-radius: 20px;
+  border: 2px solid #55565a;
+  border-radius: 20px;
   font-family: 'Trebuchet MS', sans-serif;
-  outline: none;              /* Remove focus outline */
+  outline: none; /* Remove focus outline */
   background-color: transparent; /* Inherit background from wrapper */
-  resize: none;               /* Disable resizing */
-  height: 60px;               /* Fixed height */
+  resize: none; /* Disable resizing */
+  height: 60px; /* Fixed height */
   margin-right: 80px;
-  white-space: normal;         /* Ensure text wraps inside */
-  word-wrap: break-word;       /* Break words that are too long */
-  overflow: hidden;            /* Hide overflowing text */
-  overflow-wrap: break-word;   /* Handle word breaks nicely */
+  white-space: normal; /* Ensure text wraps inside */
+  word-wrap: break-word; /* Break words that are too long */
+  overflow: hidden; /* Hide overflowing text */
+  overflow-wrap: break-word; /* Handle word breaks nicely */
 }
 
 /* Styling for circular submit button */
 .submit-button {
-  grid-column: 2 / 3; 
-  background-color: #929392;  /* Green background */
+  grid-column: 2 / 3;
+  background-color: #929392; /* Green background */
   color: white;
-  width: 150px;                /* Fixed width to make it circular */
-  height: 40px;               /* Fixed height to make it circular */
-  border-radius: 50px;         /* 50% border-radius makes it a circle */
-  border: none;     /* Border for the wrapper */
+  width: 150px; /* Fixed width to make it circular */
+  height: 40px; /* Fixed height to make it circular */
+  border-radius: 50px; /* 50% border-radius makes it a circle */
+  border: none; /* Border for the wrapper */
   cursor: pointer;
   display: flex;
-  align-items: center;        /* Center arrow vertically */
-  justify-content: center;    /* Center arrow horizontally */
+  align-items: center; /* Center arrow vertically */
+  justify-content: center; /* Center arrow horizontally */
   font-size: 18px;
   transition: background-color 0.3s ease;
   transform: translateX(-30%); /* Moves it to the left by 30% */
-margin-top:20px;
-margin-left: auto;           /* Pushes the button to the right */
-
+  margin-top: 20px;
+  margin-left: auto; /* Pushes the button to the right */
 }
 
 /* Hover effect for the circular button */
 .submit-button:hover {
-  background-color: #45a049;  /* Darker green on hover */
+  background-color: #45a049; /* Darker green on hover */
 }
 
 .submit-button:disabled {
-  background-color: #ccc;  /* Dimmed color */
-  color: #666;  /* Dimmed text color */
-  cursor: not-allowed;  /* Shows a "not-allowed" cursor */
-  opacity: 0.6;  /* Adds a transparent effect */
-  pointer-events: none;  /* Prevents any interaction */
+  background-color: #ccc; /* Dimmed color */
+  color: #666; /* Dimmed text color */
+  cursor: not-allowed; /* Shows a "not-allowed" cursor */
+  opacity: 0.6; /* Adds a transparent effect */
+  pointer-events: none; /* Prevents any interaction */
 }
 
 .loading-animation {
   font-size: 150px;
   display: inline-block;
-  margin-left: 50px; 
+  margin-left: 50px;
 }
 
 .dot {
@@ -292,40 +286,40 @@ margin-left: auto;           /* Pushes the button to the right */
 }
 
 @keyframes fade {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
-
-
-
 ::-webkit-scrollbar {
-  width: 8px;                /* Width of the scrollbar */
+  width: 8px; /* Width of the scrollbar */
 }
 
 /* Customize the track (the background of the scrollbar) */
 ::-webkit-scrollbar-track {
-  background: transparent;    /* Transparent background */
-  border-radius: 15px;        /* Rounded corners for the track */
+  background: transparent; /* Transparent background */
+  border-radius: 15px; /* Rounded corners for the track */
 }
 
 /* Customize the draggable part (the thumb) */
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(100, 100, 100, 0);  /* Darker color with transparency */
-  border-radius: 10px;        /* Rounded corners for the thumb */
-  border: 2px solid transparent;  /* Padding around the thumb to make it smaller */
-  box-shadow: inset 0 0 0 12px rgba(20, 20, 20, 0.8);  /* Optional: Add shadow for better separation */
+  background-color: rgba(100, 100, 100, 0); /* Darker color with transparency */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 2px solid transparent; /* Padding around the thumb to make it smaller */
+  box-shadow: inset 0 0 0 12px rgba(20, 20, 20, 0.8); /* Optional: Add shadow for better separation */
 }
 
 /* Optional: Add hover effect to the scrollbar thumb */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(100, 100, 100, 0.9);  /* Slightly darker when hovered */
+  background-color: rgba(100, 100, 100, 0.9); /* Slightly darker when hovered */
 }
 
-
-
 .plot-container {
-  width: 100%;  /* Fixed width */
+  width: 100%; /* Fixed width */
   height: 800px; /* Fixed height */
   margin: 50px;
   align-items: center;
@@ -333,9 +327,8 @@ margin-left: auto;           /* Pushes the button to the right */
   position: relative;
   z-index: 1;
   overflow: hidden;
-/*   position: relative;  *//* Ensures it stays in place */
+  /*   position: relative;  */ /* Ensures it stays in place */
 }
-
 
 .custom-dropdown {
   border: 1px solid #ccc;
@@ -420,7 +413,6 @@ button:hover {
   background-color: #e0a800;
 }
 
-
 /* Blur effect on the background */
 .blur-background {
   position: fixed;
@@ -457,7 +449,7 @@ button:hover {
 }
 
 .pdf-modal-content button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   padding: 10px;
