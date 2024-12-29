@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import * as d3 from 'd3';
 import Plot from 'react-plotly.js';
 import Typewriter from './Typewriter';
 import Button from "@/components/ui/button"; // Import Button from shadcn
