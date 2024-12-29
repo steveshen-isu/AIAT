@@ -562,9 +562,12 @@ const styles = {
         flex: 1,  
         width: '50%',                 // Left section width
         backgroundColor: '#FFFFFF',   // Light gray background for the left section
+        backgroundColor: '#FFFFFF',   // Light gray background for the left section
         padding: '0vw',
         borderRadius: '0px',         // Rounded corners
         overflow: 'auto',
+        border: '3px solid rgb(211, 211, 211)',
+        margin: '0px',
         border: '3px solid rgb(211, 211, 211)',
         margin: '0px',
     },
@@ -572,10 +575,13 @@ const styles = {
         flex: 1,  
         width: '50%',                 // Right section width
         backgroundColor: '#FFFFFF',   // Light gray background for the right section
+        backgroundColor: '#FFFFFF',   // Light gray background for the right section
         padding: '0vw',
         borderRadius: '0px',         // Rounded corners
         textAlign: 'left',            // Left align text in the typewriter
         overflow: 'auto',
+        border: '3px solid rgb(211, 211, 211)',
+        margin: '0px',
         border: '3px solid rgb(211, 211, 211)',
         margin: '0px',
     },

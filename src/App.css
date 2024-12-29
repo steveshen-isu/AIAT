@@ -6,7 +6,9 @@
 
 .App-logo {
   height: 60vmin;
+  height: 60vmin;
   pointer-events: none;
+} 
 } 
 
 
@@ -26,7 +28,24 @@
 
 
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.typewriter {
+  color: gray;        
+  font-size: 22px;       
+  text-align: center;     
+  font-family: Segoe UI, sans-serif;  
+  font-weight: lighter;       
+  font-style: normal;      
+}
+
+
+
 .App-header {
+  background-color: #ededed;
   background-color: #ededed;
   min-height: 100vh;
   display: flex;
@@ -149,6 +168,11 @@ body, html {
   padding: 0;
   box-sizing: border-box; /* Ensures consistent box model behavior */
 }
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures consistent box model behavior */
+}
 
 /* Hover effect for button */
 .custom-button-modern:hover {
@@ -184,6 +208,8 @@ body, html {
   padding: 40px;
   width: 35vw; 
   font-size: 24px;
+  border: 2px solid #55565a; 
+  border-radius: 20px;               
   border: 2px solid #55565a; 
   border-radius: 20px;               
   font-family: 'Trebuchet MS', sans-serif;

@@ -1,101 +1,58 @@
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo, useEffect, useRef } from 'react';
+import QuestionDetail from './QuestionDetail';
+import axios from 'axios';
+import Tesseract from 'tesseract.js';
+import { franc } from 'franc-min';
 
-function FilterableQuestionTable() {
-  const [searchText, setSearchText] = useState("");
-  const [selectedFilter, setSelectedFilter] = useState({});
-  const [questions] = useState([
-    {
-      id: 1,
-      questionTitle: "optimize performance issues",
-      questionContent:
-        "How to optimize performance issues in large-scale data processing?",
-      examBoard: "CAIE",
-      syllabusCode: "9709",
-      subject: "MATH",
-      yearOfExam: 2022,
-      session: "May/June",
-      level: "P1",
-      solutionContent:
-        "The coefficient of \\(x^3\\) in \\((3 + 2ax)^5\\) is given by:\n\\[\\binom{5}{3} \\cdot 3^2 \\cdot (2a)^3 = 10 \\cdot 9 \\cdot 8a^3 = 720a^3.\\]\n\nThe coefficient of \\(x^2\\) in \\((2 + ax)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot 2^4 \\cdot (a)^2 = 15 \\cdot 16 \\cdot a^2 = 240a^2.\\]\n\nEquating \\(6 \\cdot \\text{Coefficient of } x^2\\) to \\(\\text{Coefficient of } x^3\\):\n\\[720a^3 = 6 \\cdot 240a^2.\\]\n\nSimplifying:\n\\[720a^3 = 1440a^2,\\]\n\\[a = 2.\\]",
-    },
-    {
-      id: 2,
-      questionTitle: "the best practices for inter-service communication",
-      questionContent:
-        "What are the best practices for inter-service communication in microservices?",
-      examBoard: "CAIE",
-      syllabusCode: "9709",
-      subject: "MATH",
-      yearOfExam: "2023",
-      session: "May/June",
-      level: "P1",
-      solutionContent:
-        "The coefficient of \\(x^3\\) in \\((3 + 2ax)^5\\) is given by:\n\\[\\binom{5}{3} \\cdot 3^2 \\cdot (2a)^3 = 10 \\cdot 9 \\cdot 8a^3 = 720a^3.\\]\n\nThe coefficient of \\(x^2\\) in \\((2 + ax)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot 2^4 \\cdot (a)^2 = 15 \\cdot 16 \\cdot a^2 = 240a^2.\\]\n\nEquating \\(6 \\cdot \\text{Coefficient of } x^2\\) to \\(\\text{Coefficient of } x^3\\):\n\\[720a^3 = 6 \\cdot 240a^2.\\]\n\nSimplifying:\n\\[720a^3 = 1440a^2,\\]\n\\[a = 2.\\]",
-    },
-    {
-      id: 3,
-      questionTitle: "Data consistency issues",
-      questionContent:
-        "Data consistency issues encountered during Redis cluster deployment",
-      examBoard: "CAIE",
-      syllabusCode: "9709",
-      subject: "MATH",
-      yearOfExam: "2024",
-      session: "May/June",
-      level: "P1",
-      solutionContent:
-        "The coefficient of \\(x^3\\) in \\((3 + 2ax)^5\\) is given by:\n\\[\\binom{5}{3} \\cdot 3^2 \\cdot (2a)^3 = 10 \\cdot 9 \\cdot 8a^3 = 720a^3.\\]\n\nThe coefficient of \\(x^2\\) in \\((2 + ax)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot 2^4 \\cdot (a)^2 = 15 \\cdot 16 \\cdot a^2 = 240a^2.\\]\n\nEquating \\(6 \\cdot \\text{Coefficient of } x^2\\) to \\(\\text{Coefficient of } x^3\\):\n\\[720a^3 = 6 \\cdot 240a^2.\\]\n\nSimplifying:\n\\[720a^3 = 1440a^2,\\]\n\\[a = 2.\\]",
-    },
-    {
-      id: 4,
-      questionTitle: "scheduling strategies",
-      questionContent:
-        "Resource scheduling strategies in Kubernetes container orchestration",
-      examBoard: "CAIE",
-      syllabusCode: "9709",
-      subject: "MATH",
-      yearOfExam: "2022",
-      session: "May/June",
-      level: "P1",
-      solutionContent:
-        "The coefficient of \\(x^3\\) in \\((3 + 2ax)^5\\) is given by:\n\\[\\binom{5}{3} \\cdot 3^2 \\cdot (2a)^3 = 10 \\cdot 9 \\cdot 8a^3 = 720a^3.\\]\n\nThe coefficient of \\(x^2\\) in \\((2 + ax)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot 2^4 \\cdot (a)^2 = 15 \\cdot 16 \\cdot a^2 = 240a^2.\\]\n\nEquating \\(6 \\cdot \\text{Coefficient of } x^2\\) to \\(\\text{Coefficient of } x^3\\):\n\\[720a^3 = 6 \\cdot 240a^2.\\]\n\nSimplifying:\n\\[720a^3 = 1440a^2,\\]\n\\[a = 2.\\]",
-    },
-    {
-      id: 5,
-      questionTitle: "ensure transaction consistency",
-      questionContent:
-        "How to ensure transaction consistency in distributed systems?",
-      examBoard: "CAIE",
-      syllabusCode: "9709",
-      subject: "MATH",
-      yearOfExam: "2024",
-      session: "May/June",
-      level: "P1",
-      solutionContent:
-        "The coefficient of \\(x^3\\) in \\((3 + 2ax)^5\\) is given by:\n\\[\\binom{5}{3} \\cdot 3^2 \\cdot (2a)^3 = 10 \\cdot 9 \\cdot 8a^3 = 720a^3.\\]\n\nThe coefficient of \\(x^2\\) in \\((2 + ax)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot 2^4 \\cdot (a)^2 = 15 \\cdot 16 \\cdot a^2 = 240a^2.\\]\n\nEquating \\(6 \\cdot \\text{Coefficient of } x^2\\) to \\(\\text{Coefficient of } x^3\\):\n\\[720a^3 = 6 \\cdot 240a^2.\\]\n\nSimplifying:\n\\[720a^3 = 1440a^2,\\]\n\\[a = 2.\\]",
-    },
-    {
-      id: 6,
-      questionTitle: "image lazy loading",
-      questionContent:
-        "Implementation of image lazy loading in frontend performance optimization",
-      examBoard: "CAIE",
-      syllabusCode: "9709",
-      subject: "MATH",
-      yearOfExam: "2021",
-      session: "May/June",
-      level: "P1",
-      solutionContent:
-        "The coefficient of \\(x^3\\) in \\((3 + 2ax)^5\\) is given by:\n\\[\\binom{5}{3} \\cdot 3^2 \\cdot (2a)^3 = 10 \\cdot 9 \\cdot 8a^3 = 720a^3.\\]\n\nThe coefficient of \\(x^2\\) in \\((2 + ax)^6\\) is given by:\n\\[\\binom{6}{2} \\cdot 2^4 \\cdot (a)^2 = 15 \\cdot 16 \\cdot a^2 = 240a^2.\\]\n\nEquating \\(6 \\cdot \\text{Coefficient of } x^2\\) to \\(\\text{Coefficient of } x^3\\):\n\\[720a^3 = 6 \\cdot 240a^2.\\]\n\nSimplifying:\n\\[720a^3 = 1440a^2,\\]\n\\[a = 2.\\]",
-    },
-  ]);
+function FilterableQuestionTable({
+  onQuestionSelected,
+  searchText,
+  setSearchText,
+  results,
+  setResults,
+  currentQuestions,
+  setCurrentQuestions,
+  selectedFilter,
+  setSelectedFilter,
+  currentPage,
+  setCurrentPage,
+  itemsPerPage,
+  setItemsPerPage,
+  selectedButton,
+  setSelectedButton,
+}) {
+  useEffect(() => {
+    const calculateItemsPerPage = () => {
+      const viewportHeight = window.innerHeight;
+      const headerHeight = 64; // 16 * 4 = 64px
+      const searchSectionHeight = 200; // Approximate height for search section
+      const questionCardHeight = 160; // Approximate height for each question card
+      const availableHeight =
+        viewportHeight - headerHeight - searchSectionHeight;
+      return Math.max(3, Math.floor(availableHeight / questionCardHeight));
+    };
+    setItemsPerPage(calculateItemsPerPage());
+    window.addEventListener('resize', () =>
+      setItemsPerPage(calculateItemsPerPage()),
+    );
+  }, []);
 
   const statesFunctions = {
     searchText,
     setSearchText,
     selectedFilter,
     setSelectedFilter,
-    questions,
+    currentPage,
+    setCurrentPage,
+    itemsPerPage,
+    setItemsPerPage,
+    onQuestionSelected,
+    results,
+    setResults,
+    currentQuestions,
+    setCurrentQuestions,
+    selectedButton,
+    setSelectedButton,
   };
   return (
     <div className="min-h-screen bg-gray-50">
@@ -106,6 +63,92 @@ function FilterableQuestionTable() {
           <FilterTable {...statesFunctions} />
         </div>
       </div>
+    </div>
+  );
+}
+
+const recognizeImage = async (base64Image) => {
+  try {
+    // Run OCR with English (eng)
+    const {
+      data: { text: englishText },
+    } = await Tesseract.recognize(base64Image, 'eng', {
+      logger: (m) => console.log(m),
+    });
+    console.log('OCR Result (English):', englishText);
+
+    // Run OCR with Chinese (chi_sim)
+    const {
+      data: { text: chineseText },
+    } = await Tesseract.recognize(base64Image, 'chi_sim', {
+      logger: (m) => console.log(m),
+    });
+    console.log('OCR Result (Chinese):', chineseText);
+
+    // Use franc to detect language
+    const englishLanguage = franc(englishText);
+    const chineseLanguage = franc(chineseText);
+
+    console.log('Language detected for English:', englishLanguage);
+    console.log('Language detected for Chinese:', chineseLanguage);
+
+    // Compare and select the best OCR result based on language detection
+    let selectedText = englishText;
+    let selectedLanguage = 'eng'; // Default to English
+
+    if (chineseLanguage === 'cmn') {
+      selectedText = chineseText;
+      selectedLanguage = 'chi_sim'; // Use Chinese text
+    }
+
+    console.log('Selected Language:', selectedLanguage);
+    console.log('Selected Text:', selectedText);
+
+    return selectedText;
+  } catch (error) {
+    console.error('Error during OCR recognition:', error);
+    return null;
+  }
+};
+
+function UploadImage({ setSearchText }) {
+  const fileInputRef = useRef(null);
+
+  const handleImageUpload = () => {
+    const file = fileInputRef.current.files[0];
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = function (event) {
+        const img = new Image();
+        img.onload = async function () {
+          console.log(img);
+          const extractedText = await recognizeImage(img);
+          setSearchText(extractedText.trim());
+          console.log(extractedText);
+        };
+        img.src = event.target.result;
+      };
+
+      reader.readAsDataURL(file);
+    }
+  };
+
+  return (
+    <div className="flex flex-col items-center space-y-4">
+      <input
+        type="file"
+        ref={fileInputRef}
+        className="hidden"
+        onChange={handleImageUpload}
+      />
+      <button
+        className="flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-lg px-4 py-2 ml-4 !rounded-button whitespace-nowrap text-gray-500"
+        onClick={() => fileInputRef.current.click()}
+      >
+        <i className="fas fa-image mr-2"></i>
+        Upload Image
+      </button>
     </div>
   );
 }
@@ -122,10 +165,7 @@ function SearchBar({ searchText, setSearchText }) {
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
-        <button className="flex items-center justify-center bg-gray-100 hover:bg-gray-200 rounded-lg px-4 py-2 ml-4 !rounded-button whitespace-nowrap text-gray-500">
-          <i className="fas fa-image mr-2"></i>
-          Upload Image
-        </button>
+        <UploadImage setSearchText={setSearchText} />
       </div>
       <button
         onClick={() => setSearchText(searchText)}
@@ -139,20 +179,42 @@ function SearchBar({ searchText, setSearchText }) {
 
 function QuestionTable({
   searchText,
-  setSearchText,
   selectedFilter,
-  setSelectedFilter,
-  questions,
+  currentPage,
+  setCurrentPage,
+  itemsPerPage,
+  onQuestionSelected,
+  results,
+  setResults,
+  currentQuestions,
+  setCurrentQuestions,
 }) {
-  const filteredQuestions = useMemo(() => {
-    let filtered = [...questions];
-
-    if (searchText) {
-      filtered = filtered.filter((q) =>
-        q.questionContent.toLowerCase().includes(searchText.toLowerCase())
-      );
+  const fetchQuestionData = async (searchText, setResults) => {
+    try {
+      if (searchText) {
+        const response = await axios.post(
+          'http://localhost:200/api/queryQuestionBank',
+          {
+            searchText,
+          },
+        );
+        setResults(response.data);
+      }
+    } catch (error) {
+      console.error('Request failed: ', error);
     }
+  };
 
+  useEffect(() => {
+    const fetchData = async () => {
+      await fetchQuestionData(searchText, setResults);
+    };
+    fetchData();
+  }, [searchText]);
+
+  const currentQuestionsMemo = useMemo(() => {
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    let filtered = results.slice(startIndex, startIndex + itemsPerPage);
     if (selectedFilter) {
       let tFiltered = [...filtered];
       Object.entries(selectedFilter).forEach(([key, value]) => {
@@ -160,45 +222,70 @@ function QuestionTable({
       });
     }
     return filtered;
-  }, [questions, searchText, selectedFilter]);
+  }, [results, currentPage, itemsPerPage, selectedFilter]);
+
+  useEffect(() => {
+    setCurrentQuestions(currentQuestionsMemo);
+  }, [currentQuestionsMemo]);
+
+  const totalPages = Math.ceil(results.length / itemsPerPage);
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <div className="flex-1">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-bold">Search Results</h2>
-        <span className="text-gray-500">
-          {filteredQuestions.length} questions found
-        </span>
+        <span className="text-gray-500">{results.length} questions found</span>
       </div>
 
       <div className="space-y-4">
-        {filteredQuestions.map((question) => (
-          <QuestionRow question={question} key={question.id} />
+        {currentQuestions.map((question) => (
+          <QuestionRow
+            question={question}
+            key={question.id}
+            onQuestionSelected={onQuestionSelected}
+          />
         ))}
       </div>
-
-      <div className="flex justify-center mt-8">
-        <button className="px-4 py-2 mx-1 bg-white border border-gray-300 !rounded-button whitespace-nowrap text-black">
-          Previous
-        </button>
-        <button className="px-4 py-2 mx-1 bg-blue-600 text-white !rounded-button whitespace-nowrap text-black">
-          1
-        </button>
-        <button className="px-4 py-2 mx-1 bg-white border border-gray-300 !rounded-button whitespace-nowrap text-black">
-          2
-        </button>
-        <button className="px-4 py-2 mx-1 bg-white border border-gray-300 !rounded-button whitespace-nowrap text-black">
-          3
-        </button>
-        <button className="px-4 py-2 mx-1 bg-white border border-gray-300 !rounded-button whitespace-nowrap text-black">
-          Next
-        </button>
-      </div>
+      <PaginationButtons
+        currentPage={currentPage}
+        totalPages={totalPages}
+        handlePageChange={handlePageChange}
+      />
     </div>
   );
 }
 
-function QuestionRow({ question }) {
+function PaginationButtons({ currentPage, totalPages, handlePageChange }) {
+  const buttons = [];
+  const maxVisiblePages = 5;
+  let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
+  let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+  if (endPage - startPage + 1 < maxVisiblePages) {
+    startPage = Math.max(1, endPage - maxVisiblePages + 1);
+  }
+  for (let i = startPage; i <= endPage; i++) {
+    buttons.push(
+      <button
+        key={i}
+        onClick={() => handlePageChange(i)}
+        className={`px-4 py-2 mx-1 !rounded-button whitespace-nowrap ${
+          currentPage === i
+            ? 'bg-blue-600 text-white'
+            : 'bg-gray-200 border border-gray-300 hover:bg-gray-50'
+        }`}
+      >
+        {i}
+      </button>,
+    );
+  }
+  return buttons;
+}
+
+function QuestionRow({ question, onQuestionSelected }) {
   return (
     <div
       key={question.id}
@@ -220,7 +307,10 @@ function QuestionRow({ question }) {
             </span>
           </div>
         </div>
-        <button className="ml-4 px-4 py-2 bg-blue-50 text-blue-600 hover:bg-blue-100 !rounded-button whitespace-nowrap">
+        <button
+          className="ml-4 px-4 py-2 bg-blue-50 text-blue-600 hover:bg-blue-100 !rounded-button whitespace-nowrap"
+          onClick={() => onQuestionSelected(question)}
+        >
           View Details
         </button>
       </div>
@@ -228,46 +318,65 @@ function QuestionRow({ question }) {
   );
 }
 
-function FilterTable({ selectedFilter, setSelectedFilter, questions }) {
+function FilterTable({
+  selectedFilter,
+  setSelectedFilter,
+  results,
+  selectedButton,
+  setSelectedButton,
+}) {
   const [categories, setCategories] = useState({});
   const categoryKeys = [
-    "examBoard",
-    "syllabusCode",
-    "subject",
-    "yearOfExam",
-    "session",
-    "level",
+    'examBoard',
+    'syllabusCode',
+    'subject',
+    'yearOfExam',
+    'session',
+    'level',
   ];
   useEffect(() => {
-    if (questions.length > 0) {
+    if (results.length > 0) {
       const tCategories = {};
       categoryKeys.forEach((title) => {
-        const isExists = questions.every((item) => title in item);
-        if (isExists) {
-          const valuesSet = new Set();
-          const values = questions.map((item) => item[title]);
-          values.forEach((value) => valuesSet.add(value));
-          tCategories[title] = Array.from(valuesSet) || [];
+        const values = [];
+        results.forEach((item) => {
+          if (title in item) {
+            values.push(item[title]);
+          }
+        });
+        if (values.length > 0) {
+          const valuesSet = new Set(values);
+          tCategories[title] = Array.from(valuesSet);
         } else {
-          console.log(`${title} missed in some objects.`);
+          console.log(`${title} missed in all objects or has no valid values.`);
         }
       });
       setCategories(tCategories);
     }
-  }, []);
+  }, [results]);
+
+  let rowCounter = 0;
+
+  const handleClick = (rowId, filter) => {
+    setSelectedButton(null);
+    setSelectedButton(rowId);
+    setSelectedFilter(selectedFilter === filter ? null : filter);
+  };
 
   return (
     <div className="w-80">
       {categoryKeys.map((category) => (
         <div className="bg-white rounded-lg shadow-sm p-6" key={category}>
           <FilterCategoryRow category={category} key={category} />
-          <div className="border-t mt-6 pt-6">
+          <div>
             {categories[category]?.map((value, index) => (
               <FilterRow
                 key={index}
                 category={category}
                 content={value}
-                setSelectedFilter={setSelectedFilter}
+                rowId={rowCounter++}
+                selectedButton={selectedButton}
+                handleClick={handleClick}
               />
             ))}
           </div>
@@ -280,24 +389,26 @@ function FilterTable({ selectedFilter, setSelectedFilter, questions }) {
 function FilterCategoryRow({ category }) {
   return (
     <h3 className="text-lg font-medium mb-4" key={category}>
-      {category}
+      {[category[0].toUpperCase(), ...category.slice(1)].join('')}
     </h3>
   );
 }
 
-function FilterRow({ category, content, selectedFilter, setSelectedFilter }) {
+function FilterRow({ category, content, rowId, selectedButton, handleClick }) {
   const filter = {};
   filter[category] = content;
+
+  const isButtonSelected = (rowId) => {
+    return selectedButton === rowId;
+  };
+
   return (
     <button
-      key={content}
-      onClick={() =>
-        setSelectedFilter(selectedFilter === filter ? null : filter)
-      }
+      onClick={() => handleClick(rowId, filter)}
       className={`w-full text-left px-4 py-2 !rounded-button whitespace-nowrap text-black ${
-        selectedFilter === content
-          ? "bg-blue-50 text-blue-600"
-          : "bg-gray-50 hover:bg-gray-100"
+        isButtonSelected(rowId)
+          ? 'bg-blue-50 text-blue-600'
+          : 'bg-gray-50 hover:bg-gray-100'
       }`}
     >
       {content}
@@ -306,5 +417,52 @@ function FilterRow({ category, content, selectedFilter, setSelectedFilter }) {
 }
 
 export default function QuestionSearch() {
-  return <FilterableQuestionTable />;
+  const [showDetail, setShowDetail] = useState(false);
+  const [showFilterableQuestionTable, setShowFilterableQuestionTable] =
+    useState(true);
+  const [searchText, setSearchText] = useState('');
+  const [results, setResults] = useState([]);
+  const [currentQuestions, setCurrentQuestions] = useState([]);
+  const [selectedFilter, setSelectedFilter] = useState({});
+  const [currentQuestion, setCurrentQuestion] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(5);
+  const [selectedButton, setSelectedButton] = useState(null);
+
+  const handleQuestionSelected = (question) => {
+    setCurrentQuestion(question);
+    setShowDetail(true);
+    setShowFilterableQuestionTable(false);
+  };
+  const handleGoBack = () => {
+    setShowDetail(false);
+    setShowFilterableQuestionTable(true);
+  };
+
+  return (
+    <>
+      {showFilterableQuestionTable && (
+        <FilterableQuestionTable
+          onQuestionSelected={handleQuestionSelected}
+          searchText={searchText}
+          setSearchText={setSearchText}
+          results={results}
+          setResults={setResults}
+          currentQuestions={currentQuestions}
+          setCurrentQuestions={setCurrentQuestions}
+          selectedFilter={selectedFilter}
+          setSelectedFilter={setSelectedFilter}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          itemsPerPage={itemsPerPage}
+          setItemsPerPage={setItemsPerPage}
+          selectedButton={selectedButton}
+          setSelectedButton={setSelectedButton}
+        />
+      )}
+      {showDetail && (
+        <QuestionDetail onGoBack={handleGoBack} question={currentQuestion} />
+      )}
+    </>
+  );
 }

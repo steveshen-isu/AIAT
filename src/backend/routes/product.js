@@ -1,15 +1,16 @@
 import express from 'express';
 import {
-    getSubjects,
-    getChapterSummary,
-    getTopics,
-    getChapters,
-    getTextbooks,
-    getTopicSummary,
-    getQuestions,
-    getQuestion,
-    addSubject,
-    syncQuestionBank
+  getSubjects,
+  getChapterSummary,
+  getTopics,
+  getChapters,
+  getTextbooks,
+  getTopicSummary,
+  getQuestions,
+  getQuestion,
+  addSubject,
+  syncQuestionBank,
+  queryQuestionBank,
 } from '../controllers/productController.js';
 
 const router = express.Router();
@@ -42,6 +43,9 @@ router.get('/api/question/:questionId', getQuestion);
 router.post('/api/subjects', addSubject);
 
 // Route to sync question bank
-router.post('/api/syncQuestionBank', syncQuestionBank)
+router.post('/api/syncQuestionBank', syncQuestionBank);
+
+// Route to query from question bank
+router.post('/api/queryQuestionBank', queryQuestionBank);
 
 export default router;
