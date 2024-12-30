@@ -65,7 +65,7 @@ function Home() {
                 <Link
                     to="/topic-selector"
                     variant="default"
-                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
+                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 h-64 transition-transform duration-300 group hover:scale-105"
                 >
                     <FaBook
                         className="absolute text-red-500 text-[6rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -90,7 +90,7 @@ function Home() {
                 <Link
                     to="plot-generator"
                     variant="default"
-                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
+                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 h-64 transition-transform duration-300 group hover:scale-105"
                 >
                     <FaChartLine
                         className="absolute text-red-500 text-[6rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -115,7 +115,7 @@ function Home() {
                 <Link
                     to="chatbox"
                     variant="default"
-                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
+                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 h-64 transition-transform duration-300 group hover:scale-105"
                 >
                     <FaComments
                         className="absolute text-red-500 text-[6rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -140,7 +140,7 @@ function Home() {
                 <Link
                     to="calculator"
                     variant="default"
-                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
+                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 h-64 transition-transform duration-300 group hover:scale-105"
                 >
                     <FaCalculator
                         className="text-red-500 text-[4rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -188,7 +188,7 @@ function Home() {
                 <Link
                     to="question-search"
                     variant="default"
-                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
+                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 h-64 transition-transform duration-300 group hover:scale-105"
                 >
                     <FaSearch
                         className="absolute text-red-500 text-[6rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
