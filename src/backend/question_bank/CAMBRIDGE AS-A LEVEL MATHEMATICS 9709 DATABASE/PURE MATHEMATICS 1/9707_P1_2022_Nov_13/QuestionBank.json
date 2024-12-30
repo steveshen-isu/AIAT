@@ -1,4 +1,4 @@
-{
+[{
     "Metadata": {
         "QuestionTitle": "Trigonometric Equation Solving",
         "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 1 Past Paper",
@@ -690,8 +690,7 @@
           "A1": "Find the corresponding y-values to give coordinates."
         }
       },
-      {
- "Parts": [
+      
       {
         "Part": "b",
         "Solution": [
@@ -827,7 +826,4 @@
     ]
   }
 }
-
-
-
-
+]

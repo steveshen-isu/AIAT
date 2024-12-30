@@ -124,7 +124,7 @@ const queryQuestions = (searchText, callback) => {
                 const solutionTexts = solutionContent.Parts.map((part) => {
                   return part.Solution ? part.Solution : '';
                 }).filter((text) => text);
-                joinedSolution = solutionTexts.join('\n');
+                joinedSolution = solutionTexts.join('\\\\');
               }
               return {
                 id: currentId++,
@@ -145,7 +145,7 @@ const queryQuestions = (searchText, callback) => {
         .flat();
 
       const fuse = new Fuse(processedResults, {
-        keys: ['questionContent'],
+        keys: ['questionContent','TopicsCovered','QuestionTitle'],
         threshold: 0.1,
       });
       const filteredResults = fuse.search(searchText).map((result) => {

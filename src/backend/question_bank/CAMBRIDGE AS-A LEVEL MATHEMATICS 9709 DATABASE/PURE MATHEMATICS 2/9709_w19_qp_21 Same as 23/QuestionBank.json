@@ -29,18 +29,18 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "(i) Solve the inequality \\(|2x - 7| < |2x - 9|\\).\\n(ii) Hence find the largest integer \\(n\\) satisfying the inequality \\(|2\\ln n - 7| < |2\\ln n - 9|\\)."
+        "Text": "(i) Solve the inequality \\(|2x - 7| < |2x - 9|\\).\\\\(ii) Hence find the largest integer \\(n\\) satisfying the inequality \\(|2\\ln n - 7| < |2\\ln n - 9|\\)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "To solve \\(|2x - 7| < |2x - 9|\\), square both sides (removing modulus):\\n\\[(2x - 7)^2 < (2x - 9)^2.\\]\\nExpand both sides:\\n\\[4x^2 - 28x + 49 < 4x^2 - 36x + 81.\\]\\nSimplify and combine like terms:\\n\\[-28x + 49 < -36x + 81.\\]\\n\\[8x < 32.\\]\\n\\[x < 4.\\]\\nThus, the solution is \\(x < 4\\).",
+                "Solution": "To solve \\(|2x - 7| < |2x - 9|\\), square both sides (removing modulus):\\\\\\[(2x - 7)^2 < (2x - 9)^2.\\]\\\\Expand both sides:\\\\\\[4x^2 - 28x + 49 < 4x^2 - 36x + 81.\\]\\\\Simplify and combine like terms:\\\\\\[-28x + 49 < -36x + 81.\\]\\\\\\[8x < 32.\\]\\\\\\[x < 4.\\]\\\\Thus, the solution is \\(x < 4\\).",
                 "MarkingScheme": "M1 for squaring both sides correctly, A1 for simplifying inequality, A1 for \\(x < 4\\)."
             },
             {
                 "Part": "ii",
-                "Solution": "Substitute \\(x = \\ln n\\) into the inequality from part (i):\\n\\[|2\\ln n - 7| < |2\\ln n - 9|.\\]\\nFrom part (i), the solution is \\(2\\ln n < 8\\).\\nDivide through by 2:\\n\\[\\ln n < 4.\\]\\nExponentiate both sides:\\n\\[n < e^4.\\]\\nSince \\(e^4 \\approx 54.6\\), the largest integer \\(n\\) is \\(54\\).",
+                "Solution": "Substitute \\(x = \\ln n\\) into the inequality from part (i):\\\\\\[|2\\ln n - 7| < |2\\ln n - 9|.\\]\\\\From part (i), the solution is \\(2\\ln n < 8\\).\\\\Divide through by 2:\\\\\\[\\ln n < 4.\\]\\\\Exponentiate both sides:\\\\\\[n < e^4.\\]\\\\Since \\(e^4 \\approx 54.6\\), the largest integer \\(n\\) is \\(54\\).",
                 "MarkingScheme": "M1 for substituting \\(\\ln n\\) and solving, A1 for \\(n < e^4\\), A1 for \\(n = 54\\)."
             }
         ]
@@ -65,7 +65,7 @@
             "Exponential Functions"
         ],
        "MarksAllocation": {
-            "PartA": 5,
+            "PartA": "5"
         },
         "DifficultyLevel": "Moderate",
         "ImageUrl": [
@@ -80,7 +80,7 @@
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Step 1: Expand the integrand \\((2e^{2x} - 1)^2\\):\\n\\[(2e^{2x} - 1)^2 = 4e^{4x} - 4e^{2x} + 1.\\]\\nStep 2: Integrate each term separately:\\n\\[\\int_{1}^{2} (4e^{4x} - 4e^{2x} + 1) \\, dx.\\]\\nThe integrals are:\\n- \\(\\int 4e^{4x} \\, dx = e^{4x}\\),\\n- \\(\\int -4e^{2x} \\, dx = -2e^{2x}\\),\\n- \\(\\int 1 \\, dx = x.\\)\\nThus,\\n\\[\\int_{1}^{2} (4e^{4x} - 4e^{2x} + 1) \\, dx = \\left[ e^{4x} - 2e^{2x} + x \\right]_{1}^{2}.\\]\\nStep 3: Apply the limits:\\nAt \\(x = 2\\):\\n\\[e^{4(2)} - 2e^{2(2)} + 2 = e^{8} - 2e^{4} + 2.\\]\\nAt \\(x = 1\\):\\n\\[e^{4(1)} - 2e^{2(1)} + 1 = e^{4} - 2e^{2} + 1.\\]\\nStep 4: Subtract:\\n\\[\\int_{1}^{2} (2e^{2x} - 1)^2 \\, dx = \\left( e^{8} - 2e^{4} + 2 \\right) - \\left( e^{4} - 2e^{2} + 1 \\right).\\]\\nSimplify:\\n\\[e^{8} - 3e^{4} + 2e^{2} + 1.\\]",
+                "Solution": "Step 1: Expand the integrand \\((2e^{2x} - 1)^2\\):\\\\\\[(2e^{2x} - 1)^2 = 4e^{4x} - 4e^{2x} + 1.\\]\\\\Step 2: Integrate each term separately:\\\\\\[\\int_{1}^{2} (4e^{4x} - 4e^{2x} + 1) \\, dx.\\]\\\\The integrals are:\\\\- \\(\\int 4e^{4x} \\, dx = e^{4x}\\),\\\\- \\(\\int -4e^{2x} \\, dx = -2e^{2x}\\),\\\\- \\(\\int 1 \\, dx = x.\\)\\\\Thus,\\\\\\[\\int_{1}^{2} (4e^{4x} - 4e^{2x} + 1) \\, dx = \\left[ e^{4x} - 2e^{2x} + x \\right]_{1}^{2}.\\]\\\\Step 3: Apply the limits:\\\\At \\(x = 2\\):\\\\\\[e^{4(2)} - 2e^{2(2)} + 2 = e^{8} - 2e^{4} + 2.\\]\\\\At \\(x = 1\\):\\\\\\[e^{4(1)} - 2e^{2(1)} + 1 = e^{4} - 2e^{2} + 1.\\]\\\\Step 4: Subtract:\\\\\\[\\int_{1}^{2} (2e^{2x} - 1)^2 \\, dx = \\left( e^{8} - 2e^{4} + 2 \\right) - \\left( e^{4} - 2e^{2} + 1 \\right).\\]\\\\Simplify:\\\\\\[e^{8} - 3e^{4} + 2e^{2} + 1.\\]",
                 "MarkingScheme": "B1 for expanding integrand correctly, M1 for integrating each term, A1 for applying limits, DM1 for correct subtraction of limits, A1 for final answer."
             }
         ]
@@ -121,8 +121,8 @@
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To find the gradient of the curve \\( y = \\frac{3 + 2 \\ln x}{1 + \\ln x} \\):\\n1. Use the quotient rule for differentiation: \\n\\[ \\frac{dy}{dx} = \\frac{v \\frac{du}{dx} - u \\frac{dv}{dx}}{v^2}, \\] \\nwhere \\( u = 3 + 2 \\ln x \\) and \\( v = 1 + \\ln x \\).\\n\\n2. Differentiate \\( u \\) and \\( v \\):\\n\\[ \\frac{du}{dx} = \\frac{2}{x}, \\quad \\frac{dv}{dx} = \\frac{1}{x}. \\]\\n\\n3. Substitute into the quotient rule:\\n\\[ \\frac{dy}{dx} = \\frac{(1 + \\ln x) \\cdot \\frac{2}{x} - (3 + 2 \\ln x) \\cdot \\frac{1}{x}}{(1 + \\ln x)^2}. \\]\\nSimplify the numerator:\\n\\[ \\text{Numerator} = \\frac{2(1 + \\ln x) - (3 + 2 \\ln x)}{x}. \\]\\nCombine terms:\\n\\[ \\text{Numerator} = \\frac{2 + 2 \\ln x - 3 - 2 \\ln x}{x} = \\frac{-1}{x}. \\]\\nThus:\\n\\[ \\frac{dy}{dx} = \\frac{-1}{x(1 + \\ln x)^2}. \\]\\n\\n4. To find the gradient at \\( y = 4 \\): solve for \\( x \\). From \\( y = 4 \\):\\n\\[ 4 = \\frac{3 + 2 \\ln x}{1 + \\ln x}. \\]\\nCross-multiply to simplify:\\n\\[ 4(1 + \\ln x) = 3 + 2 \\ln x. \\]\\nExpand and simplify:\\n\\[ 4 + 4 \\ln x = 3 + 2 \\ln x. \\]\\n\\[ 2 \\ln x = -1 \\implies \\ln x = -\\frac{1}{2}. \\]\\nExponentiate both sides:\\n\\[ x = e^{-1/2} = \\frac{1}{\\sqrt{e}}. \\]\\n\\n5. Substitute \\( x = \\frac{1}{\\sqrt{e}} \\) into \\( \\frac{dy}{dx} \\):\\n\\[ \\frac{dy}{dx} = \\frac{-1}{x(1 + \\ln x)^2}. \\]\\nCalculate \\( \\ln x \\):\\n\\[ \\ln x = -\\frac{1}{2}, \\quad 1 + \\ln x = 1 - \\frac{1}{2} = \\frac{1}{2}. \\]\\nSubstitute into \\( \\frac{dy}{dx} \\):\\n\\[ \\frac{dy}{dx} = \\frac{-1}{\\frac{1}{\\sqrt{e}} \\left( \\frac{1}{2} \\right)^2}. \\]\\nSimplify:\\n\\[ \\frac{dy}{dx} = \\frac{-1}{\\frac{1}{\\sqrt{e}} \\cdot \\frac{1}{4}} = \\frac{-4 \\sqrt{e}}{1}. \\]\\nThus, the gradient is:\\n\\[ \\frac{dy}{dx} = -4e^{1/2}. \\]",
-                "MarkingScheme": "M1 for correct use of quotient rule.\\nA1 for correct unsimplified form of the derivative.\\nB1 for finding \\( x \\) when \\( y = 4 \\).\\nDM1 for substituting \\( x \\) into the derivative.\\nA1 for simplified exact gradient \\( -4e^{1/2} \\)."
+                "Solution": "To find the gradient of the curve \\( y = \\frac{3 + 2 \\ln x}{1 + \\ln x} \\):\\\\1. Use the quotient rule for differentiation: \\\\\\[ \\frac{dy}{dx} = \\frac{v \\frac{du}{dx} - u \\frac{dv}{dx}}{v^2}, \\] \\\\where \\( u = 3 + 2 \\ln x \\) and \\( v = 1 + \\ln x \\).\\\\\\\\2. Differentiate \\( u \\) and \\( v \\):\\\\\\[ \\frac{du}{dx} = \\frac{2}{x}, \\quad \\frac{dv}{dx} = \\frac{1}{x}. \\]\\\\\\\\3. Substitute into the quotient rule:\\\\\\[ \\frac{dy}{dx} = \\frac{(1 + \\ln x) \\cdot \\frac{2}{x} - (3 + 2 \\ln x) \\cdot \\frac{1}{x}}{(1 + \\ln x)^2}. \\]\\\\Simplify the numerator:\\\\\\[ \\text{Numerator} = \\frac{2(1 + \\ln x) - (3 + 2 \\ln x)}{x}. \\]\\\\Combine terms:\\\\\\[ \\text{Numerator} = \\frac{2 + 2 \\ln x - 3 - 2 \\ln x}{x} = \\frac{-1}{x}. \\]\\\\Thus:\\\\\\[ \\frac{dy}{dx} = \\frac{-1}{x(1 + \\ln x)^2}. \\]\\\\\\\\4. To find the gradient at \\( y = 4 \\): solve for \\( x \\). From \\( y = 4 \\):\\\\\\[ 4 = \\frac{3 + 2 \\ln x}{1 + \\ln x}. \\]\\\\Cross-multiply to simplify:\\\\\\[ 4(1 + \\ln x) = 3 + 2 \\ln x. \\]\\\\Expand and simplify:\\\\\\[ 4 + 4 \\ln x = 3 + 2 \\ln x. \\]\\\\\\[ 2 \\ln x = -1 \\implies \\ln x = -\\frac{1}{2}. \\]\\\\Exponentiate both sides:\\\\\\[ x = e^{-1/2} = \\frac{1}{\\sqrt{e}}. \\]\\\\\\\\5. Substitute \\( x = \\frac{1}{\\sqrt{e}} \\) into \\( \\frac{dy}{dx} \\):\\\\\\[ \\frac{dy}{dx} = \\frac{-1}{x(1 + \\ln x)^2}. \\]\\\\Calculate \\( \\ln x \\):\\\\\\[ \\ln x = -\\frac{1}{2}, \\quad 1 + \\ln x = 1 - \\frac{1}{2} = \\frac{1}{2}. \\]\\\\Substitute into \\( \\frac{dy}{dx} \\):\\\\\\[ \\frac{dy}{dx} = \\frac{-1}{\\frac{1}{\\sqrt{e}} \\left( \\frac{1}{2} \\right)^2}. \\]\\\\Simplify:\\\\\\[ \\frac{dy}{dx} = \\frac{-1}{\\frac{1}{\\sqrt{e}} \\cdot \\frac{1}{4}} = \\frac{-4 \\sqrt{e}}{1}. \\]\\\\Thus, the gradient is:\\\\\\[ \\frac{dy}{dx} = -4e^{1/2}. \\]",
+                "MarkingScheme": "M1 for correct use of quotient rule.\\\\A1 for correct unsimplified form of the derivative.\\\\B1 for finding \\( x \\) when \\( y = 4 \\).\\\\DM1 for substituting \\( x \\) into the derivative.\\\\A1 for simplified exact gradient \\( -4e^{1/2} \\)."
             }
         ]
     }
@@ -158,23 +158,23 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "The polynomial \\(p(x)\\) is defined by\\n\\[p(x) = ax^3 + ax^2 - 15x - 18,\\]\\nwhere \\(a\\) is a constant. It is given that \\((x - 2)\\) is a factor of \\(p(x)\\).\\n\\n**(i)** Find the value of \\(a\\).\\ [2]\\n\\n**(ii)** Using this value of \\(a\\), factorise \\(p(x)\\) completely.\\ [3]\\n\\n**(iii)** Hence solve the equation \\(p(e^y) = 0\\), giving the answer correct to 2 significant figures.\\ [2]"
+        "Text": "The polynomial \\(p(x)\\) is defined by\\\\\\[p(x) = ax^3 + ax^2 - 15x - 18,\\]\\\\where \\(a\\) is a constant. It is given that \\((x - 2)\\) is a factor of \\(p(x)\\).\\\\\\\\**(i)** Find the value of \\(a\\).\\ [2]\\\\\\\\**(ii)** Using this value of \\(a\\), factorise \\(p(x)\\) completely.\\ [3]\\\\\\\\**(iii)** Hence solve the equation \\(p(e^y) = 0\\), giving the answer correct to 2 significant figures.\\ [2]"
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "Using the factor theorem, substitute \\(x = 2\\) into \\(p(x)\\):\\n\\[p(2) = a(2)^3 + a(2)^2 - 15(2) - 18 = 0.\\]\\nSimplify:\\n\\[8a + 4a - 30 - 18 = 0.\\]\\nCombine like terms:\\n\\[12a - 48 = 0.\\]\\nSolve for \\(a\\):\\n\\[a = 4.\\]",
+                "Solution": "Using the factor theorem, substitute \\(x = 2\\) into \\(p(x)\\):\\\\\\[p(2) = a(2)^3 + a(2)^2 - 15(2) - 18 = 0.\\]\\\\Simplify:\\\\\\[8a + 4a - 30 - 18 = 0.\\]\\\\Combine like terms:\\\\\\[12a - 48 = 0.\\]\\\\Solve for \\(a\\):\\\\\\[a = 4.\\]",
                 "MarkingScheme": "M1 for substitution of \\(x = 2\\) and solving, A1 for \\(a = 4\\)."
             },
             {
                 "Part": "ii",
-                "Solution": "Substitute \\(a = 4\\) into \\(p(x)\\):\\n\\[p(x) = 4x^3 + 4x^2 - 15x - 18.\\]\\nDivide by \\((x - 2)\\):\\nPerform polynomial division:\\n\\[4x^3 + 4x^2 - 15x - 18 \\div (x - 2) = 4x^2 + 12x + 9.\\]\\nFactorise the quadratic term:\\n\\[4x^2 + 12x + 9 = (2x + 3)^2.\\]\\nThus,\\n\\[p(x) = (x - 2)(2x + 3)^2.\\]",
+                "Solution": "Substitute \\(a = 4\\) into \\(p(x)\\):\\\\\\[p(x) = 4x^3 + 4x^2 - 15x - 18.\\]\\\\Divide by \\((x - 2)\\):\\\\Perform polynomial division:\\\\\\[4x^3 + 4x^2 - 15x - 18 \\div (x - 2) = 4x^2 + 12x + 9.\\]\\\\Factorise the quadratic term:\\\\\\[4x^2 + 12x + 9 = (2x + 3)^2.\\]\\\\Thus,\\\\\\[p(x) = (x - 2)(2x + 3)^2.\\]",
                 "MarkingScheme": "M1 for polynomial division, A1 for correct quadratic factor, A1 for complete factorisation."
             },
             {
                 "Part": "iii",
-                "Solution": "Solve \\(p(e^y) = 0\\):\\n\\[(e^y - 2)(2e^y + 3)^2 = 0.\\]\\nThe factors are:\\n1. \\(e^y - 2 = 0\\)\\n\\[e^y = 2, \\quad y = \\ln 2.\\]\\n2. \\((2e^y + 3)^2 = 0\\):\\n\\[2e^y + 3 = 0, \\quad 2e^y = -3.\\]\\nThis is invalid since \\(e^y > 0\\) for all real \\(y\\).\\n\\nThus,\\n\\[y = \\ln 2 \\approx 0.48.\\]\\nFinal answer correct to 2 significant figures: \\(y = 0.48\\).",
+                "Solution": "Solve \\(p(e^y) = 0\\):\\\\\\[(e^y - 2)(2e^y + 3)^2 = 0.\\]\\\\The factors are:\\\\1. \\(e^y - 2 = 0\\)\\\\\\[e^y = 2, \\quad y = \\ln 2.\\]\\\\2. \\((2e^y + 3)^2 = 0\\):\\\\\\[2e^y + 3 = 0, \\quad 2e^y = -3.\\]\\\\This is invalid since \\(e^y > 0\\) for all real \\(y\\).\\\\\\\\Thus,\\\\\\[y = \\ln 2 \\approx 0.48.\\]\\\\Final answer correct to 2 significant figures: \\(y = 0.48\\).",
                 "MarkingScheme": "M1 for solving \\(e^y = 2\\), A1 for correct value \\(y = 0.48\\)."
             }
         ]
@@ -210,23 +210,23 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "It is given that \\[ \\int_0^a \\left(3x^2 + 4\\cos 2x - \\sin x\\right) \\mathrm{d}x = 2, \\] where \\(a\\) is a constant.\\n\\n(i) Show that \\[a = \\sqrt[3]{3 - 2\\sin 2a - \\cos a}.\\]\\n\\n(ii) Using the equation in part \\((i)\\), show by calculation that \\(0.5 < a < 0.75\\).\\n\\n(iii) Use an iterative formula, based on the equation in part \\((i)\\), to find the value of \\(a\\) correct to 3 significant figures. Give the result of each iteration to 5 significant figures."
+        "Text": "It is given that \\[ \\int_0^a \\left(3x^2 + 4\\cos 2x - \\sin x\\right) \\mathrm{d}x = 2, \\] where \\(a\\) is a constant.\\\\\\\\(i) Show that \\[a = \\sqrt[3]{3 - 2\\sin 2a - \\cos a}.\\]\\\\\\\\(ii) Using the equation in part \\((i)\\), show by calculation that \\(0.5 < a < 0.75\\).\\\\\\\\(iii) Use an iterative formula, based on the equation in part \\((i)\\), to find the value of \\(a\\) correct to 3 significant figures. Give the result of each iteration to 5 significant figures."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "Integrate each term of \\( \\int_0^a (3x^2 + 4\\cos 2x - \\sin x) \\mathrm{d}x \\):\\n\\[ \\int_0^a 3x^2 \\mathrm{d}x = x^3 \\Big|_0^a = a^3, \\quad \\int_0^a 4\\cos 2x \\mathrm{d}x = 2\\sin 2x \\Big|_0^a = 2\\sin 2a, \\quad \\int_0^a -\\sin x \\mathrm{d}x = \\cos x \\Big|_0^a = 1 - \\cos a. \\]\\nCombining the results, we equate to 2:\\n\\[ a^3 + 2\\sin 2a - (1 - \\cos a) = 2. \\]\\nRearrange to obtain:\\n\\[ a^3 = 3 - 2\\sin 2a - \\cos a. \\]\\nThus, \\[ a = \\sqrt[3]{3 - 2\\sin 2a - \\cos a}. \\]",
+                "Solution": "Integrate each term of \\( \\int_0^a (3x^2 + 4\\cos 2x - \\sin x) \\mathrm{d}x \\):\\\\\\[ \\int_0^a 3x^2 \\mathrm{d}x = x^3 \\Big|_0^a = a^3, \\quad \\int_0^a 4\\cos 2x \\mathrm{d}x = 2\\sin 2x \\Big|_0^a = 2\\sin 2a, \\quad \\int_0^a -\\sin x \\mathrm{d}x = \\cos x \\Big|_0^a = 1 - \\cos a. \\]\\\\Combining the results, we equate to 2:\\\\\\[ a^3 + 2\\sin 2a - (1 - \\cos a) = 2. \\]\\\\Rearrange to obtain:\\\\\\[ a^3 = 3 - 2\\sin 2a - \\cos a. \\]\\\\Thus, \\[ a = \\sqrt[3]{3 - 2\\sin 2a - \\cos a}. \\]",
                 "MarkingScheme": "M1 for correct integration, A1 for showing \\(a = \\sqrt[3]{3 - 2\\sin 2a - \\cos a}\\)."
             },
             {
                 "Part": "ii",
-                "Solution": "Substitute trial values into \\( a = \\sqrt[3]{3 - 2\\sin 2a - \\cos a} \\):\\nFor \\(a = 0.5\\):\\n\\[ 3 - 2\\sin(1) - \\cos(0.5) \\approx 0.125. \\]\\nFor \\(a = 0.75\\):\\n\\[ 3 - 2\\sin(1.5) - \\cos(0.75) \\approx 0.422. \\]\\nSince \\(0.125 < a < 0.422\\), it follows that \\(0.5 < a < 0.75\\).",
+                "Solution": "Substitute trial values into \\( a = \\sqrt[3]{3 - 2\\sin 2a - \\cos a} \\):\\\\For \\(a = 0.5\\):\\\\\\[ 3 - 2\\sin(1) - \\cos(0.5) \\approx 0.125. \\]\\\\For \\(a = 0.75\\):\\\\\\[ 3 - 2\\sin(1.5) - \\cos(0.75) \\approx 0.422. \\]\\\\Since \\(0.125 < a < 0.422\\), it follows that \\(0.5 < a < 0.75\\).",
                 "MarkingScheme": "M1 for correct substitution, A1 for valid conclusion."
             },
             {
                 "Part": "iii",
-                "Solution": "Use the iterative formula derived from part \\((i)\\):\\n\\[ a_{n+1} = \\sqrt[3]{3 - 2\\sin 2a_n - \\cos a_n}. \\]\\nStart with \\(a_1 = 0.5\\):\\n\\[ a_2 = \\sqrt[3]{3 - 2\\sin(1) - \\cos(0.5)} \\approx 0.65156. \\]\\nContinue iterations:\\n\\[ a_3 = \\sqrt[3]{3 - 2\\sin(2 \\times 0.65156) - \\cos(0.65156)} \\approx 0.65127. \\]\\n\\[ a_4 = \\sqrt[3]{3 - 2\\sin(2 \\times 0.65127) - \\cos(0.65127)} \\approx 0.65130. \\]\\nTo 3 significant figures, \\(a = 0.651\\).",
+                "Solution": "Use the iterative formula derived from part \\((i)\\):\\\\\\[ a_{n+1} = \\sqrt[3]{3 - 2\\sin 2a_n - \\cos a_n}. \\]\\\\Start with \\(a_1 = 0.5\\):\\\\\\[ a_2 = \\sqrt[3]{3 - 2\\sin(1) - \\cos(0.5)} \\approx 0.65156. \\]\\\\Continue iterations:\\\\\\[ a_3 = \\sqrt[3]{3 - 2\\sin(2 \\times 0.65156) - \\cos(0.65156)} \\approx 0.65127. \\]\\\\\\[ a_4 = \\sqrt[3]{3 - 2\\sin(2 \\times 0.65127) - \\cos(0.65127)} \\approx 0.65130. \\]\\\\To 3 significant figures, \\(a = 0.651\\).",
                 "MarkingScheme": "M1 for correct iterative process, A1 for correct convergence, A1 for accurate solution."
             }
         ]
@@ -261,18 +261,18 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "(a) Showing all necessary working, solve the equation \\[ \\sec \\alpha \\cosec \\alpha = 7 \\] \\(\\text{for } 0^{\\circ} < \\alpha < 90^{\\circ}.\\)\\n\\n(b) Showing all necessary working, solve the equation \\[ \\sin(\\beta + 20^{\\circ}) + \\sin(\\beta - 20^{\\circ}) = 6 \\cos \\beta \\] \\(\\text{for } 0^{\\circ} < \\beta < 90^{\\circ}.\\)"
+        "Text": "(a) Showing all necessary working, solve the equation \\[ \\sec \\alpha \\cosec \\alpha = 7 \\] \\(\\text{for } 0^{\\circ} < \\alpha < 90^{\\circ}.\\)\\\\\\\\(b) Showing all necessary working, solve the equation \\[ \\sin(\\beta + 20^{\\circ}) + \\sin(\\beta - 20^{\\circ}) = 6 \\cos \\beta \\] \\(\\text{for } 0^{\\circ} < \\beta < 90^{\\circ}.\\)"
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Start with \\[ \\sec \\alpha \\cosec \\alpha = 7. \\]\\nUsing identities, \\( \\sec \\alpha = \\frac{1}{\\cos \\alpha} \\) and \\( \\cosec \\alpha = \\frac{1}{\\sin \\alpha} \\):\\n\\[ \\frac{1}{\\cos \\alpha \\sin \\alpha} = 7. \\]\\nRearrange to get: \\[ \\cos \\alpha \\sin \\alpha = \\frac{1}{7}. \\]\\nUsing the double-angle identity for sine, \\( \\sin 2\\alpha = 2 \\sin \\alpha \\cos \\alpha \\):\\n\\[ \\sin 2\\alpha = \\frac{2}{7}. \\]\\nSolve for \\( 2\\alpha \\) using inverse sine: \\n\\[ 2\\alpha = \\arcsin \\left( \\frac{2}{7} \\right). \\]\\n\\[ \\alpha = \\frac{1}{2} \\arcsin \\left( \\frac{2}{7} \\right). \\]\\nEvaluate \\( \\alpha \\) within the given range \\( 0^{\\circ} < \\alpha < 90^{\\circ} \\):\\n\\[ \\alpha \\approx 8.3^{\\circ} \\text{ and } 81.7^{\\circ}. \\]",
+                "Solution": "Start with \\[ \\sec \\alpha \\cosec \\alpha = 7. \\]\\\\Using identities, \\( \\sec \\alpha = \\frac{1}{\\cos \\alpha} \\) and \\( \\cosec \\alpha = \\frac{1}{\\sin \\alpha} \\):\\\\\\[ \\frac{1}{\\cos \\alpha \\sin \\alpha} = 7. \\]\\\\Rearrange to get: \\[ \\cos \\alpha \\sin \\alpha = \\frac{1}{7}. \\]\\\\Using the double-angle identity for sine, \\( \\sin 2\\alpha = 2 \\sin \\alpha \\cos \\alpha \\):\\\\\\[ \\sin 2\\alpha = \\frac{2}{7}. \\]\\\\Solve for \\( 2\\alpha \\) using inverse sine: \\\\\\[ 2\\alpha = \\arcsin \\left( \\frac{2}{7} \\right). \\]\\\\\\[ \\alpha = \\frac{1}{2} \\arcsin \\left( \\frac{2}{7} \\right). \\]\\\\Evaluate \\( \\alpha \\) within the given range \\( 0^{\\circ} < \\alpha < 90^{\\circ} \\):\\\\\\[ \\alpha \\approx 8.3^{\\circ} \\text{ and } 81.7^{\\circ}. \\]",
                 "MarkingScheme": "B1 for setting \\( \\sec \\alpha \\cosec \\alpha = 7 \\), M1 for using correct identities, A1 for forming \\( \\sin 2\\alpha = \\frac{2}{7} \\), M1 for solving, and A1 for obtaining values \\( \\alpha = 8.3^{\\circ}, 81.7^{\\circ}. \\)."
             },
             {
                 "Part": "b",
-                "Solution": "Start with the equation: \\[ \\sin(\\beta + 20^{\\circ}) + \\sin(\\beta - 20^{\\circ}) = 6 \\cos \\beta. \\]\\nUsing the sine addition formula: \\n\\[ \\sin(\\beta + 20^{\\circ}) + \\sin(\\beta - 20^{\\circ}) = 2 \\sin \\beta \\cos 20^{\\circ}. \\]\\nSubstitute into the equation: \\n\\[ 2 \\sin \\beta \\cos 20^{\\circ} = 6 \\cos \\beta. \\]\\nDivide through by \\( \\cos \\beta \\) (where \\( \\cos \\beta \\neq 0 \\)): \\n\\[ 2 \\tan \\beta \\cos 20^{\\circ} = 6. \\]\\nSimplify: \\n\\[ \\tan \\beta = \\frac{6}{2 \\cos 20^{\\circ}}. \\]\\nEvaluate \\( \\cos 20^{\\circ} \\approx 0.9397 \\):\\n\\[ \\tan \\beta = \\frac{6}{2(0.9397)} = 3.19. \\]\\nFind \\( \\beta \\) using inverse tangent: \\n\\[ \\beta = \\arctan(3.19). \\]\\n\\[ \\beta \\approx 72.6^{\\circ}. \\]",
+                "Solution": "Start with the equation: \\[ \\sin(\\beta + 20^{\\circ}) + \\sin(\\beta - 20^{\\circ}) = 6 \\cos \\beta. \\]\\\\Using the sine addition formula: \\\\\\[ \\sin(\\beta + 20^{\\circ}) + \\sin(\\beta - 20^{\\circ}) = 2 \\sin \\beta \\cos 20^{\\circ}. \\]\\\\Substitute into the equation: \\\\\\[ 2 \\sin \\beta \\cos 20^{\\circ} = 6 \\cos \\beta. \\]\\\\Divide through by \\( \\cos \\beta \\) (where \\( \\cos \\beta \\\\eq 0 \\)): \\\\\\[ 2 \\tan \\beta \\cos 20^{\\circ} = 6. \\]\\\\Simplify: \\\\\\[ \\tan \\beta = \\frac{6}{2 \\cos 20^{\\circ}}. \\]\\\\Evaluate \\( \\cos 20^{\\circ} \\approx 0.9397 \\):\\\\\\[ \\tan \\beta = \\frac{6}{2(0.9397)} = 3.19. \\]\\\\Find \\( \\beta \\) using inverse tangent: \\\\\\[ \\beta = \\arctan(3.19). \\]\\\\\\[ \\beta \\approx 72.6^{\\circ}. \\]",
                 "MarkingScheme": "B1 for simplifying using sine addition formula, M1 for forming \\( \\tan \\beta \\), A1 for solving \\( \\tan \\beta = 3.19 \\), and A1 for \\( \\beta = 72.6^{\\circ}. \\)."
             }
         ]
@@ -309,23 +309,23 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "The equation of a curve is \\(x^2 - 4xy - 2y^2 = 1\\).\\n\\n(i) Find an expression for \\( \\frac{dy}{dx} \\) and show that the gradient of the curve at the point \\((-1, 2)\\) is \\(-\\frac{5}{2}\\). \\[5\\]\\n\\n(ii) Show that the curve has no stationary points. \\[3\\]\\n\\n(iii) Find the \\(x\\)-coordinate of each of the points on the curve at which the tangent is parallel to the \\(y\\)-axis. \\[2\\]"
+        "Text": "The equation of a curve is \\(x^2 - 4xy - 2y^2 = 1\\).\\\\\\\\(i) Find an expression for \\( \\frac{dy}{dx} \\) and show that the gradient of the curve at the point \\((-1, 2)\\) is \\(-\\frac{5}{2}\\). \\[5\\]\\\\\\\\(ii) Show that the curve has no stationary points. \\[3\\]\\\\\\\\(iii) Find the \\(x\\)-coordinate of each of the points on the curve at which the tangent is parallel to the \\(y\\)-axis. \\[2\\]"
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "Differentiate implicitly: \\(\\frac{d}{dx}(x^2) - 4\\frac{d}{dx}(xy) - \\frac{d}{dx}(2y^2) = 0\\).\\n\\[2x - 4(1 \\cdot y + x \\frac{dy}{dx}) - 4y \\frac{dy}{dx} = 0.\\]\\nSimplify:\\n\\[2x - 4y - 4x \\frac{dy}{dx} - 4y \\frac{dy}{dx} = 0.\\]\\nFactorize for \\(\\frac{dy}{dx}\\):\\n\\[2x - 4y = 4x \\frac{dy}{dx} + 4y \\frac{dy}{dx}.\\]\\n\\[\\frac{dy}{dx} = \\frac{2x - 4y}{4x + 4y}.\\]\\nSubstitute \\(x = -1\\) and \\(y = 2\\):\\n\\[\\frac{dy}{dx} = \\frac{2(-1) - 4(2)}{4(-1) + 4(2)} = \\frac{-2 - 8}{-4 + 8} = \\frac{-10}{4} = -\\frac{5}{2}.\\]",
+                "Solution": "Differentiate implicitly: \\(\\frac{d}{dx}(x^2) - 4\\frac{d}{dx}(xy) - \\frac{d}{dx}(2y^2) = 0\\).\\\\\\[2x - 4(1 \\cdot y + x \\frac{dy}{dx}) - 4y \\frac{dy}{dx} = 0.\\]\\\\Simplify:\\\\\\[2x - 4y - 4x \\frac{dy}{dx} - 4y \\frac{dy}{dx} = 0.\\]\\\\Factorize for \\(\\frac{dy}{dx}\\):\\\\\\[2x - 4y = 4x \\frac{dy}{dx} + 4y \\frac{dy}{dx}.\\]\\\\\\[\\frac{dy}{dx} = \\frac{2x - 4y}{4x + 4y}.\\]\\\\Substitute \\(x = -1\\) and \\(y = 2\\):\\\\\\[\\frac{dy}{dx} = \\frac{2(-1) - 4(2)}{4(-1) + 4(2)} = \\frac{-2 - 8}{-4 + 8} = \\frac{-10}{4} = -\\frac{5}{2}.\\]",
                 "MarkingScheme": "B1 for correct implicit differentiation, M1 for rearranging, A1 for \\(\\frac{dy}{dx}\\), and A1 for correct substitution."
             },
             {
                 "Part": "ii",
-                "Solution": "Stationary points occur when \\(\\frac{dy}{dx} = 0\\). From \\(\\frac{dy}{dx} = \\frac{2x - 4y}{4x + 4y}\\), equate the numerator to zero:\\n\\[2x - 4y = 0.\\]\\n\\[x = 2y.\\]\\nSubstitute into the original equation \\(x^2 - 4xy - 2y^2 = 1\\):\\n\\[(2y)^2 - 4(2y)y - 2y^2 = 1.\\]\\nSimplify:\\n\\[4y^2 - 8y^2 - 2y^2 = 1.\\]\\n\\[-6y^2 = 1.\\]\\nThis is not possible as \\(y^2\\) cannot be negative.\\n\\(\\therefore\\) the curve has no stationary points.",
+                "Solution": "Stationary points occur when \\(\\frac{dy}{dx} = 0\\). From \\(\\frac{dy}{dx} = \\frac{2x - 4y}{4x + 4y}\\), equate the numerator to zero:\\\\\\[2x - 4y = 0.\\]\\\\\\[x = 2y.\\]\\\\Substitute into the original equation \\(x^2 - 4xy - 2y^2 = 1\\):\\\\\\[(2y)^2 - 4(2y)y - 2y^2 = 1.\\]\\\\Simplify:\\\\\\[4y^2 - 8y^2 - 2y^2 = 1.\\]\\\\\\[-6y^2 = 1.\\]\\\\This is not possible as \\(y^2\\) cannot be negative.\\\\\\(\\therefore\\) the curve has no stationary points.",
                 "MarkingScheme": "M1 for equating numerator to zero, M1 for substituting into original equation, A1 for conclusion."
             },
             {
                 "Part": "iii",
-                "Solution": "The tangent is parallel to the \\(y\\)-axis when \\(\\frac{dx}{dy} = 0\\), i.e., denominator of \\(\\frac{dy}{dx}\\) equals zero:\\n\\[4x + 4y = 0.\\]\\n\\[x + y = 0.\\]\\n\\[x = -y.\\]\\nSubstitute \\(x = -y\\) into the original equation \\(x^2 - 4xy - 2y^2 = 1\\):\\n\\[(-y)^2 - 4(-y)y - 2y^2 = 1.\\]\\nSimplify:\\n\\[y^2 + 4y^2 - 2y^2 = 1.\\]\\n\\[3y^2 = 1.\\]\\n\\[y = \\pm \\frac{1}{\\sqrt{3}}.\\]\\n\\[x = -y = \\mp \\frac{1}{\\sqrt{3}}.\\]\\nThus, the \\(x\\)-coordinates are \\(\\pm \\frac{1}{\\sqrt{3}}.\\)",
+                "Solution": "The tangent is parallel to the \\(y\\)-axis when \\(\\frac{dx}{dy} = 0\\), i.e., denominator of \\(\\frac{dy}{dx}\\) equals zero:\\\\\\[4x + 4y = 0.\\]\\\\\\[x + y = 0.\\]\\\\\\[x = -y.\\]\\\\Substitute \\(x = -y\\) into the original equation \\(x^2 - 4xy - 2y^2 = 1\\):\\\\\\[(-y)^2 - 4(-y)y - 2y^2 = 1.\\]\\\\Simplify:\\\\\\[y^2 + 4y^2 - 2y^2 = 1.\\]\\\\\\[3y^2 = 1.\\]\\\\\\[y = \\pm \\frac{1}{\\sqrt{3}}.\\]\\\\\\[x = -y = \\mp \\frac{1}{\\sqrt{3}}.\\]\\\\Thus, the \\(x\\)-coordinates are \\(\\pm \\frac{1}{\\sqrt{3}}.\\)",
                 "MarkingScheme": "M1 for setting denominator to zero, A1 for solving and obtaining correct \\(x\\)-coordinates."
             }
         ]

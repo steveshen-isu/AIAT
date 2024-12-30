@@ -1,5 +1,4 @@
-{
-    "Questions": [
+[
 {
     "Metadata": {
         "QuestionTitle": "Logarithmic Equation",
@@ -28,14 +27,14 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "Given that \\( \\ln(2x + 1) - \\ln(x - 3) = 2 \\), \\nfind \\( x \\) in terms of \\( e \\)."
+        "Text": "Given that \\( \\ln(2x + 1) - \\ln(x - 3) = 2 \\), \\\\find \\( x \\) in terms of \\( e \\)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Using the logarithmic property \\( \\ln a - \\ln b = \\ln\\left(\\frac{a}{b}\\right) \\):\\n\\[ \\ln\\left(\\frac{2x + 1}{x - 3}\\right) = 2. \\]\\nExponentiate both sides to remove the logarithm:\\n\\[ \\frac{2x + 1}{x - 3} = e^2. \\]\\nMultiply through by \\(x - 3\\):\\n\\[ 2x + 1 = e^2(x - 3). \\]\\nExpand and simplify:\\n\\[ 2x + 1 = e^2x - 3e^2. \\]\\nRearrange terms:\\n\\[ x(e^2 - 2) = 3e^2 + 1. \\]\\nSolve for \\(x\\):\\n\\[ x = \\frac{3e^2 + 1}{e^2 - 2}. \\]",
-                "MarkingScheme": "M1 for applying \\( \\ln a - \\ln b = \\ln\\left(\\frac{a}{b}\\right) \\),\\nM1 for exponentiation and correct equation without logarithms,\\nA1 for simplifying to \\( x = \\frac{3e^2 + 1}{e^2 - 2} \\),\\nA1 for correct final answer."
+                "Solution": "Using the logarithmic property \\( \\ln a - \\ln b = \\ln\\left(\\frac{a}{b}\\right) \\):\\\\\\[ \\ln\\left(\\frac{2x + 1}{x - 3}\\right) = 2. \\]\\\\Exponentiate both sides to remove the logarithm:\\\\\\[ \\frac{2x + 1}{x - 3} = e^2. \\]\\\\Multiply through by \\(x - 3\\):\\\\\\[ 2x + 1 = e^2(x - 3). \\]\\\\Expand and simplify:\\\\\\[ 2x + 1 = e^2x - 3e^2. \\]\\\\Rearrange terms:\\\\\\[ x(e^2 - 2) = 3e^2 + 1. \\]\\\\Solve for \\(x\\):\\\\\\[ x = \\frac{3e^2 + 1}{e^2 - 2}. \\]",
+                "MarkingScheme": "M1 for applying \\( \\ln a - \\ln b = \\ln\\left(\\frac{a}{b}\\right) \\),\\\\M1 for exponentiation and correct equation without logarithms,\\\\A1 for simplifying to \\( x = \\frac{3e^2 + 1}{e^2 - 2} \\),\\\\A1 for correct final answer."
             }
         ]
     }
@@ -69,14 +68,14 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "The polynomial \\(p(x)\\) is defined by\\n\\[p(x) = x^3 + ax^2 + bx + 16,\\]\\nwhere \\(a\\) and \\(b\\) are constants. It is given that \\((x + 2)\\) is a factor of \\(p(x)\\) and that the remainder is 72 when \\(p(x)\\) is divided by \\((x - 2)\\).\\nFind the values of \\(a\\) and \\(b\\)."
+        "Text": "The polynomial \\(p(x)\\) is defined by\\\\\\[p(x) = x^3 + ax^2 + bx + 16,\\]\\\\where \\(a\\) and \\(b\\) are constants. It is given that \\((x + 2)\\) is a factor of \\(p(x)\\) and that the remainder is 72 when \\(p(x)\\) is divided by \\((x - 2)\\).\\\\Find the values of \\(a\\) and \\(b\\)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Using the factor theorem, substitute \\(x = -2\\) into \\(p(x)\\) and equate to zero:\\n\\[(-2)^3 + a(-2)^2 + b(-2) + 16 = 0.\\]\\nSimplify:\\n\\[-8 + 4a - 2b + 16 = 0.\\]\\n\\[4a - 2b + 8 = 0.\\]\\\\ \\[2a - b + 4 = 0. \\quad \\text{(1)}\\]\\n\\nUsing the remainder theorem, substitute \\(x = 2\\) into \\(p(x)\\) and equate to 72:\\n\\[2^3 + a(2)^2 + b(2) + 16 = 72.\\]\\nSimplify:\\n\\[8 + 4a + 2b + 16 = 72.\\]\\n\\[4a + 2b - 48 = 0.\\]\\\\ \\[2a + b - 24 = 0. \\quad \\text{(2)}\\]\\n\\nSolve the simultaneous equations (1) and (2):\\nAdding \\((1) + (2)\\):\\n\\[4a - 20 = 0.\\]\\n\\[a = 5.\\]\\nSubstitute \\(a = 5\\) into \\((1):\\)\\n\\[2(5) - b + 4 = 0.\\]\\n\\[10 - b + 4 = 0.\\]\\n\\[b = 14.\\]\\n\\nThus, \\(a = 5\\) and \\(b = 14\\).",
-                "MarkingScheme": "M1 for substituting \\(x = -2\\) and equating to zero.\\nM1 for substituting \\(x = 2\\) and equating to 72.\\nA1 for forming correct linear equations.\\nDM1 for solving the simultaneous equations.\\nA1 for final values \\(a = 5, b = 14\\)."
+                "Solution": "Using the factor theorem, substitute \\(x = -2\\) into \\(p(x)\\) and equate to zero:\\\\\\[(-2)^3 + a(-2)^2 + b(-2) + 16 = 0.\\]\\\\Simplify:\\\\\\[-8 + 4a - 2b + 16 = 0.\\]\\\\\\[4a - 2b + 8 = 0.\\]\\\\ \\[2a - b + 4 = 0. \\quad \\text{(1)}\\]\\\\\\\\Using the remainder theorem, substitute \\(x = 2\\) into \\(p(x)\\) and equate to 72:\\\\\\[2^3 + a(2)^2 + b(2) + 16 = 72.\\]\\\\Simplify:\\\\\\[8 + 4a + 2b + 16 = 72.\\]\\\\\\[4a + 2b - 48 = 0.\\]\\\\ \\[2a + b - 24 = 0. \\quad \\text{(2)}\\]\\\\\\\\Solve the simultaneous equations (1) and (2):\\\\Adding \\((1) + (2)\\):\\\\\\[4a - 20 = 0.\\]\\\\\\[a = 5.\\]\\\\Substitute \\(a = 5\\) into \\((1):\\)\\\\\\[2(5) - b + 4 = 0.\\]\\\\\\[10 - b + 4 = 0.\\]\\\\\\[b = 14.\\]\\\\\\\\Thus, \\(a = 5\\) and \\(b = 14\\).",
+                "MarkingScheme": "M1 for substituting \\(x = -2\\) and equating to zero.\\\\M1 for substituting \\(x = 2\\) and equating to 72.\\\\A1 for forming correct linear equations.\\\\DM1 for solving the simultaneous equations.\\\\A1 for final values \\(a = 5, b = 14\\)."
             }
         ]
     }
@@ -109,13 +108,13 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "The diagram shows the curve \\(y = 2 + e^{-2x}\\). The curve crosses the \\(y\\)-axis at the point \\(A\\), and the point \\(B\\) on the curve has \\(x\\)-coordinate 1. The shaded region is bounded by the curve and the line segment \\(AB\\).\\nFind the exact area of the shaded region."
+        "Text": "The diagram shows the curve \\(y = 2 + e^{-2x}\\). The curve crosses the \\(y\\)-axis at the point \\(A\\), and the point \\(B\\) on the curve has \\(x\\)-coordinate 1. The shaded region is bounded by the curve and the line segment \\(AB\\).\\\\Find the exact area of the shaded region."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Integrate \\(y = 2 + e^{-2x}\\):\\n\\[\\int (2 + e^{-2x}) dx = 2x - \\frac{1}{2}e^{-2x}.\\]\\nApply the limits \\(x = 0\\) to \\(x = 1\\):\\n\\[\\left[2x - \\frac{1}{2}e^{-2x}\\right]_0^1 = \\left(2(1) - \\frac{1}{2}e^{-2(1)}\\right) - \\left(2(0) - \\frac{1}{2}e^{-2(0)}\\right).\\]\\nSimplify:\\n\\[2 - \\frac{1}{2}e^{-2} - \\left(-\\frac{1}{2}\\right).\\]\\n\\[\\text{Area under the curve: } \\frac{5}{2} - \\frac{1}{2}e^{-2}.\\]\\nSubtract the area of the trapezium formed by the line segment \\(AB\\):\\n\\[\\text{Exact area: } e^{-2}.\\]",
+                "Solution": "Integrate \\(y = 2 + e^{-2x}\\):\\\\\\[\\int (2 + e^{-2x}) dx = 2x - \\frac{1}{2}e^{-2x}.\\]\\\\Apply the limits \\(x = 0\\) to \\(x = 1\\):\\\\\\[\\left[2x - \\frac{1}{2}e^{-2x}\\right]_0^1 = \\left(2(1) - \\frac{1}{2}e^{-2(1)}\\right) - \\left(2(0) - \\frac{1}{2}e^{-2(0)}\\right).\\]\\\\Simplify:\\\\\\[2 - \\frac{1}{2}e^{-2} - \\left(-\\frac{1}{2}\\right).\\]\\\\\\[\\text{Area under the curve: } \\frac{5}{2} - \\frac{1}{2}e^{-2}.\\]\\\\Subtract the area of the trapezium formed by the line segment \\(AB\\):\\\\\\[\\text{Exact area: } e^{-2}.\\]",
                 "MarkingScheme": "M1 for setting up integration, A1 for correct integration, A1 for applying limits, M1 for area subtraction, A1 for final exact answer \\(e^{-2}\\)."
             }
         ]
@@ -149,19 +148,19 @@
         ]
     },
     "QuestionContent": {
-        "Text": "(a) Solve the equation \\(|2x - 5| = |x + 6|.\\)\\n(b) Hence find the value of \\(y\\) such that \\(|2^{1-y} - 5| = |2^{-y} + 6|.\\) Give your answer correct to 3 significant figures."
+        "Text": "(a) Solve the equation \\(|2x - 5| = |x + 6|.\\)\\\\(b) Hence find the value of \\(y\\) such that \\(|2^{1-y} - 5| = |2^{-y} + 6|.\\) Give your answer correct to 3 significant figures."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To solve \\(|2x - 5| = |x + 6|\\), split into cases:\\n\\[2x - 5 = x + 6 \\implies x = 11.\\]\\n\\[2x - 5 = -(x + 6) \\implies x = -\\frac{1}{3}.\\]\\nThus, \\(x = 11\\) or \\(x = -\\frac{1}{3}.\\)",
-                "MarkingScheme": "B1 for correctly forming the non-modulus equations.\\nM1 for solving the equations.\\nA1 for both correct solutions \\(x = 11\\) and \\(x = -\\frac{1}{3}.\\)"
+                "Solution": "To solve \\(|2x - 5| = |x + 6|\\), split into cases:\\\\\\[2x - 5 = x + 6 \\implies x = 11.\\]\\\\\\[2x - 5 = -(x + 6) \\implies x = -\\frac{1}{3}.\\]\\\\Thus, \\(x = 11\\) or \\(x = -\\frac{1}{3}.\\)",
+                "MarkingScheme": "B1 for correctly forming the non-modulus equations.\\\\M1 for solving the equations.\\\\A1 for both correct solutions \\(x = 11\\) and \\(x = -\\frac{1}{3}.\\)"
             },
             {
                 "Part": "b",
-                "Solution": "Substitute \\(x = 2^{1-y}\\) into the equation from (a):\\n\\[|2^{1-y} - 5| = |2^{-y} + 6|.\\]\\nSolve for \\(y\\) using logarithms:\\n\\[y = -3.46.\\]",
-                "MarkingScheme": "M1 for using logarithms and power rules.\\nA1 for correct answer \\(y = -3.46\\)."
+                "Solution": "Substitute \\(x = 2^{1-y}\\) into the equation from (a):\\\\\\[|2^{1-y} - 5| = |2^{-y} + 6|.\\]\\\\Solve for \\(y\\) using logarithms:\\\\\\[y = -3.46.\\]",
+                "MarkingScheme": "M1 for using logarithms and power rules.\\\\A1 for correct answer \\(y = -3.46\\)."
             }
         ]
     }
@@ -194,19 +193,19 @@
         ]
     },
     "QuestionContent": {
-        "Text": "The sequence of values given by the iterative formula \\[x_{n+1} = \\frac{6 + 8x_n}{8 + x_n^2}\\] with initial value \\(x_1 = 2\\) converges to \\(\\alpha\\).\\n(a) Use the iterative formula to find the value of \\(\\alpha\\) correct to 4 significant figures. Give the result of each iteration to 6 significant figures. [3]\\n(b) State an equation satisfied by \\(\\alpha\\) and hence determine the exact value of \\(\\alpha\\). [2]"
+        "Text": "The sequence of values given by the iterative formula \\[x_{n+1} = \\frac{6 + 8x_n}{8 + x_n^2}\\] with initial value \\(x_1 = 2\\) converges to \\(\\alpha\\).\\\\(a) Use the iterative formula to find the value of \\(\\alpha\\) correct to 4 significant figures. Give the result of each iteration to 6 significant figures. [3]\\\\(b) State an equation satisfied by \\(\\alpha\\) and hence determine the exact value of \\(\\alpha\\). [2]"
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Using the iterative formula:\\n\\[x_{n+1} = \\frac{6 + 8x_n}{8 + x_n^2}\\]\\nStart with \\(x_1 = 2\\):\\n\\[x_2 = \\frac{6 + 8(2)}{8 + (2)^2} = \\frac{6 + 16}{8 + 4} = \\frac{22}{12} = 1.833333.\\]\\n\\[x_3 = \\frac{6 + 8(1.833333)}{8 + (1.833333)^2} = 1.818182.\\]\\n\\[x_4 = \\frac{6 + 8(1.818182)}{8 + (1.818182)^2} = 1.816993.\\]\\nContinue until values stabilize to 4 significant figures:\\n\\[\\alpha = 1.817.\\]",
-                "MarkingScheme": "M1 for correct use of the iterative formula at least once.\\nA1 for obtaining final answer \\(\\alpha = 1.817\\) correct to 4 significant figures.\\nA1 for showing sufficient iterations to justify convergence."
+                "Solution": "Using the iterative formula:\\\\\\[x_{n+1} = \\frac{6 + 8x_n}{8 + x_n^2}\\]\\\\Start with \\(x_1 = 2\\):\\\\\\[x_2 = \\frac{6 + 8(2)}{8 + (2)^2} = \\frac{6 + 16}{8 + 4} = \\frac{22}{12} = 1.833333.\\]\\\\\\[x_3 = \\frac{6 + 8(1.833333)}{8 + (1.833333)^2} = 1.818182.\\]\\\\\\[x_4 = \\frac{6 + 8(1.818182)}{8 + (1.818182)^2} = 1.816993.\\]\\\\Continue until values stabilize to 4 significant figures:\\\\\\[\\alpha = 1.817.\\]",
+                "MarkingScheme": "M1 for correct use of the iterative formula at least once.\\\\A1 for obtaining final answer \\(\\alpha = 1.817\\) correct to 4 significant figures.\\\\A1 for showing sufficient iterations to justify convergence."
             },
             {
                 "Part": "b",
-                "Solution": "The iterative formula is derived from the equation:\\n\\[x = \\frac{6 + 8x}{8 + x^2}.\\]\\nMultiply through by \\(8 + x^2\\):\\n\\[x(8 + x^2) = 6 + 8x.\\]\\nRearrange:\\n\\[x^3 + 8x - 6 = 0.\\]\\nSolve for \\(\\alpha\\):\\n\\[\\alpha = \\frac{\\sqrt[3]{6}}{\\sqrt[3]{6}}\\text{ (exact value)}.\\]",
-                "MarkingScheme": "B1 for stating the correct equation \\(x^3 + 8x - 6 = 0\\).\\nB1 for obtaining \\(\\alpha = \\sqrt[3]{6}\\) or exact equivalent."
+                "Solution": "The iterative formula is derived from the equation:\\\\\\[x = \\frac{6 + 8x}{8 + x^2}.\\]\\\\Multiply through by \\(8 + x^2\\):\\\\\\[x(8 + x^2) = 6 + 8x.\\]\\\\Rearrange:\\\\\\[x^3 + 8x - 6 = 0.\\]\\\\Solve for \\(\\alpha\\):\\\\\\[\\alpha = \\frac{\\sqrt[3]{6}}{\\sqrt[3]{6}}\\text{ (exact value)}.\\]",
+                "MarkingScheme": "B1 for stating the correct equation \\(x^3 + 8x - 6 = 0\\).\\\\B1 for obtaining \\(\\alpha = \\sqrt[3]{6}\\) or exact equivalent."
             }
         ]
     }
@@ -240,23 +239,23 @@
         ]
     },
     "QuestionContent": {
-        "Text": "It is given that \\(3 \\sin 2\\theta = \\cos \\theta\\) where \\(\\theta\\) is an angle such that \\(0^\\circ < \\theta < 90^\\circ\\).\\n(a) Find the exact value of \\(\\sin \\theta\\).\\n(b) Find the exact value of \\(\\sec \\theta\\).\\n(c) Find the exact value of \\(\\cos 2\\theta\\)."
+        "Text": "It is given that \\(3 \\sin 2\\theta = \\cos \\theta\\) where \\(\\theta\\) is an angle such that \\(0^\\circ < \\theta < 90^\\circ\\).\\\\(a) Find the exact value of \\(\\sin \\theta\\).\\\\(b) Find the exact value of \\(\\sec \\theta\\).\\\\(c) Find the exact value of \\(\\cos 2\\theta\\)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Using \\(\\sin 2\\theta = 2 \\sin \\theta \\cos \\theta\\):\\n\\[3 (2 \\sin \\theta \\cos \\theta) = \\cos \\theta.\\]\\nDivide through by \\(\\cos \\theta\\) (\\(\\cos \\theta \\neq 0\\)):\\n\\[6 \\sin \\theta = 1.\\]\\n\\[\\sin \\theta = \\frac{1}{6}.\\]",
+                "Solution": "Using \\(\\sin 2\\theta = 2 \\sin \\theta \\cos \\theta\\):\\\\\\[3 (2 \\sin \\theta \\cos \\theta) = \\cos \\theta.\\]\\\\Divide through by \\(\\cos \\theta\\) (\\(\\cos \\theta \\\\eq 0\\)):\\\\\\[6 \\sin \\theta = 1.\\]\\\\\\[\\sin \\theta = \\frac{1}{6}.\\]",
                 "MarkingScheme": "B1 for correct identity, B1 for \\(\\sin \\theta = \\frac{1}{6}\\)."
             },
             {
                 "Part": "b",
-                "Solution": "Using \\(\\sec \\theta = \\frac{1}{\\cos \\theta}\\), find \\(\\cos \\theta\\) using \\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\):\\n\\[\\cos^2 \\theta = 1 - \\left(\\frac{1}{6}\\right)^2.\\]\\n\\[\\cos^2 \\theta = \\frac{35}{36}.\\]\\n\\[\\cos \\theta = \\frac{\\sqrt{35}}{6}.\\]\\n\\[\\sec \\theta = \\frac{1}{\\cos \\theta} = \\frac{6}{\\sqrt{35}}.\\]",
+                "Solution": "Using \\(\\sec \\theta = \\frac{1}{\\cos \\theta}\\), find \\(\\cos \\theta\\) using \\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\):\\\\\\[\\cos^2 \\theta = 1 - \\left(\\frac{1}{6}\\right)^2.\\]\\\\\\[\\cos^2 \\theta = \\frac{35}{36}.\\]\\\\\\[\\cos \\theta = \\frac{\\sqrt{35}}{6}.\\]\\\\\\[\\sec \\theta = \\frac{1}{\\cos \\theta} = \\frac{6}{\\sqrt{35}}.\\]",
                 "MarkingScheme": "M1 for correct use of identity, A1 for \\(\\sec \\theta = \\frac{6}{\\sqrt{35}}\\)."
             },
             {
                 "Part": "c",
-                "Solution": "Using \\(\\cos 2\\theta = 1 - 2 \\sin^2 \\theta\\):\\n\\[\\cos 2\\theta = 1 - 2\\left(\\frac{1}{6}\\right)^2.\\]\\n\\[\\cos 2\\theta = 1 - \\frac{2}{36}.\\]\\n\\[\\cos 2\\theta = \\frac{17}{18}.\\]",
+                "Solution": "Using \\(\\cos 2\\theta = 1 - 2 \\sin^2 \\theta\\):\\\\\\[\\cos 2\\theta = 1 - 2\\left(\\frac{1}{6}\\right)^2.\\]\\\\\\[\\cos 2\\theta = 1 - \\frac{2}{36}.\\]\\\\\\[\\cos 2\\theta = \\frac{17}{18}.\\]",
                 "MarkingScheme": "M1 for correct use of identity, A1 for \\(\\cos 2\\theta = \\frac{17}{18}\\)."
             }
         ]
@@ -292,23 +291,23 @@
         ]
     },
     "QuestionContent": {
-        "Text": "A curve is defined by the parametric equations \\[x = 3t - 2 \\sin t,\\]\\[y = 5t + 4 \\cos t,\\]\\nwhere \\(0 \\leq t \\leq 2\\pi\\). At each of the points \\(P\\) and \\(Q\\) on the curve, the gradient of the curve is \\(\\frac{5}{2}\\).\\n(a) Show that the values of \\(t\\) at \\(P\\) and \\(Q\\) satisfy the equation \\(10 \\cos t - 8 \\sin t = 5\\).\\n(b) Express \\(10 \\cos t - 8 \\sin t\\) in the form \\(R \\cos(t + \\alpha)\\), where \\(R > 0\\) and \\(0 < \\alpha < \\frac{1}{2}\\pi\\). Give the exact value of \\(R\\) and the value of \\(\\alpha\\) correct to 3 significant figures.\\n(c) Hence find the values of \\(t\\) at the points \\(P\\) and \\(Q\\)."
+        "Text": "A curve is defined by the parametric equations \\[x = 3t - 2 \\sin t,\\]\\[y = 5t + 4 \\cos t,\\]\\\\where \\(0 \\leq t \\leq 2\\pi\\). At each of the points \\(P\\) and \\(Q\\) on the curve, the gradient of the curve is \\(\\frac{5}{2}\\).\\\\(a) Show that the values of \\(t\\) at \\(P\\) and \\(Q\\) satisfy the equation \\(10 \\cos t - 8 \\sin t = 5\\).\\\\(b) Express \\(10 \\cos t - 8 \\sin t\\) in the form \\(R \\cos(t + \\alpha)\\), where \\(R > 0\\) and \\(0 < \\alpha < \\frac{1}{2}\\pi\\). Give the exact value of \\(R\\) and the value of \\(\\alpha\\) correct to 3 significant figures.\\\\(c) Hence find the values of \\(t\\) at the points \\(P\\) and \\(Q\\)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To find \\(\\frac{dy}{dx}\\), first differentiate \\(x\\) and \\(y\\) with respect to \\(t\\):\\n\\[\\frac{dx}{dt} = 3 - 2 \\cos t,\\]\\n\\[\\frac{dy}{dt} = 5 - 4 \\sin t.\\]\\nThen, \\[\\frac{dy}{dx} = \\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}} = \\frac{5 - 4 \\sin t}{3 - 2 \\cos t}.\\]\\nEquating \\(\\frac{dy}{dx}\\) to \\(\\frac{5}{2}\\):\\n\\[\\frac{5 - 4 \\sin t}{3 - 2 \\cos t} = \\frac{5}{2}.\\]\\nCross-multiply and simplify:\\n\\[10 - 8 \\sin t = 10 \\cos t - 6.\\]\\nRearrange to obtain:\\n\\[10 \\cos t - 8 \\sin t = 5.\\]",
+                "Solution": "To find \\(\\frac{dy}{dx}\\), first differentiate \\(x\\) and \\(y\\) with respect to \\(t\\):\\\\\\[\\frac{dx}{dt} = 3 - 2 \\cos t,\\]\\\\\\[\\frac{dy}{dt} = 5 - 4 \\sin t.\\]\\\\Then, \\[\\frac{dy}{dx} = \\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}} = \\frac{5 - 4 \\sin t}{3 - 2 \\cos t}.\\]\\\\Equating \\(\\frac{dy}{dx}\\) to \\(\\frac{5}{2}\\):\\\\\\[\\frac{5 - 4 \\sin t}{3 - 2 \\cos t} = \\frac{5}{2}.\\]\\\\Cross-multiply and simplify:\\\\\\[10 - 8 \\sin t = 10 \\cos t - 6.\\]\\\\Rearrange to obtain:\\\\\\[10 \\cos t - 8 \\sin t = 5.\\]",
                 "MarkingScheme": "B1 for correctly differentiating \\(x\\) and \\(y\\), M1 for equating \\(\\frac{dy}{dx}\\) to \\(\\frac{5}{2}\\), A1 for obtaining \\(10 \\cos t - 8 \\sin t = 5\\)."
             },
             {
                 "Part": "b",
-                "Solution": "Express \\(10 \\cos t - 8 \\sin t\\) in the form \\(R \\cos(t + \\alpha)\\):\\n\\[R = \\sqrt{10^2 + (-8)^2} = \\sqrt{100 + 64} = \\sqrt{164}.\\]\\n\\[R = 2\\sqrt{41}.\\]\\nFind \\(\\alpha\\):\\n\\[\\tan \\alpha = \\frac{-8}{10} = -0.8.\\]\\n\\[\\alpha = \\arctan(-0.8).\\]\\nThus, \\(\\alpha = 0.675\\) radians (3 significant figures).",
+                "Solution": "Express \\(10 \\cos t - 8 \\sin t\\) in the form \\(R \\cos(t + \\alpha)\\):\\\\\\[R = \\sqrt{10^2 + (-8)^2} = \\sqrt{100 + 64} = \\sqrt{164}.\\]\\\\\\[R = 2\\sqrt{41}.\\]\\\\Find \\(\\alpha\\):\\\\\\[\\tan \\alpha = \\frac{-8}{10} = -0.8.\\]\\\\\\[\\alpha = \\arctan(-0.8).\\]\\\\Thus, \\(\\alpha = 0.675\\) radians (3 significant figures).",
                 "MarkingScheme": "B1 for correctly finding \\(R\\), M1 for finding \\(\\tan \\alpha\\), A1 for \\(\\alpha = 0.675\\)."
             },
             {
                 "Part": "c",
-                "Solution": "Substitute \\(10 \\cos t - 8 \\sin t = 5\\) into \\(R \\cos(t + \\alpha) = 5\\):\\n\\[2\\sqrt{41} \\cos(t + 0.675) = 5.\\]\\nSolve for \\(\\cos(t + \\alpha)\\):\\n\\[\\cos(t + 0.675) = \\frac{5}{2\\sqrt{41}}.\\]\\nFind \\(t\\):\\n\\[t + 0.675 = \\arccos\\left(\\frac{5}{2\\sqrt{41}}\\right).\\]\\n\\[t = \\arccos\\left(\\frac{5}{2\\sqrt{41}}\\right) - 0.675.\\]\\nValues of \\(t\\):\\n\\[t = 0.495, 4.44\\] (to 3 significant figures).",
+                "Solution": "Substitute \\(10 \\cos t - 8 \\sin t = 5\\) into \\(R \\cos(t + \\alpha) = 5\\):\\\\\\[2\\sqrt{41} \\cos(t + 0.675) = 5.\\]\\\\Solve for \\(\\cos(t + \\alpha)\\):\\\\\\[\\cos(t + 0.675) = \\frac{5}{2\\sqrt{41}}.\\]\\\\Find \\(t\\):\\\\\\[t + 0.675 = \\arccos\\left(\\frac{5}{2\\sqrt{41}}\\right).\\]\\\\\\[t = \\arccos\\left(\\frac{5}{2\\sqrt{41}}\\right) - 0.675.\\]\\\\Values of \\(t\\):\\\\\\[t = 0.495, 4.44\\] (to 3 significant figures).",
                 "MarkingScheme": "M1 for substituting into \\(R \\cos(t + \\alpha)\\), A1 for correct rearrangement, A1 for both correct values of \\(t\\)."
             }
         ]
@@ -344,29 +343,21 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "A curve has equation \\(y = f(x)\\) where \\(f(x) = \\frac{4x^3 + 8x - 4}{2x - 1}\\).\\n(a) Find an expression for \\(\\frac{dy}{dx}\\) and hence find the coordinates of each of the stationary points of the curve \\(y = f(x)\\).\\n(b) Divide \\(4x^3 + 8x - 4\\) by \\((2x - 1)\\), and hence find \\(\\int f(x) \\, dx\\)."
+        "Text": "A curve has equation \\(y = f(x)\\) where \\(f(x) = \\frac{4x^3 + 8x - 4}{2x - 1}\\).\\\\(a) Find an expression for \\(\\frac{dy}{dx}\\) and hence find the coordinates of each of the stationary points of the curve \\(y = f(x)\\).\\\\(b) Divide \\(4x^3 + 8x - 4\\) by \\((2x - 1)\\), and hence find \\(\\int f(x) \\, dx\\)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Differentiate \\(f(x) = \\frac{4x^3 + 8x - 4}{2x - 1}\\) using the quotient rule:\\n\\[ \\frac{dy}{dx} = \\frac{(2x - 1)(12x^2 + 8) - 2(4x^3 + 8x - 4)}{(2x - 1)^2}. \\]\\nSimplify:\\n\\[ \\frac{dy}{dx} = \\frac{(2x - 1)(12x^2 + 8) - 2(4x^3 + 8x - 4)}{(2x - 1)^2} = \\frac{(2x - 1)(12x^2 + 8) - (8x^3 + 16x - 8)}{(2x - 1)^2}. \\]\\nEquate \\(\\frac{dy}{dx} = 0\\) and solve for \\(x\\):\\nStationary points are at \\(x = 0\\) and \\(x = \\frac{3}{4}\\).\\nSubstitute back into \\(f(x)\\) to find \\(y\\)-coordinates:\\n\\(f(0) = 4\\), \\(f\\left(\\frac{3}{4}\\right) = \\frac{59}{8}\\).\\nStationary points are \\((0, 4)\\) and \\(\\left(\\frac{3}{4}, \\frac{59}{8}\\right)\\).",
+                "Solution": "Differentiate \\(f(x) = \\frac{4x^3 + 8x - 4}{2x - 1}\\) using the quotient rule:\\\\\\[ \\frac{dy}{dx} = \\frac{(2x - 1)(12x^2 + 8) - 2(4x^3 + 8x - 4)}{(2x - 1)^2}. \\]\\\\Simplify:\\\\\\[ \\frac{dy}{dx} = \\frac{(2x - 1)(12x^2 + 8) - 2(4x^3 + 8x - 4)}{(2x - 1)^2} = \\frac{(2x - 1)(12x^2 + 8) - (8x^3 + 16x - 8)}{(2x - 1)^2}. \\]\\\\Equate \\(\\frac{dy}{dx} = 0\\) and solve for \\(x\\):\\\\Stationary points are at \\(x = 0\\) and \\(x = \\frac{3}{4}\\).\\\\Substitute back into \\(f(x)\\) to find \\(y\\)-coordinates:\\\\\\(f(0) = 4\\), \\(f\\left(\\frac{3}{4}\\right) = \\frac{59}{8}\\).\\\\Stationary points are \\((0, 4)\\) and \\(\\left(\\frac{3}{4}, \\frac{59}{8}\\right)\\).",
                 "MarkingScheme": "M1 for using quotient rule, A1 for correct differentiation, DM1 for equating to zero and solving, A1 for stationary points \\((0, 4)\\) and \\(\\left(\\frac{3}{4}, \\frac{59}{8}\\right)\\)."
             },
             {
                 "Part": "b",
-                "Solution": "Divide \\(4x^3 + 8x - 4\\) by \\(2x - 1\\):\\n\\[ 4x^3 + 8x - 4 = (2x - 1)(2x^2 + x + \\frac{9}{2}) + \\frac{1}{2}. \\]\\nThus, \\(f(x) = 2x^2 + x + \\frac{9}{2} + \\frac{\\frac{1}{2}}{2x - 1}\\).\\nIntegrate term by term:\\n\\[ \\int f(x) \\, dx = \\int \\left(2x^2 + x + \\frac{9}{2}\\right) \\, dx + \\int \\frac{\\frac{1}{2}}{2x - 1} \\, dx. \\]\\n\\[ \\int f(x) \\, dx = \\frac{2}{3}x^3 + \\frac{1}{2}x^2 + \\frac{9}{2}x + \\frac{1}{4}\\ln|2x - 1| + C. \\]",
+                "Solution": "Divide \\(4x^3 + 8x - 4\\) by \\(2x - 1\\):\\\\\\[ 4x^3 + 8x - 4 = (2x - 1)(2x^2 + x + \\frac{9}{2}) + \\frac{1}{2}. \\]\\\\Thus, \\(f(x) = 2x^2 + x + \\frac{9}{2} + \\frac{\\frac{1}{2}}{2x - 1}\\).\\\\Integrate term by term:\\\\\\[ \\int f(x) \\, dx = \\int \\left(2x^2 + x + \\frac{9}{2}\\right) \\, dx + \\int \\frac{\\frac{1}{2}}{2x - 1} \\, dx. \\]\\\\\\[ \\int f(x) \\, dx = \\frac{2}{3}x^3 + \\frac{1}{2}x^2 + \\frac{9}{2}x + \\frac{1}{4}\\ln|2x - 1| + C. \\]",
                 "MarkingScheme": "M1 for polynomial division, A1 for correct quotient and remainder, M1 for integrating each term, A1 for complete integral."
             }
         ]
     }
 }
 ]
-}
-
-
-
-
-
-
-

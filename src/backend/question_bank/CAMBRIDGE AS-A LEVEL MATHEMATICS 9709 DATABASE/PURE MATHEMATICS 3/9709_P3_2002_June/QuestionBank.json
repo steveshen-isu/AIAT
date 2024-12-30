@@ -1,4 +1,4 @@
-{
+[{
     "Metadata": {
         "QuestionTitle": "Trigonometric Identity Proof",
         "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
@@ -32,13 +32,12 @@
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To prove \\( \\cot \\theta - \\tan \\theta \\equiv 2 \\cot 2\\theta \\), follow these steps:\\n\\n1. Express \\( \\cot \\theta \\) and \\( \\tan \\theta \\) in terms of sine and cosine:\\n   \\[\\n   \\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta}, \\quad \\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}.\\n   \\]\\n\\n2. Substitute into the left-hand side:\\n   \\[\\n   \\cot \\theta - \\tan \\theta = \\frac{\\cos \\theta}{\\sin \\theta} - \\frac{\\sin \\theta}{\\cos \\theta}.\\n   \\]\\n\\n3. Combine terms under a common denominator:\\n   \\[\\n   \\frac{\\cos^2 \\theta - \\sin^2 \\theta}{\\sin \\theta \\cos \\theta}.\\n   \\]\\n\\n4. Use the double angle identity \\( \\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta \\):\\n   \\[\\n   \\frac{\\cos 2\\theta}{\\sin \\theta \\cos \\theta}.\\n   \\]\\n\\n5. Rewrite the denominator using the double angle identity for sine: \\( \\sin 2\\theta = 2 \\sin \\theta \\cos \\theta \\):\\n   \\[\\n   \\frac{\\cos 2\\theta}{\\sin \\theta \\cos \\theta} = 2 \\cdot \\frac{\\cos 2\\theta}{\\sin 2\\theta}.\\n   \\]\\n\\n6. Recognize that \\( \\frac{\\cos 2\\theta}{\\sin 2\\theta} = \\cot 2\\theta \\):\\n   \\[\\n   2 \\cot 2\\theta.\\n   \\]\\n\\nThus, the left-hand side equals the right-hand side, and the identity is proven.",
+                "Solution": "To prove \\( \\cot \\theta - \\tan \\theta \\equiv 2 \\cot 2\\theta \\), follow these steps:\\\\\\\\1. Express \\( \\cot \\theta \\) and \\( \\tan \\theta \\) in terms of sine and cosine:\\\\   \\[\\\\   \\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta}, \\quad \\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}.\\\\   \\]\\\\\\\\2. Substitute into the left-hand side:\\\\   \\[\\\\   \\cot \\theta - \\tan \\theta = \\frac{\\cos \\theta}{\\sin \\theta} - \\frac{\\sin \\theta}{\\cos \\theta}.\\\\   \\]\\\\\\\\3. Combine terms under a common denominator:\\\\   \\[\\\\   \\frac{\\cos^2 \\theta - \\sin^2 \\theta}{\\sin \\theta \\cos \\theta}.\\\\   \\]\\\\\\\\4. Use the double angle identity \\( \\cos 2\\theta = \\cos^2 \\theta - \\sin^2 \\theta \\):\\\\   \\[\\\\   \\frac{\\cos 2\\theta}{\\sin \\theta \\cos \\theta}.\\\\   \\]\\\\\\\\5. Rewrite the denominator using the double angle identity for sine: \\( \\sin 2\\theta = 2 \\sin \\theta \\cos \\theta \\):\\\\   \\[\\\\   \\frac{\\cos 2\\theta}{\\sin \\theta \\cos \\theta} = 2 \\cdot \\frac{\\cos 2\\theta}{\\sin 2\\theta}.\\\\   \\]\\\\\\\\6. Recognize that \\( \\frac{\\cos 2\\theta}{\\sin 2\\theta} = \\cot 2\\theta \\):\\\\   \\[\\\\   2 \\cot 2\\theta.\\\\   \\]\\\\\\\\Thus, the left-hand side equals the right-hand side, and the identity is proven.",
                 "MarkingScheme": "M1 for expressing terms in sine and cosine, M1 for using double angle identities correctly, A1 for completing the proof."
             }
         ]
     }
-}
-
+},
 {
     "Metadata": {
         "QuestionTitle": "Binomial Expansion in Ascending Powers",
@@ -73,12 +72,12 @@
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Using the binomial expansion formula for \\((1 + u)^n\\):\\n\\[ (1 - 3x)^{-1/3} = 1 + \\binom{-1/3}{1}(-3x) + \\binom{-1/3}{2}(-3x)^2 + \\binom{-1/3}{3}(-3x)^3 + \\dots \\]\\n\\nExpanding step-by-step:\\n1. First term: \\(1\\).\\n2. Second term: \\((-1/3)(-3x) = x\\).\\n3. Third term: \\((-1/3)((-4/3)/2!)(-3x)^2 = 2x^2\\).\\n4. Fourth term: \\((-1/3)((-4/3)(-7/3)/3!)(-3x)^3 = \\frac{14}{3}x^3\\).\\n\\nFinal expansion:\\n\\[1 + x + 2x^2 + \\frac{14}{3}x^3.\\]",
+                "Solution": "Using the binomial expansion formula for \\((1 + u)^n\\):\\\\\\[ (1 - 3x)^{-1/3} = 1 + \\binom{-1/3}{1}(-3x) + \\binom{-1/3}{2}(-3x)^2 + \\binom{-1/3}{3}(-3x)^3 + \\dots \\]\\\\\\\\Expanding step-by-step:\\\\1. First term: \\(1\\).\\\\2. Second term: \\((-1/3)(-3x) = x\\).\\\\3. Third term: \\((-1/3)((-4/3)/2!)(-3x)^2 = 2x^2\\).\\\\4. Fourth term: \\((-1/3)((-4/3)(-7/3)/3!)(-3x)^3 = \\frac{14}{3}x^3\\).\\\\\\\\Final expansion:\\\\\\[1 + x + 2x^2 + \\frac{14}{3}x^3.\\]",
                 "MarkingScheme": "M1 for correctly identifying the binomial formula, A1 for the correct first two terms, A1 for the quadratic term, A1 for the cubic term with simplified coefficient."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Quadratic Factorization of Polynomial",
@@ -107,18 +106,18 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "The polynomial \\(x^4 + 4x^2 + x + a\\) is denoted by \\(p(x)\\). It is given that \\((x^2 + x + 2)\\) is a factor of \\(p(x)\\).\\n\\nFind the value of \\(a\\) and the other quadratic factor of \\(p(x)\\)."
+        "Text": "The polynomial \\(x^4 + 4x^2 + x + a\\) is denoted by \\(p(x)\\). It is given that \\((x^2 + x + 2)\\) is a factor of \\(p(x)\\).\\\\\\\\Find the value of \\(a\\) and the other quadratic factor of \\(p(x)\\)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To find the value of \\(a\\) and the other quadratic factor, follow these steps:\\n\\n1. **Divide \\(p(x)\\) by \\((x^2 + x + 2)\\):**\\n   Let \\(p(x) = (x^2 + x + 2)(x^2 + bx + c)\\), where \\(x^2 + bx + c\\) is the other quadratic factor.\\n\\n2. **Equate coefficients:**\\n   Expand \\((x^2 + x + 2)(x^2 + bx + c)\\):\\n   \\[\\n   x^4 + bx^3 + cx^2 + x^3 + bx^2 + cx + 2x^2 + 2x + 2.\\n   \\]\\n   Combine terms:\\n   \\[\\n   x^4 + (b + 1)x^3 + (c + b + 2)x^2 + (c + 2)x + 2.\\n   \\]\\n\\n3. **Match with \\(x^4 + 4x^2 + x + a\\):**\\n   Comparing coefficients:\\n   - Coefficient of \\(x^3\\): \\(b + 1 = 0 \\Rightarrow b = -1\\).\\n   - Coefficient of \\(x^2\\): \\(c + b + 2 = 4 \\Rightarrow c - 1 + 2 = 4 \\Rightarrow c = 3\\).\\n   - Coefficient of \\(x\\): \\(c + 2 = 1 \\Rightarrow 3 + 2 = a \\Rightarrow a = 6\\).\\n\\n4. **Write the other factor:**\\n   The other quadratic factor is \\(x^2 - x + 3\\).\\n\\nThus, \\(a = 6\\) and the other factor is \\(x^2 - x + 3\\).",
+                "Solution": "To find the value of \\(a\\) and the other quadratic factor, follow these steps:\\\\\\\\1. **Divide \\(p(x)\\) by \\((x^2 + x + 2)\\):**\\\\   Let \\(p(x) = (x^2 + x + 2)(x^2 + bx + c)\\), where \\(x^2 + bx + c\\) is the other quadratic factor.\\\\\\\\2. **Equate coefficients:**\\\\   Expand \\((x^2 + x + 2)(x^2 + bx + c)\\):\\\\   \\[\\\\   x^4 + bx^3 + cx^2 + x^3 + bx^2 + cx + 2x^2 + 2x + 2.\\\\   \\]\\\\   Combine terms:\\\\   \\[\\\\   x^4 + (b + 1)x^3 + (c + b + 2)x^2 + (c + 2)x + 2.\\\\   \\]\\\\\\\\3. **Match with \\(x^4 + 4x^2 + x + a\\):**\\\\   Comparing coefficients:\\\\   - Coefficient of \\(x^3\\): \\(b + 1 = 0 \\Rightarrow b = -1\\).\\\\   - Coefficient of \\(x^2\\): \\(c + b + 2 = 4 \\Rightarrow c - 1 + 2 = 4 \\Rightarrow c = 3\\).\\\\   - Coefficient of \\(x\\): \\(c + 2 = 1 \\Rightarrow 3 + 2 = a \\Rightarrow a = 6\\).\\\\\\\\4. **Write the other factor:**\\\\   The other quadratic factor is \\(x^2 - x + 3\\).\\\\\\\\Thus, \\(a = 6\\) and the other factor is \\(x^2 - x + 3\\).",
                 "MarkingScheme": "M1 for attempting polynomial division, A1 for finding \\(a = 6\\), A1 for determining the quadratic factor \\(x^2 - x + 3\\)."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Iterative Formula and Convergence",
@@ -163,17 +162,17 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "To find \\( \\alpha \\) correct to 2 decimal places:\\n\\n1. **Perform the iterations:**\\n   - Start with \\( x_1 = 1 \\).\\n   - Compute subsequent terms using the formula:\\n     \\[\\n     x_{n+1} = \\frac{2}{3} \\left( x_n + \\frac{1}{x_n} \\right).\\n     \\]\\n   - Example iterations:\\n     - \\( x_2 = \\frac{2}{3} \\left( 1 + \\frac{1}{1} \\right) = 1.3333 \\).\\n     - \\( x_3 = \\frac{2}{3} \\left( 1.3333 + \\frac{1}{1.3333} \\right) \\approx 1.2639 \\).\\n     - \\( x_4 = \\frac{2}{3} \\left( 1.2639 + \\frac{1}{1.2639} \\right) \\approx 1.2601 \\).\\n   - Stop when the result stabilizes to 2 decimal places: \\( \\alpha \\approx 1.26 \\).\\n\\n2. **Final result:**\\n   \\( \\alpha = 1.26 \\).",
+                "Solution": "To find \\( \\alpha \\) correct to 2 decimal places:\\\\\\\\1. **Perform the iterations:**\\\\   - Start with \\( x_1 = 1 \\).\\\\   - Compute subsequent terms using the formula:\\\\     \\[\\\\     x_{n+1} = \\frac{2}{3} \\left( x_n + \\frac{1}{x_n} \\right).\\\\     \\]\\\\   - Example iterations:\\\\     - \\( x_2 = \\frac{2}{3} \\left( 1 + \\frac{1}{1} \\right) = 1.3333 \\).\\\\     - \\( x_3 = \\frac{2}{3} \\left( 1.3333 + \\frac{1}{1.3333} \\right) \\approx 1.2639 \\).\\\\     - \\( x_4 = \\frac{2}{3} \\left( 1.2639 + \\frac{1}{1.2639} \\right) \\approx 1.2601 \\).\\\\   - Stop when the result stabilizes to 2 decimal places: \\( \\alpha \\approx 1.26 \\).\\\\\\\\2. **Final result:**\\\\   \\( \\alpha = 1.26 \\).",
                 "MarkingScheme": "M1 for using the formula correctly, A1 for showing sufficient iterations, A1 for obtaining \\( \\alpha = 1.26 \\)."
             },
             {
                 "Part": "ii",
-                "Solution": "The equation satisfied by \\( \\alpha \\) is derived by substituting \\( \\alpha \\) into the iterative formula:\\n   \\[\\n   \\alpha = \\frac{2}{3} \\left( \\alpha + \\frac{1}{\\alpha} \\right).\\n   \\]\\n   Multiply through by 3 and simplify:\\n   \\[\\n   3\\alpha = 2\\alpha + \\frac{2}{\\alpha}.\\n   \\]\\n   Rearrange to form a polynomial equation:\\n   \\[\\n   \\alpha^3 = 2.\\n   \\]\\n\\n**Exact value of \\( \\alpha \\):**\\n   \\[\\n   \\alpha = \\sqrt[3]{2}.\\n   \\]",
+                "Solution": "The equation satisfied by \\( \\alpha \\) is derived by substituting \\( \\alpha \\) into the iterative formula:\\\\   \\[\\\\   \\alpha = \\frac{2}{3} \\left( \\alpha + \\frac{1}{\\alpha} \\right).\\\\   \\]\\\\   Multiply through by 3 and simplify:\\\\   \\[\\\\   3\\alpha = 2\\alpha + \\frac{2}{\\alpha}.\\\\   \\]\\\\   Rearrange to form a polynomial equation:\\\\   \\[\\\\   \\alpha^3 = 2.\\\\   \\]\\\\\\\\**Exact value of \\( \\alpha \\):**\\\\   \\[\\\\   \\alpha = \\sqrt[3]{2}.\\\\   \\]",
                 "MarkingScheme": "B1 for stating the equation \\( \\alpha^3 = 2 \\), B1 for finding \\( \\alpha = \\sqrt[3]{2} \\)."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Stationary Points of Trigonometric Curve",
@@ -208,12 +207,12 @@
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To find the \\(x\\)-coordinates of the stationary points:\\n\\n1. **Differentiate \\(y\\) with respect to \\(x\\):**\\n   \\[\\n   \\frac{dy}{dx} = -2\\sin x + 2\\cos 2x.\\n   \\]\\n\\n2. **Set \\(\\frac{dy}{dx} = 0\\):**\\n   \\[\\n   -2\\sin x + 2\\cos 2x = 0.\\n   \\]\\n   Simplify:\\n   \\[\\n   \\sin x = \\cos 2x.\\n   \\]\\n\\n3. **Use the double-angle identity:**\\n   Replace \\(\\cos 2x\\) using \\(\\cos 2x = 1 - 2\\sin^2 x\\):\\n   \\[\\n   \\sin x = 1 - 2\\sin^2 x.\\n   \\]\\n   Rearrange into a quadratic equation:\\n   \\[\\n   2\\sin^2 x + \\sin x - 1 = 0.\\n   \\]\\n\\n4. **Solve the quadratic equation:**\\n   Factorize or use the quadratic formula:\\n   \\[\\n   \\sin x = \\frac{-1 \\pm \\sqrt{1 + 8}}{4} = \\frac{-1 \\pm 3}{4}.\\n   \\]\\n   Solutions:\\n   \\[\\n   \\sin x = \\frac{1}{2} \\quad \\text{or} \\quad \\sin x = -1.\\n   \\]\\n   Discard \\(\\sin x = -1\\) as it is outside the given range \\(0 < x < \\pi\\).\\n\\n5. **Find \\(x\\)-values:**\\n   From \\(\\sin x = \\frac{1}{2}\\), \\(x = \\frac{\\pi}{6}\\) or \\(x = \\frac{5\\pi}{6}\\).\\n\\n6. **Determine the nature of each point:**\\n   - Compute \\(\\frac{d^2y}{dx^2}\\) to classify the stationary points.\\n   - At \\(x = \\frac{\\pi}{6}\\), \\(\\frac{d^2y}{dx^2} < 0\\), so it is a maximum.\\n   - At \\(x = \\frac{5\\pi}{6}\\), \\(\\frac{d^2y}{dx^2} > 0\\), so it is a minimum.\\n\\n**Final Answer:**\\n   - Stationary points at \\(x = \\frac{\\pi}{6}\\) (maximum) and \\(x = \\frac{5\\pi}{6}\\) (minimum).",
+                "Solution": "To find the \\(x\\)-coordinates of the stationary points:\\\\\\\\1. **Differentiate \\(y\\) with respect to \\(x\\):**\\\\   \\[\\\\   \\frac{dy}{dx} = -2\\sin x + 2\\cos 2x.\\\\   \\]\\\\\\\\2. **Set \\(\\frac{dy}{dx} = 0\\):**\\\\   \\[\\\\   -2\\sin x + 2\\cos 2x = 0.\\\\   \\]\\\\   Simplify:\\\\   \\[\\\\   \\sin x = \\cos 2x.\\\\   \\]\\\\\\\\3. **Use the double-angle identity:**\\\\   Replace \\(\\cos 2x\\) using \\(\\cos 2x = 1 - 2\\sin^2 x\\):\\\\   \\[\\\\   \\sin x = 1 - 2\\sin^2 x.\\\\   \\]\\\\   Rearrange into a quadratic equation:\\\\   \\[\\\\   2\\sin^2 x + \\sin x - 1 = 0.\\\\   \\]\\\\\\\\4. **Solve the quadratic equation:**\\\\   Factorize or use the quadratic formula:\\\\   \\[\\\\   \\sin x = \\frac{-1 \\pm \\sqrt{1 + 8}}{4} = \\frac{-1 \\pm 3}{4}.\\\\   \\]\\\\   Solutions:\\\\   \\[\\\\   \\sin x = \\frac{1}{2} \\quad \\text{or} \\quad \\sin x = -1.\\\\   \\]\\\\   Discard \\(\\sin x = -1\\) as it is outside the given range \\(0 < x < \\pi\\).\\\\\\\\5. **Find \\(x\\)-values:**\\\\   From \\(\\sin x = \\frac{1}{2}\\), \\(x = \\frac{\\pi}{6}\\) or \\(x = \\frac{5\\pi}{6}\\).\\\\\\\\6. **Determine the nature of each point:**\\\\   - Compute \\(\\frac{d^2y}{dx^2}\\) to classify the stationary points.\\\\   - At \\(x = \\frac{\\pi}{6}\\), \\(\\frac{d^2y}{dx^2} < 0\\), so it is a maximum.\\\\   - At \\(x = \\frac{5\\pi}{6}\\), \\(\\frac{d^2y}{dx^2} > 0\\), so it is a minimum.\\\\\\\\**Final Answer:**\\\\   - Stationary points at \\(x = \\frac{\\pi}{6}\\) (maximum) and \\(x = \\frac{5\\pi}{6}\\) (minimum).",
                 "MarkingScheme": "M1 for obtaining derivative, M1 for setting derivative to zero and applying trigonometric identities, A1 for solving quadratic equation, A1 for obtaining correct \\(x\\)-values, A1 for determining the nature of the points."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Partial Fractions and Integration",
@@ -258,17 +257,17 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "To express \\(f(x)\\) in partial fractions:\\n\\n1. Assume the partial fraction decomposition:\\n   \\[\\n   \\frac{4x}{(3x + 1)(x + 1)^2} = \\frac{A}{3x + 1} + \\frac{B}{(x + 1)^2} + \\frac{C}{x + 1}.\\n   \\]\\n\\n2. Combine fractions and equate numerators:\\n   \\[\\n   4x = A(x + 1)^2 + B(3x + 1) + C(3x + 1)(x + 1).\\n   \\]\\n\\n3. Expand and collect terms:\\n   \\[\\n   4x = A(x^2 + 2x + 1) + B(3x + 1) + C(3x^2 + 4x + 1).\\n   \\]\\n\\n4. Solve for \\(A\\), \\(B\\), and \\(C\\):\\n   - By equating coefficients of \\(x^2\\), \\(x\\), and constant terms:\\n     \\[\\n     A = -3, \\quad B = 2, \\quad C = 1.\\n     \\]\\n\\nFinal partial fraction form:\\n   \\[\\n   f(x) = \\frac{-3}{3x + 1} + \\frac{2}{(x + 1)^2} + \\frac{1}{x + 1}.\\n   \\]",
+                "Solution": "To express \\(f(x)\\) in partial fractions:\\\\\\\\1. Assume the partial fraction decomposition:\\\\   \\[\\\\   \\frac{4x}{(3x + 1)(x + 1)^2} = \\frac{A}{3x + 1} + \\frac{B}{(x + 1)^2} + \\frac{C}{x + 1}.\\\\   \\]\\\\\\\\2. Combine fractions and equate numerators:\\\\   \\[\\\\   4x = A(x + 1)^2 + B(3x + 1) + C(3x + 1)(x + 1).\\\\   \\]\\\\\\\\3. Expand and collect terms:\\\\   \\[\\\\   4x = A(x^2 + 2x + 1) + B(3x + 1) + C(3x^2 + 4x + 1).\\\\   \\]\\\\\\\\4. Solve for \\(A\\), \\(B\\), and \\(C\\):\\\\   - By equating coefficients of \\(x^2\\), \\(x\\), and constant terms:\\\\     \\[\\\\     A = -3, \\quad B = 2, \\quad C = 1.\\\\     \\]\\\\\\\\Final partial fraction form:\\\\   \\[\\\\   f(x) = \\frac{-3}{3x + 1} + \\frac{2}{(x + 1)^2} + \\frac{1}{x + 1}.\\\\   \\]",
                 "MarkingScheme": "B1 for correct decomposition setup, B1 for \\(A = -3\\), B1 for \\(B = 2\\), M1 for solving, A1 for final result."
             },
             {
                 "Part": "ii",
-                "Solution": "To evaluate \\(\\int_0^1 f(x) \\, dx\\):\\n\\n1. Substitute the partial fraction form:\\n   \\[\\n   \\int_0^1 f(x) \\, dx = \\int_0^1 \\left( \\frac{-3}{3x + 1} + \\frac{2}{(x + 1)^2} + \\frac{1}{x + 1} \\right) \\, dx.\\n   \\]\\n\\n2. Evaluate each term:\\n   - First term:\\n     \\[\\n     \\int \\frac{-3}{3x + 1} \\, dx = -\\ln(3x + 1).\\n     \\]\\n   - Second term:\\n     \\[\\n     \\int \\frac{2}{(x + 1)^2} \\, dx = \\frac{-2}{x + 1}.\\n     \\]\\n   - Third term:\\n     \\[\\n     \\int \\frac{1}{x + 1} \\, dx = \\ln(x + 1).\\n     \\]\\n\\n3. Combine results and apply limits:\\n   \\[\\n   \\int_0^1 f(x) \\, dx = \\left[ -\\ln(3x + 1) - \\frac{2}{x + 1} + \\ln(x + 1) \\right]_0^1.\\n   \\]\\n   At \\(x = 1\\):\\n   \\[\\n   -\\ln 4 - 1 + \\ln 2.\\n   \\]\\n   At \\(x = 0\\):\\n   \\[\\n   -\\ln 1 - 2 + \\ln 1 = -2.\\n   \\]\\n   Subtract:\\n   \\[\\n   ( -\\ln 4 - 1 + \\ln 2 ) - ( -2 ) = 1 - \\ln 2.\\n   \\]\\n\\nFinal Answer:\\n   \\[\\n   \\int_0^1 f(x) \\, dx = 1 - \\ln 2.\\n   \\]",
+                "Solution": "To evaluate \\(\\int_0^1 f(x) \\, dx\\):\\\\\\\\1. Substitute the partial fraction form:\\\\   \\[\\\\   \\int_0^1 f(x) \\, dx = \\int_0^1 \\left( \\frac{-3}{3x + 1} + \\frac{2}{(x + 1)^2} + \\frac{1}{x + 1} \\right) \\, dx.\\\\   \\]\\\\\\\\2. Evaluate each term:\\\\   - First term:\\\\     \\[\\\\     \\int \\frac{-3}{3x + 1} \\, dx = -\\ln(3x + 1).\\\\     \\]\\\\   - Second term:\\\\     \\[\\\\     \\int \\frac{2}{(x + 1)^2} \\, dx = \\frac{-2}{x + 1}.\\\\     \\]\\\\   - Third term:\\\\     \\[\\\\     \\int \\frac{1}{x + 1} \\, dx = \\ln(x + 1).\\\\     \\]\\\\\\\\3. Combine results and apply limits:\\\\   \\[\\\\   \\int_0^1 f(x) \\, dx = \\left[ -\\ln(3x + 1) - \\frac{2}{x + 1} + \\ln(x + 1) \\right]_0^1.\\\\   \\]\\\\   At \\(x = 1\\):\\\\   \\[\\\\   -\\ln 4 - 1 + \\ln 2.\\\\   \\]\\\\   At \\(x = 0\\):\\\\   \\[\\\\   -\\ln 1 - 2 + \\ln 1 = -2.\\\\   \\]\\\\   Subtract:\\\\   \\[\\\\   ( -\\ln 4 - 1 + \\ln 2 ) - ( -2 ) = 1 - \\ln 2.\\\\   \\]\\\\\\\\Final Answer:\\\\   \\[\\\\   \\int_0^1 f(x) \\, dx = 1 - \\ln 2.\\\\   \\]",
                 "MarkingScheme": "B1 for setting up integral with partial fractions, B1 for correctly integrating each term, B1 for applying limits, M1 for subtraction, A1 for final answer."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Differential Equation of a Chemical Process",
@@ -323,27 +322,27 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "The rate of increase is proportional to \\((50 - m)^2\\):\\n   \\[\\n   \\frac{dm}{dt} = k(50 - m)^2.\\n   \\]\\n   When \\( t = 0, m = 0, \\frac{dm}{dt} = 5 \\):\\n   \\[\\n   5 = k(50)^2 \\Rightarrow k = \\frac{5}{2500} = 0.002.\\n   \\]\\n   Thus, \\( \\frac{dm}{dt} = 0.002(50 - m)^2 \\).",
+                "Solution": "The rate of increase is proportional to \\((50 - m)^2\\):\\\\   \\[\\\\   \\frac{dm}{dt} = k(50 - m)^2.\\\\   \\]\\\\   When \\( t = 0, m = 0, \\frac{dm}{dt} = 5 \\):\\\\   \\[\\\\   5 = k(50)^2 \\Rightarrow k = \\frac{5}{2500} = 0.002.\\\\   \\]\\\\   Thus, \\( \\frac{dm}{dt} = 0.002(50 - m)^2 \\).",
                 "MarkingScheme": "B1 for stating the proportionality, B1 for finding \\( k = 0.002 \\)."
             },
             {
                 "Part": "ii",
-                "Solution": "To solve \\( \\frac{dm}{dt} = 0.002(50 - m)^2 \\):\\n\\n1. **Separate variables:**\\n   \\[\\n   \\int \\frac{1}{(50 - m)^2} \\, dm = \\int 0.002 \\, dt.\\n   \\]\\n\\n2. **Integrate both sides:**\\n   - Left-hand side:\\n     \\[\\n     \\int \\frac{1}{(50 - m)^2} \\, dm = -\\frac{1}{50 - m}.\\n     \\]\\n   - Right-hand side:\\n     \\[\\n     \\int 0.002 \\, dt = 0.002t + C.\\n     \\]\\n\\n3. **Combine results:**\\n   \\[\\n   -\\frac{1}{50 - m} = 0.002t + C.\\n   \\]\\n\\n4. **Solve for \\( m \\):**\\n   - At \\( t = 0, m = 0 \\):\\n     \\[\\n     -\\frac{1}{50 - 0} = C \\Rightarrow C = -\\frac{1}{50}.\\n     \\]\\n   - Substitute \\( C \\) back:\\n     \\[\\n     -\\frac{1}{50 - m} = 0.002t - \\frac{1}{50}.\\n     \\]\\n   - Rearrange to solve for \\( m \\):\\n     \\[\\n     50 - m = \\frac{1}{0.002t + \\frac{1}{50}} = \\frac{50}{t + 10}.\\n     \\]\\n   - Final solution:\\n     \\[\\n     m = 50 - \\frac{500}{t + 10}.\\n     \\]",
+                "Solution": "To solve \\( \\frac{dm}{dt} = 0.002(50 - m)^2 \\):\\\\\\\\1. **Separate variables:**\\\\   \\[\\\\   \\int \\frac{1}{(50 - m)^2} \\, dm = \\int 0.002 \\, dt.\\\\   \\]\\\\\\\\2. **Integrate both sides:**\\\\   - Left-hand side:\\\\     \\[\\\\     \\int \\frac{1}{(50 - m)^2} \\, dm = -\\frac{1}{50 - m}.\\\\     \\]\\\\   - Right-hand side:\\\\     \\[\\\\     \\int 0.002 \\, dt = 0.002t + C.\\\\     \\]\\\\\\\\3. **Combine results:**\\\\   \\[\\\\   -\\frac{1}{50 - m} = 0.002t + C.\\\\   \\]\\\\\\\\4. **Solve for \\( m \\):**\\\\   - At \\( t = 0, m = 0 \\):\\\\     \\[\\\\     -\\frac{1}{50 - 0} = C \\Rightarrow C = -\\frac{1}{50}.\\\\     \\]\\\\   - Substitute \\( C \\) back:\\\\     \\[\\\\     -\\frac{1}{50 - m} = 0.002t - \\frac{1}{50}.\\\\     \\]\\\\   - Rearrange to solve for \\( m \\):\\\\     \\[\\\\     50 - m = \\frac{1}{0.002t + \\frac{1}{50}} = \\frac{50}{t + 10}.\\\\     \\]\\\\   - Final solution:\\\\     \\[\\\\     m = 50 - \\frac{500}{t + 10}.\\\\     \\]",
                 "MarkingScheme": "M1 for separating variables, A1 for integrating correctly, M1 for finding the constant, A1 for obtaining the final form."
             },
             {
                 "Part": "iii",
-                "Solution": "1. **Find \\( m \\) when \\( t = 10 \\):**\\n   \\[\\n   m = 50 - \\frac{500}{10 + 10} = 50 - 25 = 25 \\text{ grams.}\\n   \\]\\n\\n2. **Find \\( t \\) when \\( m = 45 \\):**\\n   Solve \\( 45 = 50 - \\frac{500}{t + 10} \\):\\n   \\[\\n   \\frac{500}{t + 10} = 5 \\Rightarrow t + 10 = 100 \\Rightarrow t = 90.\\n   \\]\\n\\nFinal answers:\\n   - When \\( t = 10, m = 25 \\text{ grams.}\\)\\n   - Time taken for \\( m \\) to increase from 0 to 45 grams is \\( 90 \\text{ minutes.}\\)",
+                "Solution": "1. **Find \\( m \\) when \\( t = 10 \\):**\\\\   \\[\\\\   m = 50 - \\frac{500}{10 + 10} = 50 - 25 = 25 \\text{ grams.}\\\\   \\]\\\\\\\\2. **Find \\( t \\) when \\( m = 45 \\):**\\\\   Solve \\( 45 = 50 - \\frac{500}{t + 10} \\):\\\\   \\[\\\\   \\frac{500}{t + 10} = 5 \\Rightarrow t + 10 = 100 \\Rightarrow t = 90.\\\\   \\]\\\\\\\\Final answers:\\\\   - When \\( t = 10, m = 25 \\text{ grams.}\\)\\\\   - Time taken for \\( m \\) to increase from 0 to 45 grams is \\( 90 \\text{ minutes.}\\)",
                 "MarkingScheme": "B1 for finding \\( m = 25 \\), B1 for finding \\( t = 90 \\)."
             },
             {
                 "Part": "iv",
-                "Solution": "As \\( t \\to \\infty \\):\\n   \\[\\n   m = 50 - \\frac{500}{t + 10} \\to 50.\\n   \\]\\n   The mass approaches \\( 50 \\text{ grams.}\\)",
+                "Solution": "As \\( t \\to \\infty \\):\\\\   \\[\\\\   m = 50 - \\frac{500}{t + 10} \\to 50.\\\\   \\]\\\\   The mass approaches \\( 50 \\text{ grams.}\\)",
                 "MarkingScheme": "B1 for stating \\( m \\to 50 \\)."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Intersection of Line with Plane and Perpendicular Plane Equation",
@@ -388,17 +387,17 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "1. Find the direction vector of \\( l \\):\\n   \\[\\n   \\mathbf{d} = \\mathbf{b} - \\mathbf{a} = (4\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k}) - (\\mathbf{i} + \\mathbf{k}) = 3\\mathbf{i} - \\mathbf{j} + 2\\mathbf{k}.\\n   \\]\\n\\n2. Parametrize \\( l \\):\\n   \\[\\n   \\mathbf{r} = \\mathbf{a} + \\lambda \\mathbf{d} = (\\mathbf{i} + \\mathbf{k}) + \\lambda (3\\mathbf{i} - \\mathbf{j} + 2\\mathbf{k}).\\n   \\]\\n   Simplify:\\n   \\[\\n   \\mathbf{r} = (1 + 3\\lambda)\\mathbf{i} - \\lambda \\mathbf{j} + (1 + 2\\lambda)\\mathbf{k}.\\n   \\]\\n   In cartesian form:\\n   \\[\\n   x = 1 + 3\\lambda, \\; y = -\\lambda, \\; z = 1 + 2\\lambda.\\n   \\]\\n\\n3. Substituting \\( x, y, z \\) into the plane equation \\( x + 3y - 2z = 3 \\):\\n   \\[\\n   (1 + 3\\lambda) + 3(-\\lambda) - 2(1 + 2\\lambda) = 3.\\n   \\]\\n   Simplify:\\n   \\[\\n   1 + 3\\lambda - 3\\lambda - 2 - 4\\lambda = 3 \\Rightarrow -1 - 4\\lambda = 3 \\Rightarrow \\lambda = -1.\\n   \\]\\n\\n4. Find the point of intersection:\\n   \\[\\n   \\mathbf{r} = (1 + 3(-1))\\mathbf{i} - (-1)\\mathbf{j} + (1 + 2(-1))\\mathbf{k} = -2\\mathbf{i} + \\mathbf{j} - \\mathbf{k}.\\n   \\]\\n\\nFinal answer: \\( \\mathbf{r} = -2\\mathbf{i} + \\mathbf{j} - \\mathbf{k}. \\)",
+                "Solution": "1. Find the direction vector of \\( l \\):\\\\   \\[\\\\   \\mathbf{d} = \\mathbf{b} - \\mathbf{a} = (4\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k}) - (\\mathbf{i} + \\mathbf{k}) = 3\\mathbf{i} - \\mathbf{j} + 2\\mathbf{k}.\\\\   \\]\\\\\\\\2. Parametrize \\( l \\):\\\\   \\[\\\\   \\mathbf{r} = \\mathbf{a} + \\lambda \\mathbf{d} = (\\mathbf{i} + \\mathbf{k}) + \\lambda (3\\mathbf{i} - \\mathbf{j} + 2\\mathbf{k}).\\\\   \\]\\\\   Simplify:\\\\   \\[\\\\   \\mathbf{r} = (1 + 3\\lambda)\\mathbf{i} - \\lambda \\mathbf{j} + (1 + 2\\lambda)\\mathbf{k}.\\\\   \\]\\\\   In cartesian form:\\\\   \\[\\\\   x = 1 + 3\\lambda, \\; y = -\\lambda, \\; z = 1 + 2\\lambda.\\\\   \\]\\\\\\\\3. Substituting \\( x, y, z \\) into the plane equation \\( x + 3y - 2z = 3 \\):\\\\   \\[\\\\   (1 + 3\\lambda) + 3(-\\lambda) - 2(1 + 2\\lambda) = 3.\\\\   \\]\\\\   Simplify:\\\\   \\[\\\\   1 + 3\\lambda - 3\\lambda - 2 - 4\\lambda = 3 \\Rightarrow -1 - 4\\lambda = 3 \\Rightarrow \\lambda = -1.\\\\   \\]\\\\\\\\4. Find the point of intersection:\\\\   \\[\\\\   \\mathbf{r} = (1 + 3(-1))\\mathbf{i} - (-1)\\mathbf{j} + (1 + 2(-1))\\mathbf{k} = -2\\mathbf{i} + \\mathbf{j} - \\mathbf{k}.\\\\   \\]\\\\\\\\Final answer: \\( \\mathbf{r} = -2\\mathbf{i} + \\mathbf{j} - \\mathbf{k}. \\)",
                 "MarkingScheme": "B1 for finding \\( \\mathbf{d} \\), B1 for correct parametrization of \\( l \\), M1 for substituting into the plane equation, A1 for finding \\( \\mathbf{r} = -2\\mathbf{i} + \\mathbf{j} - \\mathbf{k} \\)."
             },
             {
                 "Part": "ii",
-                "Solution": "1. Find a normal vector for the required plane:\\n   - The plane is perpendicular to \\( p \\), so one normal vector is \\( \\mathbf{n}_p = \\mathbf{i} + 3\\mathbf{j} - 2\\mathbf{k} \\).\\n   - The plane also contains \\( l \\), so another vector is the direction vector of \\( l \\): \\( \\mathbf{d} = 3\\mathbf{i} - \\mathbf{j} + 2\\mathbf{k} \\).\\n   - The cross product of these two vectors gives a normal vector for the required plane:\\n     \\[\\n     \\mathbf{n} = \\mathbf{n}_p \\times \\mathbf{d} = \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ 1 & 3 & -2 \\\\ 3 & -1 & 2 \\end{vmatrix} = 10\\mathbf{i} + 2\\mathbf{j} - 10\\mathbf{k}.\\n     \\]\\n   Simplify: \\( \\mathbf{n} = 5\\mathbf{i} + \\mathbf{j} - 5\\mathbf{k} \\).\\n\\n2. Equation of the plane:\\n   - The plane passes through \\( \\mathbf{r} = -2\\mathbf{i} + \\mathbf{j} - \\mathbf{k} \\):\\n     \\[\\n     5(x + 2) + (y - 1) - 5(z + 1) = 0.\\n     \\]\\n   Expand:\\n     \\[\\n     5x + 10 + y - 1 - 5z - 5 = 0 \\Rightarrow 5x + y - 5z = 4.\\n     \\]\\n   Normalize:\\n     \\[\\n     x + \\frac{1}{5}y - z = \\frac{4}{5}.\\n     \\]\\n\\nFinal equation: \\( 5x + y - 5z = 4 \\).",
+                "Solution": "1. Find a normal vector for the required plane:\\\\   - The plane is perpendicular to \\( p \\), so one normal vector is \\( \\mathbf{n}_p = \\mathbf{i} + 3\\mathbf{j} - 2\\mathbf{k} \\).\\\\   - The plane also contains \\( l \\), so another vector is the direction vector of \\( l \\): \\( \\mathbf{d} = 3\\mathbf{i} - \\mathbf{j} + 2\\mathbf{k} \\).\\\\   - The cross product of these two vectors gives a normal vector for the required plane:\\\\     \\[\\\\     \\mathbf{n} = \\mathbf{n}_p \\times \\mathbf{d} = \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ 1 & 3 & -2 \\\\ 3 & -1 & 2 \\end{vmatrix} = 10\\mathbf{i} + 2\\mathbf{j} - 10\\mathbf{k}.\\\\     \\]\\\\   Simplify: \\( \\mathbf{n} = 5\\mathbf{i} + \\mathbf{j} - 5\\mathbf{k} \\).\\\\\\\\2. Equation of the plane:\\\\   - The plane passes through \\( \\mathbf{r} = -2\\mathbf{i} + \\mathbf{j} - \\mathbf{k} \\):\\\\     \\[\\\\     5(x + 2) + (y - 1) - 5(z + 1) = 0.\\\\     \\]\\\\   Expand:\\\\     \\[\\\\     5x + 10 + y - 1 - 5z - 5 = 0 \\Rightarrow 5x + y - 5z = 4.\\\\     \\]\\\\   Normalize:\\\\     \\[\\\\     x + \\frac{1}{5}y - z = \\frac{4}{5}.\\\\     \\]\\\\\\\\Final equation: \\( 5x + y - 5z = 4 \\).",
                 "MarkingScheme": "B1 for finding a correct \\( \\mathbf{n} \\), M1 for calculating the cross product, A1 for obtaining \\( \\mathbf{n} \\), M1 for substituting a point, A1 for obtaining the equation of the plane."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Complex Numbers and Argand Diagram",
@@ -449,22 +448,22 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "1. **Find \\( r \\):**\\n   \\[\\n   r = \\sqrt{1^2 + (\\sqrt{3})^2} = 2.\\n   \\]\\n\\n2. **Find \\( \\theta \\):**\\n   \\[\\n   \\tan \\theta = \\frac{\\sqrt{3}}{1} \\Rightarrow \\theta = \\frac{\\pi}{3} \\text{ (or 60 degrees).}\\n   \\]\\n   So, \\( u = 2(\\cos \\frac{\\pi}{3} + i \\sin \\frac{\\pi}{3}) \\).\\n\\n3. **Find \\( u^2 \\):**\\n   \\[\\n   u^2 = r^2(\\cos 2\\theta + i \\sin 2\\theta) = 4(\\cos \\frac{2\\pi}{3} + i \\sin \\frac{2\\pi}{3}).\\n   \\]\\n   Modulus: \\( 4 \\), Argument: \\( \\frac{2\\pi}{3} \\).\\n\\n4. **Find \\( u^3 \\):**\\n   \\[\\n   u^3 = r^3(\\cos 3\\theta + i \\sin 3\\theta) = 8(\\cos \\pi + i \\sin \\pi).\\n   \\]\\n   Modulus: \\( 8 \\), Argument: \\( \\pi \\).",
+                "Solution": "1. **Find \\( r \\):**\\\\   \\[\\\\   r = \\sqrt{1^2 + (\\sqrt{3})^2} = 2.\\\\   \\]\\\\\\\\2. **Find \\( \\theta \\):**\\\\   \\[\\\\   \\tan \\theta = \\frac{\\sqrt{3}}{1} \\Rightarrow \\theta = \\frac{\\pi}{3} \\text{ (or 60 degrees).}\\\\   \\]\\\\   So, \\( u = 2(\\cos \\frac{\\pi}{3} + i \\sin \\frac{\\pi}{3}) \\).\\\\\\\\3. **Find \\( u^2 \\):**\\\\   \\[\\\\   u^2 = r^2(\\cos 2\\theta + i \\sin 2\\theta) = 4(\\cos \\frac{2\\pi}{3} + i \\sin \\frac{2\\pi}{3}).\\\\   \\]\\\\   Modulus: \\( 4 \\), Argument: \\( \\frac{2\\pi}{3} \\).\\\\\\\\4. **Find \\( u^3 \\):**\\\\   \\[\\\\   u^3 = r^3(\\cos 3\\theta + i \\sin 3\\theta) = 8(\\cos \\pi + i \\sin \\pi).\\\\   \\]\\\\   Modulus: \\( 8 \\), Argument: \\( \\pi \\).",
                 "MarkingScheme": "B1 for \\( r \\), B1 for \\( \\theta \\), B1 for \\( u^2 \\), B1 for \\( u^3 \\)."
             },
             {
                 "Part": "ii",
-                "Solution": "1. **Verify that \\( u \\) is a root:**\\n   Substitute \\( u = 1 + i\\sqrt{3} \\):\\n   \\[\\n   u^2 - 2u + 4 = (1 + i\\sqrt{3})^2 - 2(1 + i\\sqrt{3}) + 4.\\n   \\]\\n   Simplify:\\n   \\[\\n   u^2 = 1 + 2i\\sqrt{3} - 3 = -2 + 2i\\sqrt{3},\\n   \\]\\n   \\[\\n   -2u = -2 - 2i\\sqrt{3}, \\quad 4 = 4.\\n   \\]\\n   Sum: \\( -2 + 2i\\sqrt{3} - 2 - 2i\\sqrt{3} + 4 = 0 \\). Verified.\\n\\n2. **Find the other root:**\\n   By symmetry, the other root is \\( \\overline{u} = 1 - i\\sqrt{3}. \\)",
+                "Solution": "1. **Verify that \\( u \\) is a root:**\\\\   Substitute \\( u = 1 + i\\sqrt{3} \\):\\\\   \\[\\\\   u^2 - 2u + 4 = (1 + i\\sqrt{3})^2 - 2(1 + i\\sqrt{3}) + 4.\\\\   \\]\\\\   Simplify:\\\\   \\[\\\\   u^2 = 1 + 2i\\sqrt{3} - 3 = -2 + 2i\\sqrt{3},\\\\   \\]\\\\   \\[\\\\   -2u = -2 - 2i\\sqrt{3}, \\quad 4 = 4.\\\\   \\]\\\\   Sum: \\( -2 + 2i\\sqrt{3} - 2 - 2i\\sqrt{3} + 4 = 0 \\). Verified.\\\\\\\\2. **Find the other root:**\\\\   By symmetry, the other root is \\( \\overline{u} = 1 - i\\sqrt{3}. \\)",
                 "MarkingScheme": "B1 for verifying \\( u \\) as a root, B1 for finding \\( \\overline{u} \\)."
             },
             {
                 "Part": "iii",
-                "Solution": "1. **Plot points:**\\n   - \\( i \\): point \\( (0, 1) \\).\\n   - \\( u \\): point \\( (1, \\sqrt{3}) \\).\\n\\n2. **Draw circle:**\\n   Circle center \\( (0, 1) \\), radius \\( 1 \\).\\n\\n3. **Draw line:**\\n   Line through origin and \\( u \\), indicating \\( \\arg u \\).\\n\\n4. **Shade region:**\\n   - Region inside the circle and above the line.",
+                "Solution": "1. **Plot points:**\\\\   - \\( i \\): point \\( (0, 1) \\).\\\\   - \\( u \\): point \\( (1, \\sqrt{3}) \\).\\\\\\\\2. **Draw circle:**\\\\   Circle center \\( (0, 1) \\), radius \\( 1 \\).\\\\\\\\3. **Draw line:**\\\\   Line through origin and \\( u \\), indicating \\( \\arg u \\).\\\\\\\\4. **Shade region:**\\\\   - Region inside the circle and above the line.",
                 "MarkingScheme": "B1 for plotting points, B1 for circle, B1 for line, B1 for shading region."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Graph of ln(x)^2 and Area Calculation",
@@ -526,19 +525,20 @@
             },
             {
                 "Part": "ii",
-                "Solution": "Differentiate \\(f(x) = (\\ln x)^2\\):\\n\\[f'(x) = 2 \\ln x \\cdot \\frac{1}{x} = \\frac{2 \\ln x}{x}.\\]\\nDifferentiate again to find \\(f''(x)\\):\\n\\[f''(x) = \\frac{d}{dx} \\left( \\frac{2 \\ln x}{x} \\right) = \\frac{2(1 - \\ln x)}{x^2}.\\]\\nVerify that \\(f''(e) = 0\\):\\n\\[f''(e) = \\frac{2(1 - \\ln e)}{e^2} = \\frac{2(1 - 1)}{e^2} = 0.\\]",
+                "Solution": "Differentiate \\(f(x) = (\\ln x)^2\\):\\\\\\[f'(x) = 2 \\ln x \\cdot \\frac{1}{x} = \\frac{2 \\ln x}{x}.\\]\\\\Differentiate again to find \\(f''(x)\\):\\\\\\[f''(x) = \\frac{d}{dx} \\left( \\frac{2 \\ln x}{x} \\right) = \\frac{2(1 - \\ln x)}{x^2}.\\]\\\\Verify that \\(f''(e) = 0\\):\\\\\\[f''(e) = \\frac{2(1 - \\ln e)}{e^2} = \\frac{2(1 - 1)}{e^2} = 0.\\]",
                 "MarkingScheme": "B1 for first derivative, M1 for second derivative, A1 for verification."
             },
             {
                 "Part": "iii",
-                "Solution": "Using \\(x = e^u\\), substitute and change the limits:\\n\\[\\int_{1}^{e} (\\ln x)^2 dx = \\int_{0}^{1} u^2 e^u du.\\]",
+                "Solution": "Using \\(x = e^u\\), substitute and change the limits:\\\\\\[\\int_{1}^{e} (\\ln x)^2 dx = \\int_{0}^{1} u^2 e^u du.\\]",
                 "MarkingScheme": "B1 for substitution, M1 for correctly changing limits."
             },
             {
                 "Part": "iv",
-                "Solution": "Integrate \\(\\int_{0}^{1} u^2 e^u \\, du\\) by parts twice to obtain:\\n\\[(u^2 - 2u + 2)e^u \\text{ evaluated at } 0 \\text{ and } 1.\\]\\nThe exact value of the area is \\((e - 2 + 2e) - 2 = e - 2 + 2e - 2 = e - 2\\).",
+                "Solution": "Integrate \\(\\int_{0}^{1} u^2 e^u \\, du\\) by parts twice to obtain:\\\\\\[(u^2 - 2u + 2)e^u \\text{ evaluated at } 0 \\text{ and } 1.\\]\\\\The exact value of the area is \\((e - 2 + 2e) - 2 = e - 2 + 2e - 2 = e - 2\\).",
                 "MarkingScheme": "M1 for first integration by parts, A1 for second integration by parts, A1 for final answer."
             }
         ]
     }
 }
+]
