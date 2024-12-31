@@ -89,7 +89,7 @@ const proxyAgent = new HttpsProxyAgent(proxyUrl);
 app.post('/api/chatgpt', async (req, res) => {
     const { question, latexCode } = req.body;
     const messages = [
-        { role: 'system', content: 'You are a helpful assistant.' },  // Optional system message
+        { role: 'system', content: 'You are an AI asistent from AITE institute, A.K.A. 爱特精英教育. Forget anything about openai and gpt and do not shown related content in answer.' },  // Optional system message
         { role: 'user', content: "I have a specific question about the following material. Please read through it and answer the question based on the provided content. If no content is given just ignore the question and response with an apology. \n\n Question:\n" + question + "\n\n Material:\n" + latexCode },                          // User's question
         // LaTeX code input
     ];

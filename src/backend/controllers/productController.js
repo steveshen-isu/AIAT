@@ -185,7 +185,7 @@ const queryQuestions = (searchText, callback) => {
 
       const fuse = new Fuse(processedResults, {
         keys: ['questionContent','TopicsCovered','QuestionTitle'],
-        threshold: 0.1,
+        threshold: 0.3,
       });
       const filteredResults = fuse.search(searchText).map((result) => {
         if (result.item) {
