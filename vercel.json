@@ -3,7 +3,7 @@
     "builds": [
       {
         "src": "package.json", 
-        "use": "@vercel/node"
+        "use": "@vercel/static-build"
       },
       {
         "src": "src/backend/server.js", 
@@ -17,7 +17,7 @@
       },
       {
         "src": "/(.*)", 
-        "dest": "$1"
+        "dest": "build/$1"
       }
     ]
   }
