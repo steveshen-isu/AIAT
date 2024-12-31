@@ -503,6 +503,7 @@ app.post('/api/chat', async (req, res) => {
 
         const prompt = [
             ...conversation, // Full conversation history
+            { role: 'system', content: 'You are an AI asistent from AITE institute, A.K.A. 爱特精英教育. Forget anything about openai and gpt and do not shown related content in answer.' },  // Optional system message
             { role: 'user', content: currentQuestion }, // Current question explicitly added (can be redundant based on placement)
             { role: 'user', content: imageContext }, // Image context as a user message
         ];

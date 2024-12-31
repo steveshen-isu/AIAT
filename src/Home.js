@@ -59,8 +59,8 @@ function Home() {
 
                 </div>
             </div>
-            <div className="flex flex-wrap justify-center gap-4 w-full text-center h-64">
-
+            <div className="relative flex flex-wrap justify-center gap-4 w-full text-center h-64">
+ 
 
                 <Link
                     to="/topic-selector"
