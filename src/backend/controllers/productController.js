@@ -45,7 +45,7 @@ async function restoreDatabase() {
     console.log('Backup downloaded.');
 
     // Restore the backup using the MySQL command
-    const restoreCommand = `mysql -u ${process.env.DB_USER} -p${process.env.DB_PASSWORD} ${process.env.DB_NAME} < /tmp/backup.sql`;
+    const restoreCommand = `mysql -u ${process.env.DB_USER} -p ${process.env.DB_PASS} ${process.env.DB_NAME} < /tmp/backup.sql`;
     execSync(restoreCommand, { stdio: 'inherit' });
 
     console.log('Database restored successfully.');
