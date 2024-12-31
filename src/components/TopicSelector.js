@@ -155,7 +155,7 @@ function TopicSelector() {
             .catch((error) => console.error('Error fetching chapter summary:', error));
 
         // Fetch topics based on chapterId
-        fetch('http://' + ipAddress + `:200/api/topics/${chapterId}`)
+        fetch(`/api/topics/${chapterId}`)
             .then((response) => response.json())
             .then((data) => setTopics(data))
             .catch((error) => console.error('Error fetching topics:', error));
@@ -170,7 +170,7 @@ function TopicSelector() {
             .catch((error) => console.error('Error fetching topic summary:', error));
 
         // Fetch questions based on topicId
-        fetch('http://' + ipAddress + `:200/api/questions/${topicId}`)
+        fetch(`/api/questions/${topicId}`)
             .then((response) => response.json())
             .then((data) => setQuestions(data))
             .catch((error) => console.error('Error fetching questions:', error));
