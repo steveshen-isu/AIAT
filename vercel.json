@@ -3,27 +3,24 @@
     "builds": [
       {
         "src": "package.json",
-        "use": "@vercel/static",   
+        "use": "@vercel/static",
         "config": {
-          "distDir": "build"      
+          "distDir": "build"
         }
       },
       {
         "src": "src/backend/package.json",
-        "use": "@vercel/node",   
-        "config": {
-          "maxDuration": 10      
-        }
+        "use": "@vercel/node"
       }
     ],
     "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "src/backend/server.js" 
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/"             
-      }
-    ]
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
   }
