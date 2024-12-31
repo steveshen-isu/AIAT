@@ -40,9 +40,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-"prebuild": "find node_modules -type f -name '*.map' -exec rm -f {} + || exit 0",
     "start": "react-app-rewired start",
-    "build": "CI=false react-app-rewired build",
+    "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
   },
