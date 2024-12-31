@@ -7,9 +7,6 @@
         "config": {
           "distDir": "build"
         },
-        "env": {
-          "NODE_ENV": "production"
-        },
         "buildCommand": "vercel build"
       }
     ],
