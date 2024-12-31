@@ -206,7 +206,7 @@ app.post('/api/generate-plot', async (req, res) => {
             res.json({
                 response: openaiResponse.data.choices[0].message.content,
                 plotCode: plotCode,
-                plotUrl: 'http://' + ipAddress + `:200/plot.png`,  // Serve the image as static content
+                plotUrl: `/plot.png`,  // Serve the image as static content
             });
 
         } else {
