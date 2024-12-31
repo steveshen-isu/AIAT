@@ -251,7 +251,7 @@ export const getSubjects = (req, res) => {
 export const getChapterSummary = (req, res) => {
   const chapterId = req.params.chapterId;
   db.query(
-    'SELECT summary FROM Chapters WHERE id = ?',
+    'SELECT summary FROM chapters WHERE id = ?',
     [chapterId],
     (err, results) => {
       if (err) throw err;
@@ -264,7 +264,7 @@ export const getChapterSummary = (req, res) => {
 export const getTopics = (req, res) => {
   const chapterId = req.params.chapterId;
   db.query(
-    'SELECT * FROM Topics WHERE chapter_id = ?',
+    'SELECT * FROM topics WHERE chapter_id = ?',
     [chapterId],
     (err, results) => {
       if (err) throw err;
@@ -303,7 +303,7 @@ export const getTextbooks = (req, res) => {
 export const getTopicSummary = (req, res) => {
   const topicId = req.params.topicId;
   db.query(
-    'SELECT summary FROM Topics WHERE id = ?',
+    'SELECT summary FROM topics WHERE id = ?',
     [topicId],
     (err, results) => {
       if (err) throw err;
@@ -316,7 +316,7 @@ export const getTopicSummary = (req, res) => {
 export const getQuestions = (req, res) => {
   const topicId = req.params.topicId;
   db.query(
-    'SELECT * FROM Questions WHERE topic_id = ?',
+    'SELECT * FROM questions WHERE topic_id = ?',
     [topicId],
     (err, results) => {
       if (err) throw err;
@@ -329,7 +329,7 @@ export const getQuestions = (req, res) => {
 export const getQuestion = (req, res) => {
   const questionId = req.params.questionId;
   db.query(
-    'SELECT * FROM Questions WHERE id = ?',
+    'SELECT * FROM questions WHERE id = ?',
     [questionId],
     (err, results) => {
       if (err) throw err;
