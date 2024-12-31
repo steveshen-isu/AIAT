@@ -36,12 +36,15 @@ const app = express();
 const port = process.env.PORT || 200;
 
 
+const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000';
+
+
 app.use(cors({
-    origin: 'http://localhost:3000', // Allow requests from your frontend
+    origin: frontendUrl, // Dynamically set the origin
     methods: ['GET', 'POST'],        // Specify allowed HTTP methods
     allowedHeaders: ['Content-Type'] // Allow specific headers
 }));
-import cors from 'cors';
+
 app.use(express.json({ limit: '50mb' }));
 
 
