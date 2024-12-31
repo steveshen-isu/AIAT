@@ -184,7 +184,7 @@ app.post('/api/generate-plot', async (req, res) => {
     fs.writeFileSync(pythonScriptPath, plotCode);
 
     // Execute the Python script and generate the plot image
-    exec(`python ${pythonScriptPath}`, (error, stdout, stderr) => {
+    exec(`python3 ${pythonScriptPath}`, (error, stdout, stderr) => {
         if (error) {
             console.error(`Error executing Python script: ${error.message}`);
             
@@ -390,7 +390,7 @@ app.post('/api/generate-d3plot', async (req, res) => {
         fs.writeFileSync(pythonScriptPath, plotCode);
 
         // Execute the Python script and generate the plot image
-        exec(`python ${pythonScriptPath}`, (error, stdout, stderr) => {
+        exec(`python3 ${pythonScriptPath}`, (error, stdout, stderr) => {
             if (error) {
                 console.error(`Error: ${error.message}`);
                 return res.status(500).json({ error: 'Failed to generate plot data' });
