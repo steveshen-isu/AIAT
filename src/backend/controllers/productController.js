@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 import fs from 'fs';
 import Fuse from 'fuse.js';
 import { execSync } from 'child_process';
+import axios from 'axios';
 
 console.log('db_host', process.env.DB_HOST);
 // Setting up the MySQL connection
