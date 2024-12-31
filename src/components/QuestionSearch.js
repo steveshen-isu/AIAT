@@ -193,7 +193,7 @@ function QuestionTable({
     try {
       if (searchText) {
         const response = await axios.post(
-          'http://localhost:200/api/queryQuestionBank',
+          '/api/queryQuestionBank',
           {
             searchText,
           },

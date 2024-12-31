@@ -26,7 +26,7 @@ function PlotGenerator() {
         setButtonDisabled(true)
         // Send the user's math function request to the backend
         try {
-            const res = await fetch('http://' + ipAddress + ':200/api/generate-plot', {
+            const res = await fetch('/api/generate-plot', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -90,7 +90,7 @@ function PlotGenerator() {
         setD3ButtonDisabled(true)
         try {
             // Send request to backend with function name
-            const res = await fetch('http://' + ipAddress + ':200/api/generate-d3plot', {
+            const res = await fetch('/api/generate-d3plot', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
