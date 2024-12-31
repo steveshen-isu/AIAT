@@ -1,5 +1,4 @@
 import express from 'express';
-import mysql from 'mysql2';
 import dotenv from 'dotenv';
 import multer from 'multer';
 import { franc } from 'franc-min'; 

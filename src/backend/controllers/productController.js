@@ -5,6 +5,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
 import Fuse from 'fuse.js';
+import { execSync } from 'child_process';
 
 console.log('db_host', process.env.DB_HOST);
 // Setting up the MySQL connection
@@ -17,6 +18,43 @@ const db = mysql.createPool({
   connectionLimit: 10, // Limit the number of simultaneous connections
   queueLimit: 0,
 });
+
+// GitHub URL for backup (or any cloud storage URL)
+const BACKUP_URL = 'https://raw.githubusercontent.com/AITEinstitute-LLC/AIAT2/main/backups/backup.sql'; // Example GitHub URL for raw file
+
+// Function to download the backup from GitHub
+async function downloadBackup() {
+  const filePath = '/tmp/backup.sql'; // Vercel's temporary storage location
+  const writer = fs.createWriteStream(filePath);
+  const response = await axios.get(BACKUP_URL, { responseType: 'stream' });
+
+  response.data.pipe(writer);
+
+  return new Promise((resolve, reject) => {
+    writer.on('finish', resolve);
+    writer.on('error', reject);
+  });
+}
+
+// Function to restore the backup to MySQL
+async function restoreDatabase() {
+  try {
+    console.log('Downloading backup from GitHub...');
+    await downloadBackup(); // Download backup
+    console.log('Backup downloaded.');
+
+    // Restore the backup using the MySQL command
+    const restoreCommand = `mysql -u ${process.env.DB_USER} -p${process.env.DB_PASSWORD} ${process.env.DB_NAME} < /tmp/backup.sql`;
+    execSync(restoreCommand, { stdio: 'inherit' });
+
+    console.log('Database restored successfully.');
+  } catch (err) {
+    console.error('Error during backup restore:', err);
+  }
+}
+
+// Trigger restore process when the server starts. Comment this line for dev.
+restoreDatabase();
 
 function readJsonFiles(jDir) {
   const jFiles = fs.readdirSync(jDir);
