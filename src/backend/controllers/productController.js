@@ -21,7 +21,7 @@ const db = mysql.createPool({
 });
 
 // GitHub URL for backup (or any cloud storage URL)
-const BACKUP_URL = 'https://raw.githubusercontent.com/AITEinstitute-LLC/AIAT2/main/backups/backup.sql'; // Example GitHub URL for raw file
+/* const BACKUP_URL = 'https://raw.githubusercontent.com/AITEinstitute-LLC/AIAT2/main/backups/backup.sql'; // Example GitHub URL for raw file
 
 // Function to download the backup from GitHub
 async function downloadBackup() {
@@ -52,11 +52,11 @@ async function restoreDatabase() {
   } catch (err) {
     console.error('Error during backup restore:', err);
   }
-}
+} */
 
 // Trigger restore process when the server starts. Comment this line for dev.
-restoreDatabase();
-
+/* restoreDatabase();
+ */
 function readJsonFiles(jDir) {
   const jFiles = fs.readdirSync(jDir);
   const jObjects = [];
