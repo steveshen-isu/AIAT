@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import multer from 'multer';
 import { franc } from 'franc-min'; 
 import productRoutes from './routes/product.js';  // Import the routes for product
-
+import cors from 'cors'
 const envResult = dotenv.config();
 
 if (envResult.error) {
@@ -114,8 +114,8 @@ app.post('/api/chatgpt', async (req, res) => {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${apiKey}`
             },
-            httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
-        });
+/*             httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
+ */        });
         console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
         // Send back the response from OpenAI API to the frontend
         res.json({ response: openaiResponse.data.choices[0].message.content });
@@ -169,8 +169,8 @@ app.post('/api/generate-plot', async (req, res) => {
             'Authorization': `Bearer ${apiKey}`
         },
         timeout: 60000,
-        httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
-    });
+/*         httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
+ */    });
     console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
     // Send back the response from OpenAI API to the frontend
     /*     res.json({ response: openaiResponse.data.choices[0].message.content });
@@ -281,8 +281,8 @@ app.post('/api/query-equation', async (req, res) => {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${apiKey}`
             },
-            httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
-        });
+/*             httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
+ */        });
         console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
         // Send back the response from OpenAI API to the frontend
         res.json({ responseEquations: openaiResponse.data.choices[0].message.content });
@@ -332,8 +332,8 @@ app.post('/api/query-example', async (req, res) => {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${apiKey}`
             },
-            httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
-        });
+/*             httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
+ */        });
         console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
         // Send back the response from OpenAI API to the frontend
         res.json({ responseExample: openaiResponse.data.choices[0].message.content });
@@ -380,8 +380,8 @@ app.post('/api/generate-d3plot', async (req, res) => {
                 'Authorization': `Bearer ${apiKey}`
             },
             timeout: 60000,
-            httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
-        });
+/*             httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
+ */        });
         console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
 
         const openaiData = await openaiResponse.data.choices[0].message.content;
@@ -526,8 +526,8 @@ app.post('/api/chat', async (req, res) => {
                     Authorization: `Bearer ${OPENAI_API_KEY}`,
                 },
                 timeout: 60000,
-                httpsAgent: proxyAgent,
-            }
+/*                 httpsAgent: proxyAgent,
+ */            }
         );
 
         res.json({ response: response.data.choices[0].message.content });
@@ -601,8 +601,8 @@ Brief Reason: <reason>
                     'Content-Type': 'application/json',
                 },
                 timeout: 60000,
-                httpsAgent: proxyAgent,
-            }
+/*                 httpsAgent: proxyAgent,
+ */            }
         );
         // Extract grading results
         const gradingResponse = response.data.choices[0].message.content;
