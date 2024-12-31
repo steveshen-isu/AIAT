@@ -2,14 +2,29 @@
     "version": 2,
     "builds": [
       {
-        "src": "src/backend/server.js",
-        "use": "@vercel/node"
+        "src": "package.json",
+        "use": "@vercel/react",   
+        "config": {
+          "distDir": "build"      
+        }
+      },
+      {
+        "src": "src/backend/package.json",
+        "use": "@vercel/node",   
+        "config": {
+          "maxDuration": 10      
+        }
       }
     ],
     "routes": [
       {
         "src": "/api/(.*)",
-        "dest": "src/backend/server.js"
+        "dest": "src/backend/server.js" 
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/"             
       }
     ]
   }
+  
