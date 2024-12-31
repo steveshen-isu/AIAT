@@ -6,8 +6,7 @@
         "use": "@vercel/static",
         "config": {
           "distDir": "build"
-        },
-        "buildCommand": "vercel build"
+        }
       }
     ],
     "routes": [
