@@ -184,35 +184,29 @@ app.post('/api/generate-plot', async (req, res) => {
     fs.writeFileSync(pythonScriptPath, plotCode);
 
     // Execute the Python script and generate the plot image
-    exec(`python3 ${pythonScriptPath}`, (error, stdout, stderr) => {
-        if (error) {
-            console.error(`Error executing Python script: ${error.message}`);
-            
+    const pythonScriptUrl = 'https://aiat-2.vercel.app/tmp/plot.py';
 
+    axios.get(pythonScriptUrl)
+        .then((response) => {
+            // Assuming the Python script returns a JSON response with the required data
+            const { plotCode, plotUrl } = response.data;
+    
+            res.json({
+                response: openaiResponse.data.choices[0].message.content,
+                plotCode: plotCode,
+                plotUrl: plotUrl, // This URL should point to the hosted plot image
+            });
+        })
+        .catch((error) => {
+            console.error(`Error executing Python script: ${error.message}`);
+    
             if (!res.headersSent) {
                 return res.status(500).json({
                     error: 'Error executing Python script',
                     message: error.message || 'An error occurred while running the Python script.',
                 });
-            }            
-        }
-
-        const plotImagePath = path.join(__dirname, 'plot.png');
-        if (fs.existsSync(plotImagePath)) {
-            // Ensure that the response is sent only once
-
-            res.json({
-                response: openaiResponse.data.choices[0].message.content,
-                plotCode: plotCode,
-                plotUrl: `/plot.png`,  // Serve the image as static content
-            });
-
-        } else {
-            if (!res.headersSent) {
-                res.status(500).json({ error: 'Plot image not found' });
             }
-        }
-    });
+        });
 } catch (error) {
     console.error('Error while calling OpenAI API:', error.message);
 
