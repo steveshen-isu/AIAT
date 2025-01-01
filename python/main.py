@@ -1,8 +1,26 @@
 import os
 import subprocess
 
-# Path to the plot.py file in the tmp folder
-script_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'tmp/plot.py'))
+def handler(event, context):
+    # Path to the dynamically generated plot.py in /tmp
+    script_path = '/tmp/plot.py'
 
-# Execute plot.py silently
-subprocess.run(['python3', script_path], check=True)
+    # Check if the file exists
+    if os.path.exists(script_path):
+        try:
+            # Execute plot.py
+            subprocess.run(['python3', script_path], check=True)
+            return {
+                "statusCode": 200,
+                "body": "Plot executed successfully."
+            }
+        except subprocess.CalledProcessError as e:
+            return {
+                "statusCode": 500,
+                "body": f"Error executing plot.py: {e}"
+            }
+    else:
+        return {
+            "statusCode": 404,
+            "body": "plot.py not found."
+        }
