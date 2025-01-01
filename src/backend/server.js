@@ -162,7 +162,7 @@ app.post('/api/generate-plot', async (req, res) => {
             {
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${process.env.API_KEY}`,
+                    Authorization: `Bearer ${process.env.API_KEY}`,
                 },
             }
         );
