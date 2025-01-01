@@ -171,7 +171,7 @@ app.post('/api/generate-plot', async (req, res) => {
         // Send Python code to Replit server
         const replitResponse = await axios.post(
             'https://837b384a-af0d-46db-a0a2-0795b6675ff6-00-yvpg7opyl3k2.worf.replit.dev//run-python',
-            { code: pythonCode },
+            { code: plotCode },
             { responseType: 'arraybuffer' } // To handle image response
         );
 
