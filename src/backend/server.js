@@ -145,10 +145,13 @@ app.post('/api/generate-plot', async (req, res) => {
     ];
 
     const openaiRequest = {
-        model: 'gpt-4',
-        messages: messages,
+        model: 'chatgpt-4o-latest', 
+        messages: messages,  
         max_tokens: 3000,
         temperature: 0.8,
+        top_p: 0.3,
+        frequency_penalty: 0.3,
+        presence_penalty: 0,
     };
 
     try {
