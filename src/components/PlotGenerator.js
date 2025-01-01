@@ -220,7 +220,7 @@ function PlotGenerator() {
                     {/* Show Plot Image */}
                     {plotUrl && (
                         <img
-                            src={`${plotUrl}?rand=${Math.random()}`}
+                            src={plotUrl}
                             alt="Generated plot"
                             className="object-contain w-full h-full rounded-lg"
                         />

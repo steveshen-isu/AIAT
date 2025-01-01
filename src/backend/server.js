@@ -219,14 +219,7 @@ app.post('/api/generate-plot', async (req, res) => {
 }
 }
 );
-app.get('/plot.png', (req, res) => {
-    const plotImagePath = path.join('/tmp', 'plot.png');
-    res.sendFile(plotImagePath, (err) => {
-        if (err) {
-            res.status(500).send('Error retrieving plot image');
-        }
-    });
-});
+
 // Serve the generated plot image
 app.use('/plot.png', express.static(path.join(__dirname, 'plot.png')));
 
