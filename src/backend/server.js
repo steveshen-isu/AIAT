@@ -170,12 +170,7 @@ app.post('/api/generate-plot', async (req, res) => {
 /*         httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
  */    });
     console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
-    // Send back the response from OpenAI API to the frontend
-    /*     res.json({ response: openaiResponse.data.choices[0].message.content });
-     */
 
-
-    /*             const openaiData = await openaiResponse.json(); */
     const openaiData = await openaiResponse.data.choices[0].message.content;
     const plotCode = openaiData.replace(/```python|```/g, '').trim();;
     console.log(plotCode);
