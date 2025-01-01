@@ -186,12 +186,12 @@ app.post('/api/generate-plot', async (req, res) => {
         fs.writeFileSync(plotImagePath, replitResponse.data);
 
         // Create a URL for the plot (if hosted externally or on Replit)
-        const plotUrl = `${req.protocol}://${req.get('host')}/plot.png`;
+        const base64Image = fs.readFileSync(plotImagePath, { encoding: 'base64' });
 
         // Send response to the client
         res.json({
             plotCode: plotCode,
-            plotUrl: plotUrl,
+            plotBase64: `data:image/png;base64,${base64Image}`,
         });
 } catch (error) {
     console.error('Error while calling OpenAI API:', error.message);

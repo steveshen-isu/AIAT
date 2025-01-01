@@ -43,7 +43,7 @@ function PlotGenerator() {
             }
             const data = await res.json();
             setPlotCode(data.plotCode);  // Generated code from OpenAI
-            setPlotUrl(data.plotUrl);
+            setPlotUrl(data.plotBase64);
         } catch (error) {
             console.error('API Error:', error);
             setErrorMessage('An unexpected error occurred. Please try again.');
