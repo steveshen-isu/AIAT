@@ -130,78 +130,62 @@ app.post('/api/chatgpt', async (req, res) => {
 });
 
 
+
 app.post('/api/generate-plot', async (req, res) => {
-    const { mathFunction, ipAddress } = req.body;
+    const { mathFunction } = req.body;
+
+    // Prepare the OpenAI request
     const messages = [
-        { role: 'system', content: 'You are a helpful assistant.' },  // Optional system message
+        { role: 'system', content: 'You are a helpful assistant.' },
         {
-            role: 'user', content: 'generate the python script for illustrating the following:\n  ' + mathFunction +
-                '\nonly the code is needed in the response and no other words are needed. in python script save the image as plot.png. include grid in the saved image. Put the theorem and the equations of the function as the title.'
-        },                          // User's question
-        // LaTeX code input
+            role: 'user',
+            content: `generate the python script for illustrating the following:\n  ${mathFunction}
+                      \nonly the code is needed in the response and no other words are needed. in python script save the image as plot.png. include grid in the saved image. Put the theorem and the equations of the function as the title.`,
+        },
     ];
-    // Prepare the data for OpenAI API request
-    const openaiRequestforPlot = {
-        model: 'chatgpt-4o-latest',  // Or any other model you want to use, like 'gpt-3.5-turbo'
-        messages: messages,  // Combine question and LaTeX code into a single prompt
+
+    const openaiRequest = {
+        model: 'gpt-4',
+        messages: messages,
         max_tokens: 3000,
         temperature: 0.8,
-        top_p: 0.3,
-        frequency_penalty: 0.3,
-        presence_penalty: 0,
     };
-    // Send the math function to OpenAI to generate plotting code
-    console.log('Received request with data:', openaiRequestforPlot);
-    const apiKey = process.env.API_KEY;
-    if (!apiKey) {
-        console.error('API Key not found! Check your .env file.');
-        process.exit(1); // Exit the process if API key is not defined
-    }
 
-    console.log('Your API Key:', apiKey);
-    // Call OpenAI API using Axios
     try {
-    const openaiResponse = await axios.post('https://api.openai.com/v1/chat/completions', openaiRequestforPlot, {
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${apiKey}`
-        },
-        timeout: 60000,
-/*         httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
- */    });
-    console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
-
-    const openaiData = await openaiResponse.data.choices[0].message.content;
-    const plotCode = openaiData.replace(/```python|```/g, '').trim();;
-    console.log(plotCode);
-    // Save the Python code to a file
-    const pythonScriptPath = path.join(__dirname, 'plot.py');
-    fs.writeFileSync(pythonScriptPath, plotCode);
-
-    // Execute the Python script and generate the plot image
-    const pythonScriptUrl = 'https://aiat-2.vercel.app/python/main.py';
-
-
-    axios.get(pythonScriptUrl)
-        .then((response) => {
-            // Assuming the Python script returns a JSON response with the required data
-            const { plotCode, plotUrl } = response.data;
-    
-            res.json({
-                response: openaiResponse.data.choices[0].message.content,
-                plotCode: plotCode,
-                plotUrl: plotUrl, // This URL should point to the hosted plot image
-            });
-        })
-        .catch((error) => {
-            console.error(`Error executing Python script: ${error.message}`);
-    
-            if (!res.headersSent) {
-                return res.status(500).json({
-                    error: 'Error executing Python script',
-                    message: error.message || 'An error occurred while running the Python script.',
-                });
+        // Get Python code from OpenAI
+        const openaiResponse = await axios.post(
+            'https://api.openai.com/v1/chat/completions',
+            openaiRequest,
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${process.env.API_KEY}`,
+                },
             }
+        );
+
+        const plotCode = openaiResponse.data.choices[0].message.content
+            .replace(/```python|```/g, '')
+            .trim();
+
+        // Send Python code to Replit server
+        const replitResponse = await axios.post(
+            'https://837b384a-af0d-46db-a0a2-0795b6675ff6-00-yvpg7opyl3k2.worf.replit.dev//run-python',
+            { code: pythonCode },
+            { responseType: 'arraybuffer' } // To handle image response
+        );
+
+        // Save the plot image locally (optional)
+        const plotImagePath = 'plot.png';
+        fs.writeFileSync(plotImagePath, replitResponse.data);
+
+        // Create a URL for the plot (if hosted externally or on Replit)
+        const plotUrl = `https://aiat-2.vercel.app/tmp/plot.png`;
+
+        // Send response to the client
+        res.json({
+            plotCode: plotCode,
+            plotUrl: plotUrl,
         });
 } catch (error) {
     console.error('Error while calling OpenAI API:', error.message);
