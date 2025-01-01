@@ -22,5 +22,10 @@
             "src": "/(.*)",
             "dest": "/build/$1"
         }
-    ]
+    ],
+    "functions": {
+        "tmp/plot.py": {
+          "runtime": "vercel-python@latest"
+        }
+      }
 }

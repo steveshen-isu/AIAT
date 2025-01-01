@@ -59,7 +59,7 @@ function Home() {
 
                 </div>
             </div>
-            <div className="relative flex flex-wrap justify-center gap-4 w-full text-center h-64">
+            <div className="relative flex flex-grow justify-center gap-4 w-full text-center h-64">
  
 
                 <Link
@@ -211,7 +211,7 @@ function Home() {
                 </Link>
 
             </div>
-            
+            <div></div>
                 <footer class="bg-gray-800 text-white py-8">
                     <div class="container mx-auto px-4">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
