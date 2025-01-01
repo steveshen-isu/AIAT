@@ -14,7 +14,10 @@
         },
         {
             "src": "python/*.py",
-            "use": "@vercel/python"
+            "use": "@vercel/python",
+            "config": {
+                "runtime": "python3.11"
+              }
         }
     ],
     "routes": [
