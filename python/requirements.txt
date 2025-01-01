@@ -1,0 +1,10 @@
+matplotlib
+sympy
+sageMath
+pandas
+statsmodels
+scikit-learn
+numpy
+scipy
+sympy
+math
