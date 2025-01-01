@@ -145,7 +145,7 @@ app.post('/api/generate-plot', async (req, res) => {
     ];
 
     const openaiRequest = {
-        model: 'chatgpt-4o-latest', 
+        model: 'gpt-4o', 
         messages: messages,  
         max_tokens: 3000,
         temperature: 0.8,
@@ -162,11 +162,13 @@ app.post('/api/generate-plot', async (req, res) => {
             {
                 headers: {
                     'Content-Type': 'application/json',
-                    Authorization: `Bearer ${process.env.API_KEY}`,
+                    'Authorization': `Bearer ${process.env.API_KEY}`
                 },
-            }
-        );
-        console.log('OpenAI API Response:', openaiResponse);
+                timeout: 60000,
+/*                 httpsAgent: proxyAgent
+ */            }
+    );
+        console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
         const openaiData = await openaiResponse.data.choices[0].message.content;
         const plotCode = openaiData
             .replace(/```python|```/g, '')
@@ -174,17 +176,17 @@ app.post('/api/generate-plot', async (req, res) => {
 
         // Send Python code to Replit server
         const replitResponse = await axios.post(
-            'https://837b384a-af0d-46db-a0a2-0795b6675ff6-00-yvpg7opyl3k2.worf.replit.dev//run-python',
+            'https://837b384a-af0d-46db-a0a2-0795b6675ff6-00-yvpg7opyl3k2.worf.replit.dev/run-python',
             { code: plotCode },
             { responseType: 'arraybuffer' } // To handle image response
         );
 
         // Save the plot image locally (optional)
-        const plotImagePath = 'plot.png';
+        const plotImagePath = path.join('/tmp', 'plot.png');
         fs.writeFileSync(plotImagePath, replitResponse.data);
 
         // Create a URL for the plot (if hosted externally or on Replit)
-        const plotUrl = `https://aiat-2.vercel.app/tmp/plot.png`;
+        const plotUrl = `${req.protocol}://${req.get('host')}/plot.png`;
 
         // Send response to the client
         res.json({
@@ -217,7 +219,14 @@ app.post('/api/generate-plot', async (req, res) => {
 }
 }
 );
-
+app.get('/plot.png', (req, res) => {
+    const plotImagePath = path.join('/tmp', 'plot.png');
+    res.sendFile(plotImagePath, (err) => {
+        if (err) {
+            res.status(500).send('Error retrieving plot image');
+        }
+    });
+});
 // Serve the generated plot image
 app.use('/plot.png', express.static(path.join(__dirname, 'plot.png')));
 
