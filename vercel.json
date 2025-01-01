@@ -14,7 +14,7 @@
         },
         {
             "src": "python/*.py",
-            "use": "vercel-python@latest"
+            "use": "python3.9"
         }
     ],
     "routes": [
