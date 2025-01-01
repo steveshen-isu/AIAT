@@ -11,6 +11,11 @@
         {
             "src": "src/backend/server.js",
             "use": "@vercel/node"
+        },
+        {
+            "tmp/plot.py": {
+                "runtime": "vercel-python@latest"
+            }
         }
     ],
     "routes": [
@@ -22,10 +27,5 @@
             "src": "/(.*)",
             "dest": "/build/$1"
         }
-    ],
-    "functions": {
-        "tmp/plot.py": {
-          "runtime": "vercel-python@latest"
-        }
-      }
+    ]
 }
