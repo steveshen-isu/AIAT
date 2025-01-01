@@ -25,7 +25,7 @@ import Tesseract from 'tesseract.js';
 
 
 
-const __dirname = '../../var/task/tmp'
+const __dirname = 'var/task/tmp'
 
 
 
