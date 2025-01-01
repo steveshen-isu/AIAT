@@ -166,8 +166,9 @@ app.post('/api/generate-plot', async (req, res) => {
                 },
             }
         );
-
-        const plotCode = openaiResponse.data.choices[0].message.content
+        console.log('OpenAI API Response:', openaiResponse);
+        const openaiData = await openaiResponse.data.choices[0].message.content;
+        const plotCode = openaiData
             .replace(/```python|```/g, '')
             .trim();
 
