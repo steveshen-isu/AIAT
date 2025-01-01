@@ -184,9 +184,9 @@ app.post('/api/generate-plot', async (req, res) => {
     fs.writeFileSync(pythonScriptPath, plotCode);
 
     // Execute the Python script and generate the plot image
-    const pythonScriptUrl = 'https://aiat-2.vercel.app/tmp/plot.py';
+    const pythonScriptUrl = 'https://aiat-2.vercel.app/python/main.py';
 
-    
+
     axios.get(pythonScriptUrl)
         .then((response) => {
             // Assuming the Python script returns a JSON response with the required data

@@ -13,7 +13,7 @@
             "use": "@vercel/node"
         },
         {
-            "src": "tmp/*.py",
+            "src": "python/*.py",
             "use": "vercel-python@latest"
         }
     ],
@@ -25,6 +25,10 @@
         {
             "src": "/(.*)",
             "dest": "/build/$1"
+        },
+        {
+            "src": "/python/(.*)",
+            "dest": "/python/main.py"
         }
     ]
 }
