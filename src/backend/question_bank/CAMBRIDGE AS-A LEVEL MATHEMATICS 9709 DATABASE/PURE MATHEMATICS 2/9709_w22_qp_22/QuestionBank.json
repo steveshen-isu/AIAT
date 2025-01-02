@@ -1,5 +1,4 @@
-{
-    "Questions": [
+[
 {
     "Metadata": {
         "QuestionTitle": "Trigonometric Equation Solution",
@@ -34,8 +33,8 @@
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Using the identities \\(\\sec \\theta = \\frac{1}{\\cos \\theta}\\) and \\(\\csc \\theta = \\frac{1}{\\sin \\theta}\\), we rewrite the equation as:\n\\[\\frac{1}{\\cos \\theta} = 5 \\cdot \\frac{1}{\\sin \\theta}.\\]\n\nRearranging:\n\\[\\sin \\theta = 5 \\cos \\theta.\\]\n\nDividing both sides by \\(\\cos \\theta\\):\n\\[\\tan \\theta = 5.\\]\n\nThe general solution for \\(\\tan \\theta = k\\) is:\n\\[\\theta = \\tan^{-1}(k) + n\\pi, \\quad n \\in \\mathbb{Z}.\\]\n\nFor \\(0^\\circ < \\theta < 360^\\circ\\):\n\\[\\theta = \\tan^{-1}(5) \\approx 78.7^\\circ,\\]\n\\[\\theta = 180^\\circ + \\tan^{-1}(5) \\approx 258.7^\\circ.\\]\n\nThus, the solutions are:\n\\[\\theta \\approx 78.7^\\circ \\text{ and } 258.7^\\circ.\\]",
-                "MarkingScheme": "B1 for correctly using \\(\\sec \\theta = \\frac{1}{\\cos \\theta}\\) and \\(\\csc \\theta = \\frac{1}{\\sin \\theta}\\).\\nM1 for obtaining \\(\\tan \\theta = 5\\).\\nA1 for finding \\(\\theta = 78.7^\\circ\\).\\nA1 for finding \\(\\theta = 258.7^\\circ\\)."
+                "Solution": "Using the identities \\(\\sec \\theta = \\frac{1}{\\cos \\theta}\\) and \\(\\csc \\theta = \\frac{1}{\\sin \\theta}\\), we rewrite the equation as:\\\\\\[\\frac{1}{\\cos \\theta} = 5 \\cdot \\frac{1}{\\sin \\theta}.\\]\\\\\\\\Rearranging:\\\\\\[\\sin \\theta = 5 \\cos \\theta.\\]\\\\\\\\Dividing both sides by \\(\\cos \\theta\\):\\\\\\[\\tan \\theta = 5.\\]\\\\\\\\The general solution for \\(\\tan \\theta = k\\) is:\\\\\\[\\theta = \\tan^{-1}(k) + n\\pi, \\quad n \\in \\mathbb{Z}.\\]\\\\\\\\For \\(0^\\circ < \\theta < 360^\\circ\\):\\\\\\[\\theta = \\tan^{-1}(5) \\approx 78.7^\\circ,\\]\\\\\\[\\theta = 180^\\circ + \\tan^{-1}(5) \\approx 258.7^\\circ.\\]\\\\\\\\Thus, the solutions are:\\\\\\[\\theta \\approx 78.7^\\circ \\text{ and } 258.7^\\circ.\\]",
+                "MarkingScheme": "B1 for correctly using \\(\\sec \\theta = \\frac{1}{\\cos \\theta}\\) and \\(\\csc \\theta = \\frac{1}{\\sin \\theta}\\).\\\\M1 for obtaining \\(\\tan \\theta = 5\\).\\\\A1 for finding \\(\\theta = 78.7^\\circ\\).\\\\A1 for finding \\(\\theta = 258.7^\\circ\\)."
             }
         ]
     }
@@ -68,13 +67,13 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "The solutions of the equation \\(|4x - 1| = |x + 3|\\) are \\(x = p\\) and \\(x = q\\), where \\(p < q\\).\\n\\nFind the exact values of \\(p\\) and \\(q\\), and hence determine the exact value of \\(|p - 2| - |q - 1|\\)."
+        "Text": "The solutions of the equation \\(|4x - 1| = |x + 3|\\) are \\(x = p\\) and \\(x = q\\), where \\(p < q\\).\\\\\\\\Find the exact values of \\(p\\) and \\(q\\), and hence determine the exact value of \\(|p - 2| - |q - 1|\\)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To solve \\(|4x - 1| = |x + 3|\\):\\n1. Consider the two cases for the modulus equation:\\n   Case 1: \\(4x - 1 = x + 3\\)\\n   Case 2: \\(4x - 1 = -(x + 3)\\).\\n\\nFor Case 1:\\n\\[4x - 1 = x + 3\\]\\n\\[4x - x = 3 + 1\\]\\n\\[3x = 4\\]\\n\\[x = \\frac{4}{3}.\\]\\n\\nFor Case 2:\\n\\[4x - 1 = -(x + 3)\\]\\n\\[4x - 1 = -x - 3\\]\\n\\[4x + x = -3 + 1\\]\\n\\[5x = -2\\]\\n\\[x = -\\frac{2}{5}.\\]\\n\\nThus, \\(p = -\\frac{2}{5}\\) and \\(q = \\frac{4}{3}\\).\\n\\nTo find \\(|p - 2| - |q - 1|\\):\\n\\[|p - 2| = \\left| -\\frac{2}{5} - 2 \\right| = \\left| -\\frac{12}{5} \\right| = \\frac{12}{5}.\\]\\n\\[|q - 1| = \\left| \\frac{4}{3} - 1 \\right| = \\left| \\frac{1}{3} \\right| = \\frac{1}{3}.\\]\\n\\[|p - 2| - |q - 1| = \\frac{12}{5} - \\frac{1}{3}.\\]\\n\\nSimplify to get a common denominator:\\n\\[|p - 2| - |q - 1| = \\frac{36}{15} - \\frac{5}{15} = \\frac{31}{15}.\\]\\n\\nFinal answer:\\n\\[\\boxed{\\frac{31}{15}}.\\]",
+                "Solution": "To solve \\(|4x - 1| = |x + 3|\\):\\\\1. Consider the two cases for the modulus equation:\\\\   Case 1: \\(4x - 1 = x + 3\\)\\\\   Case 2: \\(4x - 1 = -(x + 3)\\).\\\\\\\\For Case 1:\\\\\\[4x - 1 = x + 3\\]\\\\\\[4x - x = 3 + 1\\]\\\\\\[3x = 4\\]\\\\\\[x = \\frac{4}{3}.\\]\\\\\\\\For Case 2:\\\\\\[4x - 1 = -(x + 3)\\]\\\\\\[4x - 1 = -x - 3\\]\\\\\\[4x + x = -3 + 1\\]\\\\\\[5x = -2\\]\\\\\\[x = -\\frac{2}{5}.\\]\\\\\\\\Thus, \\(p = -\\frac{2}{5}\\) and \\(q = \\frac{4}{3}\\).\\\\\\\\To find \\(|p - 2| - |q - 1|\\):\\\\\\[|p - 2| = \\left| -\\frac{2}{5} - 2 \\right| = \\left| -\\frac{12}{5} \\right| = \\frac{12}{5}.\\]\\\\\\[|q - 1| = \\left| \\frac{4}{3} - 1 \\right| = \\left| \\frac{1}{3} \\right| = \\frac{1}{3}.\\]\\\\\\[|p - 2| - |q - 1| = \\frac{12}{5} - \\frac{1}{3}.\\]\\\\\\\\Simplify to get a common denominator:\\\\\\[|p - 2| - |q - 1| = \\frac{36}{15} - \\frac{5}{15} = \\frac{31}{15}.\\]\\\\\\\\Final answer:\\\\\\[\\boxed{\\frac{31}{15}}.\\]",
                 "MarkingScheme": "B1 for setting up two modulus cases, M1 for solving the linear equations, A1 for obtaining \\(p\\) and \\(q\\), M1 for substituting into \\(|p - 2| - |q - 1|\\), A1 for the final answer \\(\\frac{31}{15}\\)."
             }
         ]
@@ -108,14 +107,14 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "The variables \\(x\\) and \\(y\\) satisfy the equation \\(y = A x^k\\), where \\(A\\) and \\(k\\) are constants. The graph of \\(\\ln y\\) against \\(\\ln x\\) is a straight line passing through the points \\((0.56, 2.87)\\) and \\((0.81, 3.47)\\), as shown in the diagram.\\n\\nFind the value of \\(k\\), and the value of \\(A\\) correct to 2 significant figures."
+        "Text": "The variables \\(x\\) and \\(y\\) satisfy the equation \\(y = A x^k\\), where \\(A\\) and \\(k\\) are constants. The graph of \\(\\ln y\\) against \\(\\ln x\\) is a straight line passing through the points \\((0.56, 2.87)\\) and \\((0.81, 3.47)\\), as shown in the diagram.\\\\\\\\Find the value of \\(k\\), and the value of \\(A\\) correct to 2 significant figures."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "From the given information, \\(\\ln y = \\ln A + k \\ln x\\).\\n\\nThe gradient of the line gives \\(k\\):\\n\\[ k = \\frac{3.47 - 2.87}{0.81 - 0.56} = 2.4. \\]\\n\\nSubstitute one of the points, say \\((\\ln x, \\ln y) = (0.56, 2.87)\\), to find \\(\\ln A\\):\\n\\[ 2.87 = \\ln A + 2.4 \\cdot 0.56. \\]\\n\\[ \\ln A = 2.87 - 1.344 = 1.526. \\]\\n\\nTherefore, \\(A = e^{1.526} \\approx 4.6\\) (to 2 significant figures).\\n\\nThus, \\(k = 2.4\\) and \\(A = 4.6\\).",
-                "MarkingScheme": "B1 for correctly stating \\(\\ln y = \\ln A + k \\ln x\\).\\nM1 for calculating the gradient \\(k\\).\\nA1 for obtaining \\(k = 2.4\\).\\nM1 for substituting values to find \\(\\ln A\\).\\nA1 for obtaining \\(A = 4.6\\)."
+                "Solution": "From the given information, \\(\\ln y = \\ln A + k \\ln x\\).\\\\\\\\The gradient of the line gives \\(k\\):\\\\\\[ k = \\frac{3.47 - 2.87}{0.81 - 0.56} = 2.4. \\]\\\\\\\\Substitute one of the points, say \\((\\ln x, \\ln y) = (0.56, 2.87)\\), to find \\(\\ln A\\):\\\\\\[ 2.87 = \\ln A + 2.4 \\cdot 0.56. \\]\\\\\\[ \\ln A = 2.87 - 1.344 = 1.526. \\]\\\\\\\\Therefore, \\(A = e^{1.526} \\approx 4.6\\) (to 2 significant figures).\\\\\\\\Thus, \\(k = 2.4\\) and \\(A = 4.6\\).",
+                "MarkingScheme": "B1 for correctly stating \\(\\ln y = \\ln A + k \\ln x\\).\\\\M1 for calculating the gradient \\(k\\).\\\\A1 for obtaining \\(k = 2.4\\).\\\\M1 for substituting values to find \\(\\ln A\\).\\\\A1 for obtaining \\(A = 4.6\\)."
             }
         ]
     }
@@ -149,19 +148,19 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "The polynomial \\(p(x)\\) is defined by \\(p(x) = ax^3 + 23x^2 - ax - 8\\), where \\(a\\) is a constant. It is given that \\((2x + 1)\\) is a factor of \\(p(x)\\).\n\\n\\n(a) Find the value of \\(a\\) and hence factorise \\(p(x)\\) completely.\\n\\n(b) Hence solve the equation \\(p(e^{4y}) = 0\\), giving your answer correct to 3 significant figures."
+        "Text": "The polynomial \\(p(x)\\) is defined by \\(p(x) = ax^3 + 23x^2 - ax - 8\\), where \\(a\\) is a constant. It is given that \\((2x + 1)\\) is a factor of \\(p(x)\\).\\\\\\\\\\\\(a) Find the value of \\(a\\) and hence factorise \\(p(x)\\) completely.\\\\\\\\(b) Hence solve the equation \\(p(e^{4y}) = 0\\), giving your answer correct to 3 significant figures."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Substitute \\(x = -\\frac{1}{2}\\), equate to zero and solve:\\n\\[a(-\\frac{1}{2})^3 + 23(-\\frac{1}{2})^2 - a(-\\frac{1}{2}) - 8 = 0.\\]\\n\\[-\\frac{a}{8} + \\frac{23}{4} + \\frac{a}{2} - 8 = 0.\\]\\nSimplify to obtain \\(a = 6\\).\\n\\nDivide \\(p(x)\\) by \\(2x + 1\\):\\n\\[p(x) = (2x + 1)(3x^2 + 10x - 8).\\]\\nFactorise \\(3x^2 + 10x - 8\\):\\n\\[3x^2 + 10x - 8 = (3x - 2)(x + 4).\\]\\n\\nThus, \\(p(x) = (2x + 1)(3x - 2)(x + 4)\\).",
-                "MarkingScheme": "M1 for substituting \\(x = -\\frac{1}{2}\\)\\nA1 for obtaining \\(a = 6\\)\\nM1 for dividing by \\(2x + 1\\)\\nA1 for correct factorisation\\nA1 for complete and correct final factorisation."
+                "Solution": "Substitute \\(x = -\\frac{1}{2}\\), equate to zero and solve:\\\\\\[a(-\\frac{1}{2})^3 + 23(-\\frac{1}{2})^2 - a(-\\frac{1}{2}) - 8 = 0.\\]\\\\\\[-\\frac{a}{8} + \\frac{23}{4} + \\frac{a}{2} - 8 = 0.\\]\\\\Simplify to obtain \\(a = 6\\).\\\\\\\\Divide \\(p(x)\\) by \\(2x + 1\\):\\\\\\[p(x) = (2x + 1)(3x^2 + 10x - 8).\\]\\\\Factorise \\(3x^2 + 10x - 8\\):\\\\\\[3x^2 + 10x - 8 = (3x - 2)(x + 4).\\]\\\\\\\\Thus, \\(p(x) = (2x + 1)(3x - 2)(x + 4)\\).",
+                "MarkingScheme": "M1 for substituting \\(x = -\\frac{1}{2}\\)\\\\A1 for obtaining \\(a = 6\\)\\\\M1 for dividing by \\(2x + 1\\)\\\\A1 for correct factorisation\\\\A1 for complete and correct final factorisation."
             },
             {
                 "Part": "b",
-                "Solution": "Solve \\(p(e^{4y}) = 0\\):\\n\\[(2e^{4y} + 1)(3e^{4y} - 2)(e^{4y} + 4) = 0.\\]\\n\\(e^{4y} = -\\frac{1}{2}, \\frac{2}{3}, -4\\).\\nOnly \\(e^{4y} = \\frac{2}{3}\\) is valid.\\n\\nTake natural logarithm:\\n\\[4y = \\ln\\left(\\frac{2}{3}\\right).\\]\\n\\[y = \\frac{1}{4}\\ln\\left(\\frac{2}{3}\\right).\\]\\n\\[y \\approx -0.101.\\]",
-                "MarkingScheme": "M1 for solving exponential equation\\nA1 for \\(y = -0.101\\) correct to 3 significant figures."
+                "Solution": "Solve \\(p(e^{4y}) = 0\\):\\\\\\[(2e^{4y} + 1)(3e^{4y} - 2)(e^{4y} + 4) = 0.\\]\\\\\\(e^{4y} = -\\frac{1}{2}, \\frac{2}{3}, -4\\).\\\\Only \\(e^{4y} = \\frac{2}{3}\\) is valid.\\\\\\\\Take natural logarithm:\\\\\\[4y = \\ln\\left(\\frac{2}{3}\\right).\\]\\\\\\[y = \\frac{1}{4}\\ln\\left(\\frac{2}{3}\\right).\\]\\\\\\[y \\approx -0.101.\\]",
+                "MarkingScheme": "M1 for solving exponential equation\\\\A1 for \\(y = -0.101\\) correct to 3 significant figures."
             }
         ]
     }
@@ -197,29 +196,28 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "The curve with equation \\(y = x \\ln(4x + 1) - 3x\\) has one stationary point \\(P\\).\n\n(a) Show that the \\(x\\)-coordinate of \\(P\\) satisfies the equation\n\\[\nx = \\frac{2x + 0.75}{\\ln(4x + 1)} - 0.25.\n\\]\n\n\n(b) Show by calculation that the \\(x\\)-coordinate of \\(P\\) lies between 1.8 and 1.9.\n\n\n(c) Use an iterative formula, based on the equation in part (a), to find the \\(x\\)-coordinate of \\(P\\) correct to 3 significant figures. Give the result of each iteration to 5 significant figures.\n"
+        "Text": "The curve with equation \\(y = x \\ln(4x + 1) - 3x\\) has one stationary point \\(P\\).\\\\\\\\(a) Show that the \\(x\\)-coordinate of \\(P\\) satisfies the equation\\\\\\[\\\\x = \\frac{2x + 0.75}{\\ln(4x + 1)} - 0.25.\\\\\\]\\\\\\\\\\\\(b) Show by calculation that the \\(x\\)-coordinate of \\(P\\) lies between 1.8 and 1.9.\\\\\\\\\\\\(c) Use an iterative formula, based on the equation in part (a), to find the \\(x\\)-coordinate of \\(P\\) correct to 3 significant figures. Give the result of each iteration to 5 significant figures.\\\\"
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Differentiate \\(y = x \\ln(4x + 1) - 3x\\):\n\\[ \\frac{dy}{dx} = \\ln(4x + 1) + \\frac{4x}{4x + 1} - 3. \\]\nSet \\( \\frac{dy}{dx} = 0\\):\n\\[ \\ln(4x + 1) + \\frac{4x}{4x + 1} = 3. \\]\nRearrange to obtain:\n\\[ \\ln(4x + 1) = \\frac{4x}{4x + 1} - 3. \\]\nLet \\(x = \\frac{2x + 0.75}{\\ln(4x + 1)} - 0.25\\) to confirm the required equation.\n\nVerification:\n\\[ \\text{Confirmed.} \\]\n",
-                "MarkingScheme": "M1 for differentiation using the product rule.\nA1 for correct derivative expression.\nDM1 for correct rearrangement to obtain the required equation.\nA1 for full verification."
+                "Solution": "Differentiate \\(y = x \\ln(4x + 1) - 3x\\):\\\\\\[ \\frac{dy}{dx} = \\ln(4x + 1) + \\frac{4x}{4x + 1} - 3. \\]\\\\Set \\( \\frac{dy}{dx} = 0\\):\\\\\\[ \\ln(4x + 1) + \\frac{4x}{4x + 1} = 3. \\]\\\\Rearrange to obtain:\\\\\\[ \\ln(4x + 1) = \\frac{4x}{4x + 1} - 3. \\]\\\\Let \\(x = \\frac{2x + 0.75}{\\ln(4x + 1)} - 0.25\\) to confirm the required equation.\\\\\\\\Verification:\\\\\\[ \\text{Confirmed.} \\]\\\\",
+                "MarkingScheme": "M1 for differentiation using the product rule.\\\\A1 for correct derivative expression.\\\\DM1 for correct rearrangement to obtain the required equation.\\\\A1 for full verification."
             },
             {
                 "Part": "b",
-                "Solution": "Check values for \\(x = 1.8\\):\n\\[ x = \\frac{2(1.8) + 0.75}{\\ln(4(1.8) + 1)} - 0.25 = -0.017 \\ldots. \\]\nCheck values for \\(x = 1.9\\):\n\\[ x = \\frac{2(1.9) + 0.75}{\\ln(4(1.9) + 1)} - 0.25 = 0.035 \\ldots. \\]\nHence, \\(x\\) lies between 1.8 and 1.9.\n",
-                "MarkingScheme": "M1 for testing appropriate values.\nA1 for correct interval justification."
+                "Solution": "Check values for \\(x = 1.8\\):\\\\\\[ x = \\frac{2(1.8) + 0.75}{\\ln(4(1.8) + 1)} - 0.25 = -0.017 \\ldots. \\]\\\\Check values for \\(x = 1.9\\):\\\\\\[ x = \\frac{2(1.9) + 0.75}{\\ln(4(1.9) + 1)} - 0.25 = 0.035 \\ldots. \\]\\\\Hence, \\(x\\) lies between 1.8 and 1.9.\\\\",
+                "MarkingScheme": "M1 for testing appropriate values.\\\\A1 for correct interval justification."
             },
             {
                 "Part": "c",
-                "Solution": "Use the iterative formula:\n\\[ x_{n+1} = \\frac{2x_n + 0.75}{\\ln(4x_n + 1)} - 0.25. \\]\n\nPerform iterations:\n\\[ x_1 = 1.8 \\rightarrow x_2 = 1.83456 \\rightarrow x_3 = 1.83256. \\]\nTo 3 significant figures:\n\\[ x = 1.83. \\]\n",
-                "MarkingScheme": "M1 for correct iteration process.\nA1 for final value.\nA1 for correct significant figures."
+                "Solution": "Use the iterative formula:\\\\\\[ x_{n+1} = \\frac{2x_n + 0.75}{\\ln(4x_n + 1)} - 0.25. \\]\\\\\\\\Perform iterations:\\\\\\[ x_1 = 1.8 \\rightarrow x_2 = 1.83456 \\rightarrow x_3 = 1.83256. \\]\\\\To 3 significant figures:\\\\\\[ x = 1.83. \\]\\\\",
+                "MarkingScheme": "M1 for correct iteration process.\\\\A1 for final value.\\\\A1 for correct significant figures."
             }
         ]
     }
-}
-
+},
 {
     "Metadata": {
         "QuestionTitle": "Exact Area of Shaded Region",
@@ -248,13 +246,13 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "The diagram shows the curves \\(y = \\frac{6}{3x+2}\\) and \\(y = 3e^{-x} - 3\\) for values of \\(x\\) between 0 and 4. The shaded region is bounded by the two curves and the lines \\(x = 0\\) and \\(x = 4\\).\\n\\nFind the exact area of the shaded region, giving your answer in the form \\(\\ln a + b + ce^{d}\\)."
+        "Text": "The diagram shows the curves \\(y = \\frac{6}{3x+2}\\) and \\(y = 3e^{-x} - 3\\) for values of \\(x\\) between 0 and 4. The shaded region is bounded by the two curves and the lines \\(x = 0\\) and \\(x = 4\\).\\\\\\\\Find the exact area of the shaded region, giving your answer in the form \\(\\ln a + b + ce^{d}\\)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To calculate the area of the shaded region, we integrate the difference of the two curves:\\\\[ \\text{Area} = \\int_{0}^{4} \\left( \\frac{6}{3x+2} - \\left(3e^{-x} - 3\\right) \\right) \\mathrm{d}x. \\\\\\]\\n\\n1. Integrate \\(\\frac{6}{3x+2}\\):\\\\[ \\int \\frac{6}{3x+2} \\mathrm{d}x = 2 \\ln(3x+2). \\\\\\]\\n\\n2. Integrate \\(3e^{-x} - 3\\):\\\\[ \\int \\left(3e^{-x} - 3\\right) \\mathrm{d}x = -3e^{-x} - 3x. \\\\\\]\\n\\n3. Apply limits for \\(\\frac{6}{3x+2}\\):\\\\[ 2 \\ln(3x+2) \\text{ evaluated at } x = 4 \\text{ and } x = 0. \\\\\\]\\nAt \\(x = 4\\):\\\\[ 2 \\ln(3 \\cdot 4 + 2) = 2 \\ln 14. \\\\\\]\\nAt \\(x = 0\\):\\\\[ 2 \\ln(3 \\cdot 0 + 2) = 2 \\ln 2. \\\\\\]\\nDifference:\\\\[ 2 \\ln 14 - 2 \\ln 2 = 2 \\ln \\frac{14}{2} = 2 \\ln 7. \\\\\\]\\n\\n4. Apply limits for \\(-3e^{-x} - 3x\\):\\nAt \\(x = 4\\):\\\\[ -3e^{-4} - 3 \\cdot 4 = -3e^{-4} - 12. \\\\\\]\\nAt \\(x = 0\\):\\\\[ -3e^{0} - 3 \\cdot 0 = -3. \\\\\\]\\nDifference:\\\\[ \\left(-3e^{-4} - 12\\right) - \\left(-3\\right) = -3e^{-4} - 12 + 3 = -3e^{-4} - 9. \\\\\\]\\n\\n5. Combine results:\\\\[ \\text{Area} = \\left(2 \\ln 7\\right) - \\left(-3e^{-4} - 9\\right). \\\\\\]\\n\\\\[ \\text{Area} = 2 \\ln 7 + 9 + 3e^{-4}. \\\\\\]\\n\\nFinal answer:\\\\[ \\text{Area} = \\ln 49 + 9 + 3e^{-4}. \\\\\\]",
+                "Solution": "To calculate the area of the shaded region, we integrate the difference of the two curves:\\\\[ \\text{Area} = \\int_{0}^{4} \\left( \\frac{6}{3x+2} - \\left(3e^{-x} - 3\\right) \\right) \\mathrm{d}x. \\\\\\]\\\\\\\\1. Integrate \\(\\frac{6}{3x+2}\\):\\\\[ \\int \\frac{6}{3x+2} \\mathrm{d}x = 2 \\ln(3x+2). \\\\\\]\\\\\\\\2. Integrate \\(3e^{-x} - 3\\):\\\\[ \\int \\left(3e^{-x} - 3\\right) \\mathrm{d}x = -3e^{-x} - 3x. \\\\\\]\\\\\\\\3. Apply limits for \\(\\frac{6}{3x+2}\\):\\\\[ 2 \\ln(3x+2) \\text{ evaluated at } x = 4 \\text{ and } x = 0. \\\\\\]\\\\At \\(x = 4\\):\\\\[ 2 \\ln(3 \\cdot 4 + 2) = 2 \\ln 14. \\\\\\]\\\\At \\(x = 0\\):\\\\[ 2 \\ln(3 \\cdot 0 + 2) = 2 \\ln 2. \\\\\\]\\\\Difference:\\\\[ 2 \\ln 14 - 2 \\ln 2 = 2 \\ln \\frac{14}{2} = 2 \\ln 7. \\\\\\]\\\\\\\\4. Apply limits for \\(-3e^{-x} - 3x\\):\\\\At \\(x = 4\\):\\\\[ -3e^{-4} - 3 \\cdot 4 = -3e^{-4} - 12. \\\\\\]\\\\At \\(x = 0\\):\\\\[ -3e^{0} - 3 \\cdot 0 = -3. \\\\\\]\\\\Difference:\\\\[ \\left(-3e^{-4} - 12\\right) - \\left(-3\\right) = -3e^{-4} - 12 + 3 = -3e^{-4} - 9. \\\\\\]\\\\\\\\5. Combine results:\\\\[ \\text{Area} = \\left(2 \\ln 7\\right) - \\left(-3e^{-4} - 9\\right). \\\\\\]\\\\\\\\[ \\text{Area} = 2 \\ln 7 + 9 + 3e^{-4}. \\\\\\]\\\\\\\\Final answer:\\\\[ \\text{Area} = \\ln 49 + 9 + 3e^{-4}. \\\\\\]",
                 "MarkingScheme": "M1 for integrating \\(\\frac{6}{3x+2}\\) to obtain \\(2 \\ln(3x+2)\\), A1 for applying limits correctly, M1 for integrating \\(3e^{-x} - 3\\), A1 for applying limits to obtain \\(-3e^{-4} - 9\\), DM1 for combining results to find the total area, A1 for the exact final answer."
             }
         ]
@@ -289,28 +287,21 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "The diagram shows the curve with parametric equations\n\\[x = 3 \\cos 2\\theta, \\quad y = 4 \\sin \\theta,\\]\nfor \\(\\pi \\leq \\theta \\leq \\frac{3\\pi}{2}\\). Points \\(P\\) and \\(Q\\) lie on the curve. The gradient of the curve at \\(P\\) is \\(2\\). The straight line \\(3x + y = 0\\) meets the curve at \\(Q\\).\n\n(a) Find the value of \\(\\theta\\) at \\(P\\), giving your answer correct to 3 significant figures. \\[5\\]\n\n(b) Find the gradient of the curve at \\(Q\\), giving your answer correct to 3 significant figures. \\[6\\]"
+        "Text": "The diagram shows the curve with parametric equations\\\\\\[x = 3 \\cos 2\\theta, \\quad y = 4 \\sin \\theta,\\]\\\\for \\(\\pi \\leq \\theta \\leq \\frac{3\\pi}{2}\\). Points \\(P\\) and \\(Q\\) lie on the curve. The gradient of the curve at \\(P\\) is \\(2\\). The straight line \\(3x + y = 0\\) meets the curve at \\(Q\\).\\\\\\\\(a) Find the value of \\(\\theta\\) at \\(P\\), giving your answer correct to 3 significant figures. \\[5\\]\\\\\\\\(b) Find the gradient of the curve at \\(Q\\), giving your answer correct to 3 significant figures. \\[6\\]"
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "State \\(\\frac{dx}{d\\theta} = -6 \\sin 2\\theta\\) and \\(\\frac{dy}{d\\theta} = 4 \\cos \\theta\\).\\n\\nUse \\(\\frac{dy}{dx} = \\frac{\\frac{dy}{d\\theta}}{\\frac{dx}{d\\theta}}\\) and equate to \\(2\\).\\n\\nSubstitute \\(\\sin 2\\theta = 2 \\sin \\theta \\cos \\theta\\) and solve:\n\\[2 = \\frac{4 \\cos \\theta}{-6 \\sin \\theta \\cos \\theta}.\\]\\n\\nObtain \\(\\sin \\theta = -\\frac{1}{6}\\) and solve for \\(\\theta\\):\\n\\[\\theta = 3.31 \\text{ radians (to 3 significant figures)}.\\]",
+                "Solution": "State \\(\\frac{dx}{d\\theta} = -6 \\sin 2\\theta\\) and \\(\\frac{dy}{d\\theta} = 4 \\cos \\theta\\).\\\\\\\\Use \\(\\frac{dy}{dx} = \\frac{\\frac{dy}{d\\theta}}{\\frac{dx}{d\\theta}}\\) and equate to \\(2\\).\\\\\\\\Substitute \\(\\sin 2\\theta = 2 \\sin \\theta \\cos \\theta\\) and solve:\\\\\\[2 = \\frac{4 \\cos \\theta}{-6 \\sin \\theta \\cos \\theta}.\\]\\\\\\\\Obtain \\(\\sin \\theta = -\\frac{1}{6}\\) and solve for \\(\\theta\\):\\\\\\[\\theta = 3.31 \\text{ radians (to 3 significant figures)}.\\]",
                 "MarkingScheme": "B1 for derivatives, M1 for using the chain rule, A1 for simplifying to \\(\\sin \\theta = -\\frac{1}{6}\\), A1 for correct \\(\\theta\\) in range."
             },
             {
                 "Part": "b",
-                "Solution": "State \\(\\frac{dy}{dx} = \\frac{4 \\cos \\theta}{-6 \\sin \\theta \\cos \\theta}\\).\\n\\nSolve \\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\) and use the equation of the line \\(3x + y = 0\\) to find the intersection:\\n\\[3(3 \\cos 2\\theta) + 4 \\sin \\theta = 0.\\]\\n\\nSubstitute values for \\(\\sin \\theta = -0.604\\) to find \\(\\cos \\theta\\) and compute gradient:\\n\\[\\text{Gradient at } Q = 0.551.\\]",
+                "Solution": "State \\(\\frac{dy}{dx} = \\frac{4 \\cos \\theta}{-6 \\sin \\theta \\cos \\theta}\\).\\\\\\\\Solve \\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\) and use the equation of the line \\(3x + y = 0\\) to find the intersection:\\\\\\[3(3 \\cos 2\\theta) + 4 \\sin \\theta = 0.\\]\\\\\\\\Substitute values for \\(\\sin \\theta = -0.604\\) to find \\(\\cos \\theta\\) and compute gradient:\\\\\\[\\text{Gradient at } Q = 0.551.\\]",
                 "MarkingScheme": "M1 for substituting into line equation, M1 for solving trigonometric equations, A1 for correct gradient."
             }
         ]
     }
 }
 ]
-}
-
-
-
-
-
-

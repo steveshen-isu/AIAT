@@ -1,0 +1,37 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@vercel/static-build",
+            "config": {
+                "distDir": "build"
+            }
+        },
+        {
+            "src": "src/backend/server.js",
+            "use": "@vercel/node"
+        },
+        {
+            "src": "python/*.py",
+            "use": "@vercel/python",
+            "config": {
+                "runtime": "python3.11"
+              }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/(.*)",
+            "dest": "/src/backend/server.js"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/build/$1"
+        },
+        {
+            "src": "/python/(.*)",
+            "dest": "/python/main.py"
+        }
+    ]
+}

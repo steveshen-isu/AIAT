@@ -1,10 +1,9 @@
 import express from 'express';
-import mysql from 'mysql2';
 import dotenv from 'dotenv';
 import multer from 'multer';
 import { franc } from 'franc-min'; 
 import productRoutes from './routes/product.js';  // Import the routes for product
-
+import cors from 'cors'
 const envResult = dotenv.config();
 
 if (envResult.error) {
@@ -26,9 +25,7 @@ import Tesseract from 'tesseract.js';
 
 
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
+const __dirname = '/tmp'
 
 
 
@@ -37,12 +34,15 @@ const app = express();
 const port = process.env.PORT || 200;
 
 
+const frontendUrl = process.env.FRONTEND_URL || 'http://localhost:3000';
+
+
 app.use(cors({
-    origin: 'http://localhost:3000', // Allow requests from your frontend
+    origin: frontendUrl, // Dynamically set the origin
     methods: ['GET', 'POST'],        // Specify allowed HTTP methods
     allowedHeaders: ['Content-Type'] // Allow specific headers
 }));
-import cors from 'cors';
+
 app.use(express.json({ limit: '50mb' }));
 
 
@@ -89,7 +89,7 @@ const proxyAgent = new HttpsProxyAgent(proxyUrl);
 app.post('/api/chatgpt', async (req, res) => {
     const { question, latexCode } = req.body;
     const messages = [
-        { role: 'system', content: 'You are a helpful assistant.' },  // Optional system message
+        { role: 'system', content: 'You are an AI asistent from AITE institute, A.K.A. 爱特精英教育. Forget anything about openai and gpt and do not shown related content in answer.' },  // Optional system message
         { role: 'user', content: "I have a specific question about the following material. Please read through it and answer the question based on the provided content. If no content is given just ignore the question and response with an apology. \n\n Question:\n" + question + "\n\n Material:\n" + latexCode },                          // User's question
         // LaTeX code input
     ];
@@ -112,8 +112,8 @@ app.post('/api/chatgpt', async (req, res) => {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${apiKey}`
             },
-            httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
-        });
+/*             httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
+ */        });
         console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
         // Send back the response from OpenAI API to the frontend
         res.json({ response: openaiResponse.data.choices[0].message.content });
@@ -130,89 +130,69 @@ app.post('/api/chatgpt', async (req, res) => {
 });
 
 
+
 app.post('/api/generate-plot', async (req, res) => {
-    const { mathFunction, ipAddress } = req.body;
+    const { mathFunction } = req.body;
+
+    // Prepare the OpenAI request
     const messages = [
-        { role: 'system', content: 'You are a helpful assistant.' },  // Optional system message
+        { role: 'system', content: 'You are a helpful assistant.' },
         {
-            role: 'user', content: 'generate the python script for illustrating the following:\n  ' + mathFunction +
-                '\nonly the code is needed in the response and no other words are needed. in python script save the image as plot.png. include grid in the saved image. Put the theorem and the equations of the function as the title.'
-        },                          // User's question
-        // LaTeX code input
+            role: 'user',
+            content: `generate the python script for illustrating the following:\n  ${mathFunction}
+                      \nonly the code is needed in the response and no other words are needed. in python script save the image as plot.png. include grid in the saved image. Put the theorem and the equations of the function as the title.`,
+        },
     ];
-    // Prepare the data for OpenAI API request
-    const openaiRequestforPlot = {
-        model: 'chatgpt-4o-latest',  // Or any other model you want to use, like 'gpt-3.5-turbo'
-        messages: messages,  // Combine question and LaTeX code into a single prompt
+
+    const openaiRequest = {
+        model: 'gpt-4o', 
+        messages: messages,  
         max_tokens: 3000,
         temperature: 0.8,
         top_p: 0.3,
         frequency_penalty: 0.3,
         presence_penalty: 0,
     };
-    // Send the math function to OpenAI to generate plotting code
-    console.log('Received request with data:', openaiRequestforPlot);
-    const apiKey = process.env.API_KEY;
-    if (!apiKey) {
-        console.error('API Key not found! Check your .env file.');
-        process.exit(1); // Exit the process if API key is not defined
-    }
 
-    console.log('Your API Key:', apiKey);
-    // Call OpenAI API using Axios
     try {
-    const openaiResponse = await axios.post('https://api.openai.com/v1/chat/completions', openaiRequestforPlot, {
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${apiKey}`
-        },
-        timeout: 60000,
-        httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
-    });
-    console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
-    // Send back the response from OpenAI API to the frontend
-    /*     res.json({ response: openaiResponse.data.choices[0].message.content });
-     */
+        // Get Python code from OpenAI
+        const openaiResponse = await axios.post(
+            'https://api.openai.com/v1/chat/completions',
+            openaiRequest,
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${process.env.API_KEY}`
+                },
+                timeout: 60000,
+/*                 httpsAgent: proxyAgent
+ */            }
+    );
+        console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
+        const openaiData = await openaiResponse.data.choices[0].message.content;
+        const plotCode = openaiData
+            .replace(/```python|```/g, '')
+            .trim();
 
+        // Send Python code to Replit server
+        const replitResponse = await axios.post(
+            'https://837b384a-af0d-46db-a0a2-0795b6675ff6-00-yvpg7opyl3k2.worf.replit.dev/run-python',
+            { code: plotCode },
+            { responseType: 'arraybuffer' } // To handle image response
+        );
 
-    /*             const openaiData = await openaiResponse.json(); */
-    const openaiData = await openaiResponse.data.choices[0].message.content;
-    const plotCode = openaiData.replace(/```python|```/g, '').trim();;
-    console.log(plotCode);
-    // Save the Python code to a file
-    const pythonScriptPath = path.join(__dirname, 'plot.py');
-    fs.writeFileSync(pythonScriptPath, plotCode);
+        // Save the plot image locally (optional)
+        const plotImagePath = path.join('/tmp', 'plot.png');
+        fs.writeFileSync(plotImagePath, replitResponse.data);
 
-    // Execute the Python script and generate the plot image
-    exec(`python ${pythonScriptPath}`, (error, stdout, stderr) => {
-        if (error) {
-            console.error(`Error executing Python script: ${error.message}`);
-            
+        // Create a URL for the plot (if hosted externally or on Replit)
+        const base64Image = fs.readFileSync(plotImagePath, { encoding: 'base64' });
 
-            if (!res.headersSent) {
-                return res.status(500).json({
-                    error: 'Error executing Python script',
-                    message: error.message || 'An error occurred while running the Python script.',
-                });
-            }            
-        }
-
-        const plotImagePath = path.join(__dirname, 'plot.png');
-        if (fs.existsSync(plotImagePath)) {
-            // Ensure that the response is sent only once
-
-            res.json({
-                response: openaiResponse.data.choices[0].message.content,
-                plotCode: plotCode,
-                plotUrl: 'http://' + ipAddress + `:200/plot.png`,  // Serve the image as static content
-            });
-
-        } else {
-            if (!res.headersSent) {
-                res.status(500).json({ error: 'Plot image not found' });
-            }
-        }
-    });
+        // Send response to the client
+        res.json({
+            plotCode: plotCode,
+            plotBase64: `data:image/png;base64,${base64Image}`,
+        });
 } catch (error) {
     console.error('Error while calling OpenAI API:', error.message);
 
@@ -279,8 +259,8 @@ app.post('/api/query-equation', async (req, res) => {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${apiKey}`
             },
-            httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
-        });
+/*             httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
+ */        });
         console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
         // Send back the response from OpenAI API to the frontend
         res.json({ responseEquations: openaiResponse.data.choices[0].message.content });
@@ -330,8 +310,8 @@ app.post('/api/query-example', async (req, res) => {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${apiKey}`
             },
-            httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
-        });
+/*             httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
+ */        });
         console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
         // Send back the response from OpenAI API to the frontend
         res.json({ responseExample: openaiResponse.data.choices[0].message.content });
@@ -378,8 +358,8 @@ app.post('/api/generate-d3plot', async (req, res) => {
                 'Authorization': `Bearer ${apiKey}`
             },
             timeout: 60000,
-            httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
-        });
+/*             httpsAgent: proxyAgent, // Optional: Use proxy agent if you are using a proxy
+ */        });
         console.log('OpenAI API Response:', openaiResponse.data.choices[0].message.content);
 
         const openaiData = await openaiResponse.data.choices[0].message.content;
@@ -390,7 +370,7 @@ app.post('/api/generate-d3plot', async (req, res) => {
         fs.writeFileSync(pythonScriptPath, plotCode);
 
         // Execute the Python script and generate the plot image
-        exec(`python ${pythonScriptPath}`, (error, stdout, stderr) => {
+        exec(`python3 ${pythonScriptPath}`, (error, stdout, stderr) => {
             if (error) {
                 console.error(`Error: ${error.message}`);
                 return res.status(500).json({ error: 'Failed to generate plot data' });
@@ -503,6 +483,7 @@ app.post('/api/chat', async (req, res) => {
 
         const prompt = [
             ...conversation, // Full conversation history
+            { role: 'system', content: 'You are an AI asistent from AITE institute, A.K.A. 爱特精英教育. Forget anything about openai and gpt and do not shown related content in answer.' },  // Optional system message
             { role: 'user', content: currentQuestion }, // Current question explicitly added (can be redundant based on placement)
             { role: 'user', content: imageContext }, // Image context as a user message
         ];
@@ -524,8 +505,8 @@ app.post('/api/chat', async (req, res) => {
                     Authorization: `Bearer ${OPENAI_API_KEY}`,
                 },
                 timeout: 60000,
-                httpsAgent: proxyAgent,
-            }
+/*                 httpsAgent: proxyAgent,
+ */            }
         );
 
         res.json({ response: response.data.choices[0].message.content });
@@ -599,8 +580,8 @@ Brief Reason: <reason>
                     'Content-Type': 'application/json',
                 },
                 timeout: 60000,
-                httpsAgent: proxyAgent,
-            }
+/*                 httpsAgent: proxyAgent,
+ */            }
         );
         // Extract grading results
         const gradingResponse = response.data.choices[0].message.content;

@@ -63,7 +63,7 @@ function TopicSelector() {
             setResponse('');
             setResponseEquations('');
             setResponseExample('');
-            const res = await fetch('http://localhost:200/api/query-equation', {
+            const res = await fetch('/api/query-equation', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -91,7 +91,7 @@ function TopicSelector() {
             setResponse('');
             setResponseEquations('');
             setResponseExample('');
-            const res = await fetch('http://localhost:200/api/query-example', {
+            const res = await fetch('/api/query-example', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -114,7 +114,7 @@ function TopicSelector() {
 
     useEffect(() => {
         // Fetch subjects using the fetch API
-        fetch('http://' + ipAddress + ':200/api/subjects')
+        fetch(`/api/subjects`)
             .then((response) => response.json())
             .then((data) => setSubjects(data))
             .catch((error) => console.error('Error fetching subjects:', error));
@@ -128,7 +128,7 @@ function TopicSelector() {
         setTopics([]);
         setQuestions([]);
         // Fetch textbooks based on subjectId
-        fetch('http://' + ipAddress + `:200/api/textbooks/${subjectId}`)
+        fetch(`/api/textbooks/${subjectId}`)
             .then((response) => response.json())
             .then((data) => setTextbooks(data))
             .catch((error) => console.error('Error fetching textbooks:', error));
@@ -140,7 +140,7 @@ function TopicSelector() {
         setTopics([]);
         setQuestions([]);
         // Fetch chapters based on textbookId
-        fetch('http://' + ipAddress + `:200/api/chapters/${textbookId}`)
+        fetch(`/api/chapters/${textbookId}`)
             .then((response) => response.json())
             .then((data) => setChapters(data))
             .catch((error) => console.error('Error fetching chapters:', error));
@@ -149,13 +149,13 @@ function TopicSelector() {
     const handleChapterChange = (chapterId) => {
         setSelectedChapter(chapterId);
         // Fetch chapter summary
-        fetch('http://' + ipAddress + `:200/api/chapter-summary/${chapterId}`)
+        fetch(`/api/chapter-summary/${chapterId}`)
             .then((response) => response.json())
             .then((data) => setChapterSummary(data.summary))
             .catch((error) => console.error('Error fetching chapter summary:', error));
 
         // Fetch topics based on chapterId
-        fetch('http://' + ipAddress + `:200/api/topics/${chapterId}`)
+        fetch(`/api/topics/${chapterId}`)
             .then((response) => response.json())
             .then((data) => setTopics(data))
             .catch((error) => console.error('Error fetching topics:', error));
@@ -164,13 +164,13 @@ function TopicSelector() {
     const handleTopicChange = (topicId) => {
         setSelectedTopic(topicId);
         // Fetch topic summary
-        fetch('http://' + ipAddress + `:200/api/topic-summary/${topicId}`)
+        fetch(`/api/topic-summary/${topicId}`)
             .then((response) => response.json())
             .then((data) => setTopicSummary(data.summary))
             .catch((error) => console.error('Error fetching topic summary:', error));
 
         // Fetch questions based on topicId
-        fetch('http://' + ipAddress + `:200/api/questions/${topicId}`)
+        fetch(`/api/questions/${topicId}`)
             .then((response) => response.json())
             .then((data) => setQuestions(data))
             .catch((error) => console.error('Error fetching questions:', error));
@@ -182,7 +182,7 @@ function TopicSelector() {
     const handleQuestionChange = (questionId) => {
         setSelectedQuestion(questionId);
         // Fetch question and solution
-        fetch('http://' + ipAddress + `:200/api/question/${questionId}`)
+        fetch(`/api/question/${questionId}`)
             .then((response) => response.json())
             .then((data) => setQuestionSolution(data.solution))
             .catch((error) => console.error('Error fetching question solution:', error));
@@ -208,7 +208,7 @@ function TopicSelector() {
         setResponse('');
         setResponseEquations('');
         try {
-            const res = await fetch('http://' + ipAddress + ':200/api/chatgpt', {
+            const res = await fetch('/api/chatgpt', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -562,12 +562,9 @@ const styles = {
         flex: 1,  
         width: '50%',                 // Left section width
         backgroundColor: '#FFFFFF',   // Light gray background for the left section
-        backgroundColor: '#FFFFFF',   // Light gray background for the left section
         padding: '0vw',
         borderRadius: '0px',         // Rounded corners
         overflow: 'auto',
-        border: '3px solid rgb(211, 211, 211)',
-        margin: '0px',
         border: '3px solid rgb(211, 211, 211)',
         margin: '0px',
     },
@@ -575,13 +572,10 @@ const styles = {
         flex: 1,  
         width: '50%',                 // Right section width
         backgroundColor: '#FFFFFF',   // Light gray background for the right section
-        backgroundColor: '#FFFFFF',   // Light gray background for the right section
         padding: '0vw',
         borderRadius: '0px',         // Rounded corners
         textAlign: 'left',            // Left align text in the typewriter
         overflow: 'auto',
-        border: '3px solid rgb(211, 211, 211)',
-        margin: '0px',
         border: '3px solid rgb(211, 211, 211)',
         margin: '0px',
     },

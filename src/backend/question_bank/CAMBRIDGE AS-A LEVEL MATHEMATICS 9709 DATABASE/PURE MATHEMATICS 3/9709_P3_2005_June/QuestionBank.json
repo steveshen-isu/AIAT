@@ -38,7 +38,7 @@
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Using the binomial expansion for \\((1 + kx)^n\\):\\n\\[ (1 + kx)^n = 1 + nkx + \\frac{n(n-1)}{2!}k^2x^2 + \\frac{n(n-1)(n-2)}{3!}k^3x^3 + \\dots \\]\\nHere, \\(n = -\\frac{1}{2}\\) and \\(k = 4\\):\\n\\[\\n(1 + 4x)^{-\\frac{1}{2}} = 1 + \\left(-\\frac{1}{2}\\right)(4x) + \\frac{-\\frac{1}{2}(-\\frac{3}{2})}{2!}(4x)^2 + \\frac{-\\frac{1}{2}(-\\frac{3}{2})(-\\frac{5}{2})}{3!}(4x)^3 + \\dots\\n\\]\\nSimplify each term:\\n- First term: \\(1\\)\\n- Second term: \\(-2x\\)\\n- Third term: \\(6x^2\\)\\n- Fourth term: \\(-20x^3\\)\\n\\nFinal expansion:\\n\\[ (1 + 4x)^{-\\frac{1}{2}} = 1 - 2x + 6x^2 - 20x^3. \\]",
+                "Solution": "Using the binomial expansion for \\((1 + kx)^n\\):\\\\\\[ (1 + kx)^n = 1 + nkx + \\frac{n(n-1)}{2!}k^2x^2 + \\frac{n(n-1)(n-2)}{3!}k^3x^3 + \\dots \\]\\\\Here, \\(n = -\\frac{1}{2}\\) and \\(k = 4\\):\\\\\\[\\\\(1 + 4x)^{-\\frac{1}{2}} = 1 + \\left(-\\frac{1}{2}\\right)(4x) + \\frac{-\\frac{1}{2}(-\\frac{3}{2})}{2!}(4x)^2 + \\frac{-\\frac{1}{2}(-\\frac{3}{2})(-\\frac{5}{2})}{3!}(4x)^3 + \\dots\\\\\\]\\\\Simplify each term:\\\\- First term: \\(1\\)\\\\- Second term: \\(-2x\\)\\\\- Third term: \\(6x^2\\)\\\\- Fourth term: \\(-20x^3\\)\\\\\\\\Final expansion:\\\\\\[ (1 + 4x)^{-\\frac{1}{2}} = 1 - 2x + 6x^2 - 20x^3. \\]",
                 "MarkingScheme": "M1 for obtaining the first unsimplified term, A1 for correct first two terms \\(1 - 2x\\), A1 for next two terms \\(6x^2 - 20x^3\\)."
             }
         ]
@@ -90,7 +90,7 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "The ordinates are calculated at \\(x = -0.6, 0, 0.6\\), giving values approximately \\(1.2755, 1, 0.8223\\). Using the trapezium rule:\\n\\[\\n\\text{Area} = \\frac{h}{2} \\left( y_0 + 2y_1 + y_2 \\right), \\text{ where } h = 0.6.\\n\\]\\n\\[\\text{Area} = \\frac{0.6}{2} \\left( 1.2755 + 2(1) + 0.8223 \\right) = 1.23.\\]\\nThe answer is \\(1.23\\), correct to two decimal places.",
+                "Solution": "The ordinates are calculated at \\(x = -0.6, 0, 0.6\\), giving values approximately \\(1.2755, 1, 0.8223\\). Using the trapezium rule:\\\\\\[\\\\\\text{Area} = \\frac{h}{2} \\left( y_0 + 2y_1 + y_2 \\right), \\text{ where } h = 0.6.\\\\\\]\\\\\\[\\text{Area} = \\frac{0.6}{2} \\left( 1.2755 + 2(1) + 0.8223 \\right) = 1.23.\\]\\\\The answer is \\(1.23\\), correct to two decimal places.",
                 "MarkingScheme": "B1 for correct ordinates, M1 for correct formula use, A1 for correct answer."
             },
             {
@@ -151,12 +151,12 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "Use the quadratic formula \\( z = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\) where \\( a = 1, b = -2i, c = -5 \\).\\n\\[ z = \\frac{-(-2i) \\pm \\sqrt{(-2i)^2 - 4(1)(-5)}}{2(1)} \\]\\nSimplify:\\n\\[ z = \\frac{2i \\pm \\sqrt{-4 - (-20)}}{2} \\]\\n\\[ z = \\frac{2i \\pm \\sqrt{16}}{2} \\]\\n\\[ z = \\frac{2i \\pm 4}{2} \\]\\n\\[ z = 2 + i \\text{ and } z = -2 + i. \\]",
+                "Solution": "Use the quadratic formula \\( z = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\) where \\( a = 1, b = -2i, c = -5 \\).\\\\\\[ z = \\frac{-(-2i) \\pm \\sqrt{(-2i)^2 - 4(1)(-5)}}{2(1)} \\]\\\\Simplify:\\\\\\[ z = \\frac{2i \\pm \\sqrt{-4 - (-20)}}{2} \\]\\\\\\[ z = \\frac{2i \\pm \\sqrt{16}}{2} \\]\\\\\\[ z = \\frac{2i \\pm 4}{2} \\]\\\\\\[ z = 2 + i \\text{ and } z = -2 + i. \\]",
                 "MarkingScheme": "M1 for using the quadratic formula, A1 for one root, A1 for the other root."
             },
             {
                 "Part": "ii",
-                "Solution": "The modulus of \\( z = 2 + i \\) is given by:\\n\\[ |z| = \\sqrt{2^2 + 1^2} = \\sqrt{5}. \\]\\nThe argument of \\( 2 + i \\) is:\\n\\[ \\theta = \\arctan\\left(\\frac{1}{2}\\right) = 26.6^\\circ \\text{ or } 0.464 \\text{ radians.} \\]\\nFor \\( z = -2 + i \\):\\n\\[ |z| = \\sqrt{(-2)^2 + 1^2} = \\sqrt{5}. \\]\\nThe argument is:\\n\\[ \\theta = \\pi - \\arctan\\left(\\frac{1}{2}\\right) = 153.4^\\circ \\text{ or } 2.68 \\text{ radians.} \\]",
+                "Solution": "The modulus of \\( z = 2 + i \\) is given by:\\\\\\[ |z| = \\sqrt{2^2 + 1^2} = \\sqrt{5}. \\]\\\\The argument of \\( 2 + i \\) is:\\\\\\[ \\theta = \\arctan\\left(\\frac{1}{2}\\right) = 26.6^\\circ \\text{ or } 0.464 \\text{ radians.} \\]\\\\For \\( z = -2 + i \\):\\\\\\[ |z| = \\sqrt{(-2)^2 + 1^2} = \\sqrt{5}. \\]\\\\The argument is:\\\\\\[ \\theta = \\pi - \\arctan\\left(\\frac{1}{2}\\right) = 153.4^\\circ \\text{ or } 2.68 \\text{ radians.} \\]",
                 "MarkingScheme": "B1 for correct modulus, B1 for argument of \\( 2 + i \\), B1 for argument of \\( -2 + i \\)."
             },
             {
@@ -198,7 +198,7 @@
         "Parts": [
             {
                 "Part": "i",
-                "Text": "Use the substitution \\(x = \\tan \\theta\\) to show that \\[\\n\\int \\frac{1 - x^2}{(1 + x^2)^2} \\, dx = \\int \\cos 2\\theta \\, d\\theta.\\n\\]",
+                "Text": "Use the substitution \\(x = \\tan \\theta\\) to show that \\[\\\\\\int \\frac{1 - x^2}{(1 + x^2)^2} \\, dx = \\int \\cos 2\\theta \\, d\\theta.\\\\\\]",
                 "Marks": 4
             },
             {
@@ -212,12 +212,12 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "Using \\(x = \\tan \\theta\\), we get \\(dx = \\sec^2 \\theta d\\theta\\). Substituting into the integral:\\n\\[\\n\\int \\frac{1 - x^2}{(1 + x^2)^2} \\, dx = \\int \\frac{1 - \\tan^2 \\theta}{(1 + \\tan^2 \\theta)^2} \\sec^2 \\theta d\\theta.\\n\\]\\nUsing \\(1 + \\tan^2 \\theta = \\sec^2 \\theta\\) and \\(1 - \\tan^2 \\theta = \\cos 2\\theta\\), we simplify to:\\n\\[\\n\\int \\frac{1 - x^2}{(1 + x^2)^2} \\, dx = \\int \\cos 2\\theta \\, d\\theta.\\n\\]",
+                "Solution": "Using \\(x = \\tan \\theta\\), we get \\(dx = \\sec^2 \\theta d\\theta\\). Substituting into the integral:\\\\\\[\\\\\\int \\frac{1 - x^2}{(1 + x^2)^2} \\, dx = \\int \\frac{1 - \\tan^2 \\theta}{(1 + \\tan^2 \\theta)^2} \\sec^2 \\theta d\\theta.\\\\\\]\\\\Using \\(1 + \\tan^2 \\theta = \\sec^2 \\theta\\) and \\(1 - \\tan^2 \\theta = \\cos 2\\theta\\), we simplify to:\\\\\\[\\\\\\int \\frac{1 - x^2}{(1 + x^2)^2} \\, dx = \\int \\cos 2\\theta \\, d\\theta.\\\\\\]",
                 "MarkingScheme": "B1 for correct \\(dx = \\sec^2 \\theta d\\theta\\), M1 for correct substitution and simplification, A1 for reducing to \\(\\cos 2\\theta\\), A1 for showing the final result."
             },
             {
                 "Part": "ii",
-                "Solution": "From Part (i), integrate \\(\\cos 2\\theta\\):\\n\\[\\n\\int \\cos 2\\theta \\, d\\theta = \\frac{1}{2} \\sin 2\\theta.\\n\\]\\nUsing limits \\(x = 0\\) (\\(\\theta = 0\\)) and \\(x = 1\\) (\\(\\theta = \\frac{\\pi}{4}\\)), we calculate:\\n\\[\\n\\frac{1}{2} \\sin 2\\theta \\bigg|_0^{\\pi/4} = \\frac{1}{2} \\sin \\frac{\\pi}{2} - \\frac{1}{2} \\sin 0 = \\frac{1}{2} (1 - 0) = \\frac{1}{2}.\\n\\]",
+                "Solution": "From Part (i), integrate \\(\\cos 2\\theta\\):\\\\\\[\\\\\\int \\cos 2\\theta \\, d\\theta = \\frac{1}{2} \\sin 2\\theta.\\\\\\]\\\\Using limits \\(x = 0\\) (\\(\\theta = 0\\)) and \\(x = 1\\) (\\(\\theta = \\frac{\\pi}{4}\\)), we calculate:\\\\\\[\\\\\\frac{1}{2} \\sin 2\\theta \\bigg|_0^{\\pi/4} = \\frac{1}{2} \\sin \\frac{\\pi}{2} - \\frac{1}{2} \\sin 0 = \\frac{1}{2} (1 - 0) = \\frac{1}{2}.\\\\\\]",
                 "MarkingScheme": "B1 for stating integral \\(\\frac{1}{2} \\sin 2\\theta\\), M1 for applying limits, A1 for correct answer \\(\\frac{1}{2}\\) or 0.5."
             }
         ]
@@ -269,12 +269,12 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "Divide \\(p(x)\\) by \\(x^2 - x + 3\\) to get the partial quotient \\(x^2 + x\\).\\nEquate the remainder to zero and solve for \\(a\\):\\n\\[a = -6.\\]\\nFactorise \\(p(x)\\) completely:\\n\\[p(x) = (x^2 - x + 3)(x^2 + x - 2).\\]\\nFurther factorise \\(x^2 + x - 2\\) to get:\\n\\[p(x) = (x^2 - x + 3)(x + 2)(x - 1).\\]",
+                "Solution": "Divide \\(p(x)\\) by \\(x^2 - x + 3\\) to get the partial quotient \\(x^2 + x\\).\\\\Equate the remainder to zero and solve for \\(a\\):\\\\\\[a = -6.\\]\\\\Factorise \\(p(x)\\) completely:\\\\\\[p(x) = (x^2 - x + 3)(x^2 + x - 2).\\]\\\\Further factorise \\(x^2 + x - 2\\) to get:\\\\\\[p(x) = (x^2 - x + 3)(x + 2)(x - 1).\\]",
                 "MarkingScheme": "B1 for partial quotient, M1 for equating and solving \\(a\\), A1 for correct \\(a = -6\\), B1 for factorisation \\(x^2 + x - 2\\), B1 for final complete factorisation."
             },
             {
                 "Part": "ii",
-                "Solution": "State that \\(x^2 + x - 2 = 0\\) has two real roots, namely \\(x = -2\\) and \\(x = 1\\).\\nShow that \\(x^2 - x + 3 = 0\\) has no real roots since its discriminant is negative:\\n\\[b^2 - 4ac = (-1)^2 - 4(1)(3) = -11.\\]\\nConclude that \\(p(x) = 0\\) has two real roots.",
+                "Solution": "State that \\(x^2 + x - 2 = 0\\) has two real roots, namely \\(x = -2\\) and \\(x = 1\\).\\\\Show that \\(x^2 - x + 3 = 0\\) has no real roots since its discriminant is negative:\\\\\\[b^2 - 4ac = (-1)^2 - 4(1)(3) = -11.\\]\\\\Conclude that \\(p(x) = 0\\) has two real roots.",
                 "MarkingScheme": "B1 for stating real roots of \\(x^2 + x - 2\\), B1 for showing \\(x^2 - x + 3\\) has no real roots."
             }
         ]
@@ -327,12 +327,12 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "1. Express \\( \\cos 4\\theta \\) and \\( \\cos 2\\theta \\) using double-angle formulas.\\n2. Simplify \\( \\cos 4\\theta = 2\\cos^2 2\\theta - 1 \\) and \\( \\cos 2\\theta = 2\\cos^2 \\theta - 1 \\).\\n3. Substitute into the equation:\\n   \\[ \\cos 4\\theta + 4\\cos 2\\theta = (8\\cos^4 \\theta - 8\\cos^2 \\theta + 1) + 4(2\\cos^2 \\theta - 1). \\]\\n4. Simplify to obtain the result:\\n   \\[ \\cos 4\\theta + 4\\cos 2\\theta \\equiv 8 \\cos^4 \\theta - 3. \\]",
+                "Solution": "1. Express \\( \\cos 4\\theta \\) and \\( \\cos 2\\theta \\) using double-angle formulas.\\\\2. Simplify \\( \\cos 4\\theta = 2\\cos^2 2\\theta - 1 \\) and \\( \\cos 2\\theta = 2\\cos^2 \\theta - 1 \\).\\\\3. Substitute into the equation:\\\\   \\[ \\cos 4\\theta + 4\\cos 2\\theta = (8\\cos^4 \\theta - 8\\cos^2 \\theta + 1) + 4(2\\cos^2 \\theta - 1). \\]\\\\4. Simplify to obtain the result:\\\\   \\[ \\cos 4\\theta + 4\\cos 2\\theta \\equiv 8 \\cos^4 \\theta - 3. \\]",
                 "MarkingScheme": "B1 for using double-angle formulas, M1 for correct substitution, A1 for simplification, A1 for obtaining the final identity."
             },
             {
                 "Part": "ii",
-                "Solution": "1. Solve \\( 8 \\cos^4 \\theta - 3 = 2 \\), which simplifies to \\( 8 \\cos^4 \\theta = 5 \\) and \\( \\cos^4 \\theta = \\frac{5}{8}. \\)\\n2. Take square roots: \\( \\cos^2 \\theta = \\pm \\frac{\\sqrt{5}}{2}. \\)\\n3. Solve \\( \\cos \\theta \\) for \\( \\theta \\) in the range \\( 0^\\circ \\leq \\theta \\leq 360^\\circ \\):\\n   - Positive root: \\( \\theta = 27.2^\\circ, 332.8^\\circ \\).\\n   - Negative root: \\( \\theta = 152.8^\\circ, 207.2^\\circ. \\)\\n4. Final solutions: \\( \\theta = 27.2^\\circ, 152.8^\\circ, 207.2^\\circ, 332.8^\\circ. \\)",
+                "Solution": "1. Solve \\( 8 \\cos^4 \\theta - 3 = 2 \\), which simplifies to \\( 8 \\cos^4 \\theta = 5 \\) and \\( \\cos^4 \\theta = \\frac{5}{8}. \\)\\\\2. Take square roots: \\( \\cos^2 \\theta = \\pm \\frac{\\sqrt{5}}{2}. \\)\\\\3. Solve \\( \\cos \\theta \\) for \\( \\theta \\) in the range \\( 0^\\circ \\leq \\theta \\leq 360^\\circ \\):\\\\   - Positive root: \\( \\theta = 27.2^\\circ, 332.8^\\circ \\).\\\\   - Negative root: \\( \\theta = 152.8^\\circ, 207.2^\\circ. \\)\\\\4. Final solutions: \\( \\theta = 27.2^\\circ, 152.8^\\circ, 207.2^\\circ, 332.8^\\circ. \\)",
                 "MarkingScheme": "M1 for solving for \\( \\cos^2 \\theta \\), A1 for obtaining roots, A1 for finding all solutions in the given range."
             }
         ]
@@ -411,7 +411,7 @@
             },
             {
                 "Part": "iv",
-                "Solution": "Use the iteration \\( x_{n+1} = \\sin^{-1}\\left( \\frac{2}{x_n + 2} \\right) \\) starting with \\( x_1 = 0.75 \\):\\n\\( x_2 = 0.8001, x_3 = 0.8000 \\).\\nRoot correct to 2 decimal places is \\( x = 0.80 \\).",
+                "Solution": "Use the iteration \\( x_{n+1} = \\sin^{-1}\\left( \\frac{2}{x_n + 2} \\right) \\) starting with \\( x_1 = 0.75 \\):\\\\\\( x_2 = 0.8001, x_3 = 0.8000 \\).\\\\Root correct to 2 decimal places is \\( x = 0.80 \\).",
                 "MarkingScheme": "M1 for correct iterative process; A1 for correct values; A1 for final result \\( x = 0.80 \\)."
             }
         ]
@@ -455,7 +455,7 @@
             },
             {
                 "Part": "(ii)",
-                "Text": "Given that \\( y = 1 \\) when \\( x = 0 \\), solve the differential equation:\\n\\[\\n\\frac{dy}{dx} = y(4 - y),\\n\\]\\nobtaining an expression for \\( y \\) in terms of \\( x \\).",
+                "Text": "Given that \\( y = 1 \\) when \\( x = 0 \\), solve the differential equation:\\\\\\[\\\\\\frac{dy}{dx} = y(4 - y),\\\\\\]\\\\obtaining an expression for \\( y \\) in terms of \\( x \\).",
                 "Marks": 4
             },
             {
@@ -469,17 +469,17 @@
         "Parts": [
             {
                 "Part": "(i)",
-                "Solution": "Express the integrand in partial fractions:\\n\\[\\n\\frac{1}{y(4-y)} = \\frac{A}{y} + \\frac{B}{4-y},\\n\\]\\nsolving for \\( A \\) and \\( B \\) gives:\\n\\[\\nA = \\frac{1}{4}, \\; B = \\frac{1}{4}.\\n\\]\\nThus:\\n\\[\\n\\int \\frac{1}{y(4-y)} \\, dy = \\frac{1}{4} \\ln y - \\frac{1}{4} \\ln(4-y) + C.\\n\\]",
+                "Solution": "Express the integrand in partial fractions:\\\\\\[\\\\\\frac{1}{y(4-y)} = \\frac{A}{y} + \\frac{B}{4-y},\\\\\\]\\\\solving for \\( A \\) and \\( B \\) gives:\\\\\\[\\\\A = \\frac{1}{4}, \\; B = \\frac{1}{4}.\\\\\\]\\\\Thus:\\\\\\[\\\\\\int \\frac{1}{y(4-y)} \\, dy = \\frac{1}{4} \\ln y - \\frac{1}{4} \\ln(4-y) + C.\\\\\\]",
                 "MarkingScheme": "M1 for partial fractions, A1 for coefficients, A1√ + A1√ for correct integral."
             },
             {
                 "Part": "(ii)",
-                "Solution": "Separate variables and integrate:\\n\\[\\n\\frac{dy}{y(4-y)} = dx.\\n\\]\\nUsing the result from part (i), integrate and apply initial condition \\( y = 1 \\) when \\( x = 0 \\):\\n\\[\\n\\frac{1}{4} \\ln y - \\frac{1}{4} \\ln(4-y) = x + C.\\n\\]\\nSimplifying, the final solution is:\\n\\[\\n y = \\frac{4}{3e^{-4x} + 1}.\\n\\]",
+                "Solution": "Separate variables and integrate:\\\\\\[\\\\\\frac{dy}{y(4-y)} = dx.\\\\\\]\\\\Using the result from part (i), integrate and apply initial condition \\( y = 1 \\) when \\( x = 0 \\):\\\\\\[\\\\\\frac{1}{4} \\ln y - \\frac{1}{4} \\ln(4-y) = x + C.\\\\\\]\\\\Simplifying, the final solution is:\\\\\\[\\\\ y = \\frac{4}{3e^{-4x} + 1}.\\\\\\]",
                 "MarkingScheme": "M1* for separation, M1(dep*) for integration, A1 for constants, A1 for correct solution."
             },
             {
                 "Part": "(iii)",
-                "Solution": "As \\( x \\to \\infty \\), the exponential term \\( e^{-4x} \\to 0 \\). Thus:\\n\\[\\n y \\to 4.\\n\\]",
+                "Solution": "As \\( x \\to \\infty \\), the exponential term \\( e^{-4x} \\to 0 \\). Thus:\\\\\\[\\\\ y \\to 4.\\\\\\]",
                 "MarkingScheme": "B1 for correct asymptotic behavior."
             }
         ]
@@ -538,17 +538,17 @@
         "Parts": [
             {
                 "Part": "(i)",
-                "Solution": "Differentiate y = x / (x^2 + 1) using the quotient rule:\\n   \\[ \\frac{dy}{dx} = \\frac{(x^2 + 1) - 2x^2}{(x^2 + 1)^2}. \\]\\nSimplify and set \\( \\frac{dy}{dx} = 0 \\) to find x = 1, which is the x-coordinate of M.",
+                "Solution": "Differentiate y = x / (x^2 + 1) using the quotient rule:\\\\   \\[ \\frac{dy}{dx} = \\frac{(x^2 + 1) - 2x^2}{(x^2 + 1)^2}. \\]\\\\Simplify and set \\( \\frac{dy}{dx} = 0 \\) to find x = 1, which is the x-coordinate of M.",
                 "MarkingScheme": "M1 for using quotient rule, A1 for correct derivative, M1 for solving dy/dx = 0, A1 for obtaining x = 1."
             },
             {
                 "Part": "(ii)",
-                "Solution": "Integrate y = x / (x^2 + 1) from 0 to p:\\n   \\[ \\int_0^p \\frac{x}{x^2 + 1} \\, dx = \\frac{1}{2} \\ln(x^2 + 1) \\bigg|_0^p. \\]\\nThe area of R is:\\n   \\[ \\frac{1}{2} \\ln(p^2 + 1). \\]",
+                "Solution": "Integrate y = x / (x^2 + 1) from 0 to p:\\\\   \\[ \\int_0^p \\frac{x}{x^2 + 1} \\, dx = \\frac{1}{2} \\ln(x^2 + 1) \\bigg|_0^p. \\]\\\\The area of R is:\\\\   \\[ \\frac{1}{2} \\ln(p^2 + 1). \\]",
                 "MarkingScheme": "M1 for correct indefinite integral, M1(dep) for applying limits, A1 for correct area expression."
             },
             {
                 "Part": "(iii)",
-                "Solution": "Equate the area to 1:\\n   \\[ \\frac{1}{2} \\ln(p^2 + 1) = 1. \\]\\nSolve for p:\\n   \\[ p^2 + 1 = e^2, \\]\\n   \\[ p = \\sqrt{e^2 - 1} = 2.53 \\ (3 \\ \\text{significant figures}). \\]",
+                "Solution": "Equate the area to 1:\\\\   \\[ \\frac{1}{2} \\ln(p^2 + 1) = 1. \\]\\\\Solve for p:\\\\   \\[ p^2 + 1 = e^2, \\]\\\\   \\[ p = \\sqrt{e^2 - 1} = 2.53 \\ (3 \\ \\text{significant figures}). \\]",
                 "MarkingScheme": "M1 for equating area to 1 and solving, A1 for obtaining p = 2.53."
             }
         ]
@@ -593,18 +593,18 @@
                 "Text": "Find the equation of the plane containing \\( l \\) and the point \\( A \\), giving your answer in the form \\( ax + by + cz = d \\)."
             }
         ],
-        "Text": "With respect to the origin \\( O \\), the points \\( A \\) and \\( B \\) have position vectors given by:\\n\\( \\vec{OA} = 2\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k} \\quad \\text{and} \\quad \\vec{OB} = \\mathbf{i} + 4\\mathbf{j} + 3\\mathbf{k}. \\)\\n\\nThe line \\( l \\) has vector equation \\( \\mathbf{r} = 4\\mathbf{i} - 2\\mathbf{j} + 2\\mathbf{k} + s(\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k}). \\)"
+        "Text": "With respect to the origin \\( O \\), the points \\( A \\) and \\( B \\) have position vectors given by:\\\\\\( \\vec{OA} = 2\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k} \\quad \\text{and} \\quad \\vec{OB} = \\mathbf{i} + 4\\mathbf{j} + 3\\mathbf{k}. \\)\\\\\\\\The line \\( l \\) has vector equation \\( \\mathbf{r} = 4\\mathbf{i} - 2\\mathbf{j} + 2\\mathbf{k} + s(\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k}). \\)"
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "1. The direction vector of \\( AB \\) is \\( \\vec{AB} = (\\mathbf{i} + 4\\mathbf{j} + 3\\mathbf{k}) - (2\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k}) = -\\mathbf{i} + 2\\mathbf{j} + 2\\mathbf{k}. \\)\\n\\n2. Write the equation of the line through \\( A \\) and \\( B \\):\\n\\[ \\mathbf{r} = 2\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k} + t(-\\mathbf{i} + 2\\mathbf{j} + 2\\mathbf{k}). \\]\\n\\n3. Equate the parametric forms of both lines (\\( l \\) and \\( AB \\)) and solve for \\( s \\) and \\( t \\). Show that the equations are inconsistent (no solution).\\n\\nConclusion: The two lines do not intersect.",
+                "Solution": "1. The direction vector of \\( AB \\) is \\( \\vec{AB} = (\\mathbf{i} + 4\\mathbf{j} + 3\\mathbf{k}) - (2\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k}) = -\\mathbf{i} + 2\\mathbf{j} + 2\\mathbf{k}. \\)\\\\\\\\2. Write the equation of the line through \\( A \\) and \\( B \\):\\\\\\[ \\mathbf{r} = 2\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k} + t(-\\mathbf{i} + 2\\mathbf{j} + 2\\mathbf{k}). \\]\\\\\\\\3. Equate the parametric forms of both lines (\\( l \\) and \\( AB \\)) and solve for \\( s \\) and \\( t \\). Show that the equations are inconsistent (no solution).\\\\\\\\Conclusion: The two lines do not intersect.",
                 "MarkingScheme": "B1 for direction vector of \\( AB \\), B1 for correct line equation, M1 for equating parametric forms, A1 for inconsistency proof, A1 for conclusion."
             },
             {
                 "Part": "ii",
-                "Solution": "1. The normal vector of the plane is the cross product of the direction vectors of line \\( l \\) (\\( \\mathbf{i} + 2\\mathbf{j} + \\mathbf{k} \\)) and \\( \\vec{AB} = -\\mathbf{i} + 2\\mathbf{j} + 2\\mathbf{k}. \\)\\n\\n2. Compute:\\n\\[ \\mathbf{n} = \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ 1 & 2 & 1 \\\\ -1 & 2 & 2 \\end{vmatrix} = (2 - 2)\\mathbf{i} - (1 + 1)\\mathbf{j} + (2 + 2)\\mathbf{k} = -2\\mathbf{j} + 4\\mathbf{k}. \\]\\n\\n3. Substitute point \\( A(2, 2, 1) \\) into \\( ax + by + cz = d \\):\\n\\[ 0(2) - 2(2) + 4(1) = d, \\quad d = 0. \\]\\n\\nFinal plane equation:\\n\\[ 0x - 2y + 4z = 0 \\quad \\text{or} \\quad 6x + 7y - 8z = 6 \\].",
+                "Solution": "1. The normal vector of the plane is the cross product of the direction vectors of line \\( l \\) (\\( \\mathbf{i} + 2\\mathbf{j} + \\mathbf{k} \\)) and \\( \\vec{AB} = -\\mathbf{i} + 2\\mathbf{j} + 2\\mathbf{k}. \\)\\\\\\\\2. Compute:\\\\\\[ \\mathbf{n} = \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ 1 & 2 & 1 \\\\ -1 & 2 & 2 \\end{vmatrix} = (2 - 2)\\mathbf{i} - (1 + 1)\\mathbf{j} + (2 + 2)\\mathbf{k} = -2\\mathbf{j} + 4\\mathbf{k}. \\]\\\\\\\\3. Substitute point \\( A(2, 2, 1) \\) into \\( ax + by + cz = d \\):\\\\\\[ 0(2) - 2(2) + 4(1) = d, \\quad d = 0. \\]\\\\\\\\Final plane equation:\\\\\\[ 0x - 2y + 4z = 0 \\quad \\text{or} \\quad 6x + 7y - 8z = 6 \\].",
                 "MarkingScheme": "B1 for correct cross product, B1 for substitution, M1 for solving normal vector, A1 for final plane equation."
             }
         ]

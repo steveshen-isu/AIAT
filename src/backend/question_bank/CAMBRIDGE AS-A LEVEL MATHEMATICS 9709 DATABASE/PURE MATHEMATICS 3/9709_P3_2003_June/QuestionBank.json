@@ -1,4 +1,4 @@
-{
+[{
     "Metadata": {
         "QuestionTitle": "Trigonometric Equation Transformation and Solution",
         "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
@@ -42,17 +42,17 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "Use trigonometric identities:\\n\\( \\cos 60^\\circ = \\sin 30^\\circ = \\frac{1}{2} \\).\\nRewrite the equation:\\n\\[ \\sin(x - 60^\\circ) - \\cos(30^\\circ - x) = \\cos x = k, \\quad k = -\\frac{1}{\\sqrt{3}}. \\]",
+                "Solution": "Use trigonometric identities:\\\\\\( \\cos 60^\\circ = \\sin 30^\\circ = \\frac{1}{2} \\).\\\\Rewrite the equation:\\\\\\[ \\sin(x - 60^\\circ) - \\cos(30^\\circ - x) = \\cos x = k, \\quad k = -\\frac{1}{\\sqrt{3}}. \\]",
                 "MarkingScheme": "M1 for using trigonometric identities. M1 for reducing to the form \\( \\cos x = k \\)."
             },
             {
                 "Part": "ii",
-                "Solution": "Solve \\( \\cos x = -\\frac{1}{\\sqrt{3}} \\) in the range \\( 0^\\circ < x < 180^\\circ \\):\\n\\[ x = 125.3^\\circ \\].",
+                "Solution": "Solve \\( \\cos x = -\\frac{1}{\\sqrt{3}} \\) in the range \\( 0^\\circ < x < 180^\\circ \\):\\\\\\[ x = 125.3^\\circ \\].",
                 "MarkingScheme": "A1 for stating \\( k = -\\frac{1}{\\sqrt{3}} \\). A1 for solving \\( x = 125.3^\\circ \\) correctly."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Exact Value of Definite Integral",
@@ -87,12 +87,12 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "Using integration by parts:\\nLet \\( u = x \\) and \\( dv = e^{2x} dx \\), so \\( du = dx \\) and \\( v = \\frac{1}{2} e^{2x} \\).\\n\\nSubstitute into the integration by parts formula:\\n\\[\\n\\int u \\, dv = uv - \\int v \\, du.\\n\\]\\n\\[\\n\\int xe^{2x} dx = x \\cdot \\frac{1}{2} e^{2x} - \\int \\frac{1}{2} e^{2x} dx.\\n\\]\\nSimplify:\\n\\[\\n\\int xe^{2x} dx = \\frac{1}{2} x e^{2x} - \\frac{1}{4} e^{2x} + C.\\n\\]\\n\\nEvaluate the definite integral from 0 to 1:\\n\\[\\n\\int_0^1 xe^{2x} dx = \\left[ \\frac{1}{2} x e^{2x} - \\frac{1}{4} e^{2x} \\right]_0^1.\\n\\]\\nAt \\( x = 1 \\):\\n\\[\\n\\frac{1}{2} (1) e^{2} - \\frac{1}{4} e^{2} = \\frac{1}{4} e^{2}.\\n\\]\\nAt \\( x = 0 \\):\\n\\[\\n\\frac{1}{2} (0) e^{0} - \\frac{1}{4} e^{0} = -\\frac{1}{4}.\\n\\]\\nSubtract the lower limit from the upper limit:\\n\\[\\n\\int_0^1 xe^{2x} dx = \\frac{1}{4} e^{2} + \\frac{1}{4}.\\n\\]\\nFinal answer:\\n\\[\\n\\int_0^1 xe^{2x} dx = \\frac{1}{4} (e^2 + 1).\\n\\]",
+                "Solution": "Using integration by parts:\\\\Let \\( u = x \\) and \\( dv = e^{2x} dx \\), so \\( du = dx \\) and \\( v = \\frac{1}{2} e^{2x} \\).\\\\\\\\Substitute into the integration by parts formula:\\\\\\[\\\\\\int u \\, dv = uv - \\int v \\, du.\\\\\\]\\\\\\[\\\\\\int xe^{2x} dx = x \\cdot \\frac{1}{2} e^{2x} - \\int \\frac{1}{2} e^{2x} dx.\\\\\\]\\\\Simplify:\\\\\\[\\\\\\int xe^{2x} dx = \\frac{1}{2} x e^{2x} - \\frac{1}{4} e^{2x} + C.\\\\\\]\\\\\\\\Evaluate the definite integral from 0 to 1:\\\\\\[\\\\\\int_0^1 xe^{2x} dx = \\left[ \\frac{1}{2} x e^{2x} - \\frac{1}{4} e^{2x} \\right]_0^1.\\\\\\]\\\\At \\( x = 1 \\):\\\\\\[\\\\\\frac{1}{2} (1) e^{2} - \\frac{1}{4} e^{2} = \\frac{1}{4} e^{2}.\\\\\\]\\\\At \\( x = 0 \\):\\\\\\[\\\\\\frac{1}{2} (0) e^{0} - \\frac{1}{4} e^{0} = -\\frac{1}{4}.\\\\\\]\\\\Subtract the lower limit from the upper limit:\\\\\\[\\\\\\int_0^1 xe^{2x} dx = \\frac{1}{4} e^{2} + \\frac{1}{4}.\\\\\\]\\\\Final answer:\\\\\\[\\\\\\int_0^1 xe^{2x} dx = \\frac{1}{4} (e^2 + 1).\\\\\\]",
                 "MarkingScheme": "M1 for applying integration by parts, A1 for completing the first step correctly, M1 for substituting limits, A1 for the final correct answer."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Solving an Absolute Value Inequality",
@@ -127,12 +127,12 @@
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To solve \\( |x - 2| < 3 - 2x \\), split the inequality into two cases:\\n\\n1. \\( x - 2 < 3 - 2x \\)\\n2. \\( -(x - 2) < 3 - 2x \\)\\n\\n### Case 1: \\( x - 2 < 3 - 2x \\)\\n\\[\\n3x < 5 \\implies x < \\frac{5}{3}.\\n\\]\\n\\n### Case 2: \\( -(x - 2) < 3 - 2x \\)\\n\\[\\n-x + 2 < 3 - 2x \\implies x < 1.\\n\\]\\n\\n### Combine Results:\\nThe critical value is \\( x = 1 \\). Checking the combined condition, the solution is:\\n\\[\\nx < 1.\\n\\]",
+                "Solution": "To solve \\( |x - 2| < 3 - 2x \\), split the inequality into two cases:\\\\\\\\1. \\( x - 2 < 3 - 2x \\)\\\\2. \\( -(x - 2) < 3 - 2x \\)\\\\\\\\### Case 1: \\( x - 2 < 3 - 2x \\)\\\\\\[\\\\3x < 5 \\implies x < \\frac{5}{3}.\\\\\\]\\\\\\\\### Case 2: \\( -(x - 2) < 3 - 2x \\)\\\\\\[\\\\-x + 2 < 3 - 2x \\implies x < 1.\\\\\\]\\\\\\\\### Combine Results:\\\\The critical value is \\( x = 1 \\). Checking the combined condition, the solution is:\\\\\\[\\\\x < 1.\\\\\\]",
                 "MarkingScheme": "B1 for stating critical value \\(x = 1\\), M1 for correct expansion, A1 for solving inequality, A1 for stating final answer \\(x < 1\\)."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Polynomial Divisibility and Non-Negativity",
@@ -177,17 +177,17 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "Since \\(f(x)\\) is divisible by \\(x^2 - 4x + 4 = (x-2)^2\\), substitute \\(x = 2\\) into \\(f(x)\\):\\n\\[f(2) = 2^4 - 2(2)^3 - 2(2)^2 + a = 0.\\]\\nSimplify:\\n\\[16 - 16 - 8 + a = 0,\\]\\n\\[a = 8.\\]",
+                "Solution": "Since \\(f(x)\\) is divisible by \\(x^2 - 4x + 4 = (x-2)^2\\), substitute \\(x = 2\\) into \\(f(x)\\):\\\\\\[f(2) = 2^4 - 2(2)^3 - 2(2)^2 + a = 0.\\]\\\\Simplify:\\\\\\[16 - 16 - 8 + a = 0,\\]\\\\\\[a = 8.\\]",
                 "MarkingScheme": "B1 for stating divisibility condition, M1 for substituting \\(x = 2\\), A1 for obtaining \\(a = 8\\)."
             },
             {
                 "Part": "ii",
-                "Solution": "When \\(a = 8\\), \\(f(x)\\) can be written as:\\n\\[f(x) = (x-2)^2(x^2 + 2x + 2).\\]\\nThe quadratic factor \\(x^2 + 2x + 2\\) has a minimum value at \\(x = -1\\):\\n\\[f(-1) = (-1)^2 + 2(-1) + 2 = 1.\\]\\nSince \\(x^2 + 2x + 2 > 0\\) for all \\(x\\), and \\((x-2)^2 \\geq 0\\), we conclude that \\(f(x) \\geq 0\\) for all \\(x\\).",
+                "Solution": "When \\(a = 8\\), \\(f(x)\\) can be written as:\\\\\\[f(x) = (x-2)^2(x^2 + 2x + 2).\\]\\\\The quadratic factor \\(x^2 + 2x + 2\\) has a minimum value at \\(x = -1\\):\\\\\\[f(-1) = (-1)^2 + 2(-1) + 2 = 1.\\]\\\\Since \\(x^2 + 2x + 2 > 0\\) for all \\(x\\), and \\((x-2)^2 \\geq 0\\), we conclude that \\(f(x) \\geq 0\\) for all \\(x\\).",
                 "MarkingScheme": "B1 for substituting \\(a = 8\\), M1 for factorizing \\(f(x)\\), A1 for showing positivity of the quadratic factor, A1 for completing the proof."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Complex Numbers and Argand Diagram",
@@ -253,7 +253,7 @@
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Partial Fractions and Approximation of Functions",
@@ -291,7 +291,7 @@
             },
             {
                 "Part": "ii",
-                "Text": "Show that, when \\( x \\) is sufficiently small for \\( x^3 \\) and higher powers to be neglected,\\n\\[ f(x) = 1 - x + 5x^2. \\]",
+                "Text": "Show that, when \\( x \\) is sufficiently small for \\( x^3 \\) and higher powers to be neglected,\\\\\\[ f(x) = 1 - x + 5x^2. \\]",
                 "Marks": 4
             }
         ]
@@ -300,17 +300,17 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "We express \\( f(x) \\) as:\\n\\[ \\frac{9x^2 + 4}{(2x + 1)(x - 2)^2} = \\frac{A}{2x + 1} + \\frac{B}{x - 2} + \\frac{C}{(x - 2)^2}. \\]\\nTo find \\( A, B, \\) and \\( C \\):\\n1. Multiply through by the denominator \\( (2x + 1)(x - 2)^2 \\).\\n2. Solve for constants:\\n   - \\( A = 1 \\), \\( B = 4 \\), \\( C = 8 \\).\\nFinal partial fractions:\\n\\[ \\frac{9x^2 + 4}{(2x + 1)(x - 2)^2} = \\frac{1}{2x + 1} + \\frac{4}{x - 2} + \\frac{8}{(x - 2)^2}. \\]",
+                "Solution": "We express \\( f(x) \\) as:\\\\\\[ \\frac{9x^2 + 4}{(2x + 1)(x - 2)^2} = \\frac{A}{2x + 1} + \\frac{B}{x - 2} + \\frac{C}{(x - 2)^2}. \\]\\\\To find \\( A, B, \\) and \\( C \\):\\\\1. Multiply through by the denominator \\( (2x + 1)(x - 2)^2 \\).\\\\2. Solve for constants:\\\\   - \\( A = 1 \\), \\( B = 4 \\), \\( C = 8 \\).\\\\Final partial fractions:\\\\\\[ \\frac{9x^2 + 4}{(2x + 1)(x - 2)^2} = \\frac{1}{2x + 1} + \\frac{4}{x - 2} + \\frac{8}{(x - 2)^2}. \\]",
                 "MarkingScheme": "B1 for correct form, B1 for each constant (A, B, C), M1 for correct substitution, A1 for final fractions."
             },
             {
                 "Part": "ii",
-                "Solution": "When \\( x \\) is small, we approximate:\\n\\[ \\frac{1}{2x + 1} \\approx 1 - 2x, \\quad \\frac{4}{x - 2} \\approx -2, \\quad \\frac{8}{(x - 2)^2} \\approx 5x^2. \\]\\nAdding these:\\n\\[ f(x) = 1 - x + 5x^2. \\]",
+                "Solution": "When \\( x \\) is small, we approximate:\\\\\\[ \\frac{1}{2x + 1} \\approx 1 - 2x, \\quad \\frac{4}{x - 2} \\approx -2, \\quad \\frac{8}{(x - 2)^2} \\approx 5x^2. \\]\\\\Adding these:\\\\\\[ f(x) = 1 - x + 5x^2. \\]",
                 "MarkingScheme": "M1 for correct approximations, A1 for combining terms, A1 for final correct answer."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Solving a Differential Equation in a Chemical Reaction",
@@ -360,12 +360,12 @@
         "Parts": [
             {
                 "Part": "(i)",
-                "Solution": "We are given \\(\\frac{dx}{dt} = k(100 - x)\\). Since \\(\\frac{dx}{dt} = 1.9\\) when \\(x = 5\\), substituting these values:\\n\\[\\n1.9 = k(100 - 5) \\implies k = 0.02.\\n\\]\\nHence, \\(\\frac{dx}{dt} = 0.02(100 - x)\\).",
+                "Solution": "We are given \\(\\frac{dx}{dt} = k(100 - x)\\). Since \\(\\frac{dx}{dt} = 1.9\\) when \\(x = 5\\), substituting these values:\\\\\\[\\\\1.9 = k(100 - 5) \\implies k = 0.02.\\\\\\]\\\\Hence, \\(\\frac{dx}{dt} = 0.02(100 - x)\\).",
                 "MarkingScheme": "B1 for stating or implying \\(\\frac{dx}{dt} = k(100 - x)\\), B1 for justifying \\(k = 0.02\\)."
             },
             {
                 "Part": "(ii)",
-                "Solution": "The equation \\(\\frac{dx}{dt} = 0.02(100 - x)\\) is separable:\\n\\[\\n\\frac{1}{100 - x} dx = 0.02 dt.\\n\\]\\nIntegrate both sides:\\n\\[\\n-\\ln(100 - x) = 0.02t + C.\\n\\]\\nAt \\(t = 0, x = 5\\):\\n\\[\\n-\\ln(100 - 5) = C \\implies C = -\\ln(95).\\n\\]\\nThus,\\n\\[\\n-\\ln(100 - x) = 0.02t - \\ln(95).\\n\\]\\nRearranging gives:\\n\\[\\n\\ln\\left(\\frac{100 - x}{95}\\right) = -0.02t.\\n\\]\\nExponentiate:\\n\\[\\n\\frac{100 - x}{95} = e^{-0.02t} \\implies x = 100 - 95e^{-0.02t}.\\n\\]",
+                "Solution": "The equation \\(\\frac{dx}{dt} = 0.02(100 - x)\\) is separable:\\\\\\[\\\\\\frac{1}{100 - x} dx = 0.02 dt.\\\\\\]\\\\Integrate both sides:\\\\\\[\\\\-\\ln(100 - x) = 0.02t + C.\\\\\\]\\\\At \\(t = 0, x = 5\\):\\\\\\[\\\\-\\ln(100 - 5) = C \\implies C = -\\ln(95).\\\\\\]\\\\Thus,\\\\\\[\\\\-\\ln(100 - x) = 0.02t - \\ln(95).\\\\\\]\\\\Rearranging gives:\\\\\\[\\\\\\ln\\left(\\frac{100 - x}{95}\\right) = -0.02t.\\\\\\]\\\\Exponentiate:\\\\\\[\\\\\\frac{100 - x}{95} = e^{-0.02t} \\implies x = 100 - 95e^{-0.02t}.\\\\\\]",
                 "MarkingScheme": "M1 for separating variables, A1 for integrating correctly, A1 for applying limits to find \\(C\\), and A1 for correct rearrangement of \\(x\\) in terms of \\(t\\)."
             },
             {
@@ -375,7 +375,7 @@
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Stationary Point, Iterative Formula, and Convergence",
@@ -426,22 +426,22 @@
         "Parts": [
             {
                 "Part": "(i)",
-                "Solution": "Differentiate \\( y = \\ln x + \\frac{2}{x} \\):\\n\\[ \\frac{dy}{dx} = \\frac{1}{x} - \\frac{2}{x^2}. \\]\\nEquating \\( \\frac{dy}{dx} = 0 \\):\\n\\[ \\frac{1}{x} - \\frac{2}{x^2} = 0. \\]\\nSolve for \\( x \\):\\n\\[ x = 2. \\]\\nSubstitute into \\( y \\):\\n\\[ y = \\ln 2 + \\frac{2}{2} = \\ln 2 + 1. \\]\\nStationary point: \\( (2, \\ln 2 + 1) \\).\\nDifferentiate again to confirm minimum:\\n\\[ \\frac{d^2y}{dx^2} = -\\frac{2}{x^3}. \\]\\nAt \\( x = 2 \\), \\( \\frac{d^2y}{dx^2} < 0 \\), so it is a minimum point.",
+                "Solution": "Differentiate \\( y = \\ln x + \\frac{2}{x} \\):\\\\\\[ \\frac{dy}{dx} = \\frac{1}{x} - \\frac{2}{x^2}. \\]\\\\Equating \\( \\frac{dy}{dx} = 0 \\):\\\\\\[ \\frac{1}{x} - \\frac{2}{x^2} = 0. \\]\\\\Solve for \\( x \\):\\\\\\[ x = 2. \\]\\\\Substitute into \\( y \\):\\\\\\[ y = \\ln 2 + \\frac{2}{2} = \\ln 2 + 1. \\]\\\\Stationary point: \\( (2, \\ln 2 + 1) \\).\\\\Differentiate again to confirm minimum:\\\\\\[ \\frac{d^2y}{dx^2} = -\\frac{2}{x^3}. \\]\\\\At \\( x = 2 \\), \\( \\frac{d^2y}{dx^2} < 0 \\), so it is a minimum point.",
                 "MarkingScheme": "B1 for correct derivative, M1 for equating derivative to zero, A1 for solving for x, A1 for coordinates, A1 for determining minimum."
             },
             {
                 "Part": "(ii)",
-                "Solution": "Given \\( x_{n+1} = \\frac{2}{3 - \\ln x_n}, \\) at convergence, \\( x_n = x_{n+1} = \\alpha \\):\\n\\[ \\alpha = \\frac{2}{3 - \\ln \\alpha}. \\]\\nRearrange to find:\\n\\[ 3 = \\ln \\alpha + \\frac{2}{\\alpha}. \\]\\nThis matches the original curve equation \\( y = 3 \\), so \\( \\alpha \\) satisfies the condition where \\( y = 3 \\).",
+                "Solution": "Given \\( x_{n+1} = \\frac{2}{3 - \\ln x_n}, \\) at convergence, \\( x_n = x_{n+1} = \\alpha \\):\\\\\\[ \\alpha = \\frac{2}{3 - \\ln \\alpha}. \\]\\\\Rearrange to find:\\\\\\[ 3 = \\ln \\alpha + \\frac{2}{\\alpha}. \\]\\\\This matches the original curve equation \\( y = 3 \\), so \\( \\alpha \\) satisfies the condition where \\( y = 3 \\).",
                 "MarkingScheme": "B1 for stating equation, B1 for showing connection to curve equation."
             },
             {
                 "Part": "(iii)",
-                "Solution": "Using \\( x_1 = 1 \\):\\n\\[ x_2 = \\frac{2}{3 - \\ln 1} = \\frac{2}{3}. \\]\\nContinue iterations:\\n\\[ x_3 = \\frac{2}{3 - \\ln(0.666)} = 0.565. \\]\\n\\[ x_4 = \\frac{2}{3 - \\ln(0.565)} = 0.560. \\]\\n\\( \\alpha \\) converges to \\( 0.56 \\) correct to 2 decimal places.",
+                "Solution": "Using \\( x_1 = 1 \\):\\\\\\[ x_2 = \\frac{2}{3 - \\ln 1} = \\frac{2}{3}. \\]\\\\Continue iterations:\\\\\\[ x_3 = \\frac{2}{3 - \\ln(0.666)} = 0.565. \\]\\\\\\[ x_4 = \\frac{2}{3 - \\ln(0.565)} = 0.560. \\]\\\\\\( \\alpha \\) converges to \\( 0.56 \\) correct to 2 decimal places.",
                 "MarkingScheme": "M1 for applying formula, A1 for final value 0.56, A1 for justifying accuracy to 2 d.p."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Intersection of Two Planes",
@@ -470,7 +470,7 @@
         ]
     },
     "QuestionContent": {
-        "Text": "Two planes have equations \\(x + 2y - 2z = 2\\) and \\(2x - 3y + 6z = 3\\). The planes intersect in the straight line \\(l\\).\\n\\n**(i)** Calculate the acute angle between the two planes.  \\n**(ii)** Find a vector equation for the line \\(l\\).",
+        "Text": "Two planes have equations \\(x + 2y - 2z = 2\\) and \\(2x - 3y + 6z = 3\\). The planes intersect in the straight line \\(l\\).\\\\\\\\**(i)** Calculate the acute angle between the two planes.  \\\\**(ii)** Find a vector equation for the line \\(l\\).",
         "Parts": [
             {
                 "Part": "i",
@@ -486,17 +486,17 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "The angle between the planes is determined using the dot product of their normal vectors. The normal vectors for the planes are:\\n\\[ \\mathbf{n_1} = \\begin{pmatrix} 1 \\\\ 2 \\\\ -2 \\end{pmatrix}, \\quad \\mathbf{n_2} = \\begin{pmatrix} 2 \\\\ -3 \\\\ 6 \\end{pmatrix}. \\]\\n\\nThe formula for the cosine of the angle \\( \\theta \\) is:\\n\\[ \\cos \\theta = \\frac{\\mathbf{n_1} \\cdot \\mathbf{n_2}}{|\\mathbf{n_1}| |\\mathbf{n_2}|}. \\]\\n\\nCalculating step by step:\\n\\[ \\mathbf{n_1} \\cdot \\mathbf{n_2} = 1(2) + 2(-3) + (-2)(6) = 2 - 6 - 12 = -16. \\]\\n\\nThe magnitudes are:\\n\\[ |\\mathbf{n_1}| = \\sqrt{1^2 + 2^2 + (-2)^2} = \\sqrt{9} = 3, \\quad |\\mathbf{n_2}| = \\sqrt{2^2 + (-3)^2 + 6^2} = \\sqrt{49} = 7. \\]\\n\\nThus:\\n\\[ \\cos \\theta = \\frac{-16}{3 \\times 7} = \\frac{-16}{21}. \\]\\n\\nThe acute angle \\( \\theta \\) is:\\n\\[ \\theta = \\cos^{-1} \\left( \\frac{16}{21} \\right) \\approx 40.4^\\circ. \\]",
+                "Solution": "The angle between the planes is determined using the dot product of their normal vectors. The normal vectors for the planes are:\\\\\\[ \\mathbf{n_1} = \\begin{pmatrix} 1 \\\\ 2 \\\\ -2 \\end{pmatrix}, \\quad \\mathbf{n_2} = \\begin{pmatrix} 2 \\\\ -3 \\\\ 6 \\end{pmatrix}. \\]\\\\\\\\The formula for the cosine of the angle \\( \\theta \\) is:\\\\\\[ \\cos \\theta = \\frac{\\mathbf{n_1} \\cdot \\mathbf{n_2}}{|\\mathbf{n_1}| |\\mathbf{n_2}|}. \\]\\\\\\\\Calculating step by step:\\\\\\[ \\mathbf{n_1} \\cdot \\mathbf{n_2} = 1(2) + 2(-3) + (-2)(6) = 2 - 6 - 12 = -16. \\]\\\\\\\\The magnitudes are:\\\\\\[ |\\mathbf{n_1}| = \\sqrt{1^2 + 2^2 + (-2)^2} = \\sqrt{9} = 3, \\quad |\\mathbf{n_2}| = \\sqrt{2^2 + (-3)^2 + 6^2} = \\sqrt{49} = 7. \\]\\\\\\\\Thus:\\\\\\[ \\cos \\theta = \\frac{-16}{3 \\times 7} = \\frac{-16}{21}. \\]\\\\\\\\The acute angle \\( \\theta \\) is:\\\\\\[ \\theta = \\cos^{-1} \\left( \\frac{16}{21} \\right) \\approx 40.4^\\circ. \\]",
                 "MarkingScheme": "B1 for normal vectors, M1 for dot product, M1 for modulus and formula use, A1 for final angle."
             },
             {
                 "Part": "ii",
-                "Solution": "To find the vector equation of the line \\(l\\), we identify the direction vector as the cross product of the two normal vectors \\(\\mathbf{n_1}\\) and \\(\\mathbf{n_2}\\):\\n\\[ \\mathbf{d} = \\mathbf{n_1} \\times \\mathbf{n_2}. \\]\\n\\nThe cross product is:\\n\\[\\n\\mathbf{d} = \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ 1 & 2 & -2 \\\\ 2 & -3 & 6 \\end{vmatrix} = \\mathbf{i}(2 \\cdot 6 - (-2)(-3)) - \\mathbf{j}(1 \\cdot 6 - (-2)(2)) + \\mathbf{k}(1(-3) - 2(2)).\\n\\]\\n\\nSimplifying:\\n\\[\\n\\mathbf{d} = \\mathbf{i}(12 - 6) - \\mathbf{j}(6 + 4) + \\mathbf{k}(-3 - 4) = 6\\mathbf{i} - 10\\mathbf{j} - 7\\mathbf{k}.\\n\\]\\n\\nNext, find a point on the line by solving the simultaneous equations:\\n\\[ x + 2y - 2z = 2, \\quad 2x - 3y + 6z = 3. \\]\\n\\nChoosing \\(z = 0\\), we solve:\\n\\[ x + 2y = 2, \\quad 2x - 3y = 3. \\]\\n\\nFrom this, \\(x = 0\\) and \\(y = 1\\). The point \\((0, 1, 0)\\) lies on the line.\\n\\nThus, the vector equation for \\(l\\) is:\\n\\[ \\mathbf{r} = \\begin{pmatrix} 0 \\\\ 1 \\\\ 0 \\end{pmatrix} + \\lambda \\begin{pmatrix} 6 \\\\ -10 \\\\ -7 \\end{pmatrix}. \\]",
+                "Solution": "To find the vector equation of the line \\(l\\), we identify the direction vector as the cross product of the two normal vectors \\(\\mathbf{n_1}\\) and \\(\\mathbf{n_2}\\):\\\\\\[ \\mathbf{d} = \\mathbf{n_1} \\times \\mathbf{n_2}. \\]\\\\\\\\The cross product is:\\\\\\[\\\\\\mathbf{d} = \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\ 1 & 2 & -2 \\\\ 2 & -3 & 6 \\end{vmatrix} = \\mathbf{i}(2 \\cdot 6 - (-2)(-3)) - \\mathbf{j}(1 \\cdot 6 - (-2)(2)) + \\mathbf{k}(1(-3) - 2(2)).\\\\\\]\\\\\\\\Simplifying:\\\\\\[\\\\\\mathbf{d} = \\mathbf{i}(12 - 6) - \\mathbf{j}(6 + 4) + \\mathbf{k}(-3 - 4) = 6\\mathbf{i} - 10\\mathbf{j} - 7\\mathbf{k}.\\\\\\]\\\\\\\\\\ext, find a point on the line by solving the simultaneous equations:\\\\\\[ x + 2y - 2z = 2, \\quad 2x - 3y + 6z = 3. \\]\\\\\\\\Choosing \\(z = 0\\), we solve:\\\\\\[ x + 2y = 2, \\quad 2x - 3y = 3. \\]\\\\\\\\From this, \\(x = 0\\) and \\(y = 1\\). The point \\((0, 1, 0)\\) lies on the line.\\\\\\\\Thus, the vector equation for \\(l\\) is:\\\\\\[ \\mathbf{r} = \\begin{pmatrix} 0 \\\\ 1 \\\\ 0 \\end{pmatrix} + \\lambda \\begin{pmatrix} 6 \\\\ -10 \\\\ -7 \\end{pmatrix}. \\]",
                 "MarkingScheme": "M1 for correct strategy, A1 for solving simultaneous equations, A1 for direction vector, A1 for final vector equation."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Integration and Trigonometric Identities",
@@ -547,19 +547,20 @@
         "Parts": [
             {
                 "Part": "(i)",
-                "Solution": "Using the double angle formulas:\\n\\[ \\cot 2x = \\frac{\\cos 2x}{\\sin 2x}, \\quad \\sin 2x = 2 \\sin x \\cos x. \\]\\n\\nSubstitute into \\( \\cot x - \\cot 2x \\):\\n\\[ \\cot x - \\cot 2x = \\frac{\\cos x}{\\sin x} - \\frac{\\cos 2x}{\\sin 2x}. \\]\\nUsing \\( \\cos 2x = 2 \\cos^2 x - 1 \\) and simplifying, we show:\\n\\[ \\cot x - \\cot 2x \\equiv \\csc 2x. \\]",
+                "Solution": "Using the double angle formulas:\\\\\\[ \\cot 2x = \\frac{\\cos 2x}{\\sin 2x}, \\quad \\sin 2x = 2 \\sin x \\cos x. \\]\\\\\\\\Substitute into \\( \\cot x - \\cot 2x \\):\\\\\\[ \\cot x - \\cot 2x = \\frac{\\cos x}{\\sin x} - \\frac{\\cos 2x}{\\sin 2x}. \\]\\\\Using \\( \\cos 2x = 2 \\cos^2 x - 1 \\) and simplifying, we show:\\\\\\[ \\cot x - \\cot 2x \\equiv \\csc 2x. \\]",
                 "MarkingScheme": "M1 for correct formula substitution, M1 for simplification, A1 for correct proof."
             },
             {
                 "Part": "(ii)",
-                "Solution": "The indefinite integral of \\( \\cot x \\) is:\\n\\[ \\int \\cot x \\, dx = \\ln |\\sin x| + C. \\]\\nEvaluate limits \\( x = \\frac{\\pi}{6} \\) and \\( x = \\frac{\\pi}{4} \\):\\n\\[ \\int_{\\frac{\\pi}{6}}^{\\frac{\\pi}{4}} \\cot x \\, dx = \\ln \\sin \\frac{\\pi}{4} - \\ln \\sin \\frac{\\pi}{6}. \\]\\nSimplify:\\n\\[ \\ln \\frac{\\sqrt{2}}{2} - \\ln \\frac{1}{2} = \\frac{1}{2} \\ln 2. \\]",
+                "Solution": "The indefinite integral of \\( \\cot x \\) is:\\\\\\[ \\int \\cot x \\, dx = \\ln |\\sin x| + C. \\]\\\\Evaluate limits \\( x = \\frac{\\pi}{6} \\) and \\( x = \\frac{\\pi}{4} \\):\\\\\\[ \\int_{\\frac{\\pi}{6}}^{\\frac{\\pi}{4}} \\cot x \\, dx = \\ln \\sin \\frac{\\pi}{4} - \\ln \\sin \\frac{\\pi}{6}. \\]\\\\Simplify:\\\\\\[ \\ln \\frac{\\sqrt{2}}{2} - \\ln \\frac{1}{2} = \\frac{1}{2} \\ln 2. \\]",
                 "MarkingScheme": "B1 for integral, M1 for limits substitution, A1 for correct exact answer."
             },
             {
                 "Part": "(iii)",
-                "Solution": "The indefinite integral of \\( \\csc 2x \\) is:\\n\\[ \\int \\csc 2x \\, dx = \\frac{1}{2} \\ln |\\tan x| + C. \\]\\nEvaluate limits \\( x = \\frac{\\pi}{6} \\) and \\( x = \\frac{\\pi}{4} \\):\\n\\[ \\int_{\\frac{\\pi}{6}}^{\\frac{\\pi}{4}} \\csc 2x \\, dx = \\frac{1}{4} \\ln 3. \\]\\nThe result is:\\n\\[ a = \\frac{1}{4}, \\; b = 3. \\]",
+                "Solution": "The indefinite integral of \\( \\csc 2x \\) is:\\\\\\[ \\int \\csc 2x \\, dx = \\frac{1}{2} \\ln |\\tan x| + C. \\]\\\\Evaluate limits \\( x = \\frac{\\pi}{6} \\) and \\( x = \\frac{\\pi}{4} \\):\\\\\\[ \\int_{\\frac{\\pi}{6}}^{\\frac{\\pi}{4}} \\csc 2x \\, dx = \\frac{1}{4} \\ln 3. \\]\\\\The result is:\\\\\\[ a = \\frac{1}{4}, \\; b = 3. \\]",
                 "MarkingScheme": "M1 for correct integral form, M1 for substitution, A1 for exact answer in form \\( a \\ln b \\)."
             }
         ]
     }
 }
+]

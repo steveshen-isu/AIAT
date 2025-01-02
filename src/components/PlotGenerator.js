@@ -26,7 +26,7 @@ function PlotGenerator() {
         setButtonDisabled(true)
         // Send the user's math function request to the backend
         try {
-            const res = await fetch('http://' + ipAddress + ':200/api/generate-plot', {
+            const res = await fetch('/api/generate-plot', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ function PlotGenerator() {
             }
             const data = await res.json();
             setPlotCode(data.plotCode);  // Generated code from OpenAI
-            setPlotUrl(data.plotUrl);
+            setPlotUrl(data.plotBase64);
         } catch (error) {
             console.error('API Error:', error);
             setErrorMessage('An unexpected error occurred. Please try again.');
@@ -90,7 +90,7 @@ function PlotGenerator() {
         setD3ButtonDisabled(true)
         try {
             // Send request to backend with function name
-            const res = await fetch('http://' + ipAddress + ':200/api/generate-d3plot', {
+            const res = await fetch('/api/generate-d3plot', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -220,7 +220,7 @@ function PlotGenerator() {
                     {/* Show Plot Image */}
                     {plotUrl && (
                         <img
-                            src={`${plotUrl}?rand=${Math.random()}`}
+                            src={plotUrl}
                             alt="Generated plot"
                             className="object-contain w-full h-full rounded-lg"
                         />

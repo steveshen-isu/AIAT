@@ -59,13 +59,13 @@ function Home() {
 
                 </div>
             </div>
-            <div className="flex flex-wrap justify-center gap-4 w-full text-center h-64">
-
+            <div className="relative flex flex-grow justify-center gap-4 w-full text-center h-64">
+ 
 
                 <Link
                     to="/topic-selector"
                     variant="default"
-                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
+                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 h-64 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 transition-transform duration-300 group hover:scale-105"
                 >
                     <FaBook
                         className="absolute text-red-500 text-[6rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -90,7 +90,7 @@ function Home() {
                 <Link
                     to="plot-generator"
                     variant="default"
-                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
+                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 h-64 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 transition-transform duration-300 group hover:scale-105"
                 >
                     <FaChartLine
                         className="absolute text-red-500 text-[6rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -115,7 +115,7 @@ function Home() {
                 <Link
                     to="chatbox"
                     variant="default"
-                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
+                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 h-64 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 transition-transform duration-300 group hover:scale-105"
                 >
                     <FaComments
                         className="absolute text-red-500 text-[6rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -140,7 +140,7 @@ function Home() {
                 <Link
                     to="calculator"
                     variant="default"
-                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
+                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 h-64 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 transition-transform duration-300 group hover:scale-105"
                 >
                     <FaCalculator
                         className="text-red-500 text-[4rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -188,7 +188,7 @@ function Home() {
                 <Link
                     to="question-search"
                     variant="default"
-                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 transition-transform duration-300 group hover:scale-105"
+                    className="relative flex flex-col items-center justify-center bg-white p-4 shadow-md rounded-lg w-64 h-64 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 transition-transform duration-300 group hover:scale-105"
                 >
                     <FaSearch
                         className="absolute text-red-500 text-[6rem] transition-transform duration-300 group-hover:scale-110 opacity-100 group-hover:opacity-30"
@@ -211,7 +211,7 @@ function Home() {
                 </Link>
 
             </div>
-            
+            <div></div>
                 <footer class="bg-gray-800 text-white py-8">
                     <div class="container mx-auto px-4">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

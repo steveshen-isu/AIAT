@@ -33,3 +33,4 @@ db/papers
 trojan-1.16.0-win
 package-lock.json
 src/backend/package-lock.json
+src/backend/plot.png

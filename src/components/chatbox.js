@@ -35,7 +35,7 @@ function ChatBox() {
         image: pastedImage,
       };
 
-      const response = await fetch('http://' + ipAddress + ':200/api/chat', {
+      const response = await fetch('/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

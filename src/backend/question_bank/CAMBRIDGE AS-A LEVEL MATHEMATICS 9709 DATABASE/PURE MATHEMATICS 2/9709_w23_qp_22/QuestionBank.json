@@ -1,5 +1,4 @@
-{
-    "Questions": [
+[
 {
     "Metadata": {
         "QuestionTitle": "Polynomial Division and Remainder Theorem",
@@ -28,13 +27,13 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "When the polynomial\\n\\( ax^3 + 4ax^2 - 7x - 5 \\)\\n is divided by \\( (x + 2) \\), the remainder is 33.\\n\\nFind the value of the constant \\( a \\)."
+        "Text": "When the polynomial\\\\\\( ax^3 + 4ax^2 - 7x - 5 \\)\\\\ is divided by \\( (x + 2) \\), the remainder is 33.\\\\\\\\Find the value of the constant \\( a \\)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "We apply the Remainder Theorem. When dividing a polynomial by \\( (x + 2) \\), the remainder is the value of the polynomial when \\( x = -2 \\).\\n\\nSubstituting \\( x = -2 \\) into the polynomial \\( ax^3 + 4ax^2 - 7x - 5 \\), we get:\\n\\n\\( a(-2)^3 + 4a(-2)^2 - 7(-2) - 5 = 33.\\)\\n\\nSimplifying:\\n\\n\\( -8a + 16a + 14 - 5 = 33,\\)\\n\\( 8a + 9 = 33,\\)\\n\\( 8a = 24,\\)\\n\\( a = 3.\\)",
+                "Solution": "We apply the Remainder Theorem. When dividing a polynomial by \\( (x + 2) \\), the remainder is the value of the polynomial when \\( x = -2 \\).\\\\\\\\Substituting \\( x = -2 \\) into the polynomial \\( ax^3 + 4ax^2 - 7x - 5 \\), we get:\\\\\\\\\\( a(-2)^3 + 4a(-2)^2 - 7(-2) - 5 = 33.\\)\\\\\\\\Simplifying:\\\\\\\\\\( -8a + 16a + 14 - 5 = 33,\\)\\\\\\( 8a + 9 = 33,\\)\\\\\\( 8a = 24,\\)\\\\\\( a = 3.\\)",
                 "MarkingScheme": "M1 for substituting \\( x = -2 \\) into the polynomial, A1 for obtaining \\( a = 3 \\)."
             }
         ]
@@ -74,7 +73,7 @@
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "We start by expressing \\( \\sec \\theta \\) as \\( \\frac{1}{\\cos \\theta} \\), so the equation becomes:\\n\\n\\( \\frac{1}{\\cos \\theta} \\cos(\\theta - 60^\\circ) = 4.\\)\\n\\nNow, use the cosine angle subtraction identity, \\( \\cos(\\theta - 60^\\circ) = \\cos \\theta \\cos 60^\\circ + \\sin \\theta \\sin 60^\\circ \\), where \\( \\cos 60^\\circ = \\frac{1}{2} \\) and \\( \\sin 60^\\circ = \\frac{\\sqrt{3}}{2} \\).\\n\\nSubstituting this gives:\\n\\n\\( \\frac{1}{\\cos \\theta} \\left( \\cos \\theta \\cdot \\frac{1}{2} + \\sin \\theta \\cdot \\frac{\\sqrt{3}}{2} \\right) = 4.\\)\\n\\nSimplifying:\\n\\n\\( \\frac{1}{2} + \\frac{\\sqrt{3}}{2} \\sin \\theta = 4.\\)\\n\\nRearranging:\\n\\n\\( \\frac{\\sqrt{3}}{2} \\sin \\theta = 4 - \\frac{1}{2} = \\frac{7}{2}.\\)\\n\\nNow, solving for \\( \\sin \\theta \\), we get:\\n\\n\\( \\sin \\theta = \\frac{7}{2} \\cdot \\frac{2}{\\sqrt{3}} = \\frac{7}{\\sqrt{3}}.\\)\\n\\nThus, \\( \\theta = \\sin^{-1}\\left(\\frac{7}{\\sqrt{3}}\\right) \\), and the solutions for \\( \\theta \\) in the given range are found.",
+                "Solution": "We start by expressing \\( \\sec \\theta \\) as \\( \\frac{1}{\\cos \\theta} \\), so the equation becomes:\\\\\\\\\\( \\frac{1}{\\cos \\theta} \\cos(\\theta - 60^\\circ) = 4.\\)\\\\\\\\Now, use the cosine angle subtraction identity, \\( \\cos(\\theta - 60^\\circ) = \\cos \\theta \\cos 60^\\circ + \\sin \\theta \\sin 60^\\circ \\), where \\( \\cos 60^\\circ = \\frac{1}{2} \\) and \\( \\sin 60^\\circ = \\frac{\\sqrt{3}}{2} \\).\\\\\\\\Substituting this gives:\\\\\\\\\\( \\frac{1}{\\cos \\theta} \\left( \\cos \\theta \\cdot \\frac{1}{2} + \\sin \\theta \\cdot \\frac{\\sqrt{3}}{2} \\right) = 4.\\)\\\\\\\\Simplifying:\\\\\\\\\\( \\frac{1}{2} + \\frac{\\sqrt{3}}{2} \\sin \\theta = 4.\\)\\\\\\\\Rearranging:\\\\\\\\\\( \\frac{\\sqrt{3}}{2} \\sin \\theta = 4 - \\frac{1}{2} = \\frac{7}{2}.\\)\\\\\\\\Now, solving for \\( \\sin \\theta \\), we get:\\\\\\\\\\( \\sin \\theta = \\frac{7}{2} \\cdot \\frac{2}{\\sqrt{3}} = \\frac{7}{\\sqrt{3}}.\\)\\\\\\\\Thus, \\( \\theta = \\sin^{-1}\\left(\\frac{7}{\\sqrt{3}}\\right) \\), and the solutions for \\( \\theta \\) in the given range are found.",
                 "MarkingScheme": "M1 for correctly rewriting the equation, A1 for applying the angle subtraction identity, A1 for obtaining the correct solution for \\( \\theta \\)."
             }
         ]
@@ -109,18 +108,18 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "The diagram shows the curve with equation \\( y = 6e^{-\\frac{x}{2}} \\). The points on the curve with \\( x \\)-coordinates 0 and 2 are denoted by A and B respectively. The shaded region is enclosed by the curve, the line through A parallel to the \\( x \\)-axis and the line through B parallel to the \\( y \\)-axis.\\n\\n(a) Find the exact gradient of the curve at B.\\n\\n(b) Find the exact area of the shaded region."
+        "Text": "The diagram shows the curve with equation \\( y = 6e^{-\\frac{x}{2}} \\). The points on the curve with \\( x \\)-coordinates 0 and 2 are denoted by A and B respectively. The shaded region is enclosed by the curve, the line through A parallel to the \\( x \\)-axis and the line through B parallel to the \\( y \\)-axis.\\\\\\\\(a) Find the exact gradient of the curve at B.\\\\\\\\(b) Find the exact area of the shaded region."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To find the gradient of the curve at point B, we first differentiate the curve equation \\( y = 6e^{-\\frac{x}{2}} \\).\\n\\nThe derivative is:\\n\\( y' = -3e^{-\\frac{x}{2}}.\\)\\n\\nAt point B, \\( x = 2 \\), so we substitute \\( x = 2 \\) into the derivative to find:\\n\\( y' = -3e^{-\\frac{2}{2}} = -3e^{-1} = -\\frac{3}{e}.\\)\\n\\nThus, the exact gradient of the curve at B is \\( -\\frac{3}{e} \\).",
+                "Solution": "To find the gradient of the curve at point B, we first differentiate the curve equation \\( y = 6e^{-\\frac{x}{2}} \\).\\\\\\\\The derivative is:\\\\\\( y' = -3e^{-\\frac{x}{2}}.\\)\\\\\\\\At point B, \\( x = 2 \\), so we substitute \\( x = 2 \\) into the derivative to find:\\\\\\( y' = -3e^{-\\frac{2}{2}} = -3e^{-1} = -\\frac{3}{e}.\\)\\\\\\\\Thus, the exact gradient of the curve at B is \\( -\\frac{3}{e} \\).",
                 "MarkingScheme": "M1 for differentiating correctly, A1 for finding the gradient at point B."
             },
             {
                 "Part": "b",
-                "Solution": "To find the exact area of the shaded region, we integrate the curve from \\( x = 0 \\) to \\( x = 2 \\).\\n\\nThe area is given by the integral:\\n\\( A = \\int_{0}^{2} 6e^{-\\frac{x}{2}} dx.\\)\\n\\nWe integrate:\\n\\( A = 6 \\times (-2e^{-\\frac{x}{2}})\\)\\n\\( = -12e^{-\\frac{x}{2}}\\).\\n\\nEvaluating this from 0 to 2, we get:\\n\\( A = -12e^{-1} + 12e^{0} = 12(1 - e^{-1}).\\)\\n\\nThus, the exact area of the shaded region is \\( 12(1 - e^{-1}) \\).",
+                "Solution": "To find the exact area of the shaded region, we integrate the curve from \\( x = 0 \\) to \\( x = 2 \\).\\\\\\\\The area is given by the integral:\\\\\\( A = \\int_{0}^{2} 6e^{-\\frac{x}{2}} dx.\\)\\\\\\\\We integrate:\\\\\\( A = 6 \\times (-2e^{-\\frac{x}{2}})\\)\\\\\\( = -12e^{-\\frac{x}{2}}\\).\\\\\\\\Evaluating this from 0 to 2, we get:\\\\\\( A = -12e^{-1} + 12e^{0} = 12(1 - e^{-1}).\\)\\\\\\\\Thus, the exact area of the shaded region is \\( 12(1 - e^{-1}) \\).",
                 "MarkingScheme": "M1 for setting up the integral, A1 for correct integration, A1 for evaluating the definite integral."
             }
         ]
@@ -157,23 +156,23 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "(a) Sketch, on the same diagram, the graphs of \\( y = |3 - x| \\) and \\( y = 9 - 2x \\).\\n\n(b) Solve the inequality \\( |3 - x| > 9 - 2x \\).\\n\n(c) Use logarithms to solve the inequality \\( 2^{3x - 10} < 500 \\). Give your answer in the form \\( x < a \\), where the value of \\( a \\) is given correct to 3 significant figures.\\n\n(d) List the integers that satisfy both of the inequalities \\( |3 - x| > 9 - 2x \\) and \\( 2^{3x - 10} < 500 \\)."
+        "Text": "(a) Sketch, on the same diagram, the graphs of \\( y = |3 - x| \\) and \\( y = 9 - 2x \\).\\\\\n(b) Solve the inequality \\( |3 - x| > 9 - 2x \\).\\\\\n(c) Use logarithms to solve the inequality \\( 2^{3x - 10} < 500 \\). Give your answer in the form \\( x < a \\), where the value of \\( a \\) is given correct to 3 significant figures.\\\\\n(d) List the integers that satisfy both of the inequalities \\( |3 - x| > 9 - 2x \\) and \\( 2^{3x - 10} < 500 \\)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To sketch the graphs, the graph of \\( y = |3 - x| \\) is a V-shaped curve with a vertex at \\( (3, 0) \\). The graph of \\( y = 9 - 2x \\) is a straight line with a slope of -2 and y-intercept of 9.\\n\\nPlot both graphs on the same axes, ensuring that they are positioned correctly.",
+                "Solution": "To sketch the graphs, the graph of \\( y = |3 - x| \\) is a V-shaped curve with a vertex at \\( (3, 0) \\). The graph of \\( y = 9 - 2x \\) is a straight line with a slope of -2 and y-intercept of 9.\\\\\\\\Plot both graphs on the same axes, ensuring that they are positioned correctly.",
                 "MarkingScheme": "B1 for sketching the correct graph of \\( y = |3 - x| \\), B1 for sketching the correct graph of \\( y = 9 - 2x \\), both positioned correctly."
             },
             {
                 "Part": "b",
-                "Solution": "To solve the inequality \\( |3 - x| > 9 - 2x \\), we split it into two cases: \\( 3 - x > 9 - 2x \\) and \\( 3 - x < -(9 - 2x) \\).\\n\\nSolving each case separately:\\n\\nCase 1: \\( 3 - x > 9 - 2x \\) leads to \\( x < -6 \\).\\n\\nCase 2: \\( 3 - x < -(9 - 2x) \\) leads to \\( x > 12 \\).\\n\\nThus, the solution to the inequality is \\( x < -6 \\) or \\( x > 12 \\).",
+                "Solution": "To solve the inequality \\( |3 - x| > 9 - 2x \\), we split it into two cases: \\( 3 - x > 9 - 2x \\) and \\( 3 - x < -(9 - 2x) \\).\\\\\\\\Solving each case separately:\\\\\\\\Case 1: \\( 3 - x > 9 - 2x \\) leads to \\( x < -6 \\).\\\\\\\\Case 2: \\( 3 - x < -(9 - 2x) \\) leads to \\( x > 12 \\).\\\\\\\\Thus, the solution to the inequality is \\( x < -6 \\) or \\( x > 12 \\).",
                 "MarkingScheme": "M1 for splitting the inequality into two cases, A1 for solving each case correctly."
             },
             {
                 "Part": "c",
-                "Solution": "To solve \\( 2^{3x - 10} < 500 \\), take the logarithm of both sides: \\( (3x - 10) \\log 2 < \\log 500 \\).\\n\\nThis simplifies to \\( 3x - 10 < \\frac{\\log 500}{\\log 2} \\), and solving for \\( x \\), we obtain \\( x < 6.32 \\).",
+                "Solution": "To solve \\( 2^{3x - 10} < 500 \\), take the logarithm of both sides: \\( (3x - 10) \\log 2 < \\log 500 \\).\\\\\\\\This simplifies to \\( 3x - 10 < \\frac{\\log 500}{\\log 2} \\), and solving for \\( x \\), we obtain \\( x < 6.32 \\).",
                 "MarkingScheme": "M1 for applying logarithms correctly, A1 for obtaining the solution \\( x < 6.32 \\)."
             },
             {
@@ -213,18 +212,18 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "(a) Find the quotient when \\(6x^3 - 5x^2 - 24x - 4\\) is divided by \\((2x + 1)\\), and show that the remainder is 6.\\\\\\n\\n(b) Hence find \\n\\[\n\\int_2^7 \\frac{6x^3 - 5x^2 - 24x - 4}{2x + 1} \\ dx, \\n\\]\ngiving your answer in the form \\(a + b \\ln c\\), where \\(a\\), \\(b\\), and \\(c\\) are integers."
+        "Text": "(a) Find the quotient when \\(6x^3 - 5x^2 - 24x - 4\\) is divided by \\((2x + 1)\\), and show that the remainder is 6.\\\\\\\\\\\\(b) Hence find \\\\\\[\n\\int_2^7 \\frac{6x^3 - 5x^2 - 24x - 4}{2x + 1} \\ dx, \\\\\\]\ngiving your answer in the form \\(a + b \\ln c\\), where \\(a\\), \\(b\\), and \\(c\\) are integers."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Using polynomial long division:\\n\\[6x^3 - 5x^2 - 24x - 4 \\div (2x + 1) = 3x^2 - 4x - 10,\\]\\nwith a remainder of 6.\\\\\\nVerification:\\n\\[6x^3 - 5x^2 - 24x - 4 = (2x + 1)(3x^2 - 4x - 10) + 6.\\]\\nThis confirms the quotient \\(3x^2 - 4x - 10\\) and remainder \\(6\\).",
+                "Solution": "Using polynomial long division:\\\\\\[6x^3 - 5x^2 - 24x - 4 \\div (2x + 1) = 3x^2 - 4x - 10,\\]\\\\with a remainder of 6.\\\\\\\\Verification:\\\\\\[6x^3 - 5x^2 - 24x - 4 = (2x + 1)(3x^2 - 4x - 10) + 6.\\]\\\\This confirms the quotient \\(3x^2 - 4x - 10\\) and remainder \\(6\\).",
                 "MarkingScheme": "M1 for correct setup of polynomial division, A1 for correct quotient, A1 for confirming the remainder is 6."
             },
             {
                 "Part": "b",
-                "Solution": "Rewriting the integral:\\n\\[\\int_2^7 \\frac{6x^3 - 5x^2 - 24x - 4}{2x + 1} \\ dx = \\int_2^7 \\left(3x^2 - 4x - 10 + \\frac{6}{2x + 1}\\right) dx.\\]\\nSplit into separate integrals:\\n\\[\\int_2^7 3x^2 dx - \\int_2^7 4x dx - \\int_2^7 10 dx + \\int_2^7 \\frac{6}{2x + 1} dx.\\]\\nEvaluate each term:\\n\\[\\n\\int_2^7 3x^2 dx = \\left[x^3\\right]_2^7 = 343 - 8 = 335,\\\\\\n\\int_2^7 4x dx = \\left[2x^2\\right]_2^7 = 98 - 8 = 90,\\\\\\n\\int_2^7 10 dx = \\left[10x\\right]_2^7 = 70 - 20 = 50,\\\\\\n\\int_2^7 \\frac{6}{2x + 1} dx = 3 \\ln|2x + 1| \\big|_2^7 = 3 \\ln 15 - 3 \\ln 5 = 3 \\ln 3.\\n\\]\\nCombine results:\\n\\[335 - 90 - 50 + 3 \\ln 3 = 195 + 3 \\ln 3.\\]\\nThus, the answer is \\(195 + 3 \\ln 3\\), where \\(a = 195, b = 3, c = 3\\).",
+                "Solution": "Rewriting the integral:\\\\\\[\\int_2^7 \\frac{6x^3 - 5x^2 - 24x - 4}{2x + 1} \\ dx = \\int_2^7 \\left(3x^2 - 4x - 10 + \\frac{6}{2x + 1}\\right) dx.\\]\\\\Split into separate integrals:\\\\\\[\\int_2^7 3x^2 dx - \\int_2^7 4x dx - \\int_2^7 10 dx + \\int_2^7 \\frac{6}{2x + 1} dx.\\]\\\\Evaluate each term:\\\\\\[\\\\\\int_2^7 3x^2 dx = \\left[x^3\\right]_2^7 = 343 - 8 = 335,\\\\\\\\\\int_2^7 4x dx = \\left[2x^2\\right]_2^7 = 98 - 8 = 90,\\\\\\\\\\int_2^7 10 dx = \\left[10x\\right]_2^7 = 70 - 20 = 50,\\\\\\\\\\int_2^7 \\frac{6}{2x + 1} dx = 3 \\ln|2x + 1| \\big|_2^7 = 3 \\ln 15 - 3 \\ln 5 = 3 \\ln 3.\\\\\\]\\\\Combine results:\\\\\\[335 - 90 - 50 + 3 \\ln 3 = 195 + 3 \\ln 3.\\]\\\\Thus, the answer is \\(195 + 3 \\ln 3\\), where \\(a = 195, b = 3, c = 3\\).",
                 "MarkingScheme": "M1 for splitting the integral into separate terms, A1 for correct evaluation of each integral, DM1 for correct use of logarithmic properties, A1 for final answer in correct form."
             }
         ]
@@ -261,23 +260,23 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "(a) The diagram shows the curve with parametric equations\\n\\(x = 3 \\ln(2t - 3), \\quad y = 4t \\ln t.\\)\\n\\nThe curve crosses the \\(y\\)-axis at the point \\(A\\). At the point \\(B\\), the gradient of the curve is 12.\\n\\n\\(a\\) Find the exact gradient of the curve at \\(A\\). \\n\\n\\(b) Show that the value of the parameter \\(t\\) at \\(B\\) satisfies the equation\\n\\[t = \\frac{9}{1 + \\ln t} + \\frac{3}{2}.\\]\\n\\n\\n\\n\\(c) Use an iterative formula, based on the equation in (b), to find the value of \\(t\\) at \\(B\\), giving your answer correct to 3 significant figures. Use an initial value of 5 and give the result of each iteration to 5 significant figures. "
+        "Text": "(a) The diagram shows the curve with parametric equations\\\\\\(x = 3 \\ln(2t - 3), \\quad y = 4t \\ln t.\\)\\\\\\\\The curve crosses the \\(y\\)-axis at the point \\(A\\). At the point \\(B\\), the gradient of the curve is 12.\\\\\\\\\\(a\\) Find the exact gradient of the curve at \\(A\\). \\\\\\\\\\(b) Show that the value of the parameter \\(t\\) at \\(B\\) satisfies the equation\\\\\\[t = \\frac{9}{1 + \\ln t} + \\frac{3}{2}.\\]\\\\\\\\\\\\\\\\\\(c) Use an iterative formula, based on the equation in (b), to find the value of \\(t\\) at \\(B\\), giving your answer correct to 3 significant figures. Use an initial value of 5 and give the result of each iteration to 5 significant figures. "
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Differentiate \\(x = 3 \\ln(2t - 3)\\) and \\(y = 4t \\ln t\\):\\n\\[\\frac{dx}{dt} = \\frac{6}{2t - 3}, \\quad \\frac{dy}{dt} = 4 \\ln t + 4.\\]\\nThe gradient \\(\\frac{dy}{dx}\\) is:\\n\\[\\frac{dy}{dx} = \\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}} = \\frac{(4 \\ln t + 4)(2t - 3)}{6}.\\]\\nAt point \\(A\\), \\(t = 2\\):\\n\\[\\frac{dy}{dx} = \\frac{(4 \\ln 2 + 4)(2 \\cdot 2 - 3)}{6} = \\frac{(4 \\ln 2 + 4)(1)}{6} = \\frac{2 \\ln 2 + 2}{3}.\\]",
+                "Solution": "Differentiate \\(x = 3 \\ln(2t - 3)\\) and \\(y = 4t \\ln t\\):\\\\\\[\\frac{dx}{dt} = \\frac{6}{2t - 3}, \\quad \\frac{dy}{dt} = 4 \\ln t + 4.\\]\\\\The gradient \\(\\frac{dy}{dx}\\) is:\\\\\\[\\frac{dy}{dx} = \\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}} = \\frac{(4 \\ln t + 4)(2t - 3)}{6}.\\]\\\\At point \\(A\\), \\(t = 2\\):\\\\\\[\\frac{dy}{dx} = \\frac{(4 \\ln 2 + 4)(2 \\cdot 2 - 3)}{6} = \\frac{(4 \\ln 2 + 4)(1)}{6} = \\frac{2 \\ln 2 + 2}{3}.\\]",
                 "MarkingScheme": "B1 for correct differentiation, M1 for substitution of \\(t = 2\\), A1 for exact gradient."
             },
             {
                 "Part": "b",
-                "Solution": "At point \\(B\\), the gradient \\(\\frac{dy}{dx} = 12\\):\\n\\[12 = \\frac{(4 \\ln t + 4)(2t - 3)}{6}.\\]\\nRearrange to find:\\n\\[t = \\frac{9}{1 + \\ln t} + \\frac{3}{2}.\\]",
+                "Solution": "At point \\(B\\), the gradient \\(\\frac{dy}{dx} = 12\\):\\\\\\[12 = \\frac{(4 \\ln t + 4)(2t - 3)}{6}.\\]\\\\Rearrange to find:\\\\\\[t = \\frac{9}{1 + \\ln t} + \\frac{3}{2}.\\]",
                 "MarkingScheme": "M1 for equating \\(\\frac{dy}{dx}\\) to 12, A1 for rearranging to the given result."
             },
             {
                 "Part": "c",
-                "Solution": "Using the iterative formula based on \\(t = \\frac{9}{1 + \\ln t} + \\frac{3}{2}\\):\\nStart with \\(t_0 = 5\\).\\n\\[t_1 = \\frac{9}{1 + \\ln 5} + \\frac{3}{2} = 4.99571,\\]\\n\\[t_2 = \\frac{9}{1 + \\ln 4.99571} + \\frac{3}{2} = 4.96262,\\]\\n\\[t_3 = \\frac{9}{1 + \\ln 4.96262} + \\frac{3}{2} = 4.96191.\\]\\nFinal value of \\(t\\):\\n\\[t = 4.962.\\]",
+                "Solution": "Using the iterative formula based on \\(t = \\frac{9}{1 + \\ln t} + \\frac{3}{2}\\):\\\\Start with \\(t_0 = 5\\).\\\\\\[t_1 = \\frac{9}{1 + \\ln 5} + \\frac{3}{2} = 4.99571,\\]\\\\\\[t_2 = \\frac{9}{1 + \\ln 4.99571} + \\frac{3}{2} = 4.96262,\\]\\\\\\[t_3 = \\frac{9}{1 + \\ln 4.96262} + \\frac{3}{2} = 4.96191.\\]\\\\Final value of \\(t\\):\\\\\\[t = 4.962.\\]",
                 "MarkingScheme": "M1 for correct iteration process, A1 for iterations to 5 significant figures, A1 for final value correct to 3 significant figures."
             }
         ]
@@ -314,33 +313,26 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "(a) Prove that \\(\\sin 2x(\\cot x + 3 \\tan x) \\equiv 4 - 2 \\cos 2x\\).\\n\\n(b) Hence find the exact value of \\(\\cot \\frac{1}{12}\\pi + 3 \\tan \\frac{1}{12}\\pi\\).\\n\\n(c) The diagram shows the curve with equation \\(y = 4 - 2 \\cos 2x\\), for \\(0 < x < 2\\pi\\). At the point \\(A\\), the gradient of the curve is 4. The point \\(B\\) is a minimum point. The \\(x\\)-coordinates of \\(A\\) and \\(B\\) are \\(a\\) and \\(b\\), respectively.\\n\\nShow that \\[\\int_a^b \\left(4 - 2 \\cos 2x\\right) \\ dx = 3\\pi + 1.\\]"
+        "Text": "(a) Prove that \\(\\sin 2x(\\cot x + 3 \\tan x) \\equiv 4 - 2 \\cos 2x\\).\\\\\\\\(b) Hence find the exact value of \\(\\cot \\frac{1}{12}\\pi + 3 \\tan \\frac{1}{12}\\pi\\).\\\\\\\\(c) The diagram shows the curve with equation \\(y = 4 - 2 \\cos 2x\\), for \\(0 < x < 2\\pi\\). At the point \\(A\\), the gradient of the curve is 4. The point \\(B\\) is a minimum point. The \\(x\\)-coordinates of \\(A\\) and \\(B\\) are \\(a\\) and \\(b\\), respectively.\\\\\\\\Show that \\[\\int_a^b \\left(4 - 2 \\cos 2x\\right) \\ dx = 3\\pi + 1.\\]"
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To prove \\(\\sin 2x(\\cot x + 3 \\tan x) \\equiv 4 - 2 \\cos 2x\\):\\n\\nStart with \\(\\sin 2x(\\cot x + 3 \\tan x)\\):\\n\\[= \\sin 2x \\cdot \\left(\\frac{\\cos x}{\\sin x} + 3 \\cdot \\frac{\\sin x}{\\cos x}\\right)\\]\\n\\[= \\sin 2x \\cdot \\left(\\frac{\\cos^2 x + 3\\sin^2 x}{\\sin x \\cos x}\\right)\\].\\n\\nUsing \\(\\sin 2x = 2 \\sin x \\cos x\\),\\n\\[= 2 \\cdot \\frac{\\cos^2 x + 3\\sin^2 x}{\\cos x} = 2 \\cos x (\\cos x) + 6 \\sin^2 x = 2 \\cos^2 x + 6 \\sin^2 x.\\]\\n\\nUsing \\(\\cos^2 x + \\sin^2 x = 1\\):\\n\\[= 2(1 - \\sin^2 x) + 6 \\sin^2 x = 2 - 2\\sin^2 x + 6 \\sin^2 x = 2 + 4\\sin^2 x.\\]\\n\\nUsing \\(\\sin^2 x = \\frac{1 - \\cos 2x}{2}\\):\\n\\[= 2 + 4 \\cdot \\frac{1 - \\cos 2x}{2} = 2 + 2(1 - \\cos 2x) = 4 - 2\\cos 2x.\\]\\n\\nHence, \\(\\sin 2x(\\cot x + 3 \\tan x) \\equiv 4 - 2 \\cos 2x\\).",
-                "MarkingScheme": "M1 for expressing LHS in terms of \\(\\sin x\\) and \\(\\cos x\\).\\nA1 for obtaining \\(4 - 2 \\cos 2x\\) with sufficient detail.\\nA1 for clear proof."
+                "Solution": "To prove \\(\\sin 2x(\\cot x + 3 \\tan x) \\equiv 4 - 2 \\cos 2x\\):\\\\\\\\Start with \\(\\sin 2x(\\cot x + 3 \\tan x)\\):\\\\\\[= \\sin 2x \\cdot \\left(\\frac{\\cos x}{\\sin x} + 3 \\cdot \\frac{\\sin x}{\\cos x}\\right)\\]\\\\\\[= \\sin 2x \\cdot \\left(\\frac{\\cos^2 x + 3\\sin^2 x}{\\sin x \\cos x}\\right)\\].\\\\\\\\Using \\(\\sin 2x = 2 \\sin x \\cos x\\),\\\\\\[= 2 \\cdot \\frac{\\cos^2 x + 3\\sin^2 x}{\\cos x} = 2 \\cos x (\\cos x) + 6 \\sin^2 x = 2 \\cos^2 x + 6 \\sin^2 x.\\]\\\\\\\\Using \\(\\cos^2 x + \\sin^2 x = 1\\):\\\\\\[= 2(1 - \\sin^2 x) + 6 \\sin^2 x = 2 - 2\\sin^2 x + 6 \\sin^2 x = 2 + 4\\sin^2 x.\\]\\\\\\\\Using \\(\\sin^2 x = \\frac{1 - \\cos 2x}{2}\\):\\\\\\[= 2 + 4 \\cdot \\frac{1 - \\cos 2x}{2} = 2 + 2(1 - \\cos 2x) = 4 - 2\\cos 2x.\\]\\\\\\\\Hence, \\(\\sin 2x(\\cot x + 3 \\tan x) \\equiv 4 - 2 \\cos 2x\\).",
+                "MarkingScheme": "M1 for expressing LHS in terms of \\(\\sin x\\) and \\(\\cos x\\).\\\\A1 for obtaining \\(4 - 2 \\cos 2x\\) with sufficient detail.\\\\A1 for clear proof."
             },
             {
                 "Part": "b",
-                "Solution": "To find \\(\\cot \\frac{1}{12}\\pi + 3 \\tan \\frac{1}{12}\\pi\\):\\n\\nSubstitute \\(x = \\frac{1}{12}\\pi\\) into \\(4 - 2 \\cos 2x\\):\\n\\[4 - 2 \\cos \\left(2 \\cdot \\frac{1}{12}\\pi\\right) = 4 - 2 \\cos \\frac{1}{6}\\pi.\\]\\n\\[\\cos \\frac{1}{6}\\pi = \\frac{\\sqrt{3}}{2},\\]\\n\\[= 4 - 2 \\cdot \\frac{\\sqrt{3}}{2} = 4 - \\sqrt{3}.\\]\\n\\nThus, \\(\\cot \\frac{1}{12}\\pi + 3 \\tan \\frac{1}{12}\\pi = 4 - \\sqrt{3}\\).",
-                "MarkingScheme": "M1 for substituting into the proven identity.\\nA1 for obtaining exact value."
+                "Solution": "To find \\(\\cot \\frac{1}{12}\\pi + 3 \\tan \\frac{1}{12}\\pi\\):\\\\\\\\Substitute \\(x = \\frac{1}{12}\\pi\\) into \\(4 - 2 \\cos 2x\\):\\\\\\[4 - 2 \\cos \\left(2 \\cdot \\frac{1}{12}\\pi\\right) = 4 - 2 \\cos \\frac{1}{6}\\pi.\\]\\\\\\[\\cos \\frac{1}{6}\\pi = \\frac{\\sqrt{3}}{2},\\]\\\\\\[= 4 - 2 \\cdot \\frac{\\sqrt{3}}{2} = 4 - \\sqrt{3}.\\]\\\\\\\\Thus, \\(\\cot \\frac{1}{12}\\pi + 3 \\tan \\frac{1}{12}\\pi = 4 - \\sqrt{3}\\).",
+                "MarkingScheme": "M1 for substituting into the proven identity.\\\\A1 for obtaining exact value."
             },
             {
                 "Part": "c",
-                "Solution": "To show \\(\\int_a^b \\left(4 - 2 \\cos 2x\\right) \\ dx = 3\\pi + 1\\):\\n\\nDifferentiate \\(4 - 2 \\cos 2x\\):\\n\\[\\frac{dy}{dx} = 4 \\sin 2x.\\]\\nEquating \\(4\\sin 2x = 4\\),\\n\\[\\sin 2x = 1 \\implies 2x = \\frac{\\pi}{2}, \\frac{5\\pi}{2}, \\ldots.\\]\\n\\[x = \\frac{\\pi}{4}, \\frac{5\\pi}{4}.\\]\\n\\nLimits are \\(a = \\frac{\\pi}{4}, b = \\frac{5\\pi}{4}\\).\\n\\nIntegrate \\(4 - 2\\cos 2x\\):\\n\\[\\int_a^b \\left(4 - 2 \\cos 2x\\right) dx = \\int_a^b 4\\ dx - \\int_a^b 2\\cos 2x\\ dx.\\]\\n\\[= \\left[4x\\right]_a^b - \\left[\\sin 2x\\right]_a^b.\\]\\n\\[= 4\\left(\\frac{5\\pi}{4} - \\frac{\\pi}{4}\\right) - \\left(\\sin \\frac{5\\pi}{2} - \\sin \\frac{\\pi}{2}\\right).\\]\\n\\[= 4\\pi - (0 - 1) = 4\\pi + 1.\\]\\n\\nCorrecting for factor of 2 in \\(2x\\),\\n\\[= 3\\pi + 1.\\]",
-                "MarkingScheme": "M1 for setting correct limits.\\nM1 for integrating each term.\\nA1 for correct limits substitution and simplification."
+                "Solution": "To show \\(\\int_a^b \\left(4 - 2 \\cos 2x\\right) \\ dx = 3\\pi + 1\\):\\\\\\\\Differentiate \\(4 - 2 \\cos 2x\\):\\\\\\[\\frac{dy}{dx} = 4 \\sin 2x.\\]\\\\Equating \\(4\\sin 2x = 4\\),\\\\\\[\\sin 2x = 1 \\implies 2x = \\frac{\\pi}{2}, \\frac{5\\pi}{2}, \\ldots.\\]\\\\\\[x = \\frac{\\pi}{4}, \\frac{5\\pi}{4}.\\]\\\\\\\\Limits are \\(a = \\frac{\\pi}{4}, b = \\frac{5\\pi}{4}\\).\\\\\\\\Integrate \\(4 - 2\\cos 2x\\):\\\\\\[\\int_a^b \\left(4 - 2 \\cos 2x\\right) dx = \\int_a^b 4\\ dx - \\int_a^b 2\\cos 2x\\ dx.\\]\\\\\\[= \\left[4x\\right]_a^b - \\left[\\sin 2x\\right]_a^b.\\]\\\\\\[= 4\\left(\\frac{5\\pi}{4} - \\frac{\\pi}{4}\\right) - \\left(\\sin \\frac{5\\pi}{2} - \\sin \\frac{\\pi}{2}\\right).\\]\\\\\\[= 4\\pi - (0 - 1) = 4\\pi + 1.\\]\\\\\\\\Correcting for factor of 2 in \\(2x\\),\\\\\\[= 3\\pi + 1.\\]",
+                "MarkingScheme": "M1 for setting correct limits.\\\\M1 for integrating each term.\\\\A1 for correct limits substitution and simplification."
             }
         ]
     }
 }
 ]
-}
-
-
-
-
-
-

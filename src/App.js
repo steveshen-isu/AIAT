@@ -13,11 +13,11 @@ import QuestionSearch from './components/QuestionSearch';
 function App() {
   return (
     <BrowserRouter>
-              <div className="App bg-gray-50 max-h-screen flex flex-col">
-                <nav className="bg-red-900 text-white p-4 fixed top-0 left-0 right-0 z-10 shadow-md">
-                    <div className="flex justify-between items-center">
+              <div className="App bg-gray-50 max-h-screen w-full flex flex-col">
+                <nav className="bg-red-900 text-white p-4 fixed top-0 left-0 right-0 z-10 shadow-md w-full">
+                    <div className="flex flex-wrap justify-between items-center">
                         <div className="text-xl font-bold">AIAT</div>
-                        <div className="flex space-x-4">
+                        <div className="flex flex-wrap space-x-4">
                             <Link to="/topic-selector" className="bg-red-900 hover:bg-red-800 p-2 rounded">Topic Selector</Link>
                             <Link to="/plot-generator" className="bg-red-900 hover:bg-red-800 p-2 rounded">Plot Generator</Link>
                             <Link to="/chatbox" className="bg-red-900 hover:bg-red-800 p-2 rounded">Chatbox</Link>

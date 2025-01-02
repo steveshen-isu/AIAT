@@ -1,4 +1,4 @@
-{
+[{
     "Metadata": {
         "QuestionTitle": "Expansion of 1 / (2 + x)^3",
         "Source": "Cambridge International AS & A Level Mathematics: Pure Mathematics 3 Past Paper",
@@ -32,12 +32,12 @@
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Using the binomial expansion formula:\\n\\[\\n(1 + u)^n = 1 + nu + \\frac{n(n-1)}{2!}u^2 + \\cdots\\n\\]\\nHere, \\(u = \\frac{x}{2}\\) and \\(n = -3\\):\\n\\n1. First term:\\n\\[\\n\\frac{1}{(2 + x)^3} = \\frac{1}{2^3} \\left( 1 + \\frac{x}{2} \\right)^{-3} = \\frac{1}{8}.\\n\\]\\n\\n2. Second term (linear):\\n\\[\\n-3 \\cdot \\frac{x}{2} = -\\frac{3}{16}x.\\n\\]\\n\\n3. Third term (quadratic):\\n\\[\\n\\frac{-3(-4)}{2} \\cdot \\left( \\frac{x}{2} \\right)^2 = \\frac{3}{16}x^2.\\n\\]\\n\\nCombining terms:\\n\\[\\n\\frac{1}{(2 + x)^3} = \\frac{1}{8} - \\frac{3}{16}x + \\frac{3}{16}x^2.\\n\\]",
+                "Solution": "Using the binomial expansion formula:\\\\\\[\\\\(1 + u)^n = 1 + nu + \\frac{n(n-1)}{2!}u^2 + \\cdots\\\\\\]\\\\Here, \\(u = \\frac{x}{2}\\) and \\(n = -3\\):\\\\\\\\1. First term:\\\\\\[\\\\\\frac{1}{(2 + x)^3} = \\frac{1}{2^3} \\left( 1 + \\frac{x}{2} \\right)^{-3} = \\frac{1}{8}.\\\\\\]\\\\\\\\2. Second term (linear):\\\\\\[\\\\-3 \\cdot \\frac{x}{2} = -\\frac{3}{16}x.\\\\\\]\\\\\\\\3. Third term (quadratic):\\\\\\[\\\\\\frac{-3(-4)}{2} \\cdot \\left( \\frac{x}{2} \\right)^2 = \\frac{3}{16}x^2.\\\\\\]\\\\\\\\Combining terms:\\\\\\[\\\\\\frac{1}{(2 + x)^3} = \\frac{1}{8} - \\frac{3}{16}x + \\frac{3}{16}x^2.\\\\\\]",
                 "MarkingScheme": "M1 for obtaining the general form using binomial expansion, B1 for correct first term, A1 for second term, A1 for third term correctly simplified."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Logarithmic Equation Solution",
@@ -73,12 +73,12 @@
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Using the logarithmic laws, subtract \\( \\ln x \\) from both sides:\\n\\[ \\ln(1 + x) - \\ln x = 1. \\]\\n\\nUsing the logarithmic property \\( \\ln a - \\ln b = \\ln \\left( \\frac{a}{b} \\right) \\):\\n\\[ \\ln \\left( \\frac{1 + x}{x} \\right) = 1. \\]\\n\\nConvert to exponential form using \\( \\ln a = 1 \\implies a = e^1 \\):\\n\\[ \\frac{1 + x}{x} = e. \\]\\n\\nSimplify the equation:\\n\\[ 1 + x = e x. \\]\\n\\nRearranging terms:\\n\\[ x (e - 1) = 1. \\]\\n\\nSolve for \\( x \\):\\n\\[ x = \\frac{1}{e - 1}. \\]\\n\\nUsing \\( e \\approx 2.718 \\):\\n\\[ x = \\frac{1}{2.718 - 1} \\approx \\frac{1}{1.718} \\approx 0.58. \\]\\n\\nThus, \\( x = 0.58 \\) (correct to 2 significant figures).",
+                "Solution": "Using the logarithmic laws, subtract \\( \\ln x \\) from both sides:\\\\\\[ \\ln(1 + x) - \\ln x = 1. \\]\\\\\\\\Using the logarithmic property \\( \\ln a - \\ln b = \\ln \\left( \\frac{a}{b} \\right) \\):\\\\\\[ \\ln \\left( \\frac{1 + x}{x} \\right) = 1. \\]\\\\\\\\Convert to exponential form using \\( \\ln a = 1 \\implies a = e^1 \\):\\\\\\[ \\frac{1 + x}{x} = e. \\]\\\\\\\\Simplify the equation:\\\\\\[ 1 + x = e x. \\]\\\\\\\\Rearranging terms:\\\\\\[ x (e - 1) = 1. \\]\\\\\\\\Solve for \\( x \\):\\\\\\[ x = \\frac{1}{e - 1}. \\]\\\\\\\\Using \\( e \\approx 2.718 \\):\\\\\\[ x = \\frac{1}{2.718 - 1} \\approx \\frac{1}{1.718} \\approx 0.58. \\]\\\\\\\\Thus, \\( x = 0.58 \\) (correct to 2 significant figures).",
                 "MarkingScheme": "M1 for using logarithmic laws correctly, M1 for converting to exponential form, A1 for rearranging and simplifying equation, A1 for correct answer \\( x = 0.58 \\)."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Factorization and Inequality of a Polynomial",
@@ -129,22 +129,22 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "Substitute \\(x = 2\\) into \\(p(x) = 2x^3 + ax^2 - 4\\):\\n\\[2(2)^3 + a(2)^2 - 4 = 0.\\]\\nSimplify:\\n\\[16 + 4a - 4 = 0 \\implies 4a = -12.\\]\\n\\[a = -3.\\]",
+                "Solution": "Substitute \\(x = 2\\) into \\(p(x) = 2x^3 + ax^2 - 4\\):\\\\\\[2(2)^3 + a(2)^2 - 4 = 0.\\]\\\\Simplify:\\\\\\[16 + 4a - 4 = 0 \\implies 4a = -12.\\]\\\\\\[a = -3.\\]",
                 "MarkingScheme": "M1 for substitution and equating to zero, A1 for correct value of \\(a = -3\\)."
             },
             {
                 "Part": "ii",
-                "Solution": "With \\(a = -3\\), the polynomial becomes:\\n\\[p(x) = 2x^3 - 3x^2 - 4.\\]\\nDivide \\(p(x)\\) by \\((x - 2)\\) to find the quadratic factor:\\n\\[2x^3 - 3x^2 - 4 = (x - 2)(2x^2 + x + 2).\\]",
+                "Solution": "With \\(a = -3\\), the polynomial becomes:\\\\\\[p(x) = 2x^3 - 3x^2 - 4.\\]\\\\Divide \\(p(x)\\) by \\((x - 2)\\) to find the quadratic factor:\\\\\\[2x^3 - 3x^2 - 4 = (x - 2)(2x^2 + x + 2).\\]",
                 "MarkingScheme": "M1 for attempting division or inspection, A1 for correct factorization."
             },
             {
                 "Part": "iii",
-                "Solution": "Solve the inequality \\(p(x) > 0\\):\\nFactorized form: \\(p(x) = (x - 2)(2x^2 + x + 2).\\)\\nThe quadratic factor \\(2x^2 + x + 2\\) has no real roots (discriminant < 0).\\nThus, \\(2x^2 + x + 2 > 0\\) for all \\(x\\), and the inequality reduces to:\\n\\(x - 2 > 0 \\implies x > 2.\\)",
+                "Solution": "Solve the inequality \\(p(x) > 0\\):\\\\Factorized form: \\(p(x) = (x - 2)(2x^2 + x + 2).\\)\\\\The quadratic factor \\(2x^2 + x + 2\\) has no real roots (discriminant < 0).\\\\Thus, \\(2x^2 + x + 2 > 0\\) for all \\(x\\), and the inequality reduces to:\\\\\\(x - 2 > 0 \\implies x > 2.\\)",
                 "MarkingScheme": "B1 for stating \\(x > 2\\), B1(dep) for correct justification that \\(2x^2 + x + 2\\) is always positive."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Trigonometric Equation and Quadratic Form",
@@ -189,17 +189,17 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "Using the formula \\( \\tan(A \\pm B) = \\frac{\\tan A \\pm \\tan B}{1 \\mp \\tan A \\tan B} \\), substitute:\\n\\[\\n\\tan(45^\\circ + x) = \\frac{1 + \\tan x}{1 - \\tan x}, \\quad \\tan(45^\\circ - x) = \\frac{1 - \\tan x}{1 + \\tan x}.\\n\\]\\nMultiply and simplify to obtain the quadratic equation:\\n\\[ \\tan^2 x - 6\\tan x + 1 = 0. \\]",
+                "Solution": "Using the formula \\( \\tan(A \\pm B) = \\frac{\\tan A \\pm \\tan B}{1 \\mp \\tan A \\tan B} \\), substitute:\\\\\\[\\\\\\tan(45^\\circ + x) = \\frac{1 + \\tan x}{1 - \\tan x}, \\quad \\tan(45^\\circ - x) = \\frac{1 - \\tan x}{1 + \\tan x}.\\\\\\]\\\\Multiply and simplify to obtain the quadratic equation:\\\\\\[ \\tan^2 x - 6\\tan x + 1 = 0. \\]",
                 "MarkingScheme": "M1 for correct application of tan addition/subtraction formula, A1 for simplifying to quadratic."
             },
             {
                 "Part": "ii",
-                "Solution": "Solve the quadratic equation:\\n\\[ \\tan^2 x - 6\\tan x + 1 = 0. \\]\\nUsing the quadratic formula, find:\\n\\[ \\tan x = 3 \\pm 2\\sqrt{2}. \\]\\nWithin the range \\( 0^\\circ < x < 90^\\circ \\), calculate angles:\\n\\[ x = 9.7^\\circ, \\; x = 80.3^\\circ. \\]",
+                "Solution": "Solve the quadratic equation:\\\\\\[ \\tan^2 x - 6\\tan x + 1 = 0. \\]\\\\Using the quadratic formula, find:\\\\\\[ \\tan x = 3 \\pm 2\\sqrt{2}. \\]\\\\Within the range \\( 0^\\circ < x < 90^\\circ \\), calculate angles:\\\\\\[ x = 9.7^\\circ, \\; x = 80.3^\\circ. \\]",
                 "MarkingScheme": "M1 for solving the quadratic, A1 for correct roots, A1 for correct range of solutions."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Trigonometric Identity and Iterative Method",
@@ -260,12 +260,12 @@
             },
             {
                 "Part": "iii",
-                "Solution": "Apply iterative formula with \\( x_1 = 1 \\):\\n\\[ x_2 = \\sin(2x_1), \\quad x_3 = \\sin(2x_2), \\dots \\]\\nConverge to \\( x = 0.95 \\) to 2 decimal places.",
+                "Solution": "Apply iterative formula with \\( x_1 = 1 \\):\\\\\\[ x_2 = \\sin(2x_1), \\quad x_3 = \\sin(2x_2), \\dots \\]\\\\Converge to \\( x = 0.95 \\) to 2 decimal places.",
                 "MarkingScheme": "M1 for iterative steps, A1 for correct value, A1 for justification of accuracy."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Complex Numbers and Geometrical Relationship",
@@ -321,12 +321,12 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "The complex number \\(u - v\\) is given by:\\n\\[u - v = (1 + 3i) - (4 + 2i) = -3 + i.\\]\\n\\nThe division \\(\\frac{u}{v}\\) is obtained by:\\n\\[\\frac{u}{v} = \\frac{1 + 3i}{4 + 2i}.\\]\\nMultiplying numerator and denominator by the conjugate:\\n\\[\\frac{1 + 3i}{4 + 2i} \\cdot \\frac{4 - 2i}{4 - 2i} = \\frac{(1 + 3i)(4 - 2i)}{4^2 + 2^2}.\\]\\nSimplify:\\n\\[(1 + 3i)(4 - 2i) = 4 - 2i + 12i - 6i^2 = 4 + 10i + 6.\\]\\nDenominator:\\n\\[4^2 + 2^2 = 16 + 4 = 20.\\]\\nThus:\\n\\[\\frac{u}{v} = \\frac{10 + 10i}{20} = \\frac{1}{2} + \\frac{1}{2}i.\\]",
+                "Solution": "The complex number \\(u - v\\) is given by:\\\\\\[u - v = (1 + 3i) - (4 + 2i) = -3 + i.\\]\\\\\\\\The division \\(\\frac{u}{v}\\) is obtained by:\\\\\\[\\frac{u}{v} = \\frac{1 + 3i}{4 + 2i}.\\]\\\\Multiplying numerator and denominator by the conjugate:\\\\\\[\\frac{1 + 3i}{4 + 2i} \\cdot \\frac{4 - 2i}{4 - 2i} = \\frac{(1 + 3i)(4 - 2i)}{4^2 + 2^2}.\\]\\\\Simplify:\\\\\\[(1 + 3i)(4 - 2i) = 4 - 2i + 12i - 6i^2 = 4 + 10i + 6.\\]\\\\Denominator:\\\\\\[4^2 + 2^2 = 16 + 4 = 20.\\]\\\\Thus:\\\\\\[\\frac{u}{v} = \\frac{10 + 10i}{20} = \\frac{1}{2} + \\frac{1}{2}i.\\]",
                 "MarkingScheme": "B1 for correct \\(u - v\\), M1 for multiplication by conjugate, A1 for simplified result."
             },
             {
                 "Part": "ii",
-                "Solution": "The argument of \\(\\frac{u}{v}\\) is:\\n\\[\\arg\\left(\\frac{1}{2} + \\frac{1}{2}i\\right) = \\tan^{-1}\\left(\\frac{1/2}{1/2}\\right) = \\frac{\\pi}{4} \\text{ radians}.\\]",
+                "Solution": "The argument of \\(\\frac{u}{v}\\) is:\\\\\\[\\arg\\left(\\frac{1}{2} + \\frac{1}{2}i\\right) = \\tan^{-1}\\left(\\frac{1/2}{1/2}\\right) = \\frac{\\pi}{4} \\text{ radians}.\\]",
                 "MarkingScheme": "A1 for correct argument \\(\\frac{\\pi}{4}\\) or equivalent."
             },
             {
@@ -336,12 +336,12 @@
             },
             {
                 "Part": "iv",
-                "Solution": "Using the argument relationship:\\n\\[\\arg(AOB) = \\arg(u) - \\arg(v) = \\frac{\\pi}{4}.\\]\\nAlternatively, calculate the angle using gradients or trigonometric relationships:\\n\\[\\tan AOB = \\frac{3}{1} - \\frac{2}{4} = \\arctan(3) - \\arctan\\left(\\frac{1}{2}\\right).\\]\\nThus, angle \\(AOB = \\frac{\\pi}{4}\\).",
+                "Solution": "Using the argument relationship:\\\\\\[\\arg(AOB) = \\arg(u) - \\arg(v) = \\frac{\\pi}{4}.\\]\\\\Alternatively, calculate the angle using gradients or trigonometric relationships:\\\\\\[\\tan AOB = \\frac{3}{1} - \\frac{2}{4} = \\arctan(3) - \\arctan\\left(\\frac{1}{2}\\right).\\]\\\\Thus, angle \\(AOB = \\frac{\\pi}{4}\\).",
                 "MarkingScheme": "M1 for method (argument or trigonometry), A1 for proving \\(\\frac{\\pi}{4}\\)."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Maximum Point and Area under a Curve",
@@ -387,17 +387,17 @@
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "Differentiate \\(y = x^2 e^{-\\frac{1}{2}x}\\) using the product rule:\\n\\[ \\frac{dy}{dx} = 2xe^{-\\frac{1}{2}x} - \\frac{1}{2}x^2 e^{-\\frac{1}{2}x}. \\]\\nEquate \\(\\frac{dy}{dx} = 0\\):\\n\\[ 2xe^{-\\frac{1}{2}x} - \\frac{1}{2}x^2 e^{-\\frac{1}{2}x} = 0. \\]\\nFactorize:\\n\\[ e^{-\\frac{1}{2}x} (2x - \\frac{1}{2}x^2) = 0. \\]\\nSolve for \\(x > 0\\):\\n\\[ 2x = \\frac{1}{2}x^2 \\Rightarrow x = 4. \\]\\nThe \\(x\\)-coordinate of \\(M\\) is \\(x = 4\\).",
+                "Solution": "Differentiate \\(y = x^2 e^{-\\frac{1}{2}x}\\) using the product rule:\\\\\\[ \\frac{dy}{dx} = 2xe^{-\\frac{1}{2}x} - \\frac{1}{2}x^2 e^{-\\frac{1}{2}x}. \\]\\\\Equate \\(\\frac{dy}{dx} = 0\\):\\\\\\[ 2xe^{-\\frac{1}{2}x} - \\frac{1}{2}x^2 e^{-\\frac{1}{2}x} = 0. \\]\\\\Factorize:\\\\\\[ e^{-\\frac{1}{2}x} (2x - \\frac{1}{2}x^2) = 0. \\]\\\\Solve for \\(x > 0\\):\\\\\\[ 2x = \\frac{1}{2}x^2 \\Rightarrow x = 4. \\]\\\\The \\(x\\)-coordinate of \\(M\\) is \\(x = 4\\).",
                 "MarkingScheme": "M1 for product rule, A1 for derivative, M1 for solving, A1 for correct answer \\(x = 4\\)."
             },
             {
                 "Part": "ii",
-                "Solution": "Integrate \\(y = x^2 e^{-\\frac{1}{2}x}\\) by parts twice:\\nFirst integration:\\n\\[ \\int x^2 e^{-\\frac{1}{2}x} dx = -2x^2 e^{-\\frac{1}{2}x} + 4 \\int x e^{-\\frac{1}{2}x} dx. \\]\\nSecond integration:\\n\\[ \\int x e^{-\\frac{1}{2}x} dx = -2x e^{-\\frac{1}{2}x} + 4 \\int e^{-\\frac{1}{2}x} dx. \\]\\nCombine results and apply limits \\(x = 0\\) to \\(x = 1\\):\\n\\[ \\text{Area} = \\left[-2(x^2 + 4x + 8)e^{-\\frac{1}{2}x}\\right]_0^1. \\]\\nSimplify:\\n\\[ \\text{Area} = 16 - 26e^{-\\frac{1}{2}}. \\]",
+                "Solution": "Integrate \\(y = x^2 e^{-\\frac{1}{2}x}\\) by parts twice:\\\\First integration:\\\\\\[ \\int x^2 e^{-\\frac{1}{2}x} dx = -2x^2 e^{-\\frac{1}{2}x} + 4 \\int x e^{-\\frac{1}{2}x} dx. \\]\\\\Second integration:\\\\\\[ \\int x e^{-\\frac{1}{2}x} dx = -2x e^{-\\frac{1}{2}x} + 4 \\int e^{-\\frac{1}{2}x} dx. \\]\\\\Combine results and apply limits \\(x = 0\\) to \\(x = 1\\):\\\\\\[ \\text{Area} = \\left[-2(x^2 + 4x + 8)e^{-\\frac{1}{2}x}\\right]_0^1. \\]\\\\Simplify:\\\\\\[ \\text{Area} = 16 - 26e^{-\\frac{1}{2}}. \\]",
                 "MarkingScheme": "M1 for integration by parts, A1 for first integral, A1 for second integral, M1 for limits, A1 for correct final answer."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Partial Fractions and Integration",
@@ -464,11 +464,11 @@
             },
             {
                 "Part": "b",
-                "Solution": "Decompose \\( \\frac{3x}{(x+1)(x-2)} \\) into partial fractions: \\[ f(x) = \\frac{A}{x+1} + \\frac{B}{x-2}. \\] \\nSolve for constants \\( A \\) and \\( B \\) to obtain \\( A = 1 \\) and \\( B = 2 \\).\\n\\nIntegrate each term:\\n\\[ \\int \\frac{1}{x+1} \\, dx = \\ln(x+1), \\quad \\int \\frac{2}{x-2} \\, dx = 2 \\ln(x-2). \\]\\n\\nUsing limits \\( x = 3 \\) to \\( x = 4 \\):\\n\\[ \\int_{3}^{4} \\frac{3x}{(x+1)(x-2)} \\, dx = \\ln(5) - \\ln(4) + 2 \\ln(2) - 2 \\ln(1). \\]\\n\\nSimplify to obtain the final answer \\( \\ln 5 \\).\\n\\nMarkingScheme: M1 for decomposition, A1 for constants, M1 for correct integration, A1 for correct limits, A1√ for simplifying to \\( \\ln 5 \\)."
+                "Solution": "Decompose \\( \\frac{3x}{(x+1)(x-2)} \\) into partial fractions: \\[ f(x) = \\frac{A}{x+1} + \\frac{B}{x-2}. \\] \\\\Solve for constants \\( A \\) and \\( B \\) to obtain \\( A = 1 \\) and \\( B = 2 \\).\\\\\\\\Integrate each term:\\\\\\[ \\int \\frac{1}{x+1} \\, dx = \\ln(x+1), \\quad \\int \\frac{2}{x-2} \\, dx = 2 \\ln(x-2). \\]\\\\\\\\Using limits \\( x = 3 \\) to \\( x = 4 \\):\\\\\\[ \\int_{3}^{4} \\frac{3x}{(x+1)(x-2)} \\, dx = \\ln(5) - \\ln(4) + 2 \\ln(2) - 2 \\ln(1). \\]\\\\\\\\Simplify to obtain the final answer \\( \\ln 5 \\).\\\\\\\\MarkingScheme: M1 for decomposition, A1 for constants, M1 for correct integration, A1 for correct limits, A1√ for simplifying to \\( \\ln 5 \\)."
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Vector Equations and Perpendicularity",
@@ -516,13 +516,13 @@
                 "Marks": 2
             }
         ],
-        "Text": "The lines \\( l \\) and \\( m \\) have vector equations:\\n\\n\\( \\mathbf{r} = 2\\mathbf{i} - \\mathbf{j} + 4\\mathbf{k} + s(\\mathbf{i} + \\mathbf{j} - \\mathbf{k}) \\)\\n\\( \\mathbf{r} = -2\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k} + t(-2\\mathbf{i} + \\mathbf{j} + \\mathbf{k}) \\)\\n\\nrespectively."
+        "Text": "The lines \\( l \\) and \\( m \\) have vector equations:\\\\\\\\\\( \\mathbf{r} = 2\\mathbf{i} - \\mathbf{j} + 4\\mathbf{k} + s(\\mathbf{i} + \\mathbf{j} - \\mathbf{k}) \\)\\\\\\( \\mathbf{r} = -2\\mathbf{i} + 2\\mathbf{j} + \\mathbf{k} + t(-2\\mathbf{i} + \\mathbf{j} + \\mathbf{k}) \\)\\\\\\\\respectively."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "i",
-                "Solution": "Express the general points on \\( l \\) and \\( m \\) in component form:\\n\\( l: (2 + s, -1 + s, 4 - s) \\)\\n\\( m: (-2 - 2t, 2 + t, 1 + t) \\).\\nSolve for \\( s \\) and \\( t \\) by equating corresponding components. If solutions are inconsistent, the lines do not intersect.",
+                "Solution": "Express the general points on \\( l \\) and \\( m \\) in component form:\\\\\\( l: (2 + s, -1 + s, 4 - s) \\)\\\\\\( m: (-2 - 2t, 2 + t, 1 + t) \\).\\\\Solve for \\( s \\) and \\( t \\) by equating corresponding components. If solutions are inconsistent, the lines do not intersect.",
                 "MarkingScheme": "B1 for general points in component form, M1 for equating components, A1 for solving inconsistencies, A1 for conclusion."
             },
             {
@@ -537,7 +537,7 @@
             }
         ]
     }
-}
+},
 {
     "Metadata": {
         "QuestionTitle": "Differential Equation for Water Flow",
@@ -607,3 +607,4 @@
         ]
     }
 }
+]

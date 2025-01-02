@@ -1,5 +1,4 @@
-{
-    "Questions": [
+[
 {
     "Metadata": {
         "QuestionTitle": "Trigonometric Identity Application",
@@ -29,13 +28,13 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "It is given that \\theta is an acute angle in degrees such that \\sin \\theta = \\frac{2}{3}.\\n\\nFind the exact value of \\sin(\\theta + 60^\\circ)."
+        "Text": "It is given that \\theta is an acute angle in degrees such that \\sin \\theta = \\frac{2}{3}.\\\\\\\\Find the exact value of \\sin(\\theta + 60^\\circ)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "Given \\sin(\\theta) = \\frac{2}{3}, we can use the trigonometric identity for \\sin(\\theta + 60^\\circ):\\n\\n\\sin(\\theta + 60^\\circ) = \\sin(\\theta)\\cos(60^\\circ) + \\cos(\\theta)\\sin(60^\\circ).\\n\\nWe know that \\cos(60^\\circ) = \\frac{1}{2} and \\sin(60^\\circ) = \\frac{\\sqrt{3}}{2}.\\n\\nTo find \\cos(\\theta), use the identity \\sin^2(\\theta) + \\cos^2(\\theta) = 1:\\n\\n\\cos^2(\\theta) = 1 - \\sin^2(\\theta) = 1 - \\left(\\frac{2}{3}\\right)^2 = 1 - \\frac{4}{9} = \\frac{5}{9}.\\n\\nThus, \\cos(\\theta) = \\sqrt{\\frac{5}{9}} = \\frac{1}{3}\\sqrt{5}.\\n\\nSubstituting these values into the identity:\\n\\n\\sin(\\theta + 60^\\circ) = \\left(\\frac{2}{3}\\right)\\left(\\frac{1}{2}\\right) + \\left(\\frac{1}{3}\\sqrt{5}\\right)\\left(\\frac{\\sqrt{3}}{2}\\right) = \\frac{1}{3} + \\frac{\\sqrt{3}}{6}\\sqrt{5}.",
+                "Solution": "Given \\sin(\\theta) = \\frac{2}{3}, we can use the trigonometric identity for \\sin(\\theta + 60^\\circ):\\\\\\\\\\sin(\\theta + 60^\\circ) = \\sin(\\theta)\\cos(60^\\circ) + \\cos(\\theta)\\sin(60^\\circ).\\\\\\\\We know that \\cos(60^\\circ) = \\frac{1}{2} and \\sin(60^\\circ) = \\frac{\\sqrt{3}}{2}.\\\\\\\\To find \\cos(\\theta), use the identity \\sin^2(\\theta) + \\cos^2(\\theta) = 1:\\\\\\\\\\cos^2(\\theta) = 1 - \\sin^2(\\theta) = 1 - \\left(\\frac{2}{3}\\right)^2 = 1 - \\frac{4}{9} = \\frac{5}{9}.\\\\\\\\Thus, \\cos(\\theta) = \\sqrt{\\frac{5}{9}} = \\frac{1}{3}\\sqrt{5}.\\\\\\\\Substituting these values into the identity:\\\\\\\\\\sin(\\theta + 60^\\circ) = \\left(\\frac{2}{3}\\right)\\left(\\frac{1}{2}\\right) + \\left(\\frac{1}{3}\\sqrt{5}\\right)\\left(\\frac{\\sqrt{3}}{2}\\right) = \\frac{1}{3} + \\frac{\\sqrt{3}}{6}\\sqrt{5}.",
                 "MarkingScheme": "B1 for correctly using the identity, M1 for correct substitution, A1 for obtaining the final expression."
             }
         ]
@@ -69,13 +68,13 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "A curve has equation \\( y = 3 \\tan\\left(\\frac{1}{2} x \\right) \\cos(2x) \\).\\n\\nFind the gradient of the curve at the point for which \\( x = \\frac{\\pi}{3} \\)."
+        "Text": "A curve has equation \\( y = 3 \\tan\\left(\\frac{1}{2} x \\right) \\cos(2x) \\).\\\\\\\\Find the gradient of the curve at the point for which \\( x = \\frac{\\pi}{3} \\)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "The given equation is \\( y = 3 \\tan\\left(\\frac{1}{2} x \\right) \\cos(2x) \\).\\n\\nTo find the gradient, we need to differentiate \\( y \\) with respect to \\( x \\). This requires the product rule. We differentiate \\( 3 \\tan\\left(\\frac{1}{2} x \\right) \\) and \\( \\cos(2x) \\) separately.\n\nThe derivative of \\( 3 \\tan\\left(\\frac{1}{2} x \\right) \\) is:\\n\\[ 3 \\times \\frac{1}{2} \\sec^2 \\left(\\frac{1}{2} x \\right). \\]\n\nThe derivative of \\( \\cos(2x) \\) is:\\n\\[ -2 \\sin(2x). \\]\n\nThus, applying the product rule, the derivative of \\( y \\) is:\\n\\[ \\frac{dy}{dx} = 3 \\left( \\frac{1}{2} \\sec^2 \\left(\\frac{1}{2} x \\right) \\cos(2x) - 2 \\tan\\left(\\frac{1}{2} x \\right) \\sin(2x) \\right). \\]\n\nNow, substitute \\( x = \\frac{\\pi}{3} \\) into the derivative. We know that \\( \\tan\\left(\\frac{1}{2} \\times \\frac{\\pi}{3}\\right) = \\tan\\left(\\frac{\\pi}{6}\\right) = \\frac{1}{\\sqrt{3}} \\), \\( \\cos(2 \\times \\frac{\\pi}{3}) = \\cos\\left(\\frac{2\\pi}{3}\\right) = -\\frac{1}{2} \\), and \\( \\sin(2 \\times \\frac{\\pi}{3}) = \\sin\\left(\\frac{2\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2} \\).\n\nSubstituting these values gives:\\n\\[ \\frac{dy}{dx} = 3 \\left( \\frac{1}{2} \\sec^2 \\left(\\frac{\\pi}{6}\\right) \\times -\\frac{1}{2} - 2 \\times \\frac{1}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{2} \\right). \\]\n\nAfter evaluating, we obtain:\\n\\[ \\frac{dy}{dx} = -4. \\]",
+                "Solution": "The given equation is \\( y = 3 \\tan\\left(\\frac{1}{2} x \\right) \\cos(2x) \\).\\\\\\\\To find the gradient, we need to differentiate \\( y \\) with respect to \\( x \\). This requires the product rule. We differentiate \\( 3 \\tan\\left(\\frac{1}{2} x \\right) \\) and \\( \\cos(2x) \\) separately.\n\nThe derivative of \\( 3 \\tan\\left(\\frac{1}{2} x \\right) \\) is:\\\\\\[ 3 \\times \\frac{1}{2} \\sec^2 \\left(\\frac{1}{2} x \\right). \\]\n\nThe derivative of \\( \\cos(2x) \\) is:\\\\\\[ -2 \\sin(2x). \\]\n\nThus, applying the product rule, the derivative of \\( y \\) is:\\\\\\[ \\frac{dy}{dx} = 3 \\left( \\frac{1}{2} \\sec^2 \\left(\\frac{1}{2} x \\right) \\cos(2x) - 2 \\tan\\left(\\frac{1}{2} x \\right) \\sin(2x) \\right). \\]\n\nNow, substitute \\( x = \\frac{\\pi}{3} \\) into the derivative. We know that \\( \\tan\\left(\\frac{1}{2} \\times \\frac{\\pi}{3}\\right) = \\tan\\left(\\frac{\\pi}{6}\\right) = \\frac{1}{\\sqrt{3}} \\), \\( \\cos(2 \\times \\frac{\\pi}{3}) = \\cos\\left(\\frac{2\\pi}{3}\\right) = -\\frac{1}{2} \\), and \\( \\sin(2 \\times \\frac{\\pi}{3}) = \\sin\\left(\\frac{2\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2} \\).\n\nSubstituting these values gives:\\\\\\[ \\frac{dy}{dx} = 3 \\left( \\frac{1}{2} \\sec^2 \\left(\\frac{\\pi}{6}\\right) \\times -\\frac{1}{2} - 2 \\times \\frac{1}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{2} \\right). \\]\n\nAfter evaluating, we obtain:\\\\\\[ \\frac{dy}{dx} = -4. \\]",
                 "MarkingScheme": "B1 for stating the correct derivative of the terms, M1 for using the product rule, A1 for obtaining the correct first derivative, D1 for substituting \\( x = \\frac{\\pi}{3} \\) and evaluating, A1 for the final gradient of \\(-4\\)."
             }
         ]
@@ -110,18 +109,18 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "(a) Find \\( \\int_{4}^{10} \\frac{4}{2x - 5} \\: dx \\), giving your answer in the form \\( \\ln a \\), where \\( a \\) is an integer.\\n\\n(b) Find the exact value of \\( \\int_{4}^{10} e^{2x-5} \\: dx. \\)"
+        "Text": "(a) Find \\( \\int_{4}^{10} \\frac{4}{2x - 5} \\: dx \\), giving your answer in the form \\( \\ln a \\), where \\( a \\) is an integer.\\\\\\\\(b) Find the exact value of \\( \\int_{4}^{10} e^{2x-5} \\: dx. \\)"
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "For the integral \\( \\int_{4}^{10} \\frac{4}{2x - 5} \\: dx \\), we first apply the logarithmic rule for integration:\\n\\n\\( \\int \\frac{1}{ax + b} \\, dx = \\frac{1}{a} \\ln |ax + b| + C \\).\\n\\nHere, we have \\(a = 2\\) and \\(b = -5\\), so we can apply this to obtain:\\n\\n\\( \\int_{4}^{10} \\frac{4}{2x - 5} \\, dx = 2 \\ln |2x - 5|\\).\\n\\nNow, apply the limits of integration to get:\\n\\n\\( 2 \\ln |2(10) - 5| - 2 \\ln |2(4) - 5| = 2 \\ln |15| - 2 \\ln |3|\\).\\n\\nThis simplifies to:\\n\\n\\( 2 \\ln 15 - 2 \\ln 3 = 2 \\ln \\frac{15}{3} = 2 \\ln 5.\\n\\nThus, the answer is \\( \\ln 25 \\).",
+                "Solution": "For the integral \\( \\int_{4}^{10} \\frac{4}{2x - 5} \\: dx \\), we first apply the logarithmic rule for integration:\\\\\\\\\\( \\int \\frac{1}{ax + b} \\, dx = \\frac{1}{a} \\ln |ax + b| + C \\).\\\\\\\\Here, we have \\(a = 2\\) and \\(b = -5\\), so we can apply this to obtain:\\\\\\\\\\( \\int_{4}^{10} \\frac{4}{2x - 5} \\, dx = 2 \\ln |2x - 5|\\).\\\\\\\\Now, apply the limits of integration to get:\\\\\\\\\\( 2 \\ln |2(10) - 5| - 2 \\ln |2(4) - 5| = 2 \\ln |15| - 2 \\ln |3|\\).\\\\\\\\This simplifies to:\\\\\\\\\\( 2 \\ln 15 - 2 \\ln 3 = 2 \\ln \\frac{15}{3} = 2 \\ln 5.\\\\\\\\Thus, the answer is \\( \\ln 25 \\).",
                 "MarkingScheme": "B1 for obtaining the correct form of the integral, M1 for applying the logarithmic rule, A1 for obtaining the final answer in the correct form."
             },
             {
                 "Part": "b",
-                "Solution": "For the integral \\( \\int_{4}^{10} e^{2x-5} \\: dx \\), we first recognize that the exponent can be simplified by using the substitution rule:\\n\\nLet \\( u = 2x - 5 \\), so \\( du = 2dx \\). The limits change as follows: when \\(x = 4\\), \\( u = 3\\), and when \\(x = 10\\), \\( u = 15\\).\\n\\nThus, the integral becomes:\\n\\n\\( \\int_{4}^{10} e^{2x-5} \\, dx = \\frac{1}{2} \\int_{3}^{15} e^{u} \\, du \\).\\n\\nThe integral of \\(e^u\\) is simply \\( e^u \\), so we have:\\n\\n\\( \\frac{1}{2} [e^{15} - e^3] \\).\\n\\nThe exact value of the integral is \\( \\frac{1}{2} (e^{15} - e^3) \\).",
+                "Solution": "For the integral \\( \\int_{4}^{10} e^{2x-5} \\: dx \\), we first recognize that the exponent can be simplified by using the substitution rule:\\\\\\\\Let \\( u = 2x - 5 \\), so \\( du = 2dx \\). The limits change as follows: when \\(x = 4\\), \\( u = 3\\), and when \\(x = 10\\), \\( u = 15\\).\\\\\\\\Thus, the integral becomes:\\\\\\\\\\( \\int_{4}^{10} e^{2x-5} \\, dx = \\frac{1}{2} \\int_{3}^{15} e^{u} \\, du \\).\\\\\\\\The integral of \\(e^u\\) is simply \\( e^u \\), so we have:\\\\\\\\\\( \\frac{1}{2} [e^{15} - e^3] \\).\\\\\\\\The exact value of the integral is \\( \\frac{1}{2} (e^{15} - e^3) \\).",
                 "MarkingScheme": "B1 for integrating correctly, B1 for applying the final answer with the correct limits."
             }
         ]
@@ -157,23 +156,23 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "(a) Sketch, on the same diagram, the graphs of \\(y = |3x - 5|\\) and \\(y = 2x + 7\\).\\n\\n(b) Solve the equation \\(|3x - 5| = 2x + 7\\).\\n\\n(c) Hence solve the equation \\(|3y + 1 - 5| = 2 \\times 3^{y} + 7\\), giving your answer correct to 3 significant figures."
+        "Text": "(a) Sketch, on the same diagram, the graphs of \\(y = |3x - 5|\\) and \\(y = 2x + 7\\).\\\\\\\\(b) Solve the equation \\(|3x - 5| = 2x + 7\\).\\\\\\\\(c) Hence solve the equation \\(|3y + 1 - 5| = 2 \\times 3^{y} + 7\\), giving your answer correct to 3 significant figures."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "For part (a), we sketch the graphs of \\(y = |3x - 5|\\) and \\(y = 2x + 7\\).\\n\\nThe graph of \\(y = |3x - 5|\\) is a V-shaped graph with vertex at the point where the inside of the absolute value equals zero, i.e., \\(x = \\frac{5}{3}\\). The graph of \\(y = 2x + 7\\) is a straight line with slope 2 and y-intercept at 7.\\n\\nWe draw both graphs on the same diagram, noting where they intersect.",
+                "Solution": "For part (a), we sketch the graphs of \\(y = |3x - 5|\\) and \\(y = 2x + 7\\).\\\\\\\\The graph of \\(y = |3x - 5|\\) is a V-shaped graph with vertex at the point where the inside of the absolute value equals zero, i.e., \\(x = \\frac{5}{3}\\). The graph of \\(y = 2x + 7\\) is a straight line with slope 2 and y-intercept at 7.\\\\\\\\We draw both graphs on the same diagram, noting where they intersect.",
                 "MarkingScheme": "B1 for drawing the graph of \\(y = |3x - 5|\\) correctly, B1 for drawing the graph of \\(y = 2x + 7\\) correctly."
             },
             {
                 "Part": "b",
-                "Solution": "To solve \\(|3x - 5| = 2x + 7\\), we consider two cases due to the absolute value function:\\n\\nCase 1: \\(3x - 5 = 2x + 7\\),\\n\\nSolving: \\(3x - 2x = 7 + 5\\),\\n\\(x = 12\\).\\n\\nCase 2: \\(-(3x - 5) = 2x + 7\\),\\n\\nSolving: \\(-3x + 5 = 2x + 7\\),\\n\\(-5x = 2\\),\\n\\(x = -\\frac{2}{5}\\).\\n\\nThus, the solutions are \\(x = 12\\) and \\(x = -\\frac{2}{5}\\).",
+                "Solution": "To solve \\(|3x - 5| = 2x + 7\\), we consider two cases due to the absolute value function:\\\\\\\\Case 1: \\(3x - 5 = 2x + 7\\),\\\\\\\\Solving: \\(3x - 2x = 7 + 5\\),\\\\\\(x = 12\\).\\\\\\\\Case 2: \\(-(3x - 5) = 2x + 7\\),\\\\\\\\Solving: \\(-3x + 5 = 2x + 7\\),\\\\\\(-5x = 2\\),\\\\\\(x = -\\frac{2}{5}\\).\\\\\\\\Thus, the solutions are \\(x = 12\\) and \\(x = -\\frac{2}{5}\\).",
                 "MarkingScheme": "B1 for solving the first case, M1 for solving the second case, A1 for obtaining both solutions."
             },
             {
                 "Part": "c",
-                "Solution": "For part (c), we solve \\(|3y + 1 - 5| = 2 \\times 3^{y} + 7\\). First, simplify the equation to \\(|3y - 4| = 2 \\times 3^{y} + 7\\).\\n\\nWe can solve this equation using numerical methods or a graphing approach, as it involves both absolute value and exponential terms.\\n\\nAfter solving, the value of \\(y\\) that satisfies this equation is approximately 2.26.",
+                "Solution": "For part (c), we solve \\(|3y + 1 - 5| = 2 \\times 3^{y} + 7\\). First, simplify the equation to \\(|3y - 4| = 2 \\times 3^{y} + 7\\).\\\\\\\\We can solve this equation using numerical methods or a graphing approach, as it involves both absolute value and exponential terms.\\\\\\\\After solving, the value of \\(y\\) that satisfies this equation is approximately 2.26.",
                 "MarkingScheme": "M1 for using numerical or graphical methods, A1 for obtaining the correct value of \\(y \\approx 2.26\\)."
             }
         ]
@@ -208,18 +207,18 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "The polynomial \\( p(x) \\) is defined by\\n\\( p(x) = 6x^3 + ax^2 + bx - 20,\\)\\nwhere \\( a \\) and \\( b \\) are constants. It is given that \\( (x + 2) \\) is a factor of \\( p(x) \\) and that the remainder is \\(-11\\) when \\( p(x) \\) is divided by \\( (x + 1) \\).\\n\\n(a) Find the values of \\( a \\) and \\( b \\).\\n\\n(b) Hence factorize \\( p(x) \\), and determine the exact roots of the equation \\( p(3x) = 0 \\)."
+        "Text": "The polynomial \\( p(x) \\) is defined by\\\\\\( p(x) = 6x^3 + ax^2 + bx - 20,\\)\\\\where \\( a \\) and \\( b \\) are constants. It is given that \\( (x + 2) \\) is a factor of \\( p(x) \\) and that the remainder is \\(-11\\) when \\( p(x) \\) is divided by \\( (x + 1) \\).\\\\\\\\(a) Find the values of \\( a \\) and \\( b \\).\\\\\\\\(b) Hence factorize \\( p(x) \\), and determine the exact roots of the equation \\( p(3x) = 0 \\)."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "We are given that \\( (x + 2) \\) is a factor of \\( p(x) \\), so we can use the fact that when a polynomial is divided by a factor, the remainder is zero. Thus, substituting \\( x = -2 \\) into \\( p(x) \\) gives:\\n\\n\\( p(-2) = 6(-2)^3 + a(-2)^2 + b(-2) - 20 = 0\\).\\n\\nThis simplifies to:\\n\\n\\( p(-2) = -48 + 4a - 2b - 20 = 0,\\)\\n\\( 4a - 2b = 68\\).\\n\\nNext, we are told that the remainder is \\(-11\\) when dividing by \\( (x + 1) \\), so we substitute \\( x = -1 \\) into \\( p(x) \\) and set it equal to \\(-11\\):\\n\\n\\( p(-1) = 6(-1)^3 + a(-1)^2 + b(-1) - 20 = -11\\).\\n\\nThis simplifies to:\\n\\n\\( p(-1) = -6 + a - b - 20 = -11,\\)\\n\\( a - b = 15\\).\\n\\nWe now have the system of equations:\\n\\n1) \\( 4a - 2b = 68\\)\\n2) \\( a - b = 15\\).\\n\\nSolving this system gives \\( a = 19\\) and \\( b = 4\\).",
+                "Solution": "We are given that \\( (x + 2) \\) is a factor of \\( p(x) \\), so we can use the fact that when a polynomial is divided by a factor, the remainder is zero. Thus, substituting \\( x = -2 \\) into \\( p(x) \\) gives:\\\\\\\\\\( p(-2) = 6(-2)^3 + a(-2)^2 + b(-2) - 20 = 0\\).\\\\\\\\This simplifies to:\\\\\\\\\\( p(-2) = -48 + 4a - 2b - 20 = 0,\\)\\\\\\( 4a - 2b = 68\\).\\\\\\\\Next, we are told that the remainder is \\(-11\\) when dividing by \\( (x + 1) \\), so we substitute \\( x = -1 \\) into \\( p(x) \\) and set it equal to \\(-11\\):\\\\\\\\\\( p(-1) = 6(-1)^3 + a(-1)^2 + b(-1) - 20 = -11\\).\\\\\\\\This simplifies to:\\\\\\\\\\( p(-1) = -6 + a - b - 20 = -11,\\)\\\\\\( a - b = 15\\).\\\\\\\\We now have the system of equations:\\\\\\\\1) \\( 4a - 2b = 68\\)\\\\2) \\( a - b = 15\\).\\\\\\\\Solving this system gives \\( a = 19\\) and \\( b = 4\\).",
                 "MarkingScheme": "M1 for correctly substituting \\( x = -2 \\) and obtaining the equation, M1 for substituting \\( x = -1 \\) and obtaining the second equation, A1 for solving and finding \\( a = 19\\) and \\( b = 4\\)."
             },
             {
                 "Part": "b",
-                "Solution": "We have found that \\( a = 19 \\) and \\( b = 4 \\), so the polynomial is:\\n\\n\\( p(x) = 6x^3 + 19x^2 + 4x - 20\\).\\n\\nSince \\( (x + 2) \\) is a factor, we can divide \\( p(x) \\) by \\( (x + 2) \\). Using synthetic or long division, we find:\\n\\n\\( p(x) = (x + 2)(6x^2 + 7x - 10).\\)\\n\\nNow we factorize \\( 6x^2 + 7x - 10 \\). Using the factorization method, we get:\\n\\n\\( 6x^2 + 7x - 10 = (2x - 5)(3x + 2).\\)\\n\\nThus, \\( p(x) = (x + 2)(2x - 5)(3x + 2).\\)\\n\\nThe exact roots of the equation \\( p(3x) = 0 \\) are obtained by setting each factor equal to zero:\\n\\n\\( x + 2 = 0 \\Rightarrow x = -2,\\)\\n\\( 2x - 5 = 0 \\Rightarrow x = \\frac{5}{2},\\)\\n\\( 3x + 2 = 0 \\Rightarrow x = -\\frac{2}{3}.\\)",
+                "Solution": "We have found that \\( a = 19 \\) and \\( b = 4 \\), so the polynomial is:\\\\\\\\\\( p(x) = 6x^3 + 19x^2 + 4x - 20\\).\\\\\\\\Since \\( (x + 2) \\) is a factor, we can divide \\( p(x) \\) by \\( (x + 2) \\). Using synthetic or long division, we find:\\\\\\\\\\( p(x) = (x + 2)(6x^2 + 7x - 10).\\)\\\\\\\\Now we factorize \\( 6x^2 + 7x - 10 \\). Using the factorization method, we get:\\\\\\\\\\( 6x^2 + 7x - 10 = (2x - 5)(3x + 2).\\)\\\\\\\\Thus, \\( p(x) = (x + 2)(2x - 5)(3x + 2).\\)\\\\\\\\The exact roots of the equation \\( p(3x) = 0 \\) are obtained by setting each factor equal to zero:\\\\\\\\\\( x + 2 = 0 \\Rightarrow x = -2,\\)\\\\\\( 2x - 5 = 0 \\Rightarrow x = \\frac{5}{2},\\)\\\\\\( 3x + 2 = 0 \\Rightarrow x = -\\frac{2}{3}.\\)",
                 "MarkingScheme": "M1 for dividing by \\( (x + 2) \\), A1 for factorizing correctly, A1 for obtaining the roots of the equation."
             }
         ]
@@ -255,23 +254,23 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "(a) Show that \\( \\csc \\theta (3 \\sin 2\\theta + 4 \\sin^3 \\theta) \\equiv 4 + 6 \\cos \\theta - 4 \\cos^2 \\theta. \\)\\n\\n(b) Solve the equation \\( \\csc \\theta (3 \\sin 2\\theta + 4 \\sin^3 \\theta) + 3 = 0 \\)\\nfor \\( -\\pi < \\theta < 0. \\)\\n\\n(c) Find \\( \\int \\csc \\theta (3 \\sin 2\\theta + 4 \\sin^3 \\theta) \\ d\\theta. \\)"
+        "Text": "(a) Show that \\( \\csc \\theta (3 \\sin 2\\theta + 4 \\sin^3 \\theta) \\equiv 4 + 6 \\cos \\theta - 4 \\cos^2 \\theta. \\)\\\\\\\\(b) Solve the equation \\( \\csc \\theta (3 \\sin 2\\theta + 4 \\sin^3 \\theta) + 3 = 0 \\)\\\\for \\( -\\pi < \\theta < 0. \\)\\\\\\\\(c) Find \\( \\int \\csc \\theta (3 \\sin 2\\theta + 4 \\sin^3 \\theta) \\ d\\theta. \\)"
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To prove \\( \\csc \\theta (3 \\sin 2\\theta + 4 \\sin^3 \\theta) \\equiv 4 + 6 \\cos \\theta - 4 \\cos^2 \\theta \\), we start by rewriting \\( \\csc \\theta \\) as \\( \\frac{1}{\\sin \\theta} \\), so the expression becomes:\\n\\n\\( \\frac{1}{\\sin \\theta}(3 \\sin 2\\theta + 4 \\sin^3 \\theta)\\).\\n\\nUsing the double angle identity, \\( \\sin 2\\theta = 2\\sin \\theta \\cos \\theta \\), we substitute this into the expression to get:\\n\\n\\( \\frac{1}{\\sin \\theta} (6 \\sin \\theta \\cos \\theta + 4 \\sin^3 \\theta) \\).\\n\\nSimplifying:\\n\\n\\( 6 \\cos \\theta + 4 \\sin^2 \\theta \\).\\n\\nSince \\( \\sin^2 \\theta = 1 - \\cos^2 \\theta \\), we substitute this into the equation to get:\\n\\n\\( 6 \\cos \\theta + 4(1 - \\cos^2 \\theta) = 6 \\cos \\theta + 4 - 4 \\cos^2 \\theta.\\n\\nThus, the required result is proved.",
+                "Solution": "To prove \\( \\csc \\theta (3 \\sin 2\\theta + 4 \\sin^3 \\theta) \\equiv 4 + 6 \\cos \\theta - 4 \\cos^2 \\theta \\), we start by rewriting \\( \\csc \\theta \\) as \\( \\frac{1}{\\sin \\theta} \\), so the expression becomes:\\\\\\\\\\( \\frac{1}{\\sin \\theta}(3 \\sin 2\\theta + 4 \\sin^3 \\theta)\\).\\\\\\\\Using the double angle identity, \\( \\sin 2\\theta = 2\\sin \\theta \\cos \\theta \\), we substitute this into the expression to get:\\\\\\\\\\( \\frac{1}{\\sin \\theta} (6 \\sin \\theta \\cos \\theta + 4 \\sin^3 \\theta) \\).\\\\\\\\Simplifying:\\\\\\\\\\( 6 \\cos \\theta + 4 \\sin^2 \\theta \\).\\\\\\\\Since \\( \\sin^2 \\theta = 1 - \\cos^2 \\theta \\), we substitute this into the equation to get:\\\\\\\\\\( 6 \\cos \\theta + 4(1 - \\cos^2 \\theta) = 6 \\cos \\theta + 4 - 4 \\cos^2 \\theta.\\\\\\\\Thus, the required result is proved.",
                 "MarkingScheme": "B1 for rewriting the expression with \\( \\csc \\theta \\), M1 for applying the double angle identity and simplifying, A1 for obtaining the final expression."
             },
             {
                 "Part": "b",
-                "Solution": "To solve the equation \\( \\csc \\theta (3 \\sin 2\\theta + 4 \\sin^3 \\theta) + 3 = 0 \\), we follow the steps outlined in part (a). From part (a), we know the expression simplifies to \\( 6 \\cos \\theta + 4 - 4 \\cos^2 \\theta + 3 = 0 \\).\\n\\nThis simplifies to:\\n\\n\\( 6 \\cos \\theta - 4 \\cos^2 \\theta + 7 = 0 \\).\\n\\nWe now solve the quadratic equation:\\n\\n\\( 4 \\cos^2 \\theta - 6 \\cos \\theta - 7 = 0 \\).\\n\\nUsing the quadratic formula, we find:\\n\\n\\( \\cos \\theta = \\frac{6 \\pm \\sqrt{6^2 - 4(4)(-7)}}{2(4)} = \\frac{6 \\pm \\sqrt{100}}{8} = \\frac{6 \\pm 10}{8}.\\n\\nThus, \\( \\cos \\theta = 2 \\) or \\( \\cos \\theta = -\\frac{1}{4} \\).\\n\\nSince \\( \\cos \\theta = 2 \\) is not possible, we solve for \\( \\theta \\) when \\( \\cos \\theta = -\\frac{1}{4} \\).\\n\\nThus, the solution is \\( \\theta = \\cos^{-1}(-\\frac{1}{4}) \\), with \\( -\\pi < \\theta < 0 \\).",
+                "Solution": "To solve the equation \\( \\csc \\theta (3 \\sin 2\\theta + 4 \\sin^3 \\theta) + 3 = 0 \\), we follow the steps outlined in part (a). From part (a), we know the expression simplifies to \\( 6 \\cos \\theta + 4 - 4 \\cos^2 \\theta + 3 = 0 \\).\\\\\\\\This simplifies to:\\\\\\\\\\( 6 \\cos \\theta - 4 \\cos^2 \\theta + 7 = 0 \\).\\\\\\\\We now solve the quadratic equation:\\\\\\\\\\( 4 \\cos^2 \\theta - 6 \\cos \\theta - 7 = 0 \\).\\\\\\\\Using the quadratic formula, we find:\\\\\\\\\\( \\cos \\theta = \\frac{6 \\pm \\sqrt{6^2 - 4(4)(-7)}}{2(4)} = \\frac{6 \\pm \\sqrt{100}}{8} = \\frac{6 \\pm 10}{8}.\\\\\\\\Thus, \\( \\cos \\theta = 2 \\) or \\( \\cos \\theta = -\\frac{1}{4} \\).\\\\\\\\Since \\( \\cos \\theta = 2 \\) is not possible, we solve for \\( \\theta \\) when \\( \\cos \\theta = -\\frac{1}{4} \\).\\\\\\\\Thus, the solution is \\( \\theta = \\cos^{-1}(-\\frac{1}{4}) \\), with \\( -\\pi < \\theta < 0 \\).",
                 "MarkingScheme": "M1 for simplifying the equation to a quadratic form, M1 for using the quadratic formula, A1 for finding the correct value of \\( \\theta \\)."
             },
             {
                 "Part": "c",
-                "Solution": "For part (c), we integrate the expression \\( \\csc \\theta (3 \\sin 2\\theta + 4 \\sin^3 \\theta) \\).\\n\\nWe can break the integral into two parts:\\n\\n\\( \\int \\csc \\theta (3 \\sin 2\\theta) \\ d\\theta + \\int \\csc \\theta (4 \\sin^3 \\theta) \\ d\\theta.\\)\\n\\nFor the first integral, use the identity \\( \\sin 2\\theta = 2 \\sin \\theta \\cos \\theta \\), and for the second integral, use the identity \\( \\sin^3 \\theta = (1 - \\cos^2 \\theta)\\).\\n\\nAfter integrating both parts, we get the final answer:\\n\\n\\( 6 \\sin \\theta + 2 \\cos 2\\theta - \\sin 2\\theta + C \\).",
+                "Solution": "For part (c), we integrate the expression \\( \\csc \\theta (3 \\sin 2\\theta + 4 \\sin^3 \\theta) \\).\\\\\\\\We can break the integral into two parts:\\\\\\\\\\( \\int \\csc \\theta (3 \\sin 2\\theta) \\ d\\theta + \\int \\csc \\theta (4 \\sin^3 \\theta) \\ d\\theta.\\)\\\\\\\\For the first integral, use the identity \\( \\sin 2\\theta = 2 \\sin \\theta \\cos \\theta \\), and for the second integral, use the identity \\( \\sin^3 \\theta = (1 - \\cos^2 \\theta)\\).\\\\\\\\After integrating both parts, we get the final answer:\\\\\\\\\\( 6 \\sin \\theta + 2 \\cos 2\\theta - \\sin 2\\theta + C \\).",
                 "MarkingScheme": "M1 for setting up the integrals correctly, A1 for correct integration of both terms, A1 for the final answer."
             }
         ]
@@ -308,18 +307,18 @@
     },
     "QuestionContent": {
         "Parts": [],
-        "Text": "(a) The curve with equation \\( e^{2x} - 18x + y^3 + y = 11 \\) has a stationary point at \\( (p, q) \\).\\n\\nFind the exact value of \\( p \\).\\n\\n(b) Show that \\( q = \\sqrt{2} + 18 \\ln 3 - q. \\)\\n\\n(c) Show by calculation that the value of \\( q \\) lies between 2.5 and 3.0.\\n\\n(d) Use an iterative formula, based on the equation in (b), to find the value of \\( q \\) correct to 4 significant figures. Give the result of each iteration to 6 significant figures."
+        "Text": "(a) The curve with equation \\( e^{2x} - 18x + y^3 + y = 11 \\) has a stationary point at \\( (p, q) \\).\\\\\\\\Find the exact value of \\( p \\).\\\\\\\\(b) Show that \\( q = \\sqrt{2} + 18 \\ln 3 - q. \\)\\\\\\\\(c) Show by calculation that the value of \\( q \\) lies between 2.5 and 3.0.\\\\\\\\(d) Use an iterative formula, based on the equation in (b), to find the value of \\( q \\) correct to 4 significant figures. Give the result of each iteration to 6 significant figures."
     },
     "SolutionContent": {
         "Parts": [
             {
                 "Part": "a",
-                "Solution": "To find the exact value of \\( p \\), we differentiate the equation \\( e^{2x} - 18x + y^3 + y = 11 \\) implicitly with respect to \\( x \\):\\n\\n\\( \\frac{d}{dx}[e^{2x} - 18x + y^3 + y] = 0.\\)\\n\\nThe derivative of the left-hand side is:\\n\\( 2e^{2x} - 18 + 3y^2 \\frac{dy}{dx} + \\frac{dy}{dx} = 0.\\)\\n\\nSimplifying: \\( 2e^{2x} - 18 + (3y^2 + 1) \\frac{dy}{dx} = 0.\\)\\n\\nSubstitute \\( \\frac{dy}{dx} = 0 \\) into the equation. This gives us the stationary point at \\( (p, q) \\), with \\( p = \\ln 3 \\).",
+                "Solution": "To find the exact value of \\( p \\), we differentiate the equation \\( e^{2x} - 18x + y^3 + y = 11 \\) implicitly with respect to \\( x \\):\\\\\\\\\\( \\frac{d}{dx}[e^{2x} - 18x + y^3 + y] = 0.\\)\\\\\\\\The derivative of the left-hand side is:\\\\\\( 2e^{2x} - 18 + 3y^2 \\frac{dy}{dx} + \\frac{dy}{dx} = 0.\\)\\\\\\\\Simplifying: \\( 2e^{2x} - 18 + (3y^2 + 1) \\frac{dy}{dx} = 0.\\)\\\\\\\\Substitute \\( \\frac{dy}{dx} = 0 \\) into the equation. This gives us the stationary point at \\( (p, q) \\), with \\( p = \\ln 3 \\).",
                 "MarkingScheme": "B1 for differentiating correctly, M1 for solving the derivative equation, A1 for obtaining \\( p = \\ln 3 \\)."
             },
             {
                 "Part": "b",
-                "Solution": "To show that \\( q = \\sqrt{2} + 18 \\ln 3 - q \\), we substitute the expression for \\( p \\) obtained in part (a) into the original equation. This results in:\\n\\n\\( q = \\sqrt{2} + 18 \\ln 3 - q.\\)\\n\\nRearranging gives the required result.",
+                "Solution": "To show that \\( q = \\sqrt{2} + 18 \\ln 3 - q \\), we substitute the expression for \\( p \\) obtained in part (a) into the original equation. This results in:\\\\\\\\\\( q = \\sqrt{2} + 18 \\ln 3 - q.\\)\\\\\\\\Rearranging gives the required result.",
                 "MarkingScheme": "M1 for substituting \\( p = \\ln 3 \\) into the equation, A1 for rearranging and obtaining the required result."
             },
             {
@@ -329,16 +328,10 @@
             },
             {
                 "Part": "d",
-                "Solution": "For part (d), we use the iterative formula derived from part (b) to find the value of \\( q \\) correct to 4 significant figures. The iterative formula is:\\n\\n\\( q_{n+1} = \\sqrt{2} + 18 \\ln 3 - q_n.\\)\\n\\nWe start with an initial guess for \\( q_0 \\), and apply the formula iteratively, rounding each iteration to 6 significant figures. After several iterations, we find that the value of \\( q \\) correct to 4 significant figures is approximately 2.673.",
+                "Solution": "For part (d), we use the iterative formula derived from part (b) to find the value of \\( q \\) correct to 4 significant figures. The iterative formula is:\\\\\\\\\\( q_{n+1} = \\sqrt{2} + 18 \\ln 3 - q_n.\\)\\\\\\\\We start with an initial guess for \\( q_0 \\), and apply the formula iteratively, rounding each iteration to 6 significant figures. After several iterations, we find that the value of \\( q \\) correct to 4 significant figures is approximately 2.673.",
                 "MarkingScheme": "M1 for using the iterative process correctly, A1 for obtaining the final value of \\( q \\), A1 for giving the result to 6 significant figures."
             }
         ]
     }
 }
 ]
-}
-
-
-
-
-
